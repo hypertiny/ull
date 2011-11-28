@@ -1,0 +1,86 @@
+body {
+  font-family: museo-sans,sans-serif;
+  font-style: normal;
+  background: url(images/cream_pattern.png);  
+  padding: 0;
+  margin: 0;
+      
+}
+
+#wrapper {
+  margin: 0 auto;
+  width: 800px;  
+  
+}
+
+#logo {
+  display: block;
+  margin: 40px auto 0 auto;
+  width: 170px;
+  
+
+}
+
+p {
+  margin: 110px 0 0 0;
+  font-weight: 500;
+  line-height: 1.5em;
+  font-size: 1em;
+  float: left;
+  color: #84231C;
+  font-family: rooney-web,sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  padding: 25px 10px 30px 10px;
+  text-align: justify;
+  border-bottom: 1px solid #C6C4BD;
+  border-top: 1px solid #C6C4BD;
+  letter-spacing: 0em;
+}
+
+h1 {
+  font-size: 1.6em;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 0 0 20px 0;
+  margin-top: 20px;
+  float: left;
+  color: #900;  
+  
+  text-align: center;
+  line-height: 1.1em;
+}
+
+.copy {
+  border-top: 6px solid #84231C;
+  background-color: rgba(227,226,218,.8);
+  width: 330px;
+  padding: 0 30px 20px 30px;
+  margin: -100px 0 0 205px;
+  float: left;
+  
+  
+  
+}
+
+.button {
+  background-color: #5B4E4D;
+  padding: 10px;
+  color: #FFFDF5;
+  font-weight: 700;
+  text-transform: uppercase;
+  float: left;
+  margin: 30px 0 0 92px;
+  text-decoration: none;
+  text-align: center;
+  width: 126px;
+  border-radius: 4px;
+  -webkit-transition: background 0.3s ease;
+  -moz-transition: background 0.3s ease;
+}
+
+.button:hover {
+  background-color: #84231C;
+  
+  
+}
