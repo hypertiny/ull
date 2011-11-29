@@ -1,0 +1,110 @@
+#wrapper {
+  margin: 30px auto;
+  width: 70%;
+  font-family: museo-sans,sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  
+}
+#morning {
+  background: url(../images/design-icon.png) no-repeat;
+  color: #3a9bd9;
+  border-top: 2px solid #3a9bd9;
+  width: 100%;
+  padding: 26px 0 0 106px;
+}
+
+
+
+h3 {
+  text-transform: uppercase;
+  font-size: 1em;
+  font-weight: 700;
+  color: #000;
+  margin-top: 18px;
+  
+  
+  
+}
+
+p {
+  font-size: .85em;
+  width:500px;
+  color: #999;
+  line-height: 1.3em;
+  font-family: rooney-web,sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  
+  
+}
+
+.col-header {
+ display: none; 
+  
+}
+
+.morning {
+  border-right: 1px #3a9bd9 solid;
+}
+
+.afternoon {
+  border-right: 1px #b74550 solid;
+  
+}
+
+
+.evening {
+  border-right: 1px #45b755 solid;
+  
+}
+
+
+#afternoon {
+  background: url(../images/dev-icon.png) no-repeat;
+  color: #b74550;
+  border-top: 2px solid #b74550;
+  width: 100%;
+  padding: 26px 0 0 106px;
+  margin-top: 80px;
+}
+
+#evening {
+  background: url(../images/vision-icon.png) no-repeat;
+  color: #45b755;
+  border-top: 2px solid #45b755;
+  width: 100%;
+  padding: 26px 0 0 106px;
+  margin-top: 80px;
+}
+
+
+.dtstart {
+  font-weight: 500;
+  font-size: 1em;
+  
+  padding: 0 20px 0 0;
+  margin: 0;
+}
+
+
+
+abbr {
+  display: inline-block;
+  height: 15px;
+  line-height: 15px;
+}
+
+.time {
+  width: 100px;
+  padding: 20px 0 0 0;
+  vertical-align: top;
+  
+  
+  
+}
+
+abbr {
+  border: none;
+  
+}
