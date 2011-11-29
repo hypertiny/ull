@@ -91,6 +91,8 @@ h1 {
 
 .button:hover {
   background-color: #84231C;
-  
-  
+}
+
+sup { 
+  font-size: 0.5em;
 }
