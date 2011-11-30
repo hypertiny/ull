@@ -9,7 +9,7 @@ body {
 }
 
 #wrapper {
-  margin: 0 auto;
+  margin: 0 auto 10px auto;
   width: 320px;  
 
 }
@@ -57,7 +57,7 @@ p.date {
   text-align: center;
   font-style: normal;
   width: 215px;
-  font-size: 1.05em;
+  font-size: 1em;
 }
 
 h1 {
