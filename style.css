@@ -143,8 +143,8 @@ p a:hover {
 
   p {
     font-weight: 500;
-    line-height: 1.2em;
-    font-size: 1em;
+    line-height: 1.35em;
+    font-size: 1.05em;
     float: left;
     color: #84231C;
     font-family: rooney-web,sans-serif;
@@ -159,10 +159,10 @@ p a:hover {
   }
 
   p.date {
-    margin: 70px auto;
+    margin: 65px auto;
     border-bottom: 0;
     border-top: 0;
-    padding: 0 0 0 22px;
+    padding: 0 0 0 27px;
     margin-bottom: 0;
     text-align: center;
     font-style: normal;
