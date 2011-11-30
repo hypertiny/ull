@@ -1,0 +1,157 @@
+body, h3, p, tr, td, .morningLine, 
+.afternoonLine, .eveningLine {
+  margin: 0;
+  padding: 0;
+  
+}
+#wrapper {
+  margin: 40px auto;
+  width: 290px;
+  font-family: museo-sans,sans-serif;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.col-header {display: none;}
+
+h3 {
+  text-transform: uppercase;
+  font-size: 1em;
+  font-weight: 700;
+  color: #000;
+  text-align: center;
+}
+
+p {
+  font-size: .85em;
+  color: #999;
+  line-height: 1.3em;
+  font-family: rooney-web,sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  width: 280px;
+  margin: 20px auto;
+  text-align: center;
+
+}
+
+/*Handheld Resets*/
+
+.morning {border-right: none;}
+.afternoon {border-right: none;}
+.evening {border-right: none;}
+
+#designIcon {
+  margin: -20px auto 0 auto;
+  width: 50px;
+  display: block;  
+  border-left: 4px solid #fff;
+  border-right: 4px solid #fff;
+}
+
+#morning {
+  color: #3a9bd9;
+  width: 100%;
+  padding: 0;
+  margin-bottom: 50px;
+}
+
+#morning abbr {
+  background-color: #3a9bd9;
+  padding: 5px 3px 3px 3px;
+  font-weight: 700;
+  color: #fff; 
+  border: 3px solid #fff;
+}
+
+#devIcon {
+  margin: -20px auto 0 auto;
+  width: 50px;
+  display: block;  
+  border-left: 4px solid #fff;
+  border-right: 4px solid #fff;
+}
+
+#afternoon {
+  color: #b74550;
+  width: 100%;
+  padding: 0;
+  margin-top: 80px;
+  margin-bottom: 50px;
+}
+
+#afternoon abbr {
+  background-color: #b74550;
+  padding: 5px 3px 3px 3px;
+  font-weight: 700;
+  color: #fff; 
+  border: 3px solid #fff;
+}
+
+#visionIcon {
+  margin: -20px auto 0 auto;
+  width: 50px;
+  display: block;  
+  border-left: 4px solid #fff;
+  border-right: 4px solid #fff;
+}
+
+#evening {
+  color: #45b755;
+  width: 100%;
+  margin-top: 80px;
+  padding: 0;
+  margin-bottom: 50px;
+}
+
+#evening abbr {
+  background-color: #45b755;
+  padding: 5px 3px 3px 3px;
+  font-weight: 700;
+  color: #fff; 
+  border: 3px solid #fff;
+}
+
+.dtstart {
+  font-weight: 500;
+  font-size: 1em;
+  padding: 0 20px 0 0;
+  margin: 0 auto;
+  width: 50px;
+}
+
+abbr {
+  display: block;
+  line-height: 15px;
+  
+  
+}
+
+
+
+.time {  
+  margin: 20px 0;
+  padding: 0;
+  vertical-align: top;
+  width: 100%;
+  background: url("../images/bg_grey_line.png") repeat-x;
+  background-position: center center;
+  
+
+}
+
+abbr {border: none;}
+
+th, td { display: block; }
+
+
+
+.morningLine, .afternoonLine, .eveningLine {
+  border: none;
+  height: 2px;
+}
+
+.morningLine {background-color: #3a9bd9;}
+.afternoonLine {background-color: #b74550;}
+.eveningLine {background-color: #45b755;}
+

@@ -7,11 +7,9 @@
   
 }
 #morning {
-  background: url(../images/design-icon.png) no-repeat;
   color: #3a9bd9;
-  border-top: 2px solid #3a9bd9;
   width: 100%;
-  padding: 26px 0 0 106px;
+  padding: 0 0 0 106px;
 }
 
 
@@ -61,18 +59,14 @@ p {
 
 
 #afternoon {
-  background: url(../images/dev-icon.png) no-repeat;
   color: #b74550;
-  border-top: 2px solid #b74550;
   width: 100%;
   padding: 26px 0 0 106px;
   margin-top: 80px;
 }
 
 #evening {
-  background: url(../images/vision-icon.png) no-repeat;
   color: #45b755;
-  border-top: 2px solid #45b755;
   width: 100%;
   padding: 26px 0 0 106px;
   margin-top: 80px;
@@ -106,5 +100,22 @@ abbr {
 
 abbr {
   border: none;
+  
+}
+
+.morningLine, .afternoonLine, .eveningLine {
+  border: none;
+  height: 2px;
+  padding: 0;
+  margin: 0;
+}
+
+.morningLine {background-color: #3a9bd9;}
+.afternoonLine {background-color: #b74550;}
+.eveningLine {background-color: #45b755;}
+
+#designIcon {
+  margin: 0;
+  padding: 0;
   
 }
