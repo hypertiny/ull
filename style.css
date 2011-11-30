@@ -144,7 +144,7 @@ p a:hover {
   p {
     font-weight: 500;
     line-height: 1.35em;
-    font-size: 1.05em;
+    font-size: 1em;
     float: left;
     color: #84231C;
     font-family: rooney-web,sans-serif;
@@ -167,6 +167,7 @@ p a:hover {
     text-align: center;
     font-style: normal;
     width: 215px;
+    font-size: 1.05em;
   }
 
   h1 {
