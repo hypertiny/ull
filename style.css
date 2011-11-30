@@ -10,16 +10,25 @@ body {
 
 #wrapper {
   margin: 0 auto;
-  width: 800px;  
+  width: 380px;  
   
 }
 
 #logo {
   display: block;
   margin: 40px auto 0 auto;
-  width: 170px;
+  width: 110px;
   
 
+}
+
+.copy {
+  border-top: 6px solid #84231C;
+  background-color: rgba(227,226,218,.8);
+  width: 330px;
+  padding: 0 25px 20px 25px;
+  margin: -60px 0 0 0px;
+  float: left; 
 }
 
 p {
@@ -39,7 +48,7 @@ p {
 }
 
 p.date {
-  margin: 80px 0 0 0;
+  margin: 40px 0 0 0;
   border-bottom: 0;
   border-top: 0;
   padding-bottom: 0;
@@ -62,17 +71,7 @@ h1 {
   line-height: 1.1em;
 }
 
-.copy {
-  border-top: 6px solid #84231C;
-  background-color: rgba(227,226,218,.8);
-  width: 330px;
-  padding: 0 30px 20px 30px;
-  margin: -100px 0 0 205px;
-  float: left;
-  
-  
-  
-}
+
 
 .button {
   background-color: #5B4E4D;
@@ -81,7 +80,7 @@ h1 {
   font-weight: 700;
   text-transform: uppercase;
   float: left;
-  margin: 30px 0 0 92px;
+  margin: 10px 0 5px 92px;
   text-decoration: none;
   text-align: center;
   width: 126px;
