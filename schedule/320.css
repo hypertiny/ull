@@ -2,8 +2,10 @@ body, h3, p, tr, td, .morningLine,
 .afternoonLine, .eveningLine {
   margin: 0;
   padding: 0;
-  
 }
+
+.col-header {display: none;}
+
 #wrapper {
   margin: 40px auto;
   width: 290px;
@@ -11,8 +13,6 @@ body, h3, p, tr, td, .morningLine,
   font-style: normal;
   font-weight: 500;
 }
-
-.col-header {display: none;}
 
 h3 {
   text-transform: uppercase;
@@ -32,7 +32,6 @@ p {
   width: 280px;
   margin: 20px auto;
   text-align: center;
-
 }
 
 /*Handheld Resets*/
@@ -43,10 +42,12 @@ p {
 
 #designIcon {
   margin: -20px auto 0 auto;
-  width: 50px;
+  width: 49px;
+  height: 50px;
   display: block;  
   border-left: 4px solid #fff;
   border-right: 4px solid #fff;
+  background: url("../images/design-icon.png") no-repeat;
 }
 
 #morning {
