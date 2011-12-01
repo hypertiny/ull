@@ -114,12 +114,23 @@ abbr {
 .afternoonLine {background-color: #b74550;}
 .eveningLine {background-color: #45b755;}
 
-#designIcon {
-  margin: 0;
-  padding: 0;
-  
-}
 
+
+#designIcon { 
+  background: url("../images/design-icon.png") no-repeat; 
+  width: 49px;
+  height: 50px;
+}
+#devIcon { 
+  background: url("../images/dev-icon.png") no-repeat; 
+  width: 49px;
+  height: 50px;
+}
+#visionIcon { 
+  background: url("../images/vision-icon.png") no-repeat; 
+  width: 49px;
+  height: 50px;
+}
 
 
 
