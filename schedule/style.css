@@ -301,9 +301,9 @@ abbr {
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
-    #designIcon { background: url("../images/2x_design-icon.png") no-repeat; }
-    #devIcon { background: url("../images/2x_dev-icon.png") no-repeat; }
-    #visionIcon { background: url("../images/2x_vision-icon.png") no-repeat; }
+    #designIcon { background: url("../images/2x-design-icon.png") no-repeat; }
+    #devIcon { background: url("../images/2x-dev-icon.png") no-repeat; }
+    #visionIcon { background: url("../images/2x-vision-icon.png") no-repeat; }
 
 }
 
