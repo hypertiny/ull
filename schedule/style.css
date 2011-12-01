@@ -303,15 +303,15 @@ abbr {
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
     #designIcon { 
       background: url("../images/2x-design-icon.png") no-repeat; 
-      background-size: 50%;  
+      background-size: 100%;  
     }
     #devIcon { 
       background: url("../images/2x-dev-icon.png") no-repeat; 
-      background-size: 50%;
+      background-size: 100%;
     }
     #visionIcon { 
       background: url("../images/2x-vision-icon.png") no-repeat; 
-      background-size: 50%;
+      background-size: 100%;
     }
 
 }
