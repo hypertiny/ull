@@ -21,16 +21,14 @@
   
   <script>
     $(document).ready(function() {
+      $.localScroll();
       
       $('#navItems').hide();
       $('#menuButton').on('click',function() {
         $('#navItems').slideToggle();
-          return false;
       });
-      $.localScroll();
-      $('#navItems a').click(function() {
+      $('#navItems a').on('click', function() {
           $('#navItems').slideToggle('fast');
-          return false;
         });
     });
     
