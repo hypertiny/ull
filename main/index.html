@@ -28,7 +28,6 @@
   </style>
   <script>
     $(document).ready(function() {
-      $('#container').height($(window).height() - 100)
       $('#navItems').hide();
       $('#menuButton').on('click',function() {
         $('#navItems').slideToggle();
@@ -39,6 +38,9 @@
         $('#navItems').slideToggle('fast');
         return false
       });
+      
+      
+      $('#container').height($(window).height() - 100)
       
       var container = document.getElementById('container');
       var content = document.getElementById('content');
