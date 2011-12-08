@@ -17,14 +17,18 @@
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
   
   <script src="js/libs/modernizr-2.0.6.min.js"></script>
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
-  <script src="js/libs/Animate.js" type="text/javascript" charset="utf-8"></script>
+  
+  
   <script src="js/libs/Raf.js" type="text/javascript" charset="utf-8"></script>
+  
+  <script src="js/libs/Animate.js" type="text/javascript" charset="utf-8"></script>
+  
   <script src="js/libs/Scroller.js" type="text/javascript" charset="utf-8"></script>
   <script src="js/render.js" type="text/javascript" charset="utf-8"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
   <script src="js/jquery-bind.js" type="text/javascript" charset="utf-8"></script>
   <style type="text/css">
-    body { background-color: #EEE; overflow: hidden; padding: 0; }
+    body { overflow: hidden; padding: 0; }
     #container { height: 480px; overflow: hidden; position: relative;}
     #content { position: absolute; }
   </style>
@@ -33,32 +37,21 @@
       $('#navItems').hide();
       $('#menuButton').on('click',function() {
         $('#navItems').slideToggle();
+        $('#helper').slideToggle()
       });
       $('#navItems a').on('click', function() {
         position = $($(this).attr('href')).position().top
         scroller.scrollTo(0,position,false)
         $('#navItems').slideToggle('fast');
+        $('#helper').slideToggle('fast')
         return false
       });
-      
-      
-      $('#container').height($(window).height() - 100)
-      
-      var container = document.getElementById('container');
-      var content = document.getElementById('content');
 
-      // The Scroller options
-      var options = {
-        scrollingX: false
-      };
-
-      // Initialize Scroller
-      // As soon as jQuery supports cross-engine transforms, we should prefer them here.
-      window.scroller = new Scroller(render, options);
-
-      // Bind mouse/touch events
-      bindEvents(scroller, container, content);
     });
+    $('#container').height($(window).height() - 100)
+      
+      
+    
     
   </script>
   
@@ -77,7 +70,10 @@
         <li><a href="#tickets">Tickets</a></li>
       </ul>
       <hr id="topLine" />
-      <span id="logo"></span>
+      <div id="logowrapper">
+        <div id="helper"></div>
+        <span id="logo">Úll</span>
+      </div>
       <a id="menuButton" href="#"><img id="dropDownButton" src="images/dropdownButton.png" alt="Menu Reveal"/></a>
 
     </nav>
@@ -93,6 +89,23 @@
     <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.2/CFInstall.min.js"></script>
     <script>window.attachEvent("onload",function(){CFInstall.check({mode:"overlay"})})</script>
   <![endif]-->
+  <script>
+    var container = document.getElementById('container');
+    var content = document.getElementById('content');
+
+    // The Scroller options
+    var options = {
+      scrollingX: false
+    };
+
+    // Initialize Scroller
+    // As soon as jQuery supports cross-engine transforms, we should prefer them here.
+    window.scroller = new Scroller(render, options);
+
+    // Bind mouse/touch events
+    bindEvents(scroller, container, content);
+  
+  </script>
 
 </body>
 </html>
