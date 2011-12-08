@@ -1,0 +1,98 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>&Uacute;ll</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="text/javascript" src="http://use.typekit.com/zwi6ggx.js"></script>
+
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  
+  <script src="js/libs/modernizr-2.0.6.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+  <script src="js/libs/Animate.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/libs/Raf.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/libs/Scroller.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/render.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/jquery-bind.js" type="text/javascript" charset="utf-8"></script>
+  <style type="text/css">
+    body { background-color: #EEE; overflow: hidden; padding: 0; }
+    #container { height: 480px; overflow: hidden; position: relative;}
+    #content { position: absolute; }
+  </style>
+  <script>
+    $(document).ready(function() {
+      $('#navItems').hide();
+      $('#menuButton').on('click',function() {
+        $('#navItems').slideToggle();
+      });
+      $('#navItems a').on('click', function() {
+        position = $($(this).attr('href')).position().top
+        scroller.scrollTo(0,position,false)
+        $('#navItems').slideToggle('fast');
+        return false
+      });
+      
+      
+      $('#container').height($(window).height() - 100)
+      
+      var container = document.getElementById('container');
+      var content = document.getElementById('content');
+
+      // The Scroller options
+      var options = {
+        scrollingX: false
+      };
+
+      // Initialize Scroller
+      // As soon as jQuery supports cross-engine transforms, we should prefer them here.
+      window.scroller = new Scroller(render, options);
+
+      // Bind mouse/touch events
+      bindEvents(scroller, container, content);
+    });
+    
+  </script>
+  
+  
+  
+</head>
+<body>
+  
+  <header>
+    <nav>
+      <ul id="navItems">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#speakers">Speakers</a></li>
+        <li><a href="#schedule">Schedule</a></li>
+        <li><a href="#workshops">Workshops</a></li>
+        <li><a href="#tickets">Tickets</a></li>
+      </ul>
+      <hr id="topLine" />
+      <span id="logo"></span>
+      <a id="menuButton" href="#"><img id="dropDownButton" src="images/dropdownButton.png" alt="Menu Reveal"/></a>
+
+    </nav>
+  </header>
+  <div id="container">
+    <div id="content">
+      <%= yield %>
+    </div>
+  </div>
+
+
+  <!--[if lt IE 7 ]>
+    <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.2/CFInstall.min.js"></script>
+    <script>window.attachEvent("onload",function(){CFInstall.check({mode:"overlay"})})</script>
+  <![endif]-->
+
+</body>
+</html>
