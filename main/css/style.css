@@ -11,7 +11,7 @@ body {
   font-family: museo-sans,sans-serif;
   font-style: normal;
   font-weight: 700;
-  background: #eee;
+  background: #fff;
 }
 
 body, button, input, select, textarea { font-family: sans-serif; color: #222; }
@@ -155,7 +155,7 @@ table { border-collapse: collapse; border-spacing: 0; }
     width: 62px;
     height: 66px;
     display: block;
-    margin-left: 20px;
+    margin-left: 16px;
     
     
   }
@@ -211,7 +211,7 @@ table { border-collapse: collapse; border-spacing: 0; }
   }
   #dropDownButton {
     float: right;
-    margin: -58px 20px 0 0 ;
+    margin: -58px 16px 0 0 ;
     width: 33px;
     height: 25px;
     
@@ -219,26 +219,32 @@ table { border-collapse: collapse; border-spacing: 0; }
   }
   
   #speakers { 
-    height: 500px;
-    background: #999;
     padding-top: 80px;
   }
   
+  .speaker {
+    font-size: 1.5em;
+    
+  }
+  
+  img {
+    display: block;
+    margin: 10px auto;
+    
+  }
+  
   #schedule { 
-    height: 300px;
     padding-top: 80px;
    
   }
   
   #workshops { 
-    height: 500px;
     background: #999;
     padding-top: 80px;
    
   }
   
   #tickets { 
-    height: 500px;
     padding-top: 80px;
     
    
@@ -246,7 +252,182 @@ table { border-collapse: collapse; border-spacing: 0; }
  
   h2 { margin: 0 0 0 2%;}
   
+  
+  
 }
+
+/*Pasted from Schedule Code*/
+
+body, h3, p, tr, td, {
+  margin: 0;
+  padding: 0; }
+  
+.morningLine, .afternoonLine, .eveningLine {
+  width: 97%;
+  margin: 0 auto;
+}
+
+.col-header {
+  display: none; }
+
+#wrapper {
+  margin: 40px auto;
+  width: 290px;
+  font-family: museo-sans,sans-serif;
+  font-style: normal;
+  font-weight: 500; }
+
+h3 {
+  text-transform: uppercase;
+  font-size: 1em;
+  font-weight: 700;
+  color: #000;
+  text-align: center; }
+
+p {
+  font-size: .85em;
+  color: #999;
+  line-height: 1.3em;
+  font-family: rooney-web,sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  width: 280px;
+  margin: 20px auto;
+  text-align: center; }
+
+/*Handheld Resets*/
+.morning {
+  border-right: none; }
+
+.afternoon {
+  border-right: none; }
+
+.evening {
+  border-right: none; }
+
+#designIcon {
+  margin: -20px auto 0 auto;
+  width: 49px;
+  height: 50px;
+  display: block;
+  border-left: 4px solid #fff;
+  border-right: 4px solid #fff;
+  background: url("../images/design-icon.png") no-repeat; }
+
+#morning {
+  color: #3a9bd9;
+  width: 100%;
+  padding: 0;
+  margin-bottom: 60px; }
+
+#morning abbr {
+  background-color: #3a9bd9;
+  padding: 5px 3px 3px 3px;
+  font-weight: 700;
+  color: #fff;
+  border: 3px solid #fff; }
+#selector {
+  
+  width: 49px;
+  height: 48px;
+}
+#devIcon {
+  margin: -20px auto 0 auto;
+  width: 50px;
+  display: block;
+  border-left: 4px solid #fff;
+  border-right: 4px solid #fff; 
+  background: url("../images/dev-icon.png") no-repeat; }
+
+#afternoon {
+  color: #b74550;
+  width: 100%;
+  padding: 0;
+  margin-bottom: 60px;
+  margin-top: 0; }
+
+#afternoon abbr {
+  background-color: #b74550;
+  padding: 5px 3px 3px 3px;
+  font-weight: 700;
+  color: #fff;
+  border: 3px solid #fff; }
+
+#visionIcon {
+  margin: -20px auto 0 auto;
+  width: 50px;
+  display: block;
+  border-left: 4px solid #fff;
+  border-right: 4px solid #fff; 
+  background: url('../../images/vision-icon.png') no-repeat;
+  }
+
+#evening {
+  color: #45b755;
+  width: 100%;
+  margin-top: 0;
+  padding: 0;
+  margin-bottom: 60px; }
+
+#evening abbr {
+  background-color: #45b755;
+  padding: 5px 3px 3px 3px;
+  font-weight: 700;
+  color: #fff;
+  border: 3px solid #fff; }
+
+.dtstart {
+  font-weight: 500;
+  font-size: 1em;
+  padding: 0 20px 0 0;
+  margin: 0 auto;
+  width: 50px; }
+
+abbr {
+  display: block;
+  line-height: 15px; }
+
+.time {
+  margin: 20px auto;
+  padding: 0;
+  vertical-align: top;
+  width: 94%;
+  background: url("../images/bg_grey_line.png") repeat-x;
+  background-position: center center; }
+
+abbr {
+  border: none; }
+
+th, td {
+  display: block; }
+
+.morningLine, .afternoonLine, .eveningLine {
+  border: none;
+  height: 2px; }
+
+.morningLine {
+  background-color: #3a9bd9; }
+
+.afternoonLine {
+  background-color: #b74550; }
+
+.eveningLine {
+  background-color: #45b755; } }
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+#designIcon {
+  background: url("../images/2x-design-icon.png") no-repeat;
+  background-size: 100%; }
+
+#devIcon {
+  background: url("../images/2x-dev-icon.png") no-repeat;
+  background-size: 100%; }
+
+#visionIcon {
+  background: url("../images/2x-vision-icon.png") no-repeat;
+  background-size: 100%; } 
+}
+
 
 @media only screen and (min-width: 768px) {
   /* Style adjustments for viewports 768px and over go here */
