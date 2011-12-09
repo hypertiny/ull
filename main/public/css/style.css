@@ -140,6 +140,13 @@ body {
   }
   
   
+  body {
+    background: url("../images/cream_pattern.png");
+    
+    
+  }
+  
+  
   /*THE MIGHTY NAV*/
   
   nav {
@@ -183,19 +190,20 @@ body {
   #topLine { 
     height: 40px; 
     border: 0;
-    background: url("../images/bg_white.png");
+    background: url("../images/bgnoise_dark.jpg");
     margin: 0 0 -40px 0;
-    border-top: 3px solid #BF132A;
-    -moz-box-shadow: 0px 0px 4px rgba(0,0,0,.17);
-    -webkit-box-shadow: 0px 0px 4px rgba(0,0,0,.17);
-    box-shadow: 0px 0px 4px rgba(0,0,0,.17);
+    
+    -moz-box-shadow: 0px 0px 8px rgba(0,0,0,.3);
+    -webkit-box-shadow: 0px 0px 8px rgba(0,0,0,.3);
+    box-shadow: 0px 0px 8px rgba(0,0,0,.3);
   }
   
   #logowrapper {
     position: absolute;
     top: 0;
-    left: 16px;
     z-index: 10;
+    margin: 0 0 0 40%;
+    
   }
   
   #logo {
@@ -203,7 +211,6 @@ body {
     width: 62px;
     height: 66px;
     display: block;
-    margin-left: 0px;
     text-indent: -9999px;
   }
   
@@ -217,6 +224,7 @@ body {
     margin: 9px 16px 0 0 ;
     width: 33px;
     height: 25px;
+    display: none;
   }
   
   /*THE CONTAINER*/
@@ -224,16 +232,22 @@ body {
   #container {
     width:100%;
     z-index: 1;
-    margin-top: 41px;
+    margin-top: 40px;
   }
   
   #content {
     z-index: 0;
   }
+  
+  
                                                           /*MOBILE TYPOGRAPHY + CONTENT*/   
+  p, h2, h3 { 
+    text-align: center;
+    margin: 0 auto;
+  }
+  
   p {
     padding: 10px;
-    margin: 0 0 30px 10px;
     width: 280px;
     font-size: 1em;
     font-family: rooney-web,sans-serif;
@@ -244,25 +258,26 @@ body {
   }
   
   
-  h2 { margin: 0 0 0 16px;}
+  h2 { 
+    text-transform: uppercase;
+    padding: 5px;
+  }
+  
   h3 {
     text-transform: uppercase;
     font-size: 1em;
-    font-weight: 700;
+    font-weight: 900;
     color: #000;
-    margin: 0 0 0 16px;
+    margin-top: 10px;
   }
 
   img {
      display: block;
-     margin: 16px;
-
+     margin: 0 auto;
    }
   
   
-  
-  
-                                                            /*HOME SECTION*/ 
+                                                              /*HOME SECTION*/ 
   
   #home {
     margin: 70px 0 0 0;
@@ -279,9 +294,29 @@ body {
   
   .speaker {
     font-size: 1.5em;
-    
+    background-color: #b74550;
+    padding: 5px 10px;
+    display: inline;
+    text-align: center;
+    color: #fff;
+    margin: 0;
   }
   
+  .designImg{
+    /*border-bottom: 2px solid #3a9bd9;*/
+    
+    margin-top: 55px;
+  }
+  .devImg{
+    /*border-bottom: 2px solid #b74550;*/
+    
+    margin-top: 55px;
+  }
+  .visionImg{
+    /*border-bottom: 2px solid #45b755;*/
+    
+    margin-top: 55px; 
+  }
  
   
                                                             /*SCHEDULE SECTION*/
@@ -324,8 +359,8 @@ body {
     width: 49px;
     height: 50px;
     display: block;
-    border-left: 4px solid #fff;
-    border-right: 4px solid #fff;
+    border-left: 4px solid #F5F4EA;
+    border-right: 4px solid #F5F4EA;
     background: url("../images/design-icon.png") no-repeat; 
   }
 
@@ -341,11 +376,10 @@ body {
     padding: 5px 3px 3px 3px;
     font-weight: 700;
     color: #fff;
-    border: 3px solid #fff; 
+    border: 3px solid #F5F4EA; 
   }
 
   #selector {
-
     width: 49px;
     height: 48px;
   }
@@ -353,9 +387,10 @@ body {
   #devIcon {
     margin: -20px auto 0 auto;
     width: 50px;
+    height: 50px;
     display: block;
-    border-left: 4px solid #fff;
-    border-right: 4px solid #fff; 
+    border-left: 4px solid #F5F4EA;
+    border-right: 4px solid #F5F4EA; 
     background: url("../images/dev-icon.png") no-repeat; 
   }
 
@@ -372,15 +407,16 @@ body {
     padding: 5px 3px 3px 3px;
     font-weight: 700;
     color: #fff;
-    border: 3px solid #fff; 
+    border: 3px solid #F5F4EA; 
   }
 
   #visionIcon {
     margin: -20px auto 0 auto;
     width: 50px;
+    height: 50px;
     display: block;
-    border-left: 4px solid #fff;
-    border-right: 4px solid #fff; 
+    border-left: 4px solid #F5F4EA;
+    border-right: 4px solid #F5F4EA; 
     background: url('../../images/vision-icon.png') no-repeat;
   }
 
@@ -397,7 +433,7 @@ body {
     padding: 5px 3px 3px 3px;
     font-weight: 700;
     color: #fff;
-    border: 3px solid #fff;
+    border: 3px solid #F5F4EA;
   }
 
   .dtstart {
