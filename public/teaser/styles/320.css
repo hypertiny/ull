@@ -1,7 +1,7 @@
 body {
   font-family: museo-sans,sans-serif;
   font-style: normal;
-  background: url(../images/cream_pattern.png);  
+  background: url(/images/cream_pattern.png);  
   padding: 0;
   margin: 0;
 
@@ -18,8 +18,6 @@ body {
   display: block;
   margin: 20px auto 0 auto;
   width: 110px;
-
-
 }
 
 .copy {
