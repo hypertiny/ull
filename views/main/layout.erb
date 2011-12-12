@@ -13,43 +13,74 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="/main/css/style.css">
   <script type="text/javascript" src="http://use.typekit.com/zwi6ggx.js"></script>
-
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-  
   <script src="/main/js/libs/modernizr-2.0.6.min.js"></script>
-  
-  
-  <script src="/main/js/libs/Raf.js" type="text/javascript" charset="utf-8"></script>
-  
-  <script src="/main/js/libs/Animate.js" type="text/javascript" charset="utf-8"></script>
-  
-  <script src="/main/js/libs/Scroller.js" type="text/javascript" charset="utf-8"></script>
-  <script src="/main/js/render.js" type="text/javascript" charset="utf-8"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
-  <script src="/main/js/jquery-bind.js" type="text/javascript" charset="utf-8"></script>
-  <style type="text/css">
-    body { overflow: hidden; padding: 0; }
-    #container { height: 480px; overflow: hidden; position: relative;}
-    #content { position: absolute; }
-  </style>
-  <script>
+  <!--
+  <script type="text/javascript">
     $(document).ready(function() {
       $('#navItems').hide();
+      $('.speakerDescription').hide();
       $('#logo').on('click',function() {
         $('#navItems').slideToggle();
-        $('#helper').slideToggle()
       });
       $('#navItems a').on('click', function() {
-        position = $($(this).attr('href')).position().top
-        scroller.scrollTo(0,position,false)
         $('#navItems').slideToggle('fast');
-        $('#helper').slideToggle('fast')
         return false
       });
-
+      
+      $('#andyDescriptionToggle').on('click', function() {
+        $('#andyDescription').slideToggle();
+        return false
+      });
+      
+      $('#morganDescriptionToggle').on('click', function() {
+        $('#morganDescription').slideToggle();
+        return false
+      });
+      
+      $('#chrisDescriptionToggle').on('click', function() {
+        $('#chrisDescription').slideToggle();
+        return false
+      });
+      
+      $('#coleDescriptionToggle').on('click', function() {
+        $('#coleDescription').slideToggle();
+        return false
+      });
+      
+      $('#docDescriptionToggle').on('click', function() {
+        $('#docDescription').slideToggle();
+        return false
+      });
+      
+      $('#dave2DescriptionToggle').on('click', function() {
+        $('#dave2Description').slideToggle();
+        return false
+      });
+      
+      $('#kyleDescriptionToggle').on('click', function() {
+        $('#kyleDescription').slideToggle();
+        return false
+      });
+      
+      $('#mikeDescriptionToggle').on('click', function() {
+        $('#mikeDescription').slideToggle();
+        return false
+      });
+      
+      $('#wilsonDescriptionToggle').on('click', function() {
+        $('#wilsonDescription').slideToggle();
+        return false
+      });
+  
     });
-    $('#container').height($(window).height() - 100)
+    
+    
+      
   </script>
+  -->
+  
 </head>
 <body>
   
@@ -63,12 +94,8 @@
         <li><a href="#tickets">Tickets</a></li>
       </ul>
       <hr id="topLine" />
-      <div id="logowrapper">
-        <div id="helper"></div>
-        <a id="logo" href="#" alt="Menu Reveal">Úll</a>
-      </div>
-      
-
+      <a id="logo" href="#" alt="Menu Reveal">Úll</a>
+      <a id="logoHome" href="/main" alt="Menu Reveal">Úll</a>
     </nav>
   </header>
   <div id="container">
@@ -82,23 +109,7 @@
     <script src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1.0.2/CFInstall.min.js"></script>
     <script>window.attachEvent("onload",function(){CFInstall.check({mode:"overlay"})})</script>
   <![endif]-->
-  <script>
-    var container = document.getElementById('container');
-    var content = document.getElementById('content');
-
-    // The Scroller options
-    var options = {
-      scrollingX: false
-    };
-
-    // Initialize Scroller
-    // As soon as jQuery supports cross-engine transforms, we should prefer them here.
-    window.scroller = new Scroller(render, options);
-
-    // Bind mouse/touch events
-    bindEvents(scroller, container, content);
   
-  </script>
 
 </body>
 </html>
