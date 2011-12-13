@@ -132,6 +132,15 @@ table { border-collapse: collapse; border-spacing: 0; }
 }
 
 
+body {
+    font-family: museo-sans,sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    background: #fff;
+    background: url("/main/images/cream_pattern.png");
+    margin: 0;
+ }
+
 
 
 
@@ -226,7 +235,7 @@ a {
 
 
 
-p, h2, h3 { 
+h2, h3 { 
  text-align: center;
  margin: 0 auto;
 }
@@ -295,6 +304,8 @@ h3.speaker {
 
 }
 
+
+
 .speakerDescription {
  background: url("/main/images/bgnoise_dark.jpg");
  color: #fff;
@@ -305,6 +316,23 @@ h3.speaker {
 article {
  width: 90%;
  margin: 0 auto;
+}
+
+.sectionLine {
+  height: 1px;
+  border: none;
+  background-color: #333;
+  margin: 0 auto;
+  padding: 0;
+  width: 864px;
+}
+
+.sectionTitle {
+  margin: -18px auto 30px;
+  font-weight: 900;
+  width: 130px;
+  background: url("/main/images/cream_pattern.png");
+  
 }
 
                                                          /*SCHEDULE SECTION*/
@@ -487,14 +515,7 @@ th, td {
 
 }
 
-body {
-    font-family: museo-sans,sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    background: #fff;
-    background: url("/main/images/cream_pattern.png");
-    margin: 0;
- }
+
 
 
 @media all and (min-width: 481px) {
@@ -607,16 +628,26 @@ body {
   
   
   h3.speaker {
-   font-size: 1em;
+   font-size: .9em;
    background: transparent;
    padding: 0;
-   display: inline;
-   margin: 0 0 10px 0;
+   display: block;
+   margin: 10px 0 4px 0;
    border-radius: none;
    z-index: 1;
+   text-align: left;
+   letter-spacing: .05em;
+   
    
 
 
+  }
+  
+  .speakerDescription {
+      border-bottom: 1px solid #333;
+      height: 300px;
+      padding-bottom: 20px;
+    
   }
 
   h3 a {
@@ -635,11 +666,9 @@ body {
   article.speaker {
     width: 288px;
     float: left;
-    margin: 0 0 0 10px;
-
+    margin: 0 0 50px 10px;
+    
   }
-
-
 
   
 
@@ -667,13 +696,13 @@ body {
   }
 
   #speakers {
-    margin: 0 0 0 19px;
+    margin: 0;
 
   }
 
   .speakerDescription {
     background: transparent;
-    color: #aaa;
+    color: #222;
     
   }
 
@@ -695,7 +724,10 @@ body {
 
   }
 
-
+  .speakerGroups {
+    margin: 0 0 0 20px;
+  }
+  
 
   #wrapper {
     margin: 30px auto;
@@ -802,6 +834,7 @@ body {
     color: #3a9bd9;
     text-decoration: none;
     font-family: rooney-web,sans-serif; 
+    margin-bottom: 30px;
   }
   
 }
