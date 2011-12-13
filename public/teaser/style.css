@@ -1,45 +1,60 @@
+html {overflow-y: scroll;}
 body {
   font-family: museo-sans,sans-serif;
   font-style: normal;
-  background: url(/images/cream_pattern.png);  
+  background: url("/teaser/images/cream_pattern.png");  
   padding: 0;
   margin: 0;
+  
   
       
 }
 
 #wrapper {
   margin: 0 auto;
-  width: 380px;  
+  width: 350px;  
   
 }
 
 #logo {
   display: block;
-  margin: 40px auto 0 auto;
-  width: 110px;
+  margin: -40px auto 0 auto;
+  width: 70px;
+}
+
+#topline {
+  border: none;
+  height: 30px;
+  background: url("/teaser/images/bgnoise_dark.jpg");
+  margin: 60px 0 0 0;
+  
+}
+
+#bottomline {
+  border: none;
+  height: 10px;
+  background: url("/teaser/images/bgnoise_dark.jpg");
+  
 }
 
 .copy {
-  border-top: 6px solid #84231C;
-  border-bottom: 3px solid #84231C;
   background-color: rgba(227,226,218,.8);
-  width: 330px;
+  width: 300px;
   padding: 0 25px 20px 25px;
-  margin: -60px 0 0 0px;
+  margin: -34px 0 0 0px;
   float: left; 
 }
 
 p {
   font-weight: 500;
   line-height: 1.5em;
-  font-size: 1em;
+  font-size: .9em;
   float: left;
-  color: #84231C;
+  color: #700B18;
   font-family: rooney-web,sans-serif;
   font-weight: 300;
   font-style: italic;
-  padding: 25px 10px 30px 10px;
+  padding: 25px 15px 30px 15px;
   text-align: justify;
   border-bottom: 1px solid #C6C4BD;
   border-top: 1px solid #C6C4BD;
@@ -47,14 +62,14 @@ p {
 }
 
 p.date {
-  margin: 40px 0 0 0;
+  margin: 20px 0 0 0;
   border-bottom: 0;
   border-top: 0;
   padding-bottom: 0;
   margin-bottom: 0;
   text-align: center;
   font-style: normal;
-  width: 315px;
+  width: 275px;
 }
 
 h1 {
@@ -65,7 +80,6 @@ h1 {
   margin-top: 20px;
   float: left;
   color: #900;  
-  
   text-align: center;
   line-height: 1.1em;
 }
@@ -74,12 +88,12 @@ h1 {
 
 .button {
   background-color: #5B4E4D;
-  padding: 10px;
+  padding: 5px 5px;
   color: #FFFDF5;
   font-weight: 700;
   text-transform: uppercase;
   float: left;
-  margin: 10px 0 5px 92px;
+  margin: 10px 0 5px 78px;
   text-decoration: none;
   text-align: center;
   width: 126px;
@@ -89,7 +103,7 @@ h1 {
 }
 
 .button:hover {
-  background-color: #84231C;
+  background-color: #BF132A;
 }
 
 sup { 
@@ -106,4 +120,58 @@ p a:hover {
   text-decoration: none;
   font-weight: 500;
   color: #5B4E4D;
+}
+
+#easterEgg {
+  background-color: rgba(227,226,218,.8);
+  padding: 40px 20px 20px 80px;
+  margin: -34px 0 34px;
+  
+}
+
+.hide {
+  display: none;
+  
+}
+
+#htLink {
+  font-size: .7em;
+  color: #fff;
+  background-color: #BF132A;
+  padding: 4px 5px;
+  border-radius: 2px;
+  margin: 0 0 0 70px;
+  
+}
+
+@media all and (max-width: 480px) {
+
+
+  #wrapper {
+    margin: 0 auto;
+    width: 300px;  
+
+  }
+  
+  .copy {
+    width: 250px;
+  }
+
+  p.date {
+    width: 220px;
+  }
+
+  #easterEgg {
+    background-color: rgba(227,226,218,.8);
+    padding: 25px 19px 0 50px;
+    width: 230px;
+    
+
+  }
+  .button {
+    width: 126px;
+    margin: 10px 0 5px 57px;
+  }
+
+  
 }

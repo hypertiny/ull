@@ -718,6 +718,21 @@ th, td {
     background: transparent;
   }
 
+  @font-face { 
+  	font-family: 'WebSymbolsRegular';
+  	src: url('/main/fonts/websymbols-regular-webfont.eot');
+  	src: url('/main/fonts/websymbols-regular-webfont.eot?#iefix') format('embedded-opentype'),
+  	     url('/main/fonts/websymbols-regular-webfont.woff') format('woff'),
+  	     url('/main/fonts/websymbols-regular-webfont.ttf') format('truetype'),
+  	     url('/main/fonts/websymbols-regular-webfont.svg#WebSymbolsRegular') format('svg');
+  	}
+
+  .speakerLinks {
+    font-family: 'WebSymbolsRegular';
+    font-size: 3em;
+    
+  }
+    
   img {
     width: 92%;
     margin: 0 0 0 0;
