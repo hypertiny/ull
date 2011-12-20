@@ -1,19 +1,27 @@
 require 'rubygems'
 require 'sinatra'
 require 'erb'
-require 'data_mapper'
-DataMapper.setup(:default, ENV['DATABASE_URL'] || 'postgres://ull:@localhost/ull')
 
-class Registration
-    include DataMapper::Resource
-    property :id, Serial
-    property :email, String, :index => :unique
-    property :created_at, DateTime
+def use_db?
+  ENV['RACK_ENV'] == 'production' || ENV['DB'] == true
 end
 
-Registration.auto_migrate! unless Registration.storage_exists?
+if use_db?
 
-DataMapper.finalize
+  require 'data_mapper'
+  DataMapper.setup(:default, ENV['DATABASE_URL'] || 'postgres://ull:@localhost/ull')
+
+  class Registration
+      include DataMapper::Resource
+      property :id, Serial
+      property :email, String, :index => :unique
+      property :created_at, DateTime
+  end
+
+  Registration.auto_migrate! unless Registration.storage_exists?
+
+  DataMapper.finalize
+end
 
 get '/' do
   erb :'teaser/index', :layout => :'teaser/layout'
@@ -24,7 +32,7 @@ get '/main' do
 end
 
 post '/' do
-  if params[:email].strip != ''
+  if params[:email].strip != '' and use_db?
     if !Registration.get(:email => params[:email])
       Registration.create(:email => params[:email])
     end
