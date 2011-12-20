@@ -25,7 +25,9 @@ end
 
 post '/' do
   if params[:email].strip != ''
-    registration = Registration.create(:email => params[:email])
+    if !Registration.get(:email => params[:email])
+      Registration.create(:email => params[:email])
+    end
   end
   erb :'teaser/thanks', :layout => :'teaser/layout'
 end
