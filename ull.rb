@@ -33,7 +33,7 @@ end
 
 post '/' do
   if params[:email].strip != '' and use_db?
-    if !Registration.get(:email => params[:email])
+    if !Registration.first(:email => params[:email])
       Registration.create(:email => params[:email])
     end
   end
