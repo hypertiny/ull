@@ -1,5 +1,5 @@
 /* @override 
-	http://localhost:4567/teaser/style.css */
+  http://localhost:4567/teaser/style.css */
 
 html {overflow-y: scroll;}
 body {
@@ -8,9 +8,6 @@ body {
   background: url("/teaser/images/cream_pattern.png");  
   padding: 0;
   margin: 0;
-  
-  
-      
 }
 
 #wrapper {
@@ -66,16 +63,21 @@ p {
   padding: 0px 15px 0px 15px;
   text-align: justify;
   letter-spacing: 0em;
+  margin-bottom: -0.1em;
 }
 
 .first {
-	border-top: 1px solid #C6C4BD;
-	padding-top: 25px;
+  border-top: 1px solid #C6C4BD;
+  padding-top: 25px;
 }
 
 .last {
-	border-bottom: 1px solid #C6C4BD;
-	padding-bottom: 50px;
+  border-bottom: 1px solid #C6C4BD;
+  padding-bottom: 25px;
+}
+.last cite {
+  display: block;
+  float: right;
 }
 
 p.date {
@@ -117,50 +119,50 @@ h1 {
 }
 
 #submit-button {
-	
-	background: #BF132A;
-	border:  none;
-	border-left: 3px #E7E6DD solid;
-	border-radius: 0px 4px 4px 0px;
-	color: #FFFDF5;
-	padding: 6px 5px;
-	font-size: .8em;
-	text-transform: uppercase;
-	margin: 8px 2px 0 0;
-	float: left;
-	width: 25%;
-	font-weight: 700;
-	font-family: rooney-web,sans-serif;
-	
-	
-	
+  
+  background: #BF132A;
+  border:  none;
+  border-left: 3px #E7E6DD solid;
+  border-radius: 0px 4px 4px 0px;
+  color: #FFFDF5;
+  padding: 6px 5px;
+  font-size: .8em;
+  text-transform: uppercase;
+  margin: 8px 2px 0 0;
+  float: left;
+  width: 25%;
+  font-weight: 700;
+  font-family: rooney-web,sans-serif;
+  
+  
+  
 }
 
 #email {
-	background: #aaa;
-	border: none;
-	padding: 5px 5px 5px 8px;
-	font-size: 1em;
-	border-radius: 4px 0px 0px 4px;
-	margin: 8px 0 0 0;
-	float: left;
-	width: 70%;
-	color: #fff;
+  background: #aaa;
+  border: none;
+  padding: 5px 5px 5px 8px;
+  font-size: 1em;
+  border-radius: 4px 0px 0px 4px;
+  margin: 8px 0 0 0;
+  float: left;
+  width: 70%;
+  color: #fff;
 }
 
 #interest {
-	background: #E7E6DD;
-	font-size: .9em;
-	margin: -31px 0 15px 47px;
-	float: left;
-	display: block;
-	padding: 5px 10px;
-	text-transform: uppercase;
-	border-radius: 4px;
-	font-family: rooney-web,sans-serif;
-	color: #700B18;
-	
-	
+  background: #E7E6DD;
+  font-size: .9em;
+  margin: -14px 0 15px 47px;
+  float: left;
+  display: block;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  font-family: rooney-web,sans-serif;
+  color: #700B18;
+  
+  
 }
 
 .button:hover {
@@ -231,14 +233,14 @@ p a:hover {
     width: 126px;
     margin: 10px 0 5px 57px;
   }
-	
-	#email {
-		width: 69%;
-	}
-	
-	#interest {
-		margin: -31px 0 15px 27px;
-	}
+  
+  #email {
+    width: 69%;
+  }
+  
+  #interest {
+    margin: -31px 0 15px 27px;
+  }
   
 }
 
@@ -247,5 +249,5 @@ p a:hover {
 .clearfix { zoom: 1; }
 
 #logo {
-	
+  
 }
