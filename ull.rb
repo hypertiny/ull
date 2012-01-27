@@ -31,6 +31,10 @@ get '/main' do
   erb :'main/index', :layout => :'main/layout'
 end
 
+get '/register' do
+  redirect 'https://ull.tito.io'
+end
+
 post '/' do
   if params[:email].strip != '' and use_db?
     if !Registration.first(:email => params[:email])
