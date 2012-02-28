@@ -1,2 +1,2 @@
-require 'ull'
+require './ull'
 run Sinatra::Application

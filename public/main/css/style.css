@@ -310,8 +310,6 @@ h3.speaker {
 .speakerDescription {
  background: url("/main/images/bgnoise_dark.jpg");
  color: #fff;
-
-
 }
 
 article {
@@ -643,16 +641,20 @@ th, td {
   
   .speakerDescription {
       border-bottom: 1px solid #333;
-      height: 300px;
+      height: 120px;
       padding-bottom: 20px;
-    
+  }
+  
+  .speakerDescription a {
+    color: #333;
+    font-weight: bold;
+    text-transform: none;
   }
 
   h3 a {
     color: #333;
     font-weight: 900;
     font-family: museo-sans,sans-serif;
-
   }
 
   h2 {
