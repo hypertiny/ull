@@ -545,7 +545,7 @@ th, td {
                                                        /*TICKETS SECTION*/
 
 #tickets { 
- padding-top: 80px;
+ padding-top: 100px;
 
 
 }
@@ -901,8 +901,41 @@ abbr {
   }
 }
 
+.ticket-info {
+  width: 640px;
+  margin: 0 auto 20px auto;
+  color: #222;
+  font-size: 1.4em;
+  
+}
 
-
+footer {
+  width: 920px;
+  margin: 60px auto 30px auto;
+  font-size: 1em;
+  color: #222;
+  padding: 4px 0 0px 0;
+  border-top: 1px solid #333;
+  p {
+    color: #222;
+    width: 261px;
+     &.brought {
+       float: left;
+       width: 340px;
+     }
+     &.questions {
+       float: right;
+       text-align: right;
+       line-height: 1.6em;
+     }
+  }
+  a {
+    color: #222;
+    font-weight: bold;
+    text-transform: none;
+   
+  }
+}
 
 
 
