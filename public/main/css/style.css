@@ -730,6 +730,9 @@ h3 {
   text-align: center;
   padding-top: 2ex; }
 
+#home .date-range {
+  padding: 0; }
+
 #home img {
   width: 92%;
   margin: 0 auto; }
