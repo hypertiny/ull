@@ -87,12 +87,12 @@
 <body>
   
   <header>
-    <nav>
+    <nav id="navigation">
       <ul id="navItems">
         <li><a href="#home">Home</a></li>
         <li><a href="#speakers">Speakers</a></li>
-        <li><a href="#schedule">Schedule</a></li>
-        <li><a href="#workshops">Workshops</a></li>
+        <li><a href="#schedule" class="coming-soon">Schedule</a></li>
+        <li><a href="#workshops" class="coming-soon">Workshops</a></li>
         <li><a href="#tickets">Tickets</a></li>
       </ul>
       <hr id="topLine" />
@@ -101,7 +101,7 @@
     </nav>
   </header>
   <div id="container">
-    <div id="content">
+    <div id="content" class="clearfix">
       <%= yield %>
     </div>
   </div>

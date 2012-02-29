@@ -5,6 +5,12 @@
   font-style: normal;
   font-weight: 500; }
 
+#home {
+  
+}
+
+#
+
 #morning {
   color: #3a9bd9;
   width: 100%; }
@@ -17,7 +23,7 @@ h3 {
   margin-top: 18px; }
 
 p {
-  font-size: .85em;
+  font-size: 1em;
   width: 500px;
   color: #999;
   line-height: 1.3em;
@@ -128,7 +134,6 @@ abbr {
     text-align: center; }
 
   p {
-    font-size: .85em;
     color: #999;
     line-height: 1.3em;
     font-family: rooney-web,sans-serif;
