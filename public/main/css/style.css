@@ -719,14 +719,16 @@ h3 {
   font-family: rooney-web,sans-serif; }
 
 #home p {
-  font-size: 1.5em;
+  font-size: 1.8em;
   width: 90%;
   color: #222;
   line-height: 1.5em;
   font-family: rooney-web,sans-serif;
   font-style: normal;
   font-weight: 300;
-  margin: 10px auto 20px auto; }
+  margin: 10px auto 20px auto;
+  text-align: center;
+  padding-top: 2ex; }
 
 #home img {
   width: 92%;
