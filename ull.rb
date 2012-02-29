@@ -24,6 +24,10 @@ if use_db?
 end
 
 get '/' do
+  erb :'main/index', :layout => :'main/layout'
+end
+
+get '/teaser' do
   erb :'teaser/index', :layout => :'teaser/layout'
 end
 
