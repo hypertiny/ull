@@ -289,7 +289,8 @@ article {
 #navigation {
   width: 100%;
   top: 0;
-  position: fixed; }
+  position: fixed;
+  z-index: 100; }
 
 #navItems {
   width: 100%;
@@ -417,15 +418,63 @@ h3 .speaker {
   padding: 0;
   width: 864px; }
 
+.subsectionLine {
+  height: 1px;
+  border: none;
+  background-color: #ccc;
+  margin: 0 auto;
+  padding: 0;
+  width: 640px; }
+
 .sectionTitle {
   margin: -18px auto 30px;
   font-weight: 900;
   width: 130px;
   background: url("/main/images/cream_pattern.png"); }
 
+.subsectionTitle {
+  margin: 0 auto;
+  font-weight: 500;
+  background: url("/main/images/cream_pattern.png");
+  font-size: 1.4em;
+  text-transform: none;
+  color: #534B48;
+  font-family: museo-sans,sans-serif;
+  font-style: normal;
+  font-weight: 900; }
+
 /*SCHEDULE SECTION*/
 #schedule {
-  padding-top: 80px; }
+  padding-top: 100px; }
+  #schedule img {
+    width: 100%; }
+  #schedule .schedule-wrap {
+    margin: 0 0 0 20px; }
+  #schedule .sectionTitle {
+    margin-bottom: 50px; }
+  #schedule .schedule-day {
+    width: 268px;
+    float: left;
+    margin: 0 0 50px 20px; }
+  #schedule dt {
+    background: url("/main/images/cream_pattern.png");
+    padding: 10px;
+    text-align: center;
+    margin: -31px auto 30px auto;
+    width: 14%; }
+  #schedule dd {
+    margin: 0; }
+    #schedule dd h3 {
+      text-align: center; }
+
+.schedule-details {
+  margin: 20px auto; }
+  .schedule-details h3 {
+    margin: 18px 0 0 0;
+    font-size: 1.3em; }
+  .schedule-details p {
+    font-size: 1.4em;
+    color: #333; }
 
 .morningLine, .afternoonLine, .eveningLine {
   width: 97%;
@@ -567,7 +616,8 @@ th, td {
 
 /*TICKETS SECTION*/
 #tickets {
-  padding-top: 100px; }
+  padding-top: 100px;
+  margin-bottom: 60px; }
 
 header {
   width: 920px;
@@ -594,7 +644,8 @@ p {
   color: #999; }
 
 .coming-soon {
-  color: #b2a6a1 !important; }
+  color: #b2a6a1 !important;
+  cursor: default; }
 
 #topLine {
   display: none;
@@ -637,6 +688,8 @@ article.speaker {
   width: 288px;
   float: left;
   margin: 0 0 50px 10px; }
+  article.speaker:nth-child(1) {
+    margin: 0 0 50px 8px; }
 
 #container {
   width: 920px;
@@ -720,7 +773,7 @@ h3 {
 
 #home p {
   font-size: 1.8em;
-  width: 90%;
+  width: 87%;
   color: #222;
   line-height: 1.5em;
   font-family: rooney-web,sans-serif;
@@ -862,11 +915,14 @@ abbr {
       padding: 6px 10px;
       font-size: .8em; }
 
-.ticket-info {
+.ticket-info, .additional-info {
   width: 640px;
   margin: 0 auto 20px auto;
   color: #222;
   font-size: 1.4em; }
+
+#additional .sectionTitle {
+  width: 200px; }
 
 footer {
   width: 920px;

@@ -202,6 +202,7 @@ article {
  width: 100%;
  top: 0;
  position: fixed;
+ z-index: 100;
 }
 
 #navItems {
@@ -362,6 +363,17 @@ h3 .speaker {
   width: 864px;
 }
 
+.subsectionLine {
+  height: 1px;
+  border: none;
+  background-color: #ccc;
+  margin: 0 auto;
+  padding: 0;
+  width: 640px;
+}
+
+
+
 .sectionTitle {
   margin: -18px auto 30px;
   font-weight: 900;
@@ -370,10 +382,66 @@ h3 .speaker {
   
 }
 
+.subsectionTitle {
+  margin: 0 auto;
+  font-weight: 500;
+  background: url("/main/images/cream_pattern.png");
+  font-size: 1.4em;
+  text-transform: none;
+  color: #534B48; 
+  font-family: museo-sans,sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  
+}
+
+
+
+
                                                          /*SCHEDULE SECTION*/
 
 #schedule { 
- padding-top: 80px;
+ padding-top: 100px;
+ img {
+   width: 100%;
+ }
+ .schedule-wrap {
+   margin: 0 0 0 20px;
+ }
+ .sectionTitle {
+   margin-bottom: 50px;
+ }
+ .schedule-day {
+   width: 268px;
+   float: left;
+   margin: 0 0 50px 20px;
+ }
+ dt {
+   background: url("/main/images/cream_pattern.png");
+   padding: 10px;
+   text-align: center;
+   margin: -31px auto 30px auto;
+   width: 14%;
+ }
+ dd {
+   margin: 0;
+   h3 {
+     text-align: center;
+   }
+ }
+ 
+}
+.schedule-details {
+  margin: 20px auto;
+
+  h3 {
+    margin: 18px 0 0 0;
+    font-size: 1.3em;
+  }
+  p {
+    font-size: 1.4em;
+    color: #333;
+  }
 }
 
 .morningLine, .afternoonLine, .eveningLine {
@@ -546,6 +614,7 @@ th, td {
 
 #tickets { 
  padding-top: 100px;
+ margin-bottom: 60px;
 
 
 }
@@ -581,6 +650,7 @@ p { color: #999;
 
 .coming-soon {
   color: #b2a6a1 !important;
+  cursor: default;
 }
 
 
@@ -631,12 +701,17 @@ h3 .speaker {
       text-transform: none;
     }
   }
-article.speaker {
-  width: 288px;
-  float: left;
-  margin: 0 0 50px 10px;
-  
+article {
+  &.speaker {
+    width: 288px;
+    float: left;
+    margin: 0 0 50px 10px;
+    &:nth-child(1) {
+      margin: 0 0 50px 8px;
+    }
+  }
 }
+
 
 #container { 
   width: 920px; 
@@ -747,7 +822,7 @@ h3 {
 
 #home p {
   font-size: 1.8em;
-  width: 90%;
+  width: 87%;
   color: #222;
   line-height: 1.5em;
   font-family: rooney-web,sans-serif;
@@ -865,7 +940,7 @@ abbr {
       display: inline;
       font-size: 1em;
       margin: 0;
-      &label {
+      label {
         margin: 0 0 0 0;
         width: 200px;
         display: inline-block;
@@ -895,7 +970,7 @@ abbr {
   .buttons {
     float: right;
     margin: 20px 0;
-    &input {
+    input {
       background: #C10A26;
       border: none;
       color: #FFFFFF;
@@ -906,13 +981,21 @@ abbr {
   }
 }
 
-.ticket-info {
+.ticket-info, .additional-info {
   width: 640px;
   margin: 0 auto 20px auto;
   color: #222;
   font-size: 1.4em;
   
 }
+
+#additional {
+  .sectionTitle {
+    width: 200px;
+  }
+}
+
+
 
 footer {
   width: 920px;
