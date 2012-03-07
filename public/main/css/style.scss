@@ -420,11 +420,12 @@ h3 .speaker {
    background: url("/main/images/cream_pattern.png");
    padding: 10px;
    text-align: center;
-   margin: -31px auto 30px auto;
+   margin: -31px auto -20px auto;
    width: 14%;
  }
  dd {
    margin: 0;
+   margin-bottom: 20px;
    h3 {
      text-align: center;
    }
