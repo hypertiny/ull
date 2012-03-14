@@ -987,6 +987,9 @@ abbr {
   margin: 0 auto 20px auto;
   color: #222;
   font-size: 1.4em;
+  &.demoted {
+    font-size: 1em;
+  }
   a {
     color: #000;
     font-weight: bold;
@@ -999,7 +1002,7 @@ abbr {
   }
 }
 
-#benefits {
+#benefits, #supporters {
   margin-top: 100px;
   .sectionTitle {
     width: 200px;

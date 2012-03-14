@@ -921,6 +921,8 @@ abbr {
   margin: 0 auto 20px auto;
   color: #222;
   font-size: 1.4em; }
+  .ticket-info.demoted, .additional-info.demoted {
+    font-size: 1em; }
   .ticket-info a, .additional-info a {
     color: #000;
     font-weight: bold; }
@@ -928,11 +930,11 @@ abbr {
 #additional .sectionTitle {
   width: 200px; }
 
-#benefits {
+#benefits, #supporters {
   margin-top: 100px; }
-  #benefits .sectionTitle {
+  #benefits .sectionTitle, #supporters .sectionTitle {
     width: 200px; }
-  #benefits h3 {
+  #benefits h3, #supporters h3 {
     width: 640px;
     margin: 0 auto 0 auto; }
 
