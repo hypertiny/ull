@@ -456,6 +456,8 @@ h3 .speaker {
     width: 268px;
     float: left;
     margin: 0 0 50px 20px; }
+    #schedule .schedule-day a {
+      color: #000; }
   #schedule dt {
     background: url("/main/images/cream_pattern.png");
     padding: 10px;
