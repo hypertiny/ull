@@ -614,9 +614,37 @@ th, td {
 
 /*WORKSHOPS SECTION*/
 #workshops {
-  padding-top: 80px; }
+  padding-top: 100px; }
   #workshops .sectionTitle {
     width: 200px; }
+
+.info {
+  font-size: 1.4em;
+  color: #222;
+  margin: 0 0 0 145px;
+  display: block;
+  width: 100%; }
+
+.workshop-list {
+  margin: 0; }
+  .workshop-list a {
+    color: #222; }
+  .workshop-list dt {
+    margin: 20px auto 0 auto;
+    font-size: 2em;
+    width: 66%;
+    display: block; }
+  .workshop-list dd {
+    font-size: 1em; }
+  .workshop-list a.register {
+    font-weight: 900;
+    margin: 0 0 0 120px; }
+  .workshop-list cite {
+    margin: 10px auto;
+    width: 73%;
+    display: block; }
+    .workshop-list cite a {
+      color: #222; }
 
 /*TICKETS SECTION*/
 #tickets {
