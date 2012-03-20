@@ -614,8 +614,9 @@ th, td {
 
 /*WORKSHOPS SECTION*/
 #workshops {
-  background: #999;
   padding-top: 80px; }
+  #workshops .sectionTitle {
+    width: 200px; }
 
 /*TICKETS SECTION*/
 #tickets {

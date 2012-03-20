@@ -609,9 +609,10 @@ th, td {
 
                                                        /*WORKSHOPS SECTION*/
 #workshops { 
- background: #999;
  padding-top: 80px;
-
+ .sectionTitle {
+   width: 200px;
+ }
 }
 
                                                        /*TICKETS SECTION*/
@@ -619,8 +620,6 @@ th, td {
 #tickets { 
  padding-top: 100px;
  margin-bottom: 60px;
-
-
 }
 
 
