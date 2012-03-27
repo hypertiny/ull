@@ -965,11 +965,11 @@ abbr {
 #additional .sectionTitle {
   width: 200px; }
 
-#benefits, #supporters {
+#benefits, #sponsors {
   margin-top: 100px; }
-  #benefits .sectionTitle, #supporters .sectionTitle {
+  #benefits .sectionTitle, #sponsors .sectionTitle {
     width: 200px; }
-  #benefits h3, #supporters h3 {
+  #benefits h3, #sponsors h3 {
     width: 640px;
     margin: 0 auto 0 auto; }
 
