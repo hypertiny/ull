@@ -351,13 +351,17 @@ article {
     visibility: hidden;
     display: none; }
   #navItems li:nth-child(2) {
-    margin-left: 63px; }
+    margin-left: 20px; }
   #navItems li:nth-child(3) {
-    margin-left: 38px; }
+    margin-left: 0px; }
   #navItems li:nth-child(4) {
-    margin-left: 210px; }
+    margin-left: 0px; }
   #navItems li:nth-child(5) {
-    margin-left: 36px; }
+    margin-left: 110px; }
+  #navItems li:nth-child(6) {
+    margin-left: 10px; }
+  #navItems li:nth-child(7) {
+    margin-left: -10px; }
   #navItems a {
     color: #FFF; }
 
@@ -613,9 +617,9 @@ th, td {
   background-color: #45b755; }
 
 /*WORKSHOPS SECTION*/
-#workshops {
+#workshops, #sessions {
   padding-top: 100px; }
-  #workshops .sectionTitle {
+  #workshops .sectionTitle, #sessions .sectionTitle {
     width: 200px; }
 
 .info {
@@ -623,27 +627,27 @@ th, td {
   color: #222;
   margin: 0 0 0 145px;
   display: block;
-  width: 100%; }
+  width: 640px; }
 
-.workshop-list {
+.workshop-list, .session-list {
   margin: 0; }
-  .workshop-list a {
+  .workshop-list a, .session-list a {
     color: #222; }
-  .workshop-list dt {
+  .workshop-list dt, .session-list dt {
     margin: 20px auto 0 auto;
     font-size: 2em;
     width: 66%;
     display: block; }
-  .workshop-list dd {
+  .workshop-list dd, .session-list dd {
     font-size: 1em; }
-  .workshop-list a.register {
+  .workshop-list a.register, .session-list a.register {
     font-weight: 900;
     margin: 0 0 0 120px; }
-  .workshop-list cite {
+  .workshop-list cite, .session-list cite {
     margin: 10px auto;
     width: 73%;
     display: block; }
-    .workshop-list cite a {
+    .workshop-list cite a, .session-list cite a {
       color: #222; }
 
 /*TICKETS SECTION*/

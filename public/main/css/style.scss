@@ -267,20 +267,19 @@ article {
   }
   li:nth-child(1) {
     visibility: hidden;
-    display: none;
-  }
+    display: none; }
   li:nth-child(2) {
-    margin-left: 63px;
-  }
+    margin-left: 20px; }
   li:nth-child(3) {
-    margin-left: 38px;
-  }
+    margin-left: 0px; }
   li:nth-child(4) {
-    margin-left: 210px;
-  }
+    margin-left: 0px; }
   li:nth-child(5) {
-    margin-left: 36px;
-  }
+    margin-left: 110px; }
+  li:nth-child(6) {
+    margin-left: 10px; }
+  li:nth-child(7) {
+    margin-left: -10px; }
   a {
     color: #FFF;
   }
@@ -608,7 +607,7 @@ th, td {
 
 
                                                        /*WORKSHOPS SECTION*/
-#workshops { 
+#workshops, #sessions { 
  padding-top: 100px;
  .sectionTitle {
    width: 200px;
@@ -620,10 +619,9 @@ th, td {
   color: #222;
   margin: 0 0 0 145px;
   display: block;
-  width: 100%;
-  
+  width: 640px;
 }
-.workshop-list {
+.workshop-list, .session-list {
   margin: 0;
   a {
     color: #222;
