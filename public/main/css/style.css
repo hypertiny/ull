@@ -966,9 +966,10 @@ abbr {
   width: 200px; }
 
 #benefits, #sponsors {
+  padding-top: 100px;
   margin-top: 100px; }
   #benefits .sectionTitle, #sponsors .sectionTitle {
-    width: 200px; }
+    width: 400px; }
   #benefits h3, #sponsors h3 {
     width: 640px;
     margin: 0 auto 0 auto; }
