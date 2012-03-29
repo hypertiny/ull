@@ -278,6 +278,13 @@ img {
   margin: 0 auto;
   box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
   z-index: 5; }
+  img.ei-logo {
+    box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    width: 220px;
+    display: block;
+    margin: 0 auto; }
 
 article {
   width: 90%;
@@ -344,9 +351,9 @@ article {
   letter-spacing: .1em; }
   #navItems li {
     float: left;
-    margin-top: 10px;
+    margin-top: 12px;
     width: 130px;
-    font-size: 1.1em; }
+    font-size: 1em; }
   #navItems li:nth-child(1) {
     visibility: hidden;
     display: none; }
@@ -364,6 +371,8 @@ article {
     margin-left: -10px; }
   #navItems a {
     color: #FFF; }
+    #navItems a:hover {
+      color: #B84A4B; }
 
 #topLine {
   height: 40px;
