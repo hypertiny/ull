@@ -1,106 +1,5 @@
 /*BOILERPLATE STUFF*/
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
-audio[controls], canvas, video { display: inline-block; *display: inline; *zoom: 1; }
-
-html { font-size: 100%; overflow-y: scroll; -webkit-overflow-scrolling: touch; -webkit-tap-highlight-color: rgba(0,0,0,0); -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
-
-body { 
-  margin: 0; 
-  font-size: 13px; 
-  line-height: 1.231; 
-}
-
-
-
-body, button, input, select, textarea { font-family: sans-serif; color: #222; }
-
-::-moz-selection { background: #666; color: #fff; text-shadow: none; }
-::selection { background: #666; color: #fff; text-shadow: none; }
-
-
-
-a:hover, a:active { outline: 0; }
-
-
-
-b, strong { font-weight: bold; }
-
-blockquote { margin: 1em 40px; }
-
-dfn { font-style: italic; }
-
-hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
-
-ins { background: #ff9; color: #000; text-decoration: none; }
-
-mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
-
-pre, code, kbd, samp { font-family: monospace, monospace; _font-family: 'courier new', monospace; font-size: 1em; }
-
-pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
-
-q { quotes: none; }
-q:before, q:after { content: ""; content: none; }
-
-small { font-size: 85%; }
-
-sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
-sup { top: -0.5em; }
-sub { bottom: -0.25em; }
-
-ul, ol { margin: 1em 0; padding: 0 0 0 40px; }
-dd { margin: 0 0 0 40px; }
-nav ol { list-style: none; margin: 0; padding: 0; }
-
-img { border: 0; -ms-interpolation-mode: bicubic; }
-
-svg:not(:root) {
-    overflow: hidden;
-}
-
-figure { margin: 0; }
-
-form { margin: 0; }
-fieldset { border: 0; margin: 0; padding: 0; }
-
-legend { border: 0; *margin-left: -7px; padding: 0; }
-
-label { cursor: pointer; }
-
-button, input, select, textarea { font-size: 100%; margin: 0; vertical-align: baseline; *vertical-align: middle; }
-
-button, input { line-height: normal; *overflow: visible; }
-
-button, input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; -webkit-appearance: button; }
-
-input[type="checkbox"], input[type="radio"] { box-sizing: border-box; }
-input[type="search"] { -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
-
-button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
-
-textarea { overflow: auto; vertical-align: top; }
-
-input:valid, textarea:valid {  }
-input:invalid, textarea:invalid { background-color: #f0dddd; }
-
-table { border-collapse: collapse; border-spacing: 0; }
-
-
-/* =============================================================================
-   Primary styles
-   Author: 
-   ========================================================================== */
-
-
-
-
-
-
-
-/* =============================================================================
-   Non-semantic helper classes
-   Please define your styles before this section.
-   ========================================================================== */
 
 .ir { display: block; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr; }
 .ir br { display: none; }
@@ -116,14 +15,6 @@ table { border-collapse: collapse; border-spacing: 0; }
 .clearfix:before, .clearfix:after { content: ""; display: table; }
 .clearfix:after { clear: both; }
 .clearfix { zoom: 1; }
-
-
-
-/* =============================================================================
-   PLACEHOLDER Media Queries for Responsive Design.
-   These override the primary ('mobile first') styles
-   Modify as content requires.
-   ========================================================================== */
 
 
  html, body, h3, p, tr, td, {
@@ -145,8 +36,6 @@ a {
  text-decoration: none;
  color: #fff;
 }
-
-
 
 h2 { 
  text-align: center;
@@ -200,144 +89,9 @@ article {
  margin: 0 auto;
 }
 
-/*TYPOGRAPHY - 320*/
-
-/*TYPOGRAPHY - DESKTOP*/
-
-
-/*NAV - 320*/
-#navigation {
- width: 100%;
- top: 0;
- position: fixed;
- z-index: 100;
-}
-
-#navItems {
-  width: 100%;
-  height: 190px;
-  background: #ccc;
-  margin: 0;
-  padding: 20px 0 0 0;
-  -moz-box-shadow:inset 0px 0px 5px rgba(0,0,0,.17);
-  -webkit-box-shadow:inset 0px 0px 5px rgba(0,0,0,.17);
-  box-shadow:inset 0px 0px 5px rgba(0,0,0,.17);
-  font-family: rooney-web,sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  color: #333;
-  text-align: center;
-  a {
-    color: #333;
-    text-decoration: none;
-    outline: none;
-  }
-  li {
-    font-size: 1.5em;
-    color: #fff;
-    list-style-type: none;
-    margin: 0 auto 10px auto;
-    width: 200px;
-    clear: right;
-  }
-}
-
-#navigation { 
-  width: 920px;
-  height: 40px;
-  background: url("/main/images/bgnoise_dark.jpg");
-  position: fixed;
-  top: 0;
-  font-weight: 900;
-  font-size: 1.1em;
-  letter-spacing: .1em;
-  border-radius: 0 0 4px 4px;
-  box-shadow: 0 0 5px rgba(0,0,0,0.4);
-}
-
-#navItems {
-  padding: 0 0 0 0;
-  height: 40px;
-  list-style-type: none;
-  background: transparent;
-  -moz-box-shadow: none;
-  -webkit-box-shadow: none;
-  box-shadow:inset none;
-  font-family: museo-sans,sans-serif;
-  font-style: normal;
-  font-weight: 900;
-  letter-spacing: .1em;
-  li {
-    float: left;
-    margin-top: 12px;
-    width: 130px;
-    font-size: 1em;
-  }
-  li:nth-child(1) {
-    visibility: hidden;
-    display: none; }
-  li:nth-child(2) {
-    margin-left: 20px; }
-  li:nth-child(3) {
-    margin-left: 0px; }
-  li:nth-child(4) {
-    margin-left: 0px; }
-  li:nth-child(5) {
-    margin-left: 110px; }
-  li:nth-child(6) {
-    margin-left: 10px; }
-  li:nth-child(7) {
-    margin-left: -10px; }
-  a {
-    color: #FFF;
-    &:hover {
-      color: #B84A4B;
-    }
-  }
-}
-
-  
-
-#topLine { 
- height: 40px; 
- border: 0;
- background: url("/main/images/bgnoise_dark.jpg");
- margin: 0 0 -40px 0;
- -moz-box-shadow: 0px 0px 8px rgba(0,0,0,.3);
- -webkit-box-shadow: 0px 0px 8px rgba(0,0,0,.3);
- box-shadow: 0px 0px 8px rgba(0,0,0,.3);
- display: block;
-}
-
-
-#logo {
-  background: url("/main/images/mobileIcon.png");
-  width: 62px;
-  height: 66px;
-  display: block;
-  text-indent: -9999px;
-  margin-left: 16px;
-}
-
-#logoHome {
-  visibility: hidden;
-}
-
 /*THE CONTAINER*/
 
-#container {
- width:100%;
- z-index: 1;
- margin-top: 40px;
-
-}
-
-#home {
- margin: 90px 0 0 0;
-}
-
-                                                         /*SPEAKER SECTION*/   
-
+                                                         /*SPEAKER SECTION*/  
 #speakers { 
  padding-top: 100px;
 }
@@ -761,16 +515,18 @@ article {
 }
 
 
-#container { 
-  width: 920px; 
-  margin: 0 auto;
+#home {
+  margin: 90px 0 0 0;
+
 }
 
 
+#home .date-range {
+  padding: 0;
 
+}
 
-#home {
-  margin: 90px 0 0 0;
+#home img {
 
 }
 
@@ -869,28 +625,6 @@ h3 {
   font-family: rooney-web,sans-serif;
 }
 
-#home p {
-  font-size: 1.8em;
-  width: 87%;
-  color: #222;
-  line-height: 1.5em;
-  font-family: rooney-web,sans-serif;
-  font-style: normal;
-  font-weight: 300; 
-  margin: 10px auto 20px auto;
-  text-align: center;
-  padding-top:2ex;
-}
-
-#home .date-range {
-  padding: 0;
-
-}
-
-#home img {
-  width: 92%;
-  margin: 0 auto;
-}
 
 .col-header {
   display: none; }
@@ -1120,20 +854,250 @@ footer {
 
 }
 
+//////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////
 
+// Refactored Code
 
- 
-@media print {
-  * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } /* Black prints faster: sanbeiji.com/archives/953 */
-  a, { color: #444 !important; text-decoration: underline; }
-  a[href]:after { content: " (" attr(href) ")"; }
-  abbr[title]:after { content: " (" attr(title) ")"; }
-  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  /* Don't show links for images, or javascript/internal links */
-  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
-  thead { display: table-header-group; } /* css-discuss.incutio.com/wiki/Printing_Tables */
-  tr, img { page-break-inside: avoid; }
-  img { max-width: 100% !important; }
-  @page { margin: 0.5cm; }
-  p, h2, h3 { orphans: 3; widows: 3; }
-  h2, h3{ page-break-after: avoid; }
+// Overall container for the site
+#container { 
+  width: 920px; 
+  margin: 0 auto;
 }
+
+@media only screen and (max-width: 480px) {
+  #container {
+   width: 100%;
+   z-index: 1;
+   margin-top: 40px;
+  }
+}
+
+
+// Container for the main navigation. This allows the navigation to be fixed and the ul can be centered inside of it
+.main-nav { 
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+
+// Ul which contains all the text links in the nav menu
+.main-nav-list {
+  background: url("/main/images/bgnoise_dark.jpg");
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.4);
+  font-family: museo-sans,sans-serif;
+  font-weight: 900;
+  font-size: 1.1em;
+  height: 40px;
+  letter-spacing: .1em;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+  width: 920px;
+  &.show-hide {
+    display: block;
+  }
+  li {
+    float: left;
+    margin-top: 12px;
+    width: 130px;
+    font-size: 1em;
+    &:nth-child(1) {
+      visibility: hidden;
+      display: none; 
+    }
+    &:nth-child(2) {
+      margin-left: 20px; 
+    }
+    &:nth-child(3) {
+      margin-left: 0px; 
+    }
+    &:nth-child(4) {
+      margin-left: 0px; 
+    }
+    &:nth-child(5) {
+      margin-left: 110px; 
+    }
+    &:nth-child(6) {
+      margin-left: 10px;
+    }
+    &:nth-child(7) {
+      margin-left: -10px; 
+    }
+  }
+  a {
+    color: #FFF;
+    &:hover {
+      color: #B84A4B;
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .main-nav-list {
+    width: 100%;
+    height: 220px;
+    background: #ccc;
+    margin: 0 ;
+    padding: 20px 0 0 0;
+    -moz-box-shadow:inset 0px 0px 5px rgba(0,0,0,.17);
+    -webkit-box-shadow:inset 0px 0px 5px rgba(0,0,0,.17);
+    box-shadow:inset 0px 0px 5px rgba(0,0,0,.17);
+    font-family: rooney-web,sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    color: #333;
+    text-align: center;
+    &.show-hide {
+      display: none;
+    }
+    a {
+      color: #333;
+      text-decoration: none;
+      outline: none;
+    }
+    li {
+      font-size: 1.5em;
+      color: #fff;
+      list-style-type: none;
+      width: 200px;
+      float: none;
+      &:nth-child(1), 
+      &:nth-child(2), 
+      &:nth-child(3),
+      &:nth-child(4),
+      &:nth-child(5),
+      &:nth-child(6),
+      &:nth-child(7) {
+        margin: 0 auto; 
+      }
+    }
+  }
+}
+
+// The Úll logo centered in the nav
+.main-nav-home-link {
+  background: url("/main/images/ull_logo_large.png");
+  width: 70px;
+  height: 74px;
+  margin: -40px auto 0 auto;
+}
+
+// Fixes small bug that made the logo move as the browser was resized below 920 px until the mobile media query kicks in
+@media only screen
+and (min-width: 480px)
+and (max-width: 920px) {
+  .main-nav-home-link {
+    position: absolute;
+    top: 10px;
+    left: 400px;
+  }
+}
+
+.mobile-nav-bar {
+  display: none;
+}
+
+.mobile-nav-logo {
+  display: none;
+}
+
+@media only screen and (max-width: 480px) {
+  // Dark bar at the top of the screen
+  .mobile-nav-bar { 
+   height: 40px; 
+   border: 0;
+   background: url("/main/images/bgnoise_dark.jpg");
+   margin: 0 0 -40px 0;
+   -moz-box-shadow: 0px 0px 8px rgba(0,0,0,.3);
+   -webkit-box-shadow: 0px 0px 8px rgba(0,0,0,.3);
+   box-shadow: 0px 0px 8px rgba(0,0,0,.3);
+   display: block;
+  }
+  
+  // left aligned logo in mobile version which toggles the menu visibiliby
+  .mobile-nav-logo {
+    background: url("/main/images/mobileIcon.png");
+    width: 62px;
+    height: 66px;
+    display: block;
+    text-indent: -9999px;
+    margin-left: 16px;
+  }
+  
+  .main-nav-home-link {
+    display: none;
+  }
+}
+
+// continer for generic content sections
+.content-section {
+  &.home {
+    margin: 90px 0 0 0;
+  }
+  @media only screen and (max-width: 480px) {
+    &.home {
+      margin: 0;
+    }
+  }
+}
+
+// Container for the home section
+.home {
+  
+  // Main hero image at the top of the home section 
+  .home-hero {
+    width: 846px;
+    height: 368px;
+    margin: 0 auto;
+    background: url("/main/images/coach-house-cropped_red_varient_s.jpg");
+  }
+  
+  // Outline copy of what Úll is
+  p {
+    font-size: 1.8em;
+    width: 87%;
+    color: #222;
+    line-height: 1.5em;
+    font-family: rooney-web,sans-serif;
+    font-style: normal;
+    font-weight: 300; 
+    margin: 10px auto 20px auto;
+    text-align: center;
+    padding-top: 2ex;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .home {
+    .home-hero {
+      width: 400px;
+      margin: 0 auto;
+      background: url("/main/images/coach-house-cropped_red_varient_s-copy.jpg") no-repeat;
+      
+    }
+    p {
+      font-size: 1.05em;
+      width: 93%;
+      color: #fff;
+      line-height: 1.3em;
+      font-family: rooney-web,sans-serif;
+      font-style: normal;
+      font-weight: 500; 
+      margin: 10px auto 20px auto;
+      text-align: center;
+      padding-top: 2ex;
+    }
+    .home-outline {
+      margin: -330px auto 20px auto;
+    }
+  }
+}
+
+

@@ -1,8 +1,4 @@
 <!doctype html>
-<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
   
   <script>
@@ -15,104 +11,56 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <title>&Uacute;ll</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
-  <!-- <meta name="viewport" content="width=device-width,initial-scale=1"> -->
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="/main/css/style.css">
   <link rel="shortcut icon" href="/main/images/ull_favicon.png">
   <link rel="icon" href="/main/images/ull_favicon.png">
   <script type="text/javascript" src="http://use.typekit.com/khy6vgi.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-  <script src="/main/js/libs/modernizr-2.0.6.min.js"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
-  <!--
-  <script type="text/javascript">
+
+  <script>
+
     $(document).ready(function() {
-      $('#navItems').hide();
-      $('.speakerDescription').hide();
-      $('#logo').on('click',function() {
-        $('#navItems').slideToggle();
-      });
-      $('#navItems a').on('click', function() {
-        $('#navItems').slideToggle('fast');
-        return false
+      $('.mobile-nav-logo').on('click',function() {
+        $('.main-nav-list').slideToggle('fast');
       });
       
-      $('#andyDescriptionToggle').on('click', function() {
-        $('#andyDescription').slideToggle();
-        return false
+      $('.main-nav-list li a').on('click', function() {
+        if ($(window).width() < 480) {
+          $('.main-nav-list').slideToggle('fast');
+        } 
       });
-      
-      $('#morganDescriptionToggle').on('click', function() {
-        $('#morganDescription').slideToggle();
-        return false
+
+      $(window).resize(function() {
+          if ($(window).width() < 480) {
+            $('.main-nav-list').hide();
+          } else {
+            $('.main-nav-list').show();
+          }
       });
-      
-      $('#chrisDescriptionToggle').on('click', function() {
-        $('#chrisDescription').slideToggle();
-        return false
-      });
-      
-      $('#coleDescriptionToggle').on('click', function() {
-        $('#coleDescription').slideToggle();
-        return false
-      });
-      
-      $('#docDescriptionToggle').on('click', function() {
-        $('#docDescription').slideToggle();
-        return false
-      });
-      
-      $('#dave2DescriptionToggle').on('click', function() {
-        $('#dave2Description').slideToggle();
-        return false
-      });
-      
-      $('#kyleDescriptionToggle').on('click', function() {
-        $('#kyleDescription').slideToggle();
-        return false
-      });
-      
-      $('#mikeDescriptionToggle').on('click', function() {
-        $('#mikeDescription').slideToggle();
-        return false
-      });
-      
-      $('#wilsonDescriptionToggle').on('click', function() {
-        $('#wilsonDescription').slideToggle();
-        return false
-      });
-  
     });
-    
-    
-      
   </script>
-  -->
   
 </head>
 <body>
-  
-  <header>
-    <nav id="navigation">
-      <ul id="navItems">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#speakers">Speakers</a></li>
-        <li><a href="#schedule">Schedule</a></li>
-        <li><a href="#sessions">Sessions</a></li>
-        <li><a href="#workshops">Workshops</a></li>
-        <li><a href="#sponsors">Sponsors</a></li>
-        <li><a href="#tickets">Register</a></li>
-      </ul>
-      <hr id="topLine" />
-      <a id="logo" href="#" alt="Menu Reveal">Úll</a>
-      <a id="logoHome" href="#head" alt="Menu Reveal">Úll</a>
-    </nav>
-  </header>
-  <div id="container">
-    <div id="content" class="clearfix">
-      <%= yield %>
-    </div>
+  <nav class="main-nav">
+    <ul class="main-nav-list show-hide">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#speakers">Speakers</a></li>
+      <li><a href="#schedule">Schedule</a></li>
+      <li><a href="#sessions">Sessions</a></li>
+      <li><a href="#workshops">Workshops</a></li>
+      <li><a href="#sponsors">Sponsors</a></li>
+      <li><a href="#tickets">Register</a></li>
+    </ul>
+    
+    <hr class="mobile-nav-bar" />
+    <a class="mobile-nav-logo" href="#" alt="Menu Reveal">Úll</a>
+    <a class="main-nav-home-link ir" href="#head" alt="Menu Reveal">Úll</a>
+  </nav>
+  <div id="container" class="clearfix">
+    <%= yield %>
   </div>
 
   <footer class="clearfix">
