@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "WebSymbolsRegular";
+  src: url("/main/fonts/websymbols-regular-webfont.eot");
+  src: url("/main/fonts/websymbols-regular-webfont.eot?#iefix") format("embedded-opentype"), url("/main/fonts/websymbols-regular-webfont.woff") format("woff"), url("/main/fonts/websymbols-regular-webfont.ttf") format("truetype"), url("/main/fonts/websymbols-regular-webfont.svg#WebSymbolsRegular") format("svg"); }
+
 /*BOILERPLATE STUFF*/
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
   display: block; }
@@ -48,47 +53,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, nav, sectio
 .clearfix {
   zoom: 1; }
 
-html, body, h3, p, tr, td {
-  margin: 0;
-  padding: 0; }
-
-body {
-  font-family: museo-sans,sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  background: #fff;
-  background: url("/main/images/cream_pattern.png");
-  margin: 0; }
-
-a {
-  text-decoration: none;
-  color: #fff; }
-
-h2 {
-  text-align: center;
-  margin: 0 auto; }
-
-p {
-  padding: 10px;
-  width: 268px;
-  font-size: 1em;
-  font-family: rooney-web,sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  color: #999;
-  line-height: 1.3em; }
-
-h2 {
-  text-transform: uppercase;
-  padding: 5px;
-  z-index: 1; }
-
-h3 {
-  text-transform: uppercase;
-  font-size: 1.4em;
-  font-weight: 900;
-  color: #000;
-  margin-top: 10px; }
+input[type=submit] {
+  -webkit-appearance: none; }
 
 img {
   display: block;
@@ -107,261 +73,11 @@ article {
   width: 90%;
   margin: 0 auto; }
 
-/*THE CONTAINER*/
-/*SPEAKER SECTION*/
 #speakers {
   padding-top: 100px; }
 
-h3 .speaker {
-  font-size: 1.5em;
-  background-color: #BF132A;
-  padding: 7px 0 4px 0;
-  display: block;
-  color: #fff;
-  margin: 0 auto 40px auto;
-  border-radius: 0 0 5px 5px;
-  z-index: 1;
-  width: 288px; }
-
-.speakerDescription {
-  background: url("/main/images/bgnoise_dark.jpg");
-  color: #fff; }
-
-.sectionLine {
-  height: 1px;
-  border: none;
-  background-color: #333;
-  margin: 0 auto;
-  padding: 0;
-  width: 864px; }
-
-.subsectionLine {
-  height: 1px;
-  border: none;
-  background-color: #ccc;
-  margin: 0 auto;
-  padding: 0;
-  width: 640px; }
-
-.sectionTitle {
-  margin: -18px auto 30px;
-  font-weight: 900;
-  width: 130px;
-  background: url("/main/images/cream_pattern.png"); }
-
-.subsectionTitle {
-  margin: 0 auto;
-  font-weight: 500;
-  background: url("/main/images/cream_pattern.png");
-  font-size: 1.4em;
-  text-transform: none;
-  color: #534B48;
-  font-family: museo-sans,sans-serif;
-  font-style: normal;
-  font-weight: 900; }
-
-/*SCHEDULE SECTION*/
-#schedule {
-  padding-top: 100px; }
-  #schedule img {
-    width: 100%; }
-  #schedule .schedule-wrap {
-    margin: 0 0 0 20px; }
-  #schedule .sectionTitle {
-    margin-bottom: 50px; }
-  #schedule .schedule-day {
-    width: 268px;
-    float: left;
-    margin: 0 0 50px 20px; }
-    #schedule .schedule-day a {
-      color: #000; }
-  #schedule dt {
-    background: url("/main/images/cream_pattern.png");
-    padding: 10px;
-    text-align: center;
-    margin: -31px auto -20px auto;
-    width: 14%; }
-  #schedule dd {
-    margin: 0;
-    margin-bottom: 20px; }
-    #schedule dd h3 {
-      text-align: center; }
-
-.schedule-details {
-  margin: 20px auto; }
-  .schedule-details h3 {
-    margin: 18px 0 0 0;
-    font-size: 1.3em; }
-  .schedule-details p {
-    font-size: 1.4em;
-    color: #333; }
-
-.morningLine, .afternoonLine, .eveningLine {
-  width: 97%;
-  margin: 0 auto; }
-
-.col-header {
-  display: none; }
-
-#wrapper {
-  margin: 40px auto;
-  width: 290px;
-  font-family: museo-sans,sans-serif;
-  font-style: normal;
-  font-weight: 500; }
-
-.morning {
-  border-right: none; }
-
-.afternoon {
-  border-right: none; }
-
-.evening {
-  border-right: none; }
-
-#designIcon {
-  margin: -20px auto 0 auto;
-  width: 49px;
-  height: 50px;
-  display: block;
-  border-left: 4px solid #F5F4EA;
-  border-right: 4px solid #F5F4EA;
-  background: url("/main/images/design-icon.png") no-repeat; }
-
-#morning {
-  color: #3a9bd9;
-  width: 100%;
-  padding: 0;
-  margin-bottom: 60px; }
-
-#morning abbr {
-  background-color: #3a9bd9;
-  padding: 5px 3px 3px 3px;
-  font-weight: 700;
-  color: #fff;
-  border: 3px solid #F5F4EA; }
-
-#selector {
-  width: 49px;
-  height: 48px; }
-
-#devIcon {
-  margin: -20px auto 0 auto;
-  width: 50px;
-  height: 50px;
-  display: block;
-  border-left: 4px solid #F5F4EA;
-  border-right: 4px solid #F5F4EA;
-  background: url("/main/images/dev-icon.png") no-repeat; }
-
-#afternoon {
-  color: #b74550;
-  width: 100%;
-  padding: 0;
-  margin-bottom: 60px;
-  margin-top: 0; }
-
-#afternoon abbr {
-  background-color: #b74550;
-  padding: 5px 3px 3px 3px;
-  font-weight: 700;
-  color: #fff;
-  border: 3px solid #F5F4EA; }
-
-#visionIcon {
-  margin: -20px auto 0 auto;
-  width: 50px;
-  height: 50px;
-  display: block;
-  border-left: 4px solid #F5F4EA;
-  border-right: 4px solid #F5F4EA;
-  background: url("/main/images/vision-icon.png") no-repeat; }
-
-#evening {
-  color: #45b755;
-  width: 100%;
-  margin-top: 0;
-  padding: 0;
-  margin-bottom: 60px; }
-
-#evening abbr {
-  background-color: #45b755;
-  padding: 5px 3px 3px 3px;
-  font-weight: 700;
-  color: #fff;
-  border: 3px solid #F5F4EA; }
-
-.dtstart {
-  font-weight: 500;
-  font-size: 1em;
-  padding: 0 20px 0 0;
-  margin: 0 auto;
-  width: 50px; }
-
-abbr {
-  display: block;
-  line-height: 15px; }
-
-.time {
-  margin: 20px auto;
-  padding: 0;
-  vertical-align: top;
-  width: 94%;
-  background: url("/main/images/bg_grey_line.png") repeat-x;
-  background-position: center center; }
-
-abbr {
-  border: none; }
-
-th, td {
-  display: block; }
-
-.morningLine, .afternoonLine, .eveningLine {
-  border: none;
-  height: 2px; }
-
-.morningLine {
-  background-color: #3a9bd9; }
-
-.afternoonLine {
-  background-color: #b74550; }
-
-.eveningLine {
-  background-color: #45b755; }
-
-/*WORKSHOPS SECTION*/
 #workshops, #sessions {
   padding-top: 100px; }
-  #workshops .sectionTitle, #sessions .sectionTitle {
-    width: 200px; }
-
-.info {
-  font-size: 1.4em;
-  color: #222;
-  margin: 0 0 0 145px;
-  display: block;
-  width: 640px; }
-
-.workshop-list, .session-list {
-  margin: 0; }
-  .workshop-list a, .session-list a {
-    color: #222; }
-  .workshop-list dt, .session-list dt {
-    margin: 20px auto 0 auto;
-    font-size: 2em;
-    width: 66%;
-    display: block; }
-  .workshop-list dd, .session-list dd {
-    font-size: 1em; }
-  .workshop-list a.register, .session-list a.register {
-    font-weight: 900;
-    margin: 0 0 0 120px; }
-  .workshop-list cite, .session-list cite {
-    margin: 10px auto;
-    width: 73%;
-    display: block; }
-    .workshop-list cite a, .session-list cite a {
-      color: #222; }
 
 /*TICKETS SECTION*/
 #tickets {
@@ -381,16 +97,10 @@ h3 a {
   font-weight: 900;
   font-family: museo-sans,sans-serif; }
 
-h2 {
-  text-align: center; }
-
 a {
   color: #fff;
   text-decoration: none;
   text-transform: uppercase; }
-
-p {
-  color: #999; }
 
 .coming-soon {
   color: #b2a6a1 !important;
@@ -399,59 +109,6 @@ p {
 #topLine {
   display: none;
   clear: left; }
-
-#logoHome {
-  background: url("/main/images/ull_logo_large.png");
-  width: 70px;
-  height: 74px;
-  display: block;
-  text-indent: -9999px;
-  margin: -40px auto 0 auto;
-  visibility: visible; }
-
-#logo {
-  visibility: hidden;
-  display: none; }
-
-h3 .speaker {
-  font-size: .9em;
-  background: transparent;
-  padding: 0;
-  display: block;
-  margin: 10px 0 4px 0;
-  border-radius: none;
-  z-index: 1;
-  text-align: left;
-  letter-spacing: .05em; }
-
-.speakerDescription {
-  border-bottom: 1px solid #333;
-  height: 185px;
-  padding-bottom: 20px; }
-  .speakerDescription a {
-    color: #333;
-    font-weight: bold;
-    text-transform: none; }
-
-article.speaker {
-  width: 288px;
-  float: left;
-  margin: 0 0 50px 10px; }
-  article.speaker:nth-child(1) {
-    margin: 0 0 50px 8px; }
-
-#home {
-  margin: 90px 0 0 0; }
-
-#home .date-range {
-  padding: 0; }
-
-#speakers {
-  margin: 0; }
-
-.speakerDescription {
-  background: transparent;
-  color: #222; }
 
 article p {
   font-family: rooney-web,sans-serif;
@@ -464,53 +121,6 @@ article p {
   padding: 10px 0 10px 0;
   background: transparent; }
 
-@font-face {
-  font-family: "WebSymbolsRegular";
-  src: url("/main/fonts/websymbols-regular-webfont.eot");
-  src: url("/main/fonts/websymbols-regular-webfont.eot?#iefix") format("embedded-opentype"), url("/main/fonts/websymbols-regular-webfont.woff") format("woff"), url("/main/fonts/websymbols-regular-webfont.ttf") format("truetype"), url("/main/fonts/websymbols-regular-webfont.svg#WebSymbolsRegular") format("svg"); }
-
-.symbols {
-  font-family: "WebSymbolsRegular";
-  font-size: 1em;
-  color: #fff; }
-
-.circle {
-  width: 20px;
-  height: 20px;
-  border-radius: 10px;
-  background: #333;
-  margin: 4px 0 0 4px;
-  display: block;
-  float: left; }
-
-.twitter {
-  display: block;
-  padding: 2px 0 0 4px; }
-
-.speakerTwitter {
-  color: #333;
-  font-size: 1.2em;
-  float: left;
-  margin: 3px 0 0 5px; }
-
-img {
-  width: 92%;
-  margin: 0 0 0 0; }
-
-.speakerGroups {
-  margin: 0 0 0 20px; }
-
-#wrapper {
-  margin: 30px auto;
-  width: 70%;
-  font-family: museo-sans,sans-serif;
-  font-style: normal;
-  font-weight: 500; }
-
-#morning {
-  color: #3a9bd9;
-  width: 100%; }
-
 h3 {
   text-transform: uppercase;
   font-size: 1.4em;
@@ -519,198 +129,72 @@ h3 {
   margin-top: 18px;
   font-family: rooney-web,sans-serif; }
 
-.col-header {
-  display: none; }
-
-.morning {
-  border-right: 1px #3a9bd9 solid; }
-
-.afternoon {
-  border-right: 1px #b74550 solid; }
-
-.evening {
-  border-right: 1px #45b755 solid; }
-
-#afternoon {
-  color: #b74550;
-  width: 100%;
-  padding: 26px 0 0 106px;
-  margin-top: 80px; }
-
-#evening {
-  color: #45b755;
-  width: 100%;
-  padding: 26px 0 0 106px;
-  margin-top: 80px; }
-
-.dtstart {
-  font-weight: 500;
-  font-size: 1em;
-  padding: 0 20px 0 0;
-  margin: 0; }
-
-abbr {
-  width: 100px;
-  display: inline-block;
-  height: 15px;
-  line-height: 15px; }
-
-.time {
-  padding: 20px 0 0 0;
-  vertical-align: top; }
-
-.morningLine, .afternoonLine, .eveningLine {
-  border: none;
-  height: 2px;
-  padding: 0;
-  margin: 0; }
-
-.morningLine {
-  background-color: #3a9bd9; }
-
-.afternoonLine {
-  background-color: #b74550; }
-
-.eveningLine {
-  background-color: #45b755; }
-
-#designIcon {
-  background: url("../images/design-icon.png") no-repeat;
-  width: 49px;
-  height: 50px; }
-
-#devIcon {
-  background: url("../images/dev-icon.png") no-repeat;
-  width: 49px;
-  height: 50px; }
-
-#visionIcon {
-  background: url("../images/vision-icon.png") no-repeat;
-  width: 49px;
-  height: 50px; }
-
-.speaker {
-  font-weight: 700;
-  color: #3a9bd9;
-  text-decoration: none;
-  font-family: rooney-web,sans-serif;
-  margin-bottom: 10px; }
-
-#tito-register-form {
-  font-size: 1.5em;
-  width: 70%;
-  color: #222;
-  line-height: 1.5em;
-  font-family: rooney-web,sans-serif;
-  margin: 0 auto; }
-  #tito-register-form .ticket {
-    text-align: left;
-    margin: 20px 0 0 0;
-    border-bottom: 1px solid #DCCBBF;
-    padding-bottom: 10px; }
-    #tito-register-form .ticket dt {
-      display: none; }
-    #tito-register-form .ticket dd {
-      display: inline;
-      font-size: 1em;
-      margin: 0; }
-      #tito-register-form .ticket dd label {
-        margin: 0 0 0 0;
-        width: 200px;
-        display: inline-block; }
-      #tito-register-form .ticket dd.ticket_price {
-        margin: 0 0 0 290px;
-        display: inline-block;
-        width: 110px;
-        text-align: right; }
-      #tito-register-form .ticket dd.ticket_name {
-        width: 200px; }
-  #tito-register-form input.quantity-field {
-    background: white;
-    width: 22px;
-    float: right;
-    margin: -38px 0 0 0;
-    padding: 3px 1px 0 0;
-    height: 20px;
-    text-align: center; }
-  #tito-register-form .buttons {
-    float: right;
-    margin: 20px 0; }
-    #tito-register-form .buttons input {
-      background: #C10A26;
-      border: none;
-      color: #FFFFFF;
-      border-radius: 4px;
-      padding: 6px 10px;
-      font-size: .8em; }
-
-.ticket-info, .additional-info {
-  width: 640px;
-  margin: 0 auto 20px auto;
-  color: #222;
-  font-size: 1.4em; }
-  .ticket-info.demoted, .additional-info.demoted {
-    font-size: 1em; }
-  .ticket-info a, .additional-info a {
-    color: #000;
-    font-weight: bold; }
-
 #additional .sectionTitle {
   width: 200px; }
 
 #benefits, #sponsors {
   padding-top: 100px;
   margin-top: 100px; }
-  #benefits .sectionTitle, #sponsors .sectionTitle {
-    width: 400px; }
   #benefits h3, #sponsors h3 {
     width: 640px;
     margin: 0 auto 0 auto; }
 
-footer {
-  width: 920px;
-  margin: 60px auto 30px auto;
-  font-size: 1em;
-  color: #222;
-  padding: 4px 0 0px 0;
-  border-top: 1px solid #333; }
-  footer p {
-    color: #222;
-    width: 261px; }
-    footer p.brought {
-      float: left;
-      width: 340px; }
-    footer p.questions {
-      float: right;
-      text-align: right;
-      line-height: 1.6em; }
-  footer a {
-    color: #222;
-    font-weight: bold;
-    text-transform: none; }
-
 /*Pasted from Schedule Code*/
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
-  #designIcon {
-    background: url("/main/images/2x-design-icon.png") no-repeat;
-    background-size: 100%; }
+html, body {
+  margin: 0;
+  padding: 0; }
 
-  #devIcon {
-    background: url("/main/images/2x-dev-icon.png") no-repeat;
-    background-size: 100%; }
+body {
+  font-family: museo-sans,sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  background: #fff;
+  background: url("/main/images/cream_pattern.png");
+  margin: 0;
+  font-size: 13px; }
 
-  #visionIcon {
-    background: url("/main/images/2x-vision-icon.png") no-repeat;
-    background-size: 100%; } }
+a {
+  text-decoration: none; }
+
+p {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  font-size: 1em;
+  font-family: rooney-web,sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  color: #333;
+  line-height: 1.3em; }
+
+@media only screen and (max-width: 480px) {
+  p {
+    padding: 10px; } }
+h2 {
+  text-transform: uppercase;
+  padding: 5px;
+  z-index: 1;
+  text-align: center; }
+
+h3 {
+  text-transform: uppercase;
+  font-size: 1.4em;
+  font-weight: 900;
+  color: #000;
+  margin-top: 10px; }
+
 #container {
   width: 920px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  overflow: visible; }
 
 @media only screen and (max-width: 480px) {
   #container {
     width: 100%;
     z-index: 1;
-    margin-top: 40px; } }
+    margin-top: 40px;
+    overflow: hidden; } }
 .main-nav {
   width: 100%;
   position: fixed;
@@ -741,17 +225,18 @@ footer {
       visibility: hidden;
       display: none; }
     .main-nav-list li:nth-child(2) {
-      margin-left: 20px; }
+      margin-left: 46px; }
     .main-nav-list li:nth-child(3) {
-      margin-left: 0px; }
+      margin-left: -2px; }
     .main-nav-list li:nth-child(4) {
-      margin-left: 0px; }
+      margin-left: 4px; }
     .main-nav-list li:nth-child(5) {
-      margin-left: 110px; }
+      margin-left: 96px; }
     .main-nav-list li:nth-child(6) {
-      margin-left: 10px; }
+      margin-left: 19px; }
     .main-nav-list li:nth-child(7) {
-      margin-left: -10px; }
+      margin-left: -7px;
+      width: 77px; }
   .main-nav-list a {
     color: #FFF; }
     .main-nav-list a:hover {
@@ -785,7 +270,9 @@ footer {
       width: 200px;
       float: none; }
       .main-nav-list li:nth-child(1), .main-nav-list li:nth-child(2), .main-nav-list li:nth-child(3), .main-nav-list li:nth-child(4), .main-nav-list li:nth-child(5), .main-nav-list li:nth-child(6), .main-nav-list li:nth-child(7) {
-        margin: 0 auto; } }
+        margin: 0 auto; }
+      .main-nav-list li:nth-child(7) {
+        width: 200px; } }
 .main-nav-home-link {
   background: url("/main/images/ull_logo_large.png");
   width: 70px;
@@ -797,8 +284,8 @@ and (min-width: 480px)
 and (max-width: 920px) {
   .main-nav-home-link {
     position: absolute;
-    top: 10px;
-    left: 400px; } }
+    top: 40px;
+    left: 423px; } }
 .mobile-nav-bar {
   display: none; }
 
@@ -822,48 +309,541 @@ and (max-width: 920px) {
     height: 66px;
     display: block;
     text-indent: -9999px;
-    margin-left: 16px; }
+    margin-left: 10px; }
 
   .main-nav-home-link {
     display: none; } }
 .content-section.home {
-  margin: 90px 0 0 0; }
+  padding: 90px 0 0 0; }
 @media only screen and (max-width: 480px) {
   .content-section.home {
-    margin: 0; } }
+    padding: 0; } }
 
 .home .home-hero {
   width: 846px;
   height: 368px;
   margin: 0 auto;
-  background: url("/main/images/coach-house-cropped_red_varient_s.jpg"); }
+  background: url("/main/images/coach-house-cropped_red_varient_s.jpg") no-repeat; }
 .home p {
   font-size: 1.8em;
-  width: 87%;
+  width: 89%;
   color: #222;
   line-height: 1.5em;
   font-family: rooney-web,sans-serif;
   font-style: normal;
   font-weight: 300;
-  margin: 10px auto 20px auto;
+  margin: 10px auto;
   text-align: center;
   padding-top: 2ex; }
 
 @media only screen and (max-width: 480px) {
-  .home .home-hero {
-    width: 400px;
+  .home {
+    padding: 0; }
+    .home .home-hero {
+      background: url("/main/images/coach-house-cropped_red_varient_s.jpg") 50% 0 no-repeat;
+      width: 100%; }
+    .home p {
+      font-size: 1.3em;
+      width: 95%;
+      color: #fff;
+      line-height: 1.3em;
+      font-family: rooney-web,sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      margin: 10px auto 20px auto;
+      text-align: center;
+      padding-top: 2ex;
+      position: relative; }
+    .home br {
+      display: none; }
+    .home .home-outline {
+      margin: -330px auto 20px; } }
+.ticket-info, .additional-info {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 640px;
+  margin: 10px auto 28px auto;
+  color: #222;
+  font-size: 1.4em;
+  padding: 0; }
+  .ticket-info.demoted, .additional-info.demoted {
+    font-size: 1em; }
+  .ticket-info a, .additional-info a {
+    color: #000;
+    font-weight: bold; }
+
+.paragraph-title {
+  text-transform: uppercase;
+  font-size: 1.4em;
+  font-weight: 700;
+  color: black;
+  margin-top: 14px;
+  font-family: rooney-web,sans-serif; }
+
+@media only screen and (max-width: 480px) {
+  .ticket-info, .additional-info, .body-text {
+    width: 100%;
+    margin: 0 auto 20px auto;
+    color: #222;
+    font-size: 1.2em;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; } }
+@media only screen and (max-width: 480px) {
+  h3 {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0 10px;
+    font-size: .8em; } }
+.section-line {
+  height: 1px;
+  border: none;
+  background-color: #333;
+  margin: 0 auto;
+  padding: 0;
+  width: 864px; }
+
+.section-title {
+  margin: -18px auto 30px;
+  font-weight: 900;
+  width: 130px;
+  background: url("/main/images/cream_pattern.png"); }
+  .section-title.additional {
+    width: 220px; }
+  .section-title.sponsors {
+    width: 310px; }
+
+@media only screen and (max-width: 480px) {
+  .section-line {
+    height: 1px;
+    border: none;
+    background-color: #333;
     margin: 0 auto;
-    background: url("/main/images/coach-house-cropped_red_varient_s-copy.jpg") no-repeat; }
-  .home p {
-    font-size: 1.05em;
-    width: 93%;
-    color: #fff;
-    line-height: 1.3em;
-    font-family: rooney-web,sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    margin: 10px auto 20px auto;
+    padding: 0;
+    width: 94%; }
+
+  .sectionTitle {
+    margin: -18px auto 30px;
+    font-weight: 900;
+    width: 130px;
+    background: url("/main/images/cream_pattern.png");
+    font-size: 1.2em; } }
+.speaker-group {
+  margin: 0 0 0 28px; }
+
+h3 .speaker {
+  font-size: 1.5em;
+  background-color: #BF132A;
+  padding: 7px 0 4px 0;
+  display: block;
+  color: #fff;
+  margin: 0 auto 40px auto;
+  border-radius: 0 0 5px 5px;
+  z-index: 1;
+  width: 288px; }
+
+.speaker-container {
+  width: 268px;
+  float: left;
+  margin: 0 0 50px 31px; }
+  .speaker-container:nth-child(1) {
+    margin: 0 0 50px 0px; }
+  .speaker-container .speaker-name {
+    font-size: 1.4em;
+    padding: 7px 0 4px 0;
+    display: block;
+    color: #333;
+    margin: 0 auto 40px auto;
+    z-index: 1;
+    width: 268px;
+    font-family: museo-sans,sans-serif;
+    display: block;
+    font-weight: 900;
+    margin: 18px 0 10px 0;
+    padding: 0; }
+  .speaker-container .speaker-description {
+    color: #222;
+    height: 220px;
+    border-bottom: 1px solid #333; }
+    .speaker-container .speaker-description a {
+      color: #222;
+      font-weight: bold;
+      text-transform: none; }
+  .speaker-container .speaker-image {
+    width: 100%; }
+
+@media only screen and (max-width: 480px) {
+  .speaker-group {
+    margin: 0 0 0 0; }
+
+  .speaker-container {
+    font-weight: 700;
+    color: #3a9bd9;
+    text-decoration: none;
+    margin-bottom: 10px;
+    width: 100%;
+    float: none;
+    margin: 0 auto; }
+    .speaker-container:nth-child(1) {
+      margin: 0; }
+    .speaker-container .speaker-name {
+      font-size: 1.4em;
+      background: transparent;
+      padding: 0;
+      display: block;
+      margin: 10px 0 6px 10px;
+      text-align: left;
+      letter-spacing: .05em;
+      color: #333333;
+      font-family: museo-sans,sans-serif; }
+    .speaker-container .speaker-image {
+      width: 94%;
+      margin: 0 auto; }
+    .speaker-container .speaker-description {
+      font-family: rooney-web,sans-serif;
+      border-bottom: 1px solid #333;
+      height: 100%;
+      padding: 20px 0;
+      width: 94%;
+      margin: 0 auto 6px auto;
+      color: #222;
+      font-size: 1.2em; }
+      .speaker-container .speaker-description a {
+        color: #333;
+        font-weight: bold;
+        text-transform: none; } }
+.twitter-container {
+  width: 100%;
+  margin: 6px auto 30px; }
+  .twitter-container .twitter {
+    display: block;
+    padding: 1px 0 0 3px; }
+  .twitter-container .speaker-twitter {
+    color: #333;
+    font-size: 1.2em;
+    float: none;
+    margin: 6px 0 0 0;
+    font-family: rooney-web,sans-serif; }
+    .twitter-container .speaker-twitter:before {
+      content: "@"; }
+
+@media only screen and (max-width: 480px) {
+  .twitter-container {
+    width: 94%;
+    margin: 0 auto 30px; }
+    .twitter-container .twitter {
+      display: block;
+      padding: 1px 0 0 3px; }
+    .twitter-container .speaker-twitter {
+      color: #333;
+      font-size: 1.2em;
+      float: none;
+      margin: 3px 0 0 0;
+      font-family: rooney-web,sans-serif; }
+      .twitter-container .speaker-twitter:before {
+        content: "@"; } }
+#schedule {
+  padding-top: 100px; }
+
+.schedule-wrap {
+  margin: 0 0 0 20px; }
+
+.schedule-day {
+  width: 268px;
+  float: left;
+  margin: 0 0 50px 31px; }
+  .schedule-day:first-child {
+    margin: 0 0 50px 8px; }
+  .schedule-day h3 {
+    font-size: 1.3em; }
+  .schedule-day .venue-name {
+    margin: 0;
+    background: #333333;
+    padding: 6px 0;
+    -webkit-border-radius: 0 0 4px 4px;
+    -moz-border-radius: 0 0 4px 4px;
+    border-radius: 0 0 4px 4px;
     text-align: center;
-    padding-top: 2ex; }
-  .home .home-outline {
-    margin: -330px auto 20px auto; } }
+    font-size: 1.2em; }
+    .schedule-day .venue-name a, .schedule-day .venue-name a:link, .schedule-day .venue-name a:visited {
+      color: #F5F3EA;
+      font-family: rooney-web,sans-serif;
+      font-weight: 500; }
+  .schedule-day .subsection-line {
+    height: 1px;
+    border: none;
+    background-color: #ccc;
+    margin: 0 auto;
+    padding: 0;
+    width: 640px; }
+  .schedule-day .subsection-title {
+    margin: 0 auto 10px;
+    font-weight: 500;
+    background: url("/main/images/cream_pattern.png");
+    font-size: 1.4em;
+    text-transform: uppercase;
+    color: #000;
+    font-family: museo-sans,sans-serif;
+    font-style: normal;
+    font-weight: 900; }
+    .schedule-day .subsection-title sup {
+      text-transform: lowercase; }
+  .schedule-day img {
+    width: 100%; }
+  .schedule-day a {
+    color: #000; }
+
+.schedule-details {
+  margin: 0 auto 20px; }
+  .schedule-details dt {
+    background: url("/main/images/cream_pattern.png");
+    padding: 10px;
+    text-align: center;
+    margin: -20px auto -20px auto;
+    width: 14%; }
+  .schedule-details dd {
+    margin: 0;
+    margin-bottom: 20px; }
+    .schedule-details dd h3 {
+      margin: 18px 0 0 0;
+      font-size: 1.3em;
+      text-align: center;
+      font-weight: 900; }
+    .schedule-details dd p {
+      font-size: 1.4em;
+      color: #333; }
+  .schedule-details dl hr {
+    height: 1px;
+    border: none;
+    background-color: #ccc;
+    margin: 0 auto;
+    padding: 0; }
+
+@media only screen and (max-width: 480px) {
+  .schedule-wrap {
+    margin: 0; }
+
+  .schedule-day {
+    width: 100%;
+    float: none;
+    margin: 0 auto 50px;
+    display: block; }
+    .schedule-day:first-child {
+      margin: 0 auto 50px; }
+    .schedule-day h3 {
+      font-size: 1.3em; }
+    .schedule-day .venue-name {
+      margin: 0;
+      background: #333333;
+      padding: 6px 0;
+      -webkit-border-radius: 0 0 4px 4px;
+      -moz-border-radius: 0 0 4px 4px;
+      border-radius: 0 0 4px 4px;
+      text-align: center;
+      font-size: 1.2em; }
+      .schedule-day .venue-name a, .schedule-day .venue-name a:link, .schedule-day .venue-name a:visited {
+        color: #F5F3EA;
+        font-family: rooney-web,sans-serif;
+        font-weight: 500; }
+    .schedule-day .subsection-line {
+      height: 1px;
+      border: none;
+      background-color: #ccc;
+      margin: 0 auto;
+      padding: 0;
+      width: 640px; }
+    .schedule-day .subsection-title {
+      margin: 0 auto 10px;
+      font-weight: 500;
+      background: url("/main/images/cream_pattern.png");
+      font-size: 1.4em;
+      text-transform: uppercase;
+      color: #000;
+      font-family: museo-sans,sans-serif;
+      font-style: normal;
+      font-weight: 900; }
+      .schedule-day .subsection-title sup {
+        text-transform: lowercase; }
+    .schedule-day img {
+      width: 100%; }
+    .schedule-day a {
+      color: #000; }
+
+  .schedule-details {
+    margin: 0 auto 20px;
+    padding: 10px; }
+    .schedule-details dt {
+      background: url("/main/images/cream_pattern.png");
+      padding: 10px;
+      text-align: center;
+      margin: -20px auto -20px auto;
+      width: 14%; }
+    .schedule-details dd {
+      margin: 0;
+      margin-bottom: 20px; }
+      .schedule-details dd h3 {
+        margin: 18px 0 0 0;
+        font-size: 1.3em;
+        text-align: center;
+        font-weight: 900; }
+      .schedule-details dd p {
+        font-size: 1.4em;
+        color: #333; }
+    .schedule-details dl hr {
+      height: 1px;
+      border: none;
+      background-color: #ccc;
+      margin: 0 auto;
+      padding: 0; } }
+.workshop-list, .session-list {
+  margin: 0; }
+  .workshop-list a, .session-list a {
+    color: #222; }
+  .workshop-list dt, .session-list dt {
+    padding: 0;
+    margin: 20px auto 0 auto;
+    width: 640px;
+    display: block; }
+  .workshop-list dd, .session-list dd {
+    font-size: 1em;
+    width: 640px;
+    margin: 0 auto; }
+  .workshop-list .register, .session-list .register {
+    font-weight: 900;
+    margin: 0 0 0 120px; }
+  .workshop-list cite, .session-list cite {
+    margin: 5px auto 10px;
+    display: block; }
+    .workshop-list cite a, .session-list cite a {
+      color: #222; }
+
+@media only screen and (max-width: 480px) {
+  .workshop-list dt, .workshop-list cite, .session-list dt, .session-list cite {
+    width: 100%;
+    padding: 0 10px; }
+  .workshop-list dd, .session-list dd {
+    width: 100%; }
+  .workshop-list .register, .session-list .register {
+    margin: 0; } }
+#tito-register-form {
+  font-size: 1.5em;
+  width: 70%;
+  color: #222;
+  line-height: 1.5em;
+  font-family: rooney-web,sans-serif;
+  margin: 0 auto; }
+  #tito-register-form .ticket {
+    text-align: left;
+    margin: 20px 0 0 0;
+    border-bottom: 1px solid #DCCBBF;
+    padding-bottom: 10px; }
+    #tito-register-form .ticket dt {
+      display: none; }
+    #tito-register-form .ticket dd {
+      display: inline;
+      font-size: 1em;
+      margin: 0; }
+      #tito-register-form .ticket dd label {
+        margin: 0 0 0 0;
+        width: 280px;
+        display: inline-block; }
+      #tito-register-form .ticket dd.ticket_price {
+        margin: 0 0 0 208px;
+        display: inline-block;
+        width: 110px;
+        text-align: right;
+        float: none; }
+      #tito-register-form .ticket dd.ticket_name {
+        width: 200px; }
+  #tito-register-form input.quantity-field {
+    background: white;
+    width: 22px;
+    float: right;
+    margin: -38px 0 0 0;
+    padding: 3px 1px 0 0;
+    height: 20px;
+    text-align: center;
+    -webkit-appearance: none; }
+  #tito-register-form .buttons {
+    float: right;
+    margin: 20px 0;
+    border: none;
+    padding: 0; }
+    #tito-register-form .buttons input {
+      background: #C10A26;
+      border: none;
+      color: #FFFFFF;
+      border-radius: 4px;
+      padding: 6px 10px;
+      font-size: .8em;
+      margin: 0; }
+
+@media only screen and (max-width: 480px) {
+  #tito-register-form {
+    width: 94%; }
+    #tito-register-form .ticket dd label {
+      width: 210px; }
+    #tito-register-form .ticket dd.ticket_price {
+      margin: 0 35px 0 0;
+      width: 50px;
+      float: right;
+      font-size: 0.8em; }
+    #tito-register-form .ticket dd.ticket_name {
+      font-size: 0.8em; } }
+footer {
+  width: 920px;
+  margin: 60px auto 30px auto;
+  font-size: 1em;
+  color: #222;
+  padding: 4px 0 0px 0;
+  border-top: 1px solid #999; }
+  footer p {
+    color: #222;
+    width: 261px; }
+    footer p.brought {
+      float: left;
+      width: 340px; }
+    footer p.questions {
+      float: right;
+      text-align: right;
+      line-height: 1.6em; }
+  footer a {
+    color: #222;
+    font-weight: bold;
+    text-transform: none; }
+
+@media only screen and (max-width: 480px) {
+  .info {
+    font-size: 1.4em;
+    color: #222;
+    margin: 0;
+    display: block;
+    width: 100%; } }
+@media only screen and (max-width: 480px) {
+  #benefits h3, #sponsors h3 {
+    width: 100%; } }
+@media only screen and (max-width: 480px) {
+  footer {
+    width: 94%;
+    margin: 60px auto 30px auto;
+    font-size: 1.2em;
+    color: #222;
+    padding: 4px 0 0px 0;
+    border-top: 1px solid #333; }
+    footer p {
+      color: #222;
+      width: 100%; }
+      footer p.brought {
+        float: none;
+        width: 100%; }
+      footer p.questions {
+        float: none;
+        text-align: left;
+        line-height: 1.6em; }
+    footer a {
+      color: #222;
+      font-weight: bold;
+      text-transform: none; } }
