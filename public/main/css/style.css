@@ -276,7 +276,7 @@ h3 {
   background: url("/main/images/ull_logo_large.png");
   width: 70px;
   height: 74px;
-  margin: -40px auto 0 auto; }
+  margin: -41px auto 0 auto; }
 
 @media only screen
 and (min-width: 480px)
@@ -749,15 +749,15 @@ h3 .speaker {
         margin: 0 0 0 0;
         width: 280px;
         display: inline-block; }
-      #tito-register-form .ticket dd.ticket_price {
+      #tito-register-form .ticket dd.ticket-price {
         margin: 0 0 0 208px;
         display: inline-block;
         width: 110px;
         text-align: right;
         float: none; }
-      #tito-register-form .ticket dd.ticket_name {
+      #tito-register-form .ticket dd.ticket-name {
         width: 200px; }
-  #tito-register-form input.quantity-field {
+  #tito-register-form input.text-field {
     background: white;
     width: 22px;
     float: right;
@@ -785,12 +785,12 @@ h3 .speaker {
     width: 94%; }
     #tito-register-form .ticket dd label {
       width: 210px; }
-    #tito-register-form .ticket dd.ticket_price {
+    #tito-register-form .ticket dd.ticket-price {
       margin: 0 35px 0 0;
       width: 50px;
       float: right;
       font-size: 0.8em; }
-    #tito-register-form .ticket dd.ticket_name {
+    #tito-register-form .ticket dd.ticket-name {
       font-size: 0.8em; } }
 footer {
   width: 920px;

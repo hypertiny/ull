@@ -386,7 +386,7 @@ h3 {
   background: url("/main/images/ull_logo_large.png");
   width: 70px;
   height: 74px;
-  margin: -40px auto 0 auto;
+  margin: -41px auto 0 auto;
 }
 
 // Fixes small bug that made the logo move as the browser was resized below 920 px until the mobile media query kicks in
@@ -996,20 +996,20 @@ h3 .speaker {
         width: 280px;
         display: inline-block;
       }
-      &.ticket_price {
+      &.ticket-price {
         margin: 0 0 0 208px;
         display: inline-block;
         width: 110px;
         text-align: right;
         float: none;
       }
-      &.ticket_name {
+      &.ticket-name {
         width: 200px;
       }
     }
   }
   input { 
-    &.quantity-field {
+    &.text-field {
       background: white;
       width: 22px;
       float: right;
@@ -1045,13 +1045,13 @@ h3 .speaker {
         label {
           width: 210px;
         }
-        &.ticket_price {
+        &.ticket-price {
           margin: 0 35px 0 0;
           width: 50px;
           float: right;
           font-size: 0.8em;
         }
-        &.ticket_name {
+        &.ticket-name {
           font-size: 0.8em;
         }
       } 
