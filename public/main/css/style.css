@@ -61,24 +61,78 @@ img {
   margin: 0 auto;
   box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
   z-index: 5; }
-  img.logo {
+
+.bronze-logos {
+  position: absolute;
+  width: 920px;
+  height: 240px; }
+  .bronze-logos .bronze {
+    position: relative;
+    display: inline-block; }
+    .bronze-logos .bronze img {
+      box-shadow: none !important;
+      -moz-box-shadow: none !important;
+      -webkit-box-shadow: none !important; }
+  .bronze-logos .barebones {
+    left: 110px; }
+  .bronze-logos .github {
+    left: 188px;
+    top: 8px; }
+    .bronze-logos .github img {
+      width: 120px; }
+  .bronze-logos .ndrc {
+    left: 270px;
+    top: 10px; }
+    .bronze-logos .ndrc img {
+      width: 140px; }
+  .bronze-logos .realex {
+    left: 0;
+    top: 100px; }
+    .bronze-logos .realex img {
+      width: 210px; }
+  .bronze-logos .failte {
+    left: 184px;
+    top: 50px; }
+    .bronze-logos .failte img {
+      width: 240px; }
+
+@media only screen and (max-width: 480px) {
+  .sponsor-type {
+    margin-top: 50px; }
+
+  .bronze-logos {
+    position: static;
+    width: 100%;
+    height: auto; }
+    .bronze-logos .bronze {
+      position: static;
+      display: block;
+      margin: 26px auto; }
+      .bronze-logos .bronze img {
+        box-shadow: none !important;
+        -moz-box-shadow: none !important;
+        -webkit-box-shadow: none !important; }
+    .bronze-logos .barebones {
+      left: 110px; }
+    .bronze-logos .github img {
+      width: 120px; }
+    .bronze-logos .ndrc img {
+      width: 140px; }
+    .bronze-logos .realex img {
+      width: 210px; }
+    .bronze-logos .failte img {
+      width: 240px; } }
+.logo {
+  display: block;
+  margin: 0 auto; }
+  .logo img {
     box-shadow: none !important;
     -moz-box-shadow: none !important;
-    -webkit-box-shadow: none !important;
-    display: block;
-    margin: 0 auto; }
-    img.logo.ei {
-      width: 220px; }
-    img.logo.engineyard {
-      width: 150px; }
-    img.logo.bronze {
-      display: inline; }
-    img.logo.github {
-      height: 50px; }
-    img.logo.realex {
-      border: 1px solid grey; }
-    img.logo.failte {
-      border: 1px solid grey; }
+    -webkit-box-shadow: none !important; }
+  .logo.ei img {
+    width: 220px; }
+  .logo.engineyard img {
+    width: 120px; }
 
 article {
   width: 90%;
@@ -382,6 +436,11 @@ and (max-width: 920px) {
   .ticket-info a, .additional-info a {
     color: #000;
     font-weight: bold; }
+  .ticket-info.push, .additional-info.push {
+    margin-top: 310px; }
+    @media only screen and (max-width: 480px) {
+      .ticket-info.push, .additional-info.push {
+        margin-top: 80px; } }
 
 .paragraph-title {
   text-transform: uppercase;
