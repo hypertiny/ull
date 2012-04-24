@@ -9,7 +9,106 @@
     <link rel="stylesheet" href="/main/css/style.css">
     <link rel="shortcut icon" href="/main/images/ull_favicon.png">
     <link rel="icon" href="/main/images/ull_favicon.png">
-    <link href="style.css" media="screen" rel="stylesheet" type="text/css" />    
+    <link href="style.css" media="screen" rel="stylesheet" type="text/css" /> 
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="underscore-min.js"></script>
+    <script type="text/javascript" src="mustache.js"></script>
+    <script type="text/javascript" src="http://stevenlevithan.com/assets/misc/date.format.js"></script>
+    <script type="text/javascript">
+      var Schedule, now, date, time, on_now, on_next;
+      var Schedule = {
+        "2012-04-24": {
+          "1230-1630": {
+            time: "12:30",
+            session: "Josh Clark Workshop",
+            venue: "Morrison Hotel Printworks 1",
+            url: "foursquare://morrison"
+          },
+          "1400-1600": {
+            time: "2pm",
+            session: "Horace Dediu Workshop",
+            venue: "Morrison Hotel Printworks 2",
+            url: "foursquare://morrison"
+          },
+          "1900-1930": {
+            time: "7pm",
+            session: "Meet at Sugar Club",
+            venue: "The Sugar Club",
+            url: "foursquare://sugarclub"
+          },
+          "1930-1945": {
+            time: "7:30pm",
+            session: "Opening Remarks",
+            venue: "The Sugar Club",
+            url: "foursquare://sugarclub"
+          },
+          "1945-2045": {
+            time: "7:45pm",
+            session: "Horace Dediu Keynote",
+            venue: "The Sugar Club",
+            url: "foursquare://sugarclub"
+          },
+          "1950-2100": {
+            time: "7:50pm",
+            session: "Andy Delcambre (Engine Yard)",
+            venue: "The Sugar Club",
+            url: "foursquare://sugarclub"
+          },
+          "2105-2155": {
+            time: "9:05pm",
+            session: "Aral Balkan Keynote",
+            venue: "The Sugar Club",
+            url: "foursquare://sugarclub"
+          },
+          "2200-2300": {
+            time: "10pm",
+            session: "The Original Rude Boys",
+            venue: "The Sugar Club",
+            url: "foursquare://sugarclub"
+          }
+        }
+      }
+
+      now = new Date()
+      date = now.format('yyyy-mm-dd')
+      time = now.format('HHMM')
+
+      on_now = _.select(Schedule[date], function(value, key){
+        var start_end, start, end;
+        start_end = key.split('-');
+        start = start_end[0];
+        end = start_end[1];
+
+        if(parseInt(start) <= parseInt(time) && parseInt(end) >= parseInt(time))
+        {
+          return value;
+        }
+      })
+      on_next = _.select(Schedule[date], function(value, key){
+        var start_end, start, end;
+        start_end = key.split('-');
+        start = start_end[0];
+        end = start_end[1];
+
+        if(parseInt(start) > parseInt(time))
+        {
+          return value;
+        }
+      })[0];
+
+      jQuery(function(){
+        for(i=0; i<on_now.length;i++)
+        {
+          this_entry = on_now[i];
+          $('#now').html(
+            Mustache.render($('#now-template').html(), this_entry)
+          )
+        }
+        $('#next').html(
+          Mustache.render($('#next-template').html(), on_next)
+        )
+      })
+    </script>
   </head>
   <body>
     <nav>
@@ -21,22 +120,34 @@
     
     <div class="now-next">
       <p>Click the the now or next item below to be brought to the foursquare page or visit the google maps URL at the bottom</p>
+
+      <div id="now">
+        
+      </div>
+
+      <div id="next">
+        
+      </div><!-- #next -->
       
-      <a href="foursquare://venues/4ade0f13f964a5200e7121e3" class="main-container now clearfix">
+      <script type="text/html" id="now-template">
+        <a href="{{url}}" class="main-container now clearfix">
         <h3 class="title">Now</h3>
         <span class="name-place now">
-          <h4>Josh Clarke</h4>
-          <span>Dublin Castle Coach House</span>
+          <h4>{{session}}</h4>
+          <span>{{venue}}</span>
         </span>
       </a>
+      </script>
       
-      <a href="foursquare://venues/4ade0f13f964a5200e7121e3" class="main-container clearfix">
-        <h3 class="title">10:10</h3>
+      <script type="text/html" id="next-template">
+        <a href="{{url}}" class="main-container clearfix">
+        <h3 class="title">{{time}}</h3>
         <span class="name-place">
-          <h4>Michael Lopp</h4>
-          <span>Dublin Castle Coach House</span>
+          <h4>{{session}}</h4>
+          <span>{{venue}}</span>
         </span>
       </a>
+      </script>
       
     </div>
     
