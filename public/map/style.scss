@@ -33,36 +33,31 @@ html, body {
   font-size: 13px;
 }
 
+
+
 nav {
   height: 40px;
   background: #37312E;
   display: block;
   margin-bottom: 60px;
-  img {
+  .ull-logo {
+    display: block;
     margin: 0 0 0 20px;
     width: 62px;
+    height: 63px;
+    background: url(ull-logo.png) no-repeat;
+    background-size: 100%;
   }
 }
 
-.maps {
-  margin: 20px 0 0 0;
-  a {
-    text-decoration: none;
-    color: #333;
-    display: block;
-    text-align: center;
-    width: 90%;
-    background: #A0423F;
-    margin: 20px auto;
-    height: 40px;
-    @include box-sizing;
-    @include border-radius(2px);
-    color: #F7F5EF;
-    text-transform: uppercase;
-    padding-top: 10px;
-    font-weight: 900;
-  }
+p {
+  width: 86%;
+  margin: 10px auto 30px;
+  font-size: 1.2em;
+  
 }
+
+
 
 .section-line {
   height: 1px;
@@ -77,7 +72,7 @@ nav {
   margin: -12px auto 30px;
   font-weight: 900;
   width: 130px;
-  background: url("cream_pattern.png");
+  background: #F7F5EF;
   text-align: center;
   @include museo;
   text-transform: uppercase;
@@ -91,12 +86,6 @@ nav {
     text-align: center;
     text-transform: uppercase;
   }
-  p {
-    width: 86%;
-    margin: 10px auto 30px;
-    font-size: 1.2em;
-    
-  }
 }
 
 .main-container {
@@ -106,10 +95,18 @@ nav {
   display: block;
   @include box-sizing;
   padding: 15px 0px 15px 20px;
-  height: 80px;
+  min-height: 74px;
   color: #333;
   text-decoration: none;
   @include border-radius(2px);
+  .name-place {
+    display: block;
+    border-left: 1px solid #333;
+    margin: 0 0 0 56px;
+    &.now {
+      border-left: 1px solid #fff;
+    }
+  }
   &.now {
     background: rgb(160,66,63);
     color: #F7F5EF;
@@ -127,24 +124,78 @@ nav {
   }
   h4 {
     margin: 3px 0 0 0;
-    font-size: 2em;
+    font-size: 1.6em;
   }
   span {
-    font-size: 1.2em;
+    font-size: 1.1em;
   }
   .title {
-    margin: 3px 20px 10px 0px;
-    border-right: 1px solid #333;
+    margin: 10px 20px 10px 0px;
     padding: 14px 16px 10px 0;
-    height: 50px;
+    height: 60px;
     @include box-sizing;
     float: left;
     width: 57px;
-    &.now {
-      border-right: 1px solid #fff;
-    }
   }
 }
+
+.event-map {
+  display: block;
+  width: 90%;
+  text-decoration: none;
+  color: #333;
+  margin: 0 auto;
+  text-align: center;
+  text-transform: uppercase;
+  background: rgb(160,66,63);
+  color: #F7F5EF;
+  padding: 10px 0;
+  font-weight: bold;
+  @include border-radius(2px);
+  font-size: 1.2em;
+}
+
+.maps {
+  margin: 20px auto;
+  padding: 0;
+  width: 90%;
+  li {
+    list-style-type: none;
+    display: block;
+    min-height: 30px;
+    background: rgba(0,0,0,0.1);
+    margin: 10px auto;
+    @include box-sizing;
+    padding: 11px 0px 11px 10px;
+    min-height: 52px;
+    color: #333;
+    text-decoration: none;
+  }
+  h3 {
+    font-size: 1.4em;
+    float: left;
+    width: 200px;
+    margin: 0;
+  }
+  a {
+    width: 32px;
+    background: #A0423F;
+    height: 32px;
+    float: right;
+    margin: 0 6px 0 0;
+
+  }
+  .foursquare {
+    background: url(foursquare.png) no-repeat center;
+    background-size: 100%;
+   
+  }
+  .gmaps {
+    background: url(gmaps.png) no-repeat center;
+    background-size: 100%;
+  }
+}
+
 
 .clearfix:before, .clearfix:after { content: ""; display: table; }
 .clearfix:after { clear: both; }

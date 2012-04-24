@@ -13,7 +13,7 @@
   </head>
   <body>
     <nav>
-      <img src="ull_logo_large.png" alt="Úll logo" />
+      <span class="ull-logo"></span>
     </nav>
     
     <hr class="section-line" />
@@ -23,15 +23,19 @@
       <p>Click the the now or next item below to be brought to the foursquare page or visit the google maps URL at the bottom</p>
       
       <a href="foursquare://venues/4ade0f13f964a5200e7121e3" class="main-container now clearfix">
-        <h3 class="title now">Now</h3>
-        <h4>Josh Clarke</h4>
-        <span>Dublin Castle Coach House</span>
+        <h3 class="title">Now</h3>
+        <span class="name-place now">
+          <h4>Josh Clarke</h4>
+          <span>Dublin Castle Coach House</span>
+        </span>
       </a>
       
       <a href="foursquare://venues/4ade0f13f964a5200e7121e3" class="main-container clearfix">
         <h3 class="title">10:10</h3>
-        <h4>Michael Lopp</h4>
-        <span>Dublin Castle Coach House</span>
+        <span class="name-place">
+          <h4>Michael Lopp</h4>
+          <span>Dublin Castle Coach House</span>
+        </span>
       </a>
       
     </div>
@@ -39,28 +43,42 @@
     <hr class="section-line" />
     <h2 class="section-title">Venue List</h2>
     
-    <div class="maps">
-          <a href="http://maps.google.com/maps/ms?msid=211915329798909181589.0004be5a4e737bef5b384&msa=0&ll=53.341431,-6.273623&spn=0.025725,0.077162&z=13
-          ">Google Map</a>
-          <a href="foursquare://venues/4ade0efff964a520b47021e3" class="foursquare">Sugar Club</a>
-          <a href="foursquare://venues/4ade0f13f964a5200e7121e3" class="foursquare">Dublin Castle</a>   
-          <a href="foursquare://venues/4b044c50f964a5200b5322e3" class="foursquare">Bull & Castle</a> 
-          <a href="foursquare://venues/4ade0f54f964a520fd7121e3" class="foursquare">Royal Hospital Kilmainham</a>
-          <a href="foursquare://venues/4b546f7bf964a52032bb27e3" class="foursquare">Odessa Club</a>
-    </div>
+    
+    <p>Either follow the main link to a full google map of all the conference venues or choose from foursquare or google maps for individual venues</p>
+        <a href="http://maps.google.com/maps/ms?msid=211915329798909181589.0004be5a4e737bef5b384&msa=0&ll=53.341431,-6.273623&spn=0.025725,0.077162&z=13
+        " class="event-map">Full Conference Map</a>
+    <ul class="maps">
+          <li>
+            <h3>Sugar Club</h3>
+            <a href="foursquare://venues/4ade0efff964a520b47021e3" class="foursquare ir"></a>
+          </li>
+          
+          <li>
+            <h3>Dublin Castle</h3>
+            <a href="foursquare://venues/4ade0f13f964a5200e7121e3" class="foursquare ir"></a>
+          </li>   
+          
+          <li>
+            <h3>Bull & Castle</h3>
+            <a href="foursquare://venues/4b044c50f964a5200b5322e3" class="foursquare ir"></a>
+          </li>
+          
+          <li class="clearfix">
+            <h3>Royal Hospital Kilmainham</h3>  
+            <a href="foursquare://venues/4ade0f54f964a520fd7121e3" class="foursquare ir"></a>
+            <a href="http://maps.google.ie/maps/place?q=Royal+hospital+kilmainham&hl=en&cid=2175169287680674088" class="gmaps ir"></a>
+          </li>
+          
+          <li>
+            <h3>Odessa Club</h3>
+            <a href="foursquare://venues/4b546f7bf964a52032bb27e3" class="foursquare ir"></a>
+          </li>
+    </ul>
     
     <a href="#" class="main-container clearfix full">
       <h4>Load Full Schedule</h4>
     </a>
     
-    <a href="http://maps.google.ie/maps/ms?msid=211915329798909181589.0004be5a4e737bef5b384&msa=0" class="main-container clearfix full">
-      <h4>Google Event Map</h4>
-    </a>
-    
-
-    
-
-        
   </body>
 </html>
 
