@@ -69,45 +69,50 @@
         }
       }
 
-      now = new Date()
-      date = now.format('yyyy-mm-dd')
-      time = now.format('HHMM')
+      load_schedule = function(){
+        now = new Date()
+        date = now.format('yyyy-mm-dd')
+        time = now.format('HHMM')
 
-      on_now = _.select(Schedule[date], function(value, key){
-        var start_end, start, end;
-        start_end = key.split('-');
-        start = start_end[0];
-        end = start_end[1];
+        on_now = _.select(Schedule[date], function(value, key){
+          var start_end, start, end;
+          start_end = key.split('-');
+          start = start_end[0];
+          end = start_end[1];
 
-        if(parseInt(start) <= parseInt(time) && parseInt(end) >= parseInt(time))
-        {
-          return value;
-        }
-      })
-      on_next = _.select(Schedule[date], function(value, key){
-        var start_end, start, end;
-        start_end = key.split('-');
-        start = start_end[0];
-        end = start_end[1];
+          if(parseInt(start) <= parseInt(time) && parseInt(end) >= parseInt(time))
+          {
+            return value;
+          }
+        })
+        on_next = _.select(Schedule[date], function(value, key){
+          var start_end, start, end;
+          start_end = key.split('-');
+          start = start_end[0];
+          end = start_end[1];
 
-        if(parseInt(start) > parseInt(time))
-        {
-          return value;
-        }
-      })[0];
+          if(parseInt(start) > parseInt(time))
+          {
+            return value;
+          }
+        })[0];
 
-      jQuery(function(){
-        for(i=0; i<on_now.length;i++)
-        {
-          this_entry = on_now[i];
-          $('#now').html(
-            Mustache.render($('#now-template').html(), this_entry)
+        jQuery(function(){
+          for(i=0; i<on_now.length;i++)
+          {
+            this_entry = on_now[i];
+            $('#now').html(
+              Mustache.render($('#now-template').html(), this_entry)
+            )
+          }
+          $('#next').html(
+            Mustache.render($('#next-template').html(), on_next)
           )
-        }
-        $('#next').html(
-          Mustache.render($('#next-template').html(), on_next)
-        )
-      })
+        })
+      }
+
+      setInterval(load_schedule, 10000)
+      load_schedule();
     </script>
   </head>
   <body>
