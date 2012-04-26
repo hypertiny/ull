@@ -19,6 +19,7 @@
       var Schedule = {
         "2012-04-25": {
           "1230-1630": {
+            itemid:"josh-clark-workshop",
             time: "12:30",
             session: "Josh Clark Workshop",
             venue: "Morrison Hotel Printworks 1",
@@ -165,6 +166,7 @@
             url: "foursquare://coachhouse"
           },
           "1830-1845": {
+            itemid: "meet-dublin-castle",
             time: "6:30pm",
             session: "Meet at Dublin Castle Coach House",
             venue: "Dublin Castle Coach House",
@@ -212,6 +214,7 @@
       }
 
       load_schedule = function(){
+        $('a.now').removeClass('now')
         now = new Date()
         date = now.format('yyyy-mm-dd')
         time = now.format('HHMM')
@@ -243,6 +246,7 @@
           for(i=0; i<on_now.length;i++)
           {
             this_entry = on_now[i];
+            $('a[data-itemid=' + this_entry.itemid + ']').addClass('now')
             $('#now').html(
               Mustache.render($('#now-template').html(), this_entry)
             )
@@ -252,6 +256,18 @@
           )
         })
       }
+
+      jQuery(function(){
+        for(day in Schedule)
+          {
+            $('#schedule').append('<h3>' + day + '</h3>')
+            for(session in Schedule[day])
+            {
+              item = Mustache.render($('#next-template').html(), Schedule[day][session])
+              $('#schedule').append(item)
+            }
+          }
+      })
 
       setInterval(load_schedule, 10000)
       load_schedule();
@@ -263,7 +279,7 @@
     </nav>
     
     <hr class="section-line" />
-    <h2 class="section-title">Schedule</h2>
+    <h2 class="section-title">Now and Next</h2>
     
     <div class="now-next">
       <p>Click the now or next item below to be brought to the foursquare page or visit the google maps URL at the bottom</p>
@@ -277,23 +293,23 @@
       </div><!-- #next -->
       
       <script type="text/html" id="now-template">
-        <a href="{{url}}" class="main-container now clearfix">
-        <h3 class="title">Now</h3>
-        <span class="name-place now">
-          <h4>{{session}}</h4>
-          <span>{{venue}}</span>
-        </span>
-      </a>
+        <a data-itemid="{{itemid}}" href="{{url}}" class="main-container now clearfix">
+          <h3 class="title">Now</h3>
+          <span class="name-place now">
+            <h4>{{session}}</h4>
+            <span>{{venue}}</span>
+          </span>
+        </a>
       </script>
       
       <script type="text/html" id="next-template">
-        <a href="{{url}}" class="main-container clearfix">
-        <h3 class="title">{{time}}</h3>
-        <span class="name-place">
-          <h4>{{session}}</h4>
-          <span>{{venue}}</span>
-        </span>
-      </a>
+        <a data-itemid="{{itemid}}" href="{{url}}" class="main-container clearfix">
+          <h3 class="title">{{time}}</h3>
+          <span class="name-place">
+            <h4>{{session}}</h4>
+            <span>{{venue}}</span>
+          </span>
+        </a>
       </script>
       
     </div>
@@ -306,41 +322,48 @@
         <a href="http://maps.google.com/maps/ms?msid=211915329798909181589.0004be5a4e737bef5b384&msa=0&ll=53.341431,-6.273623&spn=0.025725,0.077162&z=13
         " class="event-map">Full Conference Map</a>
     <ul class="maps">
-          <li>
-            <h3>Sugar Club</h3>
-            <a href="foursquare://venues/4ade0efff964a520b47021e3" class="foursquare ir"></a>
-            <a href="http://maps.google.ie/maps/place?q=Sugar+Club+The,+Dublin&hl=en&cid=5801039572395036313" class="gmaps ir"></a>
-          </li>
-          
-          <li>
-            <h3>Dublin Castle</h3>
-            <a href="foursquare://venues/4ade0f13f964a5200e7121e3" class="foursquare ir"></a>
-            <a href="http://maps.google.ie/maps/place?q=dublin+castle+coach+house&hl=en&cid=9176952078316433631" class="gmaps ir"></a>
-            
-          </li>   
-          
-          <li>
-            <h3>Bull & Castle</h3>
-            <a href="foursquare://venues/4b044c50f964a5200b5322e3" class="foursquare ir"></a>
-                        <a href="http://maps.google.ie/maps/place?q=The+Bull+and+Castle,+Christchurch+Place,+Dublin+City&hl=en&cid=14063642654953512532" class="gmaps ir"></a>
-          </li>
-          
-          <li class="clearfix">
-            <h3>Royal Hospital Kilmainham</h3>  
-            <a href="foursquare://venues/4ade0f54f964a520fd7121e3" class="foursquare ir"></a>
-            <a href="http://maps.google.ie/maps/place?q=Royal+hospital+kilmainham&hl=en&cid=2175169287680674088" class="gmaps ir"></a>
-          </li>
-          
-          <li>
-            <h3>Odessa Club</h3>
-            <a href="foursquare://venues/4b546f7bf964a52032bb27e3" class="foursquare ir"></a>
-              <a href="http://maps.google.ie/maps/place?q=odessa+club&hl=en&cid=3037910267582132949" class="gmaps ir"></a>
-          </li>
+      <li>
+        <h3>Sugar Club</h3>
+        <a href="foursquare://venues/4ade0efff964a520b47021e3" class="foursquare ir"></a>
+        <a href="http://maps.google.ie/maps/place?q=Sugar+Club+The,+Dublin&hl=en&cid=5801039572395036313" class="gmaps ir"></a>
+      </li>
+      
+      <li>
+        <h3>Dublin Castle</h3>
+        <a href="foursquare://venues/4ade0f13f964a5200e7121e3" class="foursquare ir"></a>
+        <a href="http://maps.google.ie/maps/place?q=dublin+castle+coach+house&hl=en&cid=9176952078316433631" class="gmaps ir"></a>
+        
+      </li>   
+      
+      <li>
+        <h3>Bull & Castle</h3>
+        <a href="foursquare://venues/4b044c50f964a5200b5322e3" class="foursquare ir"></a>
+                    <a href="http://maps.google.ie/maps/place?q=The+Bull+and+Castle,+Christchurch+Place,+Dublin+City&hl=en&cid=14063642654953512532" class="gmaps ir"></a>
+      </li>
+      
+      <li class="clearfix">
+        <h3>Royal Hospital Kilmainham</h3>  
+        <a href="foursquare://venues/4ade0f54f964a520fd7121e3" class="foursquare ir"></a>
+        <a href="http://maps.google.ie/maps/place?q=Royal+hospital+kilmainham&hl=en&cid=2175169287680674088" class="gmaps ir"></a>
+      </li>
+      
+      <li>
+        <h3>Odessa Club</h3>
+        <a href="foursquare://venues/4b546f7bf964a52032bb27e3" class="foursquare ir"></a>
+          <a href="http://maps.google.ie/maps/place?q=odessa+club&hl=en&cid=3037910267582132949" class="gmaps ir"></a>
+      </li>
     </ul>
     
-    <a href="#" class="main-container clearfix full">
-      <h4>Load Full Schedule</h4>
-    </a>
+    <hr class="section-line" />
+    <h2 class="section-title">Full Schedule</h2>
+
+    <div class="now-next">
+      <p>Click the now or next item below to be brought to the foursquare page or visit the google maps URL at the bottom</p>
+    </div>
+
+    <div id="schedule">
+      
+    </div><!-- #schedule -->
     
   </body>
 </html>
