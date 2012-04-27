@@ -20,6 +20,7 @@
         "2012-04-25": {
           "1230-1630": {
             time: "12:30",
+            ampm: "pm",
             session: "Josh Clark Workshop",
             venue: "Morrison Hotel Printworks 1",
             url: "foursquare://morrison"
@@ -37,25 +38,29 @@
             url: "foursquare://sugarclub"
           },
           "1930-1945": {
-            time: "7:30pm",
+            time: "7:30",
+            ampm: "pm",
             session: "Opening Remarks",
             venue: "The Sugar Club",
             url: "foursquare://sugarclub"
           },
           "1945-2045": {
-            time: "7:45pm",
+            time: "7:45",
+            ampm: "pm",
             session: "Horace Dediu Keynote",
             venue: "The Sugar Club",
             url: "foursquare://sugarclub"
           },
           "1950-2100": {
-            time: "7:50pm",
+            time: "7:50",
+            ampm: "pm",
             session: "Andy Delcambre (Engine Yard)",
             venue: "The Sugar Club",
             url: "foursquare://sugarclub"
           },
           "2105-2155": {
-            time: "9:05pm",
+            time: "9:05",
+            ampm: "pm",
             session: "Aral Balkan Keynote",
             venue: "The Sugar Club",
             url: "foursquare://sugarclub"
@@ -69,7 +74,8 @@
         },
         "2012-04-26": {
           "955-1000": {
-            time: "9.55am",
+            time: "9:55",
+            ampm: "am",
             session: "Opening Remarks",
             venue: "Dublin Castle Coach House",
             url: "foursquare://coachhouse"
@@ -81,37 +87,41 @@
             url: "foursquare://coachhouse"
           },
           "1005-1030": {
-            time: "10:05am",
+            time: "10:05",
+            ampm: "am",
             session: "Andy Ihnatko",
             venue: "Dublin Castle Coach House",
             url: "foursquare://coachhouse"
           },
           "1030-1100": {
-            time: "10:30am",
+            time: "10:30",
+            ampm: "am",
             session: "Break",
             venue: "Dublin Castle Coach House",
             url: "foursquare://coachhouse"
           },
           "1100-1105": {
-            time: "11:00am",
+            time: "11am",
             session: "Gareth Jenkins",
             venue: "Dublin Castle Coach House",
             url: "foursquare://coachhouse"
           },
           "1105-1130": {
-            time: "11:05am",
+            time: "11:05",
+            ampm: "am",
             session: "Kyle Neath",
             venue: "Dublin Castle Coach House",
             url: "foursquare://coachhouse"
           },
           "1130-1200": {
-            time: "11:30am",
+            time: "11:30",
+            ampm: "am",
             session: "Michael Simmons",
             venue: "Dublin Castle Coach House",
             url: "foursquare://coachhouse"
           },
           "1200-1400": {
-            time: "12 noon",
+            time: "Noon",
             session: "Lunch",
             venue: "The Bull and Castle",
             url: "foursquare://bullandcastle"
@@ -123,13 +133,15 @@
             url: "foursquare://coachhouse"
           },
           "1405-1430": {
-            time: "2:05pm",
+            time: "2:05",
+            ampm: "pm",
             session: "Steve Troughton-Smith",
             venue: "Dublin Castle Coach House",
             url: "foursquare://coachhouse"
           },
           "1430-1500": {
-            time: "2:30pm",
+            time: "2:30",
+            ampm: "pm",
             session: "Matt Gemmell",
             venue: "Dublin Castle Coach House",
             url: "foursquare://coachhouse"
@@ -141,7 +153,8 @@
             url: "foursquare://coachhouse"
           },
           "1530-1600": {
-            time: "3:30pm",
+            time: "3:30",
+            ampm: "pm",
             session: "Jim Dalrymple",
             venue: "Dublin Castle Coach House",
             url: "foursquare://coachhouse"
@@ -153,7 +166,8 @@
             url: "foursquare://coachhouse"
           },
           "1630-1700": {
-            time: "4:30pm",
+            time: "4:30",
+            ampm: "pm",
             session: "Break",
             venue: "Dublin Castle Coach House",
             url: "foursquare://coachhouse"
@@ -165,13 +179,15 @@
             url: "foursquare://coachhouse"
           },
           "1830-1845": {
-            time: "6:30pm",
+            time: "6:30",
+            ampm: "pm",
             session: "Meet at Dublin Castle Coach House",
             venue: "Dublin Castle Coach House",
             url: "foursquare://coachhouse"
           },
           "1845-1900": {
-            time: "6:45pm",
+            time: "6:45",
+            ampm: "pm",
             session: "Transport to Royal Hospital",
             venue: "Executive Coach",
             url: "foursquare://bus"
@@ -263,11 +279,9 @@
     </nav>
     
     <hr class="section-line" />
-    <h2 class="section-title">Schedule</h2>
+    <h2 class="section-title">Now / Next</h2>
     
     <div class="now-next">
-      <p>Click the now or next item below to be brought to the foursquare page or visit the google maps URL at the bottom</p>
-
       <div id="now">
         
       </div>
@@ -289,6 +303,7 @@
       <script type="text/html" id="next-template">
         <a href="{{url}}" class="main-container clearfix">
         <h3 class="title">{{time}}</h3>
+        <span class="ampm">{{ampm}}</span>
         <span class="name-place">
           <h4>{{session}}</h4>
           <span>{{venue}}</span>
@@ -306,20 +321,19 @@
         <a href="http://maps.google.com/maps/ms?msid=211915329798909181589.0004be5a4e737bef5b384&msa=0&ll=53.341431,-6.273623&spn=0.025725,0.077162&z=13
         " class="event-map">Full Conference Map</a>
     <ul class="maps">
-          <li>
+          <li class="clearfix">
             <h3>Sugar Club</h3>
             <a href="foursquare://venues/4ade0efff964a520b47021e3" class="foursquare ir"></a>
             <a href="http://maps.google.ie/maps/place?q=Sugar+Club+The,+Dublin&hl=en&cid=5801039572395036313" class="gmaps ir"></a>
           </li>
           
-          <li>
+          <li class="clearfix">
             <h3>Dublin Castle</h3>
             <a href="foursquare://venues/4ade0f13f964a5200e7121e3" class="foursquare ir"></a>
             <a href="http://maps.google.ie/maps/place?q=dublin+castle+coach+house&hl=en&cid=9176952078316433631" class="gmaps ir"></a>
-            
           </li>   
           
-          <li>
+          <li class="clearfix">
             <h3>Bull & Castle</h3>
             <a href="foursquare://venues/4b044c50f964a5200b5322e3" class="foursquare ir"></a>
                         <a href="http://maps.google.ie/maps/place?q=The+Bull+and+Castle,+Christchurch+Place,+Dublin+City&hl=en&cid=14063642654953512532" class="gmaps ir"></a>
@@ -331,16 +345,162 @@
             <a href="http://maps.google.ie/maps/place?q=Royal+hospital+kilmainham&hl=en&cid=2175169287680674088" class="gmaps ir"></a>
           </li>
           
-          <li>
+          <li class="clearfix">
             <h3>Odessa Club</h3>
             <a href="foursquare://venues/4b546f7bf964a52032bb27e3" class="foursquare ir"></a>
               <a href="http://maps.google.ie/maps/place?q=odessa+club&hl=en&cid=3037910267582132949" class="gmaps ir"></a>
           </li>
     </ul>
     
-    <a href="#" class="main-container clearfix full">
-      <h4>Load Full Schedule</h4>
-    </a>
+    <hr class="section-line" />
+    <h2 class="section-title">Full Schedule</h2>
+    
+    <div class="time-slot" id="2012-04-25-1230-1630">
+      <span class="time-slot-time"></span>
+      <h3 class="time-slot-title">
+      <span class="time-slot-venue"></span>
+    </div>
+    
+    <div id="speakers" class="clearfix">
+      <hr class="section-line">
+      <h2 class="section-title">Speakers</h2>
+      <div class="clearfix speaker-group">
+        <article class="speaker-container">
+          <h3 class="speaker-name">Horace Dediu</h3>           
+          <p class="speaker-description body-text">
+            &hellip;writes <a href="http://www.asymco.com/">Asymco</a>, a world-leading market analysis blog, specialising in Apple and mobile.<br/>
+            <br/>
+            Horace also appears regularly on the 
+            <a href="http://5by5.tv/criticalpath">Critical Path</a> podcast, and runs <a href="http://www.asymconf.com/">Asymconf</a>.
+          </p>
+          <div class="twitter-container">
+            <a href="http://twitter.com/hdediu/" class="speaker-twitter">hdediu</a>
+          </div>
+        </article>
+
+        <article class="speaker-container">
+          <h3 class="speaker-name">Michael Lopp</h3>
+          <p class="speaker-description body-text">
+            &hellip;writes <a href="http://randsinrepose.com/">Rands in Repose</a>. He is the author of two books centred on his experience managing
+            software teams. <a href="http://www.managinghumans.com/">Managing Humans</a> is a guide to the personalities of typical engineers and how to deal with them, while <a href="http://www.beinggeek.com/">Being Geek</a> gives engineers insight into how managers work and how to survive.
+          </p>
+          <div class="twitter-container">
+            <a href="http://twitter.com/rands" class="speaker-twitter">rands</a>
+          </div>
+        </article>
+
+        <article class="speaker-container">
+          <h3 class="speaker-name">Steve Troughton-Smith</h3>
+          <p class="speaker-description body-text">
+            &hellip;Ireland&rsquo;s foremost iOS developer. He runs <a href="http://www.highcaffeinecontent.com/">High Caffeine Content</a> and is regularly featured worldwide for his groundbreaking &ldquo;investigative hacking&rdquo;.
+          </p>
+          <div class="twitter-container">
+            <a href="http://twitter.com/stroughtonsmith" class="speaker-twitter">stroughtonsmith</a>
+          </div>
+        </article>
+      </div>
+
+      <div class="clearfix speaker-group">
+        <article class="speaker-container">
+          <h3 class="speaker-name">Matt Gemmell</h3>
+          <p class="speaker-description body-text" id="mattDescription">
+            &hellip;a &ldquo;legend&rdquo; in the Apple design community, is an iOS and Cocoa developer with a focus on user experience and interface design. He runs <a href="http://instinctivecode.com">Instinctive Code</a>, has contributed a ton of popular <a href="http://mattgemmell.com/source/">open source</a>, and writes a <a href="http://mattgemmell.com/">popular blog</a>.
+          </p>
+          <div class="twitter-container">
+            <a href="http://twitter.com/mattgemmell" class="speaker-twitter">mattgemmell</a>
+          </div>
+
+        </article>
+
+        <article class="speaker-container">
+          <h3 class="speaker-name">Josh Clark</h3>
+          <p class="speaker-description body-text">
+            &hellip;is the author of
+            &ldquo;<a href="http://shop.oreilly.com/product/0636920001133.do">Tapworthy</a>,
+            Designing Great iPhone Apps&rdquo;. He is a seasoned developer for a number of platforms, and runs <a href="http://globalmoxie.com">Global Moxie</a>, offering consulting, training and workshops on building amazing apps.
+          </p>
+          <div class="twitter-container">
+            <a href="http://twitter.com/globalmoxie" class="speaker-twitter">globalmoxie</a>
+          </div>
+
+        </article>
+
+        <article class="speaker-container">
+          <h3 class="speaker-name">Michael Simmons</h3>
+          <p class="speaker-description body-text">
+           &hellip;is a seasoned speaker and developer, particularly passionate about UI and UX. He runs <a href="http://flexibits.com">Flexibits</a>, and is the creator of <a href="http://flexibits.com/fantastical">Fantastical</a>. 
+          </p>
+          <div class="twitter-container">
+            <a href="http://twitter.com/macguitar" class="speaker-twitter">macguitar</a>
+          </div>
+        </article>
+      </div>
+
+      <div class="clearfix speaker-group">
+        <article class="speaker-container">
+          <h3 class="speaker-name">Kyle Neath</h3>
+          <p class="speaker-description body-text">
+           &hellip;is director of design at <a href="http://github.com">GitHub</a>,
+           and was the driving force behind <a href="http://mac.github.com/">GitHub for Mac</a>. Kyle writes <a href="http://warpspire.com">a popular blog</a> on software design. He's a true developer&rsquo;s designer.
+          </p>
+          <div class="twitter-container">
+            <a href="http://twitter.com/kneath" class="speaker-twitter">kneath</a>
+          </div>
+        </article>
+
+        <article class="speaker-container">
+          <h3 class="speaker-name">Aral Balkan</h3>
+          <p class="speaker-description body-text">
+            &hellip;writes at <a href="http://aralbalkan.com/">aralbalkan.com</a>. He is a seasoned and passionate speaker and a prolific open source contributor. He describes himself as &ldquo;a designer, developer, author, teacher, entrepreneur, and performer; a Renaissance Geek&rdquo;
+          </p>
+          <div class="twitter-container">
+            <a href="http://twitter.com/aral" class="speaker-twitter">aral</a>
+          </div>
+        </article>
+
+        <article class="speaker-container">
+          <h3 class="speaker-name">Andy Ihnatko</h3>
+          <p class="speaker-description body-text">
+            Andy Ihnatko is a writer, pundit, everyman and a giant of the Mac World.
+            He needs no introduction. You can find out a lot more about him on <a href="http://ihnatko.com/a-little-bit-about-me/">his site.</a>
+          </p>
+          <div class="twitter-container">
+            <a href="http://twitter.com/ihnatko" class="speaker-twitter">ihnatko</a>
+          </div>
+        </article>
+      </div>
+
+      <div class="clearfix speaker-group">  
+        <article class="speaker-container">
+          <h3 class="speaker-name">Des Traynor</h3>
+          <p class="speaker-description body-text">
+            Des, UX Lead and co-founder of <a href="http://intercom.io">Intercom</a> is fast becoming one of the most influential writers on user experience and customer development in the world. As local Dubliner, we love him and the &Uacute;ll lineup wouldn't be the same without him.
+          </p>
+          <div class="twitter-container">
+            <a href="http://twitter.com/destraynor" class="speaker-twitter">destraynor</a>
+        </article>
+
+        <article class="speaker-container">
+          <h3 class="speaker-name">Gareth Jenkins</h3>
+          <p class="speaker-description body-text">
+            Gareth makes iOS games, and writes about making them on the <a href="http://www.36peas.com/">36peas blog</a>. He is particularly interested in component architecture, iPad game design, and the business of games. Gareth is based in the UK, but spent time working in Dublin, and we're delighted to invite him back.
+          </p>
+          <div class="twitter-container">
+            <a href="http://twitter.com/36peas" class="speaker-twitter">36peas</a>
+          </div>
+        </article>
+
+        <article class="speaker-container">
+          <h3 class="speaker-name">Jim Dalrymple</h3>
+          <p class="speaker-description body-text">
+            Jim Dalrymple is a co-founder and blogger at <a href="http://loopinsight.com">Loop Insight</a>, an Apple, tech and geek ephemera blog. Previously, he was editor at large of Macworld. He also knows quite a bit about <a href="https://www.facebook.com/media/set/?set=a.9958371535.26661.593356535&type=3">actual</a> <a href="https://www.facebook.com/media/set/?set=a.10031401535.26922.593356535">rock</a> <a href="https://www.facebook.com/media/set/?set=a.10031401535.26922.593356535&type=3">stars</a>.
+          </p>
+          <div class="twitter-container">
+            <a href="http://twitter.com/jdalrymple" class="speaker-twitter">jdalrymple</a>
+          </div>
+        </article>
+      </div>
+    </div>
     
   </body>
 </html>
