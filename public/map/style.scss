@@ -197,6 +197,18 @@ p {
 }
 
 
+.day-heading {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.6em;
+}
+
+#schedule {
+  padding-top: 0;
+}
+
+
 .clearfix:before, .clearfix:after { content: ""; display: table; }
 .clearfix:after { clear: both; }
 .clearfix { zoom: 1; }

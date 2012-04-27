@@ -148,6 +148,15 @@ p {
     background: url(gmaps.png) no-repeat center;
     background-size: 100%; }
 
+.day-heading {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.6em; }
+
+#schedule {
+  padding-top: 0; }
+
 .clearfix:before, .clearfix:after {
   content: "";
   display: table; }

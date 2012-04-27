@@ -260,7 +260,7 @@
       jQuery(function(){
         for(day in Schedule)
           {
-            $('#schedule').append('<h3>' + day + '</h3>')
+            $('#schedule').append('<h3 class="day-heading">' + day + '</h3>')
             for(session in Schedule[day])
             {
               item = Mustache.render($('#next-template').html(), Schedule[day][session])
@@ -269,7 +269,7 @@
           }
       })
 
-      setInterval(load_schedule, 10000)
+      // setInterval(load_schedule, 10000)
       load_schedule();
     </script>
   </head>
