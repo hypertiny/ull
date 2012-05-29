@@ -1,0 +1,38 @@
+html {
+  background: url("broken_noise.png");
+}
+
+#wrap {
+  width: 500px;
+  margin: 60px auto;
+  position: relative;
+}
+
+img {
+  width: 500px;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+#box-top {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  right: 0;
+
+}
+
+.box-container {
+  width: 900px;
+
+  height: 500px;
+  margin: 0;
+}
+
+#box-bottom {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}

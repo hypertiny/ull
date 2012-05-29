@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="/main/images/ull_favicon.png">
     <link rel="icon" href="/main/images/ull_favicon.png">
     <link href="style.css" media="screen" rel="stylesheet" type="text/css" /> 
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery-1.7.min.js"></script>
     <script type="text/javascript" src="underscore-min.js"></script>
     <script type="text/javascript" src="mustache.js"></script>
     <script type="text/javascript" src="http://stevenlevithan.com/assets/misc/date.format.js"></script>
@@ -19,6 +19,7 @@
       var Schedule = {
         "2012-04-25": {
           "1230-1630": {
+            itemid:"josh-clark-workshop",
             time: "12:30",
             ampm: "pm",
             session: "Josh Clark Workshop",
@@ -179,6 +180,7 @@
             url: "foursquare://coachhouse"
           },
           "1830-1845": {
+            itemid: "meet-dublin-castle",
             time: "6:30",
             ampm: "pm",
             session: "Meet at Dublin Castle Coach House",
@@ -228,6 +230,7 @@
       }
 
       load_schedule = function(){
+        $('a.now').removeClass('now')
         now = new Date()
         date = now.format('yyyy-mm-dd')
         time = now.format('HHMM')
@@ -259,6 +262,7 @@
           for(i=0; i<on_now.length;i++)
           {
             this_entry = on_now[i];
+            $('a[data-itemid=' + this_entry.itemid + ']').addClass('now')
             $('#now').html(
               Mustache.render($('#now-template').html(), this_entry)
             )
@@ -268,6 +272,18 @@
           )
         })
       }
+
+      jQuery(function(){
+        for(day in Schedule)
+          {
+            $('#schedule').append('<h3>' + day + '</h3>')
+            for(session in Schedule[day])
+            {
+              item = Mustache.render($('#next-template').html(), Schedule[day][session])
+              $('#schedule').append(item)
+            }
+          }
+      })
 
       setInterval(load_schedule, 10000)
       load_schedule();
@@ -291,17 +307,17 @@
       </div><!-- #next -->
       
       <script type="text/html" id="now-template">
-        <a href="{{url}}" class="main-container now clearfix">
-        <h3 class="title">Now</h3>
-        <span class="name-place now">
-          <h4>{{session}}</h4>
-          <span>{{venue}}</span>
-        </span>
-      </a>
+        <a data-itemid="{{itemid}}" href="{{url}}" class="main-container now clearfix">
+          <h3 class="title">Now</h3>
+          <span class="name-place now">
+            <h4>{{session}}</h4>
+            <span>{{venue}}</span>
+          </span>
+        </a>
       </script>
       
       <script type="text/html" id="next-template">
-        <a href="{{url}}" class="main-container clearfix">
+        <a data-itemid="{{itemid}}" href="{{url}}" class="main-container clearfix">
         <h3 class="title">{{time}}</h3>
         <span class="ampm">{{ampm}}</span>
         <span class="name-place">
@@ -309,6 +325,7 @@
           <span>{{venue}}</span>
         </span>
       </a>
+
       </script>
       
     </div>
@@ -350,16 +367,15 @@
             <a href="foursquare://venues/4b546f7bf964a52032bb27e3" class="foursquare ir"></a>
               <a href="http://maps.google.ie/maps/place?q=odessa+club&hl=en&cid=3037910267582132949" class="gmaps ir"></a>
           </li>
-    </ul>
+        </ul>
     
     <hr class="section-line" />
     <h2 class="section-title">Full Schedule</h2>
-    
-    <div class="time-slot" id="2012-04-25-1230-1630">
-      <span class="time-slot-time"></span>
-      <h3 class="time-slot-title">
-      <span class="time-slot-venue"></span>
-    </div>
+
+    <div id="schedule">
+
+    </div><!-- #schedule -->
+
     
     <div id="speakers" class="clearfix">
       <hr class="section-line">
@@ -501,6 +517,8 @@
         </article>
       </div>
     </div>
+    
+
     
   </body>
 </html>

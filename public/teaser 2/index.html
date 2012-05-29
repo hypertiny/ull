@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta name="charset" content="UTF-8">
+    <link href="style.css" media="screen" rel="stylesheet" type="text/css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js</script"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+      $( init );
+
+      function init() {
+        $('#box-top').draggable({
+          containment: '.box-container',
+          snap: 'content'
+        });
+      }
+
+
+    });  
+
+
+    </script>
+  </head>
+  <body>
+    <div id="wrap">
+      <div class="box-container">
+        <img id="box-top" src="box-top.png" />
+        <img id="box-bottom" src="bottom-box.png" />
+      </div>
+
+    </div>
+    
+  </body>
+</html>
+
