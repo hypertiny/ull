@@ -46,6 +46,10 @@ img {
   top: -250px;
 }
 
+#box-inner {
+  display: none;
+}
+
 #box-bottom {
   width: 500px;
   position: absolute;
@@ -57,7 +61,6 @@ img {
 
 .register-interest {
   position: relative;
-  display: none;
 }
 
 .ull-date {

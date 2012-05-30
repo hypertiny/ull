@@ -11,8 +11,8 @@
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
     <script type="text/javascript">
     
-
     $(document).ready(function() {
+
       $('#box-top').draggable({
         containment: '.box-container',
         snap: 'content'
@@ -29,28 +29,42 @@
       Ull.resize_main_container()
 
       $('#box-top').load(function() {
-        $('div.register-interest').show();
-        $('#box-bottom').show();
-        $('div.container').fadeIn()
+        setTimeout(function(){
+          $('#box-bottom').show();
+          $('#box-inner').show();
+          $('div.container').fadeIn()
+        }, 400)
       });
 
-      $('.submit').click(function() {
-        $('#register-interest-form').fadeOut();
-        $('.ull-date').fadeOut();
-        $('.ull-location').fadeOut();
-        setTimeout(function(){
-          $('.thank-you').fadeIn(function(){
+      $('#register-interest-form').submit(function(){
+        email = $('#email').val()
+        email_regex = /^[a-zA-Z0-9.!#$%&'*+/=?\^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
+        if($.trim(email) != '' && email_regex.test(email))
+        {
+          $.post($(this).attr('action') + '.js',
+                 $(this).serialize()).complete(function(){
             setTimeout(function(){
-              $('#box-top').animate({
-                top: 0
-              }, function(){
-                $('.box-container').height(500)
-              })
+              $('.thank-you').fadeIn(function(){
+                setTimeout(function(){
+                  $('#box-top').animate({
+                    top: 0
+                  }, function(){
+                    $('.box-container').height(500)
+                  })
+                }, 1000)
+              });
             }, 1000)
-          });
-        }, 1000)
-        
-      });
+          })
+          $('#register-interest-form').fadeOut();
+          $('.ull-date').fadeOut();
+          $('.ull-location').fadeOut();
+        }
+        else
+        {
+          $('#message').text('Please enter a valid email address:').fadeIn()
+        }
+        return false
+      })
       
     });  
 
@@ -70,18 +84,22 @@
             <img id="box-top" src="box-top2.png" />
 
           </div>
-          <span class="ull-date">12th&ndash;14th April, 2013</span>
-          <span class="ull-location">Dublin, Ireland</span>
-          <div class="register-interest">
-            <form id="register-interest-form">
-              <label for="name" class="label-name">Name</label>
-              <input type="text" id="name" />
+          <div id="box-inner">
+            <span class="ull-date">12th&ndash;14th April, 2013</span>
+            <span class="ull-location">Dublin, Ireland</span>
+            <div id="message" style="display:none"></div>
+            <div class="register-interest">
+              <form id="register-interest-form" action="https://tito.io/:/%C3%BAll-2013/interested_users">
+                <label for="name" class="label-name">Name</label>
+                <input type="text" id="name" name="interested_user[name]"/>
+                <label for="email" class="label-email">Email</label>
+                <input type="text" id="email" name="interested_user[email]"/>
 
-              <label for="email" class="label-email">Email</label>
-              <input type="text" id="email" />
-
-              <a href="#" class="submit">Register Interest</a>
-            </form>
+                <button class="submit" type="submit">
+                  Register Interest
+                </button>
+              </form>
+            </div>
           </div>
           <img class="thank-you" src="thankyou.png" />
           <img id="box-bottom" src="bottom-box.png" />
