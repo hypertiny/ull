@@ -194,3 +194,11 @@ img {
   display: none;
 }
 
+#message {
+  position: absolute;
+  top: 352px;
+  left: 144px;
+  font-size: .8em;
+  font-weight: 100;
+}
+
