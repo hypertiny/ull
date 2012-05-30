@@ -11,8 +11,8 @@
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
     <script type="text/javascript">
     
-
     $(document).ready(function() {
+
       $('#box-top').draggable({
         containment: '.box-container',
         snap: 'content'
@@ -34,23 +34,34 @@
         $('div.container').fadeIn()
       });
 
-      $('.submit').click(function() {
-        $('#register-interest-form').fadeOut();
-        $('.ull-date').fadeOut();
-        $('.ull-location').fadeOut();
-        setTimeout(function(){
-          $('.thank-you').fadeIn(function(){
-            setTimeout(function(){
-              $('#box-top').animate({
-                top: 0
-              }, function(){
-                $('.box-container').height(500)
-              })
-            }, 1000)
-          });
-        }, 1000)
-        
-      });
+      $('#register-interest-form').submit(function(){
+        email = $('#email').val()
+        email_regex = /^[a-zA-Z0-9.!#$%&'*+/=?\^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
+        if($.trim(email) != '' && email_regex.test(email))
+        {
+          $.post($(this).attr('action') + '.js', $(this).serialize())
+          $('#register-interest-form').fadeOut();
+          $('.ull-date').fadeOut();
+          $('.ull-location').fadeOut();
+          setTimeout(function(){
+            $('.thank-you').fadeIn(function(){
+              setTimeout(function(){
+                $('#box-top').animate({
+                  top: 0
+                }, function(){
+                  $('.box-container').height(500)
+                })
+              }, 1000)
+            });
+          }, 1000)
+        }
+        else
+        {
+          $('#message').text('Please enter a valid email address:').fadeIn()
+        }
+          
+        return false
+      })
       
     });  
 
@@ -65,6 +76,7 @@
           <img id="box-top" src="box-top-j.png" />
           <span class="ull-date">12th&ndash;14th April, 2013</span>
           <span class="ull-location">Dublin, Ireland</span>
+          <div id="message" style="display:none"></div>
           <div class="register-interest">
             <form id="register-interest-form">
               <label for="name" class="label-name">Name</label>
@@ -73,7 +85,9 @@
               <label for="email" class="label-email">Email</label>
               <input type="text" id="email" />
 
-              <a href="#" class="submit">Register Interest</a>
+              <button class="submit" type="submit">
+                Register Interest
+              </button>
             </form>
           </div>
           <img class="thank-you" src="thankyou.png" />
