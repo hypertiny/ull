@@ -41,23 +41,24 @@
         email_regex = /^[a-zA-Z0-9.!#$%&'*+/=?\^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
         if($.trim(email) != '' && email_regex.test(email))
         {
-          $.post($(this).attr('action') + '.js',
-                 $(this).serialize()).complete(function(){
-            setTimeout(function(){
-              $('.thank-you').fadeIn(function(){
-                setTimeout(function(){
-                  $('#box-top').animate({
-                    top: 0
-                  }, function(){
-                    $('.box-container').height(500)
-                    $('img.ull-logo-j').fadeOut(function(){
-                      $('img.ull-logo-j').fadeIn()
-                    })
+          $.post($(this).attr('action') + '.js', $(this).serialize())
+
+          setTimeout(function(){
+            $('.thank-you').fadeIn(function(){
+              setTimeout(function(){
+                $('div.box-top-container').animate({
+                  top: 0
+                }, function(){
+                  $('.box-container').height(500)
+                  $('img.ull-logo-j').fadeOut(function(){
+                    setTimeout(function(){
+                      $('img.ull-logo-e').fadeIn('slow')
+                    }, 500)
                   })
-                }, 1000)
-              });
-            }, 1000)
-          })
+                })
+              }, 1000)
+            });
+          }, 1000)
           $('#register-interest-form').fadeOut();
           $('.ull-date').fadeOut();
           $('.ull-location').fadeOut();
