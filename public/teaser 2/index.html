@@ -4,35 +4,84 @@
     <title></title>
     <meta name="charset" content="UTF-8">
     <link href="style.css" media="screen" rel="stylesheet" type="text/css" />
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js</script"></script>
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="http://use.typekit.com/khy6vgi.js"></script>
+    <script type="text/javascript" src="https://raw.github.com/yeco/jquery-ui-touch-punch/master/jquery.ui.touch-punch.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
     <script type="text/javascript">
-    $(document).ready(function() {
-      $( init );
+    
 
-      function init() {
-        $('#box-top').draggable({
-          containment: '.box-container',
-          snap: 'content'
-        });
+    $(document).ready(function() {
+      $('#box-top').draggable({
+        containment: '.box-container',
+        snap: 'content'
+      });
+
+      Ull = {
+        resize_main_container: function(){
+          $('div.container').height($(document).height()-10)
+                            .width($(document).width()-10)
+        }
       }
 
+      $(window).resize(Ull.resize_main_container)
+      Ull.resize_main_container()
 
+      $('#box-top').load(function() {
+        $('div.register-interest').show();
+        $('#box-bottom').show();
+        $('div.container').fadeIn()
+      });
+
+      $('.submit').click(function() {
+        $('#register-interest-form').fadeOut();
+        $('.ull-date').fadeOut();
+        $('.ull-location').fadeOut();
+        setTimeout(function(){
+          $('.thank-you').fadeIn(function(){
+            setTimeout(function(){
+              $('#box-top').animate({
+                top: 0
+              }, function(){
+                $('.box-container').height(500)
+              })
+            }, 1000)
+          });
+        }, 1000)
+        
+      });
+      
     });  
+
 
 
     </script>
   </head>
   <body>
-    <div id="wrap">
-      <div class="box-container">
-        <img id="box-top" src="box-top.png" />
-        <img id="box-bottom" src="bottom-box.png" />
-      </div>
+   <div class="container"> 
+      <div id="wrap">
+        <div class="box-container">
+          <img id="box-top" src="box-top-j.png" />
+          <span class="ull-date">12th&ndash;14th April, 2013</span>
+          <span class="ull-location">Dublin, Ireland</span>
+          <div class="register-interest">
+            <form id="register-interest-form">
+              <label for="name" class="label-name">Name</label>
+              <input type="text" id="name" />
 
-    </div>
-    
+              <label for="email" class="label-email">Email</label>
+              <input type="text" id="email" />
+
+              <a href="#" class="submit">Register Interest</a>
+            </form>
+          </div>
+          <img class="thank-you" src="thankyou.png" />
+          <img id="box-bottom" src="bottom-box.png" />
+        </div>
+
+      </div>
+    </div>    
   </body>
 </html>
 
