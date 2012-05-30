@@ -23,13 +23,13 @@ html {
 }
 
 img {
-  width: 500px;
   display: block;
   margin: 0;
   padding: 0;
 }
 
 #box-top {
+  width: 500px;
   z-index: 1;
   position: absolute;
   top: 0;
@@ -47,6 +47,7 @@ img {
 }
 
 #box-bottom {
+  width: 500px;
   position: absolute;
   top: 0;
   right: 0;
@@ -168,5 +169,21 @@ img {
 }
 
 
+.ull-logo-j {
+  position: relative;
+  top: 207px;
+  z-index: 10;
+  width: 145px;
+  left: 180px;
+  display: none;
 
+}
+
+.ull-logo-e {
+  position: relative;
+  top: 182px;
+  z-index: 10;
+  width: 138px;
+  left: 182px;
+}
 
