@@ -50,6 +50,9 @@
                     top: 0
                   }, function(){
                     $('.box-container').height(500)
+                    $('img.ull-logo-j').fadeOut(function(){
+                      $('img.ull-logo-j').fadeIn()
+                    })
                   })
                 }, 1000)
               });
@@ -78,8 +81,8 @@
         <div class="box-container">
           <div class="box-top-container">
             <div class="ull-logo-container">
-              <img class="ull-logo-j" src="ull-j.png"/>
               <img class="ull-logo-e" src="ull-e.png"/>
+              <img class="ull-logo-j" src="ull-j.png"/>
             </div>
             <img id="box-top" src="box-top2.png" />
 

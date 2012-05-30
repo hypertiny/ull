@@ -26,6 +26,7 @@ img {
   display: block;
   margin: 0;
   padding: 0;
+  position: absolute;
 }
 
 #box-top {
@@ -44,6 +45,11 @@ img {
   position: absolute;
   left: 50%;
   top: -250px;
+}
+
+.box-top-container {
+  width: 500px;
+  height: 500px;
 }
 
 #box-inner {
@@ -178,8 +184,6 @@ img {
   z-index: 10;
   width: 145px;
   left: 180px;
-  display: none;
-
 }
 
 .ull-logo-e {
@@ -188,5 +192,6 @@ img {
   z-index: 10;
   width: 138px;
   left: 182px;
+  display: none;
 }
 
