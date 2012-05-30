@@ -171,9 +171,12 @@ img {
   display: none;
 }
 
+.box-top-container {
+  position: relative;
+}
 
 .ull-logo-j {
-  position: relative;
+  position: absolute;
   top: 207px;
   z-index: 10;
   width: 145px;
@@ -183,7 +186,7 @@ img {
 }
 
 .ull-logo-e {
-  position: relative;
+  position: absolute;
   top: 182px;
   z-index: 10;
   width: 138px;
