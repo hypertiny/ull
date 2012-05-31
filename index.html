@@ -9,73 +9,6 @@
     <script type="text/javascript" src="http://use.typekit.com/ruj1liq.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
     <script type="text/javascript" src="https://raw.github.com/yeco/jquery-ui-touch-punch/master/jquery.ui.touch-punch.js"></script>
-    <script type="text/javascript">
-    
-    $(document).ready(function() {
-
-      $('div.box-top-container').draggable({
-        containment: '.box-container',
-        snap: 'content'
-      });
-
-      Ull = {
-        resize_main_container: function(){
-          $('div.container').height($(document).height()-10)
-                            .width($(document).width()-10)
-        }
-      }
-
-      $(window).resize(Ull.resize_main_container)
-      Ull.resize_main_container()
-
-      $('#box-top').load(function() {
-        setTimeout(function(){
-          $('#box-bottom').show();
-          $('#box-inner').show();
-          $('div.container').fadeIn()
-        }, 400)
-      });
-
-      $('#register-interest-form').submit(function(){
-        email = $('#email').val()
-        email_regex = /^[a-zA-Z0-9.!#$%&'*+/=?\^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
-        if($.trim(email) != '' && email_regex.test(email))
-        {
-          $.post($(this).attr('action') + '.js', $(this).serialize())
-
-          setTimeout(function(){
-            $('.thank-you').fadeIn(function(){
-              setTimeout(function(){
-                $('div.box-top-container').animate({
-                  top: 0
-                }, function(){
-                  $('.box-container').height(500)
-                  $('img.ull-logo-j').fadeOut(function(){
-                    setTimeout(function(){
-                      $('img.ull-logo-e').fadeIn('slow')
-                    }, 500)
-                  })
-                })
-              }, 1000)
-            });
-          }, 1000)
-          $('#register-interest-form').fadeOut();
-          $('.ull-date').fadeOut();
-          $('.ull-location').fadeOut();
-          $('#message').fadeOut();
-        }
-        else
-        {
-          $('#message').text('Please enter a valid email address.').fadeIn()
-        }
-        return false
-      })
-      
-    });  
-
-
-
-    </script>
   </head>
   <body>
    <div class="container"> 
@@ -112,6 +45,71 @@
 
       </div>
     </div>    
+    <script type="text/javascript">
+    
+      $(document).ready(function() {
+
+        $('div.box-top-container').draggable({
+          containment: '.box-container',
+          snap: 'content'
+        });
+
+        Ull = {
+          resize_main_container: function(){
+            $('div.container').height($(document).height()-10)
+                              .width($(document).width()-10)
+          }
+        }
+
+        $(window).resize(Ull.resize_main_container)
+        Ull.resize_main_container()
+
+        $(window).load(function() {
+          console.log('woop')
+          setTimeout(function(){
+            $('#box-bottom').show();
+            $('#box-inner').show();
+            $('div.container').fadeIn()
+          }, 400)
+        });
+
+        $('#register-interest-form').submit(function(){
+          email = $('#email').val()
+          email_regex = /^[a-zA-Z0-9.!#$%&'*+/=?\^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
+          if($.trim(email) != '' && email_regex.test(email))
+          {
+            $.post($(this).attr('action') + '.js', $(this).serialize())
+
+            setTimeout(function(){
+              $('.thank-you').fadeIn(function(){
+                setTimeout(function(){
+                  $('div.box-top-container').animate({
+                    top: 0
+                  }, function(){
+                    $('.box-container').height(500)
+                    $('img.ull-logo-j').fadeOut(function(){
+                      setTimeout(function(){
+                        $('img.ull-logo-e').fadeIn('slow')
+                      }, 500)
+                    })
+                  })
+                }, 1000)
+              });
+            }, 1000)
+            $('#register-interest-form').fadeOut();
+            $('.ull-date').fadeOut();
+            $('.ull-location').fadeOut();
+            $('#message').fadeOut();
+          }
+          else
+          {
+            $('#message').text('Please enter a valid email address.').fadeIn()
+          }
+          return false
+        })
+        
+      });
+    </script>
     <script type="text/javascript">
       var _gauges = _gauges || [];
       (function() {
