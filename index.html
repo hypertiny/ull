@@ -42,7 +42,7 @@
             <span class="ull-location">Dublin, Ireland</span>
             <div id="message" style="display:none"></div>
             <div class="register-interest">
-              <form id="register-interest-form" action="https://tito.io/:/%C3%BAll-2013/interested_users">
+              <form id="register-interest-form" action="https://tito.io/ull/2013/interested_users">
                 <label for="name" class="label-name">Name</label>
                 <input type="text" id="name" name="interested_user[name]"/>
                 <label for="email" class="label-email">Email</label>
@@ -92,7 +92,9 @@
           email_regex = /^[a-zA-Z0-9.!#$%&'*+/=?\^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
           if($.trim(email) != '' && email_regex.test(email))
           {
-            $.post($(this).attr('action') + '.js', $(this).serialize())
+            name = $('#name').val()
+            script_tag = $('<script src="' + $(this).attr('action') + '/join.js?interested_user[email]=' + email + '&interested_user[name]=' + name  + '"/>')
+            $('html').append(script_tag)
 
             setTimeout(function(){
               $('.thank-you').fadeIn(function(){
