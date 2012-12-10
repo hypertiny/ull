@@ -1,0 +1,330 @@
+@import "compass/reset";
+@import "compass/css3";
+
+// ---------------------------------------------------------
+// MIXINS AND VARIABLES
+// ---------------------------------------------------------
+
+$cream: #F0EBE5;
+$dark: #171512;
+$red: #932829;
+
+@mixin museo {
+  font-family: "museo-sans",sans-serif;
+}
+
+@mixin rooney {
+  font-family: "rooney-web",sans-serif;
+}
+
+// ---------------------------------------------------------
+// BASE
+// ---------------------------------------------------------
+
+body {
+  background: url(../images/broken_noise.png);
+  // @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
+  //   background: url(../images/broken-noise@2x.png);
+  // }
+  color: #161411;
+  font-family: "rooney-web",sans-serif;
+  font-size: 1.2em;
+  font-style: normal;
+  font-weight: 500;
+}
+
+a, a:link, a:visited {
+  color: #161411;
+  text-decoration: none;
+}
+
+
+
+
+// ---------------------------------------------------------
+// RE-USABLE
+// ---------------------------------------------------------
+
+.section-title {
+  @include museo;
+  text-transform: uppercase;
+  color: $cream;
+  text-align: center;
+  margin: 40px 0;
+  font-size: 3em;
+  font-weight: 900;
+}
+
+
+// ---------------------------------------------------------
+// INTRODUCTION
+// ---------------------------------------------------------
+
+#introduction, .after {
+  width: 100%;
+  p {
+    opacity: 0.99;
+    color: $cream;
+    font-weight: 400;
+    text-align: center;
+    text-rendering: optimizelegibility;
+    font-size: 1.15em;
+    line-height: 1.15em;
+    &.date-location {
+      margin: 30px auto 20px; 
+      // text-transform: uppercase;
+    }
+
+    &.about-ull {
+      width: 800px;
+      margin: 60px auto 30px;
+    }
+
+    @media only screen and (max-width: 1000px) {
+      width: 100%;
+      padding: 0 10px;
+      @include box-sizing(border-box);
+    }
+  }
+
+  .dividing-line {
+    width: 70px;
+    border-top: 3px solid $red;
+    margin: 0 auto;
+  }
+
+  sup {
+    vertical-align: super;
+    font-size: 0.8em;
+    margin-right: -3px;
+  }
+}
+
+.logo {
+  background: url(../images/logo.png);
+  -webkit-background-size: 100%;
+  background-size: 100%;
+  width: 80px;
+  height: 80px;
+  display: block;
+  margin: 60px auto 0;
+}
+
+
+
+
+// ---------------------------------------------------------
+// SPEAKER SECTION
+// ---------------------------------------------------------
+
+#speakers {
+  position: relative;
+  width: 1080px;
+  margin: 100px auto;
+  @media only screen and (max-width: 1080px) {
+    width: 960px;
+  }
+  @media only screen and (max-width: 1000px) {
+    width: 100%;
+  }
+}
+
+// Wooden top for each box.
+// These are faded out on click using jQuery
+
+.speaker-box-top {
+  width: 300px;
+  height: 600px;
+  position: absolute;
+  cursor: pointer;
+  display: block;
+  &.inspiration {
+    top: 0;
+    left: 30px;
+    background: url(../images/cover-inspiration.jpg) no-repeat;
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
+      background: url(../images/cover-inspiration@2x.jpg) no-repeat;
+      background-size: 100%;
+    }
+  }
+
+  &.education {
+    top: 0;
+    left: 390px;
+    background: url(../images/cover-education.jpg) no-repeat;
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
+      background: url(../images/cover-education@2x.jpg) no-repeat;
+      background-size: 100%;
+    }
+  }
+  
+  &.empowerment {
+    top: 0;
+    left: 750px;
+    background: url(../images/cover-empowerment.jpg) no-repeat;
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
+      background: url(../images/cover-empowerment@2x.jpg) no-repeat;
+      background-size: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+  .speaker-box-top {
+    &.inspiration {
+      top: 0;
+      left: 10px;
+    }
+
+    &.education {
+      top: 0;
+      left: 330px;
+    }
+    
+    &.empowerment {
+      top: 0;
+      left: 650px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .speaker-box-top {
+    &.inspiration {
+      top: 0;
+      left: 50%;
+      margin-left: -150px;
+    }
+
+    &.education {
+      top: 630px;
+      left: 50%;
+      margin-left: -150px;
+    }
+    
+    &.empowerment {
+      top: 1260px;
+      left: 50%;
+      margin-left: -150px;
+    }
+  }
+}
+
+// The inner part of the speaker box.
+// The individual icons for each aspect of the conference i.e. inspiration
+// empowerment and education are scoped based on the related speaker.
+
+.speaker-box {
+  height: 600px;
+  width: 300px;
+  float: left;
+  margin: 0 30px;
+  @include box-sizing(border-box);
+  padding: 210px 40px 0 40px;
+
+  @media only screen and (max-width: 1080px) {
+    margin: 0 10px;
+  }
+
+  @media only screen and (max-width: 1000px) {
+    margin: 30px auto;
+    float: none;
+  }
+
+
+
+
+  &.matt {
+    background: 
+      url(../images/ull-icon-inspiration.png) no-repeat center 75px,
+      url(../images/bg-inspiration.jpg) no-repeat;
+    -webkit-background-size: 30%, 100%;
+    background-size: 30%, 100%;  
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
+    background:
+      url(../images/ull-icon-inspiration@2x.png) no-repeat center 75px,
+      url(../images/bg-inspiration@2x.jpg) no-repeat;
+    }
+  }
+  
+  &.wave {
+    background: 
+      url(../images/ull-icon-education.png) no-repeat center 75px,
+      url(../images/bg-inspiration.jpg) no-repeat;
+    -webkit-background-size: 30%, 100%;
+    background-size: 30%, 100%;
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
+    background:
+      url(../images/ull-icon-education@2x.png) no-repeat center 75px,
+      url(../images/bg-inspiration@2x.jpg) no-repeat;
+    }
+  }
+
+  &.amber {
+    background: 
+      url(../images/ull-icon-empowerment.png) no-repeat center 75px,
+      url(../images/bg-inspiration.jpg) no-repeat;
+    -webkit-background-size: 30%, 100%;
+    background-size: 30%, 100%;  
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
+    background:
+      url(../images/ull-icon-empowerment@2x.png) no-repeat center 75px,
+      url(../images/bg-inspiration@2x.jpg) no-repeat;
+    }
+  }
+}
+
+// This div wraps all the content inside the box so it can be faded in
+// once the .speaker-box-top has faded out
+
+.speaker-box-content {
+  
+  &.matt, &.wave, &.amber {
+    display: none;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 2.1em;
+    font-weight: 500;
+    margin: 0 0 30px 0;
+  }
+
+  p {
+    font-weight: 300;
+    font-size: 0.8em;
+    line-height: 1.2em;
+    margin-bottom: 20px;
+  }
+
+  a.further-info {
+    display: block;
+    float: left;
+    clear: left;
+    @include museo;
+    font-size: 0.9em;
+    margin: 0 0 4px 0;
+    
+    &:hover, &:focus, &:active {
+      color: $red;
+    }
+  }
+}
+
+// ---------------------------------------------------------
+// HELPERS
+// ---------------------------------------------------------
+
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+
+.ir {
+  display: block;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+
+

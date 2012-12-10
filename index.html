@@ -1,129 +1,93 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta name="charset" content="UTF-8">
-    <title>&Uacute;ll &middot; 2013</title>
-    <link href="style.css" media="screen" rel="stylesheet" type="text/css" />
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="http://use.typekit.com/ruj1liq.js"></script>
-    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-    <script type="text/javascript" src="https://raw.github.com/yeco/jquery-ui-touch-punch/master/jquery.ui.touch-punch.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=.6; maximum-scale=1.0; 
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Úll</title>
+  <link rel="stylesheet" href="stylesheets/screen.css">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script type="text/javascript" src="//use.typekit.net/khy6vgi.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1; maximum-scale=1.0; 
   user-scalable=0;">
-  </head>
-  <body>
-   <div class="container"> 
-      <div id="wrap">
-        <div class="box-container">
-          <div class="box-top-container">
-            <div class="ull-logo-container">
-              <img class="ull-logo-e" src="ull-e.png"/>
-              <img class="ull-logo-j" src="ull-j.png"/>
-            </div>
-            <img id="box-top" src="box-top2.png" />
-
-          </div>
-          <div id="box-inner">
-            <span class="ull-date">12th&ndash;14th April, 2013</span>
-            <span class="ull-location">Dublin, Ireland</span>
-            <div id="message" style="display:none"></div>
-            <div class="register-interest">
-              <form id="register-interest-form" action="https://tito.io/:/%C3%BAll-2013/interested_users">
-                <label for="name" class="label-name">Name</label>
-                <input type="text" id="name" name="interested_user[name]"/>
-                <label for="email" class="label-email">Email</label>
-                <input type="text" id="email" name="interested_user[email]"/>
-
-                <button class="submit" type="submit">
-                  Register Interest
-                </button>
-              </form>
-            </div>
-          </div>
-          <img class="thank-you" src="thankyou.png" />
-          <img id="box-bottom" src="bottom-box.png" />
-        </div>
-
-      </div>
-    </div>    
-    <script type="text/javascript">
-    
-      $(document).ready(function() {
-
-        $('div.box-top-container').draggable({
-          containment: '.box-container',
-          snap: 'content'
-        });
-
-        Ull = {
-          resize_main_container: function(){
-            $('div.container').height($(document).height()-10)
-                              .width($(document).width()-10)
-          }
-        }
-
-        $(window).resize(Ull.resize_main_container)
-        Ull.resize_main_container()
-
-        $(window).load(function() {
+</head>
+<body>
+  <script>
+    $(document).ready(function() {
+      $('.speaker-box-top.inspiration').click(function() {
+        $(this).fadeOut('slow', function() {
           setTimeout(function(){
-            $('#box-bottom').show();
-            $('#box-inner').show();
-            $('div.container').fadeIn()
-          }, 400)
+            $('.speaker-box-content.matt').fadeIn('slow')
+          }, 500)
         });
-
-        $('#register-interest-form').submit(function(){
-          email = $('#email').val()
-          email_regex = /^[a-zA-Z0-9.!#$%&'*+/=?\^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
-          if($.trim(email) != '' && email_regex.test(email))
-          {
-            $.post($(this).attr('action') + '.js', $(this).serialize())
-
-            setTimeout(function(){
-              $('.thank-you').fadeIn(function(){
-                setTimeout(function(){
-                  $('div.box-top-container').animate({
-                    top: 0
-                  }, function(){
-                    $('.box-container').height(500)
-                    $('img.ull-logo-j').fadeOut(function(){
-                      setTimeout(function(){
-                        $('img.ull-logo-e').fadeIn('slow')
-                      }, 500)
-                    })
-                  })
-                }, 1000)
-              });
-            }, 1000)
-            $('#register-interest-form').fadeOut();
-            $('.ull-date').fadeOut();
-            $('.ull-location').fadeOut();
-            $('#message').fadeOut();
-          }
-          else
-          {
-            $('#message').text('Please enter a valid email address.').fadeIn()
-          }
-          return false
-        })
-        
       });
-    </script>
-    <script type="text/javascript">
-      var _gauges = _gauges || [];
-      (function() {
-        var t   = document.createElement('script');
-        t.type  = 'text/javascript';
-        t.async = true;
-        t.id    = 'gauges-tracker';
-        t.setAttribute('data-site-id', '4fc69facf5a1f52ad300001f');
-        t.src = '//secure.gaug.es/track.js';
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(t, s);
-      })();
-    </script>
-  </body>
-</html>
 
+      $('.speaker-box-top.education').click(function() {
+        $(this).fadeOut('slow', function() {
+          setTimeout(function(){
+            $('.speaker-box-content.wave').fadeIn('slow')
+          }, 500)
+        });
+      });
+
+      $('.speaker-box-top.empowerment').click(function() {
+        $(this).fadeOut('slow', function() {
+          setTimeout(function(){
+            $('.speaker-box-content.amber').fadeIn('slow')
+          }, 500)
+        });
+      });
+    });
+
+  </script>
+
+  <div id="introduction">
+    <h1 class="logo ir">Úll</h1>
+    <p class="about-ull">
+      An iOS, OS X and mobile conference <br>for developers and designers.
+    </p>
+    <div class="dividing-line"></div>
+    <p class="date-location">
+      12&ndash;14 April, 2013<br>
+      Dublin, Ireland
+    </p>
+
+  </div>
+  <!-- <h2 class="section-title">Speakers</h2> -->
+  <div id="speakers" class="clearfix">
+    <div class="speaker-box-top inspiration"></div>
+    <div class="speaker-box matt">
+      <div class="speaker-box-content matt">
+        <h1>Matt Gemmell</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint dolorem fugit enim porro sit beatae expedita quaerat debitis perspiciatis quos dolore delectus consequatur similique voluptate velit quisquam aliquam sapiente animi.</p>
+        <a href="#" class="further-info">Matt's Blog</a>
+        <a href="#" class="further-info">@matgemmell</a>
+      </div>
+    </div>
+    
+    <div class="speaker-box-top education"></div>
+    <div class="speaker-box wave">
+      <div class="speaker-box-content wave">
+        <h1>Michael B. Johnson</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa dignissimos impedit consequatur. Voluptas ex in harum eligendi possimus laboriosam sed laborum sapiente omnis labore facere excepturi maiores corrupti autem laudantium.</p>
+        <a href="#" class="further-info">Michael's Blog</a>
+        <a href="#" class="further-info">@drwave</a>
+      </div>
+    </div>
+    
+    <div class="speaker-box-top empowerment"></div>
+    <div class="speaker-box amber">
+      <div class="speaker-box-content amber">
+        <h1>Amber Reyngoudt</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa dignissimos impedit oluptas ex in harum eligendi possimus laboriosam sed laborum sapiente omnis labore facere excepturi maiores corrupti autem laudantium.</p>
+        <a href="#" class="further-info">Amber's Blog</a>
+        <a href="#" class="further-info">@amberreyn</a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="tickets">
+
+  </div>
+  
+</body>
+</html>
