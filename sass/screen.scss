@@ -6,12 +6,8 @@
 // ---------------------------------------------------------
 
 $cream: #F0EBE5;
-$dark: #171512;
+$dark: #161411;
 $red: #932829;
-
-@mixin museo {
-  font-family: "museo-sans",sans-serif;
-}
 
 @mixin rooney {
   font-family: "rooney-web",sans-serif;
@@ -26,15 +22,14 @@ body {
   // @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
   //   background: url(../images/broken-noise@2x.png);
   // }
-  color: #161411;
   font-family: "rooney-web",sans-serif;
   font-size: 1.2em;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 a, a:link, a:visited {
-  color: #161411;
+  color: $dark;
   text-decoration: none;
 }
 
@@ -45,14 +40,10 @@ a, a:link, a:visited {
 // RE-USABLE
 // ---------------------------------------------------------
 
-.section-title {
-  @include museo;
-  text-transform: uppercase;
-  color: $cream;
-  text-align: center;
-  margin: 40px 0;
-  font-size: 3em;
-  font-weight: 900;
+.dividing-line {
+  width: 70px;
+  border-top: 2px solid $red;
+  margin: 0 auto;
 }
 
 
@@ -65,32 +56,25 @@ a, a:link, a:visited {
   p {
     opacity: 0.99;
     color: $cream;
-    font-weight: 400;
     text-align: center;
     text-rendering: optimizelegibility;
     font-size: 1.15em;
     line-height: 1.15em;
+    
     &.date-location {
       margin: 30px auto 20px; 
       // text-transform: uppercase;
     }
 
     &.about-ull {
-      width: 800px;
+      width: 400px;
       margin: 60px auto 30px;
+      @media only screen and (max-width: 400px) {
+        width: 100%;  
+        padding: 0 10px;
+        @include box-sizing(border-box);
+      }
     }
-
-    @media only screen and (max-width: 1000px) {
-      width: 100%;
-      padding: 0 10px;
-      @include box-sizing(border-box);
-    }
-  }
-
-  .dividing-line {
-    width: 70px;
-    border-top: 3px solid $red;
-    margin: 0 auto;
   }
 
   sup {
@@ -123,6 +107,7 @@ a, a:link, a:visited {
   margin: 100px auto;
   @media only screen and (max-width: 1080px) {
     width: 960px;
+    margin-bottom: 160px;
   }
   @media only screen and (max-width: 1000px) {
     width: 100%;
@@ -190,23 +175,7 @@ a, a:link, a:visited {
 
 @media only screen and (max-width: 1000px) {
   .speaker-box-top {
-    &.inspiration {
-      top: 0;
-      left: 50%;
-      margin-left: -150px;
-    }
-
-    &.education {
-      top: 630px;
-      left: 50%;
-      margin-left: -150px;
-    }
-    
-    &.empowerment {
-      top: 1260px;
-      left: 50%;
-      margin-left: -150px;
-    }
+    display: none;
   }
 }
 
@@ -229,9 +198,10 @@ a, a:link, a:visited {
   @media only screen and (max-width: 1000px) {
     margin: 30px auto;
     float: none;
+    width: 300px;
+    height: 380px;
+    padding: 40px 40px 0 40px
   }
-
-
 
 
   &.matt {
@@ -244,6 +214,13 @@ a, a:link, a:visited {
     background:
       url(../images/ull-icon-inspiration@2x.png) no-repeat center 75px,
       url(../images/bg-inspiration@2x.jpg) no-repeat;
+    }
+    @media only screen and (max-width: 1000px) {
+      background: url(../images/speaker-box-small-inspiration.jpg) no-repeat;
+      @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
+        background: url(../images/speaker-box-small-inspiration@2x.jpg) no-repeat;
+        background-size: 100%;
+      }
     }
   }
   
@@ -258,6 +235,13 @@ a, a:link, a:visited {
       url(../images/ull-icon-education@2x.png) no-repeat center 75px,
       url(../images/bg-inspiration@2x.jpg) no-repeat;
     }
+    @media only screen and (max-width: 1000px) {
+      background: url(../images/speaker-box-small-education.jpg) no-repeat;
+      @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
+        background: url(../images/speaker-box-small-empowerment@2x.jpg) no-repeat;
+        background-size: 100%;
+      }
+    }
   }
 
   &.amber {
@@ -271,6 +255,13 @@ a, a:link, a:visited {
       url(../images/ull-icon-empowerment@2x.png) no-repeat center 75px,
       url(../images/bg-inspiration@2x.jpg) no-repeat;
     }
+    @media only screen and (max-width: 1000px) {
+      background: url(../images/speaker-box-small-empowerment.jpg) no-repeat;
+      @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
+        background: url(../images/speaker-box-small-empowerment@2x.jpg) no-repeat;
+        background-size: 100%;
+      }
+    }
   }
 }
 
@@ -278,9 +269,18 @@ a, a:link, a:visited {
 // once the .speaker-box-top has faded out
 
 .speaker-box-content {
+  color: $dark;
+  position: relative;
+  height: 350px;
+  @media only screen and (max-width: 1000px) {
+    height: 320px;
+  }
   
   &.matt, &.wave, &.amber {
     display: none;
+    @media only screen and (max-width: 1000px) {
+      display: block;
+    }
   }
 
   h1 {
@@ -288,20 +288,31 @@ a, a:link, a:visited {
     font-size: 2.1em;
     font-weight: 500;
     margin: 0 0 30px 0;
+    @media only screen and (max-width: 1000px) {
+      text-align: left;
+      font-size: 1.5em;
+      width: 160px;
+      line-height: 1em;
+      padding: 0;
+    }
   }
 
   p {
-    font-weight: 300;
+    font-weight: 400;
     font-size: 0.8em;
     line-height: 1.2em;
     margin-bottom: 20px;
+  }
+
+  .speaker-links {
+    position: absolute;
+    bottom: 30px;
   }
 
   a.further-info {
     display: block;
     float: left;
     clear: left;
-    @include museo;
     font-size: 0.9em;
     margin: 0 0 4px 0;
     
@@ -310,6 +321,135 @@ a, a:link, a:visited {
     }
   }
 }
+
+
+// ---------------------------------------------------------
+// TICKET FORM
+// ---------------------------------------------------------
+
+.tickets {
+  width: 440px;
+  margin: 0 auto 140px;
+  color: $cream;
+  font-size: 1.15em;
+  line-height: 1.15em;
+  text-align: center;
+
+  @media only screen and (max-width: 1000px) {
+    width: 300px;
+  }
+
+  p, .ticket-name, .ticket-price {
+    opacity: 0.99;
+  }
+
+  .ticket-name, .ticket-price, .buttons input {
+    position: absolute;
+  }
+
+  .ticket-price {
+    right: 40px;
+  }
+
+  .buttons input {
+    top: 65px;
+    right: 50%;
+    width: 130px;
+    margin-right: -65px;
+    -webkit-appearance: none;
+    // background: $cream; 
+    color: $cream;
+    background: transparent; 
+    border: 1px solid $cream;
+    @include border-radius(2px);
+    font-size: 0.75em;
+    padding: 4px 0 6px;
+    @include rooney;
+    @include transition(background 0.05s ease, color 0.05s ease);
+    &:hover {
+      background: $cream; 
+      color: $dark;
+    }
+  }
+}
+
+#tito-register-form {
+  margin: 40px auto;
+  position: relative;
+  width: 280px;
+  height: 45px;
+  border-bottom: 2px solid $red;
+}
+
+.ticket-quantity-wrap  {
+  position: absolute;
+  right: 1px;
+  top: -4px;
+  .text-field {
+    width: 30px;
+    height: 30px;
+    border: none;
+    font-size: .8em;
+    opacity: 0.99;
+    text-align: center;
+    -webkit-appearance: none;
+    padding:  4px 0 2px;
+    @include border-radius(2px);
+    @include box-sizing(border-box);
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+
+// ---------------------------------------------------------
+// FOOTER
+// ---------------------------------------------------------
+
+footer {
+  margin: 260px auto 200px;
+  
+  @media only screen and (max-width: 1080px) { 
+    margin: 240px auto 160px;
+  }
+
+  @media only screen and (max-height: 610px) { 
+    margin: 170px auto 160px;
+  }
+
+  color: $cream;
+  opacity: 0.99;
+  font-size: 0.9em;
+  line-height: 1.3em;
+  p {
+    padding-top: 10px;
+    text-align: center;
+  }
+
+  a, a:link, a:visited {
+    color: $cream;
+  }
+
+  a:hover, a:focus, a:active {
+    color: #fdfcfa;
+  }
+
+  ul {
+    width: 200px;
+    margin: 0 auto;
+    a, a:link, a:visited {
+      float: left;
+      text-align: center;
+      margin: 20px 0 0 10px;
+      width: 90px;
+    }
+    a:hover, a:focus, a:active {
+      color: #fdfcfa;
+    }
+  }
+}
+
 
 // ---------------------------------------------------------
 // HELPERS
