@@ -1,4 +1,4 @@
-/* line 17, ../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../.rvm/gems/ruby-1.9.3-p327-perf/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -15,50 +15,50 @@ time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
   font: inherit;
+  font-size: 100%;
   vertical-align: baseline;
 }
 
-/* line 20, ../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-body {
+/* line 22, ../../../../.rvm/gems/ruby-1.9.3-p327-perf/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
   line-height: 1;
 }
 
-/* line 22, ../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../.rvm/gems/ruby-1.9.3-p327-perf/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 24, ../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../.rvm/gems/ruby-1.9.3-p327-perf/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 26, ../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../.rvm/gems/ruby-1.9.3-p327-perf/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 28, ../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../.rvm/gems/ruby-1.9.3-p327-perf/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 101, ../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../.rvm/gems/ruby-1.9.3-p327-perf/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 30, ../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../.rvm/gems/ruby-1.9.3-p327-perf/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 114, ../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../.rvm/gems/ruby-1.9.3-p327-perf/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
@@ -402,25 +402,29 @@ a, a:link, a:visited {
   line-height: 1.15em;
   text-align: center;
 }
+/* line 338, ../sass/screen.scss */
+.tickets p.soon {
+  margin-top: 33px;
+}
 @media only screen and (max-width: 1000px) {
   /* line 330, ../sass/screen.scss */
   .tickets {
     width: 300px;
   }
 }
-/* line 342, ../sass/screen.scss */
+/* line 346, ../sass/screen.scss */
 .tickets p, .tickets .ticket-name, .tickets .ticket-price {
   opacity: 0.99;
 }
-/* line 346, ../sass/screen.scss */
+/* line 350, ../sass/screen.scss */
 .tickets .ticket-name, .tickets .ticket-price, .tickets .buttons input {
   position: absolute;
 }
-/* line 350, ../sass/screen.scss */
+/* line 354, ../sass/screen.scss */
 .tickets .ticket-price {
   right: 40px;
 }
-/* line 354, ../sass/screen.scss */
+/* line 358, ../sass/screen.scss */
 .tickets .buttons input {
   top: 65px;
   right: 50%;
@@ -440,17 +444,16 @@ a, a:link, a:visited {
   font-family: "rooney-web",sans-serif;
   -webkit-transition: background 0.05s ease, color 0.05s ease;
   -moz-transition: background 0.05s ease, color 0.05s ease;
-  -ms-transition: background 0.05s ease, color 0.05s ease;
   -o-transition: background 0.05s ease, color 0.05s ease;
   transition: background 0.05s ease, color 0.05s ease;
 }
-/* line 369, ../sass/screen.scss */
+/* line 373, ../sass/screen.scss */
 .tickets .buttons input:hover {
   background: #f0ebe5;
   color: #161411;
 }
 
-/* line 376, ../sass/screen.scss */
+/* line 380, ../sass/screen.scss */
 #tito-register-form {
   margin: 40px auto;
   position: relative;
@@ -459,13 +462,13 @@ a, a:link, a:visited {
   border-bottom: 2px solid #932829;
 }
 
-/* line 384, ../sass/screen.scss */
+/* line 388, ../sass/screen.scss */
 .ticket-quantity-wrap {
   position: absolute;
   right: 1px;
   top: -4px;
 }
-/* line 388, ../sass/screen.scss */
+/* line 392, ../sass/screen.scss */
 .ticket-quantity-wrap .text-field {
   width: 30px;
   height: 30px;
@@ -484,12 +487,12 @@ a, a:link, a:visited {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 399, ../sass/screen.scss */
+/* line 403, ../sass/screen.scss */
 .ticket-quantity-wrap .text-field:focus {
   outline: none;
 }
 
-/* line 410, ../sass/screen.scss */
+/* line 414, ../sass/screen.scss */
 footer {
   margin: 260px auto 200px;
   color: #f0ebe5;
@@ -498,64 +501,64 @@ footer {
   line-height: 1.3em;
 }
 @media only screen and (max-width: 1080px) {
-  /* line 410, ../sass/screen.scss */
+  /* line 414, ../sass/screen.scss */
   footer {
     margin: 240px auto 160px;
   }
 }
 @media only screen and (max-height: 610px) {
-  /* line 410, ../sass/screen.scss */
+  /* line 414, ../sass/screen.scss */
   footer {
     margin: 170px auto 160px;
   }
 }
-/* line 425, ../sass/screen.scss */
+/* line 429, ../sass/screen.scss */
 footer p {
   padding-top: 10px;
   text-align: center;
 }
-/* line 430, ../sass/screen.scss */
+/* line 434, ../sass/screen.scss */
 footer a, footer a:link, footer a:visited {
   color: #f0ebe5;
 }
-/* line 434, ../sass/screen.scss */
+/* line 438, ../sass/screen.scss */
 footer a:hover, footer a:focus, footer a:active {
   color: #fdfcfa;
 }
-/* line 438, ../sass/screen.scss */
+/* line 442, ../sass/screen.scss */
 footer ul {
   width: 200px;
   margin: 0 auto;
 }
-/* line 441, ../sass/screen.scss */
+/* line 445, ../sass/screen.scss */
 footer ul a, footer ul a:link, footer ul a:visited {
   float: left;
   text-align: center;
   margin: 20px 0 0 10px;
   width: 90px;
 }
-/* line 447, ../sass/screen.scss */
+/* line 451, ../sass/screen.scss */
 footer ul a:hover, footer ul a:focus, footer ul a:active {
   color: #fdfcfa;
 }
 
-/* line 458, ../sass/screen.scss */
+/* line 462, ../sass/screen.scss */
 .clearfix:before, .clearfix:after {
   content: "";
   display: table;
 }
 
-/* line 459, ../sass/screen.scss */
+/* line 463, ../sass/screen.scss */
 .clearfix:after {
   clear: both;
 }
 
-/* line 460, ../sass/screen.scss */
+/* line 464, ../sass/screen.scss */
 .clearfix {
   zoom: 1;
 }
 
-/* line 462, ../sass/screen.scss */
+/* line 466, ../sass/screen.scss */
 .ir {
   display: block;
   text-indent: 100%;
