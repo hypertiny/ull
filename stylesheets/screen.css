@@ -496,14 +496,24 @@ a, a:link, a:visited {
   height: 45px;
   border-bottom: 2px solid #932829;
 }
+/* line 407, ../sass/screen.scss */
+#tito-register-form p.locked-msg {
+  margin-top: 21px;
+  margin-left: -145.9px;
+  font-size: 13px;
+}
+/* line 411, ../sass/screen.scss */
+#tito-register-form p.locked-msg span.websymbols {
+  margin-right: 9px;
+}
 
-/* line 408, ../sass/screen.scss */
+/* line 417, ../sass/screen.scss */
 .ticket-quantity-wrap {
   position: absolute;
   right: 1px;
   top: -4px;
 }
-/* line 412, ../sass/screen.scss */
+/* line 421, ../sass/screen.scss */
 .ticket-quantity-wrap .text-field {
   width: 30px;
   height: 30px;
@@ -522,12 +532,12 @@ a, a:link, a:visited {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 423, ../sass/screen.scss */
+/* line 432, ../sass/screen.scss */
 .ticket-quantity-wrap .text-field:focus {
   outline: none;
 }
 
-/* line 434, ../sass/screen.scss */
+/* line 443, ../sass/screen.scss */
 footer {
   margin: 130px auto 140px;
   color: #f0ebe5;
@@ -536,18 +546,18 @@ footer {
   line-height: 1.3em;
 }
 @media only screen and (max-width: 1080px) {
-  /* line 434, ../sass/screen.scss */
+  /* line 443, ../sass/screen.scss */
   footer {
     margin: 130px auto 120px;
   }
 }
 @media only screen and (max-height: 610px) {
-  /* line 434, ../sass/screen.scss */
+  /* line 443, ../sass/screen.scss */
   footer {
     margin: 170px auto 160px;
   }
 }
-/* line 449, ../sass/screen.scss */
+/* line 458, ../sass/screen.scss */
 footer p {
   padding-top: 10px;
   text-align: center;
@@ -555,7 +565,7 @@ footer p {
   margin: 0 auto;
 }
 @media only screen and (max-width: 1080px) {
-  /* line 449, ../sass/screen.scss */
+  /* line 458, ../sass/screen.scss */
   footer p {
     width: 100%;
     padding: 0 10px;
@@ -564,7 +574,7 @@ footer p {
     box-sizing: border-box;
   }
 }
-/* line 461, ../sass/screen.scss */
+/* line 470, ../sass/screen.scss */
 footer .final-paragraph {
   font-size: 1.15em;
   line-height: 1.15em;
@@ -572,55 +582,55 @@ footer .final-paragraph {
   width: 400px;
 }
 @media only screen and (max-width: 400px) {
-  /* line 461, ../sass/screen.scss */
+  /* line 470, ../sass/screen.scss */
   footer .final-paragraph {
     width: 100%;
     padding: 0 20px;
   }
 }
-/* line 472, ../sass/screen.scss */
+/* line 481, ../sass/screen.scss */
 footer a, footer a:link, footer a:visited {
   color: #f0ebe5;
   font-weight: 500;
 }
-/* line 477, ../sass/screen.scss */
+/* line 486, ../sass/screen.scss */
 footer a:hover, footer a:focus, footer a:active {
   color: #fdfcfa;
 }
-/* line 481, ../sass/screen.scss */
+/* line 490, ../sass/screen.scss */
 footer ul {
   width: 300px;
   margin: 0 auto;
 }
-/* line 484, ../sass/screen.scss */
+/* line 493, ../sass/screen.scss */
 footer ul a, footer ul a:link, footer ul a:visited {
   text-align: center;
   margin: 10px 0 0 0;
   width: 300px;
   display: block;
 }
-/* line 490, ../sass/screen.scss */
+/* line 499, ../sass/screen.scss */
 footer ul a:hover, footer ul a:focus, footer ul a:active {
   color: #fdfcfa;
 }
 
-/* line 501, ../sass/screen.scss */
+/* line 510, ../sass/screen.scss */
 .clearfix:before, .clearfix:after {
   content: "";
   display: table;
 }
 
-/* line 502, ../sass/screen.scss */
+/* line 511, ../sass/screen.scss */
 .clearfix:after {
   clear: both;
 }
 
-/* line 503, ../sass/screen.scss */
+/* line 512, ../sass/screen.scss */
 .clearfix {
   zoom: 1;
 }
 
-/* line 505, ../sass/screen.scss */
+/* line 514, ../sass/screen.scss */
 .ir {
   display: block;
   text-indent: 100%;
