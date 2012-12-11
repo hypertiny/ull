@@ -337,6 +337,10 @@ a, a:link, a:visited {
   line-height: 1.15em;
   text-align: center;
 
+  p.soon {
+    margin-top: 33px;
+  }
+
   @media only screen and (max-width: 1000px) {
     width: 300px;
   }
