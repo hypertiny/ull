@@ -1,4 +1,4 @@
-/* line 17, ../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -15,50 +15,50 @@ time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
   font: inherit;
+  font-size: 100%;
   vertical-align: baseline;
 }
 
-/* line 20, ../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-body {
+/* line 22, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
   line-height: 1;
 }
 
-/* line 22, ../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 24, ../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 26, ../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 28, ../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 101, ../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 30, ../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 114, ../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
@@ -127,35 +127,40 @@ a, a:link, a:visited {
 /* line 87, ../sass/screen.scss */
 .logo {
   background: url(../images/logo.png);
-  -webkit-background-size: 100%;
-  background-size: 100%;
   width: 80px;
   height: 80px;
   display: block;
   margin: 60px auto 0;
 }
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  /* line 87, ../sass/screen.scss */
+  .logo {
+    background: url(../images/logo@2x.png) no-repeat;
+    background-size: 100%;
+  }
+}
 
-/* line 104, ../sass/screen.scss */
+/* line 106, ../sass/screen.scss */
 #speakers {
   position: relative;
   width: 1080px;
   margin: 100px auto;
 }
 @media only screen and (max-width: 1080px) {
-  /* line 104, ../sass/screen.scss */
+  /* line 106, ../sass/screen.scss */
   #speakers {
     width: 960px;
     margin-bottom: 160px;
   }
 }
 @media only screen and (max-width: 1000px) {
-  /* line 104, ../sass/screen.scss */
+  /* line 106, ../sass/screen.scss */
   #speakers {
     width: 100%;
   }
 }
 
-/* line 120, ../sass/screen.scss */
+/* line 122, ../sass/screen.scss */
 .speaker-box-top {
   width: 300px;
   height: 600px;
@@ -163,40 +168,40 @@ a, a:link, a:visited {
   cursor: pointer;
   display: block;
 }
-/* line 126, ../sass/screen.scss */
+/* line 128, ../sass/screen.scss */
 .speaker-box-top.inspiration {
   top: 0;
   left: 30px;
   background: url(../images/cover-inspiration.jpg) no-repeat;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  /* line 126, ../sass/screen.scss */
+  /* line 128, ../sass/screen.scss */
   .speaker-box-top.inspiration {
     background: url(../images/cover-inspiration@2x.jpg) no-repeat;
     background-size: 100%;
   }
 }
-/* line 136, ../sass/screen.scss */
+/* line 138, ../sass/screen.scss */
 .speaker-box-top.education {
   top: 0;
   left: 390px;
   background: url(../images/cover-education.jpg) no-repeat;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  /* line 136, ../sass/screen.scss */
+  /* line 138, ../sass/screen.scss */
   .speaker-box-top.education {
     background: url(../images/cover-education@2x.jpg) no-repeat;
     background-size: 100%;
   }
 }
-/* line 146, ../sass/screen.scss */
+/* line 148, ../sass/screen.scss */
 .speaker-box-top.empowerment {
   top: 0;
   left: 750px;
   background: url(../images/cover-empowerment.jpg) no-repeat;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  /* line 146, ../sass/screen.scss */
+  /* line 148, ../sass/screen.scss */
   .speaker-box-top.empowerment {
     background: url(../images/cover-empowerment@2x.jpg) no-repeat;
     background-size: 100%;
@@ -204,29 +209,29 @@ a, a:link, a:visited {
 }
 
 @media only screen and (max-width: 1080px) {
-  /* line 159, ../sass/screen.scss */
+  /* line 161, ../sass/screen.scss */
   .speaker-box-top.inspiration {
     top: 0;
     left: 10px;
   }
-  /* line 164, ../sass/screen.scss */
+  /* line 166, ../sass/screen.scss */
   .speaker-box-top.education {
     top: 0;
     left: 330px;
   }
-  /* line 169, ../sass/screen.scss */
+  /* line 171, ../sass/screen.scss */
   .speaker-box-top.empowerment {
     top: 0;
     left: 650px;
   }
 }
 @media only screen and (max-width: 1000px) {
-  /* line 177, ../sass/screen.scss */
+  /* line 179, ../sass/screen.scss */
   .speaker-box-top {
     display: none;
   }
 }
-/* line 186, ../sass/screen.scss */
+/* line 188, ../sass/screen.scss */
 .speaker-box {
   height: 600px;
   width: 300px;
@@ -238,13 +243,13 @@ a, a:link, a:visited {
   padding: 210px 40px 0 40px;
 }
 @media only screen and (max-width: 1080px) {
-  /* line 186, ../sass/screen.scss */
+  /* line 188, ../sass/screen.scss */
   .speaker-box {
     margin: 0 10px;
   }
 }
 @media only screen and (max-width: 1000px) {
-  /* line 186, ../sass/screen.scss */
+  /* line 188, ../sass/screen.scss */
   .speaker-box {
     margin: 30px auto;
     float: none;
@@ -253,105 +258,105 @@ a, a:link, a:visited {
     padding: 40px 40px 0 40px;
   }
 }
-/* line 207, ../sass/screen.scss */
+/* line 209, ../sass/screen.scss */
 .speaker-box.matt {
   background: url(../images/ull-icon-inspiration.png) no-repeat center 75px, url(../images/bg-inspiration.jpg) no-repeat;
   -webkit-background-size: 30%, 100%;
   background-size: 30%, 100%;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  /* line 207, ../sass/screen.scss */
+  /* line 209, ../sass/screen.scss */
   .speaker-box.matt {
     background: url(../images/ull-icon-inspiration@2x.png) no-repeat center 75px, url(../images/bg-inspiration@2x.jpg) no-repeat;
   }
 }
 @media only screen and (max-width: 1000px) {
-  /* line 207, ../sass/screen.scss */
+  /* line 209, ../sass/screen.scss */
   .speaker-box.matt {
     background: url(../images/speaker-box-small-inspiration.jpg) no-repeat;
   }
 }
 @media only screen and (max-width: 1000px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 1000px) and (min-resolution: 192dpi) {
-  /* line 207, ../sass/screen.scss */
+  /* line 209, ../sass/screen.scss */
   .speaker-box.matt {
     background: url(../images/speaker-box-small-inspiration@2x.jpg) no-repeat;
     background-size: 100%;
   }
 }
-/* line 227, ../sass/screen.scss */
+/* line 229, ../sass/screen.scss */
 .speaker-box.wave {
   background: url(../images/ull-icon-education.png) no-repeat center 75px, url(../images/bg-inspiration.jpg) no-repeat;
   -webkit-background-size: 30%, 100%;
   background-size: 30%, 100%;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  /* line 227, ../sass/screen.scss */
+  /* line 229, ../sass/screen.scss */
   .speaker-box.wave {
     background: url(../images/ull-icon-education@2x.png) no-repeat center 75px, url(../images/bg-inspiration@2x.jpg) no-repeat;
   }
 }
 @media only screen and (max-width: 1000px) {
-  /* line 227, ../sass/screen.scss */
+  /* line 229, ../sass/screen.scss */
   .speaker-box.wave {
     background: url(../images/speaker-box-small-education.jpg) no-repeat;
   }
 }
 @media only screen and (max-width: 1000px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 1000px) and (min-resolution: 192dpi) {
-  /* line 227, ../sass/screen.scss */
+  /* line 229, ../sass/screen.scss */
   .speaker-box.wave {
     background: url(../images/speaker-box-small-empowerment@2x.jpg) no-repeat;
     background-size: 100%;
   }
 }
-/* line 247, ../sass/screen.scss */
+/* line 249, ../sass/screen.scss */
 .speaker-box.amber {
   background: url(../images/ull-icon-empowerment.png) no-repeat center 75px, url(../images/bg-inspiration.jpg) no-repeat;
   -webkit-background-size: 30%, 100%;
   background-size: 30%, 100%;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  /* line 247, ../sass/screen.scss */
+  /* line 249, ../sass/screen.scss */
   .speaker-box.amber {
     background: url(../images/ull-icon-empowerment@2x.png) no-repeat center 75px, url(../images/bg-inspiration@2x.jpg) no-repeat;
   }
 }
 @media only screen and (max-width: 1000px) {
-  /* line 247, ../sass/screen.scss */
+  /* line 249, ../sass/screen.scss */
   .speaker-box.amber {
     background: url(../images/speaker-box-small-empowerment.jpg) no-repeat;
   }
 }
 @media only screen and (max-width: 1000px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 1000px) and (min-resolution: 192dpi) {
-  /* line 247, ../sass/screen.scss */
+  /* line 249, ../sass/screen.scss */
   .speaker-box.amber {
     background: url(../images/speaker-box-small-empowerment@2x.jpg) no-repeat;
     background-size: 100%;
   }
 }
 
-/* line 271, ../sass/screen.scss */
+/* line 273, ../sass/screen.scss */
 .speaker-box-content {
   color: #161411;
   position: relative;
   height: 350px;
 }
 @media only screen and (max-width: 1000px) {
-  /* line 271, ../sass/screen.scss */
+  /* line 273, ../sass/screen.scss */
   .speaker-box-content {
     height: 320px;
   }
 }
-/* line 279, ../sass/screen.scss */
+/* line 281, ../sass/screen.scss */
 .speaker-box-content.matt, .speaker-box-content.wave, .speaker-box-content.amber {
   display: none;
 }
 @media only screen and (max-width: 1000px) {
-  /* line 279, ../sass/screen.scss */
+  /* line 281, ../sass/screen.scss */
   .speaker-box-content.matt, .speaker-box-content.wave, .speaker-box-content.amber {
     display: block;
   }
 }
-/* line 286, ../sass/screen.scss */
+/* line 288, ../sass/screen.scss */
 .speaker-box-content h1 {
   text-align: center;
   font-size: 2.1em;
@@ -359,7 +364,7 @@ a, a:link, a:visited {
   margin: 0 0 30px 0;
 }
 @media only screen and (max-width: 1000px) {
-  /* line 286, ../sass/screen.scss */
+  /* line 288, ../sass/screen.scss */
   .speaker-box-content h1 {
     text-align: left;
     font-size: 1.5em;
@@ -368,19 +373,19 @@ a, a:link, a:visited {
     padding: 0;
   }
 }
-/* line 300, ../sass/screen.scss */
+/* line 302, ../sass/screen.scss */
 .speaker-box-content p {
   font-weight: 400;
   font-size: 0.8em;
   line-height: 1.2em;
   margin-bottom: 20px;
 }
-/* line 307, ../sass/screen.scss */
+/* line 309, ../sass/screen.scss */
 .speaker-box-content .speaker-links {
   position: absolute;
   bottom: 30px;
 }
-/* line 312, ../sass/screen.scss */
+/* line 314, ../sass/screen.scss */
 .speaker-box-content a.further-info {
   display: block;
   float: left;
@@ -388,12 +393,12 @@ a, a:link, a:visited {
   font-size: 0.9em;
   margin: 0 0 4px 0;
 }
-/* line 319, ../sass/screen.scss */
+/* line 321, ../sass/screen.scss */
 .speaker-box-content a.further-info:hover, .speaker-box-content a.further-info:focus, .speaker-box-content a.further-info:active {
   color: #932829;
 }
 
-/* line 330, ../sass/screen.scss */
+/* line 332, ../sass/screen.scss */
 .tickets {
   width: 440px;
   margin: 0 auto 140px;
@@ -403,24 +408,24 @@ a, a:link, a:visited {
   text-align: center;
 }
 @media only screen and (max-width: 1000px) {
-  /* line 330, ../sass/screen.scss */
+  /* line 332, ../sass/screen.scss */
   .tickets {
     width: 300px;
   }
 }
-/* line 342, ../sass/screen.scss */
+/* line 344, ../sass/screen.scss */
 .tickets p, .tickets .ticket-name, .tickets .ticket-price {
   opacity: 0.99;
 }
-/* line 346, ../sass/screen.scss */
+/* line 348, ../sass/screen.scss */
 .tickets .ticket-name, .tickets .ticket-price, .tickets .buttons input {
   position: absolute;
 }
-/* line 350, ../sass/screen.scss */
+/* line 352, ../sass/screen.scss */
 .tickets .ticket-price {
   right: 40px;
 }
-/* line 354, ../sass/screen.scss */
+/* line 356, ../sass/screen.scss */
 .tickets .buttons input {
   top: 65px;
   right: 50%;
@@ -440,17 +445,16 @@ a, a:link, a:visited {
   font-family: "rooney-web",sans-serif;
   -webkit-transition: background 0.05s ease, color 0.05s ease;
   -moz-transition: background 0.05s ease, color 0.05s ease;
-  -ms-transition: background 0.05s ease, color 0.05s ease;
   -o-transition: background 0.05s ease, color 0.05s ease;
   transition: background 0.05s ease, color 0.05s ease;
 }
-/* line 369, ../sass/screen.scss */
+/* line 371, ../sass/screen.scss */
 .tickets .buttons input:hover {
   background: #f0ebe5;
   color: #161411;
 }
 
-/* line 376, ../sass/screen.scss */
+/* line 378, ../sass/screen.scss */
 #tito-register-form {
   margin: 40px auto;
   position: relative;
@@ -459,13 +463,13 @@ a, a:link, a:visited {
   border-bottom: 2px solid #932829;
 }
 
-/* line 384, ../sass/screen.scss */
+/* line 386, ../sass/screen.scss */
 .ticket-quantity-wrap {
   position: absolute;
   right: 1px;
   top: -4px;
 }
-/* line 388, ../sass/screen.scss */
+/* line 390, ../sass/screen.scss */
 .ticket-quantity-wrap .text-field {
   width: 30px;
   height: 30px;
@@ -484,12 +488,12 @@ a, a:link, a:visited {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 399, ../sass/screen.scss */
+/* line 401, ../sass/screen.scss */
 .ticket-quantity-wrap .text-field:focus {
   outline: none;
 }
 
-/* line 410, ../sass/screen.scss */
+/* line 412, ../sass/screen.scss */
 footer {
   margin: 260px auto 200px;
   color: #f0ebe5;
@@ -498,64 +502,64 @@ footer {
   line-height: 1.3em;
 }
 @media only screen and (max-width: 1080px) {
-  /* line 410, ../sass/screen.scss */
+  /* line 412, ../sass/screen.scss */
   footer {
     margin: 240px auto 160px;
   }
 }
 @media only screen and (max-height: 610px) {
-  /* line 410, ../sass/screen.scss */
+  /* line 412, ../sass/screen.scss */
   footer {
     margin: 170px auto 160px;
   }
 }
-/* line 425, ../sass/screen.scss */
+/* line 427, ../sass/screen.scss */
 footer p {
   padding-top: 10px;
   text-align: center;
 }
-/* line 430, ../sass/screen.scss */
+/* line 432, ../sass/screen.scss */
 footer a, footer a:link, footer a:visited {
   color: #f0ebe5;
 }
-/* line 434, ../sass/screen.scss */
+/* line 436, ../sass/screen.scss */
 footer a:hover, footer a:focus, footer a:active {
   color: #fdfcfa;
 }
-/* line 438, ../sass/screen.scss */
+/* line 440, ../sass/screen.scss */
 footer ul {
   width: 200px;
   margin: 0 auto;
 }
-/* line 441, ../sass/screen.scss */
+/* line 443, ../sass/screen.scss */
 footer ul a, footer ul a:link, footer ul a:visited {
   float: left;
   text-align: center;
   margin: 20px 0 0 10px;
   width: 90px;
 }
-/* line 447, ../sass/screen.scss */
+/* line 449, ../sass/screen.scss */
 footer ul a:hover, footer ul a:focus, footer ul a:active {
   color: #fdfcfa;
 }
 
-/* line 458, ../sass/screen.scss */
+/* line 460, ../sass/screen.scss */
 .clearfix:before, .clearfix:after {
   content: "";
   display: table;
 }
 
-/* line 459, ../sass/screen.scss */
+/* line 461, ../sass/screen.scss */
 .clearfix:after {
   clear: both;
 }
 
-/* line 460, ../sass/screen.scss */
+/* line 462, ../sass/screen.scss */
 .clearfix {
   zoom: 1;
 }
 
-/* line 462, ../sass/screen.scss */
+/* line 464, ../sass/screen.scss */
 .ir {
   display: block;
   text-indent: 100%;
