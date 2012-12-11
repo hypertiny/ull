@@ -393,6 +393,15 @@ a, a:link, a:visited {
   width: 280px;
   height: 45px;
   border-bottom: 2px solid $red;
+
+  p.locked-msg {
+    margin-top: 21px;
+    margin-left: -145.9px;
+    font-size: 13px;
+    span.websymbols {
+      margin-right: 9px;
+    }
+  }
 }
 
 .ticket-quantity-wrap  {
