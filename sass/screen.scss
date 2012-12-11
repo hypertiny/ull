@@ -70,8 +70,8 @@ a, a:link, a:visited {
     color: $cream;
     text-align: center;
     text-rendering: optimizelegibility;
-    font-size: 1.15em;
-    line-height: 1.15em;
+    font-size: 1.2em;
+    line-height: 1.2em;
     
     &.date-location {
       margin: 30px auto 20px; 
@@ -355,12 +355,16 @@ a, a:link, a:visited {
   width: 440px;
   margin: 0 auto;
   color: $cream;
-  font-size: 1.15em;
-  line-height: 1.15em;
+  font-size: 1.2em;
+  line-height: 1.2em;
   text-align: center;
 
-  p.soon {
+  .soon {
     margin-top: 33px;
+  }
+
+  .more-tickets {
+    margin: 33px 0;
   }
 
   @media only screen and (max-width: 400px) {
@@ -480,8 +484,8 @@ footer {
   }
 
   .final-paragraph {
-    font-size: 1.15em;
-    line-height: 1.15em;
+    font-size: 1.2em;
+    line-height: 1.2em;
     margin-bottom: 30px;
     width: 400px;
     @media only screen and (max-width: 400px) {
