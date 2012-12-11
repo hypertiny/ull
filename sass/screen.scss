@@ -331,7 +331,7 @@ a, a:link, a:visited {
 
 .tickets {
   width: 440px;
-  margin: 0 auto 140px;
+  margin: 0 auto;
   color: $cream;
   font-size: 1.15em;
   line-height: 1.15em;
@@ -341,12 +341,20 @@ a, a:link, a:visited {
     margin-top: 33px;
   }
 
-  @media only screen and (max-width: 1000px) {
+  @media only screen and (max-width: 400px) {
     width: 300px;
   }
 
   p, .ticket-name, .ticket-price {
     opacity: 0.99;
+  }
+
+  .more-details {
+    width: 400px;
+    margin: 0 auto;
+    @media only screen and (max-width: 400px) {
+      width: 300px;
+    }
   }
 
   .ticket-name, .ticket-price, .buttons input {
@@ -414,10 +422,10 @@ a, a:link, a:visited {
 // ---------------------------------------------------------
 
 footer {
-  margin: 260px auto 200px;
+  margin: 130px auto 140px;
   
   @media only screen and (max-width: 1080px) { 
-    margin: 240px auto 160px;
+    margin: 130px auto 120px;
   }
 
   @media only screen and (max-height: 610px) { 
@@ -431,10 +439,29 @@ footer {
   p {
     padding-top: 10px;
     text-align: center;
+    width: 400px;
+    @media only screen and (max-width: 1080px) { 
+      width: 100%;
+      padding: 0 10px;
+      @include box-sizing(border-box);
+    }
+    margin: 0 auto;
+  }
+
+  .final-paragraph {
+    font-size: 1.15em;
+    line-height: 1.15em;
+    margin-bottom: 30px;
+    width: 400px;
+    @media only screen and (max-width: 400px) {
+      width: 100%;
+      padding: 0 20px;
+    }
   }
 
   a, a:link, a:visited {
     color: $cream;
+    font-weight: 500;
   }
 
   a:hover, a:focus, a:active {
@@ -442,13 +469,13 @@ footer {
   }
 
   ul {
-    width: 200px;
+    width: 300px;
     margin: 0 auto;
     a, a:link, a:visited {
-      float: left;
       text-align: center;
-      margin: 20px 0 0 10px;
-      width: 90px;
+      margin: 10px 0 0 0;
+      width: 300px;
+      display: block;
     }
     a:hover, a:focus, a:active {
       color: #fdfcfa;
