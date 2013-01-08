@@ -494,6 +494,9 @@ a, a:link, a:visited {
   }
   &.dave {
     display: none;
+    @media only screen and (max-width: 1000px) {
+      display: block;
+    }
   }
 
   h1 {
