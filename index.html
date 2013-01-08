@@ -14,7 +14,7 @@
 <body>
   <script>
     $(document).ready(function() {
-      $('.speaker-box-top.inspiration').click(function() {
+      $('.speaker-box-top.matt').click(function() {
         $(this).fadeOut(200, function() {
           setTimeout(function(){
             $('.speaker-box-content.matt').fadeIn(350)
@@ -22,7 +22,7 @@
         });
       });
 
-      $('.speaker-box-top.education').click(function() {
+      $('.speaker-box-top.wave').click(function() {
         $(this).fadeOut(200, function() {
           setTimeout(function(){
             $('.speaker-box-content.wave').fadeIn(350)
@@ -30,10 +30,17 @@
         });
       });
 
-      $('.speaker-box-top.empowerment').click(function() {
+      $('.speaker-box-top.amber').click(function() {
         $(this).fadeOut(200, function() {
           setTimeout(function(){
             $('.speaker-box-content.amber').fadeIn(350)
+          }, 300)
+        });
+      });
+      $('.speaker-box-top.dave').click(function() {
+        $(this).fadeOut(200, function() {
+          setTimeout(function(){
+            $('.speaker-box-content.dave').fadeIn(350)
           }, 300)
         });
       });
@@ -53,59 +60,107 @@
     </p>
 
   </div>
-  <!-- <h2 class="section-title">Speakers</h2> -->
-  <div id="speakers" class="clearfix">
-    <div class="speaker-box-top inspiration"></div>
+  
+  <h2 class="section-title">
+    <span>Peepcode Live</span>
+  </h2>
+  
+  <div class="peepcode-session">
+    <p>When the Play by Play by Neven Mrgan Peepcode episode went on sale, we simply had to get in touch with Geoffrey Grosenbach to see if he'd be willing to bring the play by play to the live stage. When Neven was game too, we had to make it happen. Peepcode has redefined online screencasting, and we're betting that it will redefine how much you can learn during an interactive session at a conference. Neven, who works for Panic, Inc. is one of the most influential designers of Mac software out there. The combination of experience, presentation skill and design talent has us drooling at the prospect of seeing this duo live.
+    </p>
+
+    <div class="session-links clearfix">
+      <span>Geoffrey Grosenbach</span>
+      <a href="http://twitter.com/topfunky/">@topfunky</a> 
+    </div>
+    <div class="session-links clearfix">
+      <span>Neven Mrgan</span>
+      <a href="http://twitter.com/mrgan/">@mrgan</a>
+    </div>
+    
+  </div>
+  
+  
+  <h2 class="section-title">
+    <span>Speakers</span>
+  </h2>
+  <div class="speakers clearfix">
+    <div class="speaker-box-top matt"></div>
     <div class="speaker-box matt">
       <div class="speaker-box-content matt">
         <h1>Matt Gemmell</h1>
         <p>Matt provided wit, charm and deep insight at last year&rsquo;s &Uacute;ll, where his Paper-drawn slides illustrated common failures of common sense in iOS apps. We&rsquo;re delighted that Matt will join us again as this year&rsquo;s keynote.</p>
         <div class="speaker-links">
           <a href="https://twitter.com/mattgemmell" class="further-info">@mattgemmell</a>
-          <a href="http://mattgemmell.com/" class="further-info">mattgemmell.com</a>
         </div>
       </div>
     </div>
     
-    <div class="speaker-box-top education"></div>
+    <div class="speaker-box-top wave"></div>
     <div class="speaker-box wave">
       <div class="speaker-box-content wave">
         <h1>Michael B. Johnson</h1>
         <p>When last year&rsquo;s dates didn&rsquo;t suit Dr. Wave, we were heart-broken. Michael has spoken all over the world, at WWDC and beyond. He has worked at Pixar for 18 years, and now he&rsquo;s coming to Dublin.</p>
         <div class="speaker-links">
           <a href="https://twitter.co/drwave" class="further-info">@drwave</a>
-          <a href="http://xenia.media.mit.edu/~wave/" class="further-info">xenia.media.mit.edu/~wave</a>
         </div>
       </div>
     </div>
     
-    <div class="speaker-box-top empowerment"></div>
+    <div class="speaker-box-top amber"></div>
     <div class="speaker-box amber">
       <div class="speaker-box-content amber">
         <h1>Amber Reyngoudt</h1>
         <p>Theatre, Entrepreneur, Engineer, Mobile Web, Oregon Trail, Oink, Milk, Skull Ninja. All are words that make us very excited that Amber will be speaking at &Uacute;ll this year.</p>
         <div class="speaker-links">
           <a href="https://twitter.com/amberreyn" class="further-info">@amberreyn</a>
-          <a href="http://about.me/amberreyngoudt" class="further-info">about.me/amberreyngoudt</a>
         </div>
       </div>
     </div>
   </div>
+  
+  <div class="speakers secret clearfix">
+    <div class="speaker-box-top dave"></div>
+    <div class="speaker-box dave">
+      <div class="speaker-box-content dave">
+        <h1>Dave Addy</h1>
+        <p>Dave Addey is one of the most established iOS developers in the UK and a regular speaker on the topic. His app agency, Agant, has built a variety of prominent UK apps including the Bafta nominated Malcolm Tucker app. Dave was featured in .Net magazine's Top 20 Web Conference Talks of 2012.</p>
+        <div class="speaker-links">
+          <a href="https://twitter.com/mattgemmell" class="further-info">@daveaddey</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="speaker-box-top secret week2">
+      <span>25</span><span>01</span>
+    </div>
+    <div class="speaker-box secret">
+      <div class="speaker-box-content">
+        <p>No peeking</p>
+      </div>
+    </div>
+    
+    <div class="speaker-box-top secret week3">
+      <span>01</span><span>02</span>
+    </div>
+    <div class="speaker-box secret">
+      <div class="speaker-box-content">
+        <p>No peeking</p>
+      </div>
+    </div>
+  </div>
+  
+  <h2 class="section-title">
+    <span>Tickets</span>
+  </h2>
   
   <div class="tickets">
     <p class="more-details">
       More details will be announced soon.<br>
       This is just a taste of what&rsquo;s to come.
     </p>
-<!--     <p class="soon">
-      A small number of tickets are on sale now. 
-    </p> -->
-    <p class="more-tickets">
-      The Early Bird tickets have sold out. More ticket details will be announced soon.
-    </p>
-    <div class="dividing-line"></div>
-    <!-- <div id="tito-register-form"></div>
-    <script src="https://tito.io/ull/2013.js?release_id=nwynqjkzixg"></script></div> -->
+    <div id="tito-register-form"></div>
+      <script src="https://tito.io/paulca/test-event.js"></script>
   </div>
   
   <footer>
@@ -115,7 +170,7 @@
     
     <ul>
       <li><a href="mailto:sponsors@ull.ie">Sponsorship Enquiries</a></li>
-      <li><a href="mailto:sponsors@ull.ie">Questions or Comments</a></li>
+      <li><a href="mailto:feedback@ull.ie">Questions or Comments</a></li>
       <li><a href="http://2012.ull.ie">2012 Site</a></li>
       <li><a href="http://twitter.com/ullconf">@ullconf</a></li>
     </ul>

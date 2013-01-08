@@ -58,6 +58,38 @@ a, a:link, a:visited {
   margin: 0 auto;
 }
 
+.section-title {
+  width: 1020px;
+  border-top: 2px solid rgba($cream, 0.1);
+  margin: 100px auto 0;
+  text-align: center;
+  span {
+    position: relative;
+    background: url(../images/broken_noise.png);
+    color: $cream;
+    display: inline-block;
+    text-align: center;
+    padding: 0 30px;
+    font-size: 1.4em;
+    top: -14px;
+    opacity: 0.99;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  @media only screen and (max-width: 1080px) {
+    width: 940px;
+  }
+
+  @media only screen and (max-width: 1000px) {
+    width: 94%;
+    span {
+      font-size: 1.1em;
+      letter-spacing: 1px;
+      padding: 0 15px;
+    }
+  }
+}
+
 
 // ---------------------------------------------------------
 // INTRODUCTION
@@ -110,21 +142,62 @@ a, a:link, a:visited {
 
 
 
+// ---------------------------------------------------------
+// NEWS SECTION
+// ---------------------------------------------------------
+
+.peepcode-session {
+  width: 800px;
+  margin: 60px auto 220px;
+  color: $cream;
+  opacity: 0.99;
+  line-height: 1.2em;
+
+  .session-links {
+    margin: 30px 0;
+    width: 260px;
+    float: left;
+  }
+  a, a:link, a:visited {
+    color: $cream;
+    font-weight: 700;
+    display: block;
+  }
+  @media only screen and (max-width: 1000px) {
+    width: 94%;
+    margin-top: 20px;
+    font-size: 0.85em;
+    .session-links {
+      margin: 30px 0 10px;
+    }
+  }
+}
+
+
+
 
 // ---------------------------------------------------------
 // SPEAKER SECTION
 // ---------------------------------------------------------
 
-#speakers {
+
+.speakers {
   position: relative;
   width: 1080px;
-  margin: 100px auto;
+  margin: 100px auto 50px;
+  &.secret {
+    margin: 0 auto 170px;
+  }
   @media only screen and (max-width: 1080px) {
     width: 960px;
-    margin-bottom: 160px;
+    margin: 40px auto 20px;
+    &.secret {
+      margin-bottom: 160px;
+    }
   }
   @media only screen and (max-width: 1000px) {
     width: 100%;
+    margin-bottom: -30px;
   }
 }
 
@@ -133,77 +206,191 @@ a, a:link, a:visited {
 
 .speaker-box-top {
   width: 300px;
-  height: 600px;
+  height: 380px;
   position: absolute;
   cursor: pointer;
   display: block;
-  &.inspiration {
+  @media only screen and (max-width: 1000px) {
+    display: none;
+    &.secret {
+      display: block;
+    }
+  }
+
+  &.week1, &.week2, &.week3 {
+    span {
+      font-size: 1.4em;
+      position: absolute;
+    }
+  }
+
+  &.week1 span {
+    &:nth-child(1) {
+      top: 165px;
+      left: 116px;
+    }
+    &:nth-child(2) {
+     top: 165px;
+     left: 157px;
+    }
+  }
+
+  &.week2 span {
+    &:nth-child(1) {
+      top: 165px;
+      left: 115px;
+    }
+    &:nth-child(2) {
+     left: 157px;
+     top: 165px;
+    }
+  }
+
+  &.week3 span {
+    &:nth-child(1) {
+      top: 165px;
+      left: 115px;
+    }
+    &:nth-child(2) {
+     top: 165px;
+     left: 156px;
+    }
+  }
+
+  &.matt {
     top: 0;
     left: 30px;
-    background: url(../images/cover-inspiration.jpg) no-repeat;
+    background: url(../images/cover-matt.jpg) no-repeat;
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
-      background: url(../images/cover-inspiration@2x.jpg) no-repeat;
+      background: url(../images/cover-matt@2x.jpg) no-repeat;
       background-size: 100%;
     }
   }
 
-  &.education {
+  &.wave {
     top: 0;
     left: 390px;
-    background: url(../images/cover-education.jpg) no-repeat;
+    background: url(../images/cover-wave.jpg) no-repeat;
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
-      background: url(../images/cover-education@2x.jpg) no-repeat;
+      background: url(../images/cover-wave@2x.jpg) no-repeat;
       background-size: 100%;
     }
   }
   
-  &.empowerment {
+  &.amber {
     top: 0;
     left: 750px;
-    background: url(../images/cover-empowerment.jpg) no-repeat;
+    background: url(../images/cover-amber.jpg) no-repeat;
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
-      background: url(../images/cover-empowerment@2x.jpg) no-repeat;
+      background: url(../images/cover-amber@2x.jpg) no-repeat;
       background-size: 100%;
     }
   }
+  
+  &.dave {
+    top: 0;
+    left: 30px;
+    background: url(../images/cover-dave.jpg) no-repeat;
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
+      background: url(../images/cover-dave@2x.jpg) no-repeat;
+      background-size: 100%;
+    }
+  }
+
+  &.secret {
+    top: 0;
+    background: url(../images/cover-secret.jpg) no-repeat;
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
+      background: url(../images/cover-secret@2x.jpg) no-repeat;
+      background-size: 100%;
+    }
+  }
+
+  &.week1, &.week2, &.week3 {
+    cursor: auto;
+    z-index: 1;
+  }
+  &.week1 {
+    left: 30px;
+  }
+  &.week2 {
+    left: 390px;
+  }
+  &.week3 {
+    left: 750px;
+  }
 }
 
-@media only screen and (max-width: 1080px) {
-  .speaker-box-top {
-    &.inspiration {
+
+.speaker-box-top {
+  @media only screen and (max-width: 1080px) {
+    &.matt {
       top: 0;
       left: 10px;
     }
 
-    &.education {
+    &.wave {
       top: 0;
       left: 330px;
     }
     
-    &.empowerment {
+    &.amber {
+      top: 0;
+      left: 650px;
+    }
+
+    &.dave {
+      top: 0;
+      left: 10px;
+    }
+
+    &.week1 {
+      top: 0;
+      left: 10px;
+    }
+
+    &.week2 {
+      top: 0;
+      left: 330px;
+    }
+
+    &.week3 {
       top: 0;
       left: 650px;
     }
   }
-}
-
-@media only screen and (max-width: 1000px) {
-  .speaker-box-top {
-    display: none;
+  @media only screen and (max-width: 1000px) {
+    &.week1 {
+      margin-left: -150px;
+      left: 50%;
+      top: 30px;
+    }
+    &.week2 {
+      margin-left: -150px;
+      left: 50%;
+      top: 440px;
+    }
+    &.week3 {
+      margin-left: -150px;
+      left: 50%;
+      top: 840px;
+    }
   }
 }
+
+
 
 // The inner part of the speaker box.
 // The individual icons for each aspect of the conference i.e. inspiration
 // empowerment and education are scoped based on the related speaker.
 
 .speaker-box {
-  height: 600px;
+  height: 380px;
   width: 300px;
   float: left;
   margin: 0 30px;
   @include box-sizing(border-box);
-  padding: 210px 40px 0 40px;
+  padding: 40px 40px 0 40px;
 
   @media only screen and (max-width: 1080px) {
     margin: 0 10px;
@@ -212,79 +399,77 @@ a, a:link, a:visited {
   @media only screen and (max-width: 1000px) {
     margin: 30px auto;
     float: none;
-    width: 300px;
-    height: 380px;
-    padding: 40px 40px 0 40px
   }
 
 
   &.matt {
     background: 
-      url(../images/ull-icon-inspiration.png) no-repeat center 75px,
-      url(../images/bg-inspiration.jpg) no-repeat;
-    -webkit-background-size: 30%, 100%;
-    background-size: 30%, 100%;  
+      url(../images/speaker-box-logo-matt.png) no-repeat 220px 42px,
+      url(../images/speaker-box-small.jpg) no-repeat;
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
-    background:
-      url(../images/ull-icon-inspiration@2x.png) no-repeat center 75px,
-      url(../images/bg-inspiration@2x.jpg) no-repeat;
+      background: 
+        url(../images/speaker-box-logo-matt@2x.png) no-repeat 220px 42px,
+        url(../images/speaker-box-small@2x.jpg) no-repeat;
+        background-size: 40px 40px, 100%;
     }
-    @media only screen and (max-width: 1000px) {
-      background: url(../images/speaker-box-small-inspiration.jpg) no-repeat;
-      background-size: 100%;
-      @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
-        background: url(../images/speaker-box-small-inspiration@2x.jpg) no-repeat;
-        background-size: 100%;
-      }
-      @media (-webkit-min-device-pixel-ratio: 1) {
-        background-size: 100%;
-      }
+    @media (-webkit-min-device-pixel-ratio: 1) {
+      background-size: 40px 40px, 100%;
     }
   }
   
   &.wave {
     background: 
-      url(../images/ull-icon-education.png) no-repeat center 75px,
-      url(../images/bg-inspiration.jpg) no-repeat;
-    -webkit-background-size: 30%, 100%;
-    background-size: 30%, 100%;
+      url(../images/speaker-box-logo-wave.png) no-repeat 220px 42px,
+      url(../images/speaker-box-small.jpg) no-repeat;
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
-    background:
-      url(../images/ull-icon-education@2x.png) no-repeat center 75px,
-      url(../images/bg-inspiration@2x.jpg) no-repeat;
+      background: 
+        url(../images/speaker-box-logo-wave@2x.png) no-repeat 220px 42px,
+        url(../images/speaker-box-small@2x.jpg) no-repeat;
+        background-size: 40px 40px, 100%;
     }
-    @media only screen and (max-width: 1000px) {
-      background: url(../images/speaker-box-small-education.jpg) no-repeat;
-      @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
-        background: url(../images/speaker-box-small-empowerment@2x.jpg) no-repeat;
-        background-size: 100%;
-      }
-      @media (-webkit-min-device-pixel-ratio: 1) {
-        background-size: 100%;
-      }
+    @media (-webkit-min-device-pixel-ratio: 1) {
+      background-size: 40px 40px, 100%;
     }
   }
 
   &.amber {
     background: 
-      url(../images/ull-icon-empowerment.png) no-repeat center 75px,
-      url(../images/bg-inspiration.jpg) no-repeat;
-    -webkit-background-size: 30%, 100%;
-    background-size: 30%, 100%;  
+      url(../images/speaker-box-logo-amber.png) no-repeat 220px 42px,
+      url(../images/speaker-box-small.jpg) no-repeat;
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
-    background:
-      url(../images/ull-icon-empowerment@2x.png) no-repeat center 75px,
-      url(../images/bg-inspiration@2x.jpg) no-repeat;
+      background: 
+        url(../images/speaker-box-logo-amber@2x.png) no-repeat 220px 42px,
+        url(../images/speaker-box-small@2x.jpg) no-repeat;
+        background-size: 40px 40px, 100%;
     }
-    @media only screen and (max-width: 1000px) {
-      background: url(../images/speaker-box-small-empowerment.jpg) no-repeat;
-      @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
-        background: url(../images/speaker-box-small-empowerment@2x.jpg) no-repeat;
-        background-size: 100%;
-      }
-      @media (-webkit-min-device-pixel-ratio: 1) {
-        background-size: 100%;
-      }
+    @media (-webkit-min-device-pixel-ratio: 1) {
+      background-size: 40px 40px, 100%;
+    }
+  }
+
+  &.dave {
+    background: 
+      url(../images/speaker-box-logo-dave.png) no-repeat 220px 42px,
+      url(../images/speaker-box-small.jpg) no-repeat;
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
+      background: 
+        url(../images/speaker-box-logo-dave@2x.png) no-repeat 220px 42px,
+        url(../images/speaker-box-small@2x.jpg) no-repeat;
+      background-size: 40px 40px, 100%;
+    }
+    @media (-webkit-min-device-pixel-ratio: 1) {
+      background-size: 40px 40px, 100%;
+    }
+  }
+
+  &.secret {
+    background: url(../images/speaker-box-small.jpg) no-repeat;
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
+      background: url(../images/speaker-box-small@2x.jpg) no-repeat;
+      background-size: 100%;
+    }
+    @media (-webkit-min-device-pixel-ratio: 1) {
+      background-size: 100%;
     }
   }
 }
@@ -295,30 +480,19 @@ a, a:link, a:visited {
 .speaker-box-content {
   color: $dark;
   position: relative;
-  height: 350px;
+  height: 320px;
+  display: none;
   @media only screen and (max-width: 1000px) {
-    height: 320px;
-  }
-  
-  &.matt, &.wave, &.amber {
-    display: none;
-    @media only screen and (max-width: 1000px) {
-      display: block;
-    }
+    display: block;
   }
 
   h1 {
-    text-align: center;
-    font-size: 2.1em;
-    font-weight: 500;
+    text-align: left;
+    font-size: 1.5em;
+    width: 160px;
+    line-height: 1em;
+    padding: 0;
     margin: 0 0 30px 0;
-    @media only screen and (max-width: 1000px) {
-      text-align: left;
-      font-size: 1.5em;
-      width: 160px;
-      line-height: 1em;
-      padding: 0;
-    }
   }
 
   p {
@@ -377,22 +551,34 @@ a, a:link, a:visited {
 
   .more-details {
     width: 400px;
-    margin: 0 auto;
+    margin: 20px auto;
     @media only screen and (max-width: 400px) {
       width: 300px;
     }
   }
 
-  .ticket-name, .ticket-price, .buttons input {
-    position: absolute;
+  .buttons {
+    position: relative;
+    height: 100px;
   }
 
+  .ticket-name {
+    float: left;
+  }
+  
   .ticket-price {
+    float: right;
+    position: relative;
     right: 40px;
   }
 
+  .ticket-status {
+    float: right;
+  }
+
   .buttons input {
-    top: 65px;
+    position: absolute;
+    top: 20px;
     right: 50%;
     width: 130px;
     margin-right: -65px;
@@ -410,30 +596,52 @@ a, a:link, a:visited {
       background: $cream; 
       color: $dark;
     }
+    @media only screen and (max-width: 400px) {
+      top: 30px;
+    }
   }
 }
 
 #tito-register-form {
   margin: 40px auto;
   position: relative;
-  width: 280px;
-  height: 45px;
-  border-bottom: 2px solid $red;
+  width: 400px;
+  padding: 0 0 30px 0;
+  @media only screen and (max-width: 400px) {
+    width: 300px;
+  }
+
+
+  p {
+    font-size: 0.8em;
+    margin: 20px auto 0;
+    text-align: left;
+  }
 
   p.locked-msg {
-    margin-top: 21px;
-    margin-left: -145px;
-    font-size: 13px;
+    font-size: 14px;
+    text-align: right;
+    margin: 0;
     span.websymbols {
       margin-right: 5px;
     }
   }
 }
 
+.ticket li {
+  position: relative;
+  margin: 20px 0 0 0;
+}
+
+.ticket {
+  border-bottom: 2px solid $red;
+  padding: 0 0 20px 0;
+}
+
 .ticket-quantity-wrap  {
+  float: right;
+  right: 0px;
   position: absolute;
-  right: 1px;
-  top: -4px;
   .text-field {
     width: 30px;
     height: 30px;
