@@ -260,39 +260,6 @@ a, a:link, a:visited {
     }
   }
 
-  &.matt {
-    top: 0;
-    left: 30px;
-    background: url(../images/cover-matt.jpg) no-repeat;
-    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
-      background: url(../images/cover-matt@2x.jpg) no-repeat;
-      background-size: 100%;
-    }
-    display: none;
-  }
-
-  &.wave {
-    top: 0;
-    left: 390px;
-    background: url(../images/cover-wave.jpg) no-repeat;
-    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
-      background: url(../images/cover-wave@2x.jpg) no-repeat;
-      background-size: 100%;
-    }
-    display: none;
-  }
-  
-  &.amber {
-    top: 0;
-    left: 750px;
-    background: url(../images/cover-amber.jpg) no-repeat;
-    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
-      background: url(../images/cover-amber@2x.jpg) no-repeat;
-      background-size: 100%;
-    }
-    display: none;
-  }
-  
   &.dave {
     top: 0;
     left: 30px;
