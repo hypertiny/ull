@@ -515,6 +515,12 @@ a, a:link, a:visited {
     opacity: 0.99;
   }
 
+  @media only screen and (max-width: 500px) {
+    .ticket-name, .ticket-price {
+      font-size: 0.8em;
+    }
+  }
+
   .more-details {
     width: 400px;
     margin: 20px auto;

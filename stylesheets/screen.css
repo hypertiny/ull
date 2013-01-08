@@ -589,37 +589,43 @@ a, a:link, a:visited {
 .tickets p, .tickets .ticket-name, .tickets .ticket-price {
   opacity: 0.99;
 }
-/* line 518, ../sass/screen.scss */
+@media only screen and (max-width: 500px) {
+  /* line 519, ../sass/screen.scss */
+  .tickets .ticket-name, .tickets .ticket-price {
+    font-size: 0.8em;
+  }
+}
+/* line 524, ../sass/screen.scss */
 .tickets .more-details {
   width: 400px;
   margin: 20px auto;
 }
 @media only screen and (max-width: 400px) {
-  /* line 518, ../sass/screen.scss */
+  /* line 524, ../sass/screen.scss */
   .tickets .more-details {
     width: 300px;
   }
 }
-/* line 526, ../sass/screen.scss */
+/* line 532, ../sass/screen.scss */
 .tickets .buttons {
   position: relative;
   height: 100px;
 }
-/* line 531, ../sass/screen.scss */
+/* line 537, ../sass/screen.scss */
 .tickets .ticket-name {
   float: left;
 }
-/* line 535, ../sass/screen.scss */
+/* line 541, ../sass/screen.scss */
 .tickets .ticket-price {
   float: right;
   position: relative;
   right: 40px;
 }
-/* line 541, ../sass/screen.scss */
+/* line 547, ../sass/screen.scss */
 .tickets .ticket-status {
   float: right;
 }
-/* line 545, ../sass/screen.scss */
+/* line 551, ../sass/screen.scss */
 .tickets .buttons input {
   position: absolute;
   top: 20px;
@@ -643,19 +649,19 @@ a, a:link, a:visited {
   -o-transition: background 0.05s ease, color 0.05s ease;
   transition: background 0.05s ease, color 0.05s ease;
 }
-/* line 561, ../sass/screen.scss */
+/* line 567, ../sass/screen.scss */
 .tickets .buttons input:hover {
   background: #f0ebe5;
   color: #161411;
 }
 @media only screen and (max-width: 400px) {
-  /* line 545, ../sass/screen.scss */
+  /* line 551, ../sass/screen.scss */
   .tickets .buttons input {
     top: 30px;
   }
 }
 
-/* line 571, ../sass/screen.scss */
+/* line 577, ../sass/screen.scss */
 #tito-register-form {
   margin: 40px auto;
   position: relative;
@@ -663,47 +669,47 @@ a, a:link, a:visited {
   padding: 0 0 30px 0;
 }
 @media only screen and (max-width: 400px) {
-  /* line 571, ../sass/screen.scss */
+  /* line 577, ../sass/screen.scss */
   #tito-register-form {
     width: 300px;
   }
 }
-/* line 581, ../sass/screen.scss */
+/* line 587, ../sass/screen.scss */
 #tito-register-form p {
   font-size: 0.8em;
   margin: 20px auto 0;
   text-align: left;
 }
-/* line 587, ../sass/screen.scss */
+/* line 593, ../sass/screen.scss */
 #tito-register-form p.locked-msg {
   font-size: 14px;
   text-align: right;
   margin: 0;
 }
-/* line 591, ../sass/screen.scss */
+/* line 597, ../sass/screen.scss */
 #tito-register-form p.locked-msg span.websymbols {
   margin-right: 5px;
 }
 
-/* line 597, ../sass/screen.scss */
+/* line 603, ../sass/screen.scss */
 .ticket li {
   position: relative;
   margin: 20px 0 0 0;
 }
 
-/* line 602, ../sass/screen.scss */
+/* line 608, ../sass/screen.scss */
 .ticket {
   border-bottom: 2px solid #932829;
   padding: 0 0 20px 0;
 }
 
-/* line 607, ../sass/screen.scss */
+/* line 613, ../sass/screen.scss */
 .ticket-quantity-wrap {
   float: right;
   right: 0px;
   position: absolute;
 }
-/* line 611, ../sass/screen.scss */
+/* line 617, ../sass/screen.scss */
 .ticket-quantity-wrap .text-field {
   width: 30px;
   height: 30px;
@@ -722,12 +728,12 @@ a, a:link, a:visited {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 622, ../sass/screen.scss */
+/* line 628, ../sass/screen.scss */
 .ticket-quantity-wrap .text-field:focus {
   outline: none;
 }
 
-/* line 633, ../sass/screen.scss */
+/* line 639, ../sass/screen.scss */
 footer {
   margin: 130px auto 140px;
   color: #f0ebe5;
@@ -736,18 +742,18 @@ footer {
   line-height: 1.3em;
 }
 @media only screen and (max-width: 1080px) {
-  /* line 633, ../sass/screen.scss */
+  /* line 639, ../sass/screen.scss */
   footer {
     margin: 130px auto 120px;
   }
 }
 @media only screen and (max-height: 610px) {
-  /* line 633, ../sass/screen.scss */
+  /* line 639, ../sass/screen.scss */
   footer {
     margin: 170px auto 160px;
   }
 }
-/* line 648, ../sass/screen.scss */
+/* line 654, ../sass/screen.scss */
 footer p {
   padding-top: 10px;
   text-align: center;
@@ -755,7 +761,7 @@ footer p {
   margin: 0 auto;
 }
 @media only screen and (max-width: 1080px) {
-  /* line 648, ../sass/screen.scss */
+  /* line 654, ../sass/screen.scss */
   footer p {
     width: 100%;
     padding: 0 10px;
@@ -764,7 +770,7 @@ footer p {
     box-sizing: border-box;
   }
 }
-/* line 660, ../sass/screen.scss */
+/* line 666, ../sass/screen.scss */
 footer .final-paragraph {
   font-size: 1.2em;
   line-height: 1.2em;
@@ -772,55 +778,55 @@ footer .final-paragraph {
   width: 400px;
 }
 @media only screen and (max-width: 400px) {
-  /* line 660, ../sass/screen.scss */
+  /* line 666, ../sass/screen.scss */
   footer .final-paragraph {
     width: 100%;
     padding: 0 20px;
   }
 }
-/* line 671, ../sass/screen.scss */
+/* line 677, ../sass/screen.scss */
 footer a, footer a:link, footer a:visited {
   color: #f0ebe5;
   font-weight: 500;
 }
-/* line 676, ../sass/screen.scss */
+/* line 682, ../sass/screen.scss */
 footer a:hover, footer a:focus, footer a:active {
   color: #fdfcfa;
 }
-/* line 680, ../sass/screen.scss */
+/* line 686, ../sass/screen.scss */
 footer ul {
   width: 300px;
   margin: 0 auto;
 }
-/* line 683, ../sass/screen.scss */
+/* line 689, ../sass/screen.scss */
 footer ul a, footer ul a:link, footer ul a:visited {
   text-align: center;
   margin: 10px 0 0 0;
   width: 300px;
   display: block;
 }
-/* line 689, ../sass/screen.scss */
+/* line 695, ../sass/screen.scss */
 footer ul a:hover, footer ul a:focus, footer ul a:active {
   color: #fdfcfa;
 }
 
-/* line 700, ../sass/screen.scss */
+/* line 706, ../sass/screen.scss */
 .clearfix:before, .clearfix:after {
   content: "";
   display: table;
 }
 
-/* line 701, ../sass/screen.scss */
+/* line 707, ../sass/screen.scss */
 .clearfix:after {
   clear: both;
 }
 
-/* line 702, ../sass/screen.scss */
+/* line 708, ../sass/screen.scss */
 .clearfix {
   zoom: 1;
 }
 
-/* line 704, ../sass/screen.scss */
+/* line 710, ../sass/screen.scss */
 .ir {
   display: block;
   text-indent: 100%;
