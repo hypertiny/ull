@@ -152,17 +152,20 @@ a, a:link, a:visited {
   color: $cream;
   opacity: 0.99;
   line-height: 1.2em;
+  a, a:link, a:visited {
+    color: $cream;
+    font-weight: 700;
+  }
 
   .session-links {
     margin: 30px 0;
     width: 260px;
     float: left;
+    a, a:link, a:visited {
+      display: block;
+    }
   }
-  a, a:link, a:visited {
-    color: $cream;
-    font-weight: 700;
-    display: block;
-  }
+
   @media only screen and (max-width: 1000px) {
     width: 94%;
     margin-top: 20px;
@@ -265,6 +268,7 @@ a, a:link, a:visited {
       background: url(../images/cover-matt@2x.jpg) no-repeat;
       background-size: 100%;
     }
+    display: none;
   }
 
   &.wave {
@@ -275,6 +279,7 @@ a, a:link, a:visited {
       background: url(../images/cover-wave@2x.jpg) no-repeat;
       background-size: 100%;
     }
+    display: none;
   }
   
   &.amber {
@@ -285,6 +290,7 @@ a, a:link, a:visited {
       background: url(../images/cover-amber@2x.jpg) no-repeat;
       background-size: 100%;
     }
+    display: none;
   }
   
   &.dave {
@@ -477,13 +483,17 @@ a, a:link, a:visited {
 // This div wraps all the content inside the box so it can be faded in
 // once the .speaker-box-top has faded out
 
+
 .speaker-box-content {
   color: $dark;
   position: relative;
   height: 320px;
-  display: none;
+  display: block;
   @media only screen and (max-width: 1000px) {
     display: block;
+  }
+  &.dave {
+    display: none;
   }
 
   h1 {
@@ -504,7 +514,7 @@ a, a:link, a:visited {
 
   .speaker-links {
     position: absolute;
-    bottom: 30px;
+    bottom: 20px;
   }
 
   a.further-info {
@@ -519,6 +529,7 @@ a, a:link, a:visited {
     }
   }
 }
+
 
 
 // ---------------------------------------------------------
