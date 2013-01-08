@@ -76,7 +76,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 32, ../sass/screen.scss */
 body {
-  background: url(../images/broken_noise.png);
+  background: #292522 url(../images/broken_noise.png);
   font-family: "rooney-web",sans-serif;
   font-size: 1.2em;
   font-style: normal;
