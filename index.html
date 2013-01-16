@@ -44,6 +44,13 @@
           }, 300)
         });
       });
+      $('.speaker-box-top.jaimee').click(function() {
+        $(this).fadeOut(200, function() {
+          setTimeout(function(){
+            $('.speaker-box-content.jaimee').fadeIn(350)
+          }, 300)
+        });
+      });
     });
 
   </script>
@@ -128,12 +135,14 @@
       </div>
     </div>
     
-    <div class="speaker-box-top secret week2">
-      <span>15</span><span>01</span>
-    </div>
-    <div class="speaker-box secret">
-      <div class="speaker-box-content">
-        <p>No peeking</p>
+    <div class="speaker-box-top jaimee"></div>
+    <div class="speaker-box jaimee">
+      <div class="speaker-box-content jaimee">
+        <h1>Jaimee Newberry</h1>
+        <p>Jaimee Newberry is the Director of User Experience at Black Pixel. She has a strong background in metalworking, software design, teaching, community outreach. Making things, and making things happen: perfect Úll credentials.</p>
+        <div class="speaker-links">
+          <a href="https://twitter.com/jaimeejaimee" class="further-info">@jaimeejaimee</a>
+        </div>
       </div>
     </div>
     
@@ -148,6 +157,13 @@
   </div>
   
   <h2 class="section-title">
+    <span>Applewood Sponsor</span>
+  </h2>
+  <div class="dropbox">
+    <a href="http://dropbox.com"><img src="images/dropbox-logo.png" alt="Dropbox"></a>
+  </div>
+  
+  <h2 class="section-title">
     <span>Tickets</span>
   </h2>
   
@@ -159,6 +175,7 @@
     <div id="tito-register-form"></div>
       <script src="https://tito.io/ull/2013.js"></script>
   </div>
+  
   
   <footer>
     <p class="final-paragraph">

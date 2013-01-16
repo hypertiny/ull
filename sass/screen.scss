@@ -25,6 +25,7 @@ $red: #932829;
 .websymbols {
   font-family: 'WebSymbolsRegular';
 }
+
 // ---------------------------------------------------------
 // BASE
 // ---------------------------------------------------------
@@ -63,6 +64,9 @@ a, a:link, a:visited {
   border-top: 2px solid rgba($cream, 0.1);
   margin: 100px auto 0;
   text-align: center;
+  &.short {
+    width: 400px;
+  }
   span {
     position: relative;
     background: url(../images/broken_noise.png);
@@ -72,7 +76,6 @@ a, a:link, a:visited {
     padding: 0 30px;
     font-size: 1.4em;
     top: -14px;
-    opacity: 0.99;
     text-transform: uppercase;
     letter-spacing: 2px;
   }
@@ -98,7 +101,6 @@ a, a:link, a:visited {
 #introduction, .after {
   width: 100%;
   p {
-    opacity: 0.99;
     color: $cream;
     text-align: center;
     text-rendering: optimizelegibility;
@@ -150,7 +152,6 @@ a, a:link, a:visited {
   width: 800px;
   margin: 60px auto 220px;
   color: $cream;
-  opacity: 0.99;
   line-height: 1.2em;
   a, a:link, a:visited {
     color: $cream;
@@ -189,7 +190,7 @@ a, a:link, a:visited {
   width: 1080px;
   margin: 100px auto 50px;
   &.secret {
-    margin: 0 auto 170px;
+    margin: 0 auto 140px;
   }
   @media only screen and (max-width: 1080px) {
     width: 960px;
@@ -266,6 +267,16 @@ a, a:link, a:visited {
     background: url(../images/cover-dave.jpg) no-repeat;
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
       background: url(../images/cover-dave@2x.jpg) no-repeat;
+      background-size: 100%;
+    }
+  }
+
+  &.jaimee {
+    top: 0;
+    left: 390px;
+    background: url(../images/cover-jaimee.jpg) no-repeat;
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
+      background: url(../images/cover-jaimee@2x.jpg) no-repeat;
       background-size: 100%;
     }
   }
@@ -420,6 +431,22 @@ a, a:link, a:visited {
     }
   }
 
+  &.jaimee {
+    background: 
+      url(../images/speaker-box-logo-jaimee.png) no-repeat 220px 42px,
+      url(../images/speaker-box-small.jpg) no-repeat;
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
+      background: 
+        url(../images/speaker-box-logo-jaimee@2x.png) no-repeat 220px 42px,
+        url(../images/speaker-box-small@2x.jpg) no-repeat;
+      background-size: 40px 40px, 100%;
+    }
+    @media (-webkit-min-device-pixel-ratio: 1) {
+      background-size: 40px 40px, 100%;
+    }
+  }
+
+
   &.secret {
     background: url(../images/speaker-box-small.jpg) no-repeat;
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
@@ -444,7 +471,7 @@ a, a:link, a:visited {
   @media only screen and (max-width: 1000px) {
     display: block;
   }
-  &.dave {
+  &.dave, &.jaimee {
     display: none;
     @media only screen and (max-width: 1000px) {
       display: block;
@@ -509,10 +536,6 @@ a, a:link, a:visited {
 
   @media only screen and (max-width: 400px) {
     width: 300px;
-  }
-
-  p, .ticket-name, .ticket-price {
-    opacity: 0.99;
   }
 
   @media only screen and (max-width: 500px) {
@@ -619,7 +642,6 @@ a, a:link, a:visited {
     height: 30px;
     border: none;
     font-size: .8em;
-    opacity: 0.99;
     text-align: center;
     -webkit-appearance: none;
     padding:  4px 0 2px;
@@ -648,7 +670,6 @@ footer {
   }
 
   color: $cream;
-  opacity: 0.99;
   font-size: 0.9em;
   line-height: 1.3em;
   p {
@@ -698,6 +719,23 @@ footer {
   }
 }
 
+
+.dropbox {
+  width: 300px;
+  margin: 0 auto 140px;
+  p {
+    text-align: center;
+    color: $cream;
+    font-size: 1.2em;
+    line-height: 1.2em;
+    margin: 20px auto;
+  }
+  img {
+    width: 100%;
+    margin: 60px 0 0 -8px;
+    display: block;
+  }
+}
 
 // ---------------------------------------------------------
 // HELPERS
