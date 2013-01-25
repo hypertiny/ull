@@ -221,46 +221,6 @@ a, a:link, a:visited {
     }
   }
 
-  &.week1, &.week2, &.week3 {
-    span {
-      font-size: 1.4em;
-      position: absolute;
-    }
-  }
-
-  &.week1 span {
-    &:nth-child(1) {
-      top: 165px;
-      left: 116px;
-    }
-    &:nth-child(2) {
-     top: 165px;
-     left: 157px;
-    }
-  }
-
-  &.week2 span {
-    &:nth-child(1) {
-      top: 165px;
-      left: 115px;
-    }
-    &:nth-child(2) {
-     left: 157px;
-     top: 165px;
-    }
-  }
-
-  &.week3 span {
-    &:nth-child(1) {
-      top: 165px;
-      left: 115px;
-    }
-    &:nth-child(2) {
-     top: 165px;
-     left: 156px;
-    }
-  }
-
   &.dave {
     top: 0;
     left: 30px;
@@ -277,6 +237,16 @@ a, a:link, a:visited {
     background: url(../images/cover-jaimee.jpg) no-repeat;
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
       background: url(../images/cover-jaimee@2x.jpg) no-repeat;
+      background-size: 100%;
+    }
+  }
+
+  &.charles {
+    top: 0;
+    left: 750px;
+    background: url(../images/cover-charles.jpg) no-repeat;
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
+      background: url(../images/cover-charles@2x.jpg) no-repeat;
       background-size: 100%;
     }
   }
@@ -318,7 +288,7 @@ a, a:link, a:visited {
       left: 330px;
     }
 
-    &.week3 {
+    &.charles {
       top: 0;
       left: 650px;
     }
@@ -441,6 +411,22 @@ a, a:link, a:visited {
     }
   }
 
+  &.charles {
+    background: 
+      url(../images/speaker-box-logo-charles.png) no-repeat 220px 42px,
+      url(../images/speaker-box-small.jpg) no-repeat;
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
+      background: 
+        url(../images/speaker-box-logo-charles@2x.png) no-repeat 220px 42px,
+        url(../images/speaker-box-small@2x.jpg) no-repeat;
+      background-size: 40px 40px, 100%;
+    }
+    @media (-webkit-min-device-pixel-ratio: 1) {
+      background-size: 40px 40px, 100%;
+    }
+  }
+
+
 
   &.secret {
     background: url(../images/speaker-box-small.jpg) no-repeat;
@@ -466,7 +452,7 @@ a, a:link, a:visited {
   @media only screen and (max-width: 1000px) {
     display: block;
   }
-  &.dave, &.jaimee {
+  &.dave, &.jaimee, &.charles {
     display: none;
     @media only screen and (max-width: 1000px) {
       display: block;
@@ -715,7 +701,7 @@ footer {
 }
 
 
-.dropbox {
+.sponsor {
   width: 300px;
   margin: 0 auto 140px;
   p {
@@ -726,9 +712,15 @@ footer {
     margin: 20px auto;
   }
   img {
+    display: block;
+  }
+  &.dropbox img {
     width: 100%;
     margin: 60px 0 0 -8px;
-    display: block;
+  }
+  &.github img { 
+    width: 80%;
+    margin: 60px auto;
   }
 }
 
