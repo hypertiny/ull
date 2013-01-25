@@ -826,12 +826,12 @@ footer ul a:hover, footer ul a:focus, footer ul a:active {
 }
 
 /* line 704, ../sass/screen.scss */
-.dropbox {
+.sponsor {
   width: 300px;
   margin: 0 auto 140px;
 }
 /* line 707, ../sass/screen.scss */
-.dropbox p {
+.sponsor p {
   text-align: center;
   color: #f0ebe5;
   font-size: 1.2em;
@@ -839,29 +839,37 @@ footer ul a:hover, footer ul a:focus, footer ul a:active {
   margin: 20px auto;
 }
 /* line 714, ../sass/screen.scss */
-.dropbox img {
-  width: 100%;
-  margin: 60px 0 0 -8px;
+.sponsor img {
   display: block;
 }
+/* line 717, ../sass/screen.scss */
+.sponsor.dropbox img {
+  width: 100%;
+  margin: 60px 0 0 -8px;
+}
+/* line 721, ../sass/screen.scss */
+.sponsor.github img {
+  width: 80%;
+  margin: 60px auto;
+}
 
-/* line 725, ../sass/screen.scss */
+/* line 731, ../sass/screen.scss */
 .clearfix:before, .clearfix:after {
   content: "";
   display: table;
 }
 
-/* line 726, ../sass/screen.scss */
+/* line 732, ../sass/screen.scss */
 .clearfix:after {
   clear: both;
 }
 
-/* line 727, ../sass/screen.scss */
+/* line 733, ../sass/screen.scss */
 .clearfix {
   zoom: 1;
 }
 
-/* line 729, ../sass/screen.scss */
+/* line 735, ../sass/screen.scss */
 .ir {
   display: block;
   text-indent: 100%;

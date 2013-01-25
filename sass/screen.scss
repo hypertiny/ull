@@ -701,7 +701,7 @@ footer {
 }
 
 
-.dropbox {
+.sponsor {
   width: 300px;
   margin: 0 auto 140px;
   p {
@@ -712,9 +712,15 @@ footer {
     margin: 20px auto;
   }
   img {
+    display: block;
+  }
+  &.dropbox img {
     width: 100%;
     margin: 60px 0 0 -8px;
-    display: block;
+  }
+  &.github img { 
+    width: 80%;
+    margin: 60px auto;
   }
 }
 
