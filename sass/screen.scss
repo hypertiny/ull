@@ -32,35 +32,44 @@ $red: #932829;
 
 body {
   background: #292522 url(../images/broken_noise.png);
-  // @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
-  //   background: url(../images/broken-noise@2x.png);
-  // }
+  color: $cream;
   font-family: "rooney-web",sans-serif;
-  font-size: 1.2em;
+  font-size: 19px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 100;
+  line-height:  23px;
 }
 
 a, a:link, a:visited {
-  color: $dark;
+  color: $cream;
   text-decoration: none;
 }
 
-
-
-
 // ---------------------------------------------------------
-// RE-USABLE
+// BASICS
 // ---------------------------------------------------------
 
+.wrapper {
+  width: 1080px;
+  margin: 0 auto;
+  @media only screen and (max-width: 1080px) {
+    width: 940px;
+  }
+  @media only screen and (max-width: 1000px) {
+    width: 100%
+  }
+}
+
+// Red dividing line
 .dividing-line {
   width: 70px;
   border-top: 2px solid $red;
   margin: 0 auto;
 }
 
+// Divider for each section of the page
 .section-title {
-  width: 1020px;
+  width: 100%;
   border-top: 2px solid rgba($cream, 0.1);
   margin: 100px auto 0;
   text-align: center;
@@ -79,9 +88,6 @@ a, a:link, a:visited {
     text-transform: uppercase;
     letter-spacing: 2px;
   }
-  @media only screen and (max-width: 1080px) {
-    width: 940px;
-  }
 
   @media only screen and (max-width: 1000px) {
     width: 94%;
@@ -93,25 +99,42 @@ a, a:link, a:visited {
   }
 }
 
+.main-text {
+  width: 800px;
+  margin: 60px auto 220px;
+  @media only screen and (max-width: 1000px) {
+    width: 94%;
+    margin-top: 20px;
+    font-size: 0.85em;
+  }
+  
+  p {
+    margin: 0 auto 50px auto;
+  }
+
+  h3 {
+    margin: 0 auto 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  a, a:link, a:visited {
+    font-weight: 500;
+  }
+}
 
 // ---------------------------------------------------------
 // INTRODUCTION
 // ---------------------------------------------------------
 
-#introduction, .after {
-  width: 100%;
+.introduction {
+
   p {
-    color: $cream;
     text-align: center;
     text-rendering: optimizelegibility;
     font-size: 1.2em;
     line-height: 1.2em;
     
-    &.date-location {
-      margin: 30px auto 20px; 
-      // text-transform: uppercase;
-    }
-
     &.about-ull {
       width: 400px;
       margin: 60px auto 30px;
@@ -120,6 +143,10 @@ a, a:link, a:visited {
         padding: 0 10px;
         @include box-sizing(border-box);
       }
+    }
+
+    &.date-location {
+      margin: 30px auto 20px; 
     }
   }
 
@@ -148,32 +175,17 @@ a, a:link, a:visited {
 // NEWS SECTION
 // ---------------------------------------------------------
 
-.peepcode-session {
-  width: 800px;
-  margin: 60px auto 220px;
-  color: $cream;
-  line-height: 1.2em;
+
+
+.session-links {
+  margin: 0;
+  width: 260px;
+  float: left;
   a, a:link, a:visited {
-    color: $cream;
-    font-weight: 700;
+    display: block;
   }
-
-  .session-links {
-    margin: 30px 0;
-    width: 260px;
-    float: left;
-    a, a:link, a:visited {
-      display: block;
-    }
-  }
-
   @media only screen and (max-width: 1000px) {
-    width: 94%;
-    margin-top: 20px;
-    font-size: 0.85em;
-    .session-links {
-      margin: 30px 0 10px;
-    }
+    margin: 0 0 10px;
   }
 }
 
@@ -187,131 +199,22 @@ a, a:link, a:visited {
 
 .speakers {
   position: relative;
-  width: 1080px;
-  margin: 100px auto 50px;
-  &.secret {
-    margin: 0 auto 140px;
-  }
+  margin: 40px auto 50px;
+
   @media only screen and (max-width: 1080px) {
     width: 960px;
     margin: 40px auto 20px;
-    &.secret {
-      margin-bottom: 160px;
-    }
   }
+
   @media only screen and (max-width: 1000px) {
+    width: 760px;
+  }
+
+  @media only screen and (max-width: 750px) {
     width: 100%;
     margin-bottom: -30px;
   }
 }
-
-// Wooden top for each box.
-// These are faded out on click using jQuery
-
-.speaker-box-top {
-  width: 300px;
-  height: 380px;
-  position: absolute;
-  cursor: pointer;
-  display: block;
-  @media only screen and (max-width: 1000px) {
-    display: none;
-    &.secret {
-      display: block;
-    }
-  }
-
-  &.dave {
-    top: 0;
-    left: 30px;
-    background: url(../images/cover-dave.jpg) no-repeat;
-    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
-      background: url(../images/cover-dave@2x.jpg) no-repeat;
-      background-size: 100%;
-    }
-  }
-
-  &.jaimee {
-    top: 0;
-    left: 390px;
-    background: url(../images/cover-jaimee.jpg) no-repeat;
-    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
-      background: url(../images/cover-jaimee@2x.jpg) no-repeat;
-      background-size: 100%;
-    }
-  }
-
-  &.charles {
-    top: 0;
-    left: 750px;
-    background: url(../images/cover-charles.jpg) no-repeat;
-    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
-      background: url(../images/cover-charles@2x.jpg) no-repeat;
-      background-size: 100%;
-    }
-  }
-
-  &.secret {
-    top: 0;
-    background: url(../images/cover-secret.jpg) no-repeat;
-    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
-      background: url(../images/cover-secret@2x.jpg) no-repeat;
-      background-size: 100%;
-    }
-  }
-
-  &.week1, &.week2, &.week3 {
-    cursor: auto;
-    z-index: 1;
-  }
-  &.week1 {
-    left: 30px;
-  }
-  &.week2 {
-    left: 390px;
-  }
-  &.week3 {
-    left: 750px;
-  }
-}
-
-
-.speaker-box-top {
-  @media only screen and (max-width: 1080px) {
-    &.dave {
-      top: 0;
-      left: 10px;
-    }
-
-    &.jaimee {
-      top: 0;
-      left: 330px;
-    }
-
-    &.charles {
-      top: 0;
-      left: 650px;
-    }
-  }
-  @media only screen and (max-width: 1000px) {
-    &.week1 {
-      margin-left: -150px;
-      left: 50%;
-      top: 30px;
-    }
-    &.week2 {
-      margin-left: -150px;
-      left: 50%;
-      top: 440px;
-    }
-    &.week3 {
-      margin-left: -150px;
-      left: 50%;
-      top: 840px;
-    }
-  }
-}
-
 
 
 // The inner part of the speaker box.
@@ -322,17 +225,21 @@ a, a:link, a:visited {
   height: 380px;
   width: 300px;
   float: left;
-  margin: 0 30px;
+  margin: 30px 30px;
   @include box-sizing(border-box);
   padding: 40px 40px 0 40px;
 
   @media only screen and (max-width: 1080px) {
-    margin: 0 10px;
+    margin: 10px 10px;
   }
 
   @media only screen and (max-width: 1000px) {
-    margin: 30px auto;
+    margin: 30px 40px;
+  }
+
+  @media only screen and (max-width: 750px) {
     float: none;
+    margin: 30px auto;
   }
 
 
@@ -426,16 +333,63 @@ a, a:link, a:visited {
     }
   }
 
-
-
-  &.secret {
-    background: url(../images/speaker-box-small.jpg) no-repeat;
+  &.charles {
+    background: 
+      url(../images/speaker-box-logo-charles.png) no-repeat 220px 42px,
+      url(../images/speaker-box-small.jpg) no-repeat;
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
-      background: url(../images/speaker-box-small@2x.jpg) no-repeat;
-      background-size: 100%;
+      background: 
+        url(../images/speaker-box-logo-charles@2x.png) no-repeat 220px 42px,
+        url(../images/speaker-box-small@2x.jpg) no-repeat;
+      background-size: 40px 40px, 100%;
     }
     @media (-webkit-min-device-pixel-ratio: 1) {
-      background-size: 100%;
+      background-size: 40px 40px, 100%;
+    }
+  }
+
+  &.jennifer {
+    background: 
+      url(../images/speaker-box-logo-jennifer.png) no-repeat 220px 42px,
+      url(../images/speaker-box-small.jpg) no-repeat;
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
+      background: 
+        url(../images/speaker-box-logo-jennifer@2x.png) no-repeat 220px 42px,
+        url(../images/speaker-box-small@2x.jpg) no-repeat;
+      background-size: 40px 40px, 100%;
+    }
+    @media (-webkit-min-device-pixel-ratio: 1) {
+      background-size: 40px 40px, 100%;
+    }
+  }
+
+  &.matthew {
+    background: 
+      url(../images/speaker-box-logo-matthew.png) no-repeat 220px 42px,
+      url(../images/speaker-box-small.jpg) no-repeat;
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
+      background: 
+        url(../images/speaker-box-logo-matthew@2x.png) no-repeat 220px 42px,
+        url(../images/speaker-box-small@2x.jpg) no-repeat;
+      background-size: 40px 40px, 100%;
+    }
+    @media (-webkit-min-device-pixel-ratio: 1) {
+      background-size: 40px 40px, 100%;
+    }
+  }
+
+  &.stephanie {
+    background: 
+      url(../images/speaker-box-logo-stephanie.png) no-repeat 220px 42px,
+      url(../images/speaker-box-small.jpg) no-repeat;
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
+      background: 
+        url(../images/speaker-box-logo-stephanie@2x.png) no-repeat 220px 42px,
+        url(../images/speaker-box-small@2x.jpg) no-repeat;
+      background-size: 40px 40px, 100%;
+    }
+    @media (-webkit-min-device-pixel-ratio: 1) {
+      background-size: 40px 40px, 100%;
     }
   }
 }
@@ -452,15 +406,8 @@ a, a:link, a:visited {
   @media only screen and (max-width: 1000px) {
     display: block;
   }
-  &.dave, &.jaimee, &.charles {
-    display: none;
-    @media only screen and (max-width: 1000px) {
-      display: block;
-    }
-  }
 
-  h1 {
-    text-align: left;
+  h3 {
     font-size: 1.5em;
     width: 160px;
     line-height: 1em;
@@ -469,23 +416,24 @@ a, a:link, a:visited {
   }
 
   p {
-    font-weight: 400;
     font-size: 0.8em;
     line-height: 1.2em;
     margin-bottom: 20px;
   }
-
-  .speaker-links {
-    position: absolute;
-    bottom: 20px;
+  p, h3 {
+    font-weight: 400;
   }
+}
 
-  a.further-info {
+.speaker-links {
+  position: absolute;
+  bottom: 20px;
+  a {
     display: block;
-    float: left;
-    clear: left;
     font-size: 0.9em;
     margin: 0 0 4px 0;
+    color: $dark;
+    font-weight: 400;
     
     &:hover, &:focus, &:active {
       color: $red;
@@ -702,7 +650,7 @@ footer {
 
 
 .sponsor {
-  width: 300px;
+  width: 100%;
   margin: 0 auto 140px;
   p {
     text-align: center;
@@ -715,11 +663,11 @@ footer {
     display: block;
   }
   &.dropbox img {
-    width: 100%;
-    margin: 60px 0 0 -8px;
+    width: 50%;
+    margin: 70px auto 0 auto;
   }
-  &.github img { 
-    width: 80%;
+  &.github img {
+    width: 20%;
     margin: 60px auto;
   }
 }
