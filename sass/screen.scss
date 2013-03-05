@@ -47,6 +47,8 @@ $red: #932829;
 }
 
 
+
+
 // ---------------------------------------------------------
 // BASE
 // ---------------------------------------------------------
@@ -677,7 +679,7 @@ a, a:link, a:visited {
     color: $cream;
     background: transparent; 
     border: 1px solid $cream;
-    @include border-radius(2px);
+    border-radius: 2px;
     font-size: 0.75em;
     padding: 4px 0 6px;
     @include rooney;
@@ -739,7 +741,7 @@ a, a:link, a:visited {
     text-align: center;
     -webkit-appearance: none;
     padding:  4px 0 2px;
-    @include border-radius(2px);
+    border-radius: 2px;
     @include box-sizing(border-box);
     &:focus {
       outline: none;
@@ -817,6 +819,13 @@ footer {
   @include clearfix;
 }
 
+.sponsor-row.oak {
+  > .sponsor {
+    width: 50%;
+    float: left;
+  }
+}
+
 .sponsor-row.pine {
   > .sponsor {
     width: 50%;
@@ -843,21 +852,28 @@ footer {
   // Oak
 
   &.converser img {
+    width: 60%;
+    margin-top: 40px;
+    margin-right: 40px;
+  }
+
+  &.enterprise-ireland img {
     width: 50%;
-    margin-top: 30px;
+    margin-top: 40px;
+    margin-left: 60px;
   }
 
 
   // Pine
 
   &.github img {
-    width: 40%;
+    width: 22%;
     margin-top: 50px;
     margin-right: 70px;
   }
 
   &.project-zebra img {
-    width: 50%;
+    width: 30%;
     margin-top: 50px;
     margin-left: 70px;
   }
@@ -877,6 +893,3 @@ footer {
   white-space: nowrap;
   overflow: hidden;
 }
-
-
-
