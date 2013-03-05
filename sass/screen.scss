@@ -59,7 +59,7 @@ body {
   font-family: "rooney-web",sans-serif;
   font-size: 19px;
   font-style: normal;
-  font-weight: 100;
+  font-weight: 300;
   line-height:  23px;
 }
 
@@ -455,21 +455,6 @@ a, a:link, a:visited {
     }
   }
 
-  &.charles {
-    background: 
-      url(../images/speaker-box-logo-charles.png) no-repeat 220px 42px,
-      url(../images/speaker-box-small.jpg) no-repeat;
-    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
-      background: 
-        url(../images/speaker-box-logo-charles@2x.png) no-repeat 220px 42px,
-        url(../images/speaker-box-small@2x.jpg) no-repeat;
-      background-size: 40px 40px, 100%;
-    }
-    @media (-webkit-min-device-pixel-ratio: 1) {
-      background-size: 40px 40px, 100%;
-    }
-  }
-
   &.jennifer {
     background: 
       url(../images/speaker-box-logo-jennifer.png) no-repeat 220px 42px,
@@ -507,6 +492,51 @@ a, a:link, a:visited {
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
       background: 
         url(../images/speaker-box-logo-stephanie@2x.png) no-repeat 220px 42px,
+        url(../images/speaker-box-small@2x.jpg) no-repeat;
+      background-size: 40px 40px, 100%;
+    }
+    @media (-webkit-min-device-pixel-ratio: 1) {
+      background-size: 40px 40px, 100%;
+    }
+  }
+
+  &.don {
+    background: 
+      url(../images/speaker-box-logo-don.png) no-repeat 220px 42px,
+      url(../images/speaker-box-small.jpg) no-repeat;
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
+      background: 
+        url(../images/speaker-box-logo-don@2x.png) no-repeat 220px 42px,
+        url(../images/speaker-box-small@2x.jpg) no-repeat;
+      background-size: 40px 40px, 100%;
+    }
+    @media (-webkit-min-device-pixel-ratio: 1) {
+      background-size: 40px 40px, 100%;
+    }
+  }
+
+  &.steve {
+    background: 
+      url(../images/speaker-box-logo-steve.png) no-repeat 220px 42px,
+      url(../images/speaker-box-small.jpg) no-repeat;
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
+      background: 
+        url(../images/speaker-box-logo-steve@2x.png) no-repeat 220px 42px,
+        url(../images/speaker-box-small@2x.jpg) no-repeat;
+      background-size: 40px 40px, 100%;
+    }
+    @media (-webkit-min-device-pixel-ratio: 1) {
+      background-size: 40px 40px, 100%;
+    }
+  }
+
+  &.jury {
+    background: 
+      url(../images/speaker-box-logo-jury.png) no-repeat 220px 42px,
+      url(../images/speaker-box-small.jpg) no-repeat;
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
+      background: 
+        url(../images/speaker-box-logo-jury@2x.png) no-repeat 220px 42px,
         url(../images/speaker-box-small@2x.jpg) no-repeat;
       background-size: 40px 40px, 100%;
     }
@@ -599,7 +629,7 @@ a, a:link, a:visited {
   }
 
   p {
-    font-weight: 100;
+    font-weight: 300;
   }
 
   dt{
