@@ -213,6 +213,46 @@ a, a:link, a:visited {
   }
 }
 
+.sub-section-title {
+  width: 100%;
+  border-top: 2px solid rgba($cream, 0.1);
+  margin: 100px auto 0;
+  text-align: center;
+  
+  &.short {
+    width: 400px;
+  }
+  
+  span {
+    position: relative;
+    background: url(../images/broken_noise.png);
+    color: $cream;
+    display: inline-block;
+    text-align: center;
+    padding: 0 30px;
+    font-size: 1.2em;
+    top: -14px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    @media only screen and (max-width: 750px) {
+      &.applewood {
+        display: inline-block;
+        width: 240px;
+        padding: 0 10px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1000px) {
+    width: 94%;
+    span {
+      font-size: 1.1em;
+      letter-spacing: 1px;
+      padding: 0 15px;
+    }
+  }
+}
+
 .main-text {
   @include clearfix;
   width: 800px;
