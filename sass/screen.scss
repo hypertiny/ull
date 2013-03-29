@@ -854,6 +854,25 @@ a, a:link, a:visited {
   }
 }
 
+#discount-code-field {
+  input {
+    width: 200px;
+    height: 30px;
+    border: none;
+    font-size: .8em;
+    text-align: left;
+    -webkit-appearance: none;
+    padding:  4px 6px 4px;
+    border-radius: 2px;
+    margin: 20px 0 0 0;
+    text-transform: capitalize;
+    @include box-sizing(border-box);
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
 #tito-register-form {
   margin: 0 auto;
   position: relative;
