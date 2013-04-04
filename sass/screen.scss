@@ -358,6 +358,7 @@ a, a:link, a:visited {
   padding: 10px 20px;
 }
 
+
 // .logo {
 //   background: url(../images/logo.png) no-repeat center,
 //               url(../images/broken_noise.png) #292623;
@@ -1112,7 +1113,7 @@ footer {
 
 .ir {
   display: block;
-  text-indent: 100%;
+  text-indent: -9999px;
   white-space: nowrap;
   overflow: hidden;
 }
