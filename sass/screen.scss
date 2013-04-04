@@ -168,9 +168,10 @@ a, a:link, a:visited {
 // Red dividing line
 .dividing-line {
   width: 70px;
-  border-top: 2px solid rgba($cream, 0.1);
+  border-top: 2px solid $red;
   margin: 0 auto;
   &.alt {
+    border-top: 2px solid rgba($cream, 0.1);
     margin: -10px auto 30px;
     width: 200px;
   }
