@@ -887,11 +887,10 @@ a, a:link, a:visited {
     width: 300px;
   }
 
-
   p {
-    font-size: 0.8em;
+    font-size: 1em;
     margin: 20px auto 0;
-    text-align: left;
+    text-align: center;
   }
 
   p.locked-msg {
@@ -942,7 +941,7 @@ a, a:link, a:visited {
   border-radius: 2px;
   font-size: 0.75em;
   padding: 4px 20px 6px;
-  margin: 0 auto;
+  margin: 30px auto 0;
   display: block;
   width: 200px;
   @include rooney;
@@ -953,6 +952,12 @@ a, a:link, a:visited {
     background: $cream; 
     color: $dark;
   }
+}
+
+.or-option {
+  font-style: italic;
+  display: block;
+  margin: 20px 0 0 0;
 }
 
 

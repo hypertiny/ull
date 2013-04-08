@@ -1020,42 +1020,42 @@ a, a:link, a:visited {
     width: 300px;
   }
 }
-/* line 891, ../sass/screen.scss */
+/* line 890, ../sass/screen.scss */
 #tito-register-form p {
-  font-size: 0.8em;
+  font-size: 1em;
   margin: 20px auto 0;
-  text-align: left;
+  text-align: center;
 }
-/* line 897, ../sass/screen.scss */
+/* line 896, ../sass/screen.scss */
 #tito-register-form p.locked-msg {
   font-size: 14px;
   text-align: right;
   margin: 0;
 }
-/* line 901, ../sass/screen.scss */
+/* line 900, ../sass/screen.scss */
 #tito-register-form p.locked-msg span.websymbols {
   margin-right: 5px;
 }
 
-/* line 907, ../sass/screen.scss */
+/* line 906, ../sass/screen.scss */
 .ticket li {
   position: relative;
   margin: 20px 0 0 0;
 }
 
-/* line 912, ../sass/screen.scss */
+/* line 911, ../sass/screen.scss */
 .ticket {
   border-bottom: 2px solid #932829;
   padding: 0 0 20px 0;
 }
 
-/* line 917, ../sass/screen.scss */
+/* line 916, ../sass/screen.scss */
 .ticket-quantity-wrap {
   float: right;
   right: 0px;
   position: absolute;
 }
-/* line 921, ../sass/screen.scss */
+/* line 920, ../sass/screen.scss */
 .ticket-quantity-wrap .text-field {
   width: 30px;
   height: 30px;
@@ -1069,12 +1069,12 @@ a, a:link, a:visited {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 931, ../sass/screen.scss */
+/* line 930, ../sass/screen.scss */
 .ticket-quantity-wrap .text-field:focus {
   outline: none;
 }
 
-/* line 937, ../sass/screen.scss */
+/* line 936, ../sass/screen.scss */
 .light-button-style {
   -webkit-appearance: none;
   color: #f0ebe5;
@@ -1083,7 +1083,7 @@ a, a:link, a:visited {
   border-radius: 2px;
   font-size: 0.75em;
   padding: 4px 20px 6px;
-  margin: 0 auto;
+  margin: 30px auto 0;
   display: block;
   width: 200px;
   font-family: "rooney-web",sans-serif;
@@ -1096,13 +1096,20 @@ a, a:link, a:visited {
   box-sizing: border-box;
   text-align: center;
 }
-/* line 952, ../sass/screen.scss */
+/* line 951, ../sass/screen.scss */
 .light-button-style:hover {
   background: #f0ebe5;
   color: #161411;
 }
 
-/* line 963, ../sass/screen.scss */
+/* line 957, ../sass/screen.scss */
+.or-option {
+  font-style: italic;
+  display: block;
+  margin: 20px 0 0 0;
+}
+
+/* line 968, ../sass/screen.scss */
 footer {
   margin: 130px auto 140px;
   color: #f0ebe5;
@@ -1110,18 +1117,18 @@ footer {
   line-height: 1.3em;
 }
 @media only screen and (max-width: 1080px) {
-  /* line 963, ../sass/screen.scss */
+  /* line 968, ../sass/screen.scss */
   footer {
     margin: 130px auto 120px;
   }
 }
 @media only screen and (max-height: 610px) {
-  /* line 963, ../sass/screen.scss */
+  /* line 968, ../sass/screen.scss */
   footer {
     margin: 170px auto 160px;
   }
 }
-/* line 977, ../sass/screen.scss */
+/* line 982, ../sass/screen.scss */
 footer p {
   padding-top: 10px;
   text-align: center;
@@ -1129,7 +1136,7 @@ footer p {
   margin: 0 auto;
 }
 @media only screen and (max-width: 1080px) {
-  /* line 977, ../sass/screen.scss */
+  /* line 982, ../sass/screen.scss */
   footer p {
     width: 100%;
     padding: 0 10px;
@@ -1138,7 +1145,7 @@ footer p {
     box-sizing: border-box;
   }
 }
-/* line 989, ../sass/screen.scss */
+/* line 994, ../sass/screen.scss */
 footer .final-paragraph {
   font-size: 1.2em;
   line-height: 1.2em;
@@ -1146,39 +1153,39 @@ footer .final-paragraph {
   width: 400px;
 }
 @media only screen and (max-width: 400px) {
-  /* line 989, ../sass/screen.scss */
+  /* line 994, ../sass/screen.scss */
   footer .final-paragraph {
     width: 100%;
     padding: 0 20px;
   }
 }
-/* line 1000, ../sass/screen.scss */
+/* line 1005, ../sass/screen.scss */
 footer a, footer a:link, footer a:visited {
   color: #f0ebe5;
   font-weight: 500;
 }
-/* line 1005, ../sass/screen.scss */
+/* line 1010, ../sass/screen.scss */
 footer a:hover, footer a:focus, footer a:active {
   color: #fdfcfa;
 }
-/* line 1009, ../sass/screen.scss */
+/* line 1014, ../sass/screen.scss */
 footer ul {
   width: 300px;
   margin: 0 auto;
 }
-/* line 1012, ../sass/screen.scss */
+/* line 1017, ../sass/screen.scss */
 footer ul a, footer ul a:link, footer ul a:visited {
   text-align: center;
   margin: 10px 0 0 0;
   width: 300px;
   display: block;
 }
-/* line 1018, ../sass/screen.scss */
+/* line 1023, ../sass/screen.scss */
 footer ul a:hover, footer ul a:focus, footer ul a:active {
   color: #fdfcfa;
 }
 
-/* line 1024, ../sass/screen.scss */
+/* line 1029, ../sass/screen.scss */
 .sponsor-row {
   *zoom: 1;
 }
@@ -1193,122 +1200,122 @@ footer ul a:hover, footer ul a:focus, footer ul a:active {
   clear: both;
 }
 
-/* line 1029, ../sass/screen.scss */
+/* line 1034, ../sass/screen.scss */
 .sponsor-row.oak > .sponsor {
   width: 33%;
   float: left;
 }
 @media only screen and (max-width: 480px) {
-  /* line 1029, ../sass/screen.scss */
+  /* line 1034, ../sass/screen.scss */
   .sponsor-row.oak > .sponsor {
     width: 100%;
   }
 }
 
-/* line 1039, ../sass/screen.scss */
+/* line 1044, ../sass/screen.scss */
 .sponsor-row.pine > .sponsor {
   width: 50%;
   float: left;
 }
 
-/* line 1047, ../sass/screen.scss */
+/* line 1052, ../sass/screen.scss */
 .sponsor img {
   display: block;
   margin: 0 auto;
 }
-/* line 1053, ../sass/screen.scss */
+/* line 1058, ../sass/screen.scss */
 .sponsor.dropbox img {
   width: 50%;
   margin: 70px auto 0 auto;
 }
 @media only screen and (max-width: 480px) {
-  /* line 1053, ../sass/screen.scss */
+  /* line 1058, ../sass/screen.scss */
   .sponsor.dropbox img {
     width: 80%;
   }
 }
-/* line 1063, ../sass/screen.scss */
+/* line 1068, ../sass/screen.scss */
 .sponsor.converser img {
   width: 70%;
   margin-top: 45px;
   margin-right: 40px;
 }
 @media only screen and (max-width: 480px) {
-  /* line 1063, ../sass/screen.scss */
+  /* line 1068, ../sass/screen.scss */
   .sponsor.converser img {
     width: 60%;
     margin: 40px auto 0;
   }
 }
-/* line 1073, ../sass/screen.scss */
+/* line 1078, ../sass/screen.scss */
 .sponsor.enterprise-ireland img {
   width: 65%;
   margin-top: 45px;
   margin-left: 52px;
 }
 @media only screen and (max-width: 480px) {
-  /* line 1073, ../sass/screen.scss */
+  /* line 1078, ../sass/screen.scss */
   .sponsor.enterprise-ireland img {
     margin: 40px auto 0;
   }
 }
-/* line 1082, ../sass/screen.scss */
+/* line 1087, ../sass/screen.scss */
 .sponsor.squarespace img {
   width: 84%;
   margin-top: 53px;
   margin-left: 30px;
 }
 @media only screen and (max-width: 480px) {
-  /* line 1082, ../sass/screen.scss */
+  /* line 1087, ../sass/screen.scss */
   .sponsor.squarespace img {
     width: 65%;
     margin: 40px auto 0;
   }
 }
-/* line 1095, ../sass/screen.scss */
+/* line 1100, ../sass/screen.scss */
 .sponsor.github img {
   width: 22%;
   margin-top: 50px;
   margin-right: 70px;
 }
 @media only screen and (max-width: 480px) {
-  /* line 1095, ../sass/screen.scss */
+  /* line 1100, ../sass/screen.scss */
   .sponsor.github img {
     width: 40%;
     margin: 40px auto 0;
   }
 }
-/* line 1105, ../sass/screen.scss */
+/* line 1110, ../sass/screen.scss */
 .sponsor.project-zebra img {
   width: 30%;
   margin-top: 50px;
   margin-left: 70px;
 }
 @media only screen and (max-width: 480px) {
-  /* line 1105, ../sass/screen.scss */
+  /* line 1110, ../sass/screen.scss */
   .sponsor.project-zebra img {
     width: 50%;
     margin: 40px auto 0;
   }
 }
 
-/* line 1120, ../sass/screen.scss */
+/* line 1125, ../sass/screen.scss */
 .clearfix:before, .clearfix:after {
   content: "";
   display: table;
 }
 
-/* line 1121, ../sass/screen.scss */
+/* line 1126, ../sass/screen.scss */
 .clearfix:after {
   clear: both;
 }
 
-/* line 1122, ../sass/screen.scss */
+/* line 1127, ../sass/screen.scss */
 .clearfix {
   zoom: 1;
 }
 
-/* line 1124, ../sass/screen.scss */
+/* line 1129, ../sass/screen.scss */
 .ir {
   display: block;
   text-indent: -9999px;
