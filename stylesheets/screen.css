@@ -1195,7 +1195,7 @@ footer ul a:hover, footer ul a:focus, footer ul a:active {
 
 /* line 1029, ../sass/screen.scss */
 .sponsor-row.oak > .sponsor {
-  width: 50%;
+  width: 33%;
   float: left;
 }
 @media only screen and (max-width: 480px) {
@@ -1229,22 +1229,22 @@ footer ul a:hover, footer ul a:focus, footer ul a:active {
 }
 /* line 1063, ../sass/screen.scss */
 .sponsor.converser img {
-  width: 60%;
-  margin-top: 40px;
+  width: 70%;
+  margin-top: 45px;
   margin-right: 40px;
 }
 @media only screen and (max-width: 480px) {
   /* line 1063, ../sass/screen.scss */
   .sponsor.converser img {
-    width: 55%;
+    width: 60%;
     margin: 40px auto 0;
   }
 }
 /* line 1073, ../sass/screen.scss */
 .sponsor.enterprise-ireland img {
-  width: 50%;
-  margin-top: 40px;
-  margin-left: 60px;
+  width: 65%;
+  margin-top: 45px;
+  margin-left: 52px;
 }
 @media only screen and (max-width: 480px) {
   /* line 1073, ../sass/screen.scss */
@@ -1252,50 +1252,63 @@ footer ul a:hover, footer ul a:focus, footer ul a:active {
     margin: 40px auto 0;
   }
 }
-/* line 1085, ../sass/screen.scss */
+/* line 1082, ../sass/screen.scss */
+.sponsor.squarespace img {
+  width: 84%;
+  margin-top: 53px;
+  margin-left: 30px;
+}
+@media only screen and (max-width: 480px) {
+  /* line 1082, ../sass/screen.scss */
+  .sponsor.squarespace img {
+    width: 65%;
+    margin: 40px auto 0;
+  }
+}
+/* line 1095, ../sass/screen.scss */
 .sponsor.github img {
   width: 22%;
   margin-top: 50px;
   margin-right: 70px;
 }
 @media only screen and (max-width: 480px) {
-  /* line 1085, ../sass/screen.scss */
+  /* line 1095, ../sass/screen.scss */
   .sponsor.github img {
     width: 40%;
     margin: 40px auto 0;
   }
 }
-/* line 1095, ../sass/screen.scss */
+/* line 1105, ../sass/screen.scss */
 .sponsor.project-zebra img {
   width: 30%;
   margin-top: 50px;
   margin-left: 70px;
 }
 @media only screen and (max-width: 480px) {
-  /* line 1095, ../sass/screen.scss */
+  /* line 1105, ../sass/screen.scss */
   .sponsor.project-zebra img {
     width: 50%;
     margin: 40px auto 0;
   }
 }
 
-/* line 1110, ../sass/screen.scss */
+/* line 1120, ../sass/screen.scss */
 .clearfix:before, .clearfix:after {
   content: "";
   display: table;
 }
 
-/* line 1111, ../sass/screen.scss */
+/* line 1121, ../sass/screen.scss */
 .clearfix:after {
   clear: both;
 }
 
-/* line 1112, ../sass/screen.scss */
+/* line 1122, ../sass/screen.scss */
 .clearfix {
   zoom: 1;
 }
 
-/* line 1114, ../sass/screen.scss */
+/* line 1124, ../sass/screen.scss */
 .ir {
   display: block;
   text-indent: -9999px;
