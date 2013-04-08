@@ -887,11 +887,10 @@ a, a:link, a:visited {
     width: 300px;
   }
 
-
   p {
-    font-size: 0.8em;
+    font-size: 1em;
     margin: 20px auto 0;
-    text-align: left;
+    text-align: center;
   }
 
   p.locked-msg {
@@ -942,7 +941,7 @@ a, a:link, a:visited {
   border-radius: 2px;
   font-size: 0.75em;
   padding: 4px 20px 6px;
-  margin: 0 auto;
+  margin: 30px auto 0;
   display: block;
   width: 200px;
   @include rooney;
@@ -953,6 +952,12 @@ a, a:link, a:visited {
     background: $cream; 
     color: $dark;
   }
+}
+
+.or-option {
+  font-style: italic;
+  display: block;
+  margin: 20px 0 0 0;
 }
 
 
@@ -1027,7 +1032,7 @@ footer {
 
 .sponsor-row.oak {
   > .sponsor {
-    width: 50%;
+    width: 33%;
     float: left;
     @media only screen and (max-width: 480px) {
       width: 100%;
@@ -1061,20 +1066,30 @@ footer {
   // Oak
 
   &.converser img {
-    width: 60%;
-    margin-top: 40px;
+    width: 70%;
+    margin-top: 45px;
     margin-right: 40px;
     @media only screen and (max-width: 480px) {
-      width: 55%;
+      width: 60%;
       margin: 40px auto 0;
     }
   }
 
   &.enterprise-ireland img {
-    width: 50%;
-    margin-top: 40px;
-    margin-left: 60px;
+    width: 65%;
+    margin-top: 45px;
+    margin-left: 52px;
     @media only screen and (max-width: 480px) {
+      margin: 40px auto 0;
+    }
+  }
+
+  &.squarespace img {
+    width: 84%;
+    margin-top: 53px;
+    margin-left: 30px;
+    @media only screen and (max-width: 480px) {
+      width: 65%;
       margin: 40px auto 0;
     }
   }
