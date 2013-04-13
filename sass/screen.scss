@@ -5,7 +5,6 @@
 // MIXINS AND VARIABLES
 // ---------------------------------------------------------
 
-$cream: #F0EBE5;
 $dark: #161411;
 $red: #932829;
 
@@ -46,7 +45,9 @@ $red: #932829;
   font-family: 'WebSymbolsRegular';
 }
 
-
+* {
+  @include box-sizing(border-box);
+}
 
 
 // ---------------------------------------------------------
@@ -54,8 +55,8 @@ $red: #932829;
 // ---------------------------------------------------------
 
 body {
-  background: #fff;
-  color: $cream;
+  background: #fff url(../images/bg.png);
+  color: #fff;
   font-family: "rooney-web",sans-serif;
   font-size: 19px;
   font-style: normal;
@@ -64,7 +65,7 @@ body {
 }
 
 a, a:link, a:visited {
-  color: $cream;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -72,16 +73,106 @@ a, a:link, a:visited {
 // BASICS
 // ---------------------------------------------------------
 
-.wrapper {
-  @include clearfix;
-  margin: 0 auto;
-  width: 1080px;
-  @media only screen and (max-width: 1080px) {
-    width: 940px;
+$logosize: 120px;
+
+.logo {
+  background: transparent url(../images/logo.png);
+  width: $logosize;
+  height: $logosize;
+  background-size: 100%;
+  position: fixed;
+  left: 100px;
+  top: 160px;
+  @media all and (max-width: 800px) {
+    position: static;
+    margin: 30px auto 20px;
   }
-  @media only screen and (max-width: 1000px) {
-    width: 100%
+}
+
+.year {
+  font-size: 1.4em;
+  position: fixed;
+  top: 300px;
+  left: 100px;
+  display: block;
+  width: $logosize;
+  text-align: center;
+  letter-spacing: 1px;
+  font-weight: 500;
+  @media all and (max-width: 800px) {
+    position: static;
+    margin: 0 auto;
   }
+}
+
+.main-title {
+  margin-top: 40px;
+}
+
+.y-2 {
+  display: inline-block;
+  margin-right: 0px;
+}
+
+
+.right-column {
+  float: left;
+  position: relative;
+  left: 375px;
+  margin: 0 0 140px 0;
+  @media all and (max-width: 800px) {
+    position: static;
+    margin: 0 auto;
+    float: none;
+  }
+}
+
+.speakers {
+  margin: 120px auto 0;
+  width: 400px;
+  h2 {
+    margin: 0 auto 60px;
+    font-size: 3em;
+    line-height: 2em;
+    border-bottom: 2px solid #fff;
+    text-align: center;
+  }
+}
+
+@media all and (max-width: 800px) {
+  .speakers {
+    width: 50%;
+    margin: 80px auto 0;
+    h2 {
+      font-size: 3em;
+    }
+  }
+}
+
+@media all and (max-width: 750px) { 
+  .speakers {
+    width: 300px;
+    margin: 40px auto 0;
+    h2 {
+      font-size: 2.3em;
+    }
+  }
+}
+
+a.register {
+  text-transform: uppercase;
+  display: block;
+  background: #fff;
+  border-radius: 4px;
+  color: #000;
+  width: 300px;
+  height: 40px;
+  margin: 40px auto 100px;
+  color: #E20000;
+  text-align: center;
+  padding: 8px 0 0 0;
+  font-weight: 500;
+
 }
 
 

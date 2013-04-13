@@ -69,15 +69,22 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   src: url("../fonts/websymbols-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/websymbols-regular-webfont.woff") format("woff"), url("../fonts/websymbols-regular-webfont.ttf") format("truetype"), url("../fonts/websymbols-regular-webfont.svg#WebSymbolsRegular") format("svg");
 }
 
-/* line 45, ../sass/screen.scss */
+/* line 44, ../sass/screen.scss */
 .websymbols {
   font-family: 'WebSymbolsRegular';
 }
 
-/* line 56, ../sass/screen.scss */
+/* line 48, ../sass/screen.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 57, ../sass/screen.scss */
 body {
-  background: #fff;
-  color: #f0ebe5;
+  background: white url(../images/bg.png);
+  color: #fff;
   font-family: "rooney-web",sans-serif;
   font-size: 19px;
   font-style: normal;
@@ -85,58 +92,146 @@ body {
   line-height: 23px;
 }
 
-/* line 66, ../sass/screen.scss */
+/* line 67, ../sass/screen.scss */
 a, a:link, a:visited {
-  color: #f0ebe5;
+  color: #fff;
   text-decoration: none;
 }
 
-/* line 75, ../sass/screen.scss */
-.wrapper {
-  *zoom: 1;
-  margin: 0 auto;
-  width: 1080px;
+/* line 78, ../sass/screen.scss */
+.logo {
+  background: transparent url(../images/logo.png);
+  width: 120px;
+  height: 120px;
+  background-size: 100%;
+  position: fixed;
+  left: 100px;
+  top: 160px;
 }
-/* line 24, ../sass/screen.scss */
-.wrapper:before, .wrapper:after {
-  display: table;
-  content: "";
-  line-height: 0;
-}
-/* line 31, ../sass/screen.scss */
-.wrapper:after {
-  clear: both;
-}
-@media only screen and (max-width: 1080px) {
-  /* line 75, ../sass/screen.scss */
-  .wrapper {
-    width: 940px;
-  }
-}
-@media only screen and (max-width: 1000px) {
-  /* line 75, ../sass/screen.scss */
-  .wrapper {
-    width: 100%;
+@media all and (max-width: 800px) {
+  /* line 78, ../sass/screen.scss */
+  .logo {
+    position: static;
+    margin: 30px auto 20px;
   }
 }
 
 /* line 92, ../sass/screen.scss */
+.year {
+  font-size: 1.4em;
+  position: fixed;
+  top: 300px;
+  left: 100px;
+  display: block;
+  width: 120px;
+  text-align: center;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+@media all and (max-width: 800px) {
+  /* line 92, ../sass/screen.scss */
+  .year {
+    position: static;
+    margin: 0 auto;
+  }
+}
+
+/* line 108, ../sass/screen.scss */
+.main-title {
+  margin-top: 40px;
+}
+
+/* line 112, ../sass/screen.scss */
+.y-2 {
+  display: inline-block;
+  margin-right: 0px;
+}
+
+/* line 118, ../sass/screen.scss */
+.right-column {
+  float: left;
+  position: relative;
+  left: 375px;
+  margin: 0 0 140px 0;
+}
+@media all and (max-width: 800px) {
+  /* line 118, ../sass/screen.scss */
+  .right-column {
+    position: static;
+    margin: 0 auto;
+    float: none;
+  }
+}
+
+/* line 130, ../sass/screen.scss */
+.speakers {
+  margin: 120px auto 0;
+  width: 400px;
+}
+/* line 133, ../sass/screen.scss */
+.speakers h2 {
+  margin: 0 auto 60px;
+  font-size: 3em;
+  line-height: 2em;
+  border-bottom: 2px solid white;
+  text-align: center;
+}
+
+@media all and (max-width: 800px) {
+  /* line 143, ../sass/screen.scss */
+  .speakers {
+    width: 50%;
+    margin: 80px auto 0;
+  }
+  /* line 146, ../sass/screen.scss */
+  .speakers h2 {
+    font-size: 3em;
+  }
+}
+@media all and (max-width: 750px) {
+  /* line 153, ../sass/screen.scss */
+  .speakers {
+    width: 300px;
+    margin: 40px auto 0;
+  }
+  /* line 156, ../sass/screen.scss */
+  .speakers h2 {
+    font-size: 2.3em;
+  }
+}
+/* line 162, ../sass/screen.scss */
+a.register {
+  text-transform: uppercase;
+  display: block;
+  background: #fff;
+  border-radius: 4px;
+  color: #000;
+  width: 300px;
+  height: 40px;
+  margin: 40px auto 100px;
+  color: #E20000;
+  text-align: center;
+  padding: 8px 0 0 0;
+  font-weight: 500;
+}
+
+/* line 183, ../sass/screen.scss */
 .clearfix:before, .clearfix:after {
   content: "";
   display: table;
 }
 
-/* line 93, ../sass/screen.scss */
+/* line 184, ../sass/screen.scss */
 .clearfix:after {
   clear: both;
 }
 
-/* line 94, ../sass/screen.scss */
+/* line 185, ../sass/screen.scss */
 .clearfix {
   zoom: 1;
 }
 
-/* line 96, ../sass/screen.scss */
+/* line 187, ../sass/screen.scss */
 .ir {
   display: block;
   text-indent: -9999px;
