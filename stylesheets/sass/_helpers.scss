@@ -1,0 +1,46 @@
+
+/* Variables
+================================ */
+
+// Colour
+// Prefix of "c" for all colour varibales
+
+$c-primary:                 #1C1C1C;
+$c-secondary:               #ff0099;
+$c-bg:                      #fff;
+
+// Text
+// Prefix of "t" for all type variables
+
+$t-fam-primary:             Verdana;
+$t-leading:                 1.3em;
+$t-size:                    1em;
+$t-weight:                  bold;
+
+
+
+/* Mixins
+================================ */
+
+// General
+
+@mixin links {
+  a, a:link, a:visited {
+    text-decoration: none;
+    color: $c-primary;
+  }
+
+  a:hover, a:focus, a:active {
+    text-decoration: underline;
+  }
+}
+
+// Transitions 
+
+@mixin fade {
+  @include transition (all 0.15s ease-in-out);
+}
+
+@mixin fast-fade {
+  @include transition (all 0.05s ease-in-out);
+}

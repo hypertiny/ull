@@ -1,0 +1,79 @@
+@import 'vendor/bourbon/bourbon';
+@import 'vendor/neat/neat';
+@import 'reset';
+@import 'helpers';
+
+
+/* Base
+================================ */
+
+body {
+  color: $c-primary;
+  font-family: $t-fam-primary;
+}
+
+a, a:link, a:visited {
+  color: $c-primary;
+  text-decoration: none;
+}
+
+
+/* Text
+================================ */
+
+// Use the class "text" on any container specifically for textual content
+
+.text {
+  h1 {
+    font-size: 3em;
+  }
+
+  h2 {
+    font-size: 2.5em;
+  }
+
+  h3 {
+    font-size: 2em;
+  }
+
+  h4 {
+    font-size: 1.5em;
+  }
+}
+
+
+/* Main Site
+================================ */
+
+.site-wrapper {
+  margin: 4em auto;
+  width: 40em;
+}
+
+// Header
+
+.site-header {
+
+}
+
+.site-logo {
+  font-size: $t-size;
+  font-weight: $t-weight;
+}
+
+// Footer
+
+.site-footer {
+
+}
+
+
+/* Content Area
+================================ */
+
+.site-content {
+
+}
+
+
+
