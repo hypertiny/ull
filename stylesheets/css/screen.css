@@ -120,33 +120,216 @@ textarea {
 /* Base
 ================================ */
 body {
-  color: #1c1c1c;
-  font-family: Verdana; }
+  color: #ec5d60;
+  line-height: 1.3em;
+  font-family: "museo-sans", sans-serif;
+  font-weight: 300;
+  background: white; }
 
 a, a:link, a:visited {
-  color: #1c1c1c;
+  color: #70181a;
   text-decoration: none; }
 
 /* Text
 ================================ */
-.text h1 {
-  font-size: 3em; }
-.text h2 {
-  font-size: 2.5em; }
-.text h3 {
-  font-size: 2em; }
-.text h4 {
-  font-size: 1.5em; }
+.text {
+  line-height: 1.3em; }
+  .text h1 {
+    font-size: 3em; }
+  .text h3 {
+    font-size: 2em; }
+  .text h4 {
+    font-size: 1.5em; }
+  .text p {
+    font-size: 1.6em; }
 
 /* Main Site
 ================================ */
-.site-wrapper {
-  margin: 4em auto;
-  width: 40em; }
+@media only screen and (min-width: 850px) {
+  .site-wrapper {
+    margin: 4em auto;
+    width: 80%;
+    max-width: 80em; } }
 
 .site-logo {
   font-size: 1em;
-  font-weight: bold; }
+  font-weight: 300; }
 
-/* Content Area
+@media only screen and (min-width: 850px) {
+  .logo-year-wrap {
+    position: fixed;
+    margin-left: -5em; } }
+
+.logo {
+  display: block;
+  margin: 2em auto;
+  width: 5em; }
+  @media only screen and (min-width: 850px) {
+    .logo {
+      margin-top: 0;
+      width: 6em; } }
+
+.year {
+  position: relative;
+  margin-top: 0.7em;
+  font-size: 1.5em;
+  text-align: center;
+  color: #ec5d60;
+  letter-spacing: 0.2em;
+  font-weight: 300; }
+
+.tagline {
+  font-size: 1.5em;
+  margin: 2em auto 0em;
+  text-align: center; }
+  @media only screen and (min-width: 850px) {
+    .tagline {
+      text-align: left;
+      padding-left: 4em;
+      font-size: 2em;
+      font-weight: 300; } }
+
+.description {
+  width: 52%;
+  margin: 0 auto; }
+
+.intro {
+  position: relative; }
+
+.main-image {
+  width: 100%;
+  margin: 0 auto;
+  display: block; }
+  @media only screen and (min-width: 850px) {
+    .main-image {
+      margin-top: -5em; } }
+
+.main-image-alt {
+  width: 100%;
+  margin: 0 auto;
+  display: block; }
+  @media only screen and (min-width: 850px) {
+    .main-image-alt {
+      margin-top: -5em; } }
+
+.flag-image {
+  width: 14%;
+  position: absolute;
+  display: none;
+  top: 11.7em;
+  left: 0.3em; }
+  @media only screen and (min-width: 850px) {
+    .flag-image {
+      top: 26.3em;
+      left: 0.45em;
+      width: 16%; } }
+
+.toggle-flag {
+  position: absolute;
+  block: display;
+  width: 60px;
+  height: 40px;
+  color: #ec5d60;
+  background: rgba(236, 93, 96, 0.2);
+  right: 30px;
+  text-align: center;
+  padding: 10px 0 0 0;
+  border-radius: 4px; }
+
+.main-image-alt {
+  display: none; }
+
+.section-title {
+  font-size: 1.5em;
+  margin: 1.3em 0 0.86667em;
+  font-weight: 700; }
+
+/* Ticket Schedule
 ================================ */
+.tickets-wrap {
+  padding: 0 1em; }
+  @media only screen and (min-width: 850px) {
+    .tickets-wrap {
+      width: 75%;
+      margin: 0 auto 20em; } }
+
+.ticket {
+  *zoom: 1;
+  opacity: 0.3; }
+  .ticket:before, .ticket:after {
+    content: " ";
+    display: table; }
+  .ticket:after {
+    clear: both; }
+  .ticket.active {
+    opacity: 1; }
+
+.ticket-title,
+.ticket-price {
+  font-size: 1.2em;
+  margin: 1.3em 0 0.43333em; }
+  @media only screen and (min-width: 850px) {
+    .ticket-title,
+    .ticket-price {
+      font-size: 2em; } }
+
+.ticket-title {
+  float: left; }
+
+.ticket-price {
+  float: right; }
+
+.ticket-date {
+  clear: left;
+  color: #70181a;
+  float: left;
+  font-size: 0.9em; }
+  @media only screen and (min-width: 850px) {
+    .ticket-date {
+      font-size: 1.2em;
+      font-weight: 300; } }
+
+/* Register Interest
+================================ */
+::-webkit-input-placeholder {
+  color: rgba(236, 93, 96, 0.5); }
+
+:-moz-placeholder {
+  color: rgba(236, 93, 96, 0.5); }
+
+::-moz-placeholder {
+  color: rgba(236, 93, 96, 0.5); }
+
+:-ms-input-placeholder {
+  color: rgba(236, 93, 96, 0.5); }
+
+.register-interest-wrap {
+  padding: 0 1em;
+  margin: 5em auto 3em; }
+  @media only screen and (min-width: 850px) {
+    .register-interest-wrap {
+      margin-top: 3em;
+      width: 60%; } }
+
+.register-interest-form {
+  float: left;
+  width: 70%;
+  margin-bottom: 4em; }
+  .register-interest-form input {
+    width: 100%;
+    margin-bottom: 1em;
+    font-size: 1.5em;
+    border: none;
+    padding: 0.43333em 0;
+    outline: none;
+    background: url("../../images/line-short.png") bottom no-repeat;
+    background-size: 100%;
+    padding-bottom: 0.5em; }
+
+.volunteer-image {
+  width: 25%;
+  margin-top: -3em;
+  float: right; }
+  @media only screen and (min-width: 850px) {
+    .volunteer-image {
+      margin-top: -10em; } }

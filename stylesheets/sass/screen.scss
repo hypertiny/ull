@@ -8,8 +8,11 @@
 ================================ */
 
 body {
-  color: $c-primary;
+  color: $c-red;
+  line-height: $t-leading;
   font-family: $t-fam-primary;
+  font-weight: $t-weight;
+  background: $c-bg;
 }
 
 a, a:link, a:visited {
@@ -24,12 +27,14 @@ a, a:link, a:visited {
 // Use the class "text" on any container specifically for textual content
 
 .text {
+  line-height: $t-leading;
+
   h1 {
     font-size: 3em;
   }
 
   h2 {
-    font-size: 2.5em;
+
   }
 
   h3 {
@@ -39,6 +44,10 @@ a, a:link, a:visited {
   h4 {
     font-size: 1.5em;
   }
+
+  p {
+    font-size: $t-size*1.6;
+  }
 }
 
 
@@ -46,14 +55,11 @@ a, a:link, a:visited {
 ================================ */
 
 .site-wrapper {
-  margin: 4em auto;
-  width: 40em;
-}
-
-// Header
-
-.site-header {
-
+  @media only screen and (min-width: $medium) {
+    margin: 4em auto;
+    width: 80%;
+    max-width: 80em;
+  }
 }
 
 .site-logo {
@@ -61,18 +67,213 @@ a, a:link, a:visited {
   font-weight: $t-weight;
 }
 
-// Footer
+.logo-year-wrap {
 
-.site-footer {
+  @media only screen and (min-width: $medium) {
+    position: fixed;
+    margin-left: -5em;
+  }
+}
+
+.logo {
+  display: block;
+  margin: 2em auto;
+  width: 5em;
+
+  @media only screen and (min-width: $medium) {
+    margin-top: 0;
+    width: 6em;
+  }
+}
+
+.year {
+  position: relative;
+  margin-top: 0.7em;
+  font-size: $t-size*1.5;
+  text-align: center;
+  color: $c-red;
+  letter-spacing: 0.2em;
+  font-weight: 300;
+}
+
+.tagline {
+  font-size: $tz-large;
+  margin: 2em auto 0em;
+  text-align: center;
+
+  @media only screen and (min-width: $medium) {
+    text-align: left;
+    padding-left: 4em;
+    font-size: $t-size*2;
+    font-weight: 300;
+  }
+}
+
+.description {
+  width: 52%;
+  margin: 0 auto;
+}
+
+.intro {
+  position: relative;
 
 }
 
 
-/* Content Area
+.main-image {
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+
+  @media only screen and (min-width: $medium) {
+    margin-top: -5em;
+  }
+}
+
+.main-image-alt {
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+
+  @media only screen and (min-width: $medium) {
+    margin-top: -5em;
+  }
+}
+
+
+.flag-image {
+  width: 14%;
+  position: absolute;
+  display: none;
+  top: 11.7em;
+  left: 0.3em;
+
+  @media only screen and (min-width: $medium) {
+    top: 26.3em;
+    left: 0.45em;
+    width: 16%;
+  }
+}
+
+.toggle-flag {
+  position: absolute;
+  block: display;
+  width: 60px;
+  height: 40px;
+  color: $c-red;
+  background: rgba($c-red, 0.2);
+  right: 30px;
+  text-align: center;
+  padding: 10px 0 0 0;
+  border-radius: 4px;
+}
+
+.main-image-alt {
+  display: none;
+}
+
+
+.section-title {
+  font-size: 1.5em;
+  margin: $t-leading*1 0 $t-leading/1.5;
+  font-weight: 700;
+}
+
+
+/* Ticket Schedule
 ================================ */
 
-.site-content {
+.tickets-wrap {
+  padding: 0 1em;
+  @media only screen and (min-width: $medium) {
+    width: 75%;
+    margin: 0 auto 20em;
+  }
+}
 
+.ticket {
+  @include clearfix;
+  opacity: 0.3;
+  &.active {
+    opacity: 1;
+  }
+}
+
+.ticket-title,
+.ticket-price {
+  font-size: $t-size*1.2;
+  margin: $t-leading 0 $t-leading/3;
+
+  @media only screen and (min-width: $medium) {
+    font-size: $t-size*2;
+  }
+}
+
+.ticket-title {
+  float: left;
+}
+
+.ticket-price {
+  float: right;
+}
+
+.ticket-date {
+  clear: left;
+  color: $c-brown;
+  float: left;
+  font-size: 0.9em;
+
+  @media only screen and (min-width: $medium) {
+    font-size: $t-size*1.2;
+    font-weight: 300;
+  }
+}
+
+/* Register Interest
+================================ */
+
+@include placeholder {
+  color: rgba($c-red, 0.5);
+}
+
+.register-interest-wrap {
+  padding: 0 1em;
+  margin: 5em auto 3em;
+
+  @media only screen and (min-width: $medium) {
+    margin-top: 3em;
+    width: 60%;
+    
+    // border-top: 2px solid rgba($c-red, 0.5);
+  }
+}
+
+.register-interest-form {
+  float: left;
+  width: 70%;
+  margin-bottom: 4em;
+
+  input {
+    width: 100%;
+    margin-bottom: 1em;
+    font-size: $t-size*1.5;
+    border: none;
+    padding: $t-leading/3 0;
+    outline: none;
+    background: url("../../images/line-short.png") bottom no-repeat;
+    background-size: 100%;
+    padding-bottom: 0.5em;
+  }
+}
+
+.volunteer-image {
+  width: 25%;
+  margin-top: -3em;
+  float: right;
+
+  @media only screen and (min-width: $medium) {
+    margin-top: -10em;
+  }
 }
 
 

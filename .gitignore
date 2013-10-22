@@ -1,6 +1,2 @@
-.DS_Store
-
-ull.esproj/Project.espressostorage
-
-ull.esproj/user.kilmc.espressostorage
-.sass-cache
+*.sublime-workspace
+*.sublime-project

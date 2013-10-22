@@ -5,17 +5,40 @@
 // Colour
 // Prefix of "c" for all colour varibales
 
-$c-primary:                 #1C1C1C;
+$c-blue:                    #4FB3E0;
+$c-brown:                   #70181A;
+$c-red:                     #EC5D60;
+$c-yellow:                  #FAC637;
+
+$c-primary:                 #70181A;
 $c-secondary:               #ff0099;
 $c-bg:                      #fff;
+// $c-bg:                      rgba($c-yellow, 0.03);
+
 
 // Text
 // Prefix of "t" for all type variables
 
-$t-fam-primary:             Verdana;
+$t-fam-primary:             "museo-sans",sans-serif;
+$t-fam-secondary:           "rooney-web",sans-serif;
 $t-leading:                 1.3em;
+$t-weight:                  300;
+
+// Type sizes
 $t-size:                    1em;
-$t-weight:                  bold;
+$tz-small:                  0.9em;
+$tz-medium:                 1em;
+$tz-large:                  1.5em;
+$tz-xlarge:                 2em;
+$tz-xxlarge:                2.5em;
+
+
+// Screen Sizes
+
+$small:                     500px;
+$medium:                    850px;
+$large:                     1200px;
+$xlarge:                    1400px;
 
 
 
@@ -34,6 +57,21 @@ $t-weight:                  bold;
     text-decoration: underline;
   }
 }
+
+@mixin placeholder {
+  ::-webkit-input-placeholder {@content}
+  :-moz-placeholder           {@content}
+  ::-moz-placeholder          {@content}
+  :-ms-input-placeholder      {@content}  
+}
+
+@mixin nested-placeholder {
+  &::-webkit-input-placeholder {@content}
+  &:-moz-placeholder           {@content}
+  &::-moz-placeholder          {@content}
+  &:-ms-input-placeholder      {@content}  
+}
+
 
 // Transitions 
 

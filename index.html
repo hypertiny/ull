@@ -5,32 +5,82 @@
   <title>Get Going</title>
   
   <link rel="stylesheet" href="stylesheets/css/screen.css" media="all">
-  
-  <!--
-  
-  Typekit
-  <script type="text/javascript" src="//use.typekit.net/jwm3btz.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1; maximum-scale=1.0; user-scalable=1;">
+
+  <script type="text/javascript" src="//use.typekit.net/vqx8btp.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-  
-  jQuery
+
+
+    
   <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
   
-  -->
+  <script>
+    $(document).ready(function() {
+      $(".toggle-flag").click(function() {
+        $(".main-image").toggle();
+        $(".main-image-alt").toggle();
+        $(".flag-image").toggle();
+      });
+    });
+  </script>
   
 </head>
 <body>
   <div class="site-wrapper">
-    <header class="site-header">
-      <h1 class="site-logo"><a href="#">Get Going!</a></h1>
-    </header>
     
-    <section class="site-content text">
-
+    <a class="toggle-flag">Flag!</a>
+    
+    <div class="logo-year-wrap">
+      <img src="images/ull-logo.svg" alt="Úll Logo" class="logo">
+      <p class="year">2014</p>
+    </div>
+    
+    <section class="intro">
+      <p class="tagline text">This year's going to be <br> a little different…</p>
+      <img src="images/ull-2014.png" alt="Teaser Image" class="main-image">
+      <img src="images/ull-2014-alt.png" alt="Teaser Image No Flag" class="main-image-alt">
+      <img src="images/flag.gif" alt="Teaser Image" class="flag-image">
+      <!-- <p class="description text">Join us at Lyrath Estate on the 28th, 29th and 30th of April, we're looking forward to seeing you</p> -->
     </section>
     
-    <footer class="site-footer">
-      
-    </footer>
+    <section class="tickets-wrap">
+      <h2 class="section-title">Ticket Releases</h2>
+      <ul>
+        <li class="ticket active">
+          <p class="ticket-title">Early Bird</p>
+          <p class="ticket-price">€495</p>
+          <p class="ticket-date">3 October 2013 — 20 December 2013</p>
+        </li>
+        
+        <li class="ticket active">
+          <p class="ticket-title">Early Bird + Accomodation</p>
+          <p class="ticket-price">€795</p>
+          <p class="ticket-date">3 October 2013 — 20 December 2013</p>
+        </li>
+        
+        <li class="ticket">
+          <p class="ticket-title">Regular Ticket</p>
+          <p class="ticket-price">€695</p>
+          <p class="ticket-date">6 January 2013 — 16 March 2013</p>
+        </li>
+        
+        <li class="ticket">
+          <p class="ticket-title">Early Bird + Accomodation</p>
+          <p class="ticket-price">€995</p>
+          <p class="ticket-date">6 January 2013 — 16 March 2013</p>
+        </li>
+      </ul>
+    </section>
+    
+    <section class="register-interest-wrap text">
+      <h2 class="section-title">Register Interest</h2>
+      <form class="register-interest-form">
+        <input type="text" placeholder="Name" class="register-name">
+        <input type="text" placeholder="Email" class="register-email">
+      </form>
+      <img src="images/volunteer.png" alt="Volunteer with iPad" class="volunteer-image">
+    </section>
+
   </div>
 </body>
 </html>
