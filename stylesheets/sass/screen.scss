@@ -8,11 +8,11 @@
 ================================ */
 
 body {
+  background: $c-bg;
   color: $c-red;
-  line-height: $t-leading;
   font-family: $t-fam-primary;
   font-weight: $t-weight;
-  background: $c-bg;
+  line-height: $t-leading;
 }
 
 a, a:link, a:visited {
@@ -27,7 +27,7 @@ a, a:link, a:visited {
 // Use the class "text" on any container specifically for textual content
 
 .text {
-  line-height: $t-leading;
+  line-height: $t-leading*1.4;
 
   h1 {
     font-size: 3em;
@@ -45,9 +45,6 @@ a, a:link, a:visited {
     font-size: 1.5em;
   }
 
-  p {
-    font-size: $t-size*1.6;
-  }
 }
 
 
@@ -87,53 +84,69 @@ a, a:link, a:visited {
 }
 
 .year {
-  position: relative;
-  margin-top: 0.7em;
-  font-size: $t-size*1.5;
-  text-align: center;
   color: $c-red;
-  letter-spacing: 0.2em;
+  font-size: $t-size*1.5;
   font-weight: 300;
-}
-
-.tagline {
-  font-size: $tz-large;
-  margin: 2em auto 0em;
+  letter-spacing: 0.2em;
+  margin-top: 0.7em;
+  position: relative;
   text-align: center;
-
-  @media only screen and (min-width: $medium) {
-    text-align: left;
-    padding-left: 4em;
-    font-size: $t-size*2;
-    font-weight: 300;
-  }
 }
 
 .description {
-  width: 52%;
   margin: 0 auto;
+  width: 52%;
 }
 
 .intro {
   position: relative;
+  margin-bottom: 20rem;
+}
 
+.introduction {
+  padding: 0 1em;
+  
+  .tagline {
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    margin-bottom: 2rem;
+  }
+
+  @media only screen and (min-width: $medium) {
+    width: 45rem;
+    margin: 0 auto;
+
+    .tagline {
+      font-size: 2.2rem;
+      margin-bottom: 2.5rem;
+    }
+
+    p {
+      font-size: 1.4rem;
+      line-height: 2rem;
+      margin-bottom: 2rem;
+    }
+  }
 }
 
 
 .main-image {
-  width: 100%;
-  margin: 0 auto;
   display: block;
+  margin: 0 auto;
+  max-width: 60rem;
+  padding: 2rem 0 6rem 0;
 
-  @media only screen and (min-width: $medium) {
-    margin-top: -5em;
-  }
 }
 
 .main-image-alt {
-  width: 100%;
-  margin: 0 auto;
   display: block;
+  margin: 0 auto;
+  width: 100%;
 
   @media only screen and (min-width: $medium) {
     margin-top: -5em;
@@ -142,30 +155,31 @@ a, a:link, a:visited {
 
 
 .flag-image {
-  width: 14%;
-  position: absolute;
   display: none;
-  top: 11.7em;
   left: 0.3em;
+  position: absolute;
+  top: 11.7em;
+  width: 14%;
 
   @media only screen and (min-width: $medium) {
-    top: 26.3em;
     left: 0.45em;
+    top: 26.3em;
     width: 16%;
   }
 }
 
 .toggle-flag {
-  position: absolute;
-  block: display;
-  width: 60px;
-  height: 40px;
-  color: $c-red;
   background: rgba($c-red, 0.2);
+  block: display;
+  border-radius: 4px;
+  color: $c-red;
+  height: 40px;
+  padding: 10px 0 0 0;
+  position: absolute;
   right: 30px;
   text-align: center;
-  padding: 10px 0 0 0;
-  border-radius: 4px;
+  width: 60px;
+  display: none;
 }
 
 .main-image-alt {
@@ -175,8 +189,8 @@ a, a:link, a:visited {
 
 .section-title {
   font-size: 1.5em;
-  margin: $t-leading*1 0 $t-leading/1.5;
   font-weight: 700;
+  margin: $t-leading*1 0 $t-leading/1.5;
 }
 
 
@@ -239,37 +253,46 @@ a, a:link, a:visited {
 .register-interest-wrap {
   padding: 0 1em;
   margin: 5em auto 3em;
+  @include clearfix;
 
   @media only screen and (min-width: $medium) {
     margin-top: 3em;
-    width: 60%;
-    
-    // border-top: 2px solid rgba($c-red, 0.5);
+    width: 70%;
   }
 }
 
 .register-interest-form {
   float: left;
-  width: 70%;
   margin-bottom: 4em;
+  width: 70%;
+}
 
-  input {
-    width: 100%;
-    margin-bottom: 1em;
-    font-size: $t-size*1.5;
-    border: none;
-    padding: $t-leading/3 0;
-    outline: none;
-    background: url("../../images/line-short.png") bottom no-repeat;
-    background-size: 100%;
-    padding-bottom: 0.5em;
-  }
+.register-name,
+.register-email {
+  background: url("../../images/line-short.png") bottom no-repeat;
+  background-size: 100%;
+  border: none;
+  font-size: $t-size*1.5;
+  margin-bottom: 1em;
+  outline: none;
+  padding: $t-leading/3 0;
+  padding-bottom: 0.5em;
+  width: 100%;
+}
+
+.register-button {
+  background: $c-red;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  margin-top: 1.5em;
+  padding: 0.75em 1em;
 }
 
 .volunteer-image {
-  width: 25%;
-  margin-top: -3em;
   float: right;
+  margin-top: -3em;
+  width: 25%;
 
   @media only screen and (min-width: $medium) {
     margin-top: -10em;

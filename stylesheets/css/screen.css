@@ -120,11 +120,11 @@ textarea {
 /* Base
 ================================ */
 body {
+  background: white;
   color: #ec5d60;
-  line-height: 1.3em;
   font-family: "museo-sans", sans-serif;
   font-weight: 300;
-  background: white; }
+  line-height: 1.3em; }
 
 a, a:link, a:visited {
   color: #70181a;
@@ -133,15 +133,13 @@ a, a:link, a:visited {
 /* Text
 ================================ */
 .text {
-  line-height: 1.3em; }
+  line-height: 1.82em; }
   .text h1 {
     font-size: 3em; }
   .text h3 {
     font-size: 2em; }
   .text h4 {
     font-size: 1.5em; }
-  .text p {
-    font-size: 1.6em; }
 
 /* Main Site
 ================================ */
@@ -170,79 +168,89 @@ a, a:link, a:visited {
       width: 6em; } }
 
 .year {
-  position: relative;
-  margin-top: 0.7em;
-  font-size: 1.5em;
-  text-align: center;
   color: #ec5d60;
-  letter-spacing: 0.2em;
-  font-weight: 300; }
-
-.tagline {
   font-size: 1.5em;
-  margin: 2em auto 0em;
+  font-weight: 300;
+  letter-spacing: 0.2em;
+  margin-top: 0.7em;
+  position: relative;
   text-align: center; }
-  @media only screen and (min-width: 850px) {
-    .tagline {
-      text-align: left;
-      padding-left: 4em;
-      font-size: 2em;
-      font-weight: 300; } }
 
 .description {
-  width: 52%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  width: 52%; }
 
 .intro {
-  position: relative; }
+  position: relative;
+  margin-bottom: 20rem; }
+
+.introduction {
+  padding: 0 1em; }
+  .introduction .tagline {
+    font-size: 2rem;
+    margin-bottom: 2.5rem; }
+  .introduction p {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    margin-bottom: 2rem; }
+  @media only screen and (min-width: 850px) {
+    .introduction {
+      width: 45rem;
+      margin: 0 auto; }
+      .introduction .tagline {
+        font-size: 2.2rem;
+        margin-bottom: 2.5rem; }
+      .introduction p {
+        font-size: 1.4rem;
+        line-height: 2rem;
+        margin-bottom: 2rem; } }
 
 .main-image {
-  width: 100%;
+  display: block;
   margin: 0 auto;
-  display: block; }
-  @media only screen and (min-width: 850px) {
-    .main-image {
-      margin-top: -5em; } }
+  max-width: 60rem;
+  padding: 2rem 0 6rem 0; }
 
 .main-image-alt {
-  width: 100%;
+  display: block;
   margin: 0 auto;
-  display: block; }
+  width: 100%; }
   @media only screen and (min-width: 850px) {
     .main-image-alt {
       margin-top: -5em; } }
 
 .flag-image {
-  width: 14%;
-  position: absolute;
   display: none;
+  left: 0.3em;
+  position: absolute;
   top: 11.7em;
-  left: 0.3em; }
+  width: 14%; }
   @media only screen and (min-width: 850px) {
     .flag-image {
-      top: 26.3em;
       left: 0.45em;
+      top: 26.3em;
       width: 16%; } }
 
 .toggle-flag {
-  position: absolute;
-  block: display;
-  width: 60px;
-  height: 40px;
-  color: #ec5d60;
   background: rgba(236, 93, 96, 0.2);
+  block: display;
+  border-radius: 4px;
+  color: #ec5d60;
+  height: 40px;
+  padding: 10px 0 0 0;
+  position: absolute;
   right: 30px;
   text-align: center;
-  padding: 10px 0 0 0;
-  border-radius: 4px; }
+  width: 60px;
+  display: none; }
 
 .main-image-alt {
   display: none; }
 
 .section-title {
   font-size: 1.5em;
-  margin: 1.3em 0 0.86667em;
-  font-weight: 700; }
+  font-weight: 700;
+  margin: 1.3em 0 0.86667em; }
 
 /* Ticket Schedule
 ================================ */
@@ -305,31 +313,47 @@ a, a:link, a:visited {
 
 .register-interest-wrap {
   padding: 0 1em;
-  margin: 5em auto 3em; }
+  margin: 5em auto 3em;
+  *zoom: 1; }
+  .register-interest-wrap:before, .register-interest-wrap:after {
+    content: " ";
+    display: table; }
+  .register-interest-wrap:after {
+    clear: both; }
   @media only screen and (min-width: 850px) {
     .register-interest-wrap {
       margin-top: 3em;
-      width: 60%; } }
+      width: 70%; } }
 
 .register-interest-form {
   float: left;
-  width: 70%;
-  margin-bottom: 4em; }
-  .register-interest-form input {
-    width: 100%;
-    margin-bottom: 1em;
-    font-size: 1.5em;
-    border: none;
-    padding: 0.43333em 0;
-    outline: none;
-    background: url("../../images/line-short.png") bottom no-repeat;
-    background-size: 100%;
-    padding-bottom: 0.5em; }
+  margin-bottom: 4em;
+  width: 70%; }
+
+.register-name,
+.register-email {
+  background: url("../../images/line-short.png") bottom no-repeat;
+  background-size: 100%;
+  border: none;
+  font-size: 1.5em;
+  margin-bottom: 1em;
+  outline: none;
+  padding: 0.43333em 0;
+  padding-bottom: 0.5em;
+  width: 100%; }
+
+.register-button {
+  background: #ec5d60;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  margin-top: 1.5em;
+  padding: 0.75em 1em; }
 
 .volunteer-image {
-  width: 25%;
+  float: right;
   margin-top: -3em;
-  float: right; }
+  width: 25%; }
   @media only screen and (min-width: 850px) {
     .volunteer-image {
       margin-top: -10em; } }

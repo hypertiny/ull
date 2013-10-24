@@ -147,6 +147,30 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 2955,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "stylesheets/sass/screen.scss",
+			"settings":
+			{
+				"buffer_size": 4154,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "stylesheets/sass/_helpers.scss",
+			"settings":
+			{
+				"buffer_size": 1736,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -392,6 +416,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"3em",
+			"title",
+			"5",
 			"<<",
 			">>>>",
 			"arrivalDateTime",
@@ -516,10 +543,7 @@
 			"attendee-info",
 			".fixed",
 			"attendee-",
-			".fixed",
-			"checkin-status-wrap",
-			"checkmark",
-			"menu-btn"
+			".fixed"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -537,8 +561,102 @@
 	"groups":
 	[
 		{
+			"selected": 1,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"settings":
+					{
+						"buffer_size": 2955,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 269.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "stylesheets/sass/screen.scss",
+					"settings":
+					{
+						"buffer_size": 4154,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								920,
+								920
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Syntax Highlighting for Sass/Syntaxes/SCSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 853.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "stylesheets/sass/_helpers.scss",
+					"settings":
+					{
+						"buffer_size": 1736,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Syntax Highlighting for Sass/Syntaxes/SCSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -592,8 +710,16 @@
 		"selected_items":
 		[
 			[
+				"hel",
+				"stylesheets/sass/_helpers.scss"
+			],
+			[
 				"inde",
 				"index.html"
+			],
+			[
+				"scree",
+				"stylesheets/sass/screen.scss"
 			],
 			[
 				"variable",
@@ -630,10 +756,6 @@
 			[
 				"jess",
 				"style/sass/jessica.scss"
-			],
-			[
-				"hel",
-				"style/sass/_helpers.scss"
 			],
 			[
 				"head",
@@ -1098,10 +1220,6 @@
 			[
 				"custom-font",
 				"app/assets/fonts/custom/custom-fonts.css"
-			],
-			[
-				"mixin",
-				"app/assets/stylesheets/application/_mixins.css.scss"
 			]
 		],
 		"width": 0.0
@@ -1111,6 +1229,10 @@
 		"height": 500.0,
 		"selected_items":
 		[
+			[
+				"kilm",
+				"/Users/kilmc/Sites/Git/Sublime Projects/Kilmc.sublime-project"
+			],
 			[
 				"",
 				"/Users/kilmc/Sites/kilmc.com/Kilmc.com.sublime-project"
@@ -1158,10 +1280,6 @@
 			[
 				"pudding",
 				"/Users/kilmc/Sites/pudding/pudding.sublime-project"
-			],
-			[
-				"kilm",
-				"/Users/kilmc/Sites/Git/Sublime Projects/Kilmc.sublime-project"
 			],
 			[
 				"tut",
