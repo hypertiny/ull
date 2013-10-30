@@ -55,6 +55,7 @@ $(document).ready(function() {
         // after the length of the moving back up animation, set the state back to up
         setTimeout(function(){
           console.log('going from ', that.state, ' to up')
+          $(".volunteer-image").attr("src", "/images/dude/01-dude.gif")
           that.state = 'up'
         }, frameLength*3)
       }, 1000)
@@ -66,17 +67,20 @@ $(document).ready(function() {
   // loop through the 'down' states if it's down
   // don't do anything if it's moving
   var moveTheHand = function(){
-    // if the hand is up, move it down
-    if(Hand.state == 'up')
-    {
-      Hand.move_down()
-    }
-    // if the hand is down, move the animation along
-    else if(Hand.state == 'down')
-    {
-      Hand.next_frame()
-    }
-    Hand.go_back_up_on_inactivity()
+    setTimeout(function(){
+      // if the hand is up, move it down
+      if(Hand.state == 'up')
+      {
+        Hand.move_down()
+      }
+      // if the hand is down, move the animation along
+      else if(Hand.state == 'down')
+      {
+        Hand.next_frame()
+      }
+      Hand.go_back_up_on_inactivity()
+    }, 1000)
+    
   }
 
   $( ".register-name, .register-email" ).keypress(moveTheHand)
