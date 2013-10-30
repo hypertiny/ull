@@ -30,7 +30,10 @@ $(document).ready(function() {
 
     keep_typing: function(){
       console.log('current frame: ', this.currentDownFrame, ' current state: ', this.state)
-      $(".volunteer-image").attr("src", "/images/dude/03-dude.gif");
+      if($(".volunteer-image").attr("src") != "/images/dude/03-dude.gif")
+      {
+        $(".volunteer-image").attr("src", "/images/dude/03-dude.gif");
+      }
     },
 
     go_back_up_on_inactivity: function(){
