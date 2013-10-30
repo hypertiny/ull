@@ -9,8 +9,9 @@ $(document).ready(function() {
       $(".volunteer-image").attr("src", "/images/dude/03-dude.gif")
     }, frame*3);
   });
+
   $( ".register-name, .register-email" ).on("keyup", function() {
-    clearInterval(timer);  //clear any interval on key up
+    clearInterval(timer);
     timer = setTimeout(function() { 
       setTimeout(function() {
         $(".volunteer-image").attr("src", "/images/dude/04-dude.gif");
@@ -18,14 +19,6 @@ $(document).ready(function() {
           $(".volunteer-image").attr("src", "/images/dude/01-dude.gif")
         }, frame*4);
       }, frame*12);
-    }, 500);
+    }, 300);
   });
 });
-
-
-
-
-
-
-
-
