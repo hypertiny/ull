@@ -132,14 +132,19 @@ a, a:link, a:visited {
 
 /* Text
 ================================ */
-.text {
-  line-height: 1.82em; }
-  .text h1 {
-    font-size: 3em; }
-  .text h3 {
-    font-size: 2em; }
-  .text h4 {
-    font-size: 1.5em; }
+.text p {
+  font-size: 1.2rem;
+  line-height: 1.8rem; }
+.text h2 {
+  font-size: 1.8rem;
+  margin-bottom: 2.5rem;
+  font-weight: 500; }
+.text hr {
+  background: #ec5d60;
+  border: none;
+  height: 2px;
+  width: 40px;
+  margin: 0 auto 2em; }
 
 /* Main Site
 ================================ */
@@ -152,11 +157,6 @@ a, a:link, a:visited {
 .site-logo {
   font-size: 1em;
   font-weight: 300; }
-
-@media only screen and (min-width: 850px) {
-  .logo-year-wrap {
-    position: fixed;
-    margin-left: -5em; } }
 
 .logo {
   display: block;
@@ -172,22 +172,29 @@ a, a:link, a:visited {
   font-size: 1.5em;
   font-weight: 300;
   letter-spacing: 0.2em;
-  margin-top: 0.7em;
+  margin-top: 0.25em;
   position: relative;
   text-align: center; }
 
-.description {
-  margin: 0 auto;
-  width: 52%; }
+.date-location {
+  text-align: center;
+  font-size: 1.4em;
+  margin-top: 2em;
+  line-height: 1.3em; }
+  .date-location sup {
+    vertical-align: baseline;
+    position: relative;
+    top: -0.4em;
+    font-size: 0.8em; }
 
 .intro {
   position: relative;
   margin-bottom: 20rem; }
 
 .introduction {
-  padding: 0 1em; }
-  .introduction .tagline {
-    font-size: 2rem;
+  padding: 0 1em;
+  text-align: center; }
+  .introduction h2 {
     margin-bottom: 2.5rem; }
   .introduction p {
     font-size: 1.2rem;
@@ -195,62 +202,34 @@ a, a:link, a:visited {
     margin-bottom: 2rem; }
   @media only screen and (min-width: 850px) {
     .introduction {
-      width: 45rem;
+      width: 44rem;
       margin: 0 auto; }
       .introduction .tagline {
-        font-size: 2.2rem;
+        font-size: 2rem;
         margin-bottom: 2.5rem; }
       .introduction p {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
         line-height: 2rem;
         margin-bottom: 2rem; } }
 
 .main-image {
   display: block;
   margin: 0 auto;
-  max-width: 60rem;
-  padding: 2rem 0 6rem 0; }
-
-.main-image-alt {
-  display: block;
-  margin: 0 auto;
+  padding: 3rem 1em 3rem 1em;
   width: 100%; }
   @media only screen and (min-width: 850px) {
-    .main-image-alt {
-      margin-top: -5em; } }
-
-.flag-image {
-  display: none;
-  left: 0.3em;
-  position: absolute;
-  top: 11.7em;
-  width: 14%; }
-  @media only screen and (min-width: 850px) {
-    .flag-image {
-      left: 0.45em;
-      top: 26.3em;
-      width: 16%; } }
-
-.toggle-flag {
-  background: rgba(236, 93, 96, 0.2);
-  block: display;
-  border-radius: 4px;
-  color: #ec5d60;
-  height: 40px;
-  padding: 10px 0 0 0;
-  position: absolute;
-  right: 30px;
-  text-align: center;
-  width: 60px;
-  display: none; }
-
-.main-image-alt {
-  display: none; }
+    .main-image {
+      padding: 4rem 0 6rem 0;
+      max-width: 60rem; } }
 
 .section-title {
   font-size: 1.5em;
   font-weight: 700;
   margin: 1.3em 0 0.86667em; }
+
+.date {
+  position: absolute;
+  top: 3em; }
 
 /* Ticket Schedule
 ================================ */

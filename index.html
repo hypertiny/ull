@@ -2,56 +2,31 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Get Going</title>
+  <title>{{site.title}}</title>
   
   <link rel="stylesheet" href="stylesheets/css/screen.css" media="all">
-  <meta name="viewport" content="width=device-width, initial-scale=1; maximum-scale=1.0; user-scalable=1;">
+  <meta name="viewport" content="width=device-width, initial-scale=1; user-scalable=1;">
 
   <script type="text/javascript" src="//use.typekit.net/vqx8btp.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-
-
-    
   <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-  
-  <script>
-    $(document).ready(function() {
-      $(".toggle-flag").click(function() {
-        $(".main-image").toggle();
-        $(".main-image-alt").toggle();
-        $(".flag-image").toggle();
-      });
-    });
-  </script>
+  <script src="/scripts/dude.js"></script>
   
 </head>
 <body>
   <div class="site-wrapper">
-    <a class="toggle-flag">Flag!</a>
     <div class="logo-year-wrap">
       <img src="images/ull-logo.svg" alt="Úll Logo" class="logo">
-      <p class="year">2014</p>
+      <p class="date-location">
+        {{site.meta['date']}}<br>
+        {{site.meta['location']}}
+      </p>
     </div>
     
     <section class="intro">
       <img src="images/ull-2014.png" alt="Teaser Image" class="main-image">
-      <img src="images/ull-2014-alt.png" alt="Teaser Image No Flag" class="main-image-alt">
-      <img src="images/flag.gif" alt="Teaser Image" class="flag-image">
-      <!-- <p class="description text">Join us at Lyrath Estate on the 28th, 29th and 30th of April, we're looking forward to seeing you</p> -->
-      <div class="introduction">
-        <h2 class="tagline">Something different.</h2>
-        <p>
-          Lyrath Estate is an Irish country manor near Kilkenny, 90 minutes south west of Dublin. Sitting on 170 acres of parkland, it features a state-of-the-art hotel and conference centre, ludicrously attractive open spaces, and, to our eyes, infinite possibilities.
-        </p>
-        <p>
-          We're designing a whole new conference from scratch.
-        </p>
-        <p>
-          Join us in April along with participants like Matt Gemmell, Jim Dalrymple, Jennifer Brook, Guy English, Jason Snell, Michael Lopp, and more to be announced, for a conference experience that we hope you'll never forget.
-        </p>
-        <p>
-          —Dermo, Paul, Sasha, Kil
-        </p>
+      <div class="introduction text">
+        {{ meta['intro'] | markdown }}
       </div>
     </section>
     
@@ -90,7 +65,7 @@
         <input type="text" placeholder="Email" class="register-email">
         <button class="register-button">Register Interest</button>
       </form>
-      <img src="images/volunteer.png" alt="Volunteer with iPad" class="volunteer-image">
+      <img src="/images/dude/01-dude.gif" alt="Volunteer with iPad" class="volunteer-image">
     </section>
 
   </div>

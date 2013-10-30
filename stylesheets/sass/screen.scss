@@ -27,24 +27,25 @@ a, a:link, a:visited {
 // Use the class "text" on any container specifically for textual content
 
 .text {
-  line-height: $t-leading*1.4;
 
-  h1 {
-    font-size: 3em;
+  p {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
   }
 
   h2 {
-
+    font-size: 1.8rem;
+    margin-bottom: 2.5rem;
+    font-weight: 500;
   }
 
-  h3 {
-    font-size: 2em;
+  hr {
+    background: $c-red;
+    border: none;
+    height: 2px;
+    width: 40px;
+    margin: 0 auto 2em;
   }
-
-  h4 {
-    font-size: 1.5em;
-  }
-
 }
 
 
@@ -59,6 +60,8 @@ a, a:link, a:visited {
   }
 }
 
+// Logo
+
 .site-logo {
   font-size: $t-size;
   font-weight: $t-weight;
@@ -67,8 +70,7 @@ a, a:link, a:visited {
 .logo-year-wrap {
 
   @media only screen and (min-width: $medium) {
-    position: fixed;
-    margin-left: -5em;
+
   }
 }
 
@@ -88,15 +90,26 @@ a, a:link, a:visited {
   font-size: $t-size*1.5;
   font-weight: 300;
   letter-spacing: 0.2em;
-  margin-top: 0.7em;
+  margin-top: 0.25em;
   position: relative;
   text-align: center;
 }
 
-.description {
-  margin: 0 auto;
-  width: 52%;
+.date-location {
+  text-align: center;
+  font-size: 1.4em;
+  margin-top: 2em;
+  line-height: 1.3em;
+
+  sup {
+   vertical-align: baseline;
+   position: relative;
+   top: -0.4em;
+   font-size: 0.8em;
+  }
 }
+
+// Intro paragraph
 
 .intro {
   position: relative;
@@ -105,9 +118,9 @@ a, a:link, a:visited {
 
 .introduction {
   padding: 0 1em;
-  
-  .tagline {
-    font-size: 2rem;
+  text-align: center;
+
+  h2 {
     margin-bottom: 2.5rem;
   }
 
@@ -118,79 +131,43 @@ a, a:link, a:visited {
   }
 
   @media only screen and (min-width: $medium) {
-    width: 45rem;
+    width: 44rem;
     margin: 0 auto;
 
     .tagline {
-      font-size: 2.2rem;
+      font-size: 2rem;
       margin-bottom: 2.5rem;
     }
 
     p {
-      font-size: 1.4rem;
+      font-size: 1.3rem;
       line-height: 2rem;
       margin-bottom: 2rem;
     }
   }
 }
 
-
 .main-image {
   display: block;
   margin: 0 auto;
-  max-width: 60rem;
-  padding: 2rem 0 6rem 0;
-
-}
-
-.main-image-alt {
-  display: block;
-  margin: 0 auto;
+  padding: 3rem 1em 3rem 1em;
   width: 100%;
 
   @media only screen and (min-width: $medium) {
-    margin-top: -5em;
+    padding: 4rem 0 6rem 0;
+    max-width: 60rem;
   }
 }
-
-
-.flag-image {
-  display: none;
-  left: 0.3em;
-  position: absolute;
-  top: 11.7em;
-  width: 14%;
-
-  @media only screen and (min-width: $medium) {
-    left: 0.45em;
-    top: 26.3em;
-    width: 16%;
-  }
-}
-
-.toggle-flag {
-  background: rgba($c-red, 0.2);
-  block: display;
-  border-radius: 4px;
-  color: $c-red;
-  height: 40px;
-  padding: 10px 0 0 0;
-  position: absolute;
-  right: 30px;
-  text-align: center;
-  width: 60px;
-  display: none;
-}
-
-.main-image-alt {
-  display: none;
-}
-
 
 .section-title {
   font-size: 1.5em;
   font-weight: 700;
   margin: $t-leading*1 0 $t-leading/1.5;
+}
+
+.date {
+  position: absolute;
+  top: 3em;
 }
 
 
