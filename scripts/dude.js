@@ -6,9 +6,11 @@ $(document).ready(function() {
     }, 125);
   });
   $( ".register-name, .register-email" ).keyup(function() {
-    $(".volunteer-image").attr("src", "/images/dude/04-dude.gif");
     setTimeout(function() {
-      $(".volunteer-image").attr("src", "/images/dude/01-dude.gif")
-    }, 250);
+      $(".volunteer-image").attr("src", "/images/dude/04-dude.gif");
+      setTimeout(function() {
+        $(".volunteer-image").attr("src", "/images/dude/01-dude.gif")
+      }, 167);
+    }, 500);
   });
 });
