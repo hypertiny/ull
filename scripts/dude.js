@@ -28,19 +28,9 @@ $(document).ready(function() {
       }, frameLength*3)
     },
 
-    next_frame: function(){
+    keep_typing: function(){
       console.log('current frame: ', this.currentDownFrame, ' current state: ', this.state)
-      if(this.currentDownFrame == 4)
-      {
-        this.currentDownFrame = 0;
-        $(".volunteer-image").attr("src", "/images/dude/03-" + this.currentDownFrame + "-dude.gif");
-      }
-      else
-      {
-        this.currentDownFrame = this.currentDownFrame+1
-        $(".volunteer-image").attr("src", "/images/dude/03-" + this.currentDownFrame + "-dude.gif");
-      }
-      
+      $(".volunteer-image").attr("src", "/images/dude/03-dude.gif");
     },
 
     go_back_up_on_inactivity: function(){
@@ -76,7 +66,7 @@ $(document).ready(function() {
       // if the hand is down, move the animation along
       else if(Hand.state == 'down')
       {
-        Hand.next_frame()
+        Hand.keep_typing()
       }
       Hand.go_back_up_on_inactivity()
     }, 1000)
