@@ -26,7 +26,7 @@ $(document).ready(function() {
       setTimeout(function(){
         that.state = 'down';
         $(".volunteer-image").attr("src", "/images/dude/03-dude.gif");
-      }, frameLength*3)
+      }, frameLength*2)
     },
 
     keep_typing: function(){
@@ -53,7 +53,7 @@ $(document).ready(function() {
           $(".volunteer-image").attr("src", "/images/dude/01-dude.gif")
           that.state = 'up'
         }, frameLength*3)
-      }, 500)
+      }, 600)
     }
   }
 
