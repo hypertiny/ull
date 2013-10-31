@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
   // frame length
-  var frameLength = 41.666667;
+  var frameLength = 42;
 
   var Hand = {
     timer: null,
@@ -29,14 +29,6 @@ $(document).ready(function() {
       }, frameLength*2)
     },
 
-    keep_typing: function(){
-      console.log('current frame: ', this.currentDownFrame, ' current state: ', this.state)
-      if($(".volunteer-image").attr("src") != "/images/dude/03-dude.gif")
-      {
-        $(".volunteer-image").attr("src", "/images/dude/03-dude.gif");
-      }
-    },
-
     go_back_up_on_inactivity: function(){
       // clear the timer
       clearTimeout(this.timer)
@@ -52,7 +44,7 @@ $(document).ready(function() {
           console.log('going from ', that.state, ' to up')
           $(".volunteer-image").attr("src", "/images/dude/01-dude.gif")
           that.state = 'up'
-        }, frameLength*3)
+        }, frameLength*2.5)
       }, frameLength*17)
     }
   }
@@ -67,11 +59,6 @@ $(document).ready(function() {
       if(Hand.state == 'up')
       {
         Hand.move_down()
-      }
-      // if the hand is down, move the animation along
-      else if(Hand.state == 'down')
-      {
-        Hand.keep_typing()
       }
       Hand.go_back_up_on_inactivity()
     }, frameLength*5)
