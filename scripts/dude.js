@@ -26,7 +26,7 @@ $(document).ready(function() {
       setTimeout(function(){
         that.state = 'down';
         $(".volunteer-image").attr("src", "/images/dude/03-dude.gif");
-      }, frameLength*2)
+      }, frameLength*2.5)
     },
 
     go_back_up_on_inactivity: function(){
