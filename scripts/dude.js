@@ -24,7 +24,8 @@ $(document).ready(function() {
 
       // after 3 frames, set the state to 'down'
       setTimeout(function(){
-        that.state = 'down'
+        that.state = 'down';
+        $(".volunteer-image").attr("src", "/images/dude/03-dude.gif");
       }, frameLength*3)
     },
 
@@ -43,6 +44,7 @@ $(document).ready(function() {
       that = this;
       this.timer = setTimeout(function(){
         console.log('going from ', that.state, ' to moving')
+        $(".volunteer-image").attr("src", "/images/dude/04-dude.gif");
         that.state = 'moving'
 
         // after the length of the moving back up animation, set the state back to up
@@ -51,7 +53,7 @@ $(document).ready(function() {
           $(".volunteer-image").attr("src", "/images/dude/01-dude.gif")
           that.state = 'up'
         }, frameLength*3)
-      }, 1000)
+      }, 500)
     }
   }
 
@@ -72,7 +74,7 @@ $(document).ready(function() {
         Hand.keep_typing()
       }
       Hand.go_back_up_on_inactivity()
-    }, 1000)
+    }, 200)
     
   }
 
