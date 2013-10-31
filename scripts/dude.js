@@ -53,7 +53,7 @@ $(document).ready(function() {
           $(".volunteer-image").attr("src", "/images/dude/01-dude.gif")
           that.state = 'up'
         }, frameLength*3)
-      }, 600)
+      }, frameLength*17)
     }
   }
 
@@ -74,7 +74,7 @@ $(document).ready(function() {
         Hand.keep_typing()
       }
       Hand.go_back_up_on_inactivity()
-    }, 200)
+    }, frameLength*5)
     
   }
 
