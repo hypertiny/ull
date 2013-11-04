@@ -25,7 +25,7 @@ jQuery(function(){
         .transition({x: 1900}, 200, 'linear')
         .transition({opacity: 0, x: 3000}, 100, 'linear')
         .promise().done(function(){
-        $('.register-interest-form').html(['<h2>', 'Thanks, ', name, ' we’ll be in touch.', '</h2>'].join(''))
+        $('.register-interest-form').html(['<h2>', 'Thanks, ', name.split(' ')[0], ', we’ll be in touch.', '</h2>'].join(''))
         $('.register-interest-form').transition({
           x: 0, y: 0, rotateY: 0, rotateX: 0, width: width, height: height}, 300, 'linear')
           .transition({opacity: 1}, 300, 'linear')
