@@ -143,7 +143,7 @@ a, a:link, a:visited {
   font-weight: 500; }
   @media only screen and (min-width: 850px) {
     .text h2 {
-      font-size: 1.4rem; } }
+      font-size: 1.3rem; } }
 
 /* Main Site
 ================================ */
@@ -216,7 +216,8 @@ a, a:link, a:visited {
 
 .register-interest-wrap {
   margin: 0 auto;
-  *zoom: 1; }
+  *zoom: 1;
+  min-height: 18em; }
   .register-interest-wrap:before, .register-interest-wrap:after {
     content: " ";
     display: table; }
@@ -230,6 +231,8 @@ a, a:link, a:visited {
   float: left;
   margin-bottom: 4em;
   width: 71%; }
+  .register-interest-form .text h2 {
+    margin-top: 1.7rem; }
 
 .register-name,
 .register-email {
