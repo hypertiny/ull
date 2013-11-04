@@ -107,7 +107,6 @@ a, a:link, a:visited {
 .intro {
   margin-bottom: $t-leading*2;
   text-align: center;
-
   @media only screen and (min-width: $medium) {
     text-align: left;
     margin: 5rem auto $t-leading*2;
@@ -127,6 +126,7 @@ a, a:link, a:visited {
 .register-interest-wrap {
   margin: 0 auto;
   @include clearfix;
+  min-height: 18em;
 
   @media only screen and (min-width: $medium) {
     margin-top: 0em;

@@ -1,0 +1,261 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* HTML5 Elements */
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, main {
+  display: block; }
+
+audio[controls], canvas, video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1; }
+
+/* Eric Meyer's Reset CSS */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary, main,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* HTML5 Boilerplate */
+html {
+  font-size: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+a:focus {
+  outline: thin dotted; }
+
+a:hover, a:active {
+  outline: 0; }
+
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic; }
+
+/* Correct overflow displayed oddly in IE9  */
+svg:not(:root) {
+  overflow: hidden; }
+
+label {
+  cursor: pointer; }
+
+legend {
+  border: 0;
+  *margin-left: -7px;
+  padding: 0; }
+
+button, input, select, textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle; }
+
+button, input {
+  line-height: normal;
+  *overflow: visible; }
+
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button; }
+
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box; }
+
+input[type="search"] {
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box; }
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+textarea {
+  overflow: auto;
+  vertical-align: top; }
+
+/* Variables
+================================ */
+/* Mixins
+================================ */
+/* Base
+================================ */
+body {
+  background: white;
+  color: #ec5d60;
+  font-family: "museo-sans", sans-serif;
+  font-weight: 300;
+  line-height: 1.7rem; }
+
+a, a:link, a:visited {
+  color: #70181a;
+  text-decoration: none; }
+
+/* Text
+================================ */
+.text p {
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+  margin-bottom: 1.7rem; }
+.text h2 {
+  font-size: 1.4rem;
+  margin-bottom: 1.7rem;
+  font-weight: 500; }
+
+/* Main Site
+================================ */
+.site-wrapper {
+  padding: 0 1em;
+  max-width: 30rem;
+  margin: 3.4rem auto 1.7rem; }
+  @media only screen and (min-height: 900px) and (min-width: 850px) {
+    .site-wrapper {
+      margin-top: 16rem;
+      width: 30rem; } }
+
+.site-logo {
+  font-size: 1.2rem;
+  font-weight: 300; }
+
+.logo {
+  display: block;
+  margin: 2em auto;
+  width: 5em; }
+  @media only screen and (min-width: 850px) {
+    .logo {
+      margin-top: 0;
+      width: 6em; } }
+
+.year {
+  color: #ec5d60;
+  font-size: 1.2rem;
+  font-weight: 300;
+  letter-spacing: 0.2em;
+  margin-top: 0.25em;
+  position: relative;
+  text-align: center; }
+
+.date-location {
+  text-align: center;
+  font-size: 1.3em;
+  margin-top: 2em;
+  line-height: 1.3em; }
+  .date-location sup {
+    vertical-align: baseline;
+    position: relative;
+    top: -0.4em;
+    font-size: 0.8em; }
+
+.intro {
+  margin-bottom: 3.4rem;
+  text-align: center; }
+  @media only screen and (min-width: 850px) {
+    .intro {
+      text-align: left;
+      margin: 5rem auto 3.4rem; } }
+
+/* Register Interest
+================================ */
+::-webkit-input-placeholder {
+  color: rgba(236, 93, 96, 0.5); }
+
+:-moz-placeholder {
+  color: rgba(236, 93, 96, 0.5); }
+
+::-moz-placeholder {
+  color: rgba(236, 93, 96, 0.5); }
+
+:-ms-input-placeholder {
+  color: rgba(236, 93, 96, 0.5); }
+
+.register-interest-wrap {
+  margin: 0 auto;
+  *zoom: 1;
+  min-height: 18em; }
+  .register-interest-wrap:before, .register-interest-wrap:after {
+    content: " ";
+    display: table; }
+  .register-interest-wrap:after {
+    clear: both; }
+  @media only screen and (min-width: 850px) {
+    .register-interest-wrap {
+      margin-top: 0em; } }
+
+.register-interest-form {
+  float: left;
+  margin-bottom: 4em;
+  width: 71%; }
+
+.register-name,
+.register-email {
+  background: url("../../images/line-short.png") bottom no-repeat;
+  background-size: 340px;
+  border: none;
+  font-size: 1.2rem;
+  margin-bottom: 1em;
+  outline: none;
+  padding: 0.56667rem 0;
+  padding-bottom: 0.5em;
+  width: 100%;
+  color: #ec5d60; }
+
+.register-button {
+  background: #ec5d60;
+  border: 2px solid #fff;
+  border-radius: 4px;
+  color: #fff;
+  margin-top: 1.5em;
+  padding: 0.75em 1em;
+  font-size: 1.1rem; }
+  .register-button:hover {
+    background: #fff;
+    border: 2px solid #ec5d60;
+    color: #ec5d60; }
+
+.volunteer-image {
+  float: right;
+  margin-top: -2em;
+  width: 24%;
+  max-width: 170px; }
+  @media only screen and (min-width: 850px) {
+    .volunteer-image {
+      margin-top: -3em; } }
