@@ -1,0 +1,183 @@
+@import 'vendor/bourbon/bourbon';
+@import 'vendor/neat/neat';
+@import 'reset';
+@import 'helpers';
+
+$t-size: 1.2rem;
+$t-leading: 1.7rem;
+
+
+/* Base
+================================ */
+
+body {
+  background: $c-bg;
+  color: $c-red;
+  font-family: $t-fam-primary;
+  font-weight: $t-weight;
+  line-height: $t-leading;
+}
+
+a, a:link, a:visited {
+  color: $c-primary;
+  text-decoration: none;
+}
+
+
+/* Text
+================================ */
+
+.text {
+  p {
+    font-size: $t-size;
+    line-height: $t-leading;
+    margin-bottom: $t-leading;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+    margin-bottom: $t-leading;
+    font-weight: 500;
+  }
+}
+
+
+/* Main Site
+================================ */
+
+.site-wrapper {
+  padding: 0 1em;
+  max-width: 30rem;
+  
+  margin: $t-leading*2 auto $t-leading;
+
+  @media only screen and (min-height: 900px) and (min-width: $medium) {
+    margin-top: 16rem;
+    width: 30rem;
+  }
+}
+
+.site-logo {
+  font-size: $t-size;
+  font-weight: $t-weight;
+}
+
+.logo-year-wrap {
+
+  @media only screen and (min-width: $medium) {
+
+  }
+}
+
+.logo {
+  display: block;
+  margin: 2em auto;
+  width: 5em;
+
+  @media only screen and (min-width: $medium) {
+    margin-top: 0;
+    width: 6em;
+  }
+}
+
+.year {
+  color: $c-red;
+  font-size: $t-size;
+  font-weight: 300;
+  letter-spacing: 0.2em;
+  margin-top: 0.25em;
+  position: relative;
+  text-align: center;
+}
+
+.date-location {
+  text-align: center;
+  font-size: 1.3em;
+  margin-top: 2em;
+  line-height: 1.3em;
+
+  sup {
+   vertical-align: baseline;
+   position: relative;
+   top: -0.4em;
+   font-size: 0.8em;
+  }
+}
+
+.intro {
+  margin-bottom: $t-leading*2;
+  text-align: center;
+
+  @media only screen and (min-width: $medium) {
+    text-align: left;
+    margin: 5rem auto $t-leading*2;
+    
+  }
+}
+
+
+
+/* Register Interest
+================================ */
+
+@include placeholder {
+  color: rgba($c-red, 0.5);
+}
+
+.register-interest-wrap {
+  margin: 0 auto;
+  @include clearfix;
+
+  @media only screen and (min-width: $medium) {
+    margin-top: 0em;
+  }
+}
+
+.register-interest-form {
+  float: left;
+  margin-bottom: 4em;
+  width: 71%;
+}
+
+.register-name,
+.register-email {
+  background: url("../../images/line-short.png") bottom no-repeat;
+  
+  background-size: 340px;
+  border: none;
+  font-size: 1.2rem;
+  margin-bottom: 1em;
+  outline: none;
+  padding: $t-leading/3 0;
+  padding-bottom: 0.5em;
+  width: 100%;
+  color: $c-red;
+}
+
+.register-button {
+  background: $c-red;
+  border: 2px solid #fff;
+  border-radius: 4px;
+  color: #fff;
+  margin-top: 1.5em;
+  padding: 0.75em 1em;
+  font-size: 1.1rem;
+  &:hover {
+    background: #fff;
+    border: 2px solid $c-red;
+    color: $c-red;
+  }
+}
+
+.volunteer-image {
+  float: right;
+  margin-top: -2em;
+  width: 24%;
+  max-width: 170px;
+
+  @media only screen and (min-width: $medium) {
+    margin-top: -3em;
+  }
+}
+
+

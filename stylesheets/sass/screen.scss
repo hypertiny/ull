@@ -29,8 +29,9 @@ a, a:link, a:visited {
 .text {
 
   p {
-    font-size: 1.2rem;
-    line-height: 1.8rem;
+    font-size: 1.3rem;
+    line-height: 2rem;
+    margin-bottom: 2rem;
   }
 
   h2 {
@@ -44,7 +45,7 @@ a, a:link, a:visited {
     border: none;
     height: 2px;
     width: 40px;
-    margin: 0 auto 2em;
+    margin: 0 0 2em 0;
   }
 }
 
@@ -55,8 +56,6 @@ a, a:link, a:visited {
 .site-wrapper {
   @media only screen and (min-width: $medium) {
     margin: 4em auto;
-    width: 80%;
-    max-width: 80em;
   }
 }
 
@@ -113,12 +112,16 @@ a, a:link, a:visited {
 
 .intro {
   position: relative;
-  margin-bottom: 20rem;
+  margin-bottom: 4rem;
+}
+
+.introduction-wrap {
+  
+  padding: 5rem 0 2rem 0;
 }
 
 .introduction {
   padding: 0 1em;
-  text-align: center;
 
   h2 {
     margin-bottom: 2.5rem;
@@ -133,11 +136,6 @@ a, a:link, a:visited {
   @media only screen and (min-width: $medium) {
     width: 44rem;
     margin: 0 auto;
-
-    .tagline {
-      font-size: 2rem;
-      margin-bottom: 2.5rem;
-    }
 
     p {
       font-size: 1.3rem;
@@ -176,9 +174,10 @@ a, a:link, a:visited {
 
 .tickets-wrap {
   padding: 0 1em;
+  
   @media only screen and (min-width: $medium) {
-    width: 75%;
-    margin: 0 auto 20em;
+    margin: 4rem auto 20rem;
+    width: 44rem;
   }
 }
 
@@ -234,7 +233,11 @@ a, a:link, a:visited {
 
   @media only screen and (min-width: $medium) {
     margin-top: 3em;
-    width: 70%;
+    width: 44rem;
+    
+    &.pre-teaser {
+      width: 30em;
+    }
   }
 }
 
@@ -270,11 +273,23 @@ a, a:link, a:visited {
   float: right;
   margin-top: -3em;
   width: 25%;
+  max-width: 170px;
 
   @media only screen and (min-width: $medium) {
     margin-top: -10em;
   }
 }
+
+// SHAME!!!!!!!!
+
+.teapot {
+  display: block;
+  margin: 0 auto;
+  width: 100px;
+}
+
+
+
 
 
 

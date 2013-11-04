@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
   // frame length
-  var frameLength = 42;
+  var frameLength = 70;
 
   var Hand = {
     timer: null,
@@ -26,7 +26,7 @@ $(document).ready(function() {
       setTimeout(function(){
         that.state = 'down';
         $(".volunteer-image").attr("src", "/images/dude/03-dude.gif");
-      }, frameLength*2.5)
+      }, frameLength*1)
     },
 
     go_back_up_on_inactivity: function(){
@@ -44,8 +44,8 @@ $(document).ready(function() {
           console.log('going from ', that.state, ' to up')
           $(".volunteer-image").attr("src", "/images/dude/01-dude.gif")
           that.state = 'up'
-        }, frameLength*2.5)
-      }, frameLength*17)
+        }, frameLength*4)
+      }, frameLength*12)
     }
   }
 

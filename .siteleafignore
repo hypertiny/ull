@@ -5,3 +5,4 @@ stylesheets/sass/vendor/*
 scripts/*.coffee
 ull.sublime-project
 ull.sublime-workspace
+*-ck.js

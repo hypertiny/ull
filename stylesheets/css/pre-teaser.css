@@ -124,7 +124,7 @@ body {
   color: #ec5d60;
   font-family: "museo-sans", sans-serif;
   font-weight: 300;
-  line-height: 1.3em; }
+  line-height: 1.7rem; }
 
 a, a:link, a:visited {
   color: #70181a;
@@ -133,28 +133,27 @@ a, a:link, a:visited {
 /* Text
 ================================ */
 .text p {
-  font-size: 1.3rem;
-  line-height: 2rem;
-  margin-bottom: 2rem; }
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+  margin-bottom: 1.7rem; }
 .text h2 {
-  font-size: 1.8rem;
-  margin-bottom: 2.5rem;
+  font-size: 1.4rem;
+  margin-bottom: 1.7rem;
   font-weight: 500; }
-.text hr {
-  background: #ec5d60;
-  border: none;
-  height: 2px;
-  width: 40px;
-  margin: 0 0 2em 0; }
 
 /* Main Site
 ================================ */
-@media only screen and (min-width: 850px) {
-  .site-wrapper {
-    margin: 4em auto; } }
+.site-wrapper {
+  padding: 0 1em;
+  max-width: 30rem;
+  margin: 3.4rem auto 1.7rem; }
+  @media only screen and (min-height: 900px) and (min-width: 850px) {
+    .site-wrapper {
+      margin-top: 16rem;
+      width: 30rem; } }
 
 .site-logo {
-  font-size: 1em;
+  font-size: 1.2rem;
   font-weight: 300; }
 
 .logo {
@@ -168,7 +167,7 @@ a, a:link, a:visited {
 
 .year {
   color: #ec5d60;
-  font-size: 1.5em;
+  font-size: 1.2rem;
   font-weight: 300;
   letter-spacing: 0.2em;
   margin-top: 0.25em;
@@ -177,7 +176,7 @@ a, a:link, a:visited {
 
 .date-location {
   text-align: center;
-  font-size: 1.4em;
+  font-size: 1.3em;
   margin-top: 2em;
   line-height: 1.3em; }
   .date-location sup {
@@ -187,92 +186,12 @@ a, a:link, a:visited {
     font-size: 0.8em; }
 
 .intro {
-  position: relative;
-  margin-bottom: 4rem; }
-
-.introduction-wrap {
-  padding: 5rem 0 2rem 0; }
-
-.introduction {
-  padding: 0 1em; }
-  .introduction h2 {
-    margin-bottom: 2.5rem; }
-  .introduction p {
-    font-size: 1.2rem;
-    line-height: 1.8rem;
-    margin-bottom: 2rem; }
+  margin-bottom: 3.4rem;
+  text-align: center; }
   @media only screen and (min-width: 850px) {
-    .introduction {
-      width: 44rem;
-      margin: 0 auto; }
-      .introduction p {
-        font-size: 1.3rem;
-        line-height: 2rem;
-        margin-bottom: 2rem; } }
-
-.main-image {
-  display: block;
-  margin: 0 auto;
-  padding: 3rem 1em 3rem 1em;
-  width: 100%; }
-  @media only screen and (min-width: 850px) {
-    .main-image {
-      padding: 4rem 0 6rem 0;
-      max-width: 60rem; } }
-
-.section-title {
-  font-size: 1.5em;
-  font-weight: 700;
-  margin: 1.3em 0 0.86667em; }
-
-.date {
-  position: absolute;
-  top: 3em; }
-
-/* Ticket Schedule
-================================ */
-.tickets-wrap {
-  padding: 0 1em; }
-  @media only screen and (min-width: 850px) {
-    .tickets-wrap {
-      margin: 4rem auto 20rem;
-      width: 44rem; } }
-
-.ticket {
-  *zoom: 1;
-  opacity: 0.3; }
-  .ticket:before, .ticket:after {
-    content: " ";
-    display: table; }
-  .ticket:after {
-    clear: both; }
-  .ticket.active {
-    opacity: 1; }
-
-.ticket-title,
-.ticket-price {
-  font-size: 1.2em;
-  margin: 1.3em 0 0.43333em; }
-  @media only screen and (min-width: 850px) {
-    .ticket-title,
-    .ticket-price {
-      font-size: 2em; } }
-
-.ticket-title {
-  float: left; }
-
-.ticket-price {
-  float: right; }
-
-.ticket-date {
-  clear: left;
-  color: #70181a;
-  float: left;
-  font-size: 0.9em; }
-  @media only screen and (min-width: 850px) {
-    .ticket-date {
-      font-size: 1.2em;
-      font-weight: 300; } }
+    .intro {
+      text-align: left;
+      margin: 5rem auto 3.4rem; } }
 
 /* Register Interest
 ================================ */
@@ -289,8 +208,7 @@ a, a:link, a:visited {
   color: rgba(236, 93, 96, 0.5); }
 
 .register-interest-wrap {
-  padding: 0 1em;
-  margin: 5em auto 3em;
+  margin: 0 auto;
   *zoom: 1; }
   .register-interest-wrap:before, .register-interest-wrap:after {
     content: " ";
@@ -299,46 +217,44 @@ a, a:link, a:visited {
     clear: both; }
   @media only screen and (min-width: 850px) {
     .register-interest-wrap {
-      margin-top: 3em;
-      width: 44rem; }
-      .register-interest-wrap.pre-teaser {
-        width: 30em; } }
+      margin-top: 0em; } }
 
 .register-interest-form {
   float: left;
   margin-bottom: 4em;
-  width: 70%; }
+  width: 71%; }
 
 .register-name,
 .register-email {
   background: url("../../images/line-short.png") bottom no-repeat;
-  background-size: 100%;
+  background-size: 340px;
   border: none;
-  font-size: 1.5em;
+  font-size: 1.2rem;
   margin-bottom: 1em;
   outline: none;
-  padding: 0.43333em 0;
+  padding: 0.56667rem 0;
   padding-bottom: 0.5em;
-  width: 100%; }
+  width: 100%;
+  color: #ec5d60; }
 
 .register-button {
   background: #ec5d60;
-  border: none;
+  border: 2px solid #fff;
   border-radius: 4px;
   color: #fff;
   margin-top: 1.5em;
-  padding: 0.75em 1em; }
+  padding: 0.75em 1em;
+  font-size: 1.1rem; }
+  .register-button:hover {
+    background: #fff;
+    border: 2px solid #ec5d60;
+    color: #ec5d60; }
 
 .volunteer-image {
   float: right;
-  margin-top: -3em;
-  width: 25%;
+  margin-top: -2em;
+  width: 24%;
   max-width: 170px; }
   @media only screen and (min-width: 850px) {
     .volunteer-image {
-      margin-top: -10em; } }
-
-.teapot {
-  display: block;
-  margin: 0 auto;
-  width: 100px; }
+      margin-top: -3em; } }
