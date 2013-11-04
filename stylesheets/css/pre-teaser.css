@@ -137,16 +137,23 @@ a, a:link, a:visited {
   line-height: 1.7rem;
   margin-bottom: 1.7rem; }
 .text h2 {
-  font-size: 1.4rem;
-  margin-bottom: 1.7rem;
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+  margin: 3.4rem auto 1.7rem;
   font-weight: 500; }
+  @media only screen and (min-width: 850px) {
+    .text h2 {
+      font-size: 1.4rem; } }
 
 /* Main Site
 ================================ */
 .site-wrapper {
   padding: 0 1em;
   max-width: 30rem;
-  margin: 3.4rem auto 1.7rem; }
+  margin: 1.7rem auto; }
+  @media only screen and (min-width: 850px) {
+    .site-wrapper {
+      margin-top: 3.4rem; } }
   @media only screen and (min-height: 900px) and (min-width: 850px) {
     .site-wrapper {
       margin-top: 16rem;
@@ -176,8 +183,8 @@ a, a:link, a:visited {
 
 .date-location {
   text-align: center;
-  font-size: 1.3em;
-  margin-top: 2em;
+  font-size: 1.2rem;
+  margin-top: 1.7rem;
   line-height: 1.3em; }
   .date-location sup {
     vertical-align: baseline;

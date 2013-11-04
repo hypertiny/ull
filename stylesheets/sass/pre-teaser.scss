@@ -35,9 +35,13 @@ a, a:link, a:visited {
   }
 
   h2 {
-    font-size: 1.4rem;
-    margin-bottom: $t-leading;
+    font-size: $t-size;
+    line-height: $t-leading;
+    margin: $t-leading*2 auto $t-leading;
     font-weight: 500;
+    @media only screen and (min-width: $medium) {
+      font-size: 1.4rem;
+    }
   }
 }
 
@@ -49,7 +53,11 @@ a, a:link, a:visited {
   padding: 0 1em;
   max-width: 30rem;
   
-  margin: $t-leading*2 auto $t-leading;
+  margin: $t-leading auto;
+
+  @media only screen and (min-width: $medium) {
+    margin-top: $t-leading*2;
+  }
 
   @media only screen and (min-height: 900px) and (min-width: $medium) {
     margin-top: 16rem;
@@ -63,7 +71,6 @@ a, a:link, a:visited {
 }
 
 .logo-year-wrap {
-
   @media only screen and (min-width: $medium) {
 
   }
@@ -92,8 +99,8 @@ a, a:link, a:visited {
 
 .date-location {
   text-align: center;
-  font-size: 1.3em;
-  margin-top: 2em;
+  font-size: $t-size;
+  margin-top: $t-leading;
   line-height: 1.3em;
 
   sup {
