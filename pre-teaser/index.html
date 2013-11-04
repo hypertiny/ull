@@ -10,7 +10,9 @@
   <script type="text/javascript" src="//use.typekit.net/vqx8btp.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
   <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <script src="/scripts/jquery.transit.min.js"></script>
   <script src="/scripts/dude.js"></script>
+  <script src="/scripts/register_interest.js"></script>
   
 </head>
 <body>
@@ -28,9 +30,18 @@
     
     <section class="register-interest-wrap text">
       <form class="register-interest-form">
-        <input type="text" placeholder="Name" class="register-name">
-        <input type="text" placeholder="Email" class="register-email">
-        <button class="register-button">Submit</button>
+        <input id="register-name"
+               type="text"
+               placeholder="Name"
+               class="register-name"
+               autocomplete="off">
+        <input id="register-email"
+               type="text"
+               placeholder="Email"
+               class="register-email"
+               autocomplete="off">
+        <button type="submit"
+                class="register-button">Submit</button>
       </form>
       <img src="/images/dude/01-dude.gif" alt="Volunteer with iPad" class="volunteer-image">
     </section>
