@@ -176,7 +176,7 @@ a, a:link, a:visited {
   padding: 0 1em;
   
   @media only screen and (min-width: $medium) {
-    margin: 4rem auto 20rem;
+    margin: 4rem auto 10rem;
     width: 44rem;
   }
 }
@@ -228,15 +228,15 @@ a, a:link, a:visited {
 
 .register-interest-wrap {
   padding: 0 1em;
-  margin: 5em auto 3em;
+  margin: 2em auto 3em;
   @include clearfix;
 
   @media only screen and (min-width: $medium) {
     margin-top: 3em;
     width: 44rem;
     
-    &.pre-teaser {
-      width: 30em;
+    > .text p {
+      width: 20em;
     }
   }
 }

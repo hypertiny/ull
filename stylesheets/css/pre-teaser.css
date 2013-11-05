@@ -119,12 +119,15 @@ textarea {
 ================================ */
 /* Base
 ================================ */
+html {
+  font-size: 62.5%; }
+
 body {
   background: white;
   color: #ec5d60;
   font-family: "museo-sans", sans-serif;
   font-weight: 300;
-  line-height: 1.7rem; }
+  line-height: 2.7rem; }
 
 a, a:link, a:visited {
   color: #70181a;
@@ -133,72 +136,94 @@ a, a:link, a:visited {
 /* Text
 ================================ */
 .text p {
-  font-size: 1.2rem;
-  line-height: 1.7rem;
-  margin-bottom: 1.7rem; }
+  font-size: 19px;
+  font-size: 1.9rem;
+  line-height: 27px;
+  line-height: 2.7rem;
+  margin-bottom: 27px;
+  margin-bottom: 2.7rem; }
 .text h2 {
-  font-size: 1.2rem;
-  line-height: 1.7rem;
-  margin: 3.4rem auto 1.7rem;
+  font-size: 19px;
+  font-size: 1.9rem;
+  line-height: 27px;
+  line-height: 2.7rem;
+  margin: 54px auto 27px;
+  margin: 5.4rem auto 2.7rem;
   font-weight: 500; }
   @media only screen and (min-width: 850px) {
     .text h2 {
-      font-size: 1.3rem; } }
+      font-size: 21px;
+      font-size: 2.1rem; } }
 
 /* Main Site
 ================================ */
 .site-wrapper {
-  padding: 0 1em;
-  max-width: 30rem;
-  margin: 1.7rem auto; }
+  padding: 0 16px;
+  padding: 0 1.6rem;
+  max-width: 480px;
+  max-width: 48rem;
+  margin: 27px auto;
+  margin: 2.7rem auto; }
   @media only screen and (min-width: 850px) {
     .site-wrapper {
-      margin-top: 3.4rem; } }
-  @media only screen and (min-height: 900px) and (min-width: 850px) {
+      margin-top: 54px;
+      margin-top: 5.4rem; } }
+  @media only screen and (min-height: 768px) and (min-width: 850px) {
     .site-wrapper {
-      margin-top: 16rem;
-      width: 30rem; } }
+      margin-top: 256px;
+      margin-top: 25.6rem;
+      width: 480px;
+      width: 48rem; } }
+  @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: portrait) {
+    .site-wrapper {
+      margin-top: 160px;
+      margin-top: 16rem; } }
+  @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: landscape) {
+    .site-wrapper {
+      margin-top: 27px;
+      margin-top: 2.7rem; } }
 
 .site-logo {
-  font-size: 1.2rem;
-  font-weight: 300; }
+  font-size: 19px;
+  font-size: 1.9rem; }
 
 .logo {
   display: block;
-  margin: 2em auto;
-  width: 5em; }
+  margin: 22px auto;
+  margin: 2.2rem auto;
+  width: 80px;
+  width: 8rem; }
   @media only screen and (min-width: 850px) {
     .logo {
       margin-top: 0;
-      width: 6em; } }
-
-.year {
-  color: #ec5d60;
-  font-size: 1.2rem;
-  font-weight: 300;
-  letter-spacing: 0.2em;
-  margin-top: 0.25em;
-  position: relative;
-  text-align: center; }
+      width: 96px;
+      width: 9.6rem; } }
 
 .date-location {
   text-align: center;
-  font-size: 1.2rem;
-  margin-top: 1.7rem;
-  line-height: 1.3em; }
+  font-size: 19px;
+  font-size: 1.9rem;
+  margin-top: 27px;
+  margin-top: 2.7rem;
+  line-height: 27px;
+  line-height: 2.7rem; }
   .date-location sup {
     vertical-align: baseline;
     position: relative;
-    top: -0.4em;
-    font-size: 0.8em; }
+    top: -6.5px;
+    top: -0.65rem;
+    font-size: 13px;
+    font-size: 1.3rem; }
 
 .intro {
-  margin-bottom: 3.4rem;
+  margin-bottom: 54px;
+  margin-bottom: 5.4rem;
   text-align: center; }
   @media only screen and (min-width: 850px) {
     .intro {
       text-align: left;
-      margin: 5rem auto 3.4rem; } }
+      margin: 54px auto;
+      margin: 5.4rem auto; } }
 
 /* Register Interest
 ================================ */
@@ -217,7 +242,8 @@ a, a:link, a:visited {
 .register-interest-wrap {
   margin: 0 auto;
   *zoom: 1;
-  min-height: 18em; }
+  min-height: 288px;
+  min-height: 28.8rem; }
   .register-interest-wrap:before, .register-interest-wrap:after {
     content: " ";
     display: table; }
@@ -225,46 +251,70 @@ a, a:link, a:visited {
     clear: both; }
   @media only screen and (min-width: 850px) {
     .register-interest-wrap {
-      margin-top: 0em; } }
+      margin-top: 0; } }
 
 .register-interest-form {
   float: left;
-  margin-bottom: 4em;
+  margin-bottom: 64px;
+  margin-bottom: 6.4rem;
   width: 71%; }
   .register-interest-form .text h2 {
-    margin-top: 1.7rem; }
+    margin-top: 27px;
+    margin-top: 2.7rem; }
 
 .register-name,
 .register-email {
   background: url("../../images/line-short.png") bottom no-repeat;
   background-size: 340px;
+  background-size: 34rem;
   border: none;
-  font-size: 1.2rem;
-  margin-bottom: 1em;
+  font-size: 19px;
+  font-size: 1.9rem;
+  margin-bottom: 16px;
+  margin-bottom: 1.6rem;
   outline: none;
-  padding: 0.56667rem 0;
-  padding-bottom: 0.5em;
+  padding: 9px 0;
+  padding: 0.9rem 0;
+  padding-bottom: 9px;
+  padding-bottom: 0.9rem;
   width: 100%;
   color: #ec5d60; }
 
 .register-button {
   background: #ec5d60;
   border: 2px solid #fff;
+  border: 0.2rem solid #fff;
   border-radius: 4px;
+  border-radius: 0.4rem;
   color: #fff;
-  margin-top: 1.5em;
-  padding: 0.75em 1em;
-  font-size: 1.1rem; }
+  margin-top: 24px;
+  margin-top: 2.4rem;
+  padding: 13px 16px;
+  padding: 1.3rem 1.6rem;
+  font-size: 18px;
+  font-size: 1.8rem; }
   .register-button:hover {
     background: #fff;
     border: 2px solid #ec5d60;
+    border: 0.2rem solid #ec5d60;
     color: #ec5d60; }
 
 .volunteer-image {
   float: right;
-  margin-top: -2em;
+  margin-top: -32px;
+  margin-top: -3.2rem;
   width: 24%;
-  max-width: 170px; }
+  max-width: 170px;
+  max-width: 17rem; }
   @media only screen and (min-width: 850px) {
     .volunteer-image {
-      margin-top: -3em; } }
+      margin-top: -48px;
+      margin-top: -4.8rem; } }
+
+.ie .site-wrapper {
+  display: none; }
+.ie .fallback-image {
+  position: absolute;
+  left: 50%;
+  margin-left: -232px;
+  top: 100px; }

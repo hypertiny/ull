@@ -3,12 +3,16 @@
 @import 'reset';
 @import 'helpers';
 
-$t-size: 1.2rem;
-$t-leading: 1.7rem;
+$t-size: 1.9rem;
+$t-leading: 2.7rem;
 
 
 /* Base
 ================================ */
+
+html {
+  font-size: 62.5%;
+}
 
 body {
   background: $c-bg;
@@ -29,18 +33,18 @@ a, a:link, a:visited {
 
 .text {
   p {
-    font-size: $t-size;
-    line-height: $t-leading;
-    margin-bottom: $t-leading;
+    font-size: 19px; font-size: $t-size;
+    line-height: 27px; line-height: $t-leading;
+    margin-bottom: 27px; margin-bottom: $t-leading;
   }
 
   h2 {
-    font-size: $t-size;
-    line-height: $t-leading;
-    margin: $t-leading*2 auto $t-leading;
+    font-size: 19px; font-size: $t-size;
+    line-height: 27px; line-height: $t-leading;
+    margin: 54px auto 27px; margin: $t-leading*2 auto $t-leading;
     font-weight: 500;
     @media only screen and (min-width: $medium) {
-      font-size: 1.3rem;
+      font-size: 21px; font-size: 2.1rem;
     }
   }
 }
@@ -50,74 +54,64 @@ a, a:link, a:visited {
 ================================ */
 
 .site-wrapper {
-  padding: 0 1em;
-  max-width: 30rem;
+  padding: 0 16px; padding: 0 1.6rem;
+  max-width: 480px; max-width: 48rem;
   
-  margin: $t-leading auto;
+  margin: 27px auto; margin: $t-leading auto;
 
   @media only screen and (min-width: $medium) {
-    margin-top: $t-leading*2;
+    margin-top: 54px; margin-top: $t-leading*2;
   }
 
-  @media only screen and (min-height: 900px) and (min-width: $medium) {
-    margin-top: 16rem;
-    width: 30rem;
+  @media only screen and (min-height: 768px) and (min-width: $medium) {
+    margin-top: 256px; margin-top: 25.6rem;
+    width: 480px; width: 48rem;
+  }
+
+  @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+    margin-top: 160px; margin-top: 16rem;
+  }
+
+  @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+    margin-top: 27px; margin-top: $t-leading;
   }
 }
 
 .site-logo {
-  font-size: $t-size;
-  font-weight: $t-weight;
-}
-
-.logo-year-wrap {
-  @media only screen and (min-width: $medium) {
-
-  }
+  font-size: 19px; font-size: $t-size;
 }
 
 .logo {
   display: block;
-  margin: 2em auto;
-  width: 5em;
+  margin: 22px auto; margin: 2.2rem auto;
+  width: 80px; width: 8rem;
 
   @media only screen and (min-width: $medium) {
     margin-top: 0;
-    width: 6em;
+    width: 96px; width: 9.6rem;
   }
-}
-
-.year {
-  color: $c-red;
-  font-size: $t-size;
-  font-weight: 300;
-  letter-spacing: 0.2em;
-  margin-top: 0.25em;
-  position: relative;
-  text-align: center;
 }
 
 .date-location {
   text-align: center;
-  font-size: $t-size;
-  margin-top: $t-leading;
-  line-height: 1.3em;
+  font-size: 19px; font-size: $t-size;
+  margin-top: 27px; margin-top: $t-leading;
+  line-height: 27px; line-height: $t-leading;
 
   sup {
    vertical-align: baseline;
    position: relative;
-   top: -0.4em;
-   font-size: 0.8em;
+   top: -6.5px; top: -0.65rem;
+   font-size: 13px; font-size: 1.3rem;
   }
 }
 
 .intro {
-  margin-bottom: $t-leading*2;
+  margin-bottom: 54px; margin-bottom: $t-leading*2;
   text-align: center;
   @media only screen and (min-width: $medium) {
     text-align: left;
-    margin: 5rem auto $t-leading*2;
-    
+    margin: 54px auto; margin: $t-leading*2 auto;
   }
 }
 
@@ -133,60 +127,71 @@ a, a:link, a:visited {
 .register-interest-wrap {
   margin: 0 auto;
   @include clearfix;
-  min-height: 18em;
+  min-height: 288px; min-height: 28.8rem;
 
   @media only screen and (min-width: $medium) {
-    margin-top: 0em;
+    margin-top: 0;
   }
 }
 
 .register-interest-form {
   float: left;
-  margin-bottom: 4em;
+  margin-bottom: 64px; margin-bottom: 6.4rem;
   width: 71%;
   .text h2 {
-    margin-top: $t-leading;
+    margin-top: 27px; margin-top: $t-leading;
   }
 }
 
 .register-name,
 .register-email {
   background: url("../../images/line-short.png") bottom no-repeat;
-  
-  background-size: 340px;
+  background-size: 340px; background-size: 34rem;
   border: none;
-  font-size: 1.2rem;
-  margin-bottom: 1em;
+  font-size: 19px; font-size: $t-size;
+  margin-bottom: 16px; margin-bottom: 1.6rem;
   outline: none;
-  padding: $t-leading/3 0;
-  padding-bottom: 0.5em;
+  padding: 9px 0; padding: $t-leading/3 0;
+  padding-bottom: 9px; padding-bottom: 0.9rem;
   width: 100%;
   color: $c-red;
 }
 
 .register-button {
   background: $c-red;
-  border: 2px solid #fff;
-  border-radius: 4px;
+  border: 2px solid #fff; border: 0.2rem solid #fff;
+  border-radius: 4px; border-radius: 0.4rem;
   color: #fff;
-  margin-top: 1.5em;
-  padding: 0.75em 1em;
-  font-size: 1.1rem;
+  margin-top: 24px; margin-top: 2.4rem;
+  padding: 13px 16px; padding: 1.3rem 1.6rem;
+  font-size: 18px; font-size: 1.8rem;
   &:hover {
     background: #fff;
-    border: 2px solid $c-red;
+    border: 2px solid $c-red; border: 0.2rem solid $c-red;
     color: $c-red;
   }
 }
 
 .volunteer-image {
   float: right;
-  margin-top: -2em;
+  margin-top: -32px; margin-top: -3.2rem;
   width: 24%;
-  max-width: 170px;
+  max-width: 170px; max-width: 17rem;
 
   @media only screen and (min-width: $medium) {
-    margin-top: -3em;
+    margin-top: -48px; margin-top: -4.8rem;
+  }
+}
+
+.ie {
+  .site-wrapper {
+    display: none;
+  }
+  .fallback-image {
+    position: absolute;
+    left: 50%;
+    margin-left: -232px;
+    top: 100px;
   }
 }
 

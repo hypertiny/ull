@@ -235,7 +235,7 @@ a, a:link, a:visited {
   padding: 0 1em; }
   @media only screen and (min-width: 850px) {
     .tickets-wrap {
-      margin: 4rem auto 20rem;
+      margin: 4rem auto 10rem;
       width: 44rem; } }
 
 .ticket {
@@ -290,7 +290,7 @@ a, a:link, a:visited {
 
 .register-interest-wrap {
   padding: 0 1em;
-  margin: 5em auto 3em;
+  margin: 2em auto 3em;
   *zoom: 1; }
   .register-interest-wrap:before, .register-interest-wrap:after {
     content: " ";
@@ -301,8 +301,8 @@ a, a:link, a:visited {
     .register-interest-wrap {
       margin-top: 3em;
       width: 44rem; }
-      .register-interest-wrap.pre-teaser {
-        width: 30em; } }
+      .register-interest-wrap > .text p {
+        width: 20em; } }
 
 .register-interest-form {
   float: left;
