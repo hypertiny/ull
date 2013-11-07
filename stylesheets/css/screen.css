@@ -250,11 +250,12 @@ a, a:link, a:visited {
 
 .ull-ticket-description {
   font-size: 1.3rem;
-  margin-top: 0.65em;
-  position: absolute;
-  top: 0; }
+  margin-top: 0.65em; }
 
 .ull-price-quantity {
+  position: absolute;
+  top: 0;
+  right: 0;
   float: right; }
   .ull-price-quantity .ull-ticket-price {
     float: right; }
