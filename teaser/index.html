@@ -46,11 +46,17 @@
         <li class="ull-ticket">
           <p class="ull-ticket-title">%{= it.title %}</p>
           <p class="ull-ticket-description">%{= it.description %}</p>
-          <div class="ull-price-quantity">
-            <input type="text" name="registration[release_ids][%{= it.slug %}]" placeholder="0">
-            <p class="ull-ticket-price">%{= it.price_ex_tax %}</p>
-            <p class="ull-ticket-price-vat">%{= it.price_inc_tax %} inc VAT</p>
-          </div>
+          %{? it.status == 'locked' %}
+            <div class="ull-price-quantity">
+              locked
+            </div>
+          %{?? %}
+            <div class="ull-price-quantity">
+              <input type="text" name="registration[release_ids][%{= it.slug %}]" placeholder="0">
+                <p class="ull-ticket-price">%{= it.price_ex_tax %}</p>
+                <p class="ull-ticket-price-vat">%{= it.price_inc_tax %} inc VAT</p>
+            </div>
+          %{? %}
         </li>
       </script>
       <div id='register-form'>
