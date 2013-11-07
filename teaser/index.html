@@ -12,7 +12,10 @@
   <script type="text/javascript" src="//use.typekit.net/vqx8btp.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
   <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <script src="/scripts/doT.min.js"></script>
   <script src="/scripts/jquery.transit.min.js"></script>
+  <script src="/scripts/jquery.tito.js"></script>
+  <script src="/scripts/tito.js"></script>
   <script src="/scripts/dude.js"></script>
   <script src="/scripts/register_interest.js"></script>
   
@@ -39,11 +42,19 @@
       <div class="text">
         {{ meta['tickets'] | markdown }}
       </div>
-      <!-- <div id='tito-register-form'></div> -->
-      <!-- <script src='https://tito.io/ull/2014.js?version=3&release_ids=ddhbqe7j2oy,pcn-apvtj5i,cm5a3ccvkii' type='text/javascript'></script> -->
+      <script id="ticket-template" type="text/html">
+        <li class="ull-ticket">
+          <p class="ull-ticket-title">%{= it.title %}</p>
+          <p class="ull-ticket-description">%{= it.description %}</p>
+          <div class="ull-price-quantity">
+            <input type="text" placeholder="0">
+            <p class="ull-ticket-price">%{= it.price %}</p>
+          </div>
+        </li>
+      </script>
       <div id='register-form'>
         <form>
-          <ul class="ull-tickets">
+          <ul class="ull-tickets" id="ull-tickets">
             <li class="ull-ticket">
               <p class="ull-ticket-title">Úll Ticket</p>
               <p class="ull-ticket-description">Two day conference. No acommodation</p>
