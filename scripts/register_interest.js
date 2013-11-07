@@ -15,7 +15,6 @@ jQuery(function(){
     if($.trim(name) != '' && $.trim(email) != '')
     {
       url = ["https://tito.io/ull/2014/interested_users/join.json?event_interested_user[email]=", email , "&event_interested_user[name]=", name, "&callback=?"].join('')
-      console.log(url)
       $.getJSON(url, null, function(data){})
       width = $('.register-interest-form').width()
       height = $('.register-interest-form').height()
