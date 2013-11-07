@@ -172,18 +172,20 @@ a, a:link, a:visited {
   @include clearfix;
   border-bottom: 2px dotted rgba($c-red, 0.4);
   position: relative;
-  line-height: $t-leading;
+  padding-bottom: $t-leading;
+  margin-bottom: $t-leading;
+  // line-height: $t-leading;
 }
 
 .ull-ticket-title {
   font-size: 1.8rem;
   font-weight: 500;
-
+  line-height: 2.2rem;
 }
 
 .ull-ticket-description {
-  font-size: 1.3rem;
-  margin-top: $t-leading/2;
+  font-size: 1.2rem;
+  margin-top: $t-leading/5;
 
 }
 
@@ -194,18 +196,45 @@ a, a:link, a:visited {
   float: right;
 
   .ull-ticket-price {
+    font-size: 1.8rem;
     float: right;
+    margin-right: 1.5rem;
+    font-weight: 500;
+    line-height: 2.2rem;
+    position: relative;
+
+    &:after {
+      content:"\00d7"; 
+      position: absolute;
+      font-size: 1.1rem;
+      right: -1.15rem;
+      color: rgba($c-red, 0.4);
+    }
+  }
+
+  .ull-ticket-price-vat {
+    position: absolute;
+    top: 2.5rem;
+    text-align: right;
+    right: 0;
+    width: 10rem;
+    font-size: 1.05rem;
+    color: rgba($c-red, 0.8);
   }
 
   input {
     float: right;
     font-size: 1.3rem;
     width: 2.4rem;
-    border: 2px solid rgba($c-red, 0.4);
-    padding: 0.4rem;
+    border: 2px solid rgba($c-red, 0.8);
+    padding: 0.2rem;
     border-radius: 4px;
     text-align: center;
     color: $c-red;
+    &:focus {
+      outline: none;
+      border: 2px solid $c-red;
+    }
   }
 }
 

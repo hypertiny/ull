@@ -237,7 +237,8 @@ a, a:link, a:visited {
   *zoom: 1;
   border-bottom: 2px dotted rgba(236, 93, 96, 0.4);
   position: relative;
-  line-height: 1.3em; }
+  padding-bottom: 1.3em;
+  margin-bottom: 1.3em; }
   .ull-ticket:before, .ull-ticket:after {
     content: " ";
     display: table; }
@@ -246,11 +247,12 @@ a, a:link, a:visited {
 
 .ull-ticket-title {
   font-size: 1.8rem;
-  font-weight: 500; }
+  font-weight: 500;
+  line-height: 2.2rem; }
 
 .ull-ticket-description {
-  font-size: 1.3rem;
-  margin-top: 0.65em; }
+  font-size: 1.2rem;
+  margin-top: 0.26em; }
 
 .ull-price-quantity {
   position: absolute;
@@ -258,16 +260,38 @@ a, a:link, a:visited {
   right: 0;
   float: right; }
   .ull-price-quantity .ull-ticket-price {
-    float: right; }
+    font-size: 1.8rem;
+    float: right;
+    margin-right: 1.5rem;
+    font-weight: 500;
+    line-height: 2.2rem;
+    position: relative; }
+    .ull-price-quantity .ull-ticket-price:after {
+      content: "\00d7";
+      position: absolute;
+      font-size: 1.1rem;
+      right: -1.15rem;
+      color: rgba(236, 93, 96, 0.4); }
+  .ull-price-quantity .ull-ticket-price-vat {
+    position: absolute;
+    top: 2.5rem;
+    text-align: right;
+    right: 0;
+    width: 10rem;
+    font-size: 1.05rem;
+    color: rgba(236, 93, 96, 0.8); }
   .ull-price-quantity input {
     float: right;
     font-size: 1.3rem;
     width: 2.4rem;
-    border: 2px solid rgba(236, 93, 96, 0.4);
-    padding: 0.4rem;
+    border: 2px solid rgba(236, 93, 96, 0.8);
+    padding: 0.2rem;
     border-radius: 4px;
     text-align: center;
     color: #ec5d60; }
+    .ull-price-quantity input:focus {
+      outline: none;
+      border: 2px solid #ec5d60; }
 
 #tito-register-form {
   *zoom: 1;
