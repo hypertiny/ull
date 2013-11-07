@@ -14,9 +14,9 @@ jQuery(function(){
   };
 
   template = doT.template($('#ticket-template').html())
-  $.tito.dev = true
   releases = ['ddhbqe7j2oy','pcn-apvtj5i','cm5a3ccvkii']
-  $.tito('ull/2014').releases(function(releases){
+  $.tito('ull/2014').releases(releases, function(releases){
+    console.log('hello')
     for(var i = 0; i < releases.length; i++)
     {
       var release = releases[i];

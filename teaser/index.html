@@ -47,42 +47,20 @@
           <p class="ull-ticket-title">%{= it.title %}</p>
           <p class="ull-ticket-description">%{= it.description %}</p>
           <div class="ull-price-quantity">
-            <input type="text" placeholder="0">
-            <p class="ull-ticket-price">%{= it.price %}</p>
+            <input type="text" name="registration[release_ids][%{= it.slug %}]" placeholder="0">
+            <p class="ull-ticket-price">%{= it.price_ex_tax %}</p>
+            <p class="ull-ticket-price-vat">%{= it.price_inc_tax %} inc VAT</p>
           </div>
         </li>
       </script>
       <div id='register-form'>
-        <form>
+        <form action="http://tito.dev/ull/2014/registrations" method="POST">
+          <input name="utf8" type="hidden" value="&#x2713;" />
           <ul class="ull-tickets" id="ull-tickets">
-            <li class="ull-ticket">
-              <p class="ull-ticket-title">Úll Ticket</p>
-              <p class="ull-ticket-description">Two day conference. No acommodation</p>
-              <div class="ull-price-quantity">
-                <input type="text" placeholder="0">
-                <p class="ull-ticket-price">€645</p>
-                <p class="ull-ticket-price-vat">€793.35 inc VAT</p>
-              </div>
-            </li>
-            <li class="ull-ticket">
-              <p class="ull-ticket-title">Double Room</p>
-              <p class="ull-ticket-description">One double bed. Two nights.</p>
-              <div class="ull-price-quantity">
-                <input type="text" placeholder="0">
-                <p class="ull-ticket-price">€300</p>
-                <p class="ull-ticket-price-vat">€369 inc VAT</p>
-              </div>
-            </li>
-            <li class="ull-ticket">
-              <p class="ull-ticket-title">Shared Room</p>
-              <p class="ull-ticket-description">One of two single beds. Two nights.</p>
-              <div class="ull-price-quantity">
-                <input type="text" placeholder="0">
-                <p class="ull-ticket-price">€150</p>
-                <p class="ull-ticket-price-vat">€184.50 inc VAT</p>
-              </div>
-            </li>
           </ul>
+          <button type="submit">
+            Continue
+          </button>
         </form>
       </div>
     </section>
