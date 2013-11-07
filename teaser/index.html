@@ -48,7 +48,7 @@
           <p class="ull-ticket-description">%{= it.description %}</p>
           %{? it.status == 'locked' %}
             <div class="ull-price-quantity">
-              locked
+              <p class="ull-ticket-locked">Locked</p>
             </div>
           %{?? %}
             <div class="ull-price-quantity">
@@ -64,7 +64,7 @@
           <input name="utf8" type="hidden" value="&#x2713;" />
           <ul class="ull-tickets" id="ull-tickets">
           </ul>
-          <button type="submit">
+          <button type="submit" class="register-form-submit">
             Continue
           </button>
         </form>
@@ -96,16 +96,13 @@
     <footer class="site-footer">
       <div class="text">
         <p>
-          Twitter — <a href="http://twitter.com/ullconf">@ullconf</a><br>
           Sponsorship enquires — <a href="mailto:sponsors@ull.ie">sponsors@ull.ie</a><br>
           General Feedback — <a href="mailto:feedback@ull.ie">feedback@ull.ie</a><br>
+          Twitter — <a href="http://twitter.com/ullconf">@ullconf</a
         </p>
         <p>
           Presented by <a href="http://tapadoo.ie">Tapadoo</a> and <a href="http://tito.io">Tito</a>
         </p>
-      
-        <!-- {{ meta['sponsorship'] | markdown }} -->
-        
       </div>
     </footer>
 

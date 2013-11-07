@@ -66,9 +66,15 @@ a, a:link, a:visited {
 
 .site-footer {
   margin: 10rem auto 0;
+  padding: 0 1rem;
+
+  @media only screen and (min-width: $small) {
+    padding: 0 4rem;
+  }
 
   @media only screen and (min-width: $medium) {
     width: 42rem;
+    padding: 0;
   }
 }
 
@@ -110,6 +116,11 @@ a, a:link, a:visited {
   padding: 0 1rem;
   position: relative;
   margin-bottom: 0rem;
+
+  @media only screen and (min-width: $small) {
+    padding: 0 4rem;
+  }
+
   @media only screen and (min-width: $medium) {
     padding: 0;
   }
@@ -149,6 +160,11 @@ a, a:link, a:visited {
     padding: 4rem 0 6rem 0;
     max-width: 60rem;
   }
+
+  @media only screen and (min-width: $medium) {
+    padding: 4rem 4rem 6rem 4rem;
+    max-width: 60rem;
+  }
 }
 
 /* Ticket Embed
@@ -156,6 +172,9 @@ a, a:link, a:visited {
 
 .tickets-wrap {
   padding: 0 1rem;
+  @media only screen and (min-width: $small) {
+    padding: 0 4rem;
+  }
 
   @media only screen and (min-width: $medium) {
     padding: 0;
@@ -172,6 +191,7 @@ a, a:link, a:visited {
 
 #register-form {
   margin-top: $t-leading*4;
+  @include clearfix;
 }
 
 .ull-ticket {
@@ -183,14 +203,29 @@ a, a:link, a:visited {
 }
 
 .ull-ticket-title {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   font-weight: 500;
-  line-height: 2.2rem;
+  line-height: 1.8rem;
+
+  @media only screen and (min-width: $medium) {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+  }
 }
 
 .ull-ticket-description {
   font-size: 1.2rem;
-  margin-top: $t-leading/5;
+  margin-top: $t-leading/2;
+  width: 70%;
+
+  @media only screen and (min-width: $medium) {
+    margin-top: $t-leading/5;
+    width: auto;
+  }
+}
+
+.ull-ticket-locked {
+  font-size: 1.8rem;
 }
 
 .ull-price-quantity {
@@ -200,12 +235,17 @@ a, a:link, a:visited {
   float: right;
 
   .ull-ticket-price {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     float: right;
-    margin-right: 1.5rem;
+    margin-right: 1.4rem;
     font-weight: 500;
-    line-height: 2.2rem;
+    line-height: 1.8rem;
     position: relative;
+    
+    @media only screen and (min-width: $medium) {
+      font-size: 1.8rem;
+      line-height: 2.2rem;
+    }
 
     &:after {
       content:"\00d7"; 
@@ -224,22 +264,44 @@ a, a:link, a:visited {
     width: 10rem;
     font-size: 1.05rem;
     color: rgba($c-red, 0.8);
+    width: 4rem;
+
+    @media only screen and (min-width: $small) {
+      width: 10rem;
+    }
   }
 
   input {
     float: right;
-    font-size: 1.3rem;
-    width: 2.4rem;
+    font-size: 1rem;
+    width: 2rem;
     border: 2px solid rgba($c-red, 0.8);
     padding: 0.2rem;
     border-radius: 4px;
     text-align: center;
     color: $c-red;
+    -webkit-appearance: none;
+    @media only screen and (min-width: $medium) {
+      font-size: 1.3rem;
+      width: 2.4rem;
+    }
+
     &:focus {
       outline: none;
       border: 2px solid $c-red;
     }
   }
+}
+
+.register-form-submit {
+  -webkit-appearance: none;
+  background: $c-red;
+  border: none;
+  color: #fff;
+  padding: 0.8rem;
+  border-radius: 4px;
+  float: right;
+  -webkit-appearance: none;
 }
 
 /* Register Interest
@@ -253,6 +315,10 @@ a, a:link, a:visited {
   margin: 2em auto 3em;
   padding: 0 1rem;
   @include clearfix;
+
+  @media only screen and (min-width: $small) {
+    padding: 0 4rem;
+  }
 
   @media only screen and (min-width: $medium) {
     margin-top: 3em;
@@ -284,6 +350,7 @@ a, a:link, a:visited {
   padding-bottom: 0.5em;
   width: 100%;
   color: $c-red;
+  border-radius: 0;
 }
 
 .register-button {

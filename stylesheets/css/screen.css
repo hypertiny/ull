@@ -158,10 +158,15 @@ a, a:link, a:visited {
     margin: 4em auto; } }
 
 .site-footer {
-  margin: 10rem auto 0; }
+  margin: 10rem auto 0;
+  padding: 0 1rem; }
+  @media only screen and (min-width: 480px) {
+    .site-footer {
+      padding: 0 4rem; } }
   @media only screen and (min-width: 850px) {
     .site-footer {
-      width: 42rem; } }
+      width: 42rem;
+      padding: 0; } }
 
 .site-logo {
   font-size: 1em;
@@ -191,6 +196,9 @@ a, a:link, a:visited {
   padding: 0 1rem;
   position: relative;
   margin-bottom: 0rem; }
+  @media only screen and (min-width: 480px) {
+    .intro-wrap {
+      padding: 0 4rem; } }
   @media only screen and (min-width: 850px) {
     .intro-wrap {
       padding: 0; } }
@@ -219,11 +227,18 @@ a, a:link, a:visited {
     .main-image {
       padding: 4rem 0 6rem 0;
       max-width: 60rem; } }
+  @media only screen and (min-width: 850px) {
+    .main-image {
+      padding: 4rem 4rem 6rem 4rem;
+      max-width: 60rem; } }
 
 /* Ticket Embed
 ================================ */
 .tickets-wrap {
   padding: 0 1rem; }
+  @media only screen and (min-width: 480px) {
+    .tickets-wrap {
+      padding: 0 4rem; } }
   @media only screen and (min-width: 850px) {
     .tickets-wrap {
       padding: 0;
@@ -236,7 +251,13 @@ a, a:link, a:visited {
   display: block; }
 
 #register-form {
-  margin-top: 5.2em; }
+  margin-top: 5.2em;
+  *zoom: 1; }
+  #register-form:before, #register-form:after {
+    content: " ";
+    display: table; }
+  #register-form:after {
+    clear: both; }
 
 .ull-ticket {
   *zoom: 1;
@@ -251,13 +272,25 @@ a, a:link, a:visited {
     clear: both; }
 
 .ull-ticket-title {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   font-weight: 500;
-  line-height: 2.2rem; }
+  line-height: 1.8rem; }
+  @media only screen and (min-width: 850px) {
+    .ull-ticket-title {
+      font-size: 1.8rem;
+      line-height: 2.2rem; } }
 
 .ull-ticket-description {
   font-size: 1.2rem;
-  margin-top: 0.26em; }
+  margin-top: 0.65em;
+  width: 70%; }
+  @media only screen and (min-width: 850px) {
+    .ull-ticket-description {
+      margin-top: 0.26em;
+      width: auto; } }
+
+.ull-ticket-locked {
+  font-size: 1.8rem; }
 
 .ull-price-quantity {
   position: absolute;
@@ -265,12 +298,16 @@ a, a:link, a:visited {
   right: 0;
   float: right; }
   .ull-price-quantity .ull-ticket-price {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     float: right;
-    margin-right: 1.5rem;
+    margin-right: 1.4rem;
     font-weight: 500;
-    line-height: 2.2rem;
+    line-height: 1.8rem;
     position: relative; }
+    @media only screen and (min-width: 850px) {
+      .ull-price-quantity .ull-ticket-price {
+        font-size: 1.8rem;
+        line-height: 2.2rem; } }
     .ull-price-quantity .ull-ticket-price:after {
       content: "\00d7";
       position: absolute;
@@ -284,19 +321,38 @@ a, a:link, a:visited {
     right: 0;
     width: 10rem;
     font-size: 1.05rem;
-    color: rgba(236, 93, 96, 0.8); }
+    color: rgba(236, 93, 96, 0.8);
+    width: 4rem; }
+    @media only screen and (min-width: 480px) {
+      .ull-price-quantity .ull-ticket-price-vat {
+        width: 10rem; } }
   .ull-price-quantity input {
     float: right;
-    font-size: 1.3rem;
-    width: 2.4rem;
+    font-size: 1rem;
+    width: 2rem;
     border: 2px solid rgba(236, 93, 96, 0.8);
     padding: 0.2rem;
     border-radius: 4px;
     text-align: center;
-    color: #ec5d60; }
+    color: #ec5d60;
+    -webkit-appearance: none; }
+    @media only screen and (min-width: 850px) {
+      .ull-price-quantity input {
+        font-size: 1.3rem;
+        width: 2.4rem; } }
     .ull-price-quantity input:focus {
       outline: none;
       border: 2px solid #ec5d60; }
+
+.register-form-submit {
+  -webkit-appearance: none;
+  background: #ec5d60;
+  border: none;
+  color: #fff;
+  padding: 0.8rem;
+  border-radius: 4px;
+  float: right;
+  -webkit-appearance: none; }
 
 /* Register Interest
 ================================ */
@@ -321,6 +377,9 @@ a, a:link, a:visited {
     display: table; }
   .register-interest-wrap:after {
     clear: both; }
+  @media only screen and (min-width: 480px) {
+    .register-interest-wrap {
+      padding: 0 4rem; } }
   @media only screen and (min-width: 850px) {
     .register-interest-wrap {
       margin-top: 3em;
@@ -344,7 +403,8 @@ a, a:link, a:visited {
   padding: 0.43333em 0;
   padding-bottom: 0.5em;
   width: 100%;
-  color: #ec5d60; }
+  color: #ec5d60;
+  border-radius: 0; }
 
 .register-button {
   background: #ec5d60;
