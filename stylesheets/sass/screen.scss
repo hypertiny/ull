@@ -16,8 +16,13 @@ body {
 }
 
 a, a:link, a:visited {
-  color: $c-primary;
+  color: $c-red;
+  font-weight: 500;
   text-decoration: none;
+  border-bottom: 2px solid #fff;
+  &:hover {
+    border-bottom: 2px solid rgba($c-red, 0.3);
+  }  
 }
 
 
@@ -59,18 +64,17 @@ a, a:link, a:visited {
   }
 }
 
+.site-footer {
+  width: 42rem;
+  margin: 10rem auto 0;
+
+}
+
 // Logo
 
 .site-logo {
   font-size: $t-size;
   font-weight: $t-weight;
-}
-
-.logo-year-wrap {
-
-  @media only screen and (min-width: $medium) {
-
-  }
 }
 
 .logo {
@@ -84,19 +88,9 @@ a, a:link, a:visited {
   }
 }
 
-.year {
-  color: $c-red;
-  font-size: $t-size*1.5;
-  font-weight: 300;
-  letter-spacing: 0.2em;
-  margin-top: 0.25em;
-  position: relative;
-  text-align: center;
-}
-
 .date-location {
   text-align: center;
-  font-size: 1.4em;
+  font-size: 1.3em;
   margin-top: 2em;
   line-height: 1.3em;
 
@@ -110,18 +104,16 @@ a, a:link, a:visited {
 
 // Intro paragraph
 
-.intro {
+.intro-wrap {
+  padding: 0 1rem;
   position: relative;
-  margin-bottom: 4rem;
-}
-
-.introduction-wrap {
-  
-  padding: 5rem 0 2rem 0;
+  margin-bottom: 0rem;
+  @media only screen and (min-width: $medium) {
+    padding: 0;
+  }
 }
 
 .introduction {
-  padding: 0 1em;
 
   h2 {
     margin-bottom: 2.5rem;
@@ -134,7 +126,7 @@ a, a:link, a:visited {
   }
 
   @media only screen and (min-width: $medium) {
-    width: 44rem;
+    width: 42rem;
     margin: 0 auto;
 
     p {
@@ -157,67 +149,154 @@ a, a:link, a:visited {
   }
 }
 
-.section-title {
-  font-size: 1.5em;
-  font-weight: 700;
-  margin: $t-leading*1 0 $t-leading/1.5;
-}
-
-.date {
-  position: absolute;
-  top: 3em;
-}
-
-
-/* Ticket Schedule
+/* Ticket Embed
 ================================ */
 
 .tickets-wrap {
-  padding: 0 1em;
-  
+  padding: 0 1rem;
+
   @media only screen and (min-width: $medium) {
-    margin: 4rem auto 10rem;
-    width: 44rem;
+    padding: 0;
+    margin: 0rem auto 10rem;
+    width: 42rem;
   }
 }
 
-.ticket {
+.things-fan {
+  width: 14rem;
+  margin: 7rem auto 8rem;
+  display: block;
+}
+
+.ull-ticket {
   @include clearfix;
-  opacity: 0.3;
-  &.active {
-    opacity: 1;
+  border-bottom: 2px dotted rgba($c-red, 0.4);
+  position: relative;
+  line-height: $t-leading;
+}
+
+.ull-ticket-title {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.ull-ticket-description {
+  font-size: 1.3rem;
+  margin-top: $t-leading/2;
+  position: absolute;
+  top: 0;
+}
+
+.ull-price-quantity {
+  float: right;
+
+  .ull-ticket-price {
+    float: right;
+  }
+
+  input {
+    float: right;
+    font-size: 1.3rem;
+    width: 2.4rem;
+    border: 2px solid rgba($c-red, 0.4);
+    padding: 0.4rem;
+    border-radius: 4px;
+    text-align: center;
+    color: $c-red;
   }
 }
 
-.ticket-title,
-.ticket-price {
-  font-size: $t-size*1.2;
-  margin: $t-leading 0 $t-leading/3;
 
-  @media only screen and (min-width: $medium) {
-    font-size: $t-size*2;
+#tito-register-form {
+  @include clearfix;
+  margin: $t-leading*3 auto $t-leading*1;
+}
+
+.tito-ticket-list {
+
+}
+
+.tito-ticket {
+  @include clearfix;
+  margin-bottom: $t-leading;
+  position: relative;
+  border-bottom: 2px dotted rgba($c-red, 0.4);
+  padding-bottom: $t-leading;
+}
+
+.tito-ticket:first-of-type {
+  // border-bottom: 2px solid $c-red;
+
+  .tito-ticket-name {
+    line-height: 1em;
+  }
+
+  .tito-ticket-price {
+    font-weight: 500;
   }
 }
 
-.ticket-title {
+.tito-ticket-name {
+  font-size: 2.2rem;
+  font-weight: 100;
   float: left;
+  line-height: $t-leading;
+  
 }
 
-.ticket-price {
+.tito-ticket:nth-of-type(2) .tito-ticket-name,
+.tito-ticket:nth-of-type(3) .tito-ticket-name {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.tito-ticket-price-quantity {
+
+}
+
+.tito-ticket-price {
+  float: left;
+  clear: left;
+  font-size: 1.5rem;
+  margin-top: $t-leading/4;
+  font-weight: 300;
+}
+
+.tito-ticket-quantity {
+  position: absolute;
+  right: 0;
+
+  input {
+    font-size: 1.3rem;
+    width: 2.4rem;
+    border: 2px solid rgba($c-red, 0.4);
+    padding: 0.4rem;
+    border-radius: 4px;
+    text-align: center;
+    color: $c-red;
+    
+    &:focus {
+      outline: none;
+      border: 2px solid $c-red;
+    }
+  }
+}
+
+#tito-submit {
+  -webkit-appearance: none;
+  background: $c-red;
+  border: none;
+  color: #fff;
+  padding: 0.8rem;
+  border-radius: 4px;
   float: right;
 }
 
-.ticket-date {
-  clear: left;
-  color: $c-brown;
-  float: left;
-  font-size: 0.9em;
-
-  @media only screen and (min-width: $medium) {
-    font-size: $t-size*1.2;
-    font-weight: 300;
-  }
+#tito-footer {
+  display: none;
 }
+
+
 
 /* Register Interest
 ================================ */
@@ -227,16 +306,15 @@ a, a:link, a:visited {
 }
 
 .register-interest-wrap {
-  padding: 0 1em;
   margin: 2em auto 3em;
   @include clearfix;
 
   @media only screen and (min-width: $medium) {
     margin-top: 3em;
-    width: 44rem;
+    width: 42rem;
     
     > .text p {
-      width: 20em;
+      width: 24em;
     }
   }
 }
@@ -244,7 +322,7 @@ a, a:link, a:visited {
 .register-interest-form {
   float: left;
   margin-bottom: 4em;
-  width: 70%;
+  width: 55%;
 }
 
 .register-name,
@@ -252,12 +330,13 @@ a, a:link, a:visited {
   background: url("../../images/line-short.png") bottom no-repeat;
   background-size: 100%;
   border: none;
-  font-size: $t-size*1.5;
+  font-size: 1.3rem;
   margin-bottom: 1em;
   outline: none;
   padding: $t-leading/3 0;
   padding-bottom: 0.5em;
   width: 100%;
+  color: $c-red;
 }
 
 .register-button {
@@ -280,13 +359,13 @@ a, a:link, a:visited {
   }
 }
 
-// SHAME!!!!!!!!
 
-.teapot {
-  display: block;
-  margin: 0 auto;
-  width: 100px;
-}
+
+
+
+
+
+
 
 
 

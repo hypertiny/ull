@@ -1,11 +1,14 @@
 <!doctype html>
+<!--[if lt IE 9]><html class="ie" lang="en"><![endif]-->
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>{{site.title}}</title>
   
-  <link rel="stylesheet" href="stylesheets/css/screen.css" media="all">
+  <link rel="stylesheet" href="/stylesheets/css/pre-teaser.css" media="all">
   <meta name="viewport" content="width=device-width, initial-scale=1; user-scalable=1;">
+    
+  <link rel="icon shortcut" href="/images/favicon.ico">
 
   <script type="text/javascript" src="//use.typekit.net/vqx8btp.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
@@ -16,36 +19,23 @@
   
 </head>
 <body>
+  <!--[if lt IE 9]>
+    <a href="http://ull.tito.io/"><img src="/images/ie-site.jpg" alt="Fallback" class="fallback-image"></a>
+  <![endif]-->
+
   <div class="site-wrapper">
     <div class="logo-year-wrap">
-      <img src="/images/ull-logo.svg" alt="Úll Logo" class="logo">
+      <img src="/images/ull-logo.svg" onerror="this.src=/images/ull-logo.png" alt="Úll Logo" class="logo">
       <p class="date-location">
-        {{site.meta['date']}}<br>
-        {{site.meta['location']}}
+        {{site.meta['date']}}
       </p>
     </div>
     
-    <section class="intro">
-      <img src="images/ull-2014.gif" alt="Teaser Image" class="main-image">
-      <div class="introduction-wrap">
-        <div class="introduction text">
-          {{ meta['intro'] | markdown }}
-        </div>
-      </div>
-    </section>
-    
-    <section class="tickets-wrap">
-      <div class="tickets text">
-        {{ meta['tickets'] | markdown }}
-      </div>
+    <section class="intro text">
+      {{ body }}
     </section>
     
     <section class="register-interest-wrap text">
-      
-      <div class="text">
-        {{ meta['register-interest'] | markdown }}
-      </div>
-      
       <form class="register-interest-form">
         <input id="register-name"
                type="text"
@@ -64,5 +54,19 @@
     </section>
 
   </div>
+  
+  <script type="text/javascript">
+    var _gauges = _gauges || [];
+    (function() {
+      var t   = document.createElement('script');
+      t.type  = 'text/javascript';
+      t.async = true;
+      t.id    = 'gauges-tracker';
+      t.setAttribute('data-site-id', '527920a3108d7b7401000149');
+      t.src = '//secure.gaug.es/track.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(t, s);
+    })();
+  </script>
 </body>
 </html>

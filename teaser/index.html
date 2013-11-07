@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{site.title}}</title>
+  
+  <link rel="stylesheet" href="/stylesheets/css/screen.css" media="all">
+  <meta name="viewport" content="width=device-width, initial-scale=1; user-scalable=1;">
+  
+  <link rel="icon shortcut" href="/images/favicon.ico">
+
+  <script type="text/javascript" src="//use.typekit.net/vqx8btp.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <script src="/scripts/jquery.transit.min.js"></script>
+  <script src="/scripts/dude.js"></script>
+  <script src="/scripts/register_interest.js"></script>
+  
+</head>
+<body>
+  <div class="site-wrapper">
+    <div class="logo-year-wrap">
+      <img src="/images/ull-logo.svg" alt="Úll Logo" class="logo">
+      <p class="date-location">
+        {{site.meta['date']}}<br>
+        {{site.meta['location']}}
+      </p>
+    </div>
+    
+    <section class="intro-wrap">
+      <img src="/images/ull-2014.gif" alt="Teaser Image" class="main-image">
+      <div class="introduction text">
+        {{ meta['intro'] | markdown }}
+      </div>
+    </section>
+    
+    <section class="tickets-wrap">
+      <img src="/images/tickets-accommodation-mail.png" alt="An illustration of a ticket, a keycard and an envelope" class="things-fan">
+      <div class="text">
+        {{ meta['tickets'] | markdown }}
+      </div>
+      <!-- <div id='tito-register-form'></div> -->
+      <!-- <script src='https://tito.io/ull/2014.js?version=3&release_ids=ddhbqe7j2oy,pcn-apvtj5i,cm5a3ccvkii' type='text/javascript'></script> -->
+      <div id='register-form'>
+        <form>
+          <ul class="ull-tickets">
+            <li class="ull-ticket">
+              <p class="ull-ticket-title">Úll Ticket</p>
+              <p class="ull-ticket-description">Two day conference. No acommodation</p>
+              <div class="ull-price-quantity">
+                <input type="text" placeholder="0">
+                <p class="ull-ticket-price">€793.35</p>
+              </div>
+            </li>
+            <li class="ull-ticket">
+              <p class="ull-ticket-title">Double Room</p>
+              <p class="ull-ticket-description">One double bed. Two nights.</p>
+              <div class="ull-price-quantity">
+                <input type="text" placeholder="0">
+                <p class="ull-ticket-price">€300</p>
+              </div>
+            </li>
+            <li class="ull-ticket">
+              <p class="ull-ticket-title">Shared Room</p>
+              <p class="ull-ticket-description">One of two single beds. Two nights.</p>
+              <div class="ull-price-quantity">
+                <input type="text" placeholder="0">
+                <p class="ull-ticket-price">€150</p>
+              </div>
+            </li>
+          </ul>
+        </form>
+      </div>
+    </section>
+    
+    <section class="register-interest-wrap text">
+      <div class="text">
+        {{ meta['register-interest'] | markdown }}
+      </div>
+      
+      <form class="register-interest-form">
+        <input id="register-name"
+               type="text"
+               placeholder="Name"
+               class="register-name"
+               autocomplete="off">
+        <input id="register-email"
+               type="text"
+               placeholder="Email"
+               class="register-email"
+               autocomplete="off">
+        <button type="submit"
+                class="register-button">Submit</button>
+      </form>
+      <img src="/images/dude/01-dude.gif" alt="Volunteer with iPad" class="volunteer-image">
+    </section>
+
+    <footer class="site-footer">
+      <div class="text">
+        <p>
+          Twitter — <a href="http://twitter.com/ullconf">@ullconf</a><br>
+          Sponsorship enquires — <a href="mailto:sponsors@ull.ie">sponsors@ull.ie</a><br>
+          General Feedback — <a href="mailto:feedback@ull.ie">feedback@ull.ie</a><br>
+        </p>
+        <p>
+          Presented by <a href="http://tapadoo.ie">Tapadoo</a> and <a href="http://tito.io">Tito</a>
+        </p>
+      
+        <!-- {{ meta['sponsorship'] | markdown }} -->
+        
+      </div>
+    </footer>
+
+  </div>
+</body>
+</html>

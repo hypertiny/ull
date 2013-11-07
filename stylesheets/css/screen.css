@@ -127,8 +127,12 @@ body {
   line-height: 1.3em; }
 
 a, a:link, a:visited {
-  color: #70181a;
-  text-decoration: none; }
+  color: #ec5d60;
+  font-weight: 500;
+  text-decoration: none;
+  border-bottom: 2px solid #fff; }
+  a:hover, a:link:hover, a:visited:hover {
+    border-bottom: 2px solid rgba(236, 93, 96, 0.3); }
 
 /* Text
 ================================ */
@@ -153,6 +157,10 @@ a, a:link, a:visited {
   .site-wrapper {
     margin: 4em auto; } }
 
+.site-footer {
+  width: 42rem;
+  margin: 10rem auto 0; }
+
 .site-logo {
   font-size: 1em;
   font-weight: 300; }
@@ -166,18 +174,9 @@ a, a:link, a:visited {
       margin-top: 0;
       width: 6em; } }
 
-.year {
-  color: #ec5d60;
-  font-size: 1.5em;
-  font-weight: 300;
-  letter-spacing: 0.2em;
-  margin-top: 0.25em;
-  position: relative;
-  text-align: center; }
-
 .date-location {
   text-align: center;
-  font-size: 1.4em;
+  font-size: 1.3em;
   margin-top: 2em;
   line-height: 1.3em; }
   .date-location sup {
@@ -186,29 +185,28 @@ a, a:link, a:visited {
     top: -0.4em;
     font-size: 0.8em; }
 
-.intro {
+.intro-wrap {
+  padding: 0 1rem;
   position: relative;
-  margin-bottom: 4rem; }
-
-.introduction-wrap {
-  padding: 5rem 0 2rem 0; }
-
-.introduction {
-  padding: 0 1em; }
-  .introduction h2 {
-    margin-bottom: 2.5rem; }
-  .introduction p {
-    font-size: 1.2rem;
-    line-height: 1.8rem;
-    margin-bottom: 2rem; }
+  margin-bottom: 0rem; }
   @media only screen and (min-width: 850px) {
-    .introduction {
-      width: 44rem;
-      margin: 0 auto; }
-      .introduction p {
-        font-size: 1.3rem;
-        line-height: 2rem;
-        margin-bottom: 2rem; } }
+    .intro-wrap {
+      padding: 0; } }
+
+.introduction h2 {
+  margin-bottom: 2.5rem; }
+.introduction p {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  margin-bottom: 2rem; }
+@media only screen and (min-width: 850px) {
+  .introduction {
+    width: 42rem;
+    margin: 0 auto; }
+    .introduction p {
+      font-size: 1.3rem;
+      line-height: 2rem;
+      margin-bottom: 2rem; } }
 
 .main-image {
   display: block;
@@ -220,59 +218,126 @@ a, a:link, a:visited {
       padding: 4rem 0 6rem 0;
       max-width: 60rem; } }
 
-.section-title {
-  font-size: 1.5em;
-  font-weight: 700;
-  margin: 1.3em 0 0.86667em; }
-
-.date {
-  position: absolute;
-  top: 3em; }
-
-/* Ticket Schedule
+/* Ticket Embed
 ================================ */
 .tickets-wrap {
-  padding: 0 1em; }
+  padding: 0 1rem; }
   @media only screen and (min-width: 850px) {
     .tickets-wrap {
-      margin: 4rem auto 10rem;
-      width: 44rem; } }
+      padding: 0;
+      margin: 0rem auto 10rem;
+      width: 42rem; } }
 
-.ticket {
+.things-fan {
+  width: 14rem;
+  margin: 7rem auto 8rem;
+  display: block; }
+
+.ull-ticket {
   *zoom: 1;
-  opacity: 0.3; }
-  .ticket:before, .ticket:after {
+  border-bottom: 2px dotted rgba(236, 93, 96, 0.4);
+  position: relative;
+  line-height: 1.3em; }
+  .ull-ticket:before, .ull-ticket:after {
     content: " ";
     display: table; }
-  .ticket:after {
+  .ull-ticket:after {
     clear: both; }
-  .ticket.active {
-    opacity: 1; }
 
-.ticket-title,
-.ticket-price {
-  font-size: 1.2em;
-  margin: 1.3em 0 0.43333em; }
-  @media only screen and (min-width: 850px) {
-    .ticket-title,
-    .ticket-price {
-      font-size: 2em; } }
+.ull-ticket-title {
+  font-size: 1.8rem;
+  font-weight: 500; }
 
-.ticket-title {
-  float: left; }
+.ull-ticket-description {
+  font-size: 1.3rem;
+  margin-top: 0.65em;
+  position: absolute;
+  top: 0; }
 
-.ticket-price {
+.ull-price-quantity {
+  float: right; }
+  .ull-price-quantity .ull-ticket-price {
+    float: right; }
+  .ull-price-quantity input {
+    float: right;
+    font-size: 1.3rem;
+    width: 2.4rem;
+    border: 2px solid rgba(236, 93, 96, 0.4);
+    padding: 0.4rem;
+    border-radius: 4px;
+    text-align: center;
+    color: #ec5d60; }
+
+#tito-register-form {
+  *zoom: 1;
+  margin: 3.9em auto 1.3em; }
+  #tito-register-form:before, #tito-register-form:after {
+    content: " ";
+    display: table; }
+  #tito-register-form:after {
+    clear: both; }
+
+.tito-ticket {
+  *zoom: 1;
+  margin-bottom: 1.3em;
+  position: relative;
+  border-bottom: 2px dotted rgba(236, 93, 96, 0.4);
+  padding-bottom: 1.3em; }
+  .tito-ticket:before, .tito-ticket:after {
+    content: " ";
+    display: table; }
+  .tito-ticket:after {
+    clear: both; }
+
+.tito-ticket:first-of-type .tito-ticket-name {
+  line-height: 1em; }
+.tito-ticket:first-of-type .tito-ticket-price {
+  font-weight: 500; }
+
+.tito-ticket-name {
+  font-size: 2.2rem;
+  font-weight: 100;
+  float: left;
+  line-height: 1.3em; }
+
+.tito-ticket:nth-of-type(2) .tito-ticket-name,
+.tito-ticket:nth-of-type(3) .tito-ticket-name {
+  font-size: 1.5rem;
+  font-weight: 300; }
+
+.tito-ticket-price {
+  float: left;
+  clear: left;
+  font-size: 1.5rem;
+  margin-top: 0.325em;
+  font-weight: 300; }
+
+.tito-ticket-quantity {
+  position: absolute;
+  right: 0; }
+  .tito-ticket-quantity input {
+    font-size: 1.3rem;
+    width: 2.4rem;
+    border: 2px solid rgba(236, 93, 96, 0.4);
+    padding: 0.4rem;
+    border-radius: 4px;
+    text-align: center;
+    color: #ec5d60; }
+    .tito-ticket-quantity input:focus {
+      outline: none;
+      border: 2px solid #ec5d60; }
+
+#tito-submit {
+  -webkit-appearance: none;
+  background: #ec5d60;
+  border: none;
+  color: #fff;
+  padding: 0.8rem;
+  border-radius: 4px;
   float: right; }
 
-.ticket-date {
-  clear: left;
-  color: #70181a;
-  float: left;
-  font-size: 0.9em; }
-  @media only screen and (min-width: 850px) {
-    .ticket-date {
-      font-size: 1.2em;
-      font-weight: 300; } }
+#tito-footer {
+  display: none; }
 
 /* Register Interest
 ================================ */
@@ -289,7 +354,6 @@ a, a:link, a:visited {
   color: rgba(236, 93, 96, 0.5); }
 
 .register-interest-wrap {
-  padding: 0 1em;
   margin: 2em auto 3em;
   *zoom: 1; }
   .register-interest-wrap:before, .register-interest-wrap:after {
@@ -300,26 +364,27 @@ a, a:link, a:visited {
   @media only screen and (min-width: 850px) {
     .register-interest-wrap {
       margin-top: 3em;
-      width: 44rem; }
+      width: 42rem; }
       .register-interest-wrap > .text p {
-        width: 20em; } }
+        width: 24em; } }
 
 .register-interest-form {
   float: left;
   margin-bottom: 4em;
-  width: 70%; }
+  width: 55%; }
 
 .register-name,
 .register-email {
   background: url("../../images/line-short.png") bottom no-repeat;
   background-size: 100%;
   border: none;
-  font-size: 1.5em;
+  font-size: 1.3rem;
   margin-bottom: 1em;
   outline: none;
   padding: 0.43333em 0;
   padding-bottom: 0.5em;
-  width: 100%; }
+  width: 100%;
+  color: #ec5d60; }
 
 .register-button {
   background: #ec5d60;
@@ -337,8 +402,3 @@ a, a:link, a:visited {
   @media only screen and (min-width: 850px) {
     .volunteer-image {
       margin-top: -10em; } }
-
-.teapot {
-  display: block;
-  margin: 0 auto;
-  width: 100px; }
