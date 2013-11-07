@@ -158,8 +158,10 @@ a, a:link, a:visited {
     margin: 4em auto; } }
 
 .site-footer {
-  width: 42rem;
   margin: 10rem auto 0; }
+  @media only screen and (min-width: 850px) {
+    .site-footer {
+      width: 42rem; } }
 
 .site-logo {
   font-size: 1em;
@@ -233,6 +235,9 @@ a, a:link, a:visited {
   margin: 7rem auto 8rem;
   display: block; }
 
+#register-form {
+  margin-top: 5.2em; }
+
 .ull-ticket {
   *zoom: 1;
   border-bottom: 2px dotted rgba(236, 93, 96, 0.4);
@@ -293,77 +298,6 @@ a, a:link, a:visited {
       outline: none;
       border: 2px solid #ec5d60; }
 
-#tito-register-form {
-  *zoom: 1;
-  margin: 3.9em auto 1.3em; }
-  #tito-register-form:before, #tito-register-form:after {
-    content: " ";
-    display: table; }
-  #tito-register-form:after {
-    clear: both; }
-
-.tito-ticket {
-  *zoom: 1;
-  margin-bottom: 1.3em;
-  position: relative;
-  border-bottom: 2px dotted rgba(236, 93, 96, 0.4);
-  padding-bottom: 1.3em; }
-  .tito-ticket:before, .tito-ticket:after {
-    content: " ";
-    display: table; }
-  .tito-ticket:after {
-    clear: both; }
-
-.tito-ticket:first-of-type .tito-ticket-name {
-  line-height: 1em; }
-.tito-ticket:first-of-type .tito-ticket-price {
-  font-weight: 500; }
-
-.tito-ticket-name {
-  font-size: 2.2rem;
-  font-weight: 100;
-  float: left;
-  line-height: 1.3em; }
-
-.tito-ticket:nth-of-type(2) .tito-ticket-name,
-.tito-ticket:nth-of-type(3) .tito-ticket-name {
-  font-size: 1.5rem;
-  font-weight: 300; }
-
-.tito-ticket-price {
-  float: left;
-  clear: left;
-  font-size: 1.5rem;
-  margin-top: 0.325em;
-  font-weight: 300; }
-
-.tito-ticket-quantity {
-  position: absolute;
-  right: 0; }
-  .tito-ticket-quantity input {
-    font-size: 1.3rem;
-    width: 2.4rem;
-    border: 2px solid rgba(236, 93, 96, 0.4);
-    padding: 0.4rem;
-    border-radius: 4px;
-    text-align: center;
-    color: #ec5d60; }
-    .tito-ticket-quantity input:focus {
-      outline: none;
-      border: 2px solid #ec5d60; }
-
-#tito-submit {
-  -webkit-appearance: none;
-  background: #ec5d60;
-  border: none;
-  color: #fff;
-  padding: 0.8rem;
-  border-radius: 4px;
-  float: right; }
-
-#tito-footer {
-  display: none; }
-
 /* Register Interest
 ================================ */
 ::-webkit-input-placeholder {
@@ -380,6 +314,7 @@ a, a:link, a:visited {
 
 .register-interest-wrap {
   margin: 2em auto 3em;
+  padding: 0 1rem;
   *zoom: 1; }
   .register-interest-wrap:before, .register-interest-wrap:after {
     content: " ";
@@ -389,20 +324,20 @@ a, a:link, a:visited {
   @media only screen and (min-width: 850px) {
     .register-interest-wrap {
       margin-top: 3em;
-      width: 42rem; }
+      width: 42rem;
+      padding: 0; }
       .register-interest-wrap > .text p {
         width: 24em; } }
 
 .register-interest-form {
   float: left;
   margin-bottom: 4em;
-  width: 55%; }
+  width: 60%; }
 
 .register-name,
 .register-email {
-  background: url("../../images/line-short.png") bottom no-repeat;
-  background-size: 100%;
   border: none;
+  border-bottom: 2px solid #ec5d60;
   font-size: 1.3rem;
   margin-bottom: 1em;
   outline: none;
@@ -427,3 +362,6 @@ a, a:link, a:visited {
   @media only screen and (min-width: 850px) {
     .volunteer-image {
       margin-top: -10em; } }
+
+/* Tito Embed Form
+================================ */

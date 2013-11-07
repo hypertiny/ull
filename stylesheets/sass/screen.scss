@@ -65,9 +65,11 @@ a, a:link, a:visited {
 }
 
 .site-footer {
-  width: 42rem;
   margin: 10rem auto 0;
 
+  @media only screen and (min-width: $medium) {
+    width: 42rem;
+  }
 }
 
 // Logo
@@ -168,13 +170,16 @@ a, a:link, a:visited {
   display: block;
 }
 
+#register-form {
+  margin-top: $t-leading*4;
+}
+
 .ull-ticket {
   @include clearfix;
   border-bottom: 2px dotted rgba($c-red, 0.4);
   position: relative;
   padding-bottom: $t-leading;
   margin-bottom: $t-leading;
-  // line-height: $t-leading;
 }
 
 .ull-ticket-title {
@@ -186,7 +191,6 @@ a, a:link, a:visited {
 .ull-ticket-description {
   font-size: 1.2rem;
   margin-top: $t-leading/5;
-
 }
 
 .ull-price-quantity {
@@ -238,98 +242,6 @@ a, a:link, a:visited {
   }
 }
 
-
-#tito-register-form {
-  @include clearfix;
-  margin: $t-leading*3 auto $t-leading*1;
-}
-
-.tito-ticket-list {
-
-}
-
-.tito-ticket {
-  @include clearfix;
-  margin-bottom: $t-leading;
-  position: relative;
-  border-bottom: 2px dotted rgba($c-red, 0.4);
-  padding-bottom: $t-leading;
-}
-
-.tito-ticket:first-of-type {
-  // border-bottom: 2px solid $c-red;
-
-  .tito-ticket-name {
-    line-height: 1em;
-  }
-
-  .tito-ticket-price {
-    font-weight: 500;
-  }
-}
-
-.tito-ticket-name {
-  font-size: 2.2rem;
-  font-weight: 100;
-  float: left;
-  line-height: $t-leading;
-  
-}
-
-.tito-ticket:nth-of-type(2) .tito-ticket-name,
-.tito-ticket:nth-of-type(3) .tito-ticket-name {
-  font-size: 1.5rem;
-  font-weight: 300;
-}
-
-.tito-ticket-price-quantity {
-
-}
-
-.tito-ticket-price {
-  float: left;
-  clear: left;
-  font-size: 1.5rem;
-  margin-top: $t-leading/4;
-  font-weight: 300;
-}
-
-.tito-ticket-quantity {
-  position: absolute;
-  right: 0;
-
-  input {
-    font-size: 1.3rem;
-    width: 2.4rem;
-    border: 2px solid rgba($c-red, 0.4);
-    padding: 0.4rem;
-    border-radius: 4px;
-    text-align: center;
-    color: $c-red;
-    
-    &:focus {
-      outline: none;
-      border: 2px solid $c-red;
-    }
-  }
-}
-
-#tito-submit {
-  -webkit-appearance: none;
-  background: $c-red;
-  border: none;
-  color: #fff;
-  padding: 0.8rem;
-  border-radius: 4px;
-  float: right;
-}
-
-#tito-footer {
-  display: none;
-}
-
-
-
 /* Register Interest
 ================================ */
 
@@ -339,11 +251,13 @@ a, a:link, a:visited {
 
 .register-interest-wrap {
   margin: 2em auto 3em;
+  padding: 0 1rem;
   @include clearfix;
 
   @media only screen and (min-width: $medium) {
     margin-top: 3em;
     width: 42rem;
+    padding: 0;
     
     > .text p {
       width: 24em;
@@ -354,14 +268,15 @@ a, a:link, a:visited {
 .register-interest-form {
   float: left;
   margin-bottom: 4em;
-  width: 55%;
+  width: 60%;
 }
 
 .register-name,
 .register-email {
-  background: url("../../images/line-short.png") bottom no-repeat;
-  background-size: 100%;
+  // background: url("../../images/line-short.png") bottom no-repeat;
+  // background-size: 100%;
   border: none;
+  border-bottom: 2px solid $c-red;
   font-size: 1.3rem;
   margin-bottom: 1em;
   outline: none;
@@ -394,8 +309,97 @@ a, a:link, a:visited {
 
 
 
+/* Tito Embed Form
+================================ */
 
+// #tito-register-form {
+//   @include clearfix;
+//   margin: $t-leading*3 auto $t-leading*1;
+// }
 
+// .tito-ticket-list {
+
+// }
+
+// .tito-ticket {
+//   @include clearfix;
+//   margin-bottom: $t-leading;
+//   position: relative;
+//   border-bottom: 2px dotted rgba($c-red, 0.4);
+//   padding-bottom: $t-leading;
+// }
+
+// .tito-ticket:first-of-type {
+//   // border-bottom: 2px solid $c-red;
+
+//   .tito-ticket-name {
+//     line-height: 1em;
+//   }
+
+//   .tito-ticket-price {
+//     font-weight: 500;
+//   }
+// }
+
+// .tito-ticket-name {
+//   font-size: 2.2rem;
+//   font-weight: 100;
+//   float: left;
+//   line-height: $t-leading;
+  
+// }
+
+// .tito-ticket:nth-of-type(2) .tito-ticket-name,
+// .tito-ticket:nth-of-type(3) .tito-ticket-name {
+//   font-size: 1.5rem;
+//   font-weight: 300;
+// }
+
+// .tito-ticket-price-quantity {
+
+// }
+
+// .tito-ticket-price {
+//   float: left;
+//   clear: left;
+//   font-size: 1.5rem;
+//   margin-top: $t-leading/4;
+//   font-weight: 300;
+// }
+
+// .tito-ticket-quantity {
+//   position: absolute;
+//   right: 0;
+
+//   input {
+//     font-size: 1.3rem;
+//     width: 2.4rem;
+//     border: 2px solid rgba($c-red, 0.4);
+//     padding: 0.4rem;
+//     border-radius: 4px;
+//     text-align: center;
+//     color: $c-red;
+    
+//     &:focus {
+//       outline: none;
+//       border: 2px solid $c-red;
+//     }
+//   }
+// }
+
+// #tito-submit {
+//   -webkit-appearance: none;
+//   background: $c-red;
+//   border: none;
+//   color: #fff;
+//   padding: 0.8rem;
+//   border-radius: 4px;
+//   float: right;
+// }
+
+// #tito-footer {
+//   display: none;
+// }
 
 
 
