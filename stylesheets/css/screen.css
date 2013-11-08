@@ -124,7 +124,7 @@ body {
   color: #ec5d60;
   font-family: "museo-sans", sans-serif;
   font-weight: 300;
-  line-height: 1.3em; }
+  line-height: 1.5rem; }
 
 a, a:link, a:visited {
   color: #ec5d60;
@@ -137,55 +137,68 @@ a, a:link, a:visited {
 /* Text
 ================================ */
 .text p {
-  font-size: 1.3rem;
-  line-height: 2rem;
-  margin-bottom: 2rem; }
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  margin-bottom: 1.5rem; }
+  @media only screen and (min-width: 480px) {
+    .text p {
+      font-size: 1.3rem;
+      line-height: 2rem;
+      margin-bottom: 2rem; } }
 .text h2 {
-  font-size: 1.8rem;
-  margin-bottom: 2.5rem;
+  font-size: 1.5em;
+  margin-bottom: 1.5rem;
   font-weight: 500; }
+  @media only screen and (min-width: 480px) {
+    .text h2 {
+      font-size: 1.8em;
+      line-height: 2.2rem;
+      margin-bottom: 2rem; } }
 .text hr {
   background: #ec5d60;
   border: none;
   height: 2px;
   width: 40px;
-  margin: 0 0 2em 0; }
+  margin: 0 0 1.5rem 0; }
+  @media only screen and (min-width: 480px) {
+    .text hr {
+      margin: 0 0 2rem 0; } }
 
 /* Main Site
 ================================ */
 @media only screen and (min-width: 850px) {
   .site-wrapper {
-    margin: 4em auto; } }
+    margin: 4rem auto; } }
 
 .site-footer {
-  margin: 10rem auto 0;
+  margin: 8rem auto 0;
   padding: 0 1rem; }
   @media only screen and (min-width: 480px) {
     .site-footer {
-      padding: 0 4rem; } }
+      padding: 0 4rem;
+      margin-top: 10rem; } }
   @media only screen and (min-width: 850px) {
     .site-footer {
       width: 42rem;
       padding: 0; } }
 
-.site-logo {
-  font-size: 1em;
-  font-weight: 300; }
-
 .logo {
   display: block;
-  margin: 2em auto;
+  margin: 1.5rem auto;
   width: 5em; }
   @media only screen and (min-width: 850px) {
     .logo {
-      margin-top: 0;
+      margin: 0 auto 2rem;
       width: 6em; } }
 
 .date-location {
   text-align: center;
-  font-size: 1.3em;
-  margin-top: 2em;
-  line-height: 1.3em; }
+  font-size: 1.1rem;
+  line-height: 1.6rem; }
+  @media only screen and (min-width: 850px) {
+    .date-location {
+      font-size: 1.3rem;
+      line-height: 1.6rem; } }
   .date-location sup {
     vertical-align: baseline;
     position: relative;
@@ -203,33 +216,19 @@ a, a:link, a:visited {
     .intro-wrap {
       padding: 0; } }
 
-.introduction h2 {
-  margin-bottom: 2.5rem; }
-.introduction p {
-  font-size: 1.2rem;
-  line-height: 1.8rem;
-  margin-bottom: 2rem; }
 @media only screen and (min-width: 850px) {
   .introduction {
     width: 42rem;
-    margin: 0 auto; }
-    .introduction p {
-      font-size: 1.3rem;
-      line-height: 2rem;
-      margin-bottom: 2rem; } }
+    margin: 0 auto; } }
 
 .main-image {
   display: block;
   margin: 0 auto;
-  padding: 3rem 1em 3rem 1em;
+  padding: 3rem 0;
   width: 100%; }
   @media only screen and (min-width: 850px) {
     .main-image {
       padding: 4rem 0 6rem 0;
-      max-width: 60rem; } }
-  @media only screen and (min-width: 850px) {
-    .main-image {
-      padding: 4rem 4rem 6rem 4rem;
       max-width: 60rem; } }
 
 /* Ticket Embed
@@ -242,16 +241,21 @@ a, a:link, a:visited {
   @media only screen and (min-width: 850px) {
     .tickets-wrap {
       padding: 0;
-      margin: 0rem auto 10rem;
+      margin: 0rem auto 8rem;
       width: 42rem; } }
 
 .things-fan {
-  width: 14rem;
-  margin: 7rem auto 8rem;
+  width: 12rem;
+  margin: 5rem auto 5rem;
   display: block; }
+  @media only screen and (min-width: 850px) {
+    .things-fan {
+      width: 14rem;
+      margin: 7rem auto 8rem;
+      display: block; } }
 
 #register-form {
-  margin-top: 5.2em;
+  margin-top: 4rem;
   *zoom: 1; }
   #register-form:before, #register-form:after {
     content: " ";
@@ -263,13 +267,17 @@ a, a:link, a:visited {
   *zoom: 1;
   border-bottom: 2px dotted rgba(236, 93, 96, 0.4);
   position: relative;
-  padding-bottom: 1.3em;
-  margin-bottom: 1.3em; }
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem; }
   .ull-ticket:before, .ull-ticket:after {
     content: " ";
     display: table; }
   .ull-ticket:after {
     clear: both; }
+  @media only screen and (min-width: 850px) {
+    .ull-ticket {
+      padding-bottom: 1rem;
+      margin-bottom: 2rem; } }
 
 .ull-ticket-title {
   font-size: 1.4rem;
@@ -277,16 +285,16 @@ a, a:link, a:visited {
   line-height: 1.8rem; }
   @media only screen and (min-width: 850px) {
     .ull-ticket-title {
-      font-size: 1.8rem;
+      font-size: 1.8em;
       line-height: 2.2rem; } }
 
 .ull-ticket-description {
   font-size: 1.2rem;
-  margin-top: 0.65em;
+  margin-top: 0.75rem;
   width: 70%; }
   @media only screen and (min-width: 850px) {
     .ull-ticket-description {
-      margin-top: 0.26em;
+      margin-top: 0.3rem;
       width: auto; } }
 
 .ull-ticket-locked {
@@ -297,35 +305,6 @@ a, a:link, a:visited {
   top: 0;
   right: 0;
   float: right; }
-  .ull-price-quantity .ull-ticket-price {
-    font-size: 1.5rem;
-    float: right;
-    margin-right: 1.4rem;
-    font-weight: 500;
-    line-height: 1.8rem;
-    position: relative; }
-    @media only screen and (min-width: 850px) {
-      .ull-price-quantity .ull-ticket-price {
-        font-size: 1.8rem;
-        line-height: 2.2rem; } }
-    .ull-price-quantity .ull-ticket-price:after {
-      content: "\00d7";
-      position: absolute;
-      font-size: 1.1rem;
-      right: -1.15rem;
-      color: rgba(236, 93, 96, 0.4); }
-  .ull-price-quantity .ull-ticket-price-vat {
-    position: absolute;
-    top: 2.5rem;
-    text-align: right;
-    right: 0;
-    width: 10rem;
-    font-size: 1.05rem;
-    color: rgba(236, 93, 96, 0.8);
-    width: 4rem; }
-    @media only screen and (min-width: 480px) {
-      .ull-price-quantity .ull-ticket-price-vat {
-        width: 10rem; } }
   .ull-price-quantity input {
     float: right;
     font-size: 1rem;
@@ -344,15 +323,47 @@ a, a:link, a:visited {
       outline: none;
       border: 2px solid #ec5d60; }
 
+.ull-ticket-price {
+  font-size: 1.5rem;
+  float: right;
+  margin-right: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  position: relative; }
+  @media only screen and (min-width: 850px) {
+    .ull-ticket-price {
+      font-size: 1.8rem;
+      line-height: 2.2rem; } }
+  .ull-ticket-price:after {
+    content: "\00d7";
+    position: absolute;
+    font-size: 1.1rem;
+    right: -1.15rem;
+    color: rgba(236, 93, 96, 0.4); }
+
+.ull-ticket-price-vat {
+  position: absolute;
+  top: 2.5rem;
+  text-align: right;
+  right: 0;
+  width: 10rem;
+  font-size: 1.05rem;
+  color: rgba(236, 93, 96, 0.8);
+  width: 4rem; }
+  @media only screen and (min-width: 480px) {
+    .ull-ticket-price-vat {
+      width: 10rem; } }
+
 .register-form-submit {
-  -webkit-appearance: none;
   background: #ec5d60;
   border: none;
   color: #fff;
   padding: 0.8rem;
   border-radius: 4px;
   float: right;
-  -webkit-appearance: none; }
+  width: 8rem;
+  -webkit-appearance: none;
+  margin-top: 1.5rem; }
 
 /* Register Interest
 ================================ */
@@ -369,7 +380,7 @@ a, a:link, a:visited {
   color: rgba(236, 93, 96, 0.5); }
 
 .register-interest-wrap {
-  margin: 2em auto 3em;
+  margin: 6rem auto 1.5rem;
   padding: 0 1rem;
   *zoom: 1; }
   .register-interest-wrap:before, .register-interest-wrap:after {
@@ -382,7 +393,7 @@ a, a:link, a:visited {
       padding: 0 4rem; } }
   @media only screen and (min-width: 850px) {
     .register-interest-wrap {
-      margin-top: 3em;
+      margin-top: 0;
       width: 42rem;
       padding: 0; }
       .register-interest-wrap > .text p {
@@ -391,37 +402,45 @@ a, a:link, a:visited {
 .register-interest-form {
   float: left;
   margin-bottom: 4em;
-  width: 60%; }
+  width: 65%; }
 
 .register-name,
 .register-email {
   border: none;
   border-bottom: 2px solid #ec5d60;
-  font-size: 1.3rem;
-  margin-bottom: 1em;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
   outline: none;
-  padding: 0.43333em 0;
+  padding: 0.5rem 0;
   padding-bottom: 0.5em;
   width: 100%;
   color: #ec5d60;
   border-radius: 0; }
+  @media only screen and (min-width: 850px) {
+    .register-name,
+    .register-email {
+      font-size: 1.3rem; } }
+
+.register-email {
+  margin-bottom: 0; }
 
 .register-button {
   background: #ec5d60;
   border: none;
   border-radius: 4px;
   color: #fff;
-  margin-top: 1.5em;
+  margin-top: 2rem;
   padding: 0.75em 1em; }
 
 .volunteer-image {
   float: right;
-  margin-top: -3em;
-  width: 25%;
+  margin-top: -2em;
+  width: 90px;
   max-width: 170px; }
   @media only screen and (min-width: 850px) {
     .volunteer-image {
-      margin-top: -10em; } }
+      margin-top: -10em;
+      width: 25%; } }
 
 /* Tito Embed Form
 ================================ */

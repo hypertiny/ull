@@ -86,7 +86,8 @@
                type="text"
                placeholder="Email"
                class="register-email"
-               autocomplete="off">
+               autocomplete="off"
+               autocapitalize="off">
         <button type="submit"
                 class="register-button">Submit</button>
       </form>
@@ -95,17 +96,31 @@
 
     <footer class="site-footer">
       <div class="text">
-        <p>
-          Sponsorship enquires — <a href="mailto:sponsors@ull.ie">sponsors@ull.ie</a><br>
-          General Feedback — <a href="mailto:feedback@ull.ie">feedback@ull.ie</a><br>
-          Twitter — <a href="http://twitter.com/ullconf">@ullconf</a
-        </p>
-        <p>
-          Presented by <a href="http://tapadoo.ie">Tapadoo</a> and <a href="http://tito.io">Tito</a>
-        </p>
+        {{ meta['footer'] | markdown }}
       </div>
     </footer>
 
   </div>
+  
+  <script type="text/javascript">
+    var _gauges = _gauges || [];
+    (function() {
+      var t   = document.createElement('script');
+      t.type  = 'text/javascript';
+      t.async = true;
+      t.id    = 'gauges-tracker';
+      t.setAttribute('data-site-id', '527920a3108d7b7401000149');
+      t.src = '//secure.gaug.es/track.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(t, s);
+    })();
+  </script>
+  
 </body>
 </html>
+
+
+
+
+
+

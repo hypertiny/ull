@@ -20,18 +20,25 @@ $c-bg:                      #fff;
 
 $t-fam-primary:             "museo-sans",sans-serif;
 $t-fam-secondary:           "rooney-web",sans-serif;
-$t-leading:                 1.3em;
 $t-weight:                  300;
 
+// Leading
 
-// Type sizes
+$t-leading:                 1.5rem;
+$tl-medium:                 2rem;
 
-$t-size:                    1em;
-$tz-small:                  0.9em;
-$tz-medium:                 1em;
-$tz-large:                  1.5em;
-$tz-xlarge:                 2em;
-$tz-xxlarge:                2.5em;
+
+// Body Text Size
+
+$t-size:                    1.1rem;
+$tz-medium:                 1.3rem;
+
+// Heading Text Size
+
+$h-size:                    1.5em;
+$hz-medium:                 1.8em;
+
+$hl-medium:                 2.2rem;
 
 
 // Screen Sizes
