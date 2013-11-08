@@ -406,14 +406,21 @@ a, a:link, a:visited {
   border-bottom: 2px dotted rgba($c-red, 0.4);
   padding: $tl-medium 0;
   h2 {
-    font-size: $hz-medium;
+    font-size: $h-size;
     font-weight: 500;
+    @media only screen and (min-width: $medium) {
+      font-size: $hz-medium;
+    }
   }
 
   p {
-    font-size: $tz-medium;
-    line-height: $tl-medium;
+    font-size: $t-size;
+    line-height: $t-leading;
     margin: 0.5rem auto 0;
+    @media only screen and (min-width: $medium) {
+      font-size: $tz-medium;
+      line-height: $tl-medium;
+    }
   }
 }
 
