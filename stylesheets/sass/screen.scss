@@ -340,7 +340,7 @@ a, a:link, a:visited {
   @media only screen and (min-width: $small) {
     padding: 0 4rem;
     > .text p {
-      width: 24em;
+      width: 65%;
     }
   }
 
@@ -400,6 +400,22 @@ a, a:link, a:visited {
   }
 }
 
+.off-sale {
+  margin: $tl-medium*2 auto;
+  border-top: 2px dotted rgba($c-red, 0.4);
+  border-bottom: 2px dotted rgba($c-red, 0.4);
+  padding: $tl-medium 0;
+  h2 {
+    font-size: $hz-medium;
+    font-weight: 500;
+  }
+
+  p {
+    font-size: $tz-medium;
+    line-height: $tl-medium;
+    margin: 0.5rem auto 0;
+  }
+}
 
 
 

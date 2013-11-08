@@ -1,41 +1,58 @@
 <!doctype html>
-<!--[if lt IE 9]><html class="ie" lang="en"><![endif]-->
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>{{site.title}}</title>
   
-  <link rel="stylesheet" href="/stylesheets/css/pre-teaser.css" media="all">
-  <meta name="viewport" content="width=device-width, initial-scale=1; user-scalable=1;">
-    
+  <link rel="stylesheet" href="/stylesheets/css/screen.css" media="all">
+  <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=1">
+  
   <link rel="icon shortcut" href="/images/favicon.ico">
 
   <script type="text/javascript" src="//use.typekit.net/vqx8btp.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
   <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <script src="/scripts/doT.min.js"></script>
   <script src="/scripts/jquery.transit.min.js"></script>
+  <script src="/scripts/jquery.tito.js"></script>
+  <script src="/scripts/tito.js"></script>
   <script src="/scripts/dude.js"></script>
   <script src="/scripts/register_interest.js"></script>
   
 </head>
 <body>
-  <!--[if lt IE 9]>
-    <a href="http://ull.tito.io/"><img src="/images/ie-site.jpg" alt="Fallback" class="fallback-image"></a>
-  <![endif]-->
-
   <div class="site-wrapper">
     <div class="logo-year-wrap">
       <img src="/images/ull-logo.svg" onerror="this.src=/images/ull-logo.png" alt="Úll Logo" class="logo">
       <p class="date-location">
-        {{site.meta['date']}}
+        {{site.meta['date']}}<br>
+        {{site.meta['location']}}
       </p>
     </div>
     
-    <section class="intro text">
-      {{ body }}
+    <section class="intro-wrap">
+      <img src="/images/ull-2014.gif" alt="Teaser Image" class="main-image">
+      <div class="introduction text">
+        {{ meta['intro'] | markdown }}
+      </div>
+    </section>
+    
+    <section class="tickets-wrap">
+      <img src="/images/tickets-accommodation-mail.png" alt="An illustration of a ticket, a keycard and an envelope" class="things-fan">
+      <div class="text">
+        {{ meta['tickets'] | markdown }}
+      </div>
+      <div class="off-sale">
+        <h2>Our first batch sold out!</h2>
+        <p>The next batch will go on sale on Friday the 15th of November</p>
+      </div>
     </section>
     
     <section class="register-interest-wrap text">
+      <div class="text">
+        {{ meta['register-interest'] | markdown }}
+      </div>
+      
       <form class="register-interest-form">
         <input id="register-name"
                type="text"
@@ -43,7 +60,7 @@
                class="register-name"
                autocomplete="off">
         <input id="register-email"
-               type="email"
+               type="text"
                placeholder="Email"
                class="register-email"
                autocomplete="off"
@@ -53,6 +70,12 @@
       </form>
       <img src="/images/dude/01-dude.gif" alt="Volunteer with iPad" class="volunteer-image">
     </section>
+
+    <footer class="site-footer">
+      <div class="text">
+        {{ meta['footer'] | markdown }}
+      </div>
+    </footer>
 
   </div>
   
@@ -69,5 +92,12 @@
       s.parentNode.insertBefore(t, s);
     })();
   </script>
+  
 </body>
 </html>
+
+
+
+
+
+
