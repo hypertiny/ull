@@ -228,6 +228,10 @@ a, a:link, a:visited {
   width: 100%; }
   @media only screen and (min-width: 850px) {
     .main-image {
+      padding: 4rem 4rem 6rem 4rem;
+      max-width: 60rem; } }
+  @media only screen and (min-width: 1200px) {
+    .main-image {
       padding: 4rem 0 6rem 0;
       max-width: 60rem; } }
 
@@ -274,10 +278,14 @@ a, a:link, a:visited {
     display: table; }
   .ull-ticket:after {
     clear: both; }
+  .ull-ticket:first-of-type {
+    border-top: 2px dotted rgba(236, 93, 96, 0.4);
+    padding-top: 1.33333rem; }
+    .ull-ticket:first-of-type .ull-price-quantity {
+      top: 1.33333rem; }
   @media only screen and (min-width: 850px) {
     .ull-ticket {
-      padding-bottom: 1rem;
-      margin-bottom: 2rem; } }
+      padding-bottom: 1.33333rem; } }
 
 .ull-ticket-title {
   font-size: 1.4rem;
@@ -390,14 +398,14 @@ a, a:link, a:visited {
     clear: both; }
   @media only screen and (min-width: 480px) {
     .register-interest-wrap {
-      padding: 0 4rem; } }
+      padding: 0 4rem; }
+      .register-interest-wrap > .text p {
+        width: 24em; } }
   @media only screen and (min-width: 850px) {
     .register-interest-wrap {
       margin-top: 0;
       width: 42rem;
-      padding: 0; }
-      .register-interest-wrap > .text p {
-        width: 24em; } }
+      padding: 0; } }
 
 .register-interest-form {
   float: left;
@@ -437,7 +445,7 @@ a, a:link, a:visited {
   margin-top: -2em;
   width: 90px;
   max-width: 170px; }
-  @media only screen and (min-width: 850px) {
+  @media only screen and (min-width: 480px) {
     .volunteer-image {
       margin-top: -10em;
       width: 25%; } }

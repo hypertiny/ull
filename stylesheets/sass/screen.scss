@@ -157,6 +157,11 @@ a, a:link, a:visited {
   width: 100%;
 
   @media only screen and (min-width: $medium) {
+    padding: $tl-medium*2 4rem $tl-medium*3 4rem;
+    max-width: 60rem;
+  }
+
+  @media only screen and (min-width: $large) {
     padding: $tl-medium*2 0 $tl-medium*3 0;
     max-width: 60rem;
   }
@@ -202,9 +207,17 @@ a, a:link, a:visited {
   padding-bottom: $t-leading;
   margin-bottom: $t-leading;
 
+  &:first-of-type {
+    border-top: 2px dotted rgba($c-red, 0.4);
+    padding-top: $tl-medium/1.5;
+    .ull-price-quantity {
+      top: $tl-medium/1.5;
+    }
+  }
+
   @media only screen and (min-width: $medium) {
-    padding-bottom: $tl-medium/2;
-    margin-bottom: $tl-medium;
+    padding-bottom: $tl-medium/1.5;
+    // margin-bottom: $tl-medium;
   }
 }
 
@@ -326,16 +339,15 @@ a, a:link, a:visited {
 
   @media only screen and (min-width: $small) {
     padding: 0 4rem;
+    > .text p {
+      width: 24em;
+    }
   }
 
   @media only screen and (min-width: $medium) {
     margin-top: 0;
     width: 42rem;
     padding: 0;
-    
-    > .text p {
-      width: 24em;
-    }
   }
 }
 
@@ -382,7 +394,7 @@ a, a:link, a:visited {
   width: 90px;
   max-width: 170px;
 
-  @media only screen and (min-width: $medium) {
+  @media only screen and (min-width: $small) {
     margin-top: -10em;
     width: 25%;
   }
