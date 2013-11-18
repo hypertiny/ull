@@ -51,11 +51,10 @@ function get(url, callback)
   }
 }
 
-function fill(label, value, pointSize){
+function fill(label, value){
   textFrames = selectWhere(label, "label", allTextFrames);
   for (var p = 0; p < textFrames.length; p++)
   {
-    textFrames[p].parentStory.pointSize = pointSize;
     textFrames[p].contents = value;
   }
 }
