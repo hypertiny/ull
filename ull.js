@@ -40,50 +40,6 @@ get(base_url + 'labels', function(result){
     }
   }
 })
-//   eval('json = ' + result + ';')
-//   first_name = json.first_name
-//   last_name = json.last_name
-//   identifier = json.identifier
-//   company = json.company;
-
-//   if(first_name)
-//   {
-//     fill('first_name', first_name, 50);
-//   }
-//   else
-//   {
-//     fill('first_name', prompt("Enter Value for First Name", ""), 50);
-//   }
-
-//   if(last_name)
-//   {
-//     fill('last_name', last_name, 23);
-//   }
-//   else
-//   {
-//     fill('last_name', prompt("Enter Value for Last Name", ""), 23);
-//   }
-
-//   if(company)
-//   {
-//     fill('company', company, 26);
-//   }
-//   else
-//   {
-//     fill('company', prompt("Enter Value for Company", ""), 26);
-//   }
-
-//   if(identifier)
-//   {
-//     fill('three-character-reference', identifier, 45);
-//   }
-//   else
-//   {
-//     fill('three-character-reference', prompt("Enter Value for Identifier", ""), 45);
-//   }
-  
-//   txtShrink();
-// }
 
 function get(url, callback)
 {
@@ -104,18 +60,6 @@ function fill(label, value, pointSize){
   }
 }
 
-// function get_answer(label, array){
-//   for (var p = 0; p < array.length; p++)
-//   {
-//     var item = array[p];
-//     if(item.question.title == label)
-//     {
-//       return item;
-//     }
-//   }
-// }
-
-
 function selectWhere(value, key, array){
     var i = array.length; var t; var filtered = [];
     while(i--){
@@ -134,16 +78,3 @@ function toArray(objects){
     }
     return array;
 }
- 
-// function txtShrink(){
-//   for (var p = 0; p < doc.pages.length; p++)
-//   {
-//     var frameCount = doc.pages[p].textFrames.count();
-//     for (var i = 0; i < frameCount; i++){
-//        myFrame = doc.pages[p].textFrames[i];
-//        while (myFrame.overflows && myFrame.parentStory.pointSize > minSize){
-//             myFrame.parentStory.pointSize -= stepSize;
-//        }
-//     }
-//   }
-// }
