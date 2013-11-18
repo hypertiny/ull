@@ -9,7 +9,7 @@ var http = require("http");
 // var stepSize = 0.5;
 
 // var document = app.documents.item(0); // active document
-// var allTextFrames = toArray(document.textFrames);
+var allTextFrames = toArray(document.textFrames);
 
 // reply = "";
 // conn = new Socket; // access Adobe’s home page
@@ -35,7 +35,7 @@ get(base_url + 'labels', function(result){
     {
       var label = labels[i];
       get(base_url + label, function(content, url){
-        alert(label + url + content)
+        fill(label, content)
       })
     }
   }
@@ -95,14 +95,14 @@ function get(url, callback)
   }
 }
 
-// function fill(label, value, pointSize){
-//   textFrames = selectWhere(label, "label", allTextFrames);
-//   for (var p = 0; p < textFrames.length; p++)
-//   {
-//     textFrames[p].parentStory.pointSize = pointSize;
-//     textFrames[p].contents = value;
-//   }
-// }
+function fill(label, value, pointSize){
+  textFrames = selectWhere(label, "label", allTextFrames);
+  for (var p = 0; p < textFrames.length; p++)
+  {
+    textFrames[p].parentStory.pointSize = pointSize;
+    textFrames[p].contents = value;
+  }
+}
 
 // function get_answer(label, array){
 //   for (var p = 0; p < array.length; p++)
@@ -116,24 +116,24 @@ function get(url, callback)
 // }
 
 
-// function selectWhere(value, key, array){
-//     var i = array.length; var t; var filtered = [];
-//     while(i--){
-//             t = array[i];
-//             if(t && t[key] == value){
-//                 filtered.push(t);
-//             }
-//     }
-//     return filtered;
-// }
+function selectWhere(value, key, array){
+    var i = array.length; var t; var filtered = [];
+    while(i--){
+            t = array[i];
+            if(t && t[key] == value){
+                filtered.push(t);
+            }
+    }
+    return filtered;
+}
 
-// function toArray(objects){
-//     var i = objects.length; var array = [];
-//     while(i--){
-//             array.push(objects[i]);
-//     }
-//     return array;
-// }
+function toArray(objects){
+    var i = objects.length; var array = [];
+    while(i--){
+            array.push(objects[i]);
+    }
+    return array;
+}
  
 // function txtShrink(){
 //   for (var p = 0; p < doc.pages.length; p++)
