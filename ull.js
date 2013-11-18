@@ -1,9 +1,3 @@
-#include "../extendables/extendables.jsx";
-
-// namespaces, so there are no variables all over the place
-var ui = require("ui");
-var http = require("http");
-
 // var doc = app.documents[0];
 // var minSize = 4;
 // var stepSize = 0.5;
@@ -30,13 +24,16 @@ base_url = 'https://raw.github.com/hypertiny/ull/indesign-2014/'
 get(base_url + 'labels', function(result){
   if(result)
   {
-    labels = result.split("\n")
-    for(var i=0; i< labels.length; i++)
+    labels = result.split(",")
+    for(var i=0; i <= labels.length; i++)
     {
       var label = labels[i];
-      get(base_url + label, function(content, url){
-        fill(label, content)
-      })
+      if(label != undefined)
+      {
+        get(base_url + label, function(content, url){
+          fill(label, content)
+        })
+      }
     }
   }
 })
