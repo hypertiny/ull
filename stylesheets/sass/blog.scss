@@ -1,0 +1,201 @@
+@import 'vendor/bourbon/bourbon';
+@import 'vendor/neat/neat';
+@import 'reset';
+@import 'helpers';
+
+/* Base
+================================ */
+
+body {
+  background: $c-bg;
+  color: $c-red;
+  font-family: $t-fam-primary;
+  font-weight: $t-weight;
+  line-height: $t-leading;
+}
+
+a, a:link, a:visited {
+  font-weight: 500;
+  text-decoration: none;
+}
+
+
+/* Text
+================================ */
+
+// Use the class "text" on any container specifically for textual content
+
+.text {
+
+  p {
+    font-size: $t-size;
+    line-height: $t-leading;
+    margin-bottom: $t-leading;
+
+    @media only screen and (min-width: $small) {
+      font-size: $tz-medium;
+      line-height: $tl-medium;
+      margin-bottom: $tl-medium;
+    }
+  }
+
+  h2 {
+    font-size: $h-size;
+    // margin-bottom: $t-leading;
+    font-weight: 500;
+
+    @media only screen and (min-width: $small) {
+      font-size: $hz-medium;
+      line-height: $hl-medium;
+      // margin-bottom: $tl-medium;
+    }
+  }
+
+  hr {
+    background: $c-red;
+    border: none;
+    height: 2px;
+    width: 40px;
+    margin: 0 0 $t-leading 0;
+
+    @media only screen and (min-width: $small) {
+      margin: 0 0 $tl-medium 0;
+    }
+  }
+
+  a, a:link, a:visited {
+    color: $c-red;
+    font-weight: 500;
+    text-decoration: none;
+    border-bottom: 2px solid #fff;
+    &:hover {
+      border-bottom: 2px solid rgba($c-red, 0.3);
+    }  
+  }
+}
+
+
+/* Main Site
+================================ */
+
+.site-content {
+  @media only screen and (min-width: $medium) {
+    margin: 0 auto $tl-medium*2;
+    width: 40rem;
+  }
+}
+
+.site-footer {
+  margin: 8rem auto 0;
+  padding: 0 1rem;
+
+  @media only screen and (min-width: $small) {
+    padding: 0 4rem;
+    margin: 10rem auto;
+  }
+
+  @media only screen and (min-width: $medium) {
+    max-width: 60rem;
+    width: 80%;
+    padding: 0;
+    margin-bottom: 6rem;
+  }
+}
+
+.site-header {
+  background: #fff;
+  @include clearfix;
+}
+
+// Logo
+
+.logo {
+  margin: $t-leading/2 auto;
+  width: 5em;
+
+  @media only screen and (min-width: $medium) {
+    margin: 2rem auto 1rem;
+    width: 5rem;
+    display: block;
+  }
+}
+
+.logo-wrap {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.blog-strapline {
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  letter-spacing: 0.2rem;
+  margin-top: 0rem;
+  position: relative;
+  left: 0.2rem;
+}
+
+.post-footer {
+  font-size: $t-size;
+}
+
+.site-header a.tickets {
+  color: #fff;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  border-radius: 4px;
+  font-weight: 700;
+  border: 2px solid #fff;
+}
+
+
+/* Blog Posts
+================================ */
+
+.post {
+  margin-bottom: $t-leading;
+  padding: $t-leading 0;
+}
+
+.post-footer {
+  text-transform: uppercase;
+  font-size: 1.1rem !important;
+}
+
+.footer-image {
+  width: 100%;
+
+}
+
+.footer-cta {
+  font-size: 2rem;
+  text-align: center;
+  margin: 2rem auto 0;
+  width: 28rem;
+  line-height: 2.2rem
+}
+
+.purchase-tickets-btn {
+  width: 10rem;
+  background: $c-blue;
+  color: #fff;
+  padding: 1rem;
+  margin: 3rem auto;
+  display: block;
+  text-align: center;
+  border-radius: 4px;
+}
+
+
+/* Register Interest
+================================ */
+
+@include placeholder {
+  color: rgba($c-red, 0.5);
+}
+
+
+
+
+

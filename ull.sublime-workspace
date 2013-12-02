@@ -3,171 +3,23 @@
 	{
 		"selected_items":
 		[
-			[
-				"lts",
-				"letter-spacing"
-			],
-			[
-				"c-main",
-				"c-main-alt"
-			],
-			[
-				"a",
-				"a"
-			],
-			[
-				"ls",
-				"list-style-type"
-			],
-			[
-				"grey",
-				"light-grey-blue"
-			],
-			[
-				"cpa",
-				"capitalize"
-			],
-			[
-				"br",
-				"bdrsa	border-radius"
-			],
-			[
-				"tran",
-				"transparent"
-			],
-			[
-				"rec",
-				"receipt_line"
-			],
-			[
-				"asso",
-				"associate-logos"
-			],
-			[
-				"det",
-				"details-responses"
-			],
-			[
-				"action",
-				"action-bar-btn"
-			],
-			[
-				"no",
-				"nowrap"
-			],
-			[
-				"table",
-				"table-amount"
-			],
-			[
-				"min",
-				"min-width"
-			],
-			[
-				"long-",
-				"long-currency"
-			],
-			[
-				"interest",
-				"interest-registered-heading"
-			],
-			[
-				"no-",
-				"no-upcoming"
-			],
-			[
-				"fu",
-				"future_events"
-			],
-			[
-				"u",
-				"uppercase"
-			],
-			[
-				"ri",
-				"right"
-			],
-			[
-				"box-",
-				"box-sizing"
-			],
-			[
-				"control",
-				"control-label"
-			],
-			[
-				"back",
-				"background-size"
-			],
-			[
-				"tex",
-				"text-align"
-			],
-			[
-				"box",
-				"box-sizing"
-			],
-			[
-				"border",
-				"border-radius"
-			],
-			[
-				"padd",
-				"padding-top"
-			],
-			[
-				"text",
-				"text-transform"
-			],
-			[
-				"backgrou",
-				"background"
-			],
-			[
-				"two",
-				"two-column-dashboard-list"
-			],
-			[
-				"inline",
-				"inline-block"
-			],
-			[
-				"list-style",
-				"list-style-type"
-			],
-			[
-				"chopping-board",
-				"chopping-board-width"
-			],
-			[
-				"progress",
-				"progress-bar"
-			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "index.html",
+			"file": "blog/index.html",
 			"settings":
 			{
-				"buffer_size": 2312,
+				"buffer_size": 1204,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "stylesheets/sass/screen.scss",
+			"file": "stylesheets/sass/blog.scss",
 			"settings":
 			{
-				"buffer_size": 4201,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "stylesheets/sass/_helpers.scss",
-			"settings":
-			{
-				"buffer_size": 1736,
+				"buffer_size": 2825,
 				"line_ending": "Unix"
 			}
 		}
@@ -175,75 +27,22 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 159.0,
+		"height": 247.0,
 		"selected_items":
 		[
 			[
-				"syn htm",
-				"Set Syntax: HTML"
-			],
-			[
-				"insa",
-				"Package Control: Install Package"
-			],
-			[
 				"install",
 				"Package Control: Install Package"
-			],
-			[
-				"pakcins",
-				"Package Control: Install Package"
-			],
-			[
-				"syn hmtl",
-				"Set Syntax: HTML (Tcl)"
-			],
-			[
-				"insall",
-				"Package Control: Install Package"
-			],
-			[
-				"brow",
-				"Preferences: Browse Packages"
-			],
-			[
-				"pref",
-				"Preferences: Settings - User"
-			],
-			[
-				"prefere",
-				"Preferences: Settings - User"
-			],
-			[
-				"syn sass",
-				"Set Syntax: Sass"
-			],
-			[
-				"preferences",
-				"Preferences: Settings - User"
-			],
-			[
-				"bind",
-				"Preferences: Key Bindings - User"
-			],
-			[
-				"sass",
-				"Set Syntax: Sass"
-			],
-			[
-				"key",
-				"Preferences: Key Bindings - User"
-			],
-			[
-				"default",
-				"Preferences: Settings - Default"
 			]
 		],
 		"width": 435.0
 	},
 	"console":
 	{
-		"height": 141.0
+		"height": 0.0,
+		"history":
+		[
+		]
 	},
 	"distraction_free":
 	{
@@ -256,159 +55,18 @@
 	},
 	"file_history":
 	[
-		"/Users/kilmc/Sites/Hypertiny/ull/.gitignore",
-		"/Users/kilmc/Sites/Hypertiny/ull/stylesheets/sass/screen.scss",
-		"/Users/kilmc/Sites/flightfast/index.html",
-		"/Users/kilmc/Sites/kilmc.com/about/index.html",
-		"/Users/kilmc/Sites/kilmc.com/_includes/footer-alt.html",
-		"/Users/kilmc/Sites/kilmc.com/style/sass/_forms.scss",
-		"/Users/kilmc/Sites/kilmc.com/style/sass/jessica.scss",
-		"/Users/kilmc/Sites/kilmc.com/_includes/header.html",
-		"/Users/kilmc/Sites/kilmc.com/_includes/footer.html",
-		"/Users/kilmc/Sites/kilmc.com/.siteleafignore",
-		"/Users/kilmc/Sites/kilmc.com/style/sass/.siteleafignore",
-		"/Users/kilmc/Sites/kilmc.com/style/sass/_helpers.scss",
-		"/Users/kilmc/Sites/kilmc.com/style/sass/_colours.scss",
-		"/Users/kilmc/Sites/kilmc.com/style/sass/screen.scss",
-		"/Users/kilmc/Sites/kilmc.com/style/sass/jessica.css",
-		"/Users/kilmc/Sites/kilmc.com/index.html",
-		"/Users/kilmc/Sites/kilmc.com/collections/default.html",
-		"/Users/kilmc/Sites/kilmc.com/default.html",
-		"/Users/kilmc/Sites/kilmc.com/writing/default.html",
-		"/Users/kilmc/Sites/kilmc.com/photography/index.html",
-		"/Users/kilmc/Sites/kilmc.com/_includes/head.html",
-		"/Users/kilmc/Sites/kilmc.com/scripts/nav.js",
-		"/Users/kilmc/Sites/kilmc.com/writing/archive.html",
-		"/Users/kilmc/Sites/kilmc.com/_includes/header-alt.html",
-		"/Users/kilmc/Sites/kilmc.com/.gitignore",
-		"/Users/kilmc/Sites/kilmc.com/default-old.html",
-		"/Users/kilmc/Sites/kilmc.com/scripts/avenir.js",
-		"/Users/kilmc/Sites/Hypertiny/Tito/.git/refs/heads/colour-variants",
-		"/Users/kilmc/Sites/kilmc.com/blog/default.html",
-		"/Users/kilmc/Sites/kilmc.com/.git/HEAD",
-		"/Users/kilmc/Sites/kilmc.com/writing:default.html",
-		"/Users/kilmc/Sites/kilmc.com/head.html",
-		"/Users/kilmc/Sites/kilmc.com/header.html",
-		"/Users/kilmc/Sites/kilmc.com/style/sass/_reset.scss",
-		"/Users/kilmc/Sites/kilmc.com/assets/stylesheets/sass/screen.scss",
-		"/Users/kilmc/Sites/test/orders-bg/index.html",
-		"/Users/kilmc/Sites/Hypertiny/Tito/app/assets/stylesheets/application/nav.css.scss",
-		"/Users/kilmc/Sites/Hypertiny/Tito/app/views/organizer/releases/index.html.erb",
-		"/Users/kilmc/Sites/Hypertiny/Tito/app/assets/stylesheets/application/dash_modules.css.scss",
-		"/Users/kilmc/Sites/Hypertiny/Tito/app/assets/stylesheets/application/mobile.css.scss",
-		"/Users/kilmc/Sites/Hypertiny/Tito/app/assets/stylesheets/outer/_bootstrap.scss",
-		"/Users/kilmc/Sites/Hypertiny/Tito/app/assets/stylesheets/outer.css",
-		"/Users/kilmc/Sites/Hypertiny/Tito/app/assets/stylesheets/outer/event-homepage.scss",
-		"/Users/kilmc/Sites/Hypertiny/Tito/app/views/layouts/_nav.html.erb",
-		"/Users/kilmc/Sites/Hypertiny/Tito/app/views/layouts/page.html.erb",
-		"/Users/kilmc/Sites/Hypertiny/Tito/app/views/events/js_embed/v3/show.html.erb",
-		"/Users/kilmc/Sites/Hypertiny/Tito/app/views/layouts/application.html.erb",
-		"/Users/kilmc/Sites/Hypertiny/Tito/app/assets/stylesheets/outer/homepage-primary.css.scss",
-		"/Users/kilmc/Sites/Hypertiny/Tito/app/assets/stylesheets/outer/supercombo.css.scss",
-		"/Users/kilmc/Sites/Hypertiny/Tito/app/assets/stylesheets/outer/layouts.css.scss",
-		"/Users/kilmc/Sites/Hypertiny/Tito/app/assets/stylesheets/outer/tickets-form.css.scss",
-		"/Users/kilmc/Sites/Hypertiny/Tito/app/models/release.rb",
-		"/Users/kilmc/Sites/Hypertiny/Tito/app/assets/stylesheets/outer/ticket-questions.css.scss",
-		"/Users/kilmc/Sites/Hypertiny/Tito/app/assets/stylesheets/outer/ticket.css.scss",
-		"/Users/kilmc/Sites/Hypertiny/Tito/app/assets/stylesheets/outer/_helpers+variables.scss",
-		"/Users/kilmc/Sites/Hypertiny/Tito/app/assets/stylesheets/outer/modules.css.scss",
-		"/Users/kilmc/Sites/Hypertiny/Tito/app/assets/stylesheets/outer/account-profile.css.scss",
-		"/Users/kilmc/Sites/Hypertiny/Tito/app/assets/stylesheets/outer/ticket-allocation.css.scss",
-		"/Users/kilmc/Sites/Hypertiny/Tito/app/assets/stylesheets/outer/terms.css.scss",
-		"/Users/kilmc/Sites/Hypertiny/Tito/app/assets/stylesheets/outer/summary.css.scss",
-		"/Users/kilmc/Sites/Hypertiny/Tito/app/assets/stylesheets/outer/states.css.scss",
-		"/Users/kilmc/Sites/Hypertiny/Tito/app/assets/stylesheets/outer/purchase-flow.css.scss",
-		"/Users/kilmc/Sites/Hypertiny/Tito/app/assets/stylesheets/outer/public-timeline.css.scss",
-		"/Users/kilmc/Sites/Hypertiny/Tito/app/assets/stylesheets/outer/progress.css.scss",
-		"/Users/kilmc/Sites/Hypertiny/Tito/app/assets/stylesheets/outer/processing.css.scss",
-		"/Users/kilmc/Sites/Hypertiny/Tito/app/assets/stylesheets/outer/outer-global-styles.css.scss",
-		"/Users/kilmc/Sites/Hypertiny/Tito/app/assets/stylesheets/outer/outer-footer.css.scss",
-		"/Users/kilmc/Sites/Hypertiny/Tito/app/assets/stylesheets/outer/main.css.scss",
-		"/Users/kilmc/Sites/Hypertiny/Tito/app/assets/stylesheets/outer/embed.css.scss",
-		"/Users/kilmc/Sites/Hypertiny/Tito/app/assets/stylesheets/outer/credit-card-form.css.scss",
-		"/Users/kilmc/Sites/Hypertiny/Tito/app/assets/stylesheets/outer/completed-registration.css.scss",
-		"/Users/kilmc/Sites/Hypertiny/Tito/app/assets/stylesheets/outer/card-options.css.scss",
-		"/Users/kilmc/Sites/Hypertiny/Tito/app/assets/stylesheets/outer/base.css.scss",
-		"/Users/kilmc/Sites/Hypertiny/Tito/app/assets/stylesheets/outer/assign.css.scss",
-		"/Users/kilmc/Sites/Hypertiny/Tito/app/assets/stylesheets/shared/_helpers.scss",
-		"/Users/kilmc/Sites/Hypertiny/Tito/app/assets/stylesheets/shared/_variables.scss",
-		"/Users/kilmc/Sites/Hypertiny/Tito/app/assets/stylesheets/outer/helpers+variables.css.scss",
-		"/Users/kilmc/Sites/Hypertiny/Tito/app/assets/stylesheets/shared/_card_options.css.scss",
-		"/Users/kilmc/Sites/Hypertiny/Tito/app/assets/stylesheets/shared/_bootstrap.scss",
-		"/Users/kilmc/Sites/Hypertiny/Tito/app/assets/stylesheets/application.css",
-		"/Users/kilmc/Sites/Hypertiny/Tito/app/views/events/js_embed/show.css",
-		"/Users/kilmc/Sites/Hypertiny/Tito/app/assets/stylesheets/outer/register-form.css.scss",
-		"/Users/kilmc/Sites/Hypertiny/Tito/app/assets/stylesheets/outer/_modules.scss",
-		"/Users/kilmc/Sites/Hypertiny/Tito/app/views/events/js_embed/v2/show.html.erb",
-		"/Users/kilmc/Sites/Hypertiny/Tito/app/views/organizer/releases/_form.html.erb",
-		"/Users/kilmc/Sites/Hypertiny/Tito/app/views/events/registrations/regular/_show_incomplete.html.erb",
-		"/Users/kilmc/Sites/Hypertiny/Tito/app/views/events/events/show.html.erb",
-		"/Users/kilmc/Desktop/index.html",
-		"/Users/kilmc/Sites/Hypertiny/Tito/app/assets/stylesheets/outer/_base.scss",
-		"/Users/kilmc/Sites/Hypertiny/Tito/app/assets/stylesheets/outer/_layouts.scss",
-		"/Users/kilmc/Sites/Hypertiny/Tito/app/assets/stylesheets/outer/_states.scss",
-		"/Users/kilmc/Sites/Hypertiny/Tito/app/assets/stylesheets/outer/style.css.scss",
-		"/Users/kilmc/Sites/Hypertiny/Tito/app/models/registration.rb",
-		"/Users/kilmc/Sites/Hypertiny/Tito/app/views/events/registrations/regular/_show_complete.html.erb",
-		"/Users/kilmc/Sites/Hypertiny/Tito/app/views/organizer/ticket_types/index.html.erb",
-		"/Users/kilmc/Sites/Hypertiny/Tito/app/views/events/payments/_summary.html.erb",
-		"/Users/kilmc/Sites/Hypertiny/tito/db/migrate/20130823141841_create_releases_combo_releases.rb",
-		"/Users/kilmc/Sites/Hypertiny/Tito/app/assets/stylesheets/checkin/attendee_info.css.scss",
-		"/Users/kilmc/Sites/Hypertiny/Tito/app/assets/stylesheets/checkin/_variables.css.scss",
-		"/Users/kilmc/Sites/Hypertiny/Tito/app/assets/stylesheets/checkin/layouts.css.scss",
-		"/Users/kilmc/Sites/Hypertiny/Tito/app/assets/stylesheets/checkin/base.css.scss",
-		"/Users/kilmc/Sites/Hypertiny/Tito/app/assets/stylesheets/application/dashboard.css.scss",
-		"/Users/kilmc/Sites/Hypertiny/Tito/app/assets/stylesheets/checkin/header.css.scss",
-		"/Users/kilmc/Sites/Hypertiny/Tito/app/assets/stylesheets/checkin/attendee_list.css.scss",
-		"/Users/kilmc/Sites/Hypertiny/Tito/app/assets/stylesheets/home/style.css.scss",
-		"/Users/kilmc/Sites/Hypertiny/Tito/app/assets/stylesheets/application/settings.css.scss",
-		"/Users/kilmc/Sites/Hypertiny/Tito/app/assets/stylesheets/application/_mixins.css.scss",
-		"/Users/kilmc/Sites/Hypertiny/Tito/app/views/organizer/registrations/registrations/index.html.erb",
-		"/Users/kilmc/Sites/Hypertiny/Tito/app/assets/stylesheets/application/orders.css.scss",
-		"/Users/kilmc/Sites/Hypertiny/Tito/app/views/layouts/_modal.html.erb",
-		"/Users/kilmc/Sites/Hypertiny/Tito/app/views/organizer/settings/basics/edit.html.erb",
-		"/Users/kilmc/Sites/Hypertiny/Tito/app/views/events/checkin_lists/_attendee_show.html.erb",
-		"/Users/kilmc/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
-		"/Users/kilmc/Sites/Hypertiny/Tito/app/assets/stylesheets/application/_variables.css.scss",
-		"/Users/kilmc/Sites/Hypertiny/Tito/app/views/events/checkin_lists/tickets/show.html.erb",
-		"/Users/kilmc/Sites/Hypertiny/Tito/app/views/organizer/checkin_lists/show.html.erb",
-		"/Users/kilmc/Sites/Hypertiny/Tito/app/views/events/checkin_lists/show.html.erb",
-		"/Users/kilmc/Sites/Hypertiny/Tito/app/views/organizer/events/_dashboard.html.erb",
-		"/Users/kilmc/Sites/Hypertiny/Tito/app/assets/stylesheets/application/action_bar.css.scss",
-		"/Users/kilmc/Sites/Hypertiny/Tito/app/assets/stylesheets/application/checkin.css.scss",
-		"/Users/kilmc/Sites/Hypertiny/Tito/app/views/organizer/releases/_release.html.erb",
-		"/Users/kilmc/Sites/Hypertiny/Tito/app/assets/stylesheets/application/standard_list.css.scss",
-		"/Users/kilmc/Sites/Hypertiny/Tito/app/views/organizer/releases/_show.html.erb",
-		"/Users/kilmc/Sites/Hypertiny/Tito/app/assets/stylesheets/application/releases.css.scss",
-		"/Users/kilmc/Sites/Hypertiny/Tito/app/views/organizer/reports/index.html.erb",
-		"/Users/kilmc/Sites/Hypertiny/Tito/app/assets/stylesheets/application/empty_list_overlay.css.scss",
-		"/Users/kilmc/Sites/Hypertiny/Tito/app/views/organizer/events/show.html.erb",
-		"/Users/kilmc/Sites/Hypertiny/Tito/app/views/organizer/registrations/registrations/show.html.erb"
+		"/Users/kilmc/Sites/Hypertiny/ull/stylesheets/css/blog.css",
+		"/Users/kilmc/Sites/Hypertiny/ull/stylesheets/sass/screen.scss"
 	],
 	"find":
 	{
-		"height": 33.0
+		"height": 0.0
 	},
 	"find_in_files":
 	{
 		"height": 0.0,
 		"where_history":
 		[
-			"",
-			"*.scss, *.html,",
-			"*.scss, *.html.erb,",
-			"*.scss, *.html.erb, .js, .coffee",
-			"*.scss, *.html.erb",
-			"",
-			"*.scss, *.html.erb",
-			"*.scss, *.html",
-			"*.scss, .html",
-			"*.scss",
-			"*.css.scss",
-			"*css.scss",
-			"*.scss",
-			".scss",
-			""
 		]
 	},
 	"find_state":
@@ -416,134 +74,6 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-			"main-image",
-			"<<",
-			">>>>",
-			"arrivalDateTime",
-			"placehol",
-			"about",
-			"  <script type=\"text/javascript\" src=\"//use.typekit.net/avf7smn.js\"></script>\n  <script type=\"text/javascript\">try{Typekit.load();}catch(e){}</script>",
-			"h2",
-			"post",
-			"post-info",
-			"tag",
-			"taxonomy",
-			"tag",
-			"text",
-			"ave",
-			"aveni",
-			"main",
-			"Fonts",
-			"font-w",
-			"fonts",
-			"Fonts",
-			"fonts",
-			"Fonts",
-			"red",
-			"=\"#\">",
-			"<<<<",
-			"2%",
-			"ticket-details",
-			"action",
-			".progress-bar",
-			"ticket-price",
-			"}",
-			"chopping-board-nav ",
-			"#main",
-			"#mobile",
-			"<<<<",
-			">>>>",
-			".progress-bar",
-			"first-of-type",
-			"19px 0 0 0",
-			"text-field",
-			"';\n",
-			".is-open",
-			"ticket-pruchase-wrap",
-			"supercombo",
-			"tito-register-form",
-			"release_ids",
-			".ticket-list",
-			"settingsetting",
-			"setting",
-			"edit",
-			"ticket-status normal",
-			"edit",
-			"ticket-purchase-edit-button",
-			"ticket-purchase-edit",
-			".ticket-status",
-			"            \n",
-			"thank",
-			"edit",
-			"PLEASE COMPLETE",
-			"completed-registration",
-			"Thank you!",
-			"PLEASE COMPLETE YOUR REGISTRATION",
-			"Pay & continue",
-			"dl class=\"total",
-			"pay & continue",
-			"registration-summary",
-			"registration",
-			"summary",
-			"ul class=\"ticket",
-			".m-summary",
-			"ticket m-summary",
-			"text",
-			"ticket-secondary",
-			">\n",
-			"shipweek",
-			".register",
-			"register",
-			"primary",
-			"h3",
-			"tito-tickets",
-			"ticket-status-sold-out",
-			"ticket-status ticket-status-sold-out",
-			"sold out",
-			"ticket-secondary",
-			"tito-releases",
-			"after",
-			"before",
-			"price",
-			"hover",
-			"label",
-			"buttons",
-			"outer",
-			"buttons",
-			"tito-ticket",
-			"back to ",
-			"unstyled-inline",
-			"event-settings-nav",
-			"basics",
-			"path",
-			"asset-path",
-			"action",
-			".dashbo",
-			".dashboard",
-			".dahsboard",
-			";\n",
-			"h3",
-			".dashboard",
-			"registrations-index",
-			">>>>",
-			"checkin-status",
-			"checkin",
-			"cancel",
-			"$red",
-			"checkin-status",
-			"checkin",
-			"checkin-status",
-			"cancel check",
-			"toggler",
-			"attendee-info-conatiner",
-			"min-width: 500px",
-			"checkin-container",
-			"attendee-info",
-			".fixed",
-			"attendee-",
-			".fixed",
-			"checkin-status-wrap",
-			"checkmark"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -561,15 +91,16 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "index.html",
+					"file": "blog/index.html",
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2312,
+						"buffer_size": 1204,
 						"regions":
 						{
 						},
@@ -582,9 +113,6 @@
 						],
 						"settings":
 						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
 							"syntax": "Packages/HTML/HTML.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
@@ -597,62 +125,29 @@
 				},
 				{
 					"buffer": 1,
-					"file": "stylesheets/sass/screen.scss",
+					"file": "stylesheets/sass/blog.scss",
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4201,
+						"buffer_size": 2825,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								1889,
+								1889
 							]
 						],
 						"settings":
 						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/Syntax Highlighting for Sass/Syntaxes/SCSS.tmLanguage",
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 4309.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "stylesheets/sass/_helpers.scss",
-					"settings":
-					{
-						"buffer_size": 1736,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								808,
-								808
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/Syntax Highlighting for Sass/Syntaxes/SCSS.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 55.0,
+						"translation.y": 1019.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -662,11 +157,11 @@
 	],
 	"incremental_find":
 	{
-		"height": 0.0
+		"height": 23.0
 	},
 	"input":
 	{
-		"height": 33.0
+		"height": 0.0
 	},
 	"layout":
 	{
@@ -691,14 +186,7 @@
 		]
 	},
 	"menu_visible": true,
-	"output.exec":
-	{
-		"height": 102.0
-	},
-	"output.sftp":
-	{
-		"height": 0.0
-	},
+	"project": "ull.sublime-project",
 	"replace":
 	{
 		"height": 0.0
@@ -710,516 +198,12 @@
 		"selected_items":
 		[
 			[
-				"git",
-				".gitignore"
-			],
-			[
-				"scree",
-				"stylesheets/sass/screen.scss"
-			],
-			[
-				"help",
-				"stylesheets/sass/_helpers.scss"
-			],
-			[
-				"ind",
-				"index.html"
-			],
-			[
-				"inde",
-				"index.html"
-			],
-			[
-				"variable",
-				"stylesheets/sass/vendor/bootstrap/_variables.scss"
+				"blog",
+				"stylesheets/css/blog.css"
 			],
 			[
 				"screen",
 				"stylesheets/sass/screen.scss"
-			],
-			[
-				"sit",
-				"js/site.js"
-			],
-			[
-				"header",
-				"_includes/header.html"
-			],
-			[
-				"about",
-				"about/index.html"
-			],
-			[
-				"footer",
-				"_includes/footer-alt.html"
-			],
-			[
-				"ignor",
-				"style/sass/.siteleafignore"
-			],
-			[
-				"jess",
-				"style/sass/jessica.scss"
-			],
-			[
-				"hel",
-				"style/sass/_helpers.scss"
-			],
-			[
-				"head",
-				"_includes/header.html"
-			],
-			[
-				"foot",
-				"_includes/footer.html"
-			],
-			[
-				"nav",
-				"scripts/nav.js"
-			],
-			[
-				"",
-				"writing/default.html"
-			],
-			[
-				"writ",
-				"writing/default.html"
-			],
-			[
-				"helper",
-				"style/sass/_helpers.scss"
-			],
-			[
-				"scr",
-				"style/sass/screen.scss"
-			],
-			[
-				"layeven",
-				"app/views/layouts/event.html.erb"
-			],
-			[
-				"colourcss",
-				"app/assets/stylesheets/outer/homepage-colour-variants.css.scss"
-			],
-			[
-				"col",
-				".git/refs/heads/colour-variants"
-			],
-			[
-				"writing",
-				"writing.html"
-			],
-			[
-				"reset",
-				"style/sass/_reset.scss"
-			],
-			[
-				"styl",
-				"stylesheets/css/screen.css"
-			],
-			[
-				"outer.",
-				"app/assets/stylesheets/outer.css"
-			],
-			[
-				"layouapp",
-				"app/views/layouts/application.html.erb"
-			],
-			[
-				"applayout",
-				"app/assets/stylesheets/checkin/layouts.css.scss"
-			],
-			[
-				"mobicss",
-				"app/assets/stylesheets/application/mobile.css.scss"
-			],
-			[
-				"laynav",
-				"app/views/layouts/_nav.html.erb"
-			],
-			[
-				"laypag",
-				"app/views/layouts/page.html.erb"
-			],
-			[
-				"release.rb",
-				"app/models/release.rb"
-			],
-			[
-				"releaserb",
-				"app/models/release.rb"
-			],
-			[
-				"jsshow",
-				"app/views/events/js_embed/v3/show.html.erb"
-			],
-			[
-				"outlay",
-				"app/assets/stylesheets/outer/layouts.css.scss"
-			],
-			[
-				"cardoption",
-				"app/assets/stylesheets/shared/_card_options.css.scss"
-			],
-			[
-				"outst",
-				"app/assets/stylesheets/outer/style.css.scss"
-			],
-			[
-				"sharedboo",
-				"app/assets/stylesheets/shared/_bootstrap.scss"
-			],
-			[
-				"out",
-				"app/assets/stylesheets/outer.css"
-			],
-			[
-				"appcss",
-				"app/assets/stylesheets/application.css"
-			],
-			[
-				"oute",
-				"app/assets/stylesheets/outer.css"
-			],
-			[
-				"modules",
-				"app/assets/stylesheets/outer/_modules.scss"
-			],
-			[
-				"showcss",
-				"app/views/events/js_embed/show.css"
-			],
-			[
-				"register-form",
-				"app/assets/stylesheets/outer/register-form.css.scss"
-			],
-			[
-				"modul",
-				"app/assets/stylesheets/outer/_modules.scss"
-			],
-			[
-				"embed",
-				"app/assets/stylesheets/outer/embed.css.scss"
-			],
-			[
-				"relefo",
-				"app/views/organizer/releases/_form.html.erb"
-			],
-			[
-				"outercss",
-				"app/assets/stylesheets/outer.css"
-			],
-			[
-				"registration.",
-				"app/models/registration.rb"
-			],
-			[
-				"applicacss",
-				"app/assets/stylesheets/application.css"
-			],
-			[
-				"chekvar",
-				"app/assets/stylesheets/checkin/_variables.css.scss"
-			],
-			[
-				"checkinbase",
-				"app/assets/stylesheets/checkin/base.css.scss"
-			],
-			[
-				"checklist",
-				"app/assets/stylesheets/checkin/attendee_list.css.scss"
-			],
-			[
-				"checkinshow",
-				"app/views/organizer/checkin_lists/show.html.erb"
-			],
-			[
-				"checkinhead",
-				"app/assets/stylesheets/checkin/header.css.scss"
-			],
-			[
-				"relerel",
-				"app/views/organizer/releases/_release.html.erb"
-			],
-			[
-				"releind",
-				"app/views/organizer/releases/index.html.erb"
-			],
-			[
-				"dashmo",
-				"app/assets/stylesheets/application/dash_modules.css.scss"
-			],
-			[
-				"dashbocss",
-				"app/assets/stylesheets/application/dashboard.css.scss"
-			],
-			[
-				"dash",
-				"app/assets/stylesheets/application/dash_modules.css.scss"
-			],
-			[
-				"docsdo",
-				"app/assets/stylesheets/docs/docs.css.scss"
-			],
-			[
-				"docs",
-				"app/assets/stylesheets/docs.css"
-			],
-			[
-				"dashbcss",
-				"app/assets/stylesheets/application/dashboard.css.scss"
-			],
-			[
-				"main",
-				"app/assets/stylesheets/application/main.css.scss"
-			],
-			[
-				"dashmod",
-				"app/assets/stylesheets/application/dash_modules.css.scss"
-			],
-			[
-				"appliccss",
-				"app/assets/stylesheets/application.css"
-			],
-			[
-				"progress",
-				"app/assets/stylesheets/outer/progress.css.scss"
-			],
-			[
-				"docscss",
-				"app/assets/stylesheets/docs.css"
-			],
-			[
-				"docs-2",
-				"app/assets/stylesheets/docs/docs-2.css.scss"
-			],
-			[
-				"wid",
-				"app/views/docs/_widget.html.md"
-			],
-			[
-				"getting",
-				"app/views/docs/_getting_started.html.md"
-			],
-			[
-				"paymentoptions",
-				"app/views/docs/_payment_options.html.md"
-			],
-			[
-				"home",
-				"app/assets/stylesheets/home/style.css.scss"
-			],
-			[
-				"checkjs",
-				"app/assets/javascripts/checkin.js"
-			],
-			[
-				"chekbas",
-				"app/assets/stylesheets/checkin/_base.css.scss"
-			],
-			[
-				"chehelp",
-				"app/assets/stylesheets/checkin/_helpers.css.scss"
-			],
-			[
-				"cheklay",
-				"app/assets/stylesheets/checkin/_layouts.css.scss"
-			],
-			[
-				"cheknav",
-				"app/assets/stylesheets/checkin/_checkin-nav.css.scss"
-			],
-			[
-				"sycheck",
-				"app/assets/stylesheets/checkin.css"
-			],
-			[
-				"snap",
-				"app/assets/javascripts/application/snap.js"
-			],
-			[
-				"attendeelist",
-				"app/assets/stylesheets/checkin/_attendee-list.css.scss"
-			],
-			[
-				"checkhead",
-				"app/assets/stylesheets/checkin/_header.css.scss"
-			],
-			[
-				"untite",
-				"app/assets/stylesheets/checkin/untitled"
-			],
-			[
-				"checkinstyle",
-				"app/assets/stylesheets/checkin/style.css.scss"
-			],
-			[
-				"checkin",
-				"app/assets/stylesheets/checkin.css"
-			],
-			[
-				"checkin.css",
-				"app/assets/stylesheets/checkin.css"
-			],
-			[
-				"scss",
-				"app/views/events/js_embed/show.css"
-			],
-			[
-				"appcheckinjs",
-				"app/assets/javascripts/application/checkins.js"
-			],
-			[
-				"chvar",
-				"app/assets/stylesheets/checkin/_variables.css.scss"
-			],
-			[
-				"chekvari",
-				"app/assets/stylesheets/checkin/_variables.css.scss"
-			],
-			[
-				"checkhelp",
-				"app/assets/stylesheets/checkin/_helpers.css.scss"
-			],
-			[
-				"appcheckinscss",
-				"app/assets/stylesheets/application/checkin.css.scss"
-			],
-			[
-				"gitig",
-				".gitignore"
-			],
-			[
-				"chehead",
-				"app/assets/stylesheets/checkin/_header.css.scss"
-			],
-			[
-				"checkatte",
-				"app/assets/stylesheets/checkin/_attendee-list.css.scss"
-			],
-			[
-				"laychec",
-				"app/views/layouts/checkin.html.erb"
-			],
-			[
-				"chescss",
-				"app/assets/stylesheets/application/helpers.css.scss"
-			],
-			[
-				"layout",
-				"app/assets/stylesheets/outer/_layouts.scss"
-			],
-			[
-				"refundcss",
-				"app/assets/stylesheets/application/refunds.css.scss"
-			],
-			[
-				"retconfirm",
-				"app/views/organizer/registrations/returns/_confirm.html.erb"
-			],
-			[
-				"variab",
-				"app/assets/stylesheets/application/_variables.css.scss"
-			],
-			[
-				"viewer",
-				"app/assets/javascripts/organizer/viewer.js.coffee"
-			],
-			[
-				"flashp",
-				"app/assets/javascripts/application/flash_presenter.js.coffee"
-			],
-			[
-				"return",
-				"app/assets/javascripts/organizer/returns.js.coffee"
-			],
-			[
-				"regshow",
-				"app/views/organizer/registrations/registrations/_show.html.erb"
-			],
-			[
-				"regisscss",
-				"app/assets/stylesheets/application/registrations.css.scss"
-			],
-			[
-				"action",
-				"app/assets/stylesheets/application/action_bar.css.scss"
-			],
-			[
-				"gem",
-				"Gemfile"
-			],
-			[
-				"modu",
-				"app/assets/stylesheets/outer/_modules.scss"
-			],
-			[
-				".text.erb",
-				"app/views/users_mailer/added_to_account_notification.text.erb"
-			],
-			[
-				"email",
-				"app/views/organizer/registrations/_email.html.erb"
-			],
-			[
-				"complete",
-				"app/views/events/registrations/regular/_show_complete.html.erb"
-			],
-			[
-				"comple",
-				"app/views/users/registrations/complete.html.erb"
-			],
-			[
-				"outmo",
-				"app/assets/stylesheets/outer/_modules.scss"
-			],
-			[
-				"tickrb",
-				"app/models/ticket.rb"
-			],
-			[
-				"tickind",
-				"app/views/organizer/tickets/index.html.erb"
-			],
-			[
-				"outerla",
-				"app/assets/stylesheets/outer/_layouts.scss"
-			],
-			[
-				"base",
-				"app/assets/stylesheets/shared/_base.scss"
-			],
-			[
-				"notl",
-				"app/views/events/events/not_live.html.erb"
-			],
-			[
-				"outermo",
-				"app/assets/stylesheets/outer/_modules.scss"
-			],
-			[
-				"outer",
-				"app/assets/stylesheets/outer/_layouts.scss"
-			],
-			[
-				"not_",
-				"app/views/events/events/not_live.html.erb"
-			],
-			[
-				"404",
-				"public/404.html"
-			],
-			[
-				"routes",
-				"config/routes.rb"
-			],
-			[
-				"evenshot",
-				"app/views/events/events/show.html.erb"
-			],
-			[
-				"eventshow",
-				"app/views/events/events/show.html.erb"
 			]
 		],
 		"width": 0.0
@@ -1229,85 +213,27 @@
 		"height": 500.0,
 		"selected_items":
 		[
-			[
-				"",
-				"/Users/kilmc/Sites/kilmc.com/Kilmc.com.sublime-project"
-			],
-			[
-				"kolmc",
-				"/Users/kilmc/Sites/kilmc.com/Kilmc.com.sublime-project"
-			],
-			[
-				"tit",
-				"/Users/kilmc/Sites/Hypertiny/Sublime Projects/Tito.sublime-project"
-			],
-			[
-				"rons",
-				"/Users/kilmc/Sites/Siteleaf/rons.sublime-project"
-			],
-			[
-				"tt",
-				"/Users/kilmc/Sites/Hypertiny/Sublime Projects/Tito.sublime-project"
-			],
-			[
-				"tito",
-				"/Users/kilmc/Sites/Hypertiny/Sublime Projects/Tito.sublime-project"
-			],
-			[
-				"mind",
-				"/Users/kilmc/Sites/ideas.kilmc.com/mindspill.sublime-project"
-			],
-			[
-				"safe",
-				"/Users/kilmc/Sites/Safecast/Safecast.org/Safecast.sublime-project"
-			],
-			[
-				"ull",
-				"/Users/kilmc/Sites/Hypertiny/Ull-New.sublime-project"
-			],
-			[
-				"kilmc",
-				"/Users/kilmc/Sites/kilmc.com/Kilmc.com.sublime-project"
-			],
-			[
-				"puddin",
-				"/Users/kilmc/Sites/pudding/pudding.sublime-project"
-			],
-			[
-				"pudding",
-				"/Users/kilmc/Sites/pudding/pudding.sublime-project"
-			],
-			[
-				"kilm",
-				"/Users/kilmc/Sites/Git/Sublime Projects/Kilmc.sublime-project"
-			],
-			[
-				"tut",
-				"/Users/kilmc/Sites/Hypertiny/Sublime Projects/Tito.sublime-project"
-			],
-			[
-				"lam",
-				"/Users/kilmc/Sites/Lambstongue/Lambstongue.sublime-project"
-			],
-			[
-				"la",
-				"/Users/kilmc/Sites/Lambstongue/Lambstongue.sublime-project"
-			],
-			[
-				"kilmc ",
-				"/Users/kilmc/Sites/Git/Sublime Projects/Kilmc.sublime-project"
-			],
-			[
-				"ki",
-				"/Users/kilmc/Sites/Git/Sublime Projects/kirby.sublime-project"
-			]
 		],
 		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
 	},
 	"show_minimap": false,
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": false,
-	"side_bar_width": 247.0,
-	"status_bar_visible": true
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
 }

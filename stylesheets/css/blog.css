@@ -124,74 +124,140 @@ body {
   color: #ec5d60;
   font-family: "museo-sans", sans-serif;
   font-weight: 300;
-  line-height: 1.7rem; }
+  line-height: 1.5rem; }
 
 a, a:link, a:visited {
-  color: #70181a;
+  font-weight: 500;
   text-decoration: none; }
 
 /* Text
 ================================ */
 .text p {
-  font-size: 1.2rem;
-  line-height: 1.7rem;
-  margin-bottom: 1.7rem; }
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  margin-bottom: 1.5rem; }
+  @media only screen and (min-width: 480px) {
+    .text p {
+      font-size: 1.3rem;
+      line-height: 2rem;
+      margin-bottom: 2rem; } }
 .text h2 {
-  font-size: 1.4rem;
-  margin-bottom: 1.7rem;
+  font-size: 1.5em;
   font-weight: 500; }
+  @media only screen and (min-width: 480px) {
+    .text h2 {
+      font-size: 1.8em;
+      line-height: 2.2rem; } }
+.text hr {
+  background: #ec5d60;
+  border: none;
+  height: 2px;
+  width: 40px;
+  margin: 0 0 1.5rem 0; }
+  @media only screen and (min-width: 480px) {
+    .text hr {
+      margin: 0 0 2rem 0; } }
+.text a, .text a:link, .text a:visited {
+  color: #ec5d60;
+  font-weight: 500;
+  text-decoration: none;
+  border-bottom: 2px solid #fff; }
+  .text a:hover, .text a:link:hover, .text a:visited:hover {
+    border-bottom: 2px solid rgba(236, 93, 96, 0.3); }
 
 /* Main Site
 ================================ */
-.site-wrapper {
-  padding: 0 1em;
-  max-width: 30rem;
-  margin: 3.4rem auto 1.7rem; }
-  @media only screen and (min-height: 900px) and (min-width: 850px) {
-    .site-wrapper {
-      margin-top: 16rem;
-      width: 30rem; } }
+@media only screen and (min-width: 850px) {
+  .site-content {
+    margin: 0 auto 4rem;
+    width: 40rem; } }
 
-.site-logo {
-  font-size: 1.2rem;
-  font-weight: 300; }
+.site-footer {
+  margin: 8rem auto 0;
+  padding: 0 1rem; }
+  @media only screen and (min-width: 480px) {
+    .site-footer {
+      padding: 0 4rem;
+      margin: 10rem auto; } }
+  @media only screen and (min-width: 850px) {
+    .site-footer {
+      max-width: 60rem;
+      width: 80%;
+      padding: 0;
+      margin-bottom: 6rem; } }
+
+.site-header {
+  background: #fff;
+  *zoom: 1; }
+  .site-header:before, .site-header:after {
+    content: " ";
+    display: table; }
+  .site-header:after {
+    clear: both; }
 
 .logo {
-  display: block;
-  margin: 2em auto;
+  margin: 0.75rem auto;
   width: 5em; }
   @media only screen and (min-width: 850px) {
     .logo {
-      margin-top: 0;
-      width: 6em; } }
+      margin: 2rem auto 1rem;
+      width: 5rem;
+      display: block; } }
 
-.year {
-  color: #ec5d60;
-  font-size: 1.2rem;
-  font-weight: 300;
-  letter-spacing: 0.2em;
-  margin-top: 0.25em;
-  position: relative;
-  text-align: center; }
+.logo-wrap {
+  margin: 0 auto;
+  width: 100%; }
 
-.date-location {
+.blog-strapline {
   text-align: center;
-  font-size: 1.3em;
-  margin-top: 2em;
-  line-height: 1.3em; }
-  .date-location sup {
-    vertical-align: baseline;
-    position: relative;
-    top: -0.4em;
-    font-size: 0.8em; }
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  letter-spacing: 0.2rem;
+  margin-top: 0rem;
+  position: relative;
+  left: 0.2rem; }
 
-.intro {
-  margin-bottom: 3.4rem;
-  text-align: center; }
-  @media only screen and (min-width: 850px) {
-    .intro {
-      text-align: left;
-      margin: 5rem auto 3.4rem; } }
+.post-footer {
+  font-size: 1.1rem; }
+
+.site-header a.tickets {
+  color: #fff;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  border-radius: 4px;
+  font-weight: 700;
+  border: 2px solid #fff; }
+
+/* Blog Posts
+================================ */
+.post {
+  margin-bottom: 1.5rem;
+  padding: 1.5rem 0; }
+
+.post-footer {
+  text-transform: uppercase;
+  font-size: 1.1rem !important; }
+
+.footer-image {
+  width: 100%; }
+
+.footer-cta {
+  font-size: 2rem;
+  text-align: center;
+  margin: 2rem auto 0;
+  width: 28rem;
+  line-height: 2.2rem; }
+
+.purchase-tickets-btn {
+  width: 10rem;
+  background: #4fb3e0;
+  color: #fff;
+  padding: 1rem;
+  margin: 3rem auto;
+  display: block;
+  text-align: center;
+  border-radius: 4px; }
 
 /* Register Interest
 ================================ */
@@ -206,56 +272,3 @@ a, a:link, a:visited {
 
 :-ms-input-placeholder {
   color: rgba(236, 93, 96, 0.5); }
-
-.register-interest-wrap {
-  margin: 0 auto;
-  *zoom: 1;
-  min-height: 18em; }
-  .register-interest-wrap:before, .register-interest-wrap:after {
-    content: " ";
-    display: table; }
-  .register-interest-wrap:after {
-    clear: both; }
-  @media only screen and (min-width: 850px) {
-    .register-interest-wrap {
-      margin-top: 0em; } }
-
-.register-interest-form {
-  float: left;
-  margin-bottom: 4em;
-  width: 71%; }
-
-.register-name,
-.register-email {
-  background: url("../../images/line-short.png") bottom no-repeat;
-  background-size: 340px;
-  border: none;
-  font-size: 1.2rem;
-  margin-bottom: 1em;
-  outline: none;
-  padding: 0.56667rem 0;
-  padding-bottom: 0.5em;
-  width: 100%;
-  color: #ec5d60; }
-
-.register-button {
-  background: #ec5d60;
-  border: 2px solid #fff;
-  border-radius: 4px;
-  color: #fff;
-  margin-top: 1.5em;
-  padding: 0.75em 1em;
-  font-size: 1.1rem; }
-  .register-button:hover {
-    background: #fff;
-    border: 2px solid #ec5d60;
-    color: #ec5d60; }
-
-.volunteer-image {
-  float: right;
-  margin-top: -2em;
-  width: 24%;
-  max-width: 170px; }
-  @media only screen and (min-width: 850px) {
-    .volunteer-image {
-      margin-top: -3em; } }
