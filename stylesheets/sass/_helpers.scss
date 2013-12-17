@@ -80,6 +80,46 @@ $xlarge:                    1400px;
   &:-ms-input-placeholder      {@content}  
 }
 
+@mixin border-sandwich($border, $just-filling: false) {
+  @if ($just-filling) {
+    &:not(:first-of-type) { 
+      border-top: $border;
+    }
+  } @else {
+    border-bottom: $border;
+    &:first-of-type {
+      border-top: $border;
+    }
+  }
+}
+
+@mixin button-padding($amount, $denominator: 2) {
+  padding: $amount/$denominator $amount;
+}
+
+@mixin floating-list($items, $spacing: 4) {
+  display: block;
+  float: left;
+  // margin-left: $spacing;
+  width: (100/$items + 0%) - ($spacing/$items + 0%);
+  margin-left: ($spacing/($items - 1)) + 0%;
+
+  &:first-child,
+  &:last-child {
+    margin-left: 0;
+  }
+
+  &:last-child {
+    float: right;
+  }
+}
+
+@mixin track-center($offset) {
+  position: relative;
+  letter-spacing: $offset;
+  left: $offset/2;
+}
+
 
 // Transitions 
 
@@ -88,5 +128,7 @@ $xlarge:                    1400px;
 }
 
 @mixin fast-fade {
-  @include transition (all 0.05s ease-in-out);
+  @include transition (all 0.1s ease-in-out);
 }
+
+

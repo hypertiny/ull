@@ -84,6 +84,20 @@ a, a:link, a:visited {
   }
 }
 
+.site-content {
+  padding: 0 1rem;
+
+  @media only screen and (min-width: $small) {
+    padding: 0 4rem;
+  }
+
+  @media only screen and (min-width: $medium) {
+    padding: 0;
+    margin: 0 auto;
+    width: 42rem;
+  }
+}
+
 .site-footer {
   margin: 8rem auto 0;
   padding: 0 1rem;
@@ -99,40 +113,70 @@ a, a:link, a:visited {
   }
 }
 
-.top {
-  padding: 1rem 0;
-  background: $c-blue;
-}
-
-.blog-links {
-  width: 30rem;
-  margin: 0 auto;
+.site-links {
+  width: 20rem;
+  margin: $t-leading*2 auto $t-leading*2;
   @include clearfix;
 
   li {
-    width: 33%;
-    float: left;
     text-align: center;
-    position: relative;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 0.2rem;
+    @include floating-list(2, 8);
+    &.active {
+      
+    }
   }
 }
 
-.blog-link {
+.site-link {
   color: #fff;
-  text-transform: uppercase;
-  font-size: 1.2rem;
-  letter-spacing: 0.2rem;
-  padding-left: 0.4rem;
+  display: block;
+  border-radius: 4px;
+  border: 2px solid;
+  @include button-padding(0.75rem);
+  color: $c-red;
+  border-color: $c-red;
+  
+  &.blog {
+    color: $c-blue;
+    border-color: $c-blue;
+  }
+  
+  &.lonely {
+    display: inline-block;
+    margin-top: $t-leading*2;
+  }
+
+  &.footer {
+    width: 10rem;
+    text-align: center;
+    margin: 2rem auto;
+  }
 }
 
 // Logo
+
+.logo-year-wrap {
+  color: $c-red;
+  &:hover {
+    .site-section-title span {
+      border-bottom: 2px solid rgba($c-red, 0.3);
+    }
+  }
+}
 
 .logo {
   display: block;
   margin: $t-leading auto;
   width: 5em;
 
-  @media only screen and (min-width: $medium) {
+  body.blog & {
+    margin: $t-leading*2 auto $t-leading;
+  }
+
+  @media only screen and (min-width: $small) {
     margin: 4rem auto $tl-medium;
     width: 6em;
   }
@@ -154,6 +198,23 @@ a, a:link, a:visited {
    top: -0.4em;
    font-size: 0.8em;
   }
+  // body.blog & {
+  //   color: $c-blue;
+  // }
+}
+
+.site-section-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  width: 6rem;
+  margin: 0 auto;
+  
+
+  span {
+    @include track-center(0.4rem);
+    border-bottom: 2px solid #fff;
+  }
 }
 
 // Intro paragraph
@@ -173,7 +234,6 @@ a, a:link, a:visited {
 }
 
 .introduction {
-
   @media only screen and (min-width: $medium) {
     width: 42rem;
     margin: 0 auto;
@@ -185,17 +245,34 @@ a, a:link, a:visited {
   margin: 0 auto;
   padding: 3rem 0;
   width: 100%;
+  max-width: 60rem;
 
   @media only screen and (min-width: $medium) {
     padding: $tl-medium*2 4rem $tl-medium*3 4rem;
-    max-width: 60rem;
   }
 
   @media only screen and (min-width: $large) {
     padding: $tl-medium*2 0 $tl-medium*3 0;
-    max-width: 60rem;
   }
 }
+
+.blog-image {
+  @extend .main-image;
+  padding: 3rem 1rem 1rem;
+  @media only screen and (min-width: $large) {
+    padding: $tl-medium*3 0 $tl-medium*2 0;
+  }
+}
+
+.blog-post-image {
+  @extend .main-image;
+  width: 100%;
+
+  @media only screen and (min-width: $large) {
+    padding: 0 0 $tl-medium*2 0;
+  }
+}
+
 
 /* Ticket Embed
 ================================ */
@@ -455,99 +532,55 @@ a, a:link, a:visited {
 }
 
 
-
-/* Tito Embed Form
+/* Blog Posts
 ================================ */
 
-// #tito-register-form {
-//   @include clearfix;
-//   margin: $t-leading*3 auto $t-leading*1;
-// }
+.post {
+  margin-bottom: $t-leading;
+  @include border-sandwich (2px rgba($c-red, 0.4) dotted, true);
+  margin: 0 auto;
+  padding: 2rem 0 1rem;
 
-// .tito-ticket-list {
+  @media only screen and (min-width: $medium) {
+    padding: 3rem 0;
+  }
 
-// }
+  &.single {
+    margin-top: 3rem;
+    // border-bottom: 2px rgba($c-red, 0.4) dotted;
+  }
+}
 
-// .tito-ticket {
-//   @include clearfix;
-//   margin-bottom: $t-leading;
-//   position: relative;
-//   border-bottom: 2px dotted rgba($c-red, 0.4);
-//   padding-bottom: $t-leading;
-// }
 
-// .tito-ticket:first-of-type {
-//   // border-bottom: 2px solid $c-red;
+.post.text {
+  h2 {
+    margin-bottom: $t-leading/4;
+  }
+  p:last-child {
+    margin-bottom: 1rem;
+  }
+  .post-details {
+    text-transform: uppercase;
+    font-size: 0.95rem;
+    @media only screen and (min-width: $small) {
+      font-size: 1.1rem;
+    }
+  }
+}
 
-//   .tito-ticket-name {
-//     line-height: 1em;
-//   }
 
-//   .tito-ticket-price {
-//     font-weight: 500;
-//   }
-// }
 
-// .tito-ticket-name {
-//   font-size: 2.2rem;
-//   font-weight: 100;
-//   float: left;
-//   line-height: $t-leading;
-  
-// }
+.blog-footer {
+  margin-top: 0rem;
+  margin-bottom: 8rem;
 
-// .tito-ticket:nth-of-type(2) .tito-ticket-name,
-// .tito-ticket:nth-of-type(3) .tito-ticket-name {
-//   font-size: 1.5rem;
-//   font-weight: 300;
-// }
-
-// .tito-ticket-price-quantity {
-
-// }
-
-// .tito-ticket-price {
-//   float: left;
-//   clear: left;
-//   font-size: 1.5rem;
-//   margin-top: $t-leading/4;
-//   font-weight: 300;
-// }
-
-// .tito-ticket-quantity {
-//   position: absolute;
-//   right: 0;
-
-//   input {
-//     font-size: 1.3rem;
-//     width: 2.4rem;
-//     border: 2px solid rgba($c-red, 0.4);
-//     padding: 0.4rem;
-//     border-radius: 4px;
-//     text-align: center;
-//     color: $c-red;
-    
-//     &:focus {
-//       outline: none;
-//       border: 2px solid $c-red;
-//     }
-//   }
-// }
-
-// #tito-submit {
-//   -webkit-appearance: none;
-//   background: $c-red;
-//   border: none;
-//   color: #fff;
-//   padding: 0.8rem;
-//   border-radius: 4px;
-//   float: right;
-// }
-
-// #tito-footer {
-//   display: none;
-// }
-
+  .site-link {
+    width: 100%;
+    @media only screen and (min-width: $small) {
+      width: 10rem;
+    }
+  }
+}
 
 
 

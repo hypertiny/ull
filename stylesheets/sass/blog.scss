@@ -79,8 +79,9 @@ a, a:link, a:visited {
 ================================ */
 
 .top {
-  padding: 1rem 0;
-  background: $c-blue;
+  padding: 0.5rem 0;
+  background: $c-yellow;
+  display: none;
 }
 
 .site-header {
@@ -104,7 +105,7 @@ a, a:link, a:visited {
   padding: 0 1rem;
   margin: $tl-medium*3 auto 0;
   @media only screen and (min-width: $small) {
-    max-width: 40rem;
+    max-width: 42rem;
   }
 }
 
@@ -175,23 +176,25 @@ a, a:link, a:visited {
   font-size: $t-size;
 }
 
+.main-image {
+  width: 70%;
+  margin: 5rem auto 0;
+  display: block;
+}
+
 
 /* Blog Posts
 ================================ */
 
 .post {
   margin-bottom: $t-leading;
-  padding: $t-leading 0;
+  padding: $t-leading/2 0;
+  @include border-sandwich (2px rgba($c-red, 0.4) dotted, true);
 }
 
 .post-footer {
   text-transform: uppercase;
   font-size: 1.1rem !important;
-}
-
-.footer-image {
-  width: 100%;
-
 }
 
 .footer-cta {
@@ -221,8 +224,6 @@ a, a:link, a:visited {
   text-align: center;
   border-radius: 4px;
 }
-
-
 
 
 

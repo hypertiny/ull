@@ -1,0 +1,15 @@
+@mixin floating-list($items, $spacing: 2) {
+  display: block;
+  float: left;
+  margin-left: ($spacing/($items - 1)) + 0%;
+  width: (100/$items + 0%) - ($spacing/$items + 0%);
+
+  &:first-child,
+  &:last-child {
+    margin-left: 0;
+  }
+
+  &:last-child {
+    float: right;
+  }
+}

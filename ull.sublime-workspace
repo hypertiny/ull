@@ -8,18 +8,37 @@
 	"buffers":
 	[
 		{
-			"file": "blog/index.html",
+			"file": "stylesheets/sass/screen.scss",
 			"settings":
 			{
-				"buffer_size": 1204,
+				"buffer_size": 8630,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "stylesheets/sass/blog.scss",
+			"file": "stylesheets/sass/_helpers.scss",
 			"settings":
 			{
-				"buffer_size": 2825,
+				"buffer_size": 2465,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "default.html",
+			"settings":
+			{
+				"buffer_size": 1700,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "<div class=\"logo-year-wrap\">\n  <img src=\"/images/ull-logo.svg\" onerror=\"this.src=/images/ull-logo.png\" alt=\"Úll Logo\" class=\"logo\">\n  <p class=\"date-location\">\n    {{site.meta['date']}}<br>\n    {{site.meta['location']}}\n  </p>\n  <img src=\"/images/blog-footer.png\" alt=\"\" class=\"blog-image\">\n  <ul class=\"site-links\">\n    <li><a href=\"#\" class=\"site-link home\">Home</a></li>\n    <li><a href=\"#\" class=\"site-link blog\">Blog</a></li>\n    <li><a href=\"#\" class=\"site-link home\">Third</a></li>\n  </ul>\n</div>\n\n<div class=\"site-content\">\n  {% for post in posts limit:20 %}\n  <article class=\"post text\">\n    <h2><a href=\"{{post.url}}\">{{post.title}}</a></h2>\n    <p class=\"post-footer\">{{post.date | date: \"%b %d, %Y\"}} by {{post.author.fullname}}</p>\n    {{post.body}}\n  </article>\n  {% endfor %}\n</div>\n<footer class=\"blog-footer\">\n  <img src=\"/images/blogfooter_snooker.png\" alt=\"\">\n</footer>",
+			"file": "_includes/blog.html",
+			"file_size": 889,
+			"file_write_time": 130316254150000000,
+			"settings":
+			{
+				"buffer_size": 888,
 				"line_ending": "Unix"
 			}
 		}
@@ -27,9 +46,41 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 247.0,
+		"height": 93.0,
 		"selected_items":
 		[
+			[
+				"syn css",
+				"Set Syntax: CSS"
+			],
+			[
+				"gist sele",
+				"GitHub: Public Gist from Selection"
+			],
+			[
+				"github gist",
+				"GitHub: Public Gist from Selection"
+			],
+			[
+				"gist",
+				"GitHub: Public Gist from Selection"
+			],
+			[
+				"insal",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Package Control: Remove Package"
+			],
+			[
+				"gids",
+				"Gist: Add File to Gist"
+			],
+			[
+				"keyb",
+				"Preferences: Key Bindings - User"
+			],
 			[
 				"install",
 				"Package Control: Install Package"
@@ -39,7 +90,7 @@
 	},
 	"console":
 	{
-		"height": 0.0,
+		"height": 1180.0,
 		"history":
 		[
 		]
@@ -56,17 +107,33 @@
 	"file_history":
 	[
 		"/Users/kilmc/Sites/Hypertiny/ull/stylesheets/css/blog.css",
+		"/Users/kilmc/Sites/Hypertiny/ull/stylesheets/sass/vendor/bourbon/helpers/_radial-arg-parser.scss",
+		"/Users/kilmc/Sites/Hypertiny/ull/_includes/blog.html",
+		"/Users/kilmc/Sites/Hypertiny/ull/_includes/teaser.html",
+		"/Users/kilmc/Sites/Hypertiny/ull/default.html",
+		"/Users/kilmc/Sites/Hypertiny/ull/stylesheets/sass/_floated-list.scss",
+		"/Users/kilmc/Sites/Hypertiny/ull/blog/index.html",
+		"/Users/kilmc/Sites/Hypertiny/ull/stylesheets/sass/blog.scss",
+		"/Users/kilmc/Library/Application Support/Sublime Text 3/Packages/sublime-github/GitHub.sublime-settings",
+		"/Users/kilmc/Library/Application Support/Sublime Text 3/Packages/User/GitHub.sublime-settings",
+		"/Users/kilmc/Library/Application Support/Sublime Text 3/Packages/Package Control/Package Control.sublime-settings",
+		"/Users/kilmc/Library/Application Support/Sublime Text 3/Packages/Gist/Gist.sublime-settings",
+		"/Users/kilmc/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/kilmc/Library/Application Support/Sublime Text 3/Packages/Default/Default (OSX).sublime-keymap",
+		"/Users/kilmc/Library/Application Support/Sublime Text 3/Packages/User/Emmet.sublime-settings",
+		"/Users/kilmc/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
 		"/Users/kilmc/Sites/Hypertiny/ull/stylesheets/sass/screen.scss"
 	],
 	"find":
 	{
-		"height": 0.0
+		"height": 37.0
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 95.0,
 		"where_history":
 		[
+			""
 		]
 	},
 	"find_state":
@@ -74,6 +141,16 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"span:before",
+			"+ span:before",
+			"site-links",
+			"40rem",
+			"border-t",
+			"logo",
+			"tickets",
+			"6rem",
+			"blog",
+			"auto"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -91,24 +168,111 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "blog/index.html",
+					"file": "stylesheets/sass/screen.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1204,
+						"buffer_size": 8630,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								8620,
+								8620
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 6910.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "stylesheets/sass/_helpers.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2465,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2069,
+								2069
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1158.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "default.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1700,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1694,
+								1694
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 115.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "_includes/blog.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 888,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								888,
+								888
 							]
 						],
 						"settings":
@@ -122,35 +286,6 @@
 						"zoom_level": 1.0
 					},
 					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "stylesheets/sass/blog.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2825,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1889,
-								1889
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1019.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
 				}
 			]
 		}
@@ -161,7 +296,7 @@
 	},
 	"input":
 	{
-		"height": 0.0
+		"height": 33.0
 	},
 	"layout":
 	{
@@ -186,6 +321,10 @@
 		]
 	},
 	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 102.0
+	},
 	"project": "ull.sublime-project",
 	"replace":
 	{
@@ -199,7 +338,31 @@
 		[
 			[
 				"blog",
-				"stylesheets/css/blog.css"
+				"_includes/blog.html"
+			],
+			[
+				"header",
+				"stylesheets/sass/vendor/bourbon/helpers/_radial-arg-parser.scss"
+			],
+			[
+				"det",
+				"default.html"
+			],
+			[
+				"scree",
+				"stylesheets/sass/screen.scss"
+			],
+			[
+				"ind",
+				"index.html"
+			],
+			[
+				"inde",
+				"blog/index.html"
+			],
+			[
+				"hel",
+				"stylesheets/sass/_helpers.scss"
 			],
 			[
 				"screen",
@@ -213,6 +376,10 @@
 		"height": 500.0,
 		"selected_items":
 		[
+			[
+				"",
+				"~/Sites/Hypertiny/Tito/TITO.sublime-project"
+			]
 		],
 		"width": 380.0
 	},
@@ -231,7 +398,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": false,
-	"side_bar_width": 150.0,
+	"side_bar_width": 235.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

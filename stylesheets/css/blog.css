@@ -168,8 +168,9 @@ a, a:link, a:visited {
 /* Main Site
 ================================ */
 .top {
-  padding: 1rem 0;
-  background: #4fb3e0; }
+  padding: 0.5rem 0;
+  background: #fac637;
+  display: none; }
 
 .site-header {
   background: #fff;
@@ -190,7 +191,7 @@ a, a:link, a:visited {
   margin: 6rem auto 0; }
   @media only screen and (min-width: 480px) {
     .site-content {
-      max-width: 40rem; } }
+      max-width: 42rem; } }
 
 .site-footer {
   margin: 8rem auto 0;
@@ -250,18 +251,22 @@ a, a:link, a:visited {
 .post-footer {
   font-size: 1.1rem; }
 
+.main-image {
+  width: 70%;
+  margin: 5rem auto 0;
+  display: block; }
+
 /* Blog Posts
 ================================ */
 .post {
   margin-bottom: 1.5rem;
-  padding: 1.5rem 0; }
+  padding: 0.75rem 0; }
+  .post:not(:first-of-type) {
+    border-top: 2px rgba(236, 93, 96, 0.4) dotted; }
 
 .post-footer {
   text-transform: uppercase;
   font-size: 1.1rem !important; }
-
-.footer-image {
-  width: 100%; }
 
 .footer-cta {
   font-size: 1.2rem;
