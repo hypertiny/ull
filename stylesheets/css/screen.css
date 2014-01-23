@@ -572,8 +572,27 @@ a, a:link, a:visited {
 
 .post.text h2 {
   margin-bottom: 0.375rem; }
+.post.text h3 {
+  text-transform: uppercase;
+  font-size: 1.1rem; }
+  @media only screen and (min-width: 480px) {
+    .post.text h3 {
+      font-size: 1.3rem; } }
 .post.text p:last-child {
   margin-bottom: 1rem; }
+.post.text ul, .post.text ol {
+  font-size: 1.1rem;
+  padding: 0 1.3rem;
+  list-style-type: disc;
+  margin: 0.75rem auto 1.5rem;
+  line-height: 1.5rem; }
+  @media only screen and (min-width: 480px) {
+    .post.text ul, .post.text ol {
+      font-size: 1.3rem;
+      margin: 1rem auto 2rem;
+      line-height: 2rem; } }
+.post.text ol {
+  list-style-type: decimal; }
 .post.text .post-details {
   text-transform: uppercase;
   font-size: 0.95rem; }
