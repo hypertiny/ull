@@ -456,11 +456,11 @@ a, a:link, a:visited {
   &.matt {
     background: 
       url(../images/speaker-box-logo-matt.png) no-repeat 220px 42px,
-      url(../images/speaker-box-small.jpg) no-repeat;
+      url(../images/speaker-box-small.jpg) no-repeat 0 0;
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
       background: 
         url(../images/speaker-box-logo-matt@2x.png) no-repeat 220px 42px,
-        url(../images/speaker-box-small@2x.jpg) no-repeat;
+        url(../images/speaker-box-small@2x.jpg) no-repeat 0 0;
         background-size: 40px 40px, 100%;
     }
     @media (-webkit-min-device-pixel-ratio: 1) {
@@ -471,11 +471,11 @@ a, a:link, a:visited {
   &.wave {
     background: 
       url(../images/speaker-box-logo-wave.png) no-repeat 220px 42px,
-      url(../images/speaker-box-small.jpg) no-repeat;
+      url(../images/speaker-box-small.jpg) no-repeat 0 0;
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
       background: 
         url(../images/speaker-box-logo-wave@2x.png) no-repeat 220px 42px,
-        url(../images/speaker-box-small@2x.jpg) no-repeat;
+        url(../images/speaker-box-small@2x.jpg) no-repeat 0 0;
         background-size: 40px 40px, 100%;
     }
     @media (-webkit-min-device-pixel-ratio: 1) {
@@ -486,11 +486,11 @@ a, a:link, a:visited {
   &.amber {
     background: 
       url(../images/speaker-box-logo-amber.png) no-repeat 220px 42px,
-      url(../images/speaker-box-small.jpg) no-repeat;
+      url(../images/speaker-box-small.jpg) no-repeat 0 0 0 0;
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
       background: 
         url(../images/speaker-box-logo-amber@2x.png) no-repeat 220px 42px,
-        url(../images/speaker-box-small@2x.jpg) no-repeat;
+        url(../images/speaker-box-small@2x.jpg) no-repeat 0 0 0 0;
         background-size: 40px 40px, 100%;
     }
     @media (-webkit-min-device-pixel-ratio: 1) {
@@ -501,11 +501,11 @@ a, a:link, a:visited {
   &.dave {
     background: 
       url(../images/speaker-box-logo-dave.png) no-repeat 220px 42px,
-      url(../images/speaker-box-small.jpg) no-repeat;
+      url(../images/speaker-box-small.jpg) no-repeat 0 0;
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
       background: 
         url(../images/speaker-box-logo-dave@2x.png) no-repeat 220px 42px,
-        url(../images/speaker-box-small@2x.jpg) no-repeat;
+        url(../images/speaker-box-small@2x.jpg) no-repeat 0 0;
       background-size: 40px 40px, 100%;
     }
     @media (-webkit-min-device-pixel-ratio: 1) {
@@ -516,11 +516,11 @@ a, a:link, a:visited {
   &.jaimee {
     background: 
       url(../images/speaker-box-logo-jaimee.png) no-repeat 220px 42px,
-      url(../images/speaker-box-small.jpg) no-repeat;
+      url(../images/speaker-box-small.jpg) no-repeat 0 0;
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
       background: 
         url(../images/speaker-box-logo-jaimee@2x.png) no-repeat 220px 42px,
-        url(../images/speaker-box-small@2x.jpg) no-repeat;
+        url(../images/speaker-box-small@2x.jpg) no-repeat 0 0;
       background-size: 40px 40px, 100%;
     }
     @media (-webkit-min-device-pixel-ratio: 1) {
@@ -531,11 +531,11 @@ a, a:link, a:visited {
   &.charles {
     background: 
       url(../images/speaker-box-logo-charles.png) no-repeat 220px 42px,
-      url(../images/speaker-box-small.jpg) no-repeat;
+      url(../images/speaker-box-small.jpg) no-repeat 0 0;
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
       background: 
         url(../images/speaker-box-logo-charles@2x.png) no-repeat 220px 42px,
-        url(../images/speaker-box-small@2x.jpg) no-repeat;
+        url(../images/speaker-box-small@2x.jpg) no-repeat 0 0;
       background-size: 40px 40px, 100%;
     }
     @media (-webkit-min-device-pixel-ratio: 1) {
@@ -546,11 +546,11 @@ a, a:link, a:visited {
   &.jennifer {
     background: 
       url(../images/speaker-box-logo-jennifer.png) no-repeat 220px 42px,
-      url(../images/speaker-box-small.jpg) no-repeat;
+      url(../images/speaker-box-small.jpg) no-repeat 0 0;
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
       background: 
         url(../images/speaker-box-logo-jennifer@2x.png) no-repeat 220px 42px,
-        url(../images/speaker-box-small@2x.jpg) no-repeat;
+        url(../images/speaker-box-small@2x.jpg) no-repeat 0 0;
       background-size: 40px 40px, 100%;
     }
     @media (-webkit-min-device-pixel-ratio: 1) {
@@ -561,11 +561,11 @@ a, a:link, a:visited {
   &.matthew {
     background: 
       url(../images/speaker-box-logo-matthew.png) no-repeat 220px 42px,
-      url(../images/speaker-box-small.jpg) no-repeat;
+      url(../images/speaker-box-small.jpg) no-repeat 0 0;
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
       background: 
         url(../images/speaker-box-logo-matthew@2x.png) no-repeat 220px 42px,
-        url(../images/speaker-box-small@2x.jpg) no-repeat;
+        url(../images/speaker-box-small@2x.jpg) no-repeat 0 0;
       background-size: 40px 40px, 100%;
     }
     @media (-webkit-min-device-pixel-ratio: 1) {
@@ -576,11 +576,11 @@ a, a:link, a:visited {
   &.stephanie {
     background: 
       url(../images/speaker-box-logo-stephanie.png) no-repeat 220px 42px,
-      url(../images/speaker-box-small.jpg) no-repeat;
+      url(../images/speaker-box-small.jpg) no-repeat 0 0;
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
       background: 
         url(../images/speaker-box-logo-stephanie@2x.png) no-repeat 220px 42px,
-        url(../images/speaker-box-small@2x.jpg) no-repeat;
+        url(../images/speaker-box-small@2x.jpg) no-repeat 0 0;
       background-size: 40px 40px, 100%;
     }
     @media (-webkit-min-device-pixel-ratio: 1) {
@@ -591,11 +591,11 @@ a, a:link, a:visited {
   &.don {
     background: 
       url(../images/speaker-box-logo-don.png) no-repeat 220px 42px,
-      url(../images/speaker-box-small.jpg) no-repeat;
+      url(../images/speaker-box-small.jpg) no-repeat 0 0;
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
       background: 
         url(../images/speaker-box-logo-don@2x.png) no-repeat 220px 42px,
-        url(../images/speaker-box-small@2x.jpg) no-repeat;
+        url(../images/speaker-box-small@2x.jpg) no-repeat 0 0;
       background-size: 40px 40px, 100%;
     }
     @media (-webkit-min-device-pixel-ratio: 1) {
@@ -606,11 +606,11 @@ a, a:link, a:visited {
   &.steve {
     background: 
       url(../images/speaker-box-logo-steve.png) no-repeat 220px 42px,
-      url(../images/speaker-box-small.jpg) no-repeat;
+      url(../images/speaker-box-small.jpg) no-repeat 0 0;
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
       background: 
         url(../images/speaker-box-logo-steve@2x.png) no-repeat 220px 42px,
-        url(../images/speaker-box-small@2x.jpg) no-repeat;
+        url(../images/speaker-box-small@2x.jpg) no-repeat 0 0;
       background-size: 40px 40px, 100%;
     }
     @media (-webkit-min-device-pixel-ratio: 1) {
@@ -621,11 +621,11 @@ a, a:link, a:visited {
   &.lex {
     background: 
       url(../images/speaker-box-logo-lex.png) no-repeat 220px 42px,
-      url(../images/speaker-box-small.jpg) no-repeat;
+      url(../images/speaker-box-small.jpg) no-repeat 0 0;
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
       background: 
         url(../images/speaker-box-logo-lex@2x.png) no-repeat 220px 42px,
-        url(../images/speaker-box-small@2x.jpg) no-repeat;
+        url(../images/speaker-box-small@2x.jpg) no-repeat 0 0;
       background-size: 40px 40px, 100%;
     }
     @media (-webkit-min-device-pixel-ratio: 1) {
@@ -636,11 +636,11 @@ a, a:link, a:visited {
   &.horace {
     background: 
       url(../images/speaker-box-logo-horace.png) no-repeat 220px 42px,
-      url(../images/speaker-box-small.jpg) no-repeat;
+      url(../images/speaker-box-small.jpg) no-repeat 0 0;
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
       background: 
         url(../images/speaker-box-logo-horace@2x.png) no-repeat 220px 42px,
-        url(../images/speaker-box-small@2x.jpg) no-repeat;
+        url(../images/speaker-box-small@2x.jpg) no-repeat 0 0;
       background-size: 40px 40px, 100%;
     }
     @media (-webkit-min-device-pixel-ratio: 1) {
@@ -651,11 +651,11 @@ a, a:link, a:visited {
   &.rands {
     background: 
       url(../images/speaker-box-logo-rands.png) no-repeat 220px 42px,
-      url(../images/speaker-box-small.jpg) no-repeat;
+      url(../images/speaker-box-small.jpg) no-repeat 0 0;
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
       background: 
         url(../images/speaker-box-logo-rands@2x.png) no-repeat 220px 42px,
-        url(../images/speaker-box-small@2x.jpg) no-repeat;
+        url(../images/speaker-box-small@2x.jpg) no-repeat 0 0;
       background-size: 40px 40px, 100%;
     }
     @media (-webkit-min-device-pixel-ratio: 1) {
@@ -666,11 +666,11 @@ a, a:link, a:visited {
   &.gruber {
     background: 
       url(../images/speaker-box-logo-gruber.png) no-repeat 220px 42px,
-      url(../images/speaker-box-small.jpg) no-repeat;
+      url(../images/speaker-box-small.jpg) no-repeat 0 0;
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
       background: 
         url(../images/speaker-box-logo-gruber@2x.png) no-repeat 220px 42px,
-        url(../images/speaker-box-small@2x.jpg) no-repeat;
+        url(../images/speaker-box-small@2x.jpg) no-repeat 0 0;
       background-size: 40px 40px, 100%;
     }
     @media (-webkit-min-device-pixel-ratio: 1) {
