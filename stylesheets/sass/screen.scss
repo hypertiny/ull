@@ -4,8 +4,8 @@
 @import 'helpers';
 
 
-/* Base
-================================ */
+// Base
+// ---------------------------------------------------------
 
 body {
   background: $c-bg;
@@ -21,9 +21,8 @@ a, a:link, a:visited {
 }
 
 
-
-/* Text
-================================ */
+// Text
+// ---------------------------------------------------------
 
 // Use the class "text" on any container specifically for textual content
 
@@ -74,9 +73,8 @@ a, a:link, a:visited {
   }
 }
 
-
-/* Main Site
-================================ */
+// Main Site
+// ---------------------------------------------------------
 
 .site-wrapper {
   @media only screen and (min-width: $medium) {
@@ -274,8 +272,8 @@ a, a:link, a:visited {
 }
 
 
-/* Ticket Embed
-================================ */
+// Ticket Embed
+// ---------------------------------------------------------
 
 .tickets-wrap {
   padding: 0 1rem;
@@ -432,8 +430,9 @@ a, a:link, a:visited {
   margin-top: $t-leading;
 }
 
-/* Register Interest
-================================ */
+// Register Interest
+// ---------------------------------------------------------
+
 
 @include placeholder {
   color: rgba($c-red, 0.5);
@@ -532,8 +531,8 @@ a, a:link, a:visited {
 }
 
 
-/* Blog Posts
-================================ */
+// Blog Posts
+// ---------------------------------------------------------
 
 .post {
   margin-bottom: $t-leading;
@@ -586,6 +585,21 @@ a, a:link, a:visited {
     list-style-type: decimal;
   }
 
+  strong {
+    font-weight: 500;
+  }
+
+  em {
+    font-style: italic;
+  }
+
+  a {
+    border-bottom: 2px solid rgba($c-red, 0.1);
+    &:hover {
+      border-bottom: 2px solid rgba($c-red, 1);
+    }
+  }
+
   .post-details {
     text-transform: uppercase;
     font-size: 0.95rem;
@@ -610,7 +624,69 @@ a, a:link, a:visited {
 }
 
 
+// Speakers
+// ---------------------------------------------------------
 
+.speaker {
+  width: 40%;
+  float: left;
+  margin-bottom: $tl-medium;
+  height: 350px;
+
+  &:nth-of-type(2n) {
+    margin-left: 20%;
+  }
+
+  &:nth-of-type(1),
+  &:nth-of-type(5),
+  &:nth-of-type(9) {
+    .speaker-image {
+      background-color: $c-blue;
+    }
+  }
+
+  &:nth-of-type(2),
+  &:nth-of-type(6),
+  &:nth-of-type(7) {
+    .speaker-image {
+      background: rgba($c-red, 1);
+    }
+  }
+
+  &:nth-of-type(3),
+  &:nth-of-type(4),
+  &:nth-of-type(8) {
+    .speaker-image {
+      background: rgba($c-yellow, 1);
+    }
+  }
+
+  .speaker-name {
+    font-size: 1.8em;
+    text-align: center;
+    margin-top: $tl-medium;
+    margin-bottom: $tl-medium/3;
+    font-weight: 500;
+  }
+
+  .speaker-image {
+    border-radius: 50%;
+    overflow: hidden;
+    // width: 80%;
+    // margin: 0 auto;
+  }
+
+  .speaker-role {
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+  }
+
+  img {
+    width: 100%;
+    display: block;
+  }
+}
 
 
 

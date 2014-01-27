@@ -117,8 +117,6 @@ textarea {
 ================================ */
 /* Mixins
 ================================ */
-/* Base
-================================ */
 body {
   background: white;
   color: #ec5d60;
@@ -130,8 +128,6 @@ a, a:link, a:visited {
   text-decoration: none;
   font-weight: 500; }
 
-/* Text
-================================ */
 .text p {
   font-size: 1.1rem;
   line-height: 1.5rem;
@@ -167,8 +163,6 @@ a, a:link, a:visited {
   .text a:hover, .text a:link:hover, .text a:visited:hover {
     border-bottom: 2px solid rgba(236, 93, 96, 0.3); }
 
-/* Main Site
-================================ */
 @media only screen and (min-width: 850px) {
   .site-wrapper {
     margin: 0 auto 4rem; } }
@@ -321,8 +315,6 @@ a, a:link, a:visited {
     .blog-post-image {
       padding: 0 0 4rem 0; } }
 
-/* Ticket Embed
-================================ */
 .tickets-wrap {
   padding: 0 1rem; }
   @media only screen and (min-width: 480px) {
@@ -459,8 +451,6 @@ a, a:link, a:visited {
   -webkit-appearance: none;
   margin-top: 1.5rem; }
 
-/* Register Interest
-================================ */
 ::-webkit-input-placeholder {
   color: rgba(236, 93, 96, 0.5); }
 
@@ -556,8 +546,6 @@ a, a:link, a:visited {
         font-size: 1.3rem;
         line-height: 2rem; } }
 
-/* Blog Posts
-================================ */
 .post {
   margin-bottom: 1.5rem;
   margin: 0 auto;
@@ -593,6 +581,14 @@ a, a:link, a:visited {
       line-height: 2rem; } }
 .post.text ol {
   list-style-type: decimal; }
+.post.text strong {
+  font-weight: 500; }
+.post.text em {
+  font-style: italic; }
+.post.text a {
+  border-bottom: 2px solid rgba(236, 93, 96, 0.1); }
+  .post.text a:hover {
+    border-bottom: 2px solid #ec5d60; }
 .post.text .post-details {
   text-transform: uppercase;
   font-size: 0.95rem; }
@@ -608,3 +604,33 @@ a, a:link, a:visited {
     @media only screen and (min-width: 480px) {
       .blog-footer .site-link {
         width: 10rem; } }
+
+.speaker {
+  width: 40%;
+  float: left;
+  margin-bottom: 2rem;
+  height: 350px; }
+  .speaker:nth-of-type(2n) {
+    margin-left: 20%; }
+  .speaker:nth-of-type(1) .speaker-image, .speaker:nth-of-type(5) .speaker-image, .speaker:nth-of-type(9) .speaker-image {
+    background-color: #4fb3e0; }
+  .speaker:nth-of-type(2) .speaker-image, .speaker:nth-of-type(6) .speaker-image, .speaker:nth-of-type(7) .speaker-image {
+    background: #ec5d60; }
+  .speaker:nth-of-type(3) .speaker-image, .speaker:nth-of-type(4) .speaker-image, .speaker:nth-of-type(8) .speaker-image {
+    background: #fac637; }
+  .speaker .speaker-name {
+    font-size: 1.8em;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 0.66667rem;
+    font-weight: 500; }
+  .speaker .speaker-image {
+    border-radius: 50%;
+    overflow: hidden; }
+  .speaker .speaker-role {
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.4rem; }
+  .speaker img {
+    width: 100%;
+    display: block; }
