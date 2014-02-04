@@ -18,6 +18,7 @@ body {
 a, a:link, a:visited {
   text-decoration: none;
   font-weight: 500;
+  color: $c-red;
 }
 
 
@@ -112,9 +113,13 @@ a, a:link, a:visited {
 }
 
 .site-links {
-  width: 20rem;
-  margin: $t-leading*2 auto $t-leading*2;
+  width: 100%;
+  margin: $t-leading*2 auto $t-leading*4;
   @include clearfix;
+
+  @media only screen and (min-width: $small) {
+    width: 20rem;
+  }
 
   li {
     text-align: center;
@@ -151,6 +156,14 @@ a, a:link, a:visited {
     width: 10rem;
     text-align: center;
     margin: 2rem auto;
+  }
+  &.home {
+    &:hover {
+      background: $c-red;
+      a {
+        color: #fff;
+      }
+    }
   }
 }
 

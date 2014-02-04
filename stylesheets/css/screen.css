@@ -126,7 +126,8 @@ body {
 
 a, a:link, a:visited {
   text-decoration: none;
-  font-weight: 500; }
+  font-weight: 500;
+  color: #ec5d60; }
 
 .text p {
   font-size: 1.1rem;
@@ -191,14 +192,17 @@ a, a:link, a:visited {
       padding: 0; } }
 
 .site-links {
-  width: 20rem;
-  margin: 3rem auto 3rem;
+  width: 100%;
+  margin: 3rem auto 6rem;
   *zoom: 1; }
   .site-links:before, .site-links:after {
     content: " ";
     display: table; }
   .site-links:after {
     clear: both; }
+  @media only screen and (min-width: 480px) {
+    .site-links {
+      width: 20rem; } }
   .site-links li {
     text-align: center;
     text-transform: uppercase;
@@ -231,6 +235,10 @@ a, a:link, a:visited {
     width: 10rem;
     text-align: center;
     margin: 2rem auto; }
+  .site-link.home:hover {
+    background: #ec5d60; }
+    .site-link.home:hover a {
+      color: #fff; }
 
 .logo-year-wrap {
   color: #ec5d60; }
