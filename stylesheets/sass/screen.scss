@@ -167,6 +167,25 @@ a, a:link, a:visited {
   }
 }
 
+.tickets-link {
+  width: 16rem;
+  color: #fff;
+  display: block;
+  border-radius: 4px;
+  border: 2px solid !important;
+  @include button-padding(0.75rem);
+  color: $c-red;
+  border-color: $c-red;
+  font-size: $h-size;
+  padding: $t-leading/2;
+  text-align: center;
+  margin: $t-leading*4 auto 0;
+  &:hover {
+    background: $c-red;
+    color: #fff !important;
+  }
+}
+
 // Logo
 
 .logo-year-wrap {
