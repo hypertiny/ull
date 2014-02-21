@@ -144,7 +144,6 @@ a, a:link, a:visited {
     margin: 0 auto;
     width: 42rem;
   }
-
 }
 
 .coc {
@@ -181,15 +180,13 @@ a, a:link, a:visited {
     width: 20rem;
   }
 
-  li {
+  a {
     text-align: center;
     text-transform: uppercase;
     font-size: 1rem;
     letter-spacing: 0.2rem;
     @include floating-list(2, 8);
-    &.active {
-      
-    }
+
   }
 }
 
@@ -201,6 +198,11 @@ a, a:link, a:visited {
   @include button-padding(0.75rem);
   color: $c-red;
   border-color: $c-red;
+
+  &:hover {
+    background: $c-red;
+    color: #fff;
+  }
   
   &.blog {
     color: $c-blue;
@@ -217,13 +219,9 @@ a, a:link, a:visited {
     text-align: center;
     margin: 2rem auto;
   }
+
   &.home {
-    &:hover {
-      background: $c-red;
-      a {
-        color: #fff;
-      }
-    }
+
   }
 }
 
