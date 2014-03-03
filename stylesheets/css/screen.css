@@ -157,12 +157,12 @@ a, a:link, a:visited {
     .text hr {
       margin: 0 0 2rem 0; } }
 .text a, .text a:link, .text a:visited {
+  border-bottom: 2px solid rgba(236, 93, 96, 0.1);
   color: #ec5d60;
   font-weight: 500;
-  text-decoration: none;
-  border-bottom: 2px solid #fff; }
+  text-decoration: none; }
   .text a:hover, .text a:link:hover, .text a:visited:hover {
-    border-bottom: 2px solid rgba(236, 93, 96, 0.3); }
+    border-bottom: 2px solid #ec5d60; }
 .text h2 {
   margin-bottom: 0.375rem; }
 .text h3 {
@@ -190,10 +190,6 @@ a, a:link, a:visited {
   font-weight: 500; }
 .text em {
   font-style: italic; }
-.text a {
-  border-bottom: 2px solid rgba(236, 93, 96, 0.1); }
-  .text a:hover {
-    border-bottom: 2px solid #ec5d60; }
 
 @media only screen and (min-width: 850px) {
   .site-wrapper {
