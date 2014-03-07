@@ -14,7 +14,7 @@ jQuery(function(){
     email = $('#register-email').val()
     if($.trim(name) != '' && $.trim(email) != '')
     {
-      url = ["https://tito.io/ull/2014/interested_users/join.json?event_interested_user[email]=", email , "&event_interested_user[name]=", name, "&callback=?"].join('')
+      url = ["http://tito.dev/ull/2014/survey_responses/join.json?survey_id=pahrv7bccp8celaaufzk4fa&survey_response[answers][2641][response]=", email , "&survey_response[answers][2640][response]=", name, "&callback=?"].join('')
       $.getJSON(url, null, function(data){})
       width = $('.register-interest-form').width()
       height = $('.register-interest-form').height()
