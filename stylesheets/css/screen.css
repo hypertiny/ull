@@ -117,6 +117,9 @@ textarea {
 ================================ */
 /* Mixins
 ================================ */
+html, body {
+  height: 100%; }
+
 body {
   background: white;
   color: #ec5d60;
@@ -663,32 +666,122 @@ a, a:link, a:visited {
       .blog-footer .site-link {
         width: 10rem; } }
 
+.speakers {
+  margin-bottom: 1.5rem; }
+
+.text .speakers-list {
+  padding: 0;
+  width: 100%;
+  *zoom: 1; }
+  .text .speakers-list:before, .text .speakers-list:after {
+    content: " ";
+    display: table; }
+  .text .speakers-list:after {
+    clear: both; }
+  .text .speakers-list.two .speaker {
+    width: 50%; }
+  .text .speakers-list.three .speaker {
+    width: 33.333%; }
+  .text .speakers-list.four .speaker {
+    width: 25%; }
+
 .speaker {
-  width: 40%;
-  float: left;
+  list-style-type: none;
   margin-bottom: 2rem;
-  height: 350px; }
-  .speaker:nth-of-type(2n) {
-    margin-left: 20%; }
-  .speaker:nth-of-type(1) .speaker-image, .speaker:nth-of-type(5) .speaker-image, .speaker:nth-of-type(9) .speaker-image {
-    background-color: #4fb3e0; }
-  .speaker:nth-of-type(2) .speaker-image, .speaker:nth-of-type(6) .speaker-image, .speaker:nth-of-type(7) .speaker-image {
-    background: #ec5d60; }
-  .speaker:nth-of-type(3) .speaker-image, .speaker:nth-of-type(4) .speaker-image, .speaker:nth-of-type(8) .speaker-image {
-    background: #fac637; }
+  width: 33%;
+  float: left; }
   .speaker .speaker-name {
-    font-size: 1.8em;
+    font-size: 1em;
     text-align: center;
     margin-top: 2rem;
     margin-bottom: 0.66667rem;
     font-weight: 500; }
-  .speaker .speaker-image {
-    border-radius: 50%;
-    overflow: hidden; }
   .speaker .speaker-role {
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1rem;
     line-height: 1.4rem; }
-  .speaker img {
-    width: 100%;
-    display: block; }
+
+.speaker-image {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  background: #eee;
+  margin: 0 auto; }
+  .speaker-image span {
+    display: none;
+    text-align: center;
+    font-size: 3rem;
+    color: #999;
+    line-height: 10rem;
+    padding-top: 0.25rem; }
+
+.blank-image span {
+  display: block; }
+
+.speaker-image.amanda-rosler {
+  background: url("/images/speakers/amanda-rosler.jpg") no-repeat;
+  background-size: cover;
+  background-position: -25px 0; }
+
+.speaker-image.jason-snell {
+  background: url("/images/speakers/jason-snell.jpg") no-repeat;
+  background-size: cover;
+  background-position: -20px 0; }
+
+.speaker-image.michael-lopp {
+  background: url("/images/speakers/michael-lopp.jpg") no-repeat;
+  background-size: cover;
+  background-position: 0px 0; }
+
+.speaker-image.linda-franco {
+  background: url("/images/speakers/linda-franco.jpg") no-repeat;
+  background-size: cover;
+  background-position: -25px 0; }
+
+.speaker-image.jim-dalrymple {
+  background: url("/images/speakers/jim-dalrymple.jpg") no-repeat;
+  background-size: cover;
+  background-position: 0px -20px; }
+
+.speaker-image.jennifer-brook {
+  background: url("/images/speakers/jennifer-brook.jpg") no-repeat;
+  background-size: cover;
+  background-position: -40px 0; }
+
+.speaker-image.jean-macdonald {
+  background: url("/images/speakers/jean-macdonald.jpg") no-repeat;
+  background-size: cover;
+  background-position: -40px 0; }
+
+.top-nav {
+  width: 42rem;
+  margin: 0rem auto 6rem;
+  *zoom: 1; }
+  .top-nav:before, .top-nav:after {
+    content: " ";
+    display: table; }
+  .top-nav:after {
+    clear: both; }
+  .top-nav li {
+    float: left;
+    width: 22%;
+    margin-left: 3%; }
+  .top-nav a {
+    text-align: center; }
+
+.top-section {
+  min-height: 100%;
+  background: #ec5d60;
+  color: #fff;
+  padding-top: 5rem; }
+
+.top-logo {
+  width: 6rem;
+  margin: 0 auto 3rem;
+  display: block; }
+
+.tagline {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 500;
+  text-transform: capitalize; }

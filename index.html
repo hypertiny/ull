@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{site.title}}</title>
+  
+  <link rel="stylesheet" href="/stylesheets/css/screen.css" media="all">
+  <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=1">
+  
+  <link rel="icon shortcut" href="/images/favicon.ico">
+
+  <script type="text/javascript" src="//use.typekit.net/vqx8btp.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  
+</head>
+<body class="{% if type == 'page' %}{{current.title | downcase}}{% elsif type == 'post' %}{{parent.title | downcase }}{% endif %}">
+  <div class="site-wrapper">
+    <div class="logo-year-wrap">
+      <img src="/images/ull-logo.svg" onerror="this.src=/images/ull-logo.png" alt="Úll Logo" class="logo">
+      <p class="date-location">
+        {{site.meta['date']}}<br>
+        {{site.meta['location']}}
+      </p>
+      {% if current.meta['hero-image'] %}
+        <img src="{{meta['hero-image']}}" alt=""  class="main-image">
+      {% endif %}
+
+    </div>
+    <img src="/images/ull-2014.gif" alt="Teaser Image" class="main-image">
+    <ul class="top-nav">
+      <li><a href="/blog" class="site-link">Speakers</a></li>
+      <li><a href="/" class="site-link">Schedule</a></li>
+      <li><a href="/blog" class="site-link">Tickets</a></li>
+      <li><a href="/blog" class="site-link">Blog</a></li>
+    </ul>
+    <div class="site-content">
+
+    <section class="full-into text">
+      <h2>The conference. Reinvented.</h2>
+      <p>
+        Úll is a conference built around people. Attendee experience is critical to the planning and design of the event. We value relationships most. We want to maximise serendipity. Our attendees to go away having made new friends, potential partners, useful connections, knowledgeable confidantes.
+      </p>
+      <p>
+        Úll 2014 takes place in Lyrath Estate, Co. Kilkenny, Ireland. Lyrath is a five star hotel built around the shell of an old Victorian country manor. It features a convention centre, a spa, two restaurants, a café, a foyer, an old house, a games room, a wine bar and 170 acres of parkland.
+      </p>
+    </section>
+  
+    <section class="speakers text">
+      <h2>The Speakers</h2>
+      <ul class="speakers-list three">
+        <li class="speaker">
+          <div class="blank-image speaker-image dave-wiskus"><span>DW</span></div>
+          <h3 class="speaker-name">Dave Wiskus</h3>
+          <p class="speaker-role">Designer at QBranch</p>
+        </li>
+        <li class="speaker">
+          <div class="speaker-image amanda-rosler"></div>
+          <h3 class="speaker-name">Amanda Rösler</h3>
+          <p class="speaker-role">Designer at Toca Boca</p>
+        </li>
+        <li class="speaker">
+          <div class="blank-image speaker-image lisa-maree-domican"><span>LMD</span></div>
+          <h3 class="speaker-name">Lisa Maree Domican</h3>
+          <p class="speaker-role">Developer</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="speakers text">
+      <h2>The Hosts</h2>
+      <ul class="speakers-list two">
+        <li class="speaker">
+          <div class="speaker-image jason-snell"><span>JS</span></div>
+          <h3 class="speaker-name">Jason Snell</h3>
+          <p class="speaker-role">Developer</p>
+        </li>
+        <li class="speaker">
+          <div class="blank-image speaker-image guy-english"><span>GE</span></div>
+          <h3 class="speaker-name">Guy English</h3>
+          <p class="speaker-role">Developer</p>
+        </li>
+      </ul>
+    </section>
+    
+    <section class="speakers text">
+      <h2>The Dinner Speaker</h2>
+      <ul class="speakers-list">
+        <li class="speaker">
+          <div class="blank-image speaker-image john-gruber"><span>JG</span></div>
+          <h3 class="speaker-name">John Gruber</h3>
+          <p class="speaker-role">Developer</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="speakers text">
+      <h2>The Feature Presentations</h2>
+      <p>
+        Let’s face it, sponsorship booths at conference can sometimes be a drab affair. Who really likes being sold things by employees who’d rather be attending the conference? That said, sponsor booths are excellent places to meet people. You can browse at your own pace, take time to meet people, have conversations, and learn new things along the way.
+      </p>
+        
+      <ul class="speaker-list">
+        <li class="speaker">
+          <div class="speaker-image michael-lopp"><span>ML</span></div>
+          <h3 class="speaker-name">Michael Lopp</h3>
+          <p class="speaker-role">Developer</p>
+        </li>
+        <li class="speaker">
+          <div class="speaker-image jean-macdonald"><span>JM</span></div>
+          <h3 class="speaker-name">Jean MacDonald</h3>
+          <p class="speaker-role">Developer</p>
+        </li>
+        <li class="speaker">
+          <div class="speaker-image linda-franco"><span>LF</span></div>
+          <h3 class="speaker-name">Linda Franco</h3>
+          <p class="speaker-role">Designer</p>
+        </li>
+        <li class="speaker">
+          <div class="blank-image speaker-image matt-gemmell"><span>MG</span></div>
+          <h3 class="speaker-name">Matt Gemmell</h3>
+          <p class="speaker-role">Writer</p>
+        </li>
+        <li class="speaker">
+          <div class="speaker-image jennifer-brook"><span>JB</span></div>
+          <h3 class="speaker-name">Jennifer Brook</h3>
+          <p class="speaker-role">Designer</p>
+        </li>
+        <li class="speaker">
+          <div class="speaker-image jim-dalrymple"><span>JD</span></div>
+          <h3 class="speaker-name">Jim Dalrymple</h3>
+          <p class="speaker-role">Writer</p>
+        </li>
+      </ul>
+
+
+    </section>
+    <section class="text">
+      <h2>The Schedule</h2>
+
+      Monday April 28th - Talks
+
+  12pm-2pm Registration Hotel rooms are guaranteed by 4pm, but you can leave your bags at the checkin desk for delivery to your room.
+
+  2:30pm–5pm Keynote sessions
+
+  5pm–7pm Chillout, break-time
+
+  7pm–9pm Dinner
+
+  9pm–11pm The Úll Show
+
+  11pm–late Live Music / Bar
+
+  Tuesday April 28th - Features
+
+  10am–5pm Features
+
+  5pm–7pm Chillout, break-time
+
+  7pm Grubernote 8pm–11pm Dinner 11pm–late Live Music / Bar
+
+  Wednesday April 29th – Podcasts
+
+  12pm – checkout 1:30pm - BBQ
+  </section>
+  </div>
+
+
+
+    
+    <section class="site-content text">
+    
+    </section>
+
+    <section class="site-content schedule">
+      <div class="monday">
+        <h2>Monday</h2>
+        
+      </div>
+      <div class="tuesday">
+        <h2>Tuesday</h2>
+      </div>
+      <div class="wednesday">
+        <h2>Wednesday</h2>
+      </div>
+    </section>
+  </div>
+  
+  <script type="text/javascript">
+    var _gauges = _gauges || [];
+    (function() {
+      var t   = document.createElement('script');
+      t.type  = 'text/javascript';
+      t.async = true;
+      t.id    = 'gauges-tracker';
+      t.setAttribute('data-site-id', '527920a3108d7b7401000149');
+      t.src = '//secure.gaug.es/track.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(t, s);
+    })();
+  </script>
+  
+</body>
+</html>
+
+
+
+
+

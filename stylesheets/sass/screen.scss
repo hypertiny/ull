@@ -7,6 +7,10 @@
 // Base
 // ---------------------------------------------------------
 
+html, body {
+  height: 100%;
+}
+
 body {
   background: $c-bg;
   color: $c-red;
@@ -711,67 +715,149 @@ a, a:link, a:visited {
 // Speakers
 // ---------------------------------------------------------
 
+.speakers {
+  margin-bottom: $t-leading;
+}
+
+.text {
+  .speakers-list {
+    padding: 0;
+    width: 100%;
+    @include clearfix;
+
+    &.two .speaker {
+      width: 50%;
+    }
+    &.three .speaker {
+      width: 33.333%;
+    }
+
+    &.four .speaker {
+      width: 25%;
+    }
+  }
+}
+
+
 .speaker {
-  width: 40%;
-  float: left;
+  list-style-type: none;
   margin-bottom: $tl-medium;
-  height: 350px;
+  width: 33%;
+  float: left;
 
-  &:nth-of-type(2n) {
-    margin-left: 20%;
-  }
-
-  &:nth-of-type(1),
-  &:nth-of-type(5),
-  &:nth-of-type(9) {
-    .speaker-image {
-      background-color: $c-blue;
-    }
-  }
-
-  &:nth-of-type(2),
-  &:nth-of-type(6),
-  &:nth-of-type(7) {
-    .speaker-image {
-      background: rgba($c-red, 1);
-    }
-  }
-
-  &:nth-of-type(3),
-  &:nth-of-type(4),
-  &:nth-of-type(8) {
-    .speaker-image {
-      background: rgba($c-yellow, 1);
-    }
-  }
 
   .speaker-name {
-    font-size: 1.8em;
+    font-size: 1em;
     text-align: center;
     margin-top: $tl-medium;
     margin-bottom: $tl-medium/3;
     font-weight: 500;
   }
 
-  .speaker-image {
-    border-radius: 50%;
-    overflow: hidden;
-    // width: 80%;
-    // margin: 0 auto;
-  }
-
   .speaker-role {
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1rem;
     line-height: 1.4rem;
   }
+}
 
-  img {
-    width: 100%;
-    display: block;
+.speaker-image {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  background: #eee;
+  margin: 0 auto;
+  span {
+    display: none;
+    text-align: center;
+    font-size: 3rem;
+    color: #999;
+    line-height: 10rem;
+    padding-top: 0.25rem
   }
+}
+
+.blank-image span {
+  display: block;
+}
+
+.speaker-image.amanda-rosler {
+  background: url("/images/speakers/amanda-rosler.jpg") no-repeat;
+  background-size: cover;
+  background-position: -25px 0;
+}
+
+.speaker-image.jason-snell {
+  background: url("/images/speakers/jason-snell.jpg") no-repeat;
+  background-size: cover;
+  background-position: -20px 0;
+}
+
+.speaker-image.michael-lopp {
+  background: url("/images/speakers/michael-lopp.jpg") no-repeat;
+  background-size: cover;
+  background-position: 0px 0;
+}
+
+.speaker-image.linda-franco {
+  background: url("/images/speakers/linda-franco.jpg") no-repeat;
+  background-size: cover;
+  background-position: -25px 0;
 }
 
 
 
+.speaker-image.jim-dalrymple {
+  background: url("/images/speakers/jim-dalrymple.jpg") no-repeat;
+  background-size: cover;
+  background-position: 0px -20px;
+}
+
+.speaker-image.jennifer-brook {
+  background: url("/images/speakers/jennifer-brook.jpg") no-repeat;
+  background-size: cover;
+  background-position: -40px 0;
+}
+
+.speaker-image.jean-macdonald {
+  background: url("/images/speakers/jean-macdonald.jpg") no-repeat;
+  background-size: cover;
+  background-position: -40px 0;
+}
+
+
+
+.top-nav {
+  width: 42rem;
+  margin: 0rem auto 6rem;
+  @include clearfix;
+  li {
+    float: left;
+    width: 22%;
+    margin-left: 3%;
+  }
+  a {
+    text-align: center;
+  }
+}
+
+.top-section {
+  min-height: 100%;
+  background: $c-red;
+  color: #fff;
+  padding-top: 5rem;
+}
+
+.top-logo {
+  width: 6rem;
+  margin: 0 auto 3rem;
+  display: block;
+}
+
+.tagline {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 500;
+  text-transform: capitalize;
+}
 
