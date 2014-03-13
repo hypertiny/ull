@@ -366,45 +366,20 @@ section {
 .d-28 { height: (100/28 + 0%)*28;}
 
 
-.tickets-wrap {
-  padding: 0 1rem;
-  @media only screen and (min-width: $small) {
-    padding: 0 4rem;
-  }
-
-  @media only screen and (min-width: $medium) {
-    padding: 0;
-    margin: 0rem auto $tl-medium*4;
-    width: 42rem;
-  }
-}
-
-.things-fan {
-  width: 12rem;
-  margin: 5rem auto 5rem;
-  display: block;
-
-  @media only screen and (min-width: $medium) {
-    width: 14rem;
-    margin: $tl-medium*3.5 auto $tl-medium*4;
-    display: block; 
-  }
-}
-
 #register-form {
-  margin-top: $tl-medium*2;
+  margin-top: 1rem;
   @include clearfix;
 }
 
 .ull-ticket {
   @include clearfix;
-  border-bottom: 2px dotted rgba($c-red, 0.4);
+  border-bottom: 2px solid rgba($c-red, 0.2);
   position: relative;
   padding-bottom: $t-leading;
   margin-bottom: $t-leading;
 
   &:first-of-type {
-    border-top: 2px dotted rgba($c-red, 0.4);
+    border-top: 2px solid rgba($c-red, 0.2);
     padding-top: $tl-medium/1.5;
     .ull-price-quantity {
       top: $tl-medium/1.5;
@@ -418,80 +393,47 @@ section {
 }
 
 .ull-ticket-title {
-  font-size: 1.4rem;
+  font-size: 2.4rem;
   font-weight: 500;
   line-height: 1.8rem;
-
-  @media only screen and (min-width: $medium) {
-    font-size: $hz-medium;
-    line-height: $hl-medium;
-  }
+  float: left;
+  width: 70%;
 }
 
 .ull-ticket-description {
-  font-size: 1.2rem;
+  float: left;
+  font-size: 1.8rem;
   margin-top: $t-leading/2;
   width: 70%;
-
-  @media only screen and (min-width: $medium) {
-    margin-top: $t-leading/5;
-    width: auto;
-  }
 }
 
 .ull-ticket-locked {
   font-size: 1.8rem;
 }
 
-.ull-price-quantity {
-  position: absolute;
-  top: 0;
-  right: 0;
+.ull-quantity {
+  margin-top: 0.8rem;
   float: right;
-
-  input {
-    float: right;
-    font-size: 1rem;
-    width: 2rem;
-    border: 2px solid rgba($c-red, 0.8);
-    padding: 0.2rem;
-    border-radius: 4px;
-    text-align: center;
-    color: $c-red;
-    -webkit-appearance: none;
-
-    @media only screen and (min-width: $medium) {
-      font-size: 1.3rem;
-      width: 2.4rem;
-    }
-
-    &:focus {
-      outline: none;
-      border: 2px solid $c-red;
-    }
+  font-size: 1.8rem;
+  width: 3rem;
+  border: 2px solid rgba($c-red, 0.8);
+  padding: 0.2rem;
+  border-radius: 4px;
+  text-align: center;
+  color: $c-red;
+  -webkit-appearance: none;
+  &:focus {
+    outline: none;
+    border: 2px solid $c-red;
   }
 }
 
 .ull-ticket-price {
-  font-size: 1.5rem;
+  font-size: 2.4rem;
   float: right;
-  margin-right: 1.4rem;
   font-weight: 500;
   line-height: 1.8rem;
   position: relative;
-  
-  @media only screen and (min-width: $medium) {
-    font-size: 1.8rem;
-    line-height: 2.2rem;
-  }
-
-  &:after {
-    content:"\00d7"; 
-    position: absolute;
-    font-size: 1.1rem;
-    right: -1.15rem;
-    color: rgba($c-red, 0.4);
-  }
 }
 
 .ull-ticket-price-vat {
@@ -500,8 +442,8 @@ section {
   text-align: right;
   right: 0;
   width: 10rem;
-  font-size: 1.05rem;
-  color: rgba($c-red, 0.8);
+  font-size: 1.8rem;
+  color: rgba($c-red, 1);
   width: 4rem;
 
   @media only screen and (min-width: $small) {
