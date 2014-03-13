@@ -126,11 +126,11 @@ body {
   color: #ec5d60;
   font-family: "museo-sans", sans-serif;
   font-weight: 300;
-  line-height: 2.4rem; }
+  line-height: 2.5rem; }
 
 section {
   width: 100rem;
-  margin: 9.6rem auto;
+  margin: 10rem auto;
   *zoom: 1; }
   section:before, section:after {
     content: " ";
@@ -147,10 +147,10 @@ section {
   .title-col h2 {
     font-size: 4rem;
     font-weight: 100;
-    margin-bottom: 2.4rem;
-    line-height: 4.8rem; }
+    margin-bottom: 2.5rem;
+    line-height: 5rem; }
   .title-col p {
-    margin-bottom: 2.4rem; }
+    margin-bottom: 2.5rem; }
 
 .further-col {
   width: 56rem;

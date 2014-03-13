@@ -47,10 +47,79 @@
 
     </div>
     <div class="further-col">
-      <div class="intro-details">
-        <p class="intro-date">28th – 30th of April, 2014</p>
-        <p class="intro-location">Kilkenny, Ireland</p>
-        <p class="intro-price">€645 (+VAT)</p>
+      <script id="ticket-template" type="text/html">
+        <li class="ull-ticket">
+          <p class="ull-ticket-title">%{= it.title %}</p>
+          <p class="ull-ticket-description">%{= it.description %}</p>
+          %{? it.status == 'locked' %}
+            <div class="ull-price-quantity">
+              <p class="ull-ticket-locked">Locked</p>
+            </div>
+          %{?? %}
+            <div class="ull-price-quantity">
+              <input type="text" name="registration[release_ids][%{= it.slug %}]" placeholder="0">
+                <p class="ull-ticket-price">%{= it.price_ex_tax %}</p>
+                <p class="ull-ticket-price-vat">%{= it.price_inc_tax %} inc VAT</p>
+            </div>
+          %{? %}
+        </li>
+      </script>
+
+      <div id='register-form'>
+        <form action="http://tito.io/ull/2014/registrations" method="POST">
+          <input name="utf8" type="hidden" value="&#x2713;" />
+          <ul class="ull-tickets" id="ull-tickets">
+            <li class="ull-ticket">
+              <p class="ull-ticket-title">Úll Ticket</p>
+              <p class="ull-ticket-description">Two day conference. No accommodation.</p>
+              
+              <!-- 
+              <div class="ull-price-quantity">
+                <p class="ull-ticket-locked">Locked</p>
+              </div> 
+              -->
+              <div class="ull-price-quantity">
+                <input type="text" name="registration[release_ids][%{= it.slug %}]" placeholder="0">
+                  <p class="ull-ticket-price">€645</p>
+                  <p class="ull-ticket-price-vat">€793.35 inc VAT</p>
+              </div>
+            </li>
+            <li class="ull-ticket">
+              <p class="ull-ticket-title">Dounle Room</p>
+              <p class="ull-ticket-description">One double bed. Two nights</p>
+              
+              <!-- 
+              <div class="ull-price-quantity">
+                <p class="ull-ticket-locked">Locked</p>
+              </div> 
+              -->
+              <div class="ull-price-quantity">
+                <input type="text" name="registration[release_ids][%{= it.slug %}]" placeholder="0">
+                  <p class="ull-ticket-price">€300</p>
+                  <p class="ull-ticket-price-vat">€369 inc VAT</p>
+              </div>
+            </li>
+
+            <li class="ull-ticket">
+              <p class="ull-ticket-title">Dounle Room</p>
+              <p class="ull-ticket-description">One double bed. Two nights</p>
+              
+              <!-- 
+              <div class="ull-price-quantity">
+                <p class="ull-ticket-locked">Locked</p>
+              </div> 
+              -->
+              <div class="ull-price-quantity">
+                <input type="text" name="registration[release_ids][%{= it.slug %}]" placeholder="0">
+                  <p class="ull-ticket-price">€300</p>
+                  <p class="ull-ticket-price-vat">€369 inc VAT</p>
+              </div>
+            </li>
+          </ul>
+          <button type="submit" class="register-form-submit">
+            Continue
+          </button>
+        </form>
       </div>
     </div>
   </section>
