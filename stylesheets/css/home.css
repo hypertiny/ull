@@ -129,8 +129,7 @@ body {
   line-height: 2.4rem; }
 
 section {
-  max-width: 100rem;
-  width: 90%;
+  width: 100rem;
   margin: 9.6rem auto;
   *zoom: 1; }
   section:before, section:after {
@@ -144,9 +143,9 @@ section {
   float: left; }
 
 .title-col {
-  width: 40%; }
+  width: 38rem; }
   .title-col h2 {
-    font-size: 4.5rem;
+    font-size: 4rem;
     font-weight: 100;
     margin-bottom: 2.4rem;
     line-height: 4.8rem; }
@@ -154,14 +153,26 @@ section {
     margin-bottom: 2.4rem; }
 
 .further-col {
-  width: 55%;
-  margin-left: 5%; }
+  width: 56rem;
+  margin-left: 6rem; }
+  .further-col .extra-text {
+    width: 40rem;
+    margin-top: 12rem; }
 
-.intro-offset {
-  width: 70rem; }
+.intro-details {
+  background: #fac637;
+  font-size: 4rem;
+  font-weight: 100;
+  margin-bottom: 3rem;
+  line-height: 4.5rem;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 4px; }
 
-.title-offset {
-  margin-top: 7.2rem; }
+.intro-date,
+.intro-location,
+.intro-price {
+  margin-bottom: 2rem; }
 
 .site-logo {
   width: 10rem;
@@ -177,7 +188,7 @@ section {
   display: block; }
   .section-image.home {
     width: 80%;
-    margin-top: 6rem; }
+    margin: 8rem auto 0; }
 
 .site-nav {
   width: 50%;

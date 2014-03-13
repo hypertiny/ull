@@ -43,8 +43,7 @@ body {
 // General Styles
 
 section {
-  max-width: 100rem;
-  width: 90%;
+  width: 100rem;
   margin: $t-leading*4 auto;
   @include clearfix;
 }
@@ -55,9 +54,9 @@ section {
 }
 
 .title-col {
-  width: 40%;
+  width: 38rem;
   h2 {
-    font-size: 4.5rem;
+    font-size: 4rem;
     font-weight: 100;
     margin-bottom: $t-leading;
     line-height: $t-leading*2;
@@ -69,17 +68,47 @@ section {
 }
 
 .further-col {
-  width: 55%;
-  margin-left: 5%;
+  width: 56rem;
+  margin-left: 6rem;
+  .extra-text {
+    width: 40rem;
+    margin-top: 12rem;
+  }
+}
+
+.intro-details {
+  background: $c-yellow;
+  font-size: 4rem;
+  font-weight: 100;
+  margin-bottom: 3rem;
+  line-height: 4.5rem;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+.intro-date,
+.intro-location,
+.intro-price {
+  margin-bottom: 2rem;
+}
+
+.intro-date {
+
+}
+
+.intro-location {
+
+}
+
+.intro-price {
+
 }
 
 .intro-offset {
-  width: 70rem;
+  // width: 70rem;
 }
 
-.title-offset {
-  margin-top: 7.2rem;
-}
 
 // Logo + Intro
 
@@ -99,7 +128,7 @@ section {
   display: block;
   &.home {
     width: 80%;
-    margin-top: 6rem;
+    margin: 8rem auto 0;
   }
 }
 
@@ -125,6 +154,10 @@ section {
   float: left;
   margin-right: 3%;
   text-align: center;
+}
+
+.eqaul-width {
+
 }
 
 // Speakers
