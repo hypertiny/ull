@@ -4,206 +4,265 @@
   <meta charset="UTF-8">
   <title>{{site.title}}</title>
   
-  <link rel="stylesheet" href="/stylesheets/css/screen.css" media="all">
+  <link rel="stylesheet" href="/stylesheets/css/home.css" media="all">
   <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=1">
   
   <link rel="icon shortcut" href="/images/favicon.ico">
 
   <script type="text/javascript" src="//use.typekit.net/vqx8btp.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  {% if slug == 'teaser' %}
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="/scripts/doT.min.js"></script>
+    <script src="/scripts/jquery.transit.min.js"></script>
+    <script src="/scripts/jquery.tito.js"></script>
+    <script src="/scripts/tito.js"></script>
+    <script src="/scripts/dude.js"></script>
+    <script src="/scripts/register_interest.js"></script>
+  {% endif %}
   
 </head>
-<body class="{% if type == 'page' %}{{current.title | downcase}}{% elsif type == 'post' %}{{parent.title | downcase }}{% endif %}">
-  <div class="site-wrapper">
-    <div class="logo-year-wrap">
-      <img src="/images/ull-logo.svg" onerror="this.src=/images/ull-logo.png" alt="Úll Logo" class="logo">
-      <p class="date-location">
-        {{site.meta['date']}}<br>
-        {{site.meta['location']}}
-      </p>
-      {% if current.meta['hero-image'] %}
-        <img src="{{meta['hero-image']}}" alt=""  class="main-image">
-      {% endif %}
+<body>
+  <img src="/images/ull-logo.svg" onerror="this.src=/images/ull-logo.png" alt="Úll Logo" class="site-logo">
+  <div class="date-location-wrap">
+    <p>28th – 30th April 2014</p>
+    <p>Kilkenny, Ireland</p>
+  </div>
 
-    </div>
-    <img src="/images/ull-2014.gif" alt="Teaser Image" class="main-image">
-    <ul class="top-nav">
-      <li><a href="/blog" class="site-link">Speakers</a></li>
-      <li><a href="/" class="site-link">Schedule</a></li>
-      <li><a href="/blog" class="site-link">Tickets</a></li>
-      <li><a href="/blog" class="site-link">Blog</a></li>
-    </ul>
-    <div class="site-content">
+  <img src="/images/ull-homepage.png" alt="" class="section-image home">
+  
+  <nav class="site-nav">
+    <a href="#" class="nav-link">Speakers</a>
+    <a href="#" class="nav-link">Tickets</a>
+    <a href="#" class="nav-link">Schedule</a>
+    <a href="#" class="nav-link">Blog</a>
+  </nav>
 
-    <section class="full-into text">
-      <h2>The conference. Reinvented.</h2>
+  <section>
+    <div class="title-col">
+      <h2 class="intro-offset">The conference. Reinvented.</h2>
       <p>
         Úll is a conference built around people. Attendee experience is critical to the planning and design of the event. We value relationships most. We want to maximise serendipity. Our attendees to go away having made new friends, potential partners, useful connections, knowledgeable confidantes.
       </p>
-      <p>
+
+    </div>
+    <div class="further-col">
+      <p class="title-offset">
         Úll 2014 takes place in Lyrath Estate, Co. Kilkenny, Ireland. Lyrath is a five star hotel built around the shell of an old Victorian country manor. It features a convention centre, a spa, two restaurants, a café, a foyer, an old house, a games room, a wine bar and 170 acres of parkland.
       </p>
-    </section>
-  
-    <section class="speakers text">
+    </div>
+  </section>
+
+  <section>
+    <div class="title-col">
       <h2>The Speakers</h2>
-      <ul class="speakers-list three">
-        <li class="speaker">
-          <div class="blank-image speaker-image dave-wiskus"><span>DW</span></div>
+      <p>A short bit of text explaining speakers and their role in the conference.</p>
+    </div>
+    <div class="further-col">
+      <div class="speaker-row">
+        <div class="speaker dave-wiskus">
+          <div class="speaker-image"><span class="speaker-initials">DW</span></div>
           <h3 class="speaker-name">Dave Wiskus</h3>
           <p class="speaker-role">Designer at QBranch</p>
-        </li>
-        <li class="speaker">
-          <div class="speaker-image amanda-rosler"></div>
+          <p class="speaker-abstract">This is a short summary fo what Mr. Wiskus will be speaking about.</p>
+        </div>
+
+        <div class="speaker amanda-rosler">
+          <div class="speaker-image"><span class="speaker-initials">AR</span></div>
           <h3 class="speaker-name">Amanda Rösler</h3>
-          <p class="speaker-role">Designer at Toca Boca</p>
-        </li>
-        <li class="speaker">
-          <div class="blank-image speaker-image lisa-maree-domican"><span>LMD</span></div>
+          <p class="speaker-role">Designer at TocaBoca</p>
+          <p class="speaker-abstract">This is a short summary of what Ms. Rösler will be speaking about.</p>
+        </div>
+
+        <div class="speaker lisa-maree-domican">
+          <div class="speaker-image"><span class="speaker-initials">LD</span></div>
           <h3 class="speaker-name">Lisa Maree Domican</h3>
-          <p class="speaker-role">Developer</p>
-        </li>
-      </ul>
-    </section>
+          <p class="speaker-role">Creater of Grace App</p>
+          <p class="speaker-abstract">This is a short summary of what Mrs. Domican will be speaking about.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <section class="speakers text">
+  <section>
+    <div class="title-col">
       <h2>The Hosts</h2>
-      <ul class="speakers-list two">
-        <li class="speaker">
-          <div class="speaker-image jason-snell"><span>JS</span></div>
+      <p>A short bit of text explaining what the hosts will be doing.</p>
+    </div>
+    <div class="further-col">
+      <div class="speaker-row">
+        <div class="speaker jason-snell">
+          <div class="speaker-image"><span class="speaker-initials">JS</span></div>
           <h3 class="speaker-name">Jason Snell</h3>
-          <p class="speaker-role">Developer</p>
-        </li>
-        <li class="speaker">
-          <div class="blank-image speaker-image guy-english"><span>GE</span></div>
-          <h3 class="speaker-name">Guy English</h3>
-          <p class="speaker-role">Developer</p>
-        </li>
-      </ul>
-    </section>
-    
-    <section class="speakers text">
-      <h2>The Dinner Speaker</h2>
-      <ul class="speakers-list">
-        <li class="speaker">
-          <div class="blank-image speaker-image john-gruber"><span>JG</span></div>
-          <h3 class="speaker-name">John Gruber</h3>
-          <p class="speaker-role">Developer</p>
-        </li>
-      </ul>
-    </section>
+          <p class="speaker-role">Editor in Chief of Macworld</p>
+          <p class="speaker-abstract">This is a short summary fo what Mr. Snell will be doing at Úll.</p>
+        </div>
 
-    <section class="speakers text">
+        <div class="speaker guy-english">
+          <div class="speaker-image"><span class="speaker-initials">GE</span></div>
+          <h3 class="speaker-name">Guy English</h3>
+          <p class="speaker-role">Organiser of Çingleton</p>
+          <p class="speaker-abstract">This is a short summary of what Ms. English will be doing at Úll.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="title-col">
+      <h2>The Dinner Speaker</h2>
+      <p>A short bit of text explaining what the dinner speaker will be doing at Úll.</p>
+    </div>
+    <div class="further-col">
+      <div class="speaker-row">
+        <div class="speaker john-gruber">
+          <div class="speaker-image"><span class="speaker-initials">JG</span></div>
+          <h3 class="speaker-name">John Gruber</h3>
+          <p class="speaker-role">Founder of Daring Fireball</p>
+          <p class="speaker-abstract">This is a short summary fo what Mr. Gruber will be doing at Úll.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <img src="/images/blog-footer-bar.png" alt="" class="section-image">
+
+  <section>
+    <div class="title-col">
       <h2>The Feature Presentations</h2>
       <p>
         Let’s face it, sponsorship booths at conference can sometimes be a drab affair. Who really likes being sold things by employees who’d rather be attending the conference? That said, sponsor booths are excellent places to meet people. You can browse at your own pace, take time to meet people, have conversations, and learn new things along the way.
       </p>
-        
-      <ul class="speaker-list">
-        <li class="speaker">
-          <div class="speaker-image michael-lopp"><span>ML</span></div>
+    </div>
+    <div class="further-col">
+      <div class="speaker-row">
+        <div class="speaker michael-lopp">
+          <div class="speaker-image"><span class="speaker-initials">ML</span></div>
           <h3 class="speaker-name">Michael Lopp</h3>
-          <p class="speaker-role">Developer</p>
-        </li>
-        <li class="speaker">
-          <div class="speaker-image jean-macdonald"><span>JM</span></div>
+          <p class="speaker-role">CNO at Palintir</p>
+          <p class="speaker-abstract">This is a short summary fo what Mr. Lopp will be doing at Úll.</p>
+        </div>
+
+        <div class="speaker jean-macdonald">
+          <div class="speaker-image"><span class="speaker-initials">JM</span></div>
           <h3 class="speaker-name">Jean MacDonald</h3>
-          <p class="speaker-role">Developer</p>
-        </li>
-        <li class="speaker">
-          <div class="speaker-image linda-franco"><span>LF</span></div>
+          <p class="speaker-role">Co-Founder of Smile</p>
+          <p class="speaker-abstract">This is a short summary fo what Ms. MacDonald will be doing at Úll.</p>
+        </div>
+
+        <div class="speaker linda-franco">
+          <div class="speaker-image"><span class="speaker-initials">LF</span></div>
           <h3 class="speaker-name">Linda Franco</h3>
-          <p class="speaker-role">Designer</p>
-        </li>
-        <li class="speaker">
-          <div class="blank-image speaker-image matt-gemmell"><span>MG</span></div>
+          <p class="speaker-role">Founder of Machina</p>
+          <p class="speaker-abstract">This is a short summary fo what Ms. Franco will be doing at Úll.</p>
+        </div>
+      </div>
+
+      <div class="speaker-row">
+        <div class="speaker matt-gemmell">
+          <div class="speaker-image"><span class="speaker-initials">MG</span></div>
           <h3 class="speaker-name">Matt Gemmell</h3>
-          <p class="speaker-role">Writer</p>
-        </li>
-        <li class="speaker">
-          <div class="speaker-image jennifer-brook"><span>JB</span></div>
+          <p class="speaker-role">Writer and Developer</p>
+          <p class="speaker-abstract">This is a short summary fo what Mr. Gemmell will be doing at Úll.</p>
+        </div>
+
+        <div class="speaker jennifer-brook">
+          <div class="speaker-image"><span class="speaker-initials">JB</span></div>
           <h3 class="speaker-name">Jennifer Brook</h3>
-          <p class="speaker-role">Designer</p>
-        </li>
-        <li class="speaker">
-          <div class="speaker-image jim-dalrymple"><span>JD</span></div>
+          <p class="speaker-role">Independant Reseacher and Book maker</p>
+          <p class="speaker-abstract">This is a short summary fo what Ms. Brook will be doing at Úll.</p>
+        </div>
+
+        <div class="speaker jim-dalrymple">
+          <div class="speaker-image"><span class="speaker-initials">JD</span></div>
           <h3 class="speaker-name">Jim Dalrymple</h3>
-          <p class="speaker-role">Writer</p>
-        </li>
-      </ul>
-
-
-    </section>
-    <section class="text">
-      <h2>The Schedule</h2>
-
-      Monday April 28th - Talks
-
-  12pm-2pm Registration Hotel rooms are guaranteed by 4pm, but you can leave your bags at the checkin desk for delivery to your room.
-
-  2:30pm–5pm Keynote sessions
-
-  5pm–7pm Chillout, break-time
-
-  7pm–9pm Dinner
-
-  9pm–11pm The Úll Show
-
-  11pm–late Live Music / Bar
-
-  Tuesday April 28th - Features
-
-  10am–5pm Features
-
-  5pm–7pm Chillout, break-time
-
-  7pm Grubernote 8pm–11pm Dinner 11pm–late Live Music / Bar
-
-  Wednesday April 29th – Podcasts
-
-  12pm – checkout 1:30pm - BBQ
+          <p class="speaker-role">Founder of The Loop Insight</p>
+          <p class="speaker-abstract">This is a short summary fo what Mr. Dalrymple will be doing at Úll.</p>
+        </div>
+      </div>
+    </div>
   </section>
-  </div>
 
 
 
-    
-    <section class="site-content text">
-    
-    </section>
+  <section>
+    <div class="title-col">
+      <h2>The Schedule</h2>
+      <p>A short bit of text explaining what the dinner speaker will be doing at Úll.</p>
+    </div>
+    <div class="further-col">
+      <div class="schedule">
+        <!-- <h3>Monday April 28th – Talks</h3> -->
+        <ul class="time-container monday">
+          <li class="time-block t-4 d-4">
+            <p class="activity-name">Registration</p> 
+            <p class="activity-time">12pm – 2pm</p>
+          </li>
+          <li class="time-block t-8 d-1 break"></li>
+          <li class="time-block t-9 d-5">
+            <p class="activity-name">Keynote Sessions</p>
+            <p class="activity-time">2:30pm – 5pm</p>
+          </li>
+          <li class="time-block t-14 d-4 break">
+            <p class="activity-name">Chillout</p> 
+            <p class="activity-time">5pm – 7pm</p>
+          </li>
+          <li class="time-block t-18 d-4">
+            <p class="activity-name">Dinner </p>
+            <p class="activity-time">7pm – 9pm</p>
+            </li>
+          <li class="time-block t-22 d-4">
+            <p class="activity-name">The Úll Show</p>
+            <p class="activity-time">9pm – 11pm</p>
+          </li>
+        </ul>
 
-    <section class="site-content schedule">
-      <div class="monday">
-        <h2>Monday</h2>
-        
+        <!-- <h3>Tuesday April 29th – Features</h3> -->
+        <ul class="time-container tuesday">
+          <li class="time-block t-0 d-14">
+            <p class="activity-name">Feature Sessions</p>
+            <p class="activity-time">10am – 5pm</p>
+          </li>
+          <li class="time-block t-14 d-4 break">
+            <p class="activity-name">Chillout</p> 
+            <p class="activity-time">5pm – 7pm</p>
+          </li>
+          <li class="time-block t-18 d-2">
+            <p class="activity-name">Grubernote</p>
+            <p class="activity-time">7pm – 8pm</p>
+          </li>
+          <li class="time-block t-20 d-6">
+            <p class="activity-name">Dinner</p>
+            <p class="activity-time">8pm – 11pm</p>
+          </li>
+        </ul>
+
+        <!-- <h3>Wednesday April 30th – Podcasts</h3> -->
+        <ul class="time-container wednesday">
+          <li class="time-block t-4 d-3">
+            <p class="activity-name">Checkout</p>
+            <p class="activity-time">10pm – 12pm</p>
+          </li>
+          <li class="time-block t-7 d-6">
+            <p class="activity-name">BBQ</p>
+            <p class="activity-time">1:30pm – 4pm</p>
+          </li>
+        </ul>
       </div>
-      <div class="tuesday">
-        <h2>Tuesday</h2>
-      </div>
-      <div class="wednesday">
-        <h2>Wednesday</h2>
-      </div>
-    </section>
-  </div>
+    </div>
+  </section>
   
-  <script type="text/javascript">
-    var _gauges = _gauges || [];
-    (function() {
-      var t   = document.createElement('script');
-      t.type  = 'text/javascript';
-      t.async = true;
-      t.id    = 'gauges-tracker';
-      t.setAttribute('data-site-id', '527920a3108d7b7401000149');
-      t.src = '//secure.gaug.es/track.js';
-      var s = document.getElementsByTagName('script')[0];
-      s.parentNode.insertBefore(t, s);
-    })();
-  </script>
-  
+  <section>
+    <div class="title-col">
+      <h2>The Sponsors</h2>
+      <p>
+        This year we have a wonderful group of sponsors who have given generously to Úll 2014
+      </p>
+    </div>
+    <div class="further-col">
+
+    </div>
+  </section>
+
+
 </body>
-</html>
-
-
-
-
-

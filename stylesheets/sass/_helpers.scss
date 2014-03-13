@@ -120,6 +120,10 @@ $xlarge:                    1400px;
   left: $offset/2;
 }
 
+@mixin square($size) {
+  height: $size;
+  width: $size;
+}
 
 // Transitions 
 
