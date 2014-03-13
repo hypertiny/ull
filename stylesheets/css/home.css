@@ -499,3 +499,128 @@ section {
 
 .d-28 {
   height: 100%; }
+
+.tickets-wrap {
+  padding: 0 1rem; }
+  @media only screen and (min-width: 480px) {
+    .tickets-wrap {
+      padding: 0 4rem; } }
+  @media only screen and (min-width: 850px) {
+    .tickets-wrap {
+      padding: 0;
+      margin: 0rem auto 12.8rem;
+      width: 42rem; } }
+
+.things-fan {
+  width: 12rem;
+  margin: 5rem auto 5rem;
+  display: block; }
+  @media only screen and (min-width: 850px) {
+    .things-fan {
+      width: 14rem;
+      margin: 11.2rem auto 12.8rem;
+      display: block; } }
+
+#register-form {
+  margin-top: 6.4rem;
+  *zoom: 1; }
+  #register-form:before, #register-form:after {
+    content: " ";
+    display: table; }
+  #register-form:after {
+    clear: both; }
+
+.ull-ticket {
+  *zoom: 1;
+  border-bottom: 2px dotted rgba(236, 93, 96, 0.4);
+  position: relative;
+  padding-bottom: 2.5rem;
+  margin-bottom: 2.5rem; }
+  .ull-ticket:before, .ull-ticket:after {
+    content: " ";
+    display: table; }
+  .ull-ticket:after {
+    clear: both; }
+  .ull-ticket:first-of-type {
+    border-top: 2px dotted rgba(236, 93, 96, 0.4);
+    padding-top: 2.13333rem; }
+    .ull-ticket:first-of-type .ull-price-quantity {
+      top: 2.13333rem; }
+  @media only screen and (min-width: 850px) {
+    .ull-ticket {
+      padding-bottom: 2.13333rem; } }
+
+.ull-ticket-title {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem; }
+  @media only screen and (min-width: 850px) {
+    .ull-ticket-title {
+      font-size: 1.8em;
+      line-height: 2.2rem; } }
+
+.ull-ticket-description {
+  font-size: 1.2rem;
+  margin-top: 1.25rem;
+  width: 70%; }
+  @media only screen and (min-width: 850px) {
+    .ull-ticket-description {
+      margin-top: 0.5rem;
+      width: auto; } }
+
+.ull-ticket-locked {
+  font-size: 1.8rem; }
+
+.ull-price-quantity {
+  position: absolute;
+  top: 0;
+  right: 0;
+  float: right; }
+  .ull-price-quantity input {
+    float: right;
+    font-size: 1rem;
+    width: 2rem;
+    border: 2px solid rgba(236, 93, 96, 0.8);
+    padding: 0.2rem;
+    border-radius: 4px;
+    text-align: center;
+    color: #ec5d60;
+    -webkit-appearance: none; }
+    @media only screen and (min-width: 850px) {
+      .ull-price-quantity input {
+        font-size: 1.3rem;
+        width: 2.4rem; } }
+    .ull-price-quantity input:focus {
+      outline: none;
+      border: 2px solid #ec5d60; }
+
+.ull-ticket-price {
+  font-size: 1.5rem;
+  float: right;
+  margin-right: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  position: relative; }
+  @media only screen and (min-width: 850px) {
+    .ull-ticket-price {
+      font-size: 1.8rem;
+      line-height: 2.2rem; } }
+  .ull-ticket-price:after {
+    content: "\00d7";
+    position: absolute;
+    font-size: 1.1rem;
+    right: -1.15rem;
+    color: rgba(236, 93, 96, 0.4); }
+
+.ull-ticket-price-vat {
+  position: absolute;
+  top: 2.5rem;
+  text-align: right;
+  right: 0;
+  width: 10rem;
+  font-size: 1.05rem;
+  color: rgba(236, 93, 96, 0.8);
+  width: 4rem; }
+  @media only screen and (min-width: 480px) {
+    .ull-ticket-price-vat {
+      width: 10rem; } }
