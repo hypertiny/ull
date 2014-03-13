@@ -33,12 +33,12 @@
   
   <nav class="site-nav">
     <a href="#" class="nav-link">Speakers</a>
-    <a href="#" class="nav-link">Tickets</a>
+    <a href="#" class="nav-link">Venue</a>
     <a href="#" class="nav-link">Schedule</a>
     <a href="#" class="nav-link">Blog</a>
   </nav>
 
-  <section>
+  <section class="intro">
     <div class="title-col">
       <h2 class="intro-offset">The conference. Reinvented.</h2>
       <p>
@@ -73,28 +73,12 @@
               <p class="ull-ticket-title">Úll Ticket</p>
               <p class="ull-ticket-price">€793.35</p>
               <p class="ull-ticket-description">Two day conference. No accommodation.</p>
-              
-              <!-- 
-              <div class="ull-price-quantity">
-                <p class="ull-ticket-locked">Locked</p>
-              </div> 
-              -->
-              <div class="ull-price-quantity">
-                <input class="ull-quantity" type="text" name="registration[release_ids][%{= it.slug %}]" placeholder="0">
-                  
-              </div>
+              <input class="ull-quantity" type="text" name="registration[release_ids][%{= it.slug %}]" placeholder="0">
             </li>
             <li class="ull-ticket">
               <p class="ull-ticket-title">Double Room</p>
               <p class="ull-ticket-price">€369</p>
               <p class="ull-ticket-description">One double bed. Two nights</p>
-              
-              <!-- 
-              <div class="ull-price-quantity">
-                <p class="ull-ticket-locked">Locked</p>
-              </div> 
-              -->
-              
               <input class="ull-quantity" type="text" name="registration[release_ids][%{= it.slug %}]" placeholder="0">
             </li>
 
@@ -102,18 +86,11 @@
               <p class="ull-ticket-title">Shared Room</p>
               <p class="ull-ticket-price">€184.50</p>
               <p class="ull-ticket-description">One of two single beds. Two nights</p>
-              
-              <!-- 
-              <div class="ull-price-quantity">
-                <p class="ull-ticket-locked">Locked</p>
-              </div> 
-              -->
-
               <input class="ull-quantity" type="text" name="registration[release_ids][%{= it.slug %}]" placeholder="0">
             </li>
           </ul>
-          <button type="submit" class="register-form-submit">
-            Continue
+          <button type="submit" class="ticket-form-submit">
+            Purchase
           </button>
         </form>
       </div>

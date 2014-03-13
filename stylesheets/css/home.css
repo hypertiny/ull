@@ -159,20 +159,12 @@ section {
     width: 40rem;
     margin-top: 12rem; }
 
-.intro-details {
-  background: #fac637;
-  font-size: 4rem;
-  font-weight: 100;
-  margin-bottom: 3rem;
-  line-height: 4.5rem;
+.intro {
+  width: 100%;
+  margin: 10rem auto;
+  padding: 10rem 15%;
   color: #fff;
-  padding: 1rem;
-  border-radius: 4px; }
-
-.intro-date,
-.intro-location,
-.intro-price {
-  margin-bottom: 2rem; }
+  background: #ec5d60; }
 
 .site-logo {
   width: 10rem;
@@ -511,61 +503,83 @@ section {
 
 .ull-ticket {
   *zoom: 1;
-  border-bottom: 2px solid rgba(236, 93, 96, 0.2);
+  border-bottom: 2px dotted white;
   position: relative;
-  padding-bottom: 2.5rem;
-  margin-bottom: 2.5rem; }
+  padding-bottom: 1.66667rem;
+  margin-bottom: 1.66667rem; }
   .ull-ticket:before, .ull-ticket:after {
     content: " ";
     display: table; }
   .ull-ticket:after {
     clear: both; }
   .ull-ticket:first-of-type {
-    border-top: 2px solid rgba(236, 93, 96, 0.2);
-    padding-top: 2.13333rem; }
-    .ull-ticket:first-of-type .ull-price-quantity {
-      top: 2.13333rem; }
-  @media only screen and (min-width: 850px) {
-    .ull-ticket {
-      padding-bottom: 2.13333rem; } }
+    border-top: 2px dotted white;
+    padding-top: 1.66667rem; }
+    .ull-ticket:first-of-type .ull-quantity {
+      margin-top: 1.66667rem; }
 
 .ull-ticket-title {
-  font-size: 2.4rem;
-  font-weight: 500;
+  font-size: 1.8rem;
+  font-weight: 700;
   line-height: 1.8rem;
   float: left;
-  width: 70%; }
+  margin-right: 1rem; }
+
+.ull-ticket-price {
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+  position: relative; }
 
 .ull-ticket-description {
   float: left;
   font-size: 1.8rem;
-  margin-top: 1.25rem;
+  margin-top: 0.625rem;
   width: 70%; }
 
 .ull-ticket-locked {
   font-size: 1.8rem; }
 
 .ull-quantity {
-  margin-top: 0.8rem;
-  float: right;
+  margin-top: 0rem;
   font-size: 1.8rem;
-  width: 3rem;
-  border: 2px solid rgba(236, 93, 96, 0.8);
+  width: 4.9rem;
+  height: 4.9rem;
   padding: 0.2rem;
   border-radius: 4px;
   text-align: center;
   color: #ec5d60;
-  -webkit-appearance: none; }
+  -webkit-appearance: none;
+  border: 1px;
+  position: absolute;
+  top: 0;
+  right: 0; }
+  .ull-quantity::-webkit-input-placeholder {
+    color: #ec5d60; }
+  .ull-quantity:-moz-placeholder {
+    color: #ec5d60; }
+  .ull-quantity::-moz-placeholder {
+    color: #ec5d60; }
+  .ull-quantity:-ms-input-placeholder {
+    color: #ec5d60; }
   .ull-quantity:focus {
-    outline: none;
-    border: 2px solid #ec5d60; }
+    outline: none; }
 
-.ull-ticket-price {
-  font-size: 2.4rem;
+.ticket-form-submit {
+  border: 1px solid #fff;
+  color: #fff;
+  background: transparent;
   float: right;
-  font-weight: 500;
-  line-height: 1.8rem;
-  position: relative; }
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.4rem;
+  letter-spacing: 0.2rem;
+  display: block;
+  text-align: center; }
+  .ticket-form-submit:hover {
+    background: #fff;
+    color: #ec5d60; }
 
 .ull-ticket-price-vat {
   position: absolute;
