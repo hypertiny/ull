@@ -790,14 +790,14 @@ footer {
 
 .register-interest-form {
   float: left;
-  margin-top: 10rem;
+  margin-top: 4rem;
   width: 65%;
 }
 
 .register-name,
 .register-email {
   border: none;
-  border-bottom: 2px solid $c-red;
+  border-bottom: 1px solid $c-red;
   font-size: $t-size;
   margin-bottom: $tl-medium/2;
   outline: none;
@@ -835,7 +835,7 @@ footer {
   max-width: 170px;
 
   @media only screen and (min-width: $small) {
-    margin-top: 0;
+    margin-top: -5rem;
     width: 25%;
   }
 }
