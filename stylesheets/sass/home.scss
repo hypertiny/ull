@@ -244,6 +244,12 @@ header {
 
 .intro {
   margin-top: 0;
+  .title-col {
+    margin-bottom: 0;
+  }
+  @media only screen and (min-width: $large-ish) {
+    margin: 4rem auto;
+  }
 }
 
 
@@ -516,8 +522,9 @@ header {
 }
 
 .day {
-
-  
+  &.mobile {
+    margin-bottom: $t-leading;
+  }
   @media only screen and (min-width: $large-ish) {
     width: 30%;
     float: left;

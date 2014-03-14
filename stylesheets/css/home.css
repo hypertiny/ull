@@ -296,6 +296,11 @@ header {
 
 .intro {
   margin-top: 0; }
+  .intro .title-col {
+    margin-bottom: 0; }
+  @media only screen and (min-width: 1100px) {
+    .intro {
+      margin: 4rem auto; } }
 
 #register-form {
   margin-top: 1rem;
@@ -533,6 +538,8 @@ header {
     .days {
       display: block; } }
 
+.day.mobile {
+  margin-bottom: 2rem; }
 @media only screen and (min-width: 1100px) {
   .day {
     width: 30%;
