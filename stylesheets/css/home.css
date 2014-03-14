@@ -121,57 +121,65 @@ html {
   font-size: 62.5%; }
 
 body {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   background: white;
   color: #ec5d60;
   font-family: "museo-sans", sans-serif;
   font-weight: 300;
-  line-height: 2.5rem; }
+  line-height: 2rem; }
+  @media only screen and (min-width: 850px) {
+    body {
+      font-size: 1.8rem;
+      line-height: 2.5rem; } }
 
 section {
-  width: 100rem;
-  margin: 10rem auto;
-  *zoom: 1; }
-  section:before, section:after {
-    content: " ";
-    display: table; }
-  section:after {
-    clear: both; }
+  width: 90%;
+  margin: 4rem auto; }
+  @media only screen and (min-width: 850px) {
+    section {
+      width: 100rem;
+      margin: 8rem auto;
+      *zoom: 1; }
+      section:before, section:after {
+        content: " ";
+        display: table; }
+      section:after {
+        clear: both; } }
 
-.title-col,
-.further-col {
-  float: left; }
+@media only screen and (min-width: 850px) {
+  .title-col,
+  .further-col {
+    float: left; } }
 
-.title-col {
-  width: 38rem; }
-  .title-col h2 {
-    font-size: 4rem;
-    font-weight: 100;
-    margin-bottom: 2.5rem;
-    line-height: 5rem; }
-  .title-col p {
-    margin-bottom: 2.5rem; }
+@media only screen and (min-width: 850px) {
+  .title-col {
+    width: 38rem; } }
+.title-col h2 {
+  font-size: 3rem;
+  font-weight: 100;
+  margin-bottom: 2rem;
+  line-height: 4rem; }
+  @media only screen and (min-width: 850px) {
+    .title-col h2 {
+      font-size: 4rem; } }
+.title-col p {
+  margin-bottom: 2rem; }
 
-.further-col {
-  width: 56rem;
-  margin-left: 6rem; }
-  .further-col .extra-text {
-    width: 40rem;
-    margin-top: 12rem; }
+@media only screen and (min-width: 850px) {
+  .further-col {
+    width: 56rem;
+    margin-left: 6rem; } }
 
-header {
-  width: 58%;
-  margin: 2rem auto 0;
-  *zoom: 1; }
-  header:before, header:after {
-    content: " ";
-    display: table; }
-  header:after {
-    clear: both; }
-
-.logo-date-wrap {
-  float: left;
-  width: 33%; }
+@media only screen and (min-width: 850px) {
+  header {
+    width: 58%;
+    margin: 2rem auto 0;
+    *zoom: 1; }
+    header:before, header:after {
+      content: " ";
+      display: table; }
+    header:after {
+      clear: both; } }
 
 .site-logo {
   width: 8rem;
@@ -182,15 +190,18 @@ header {
   text-align: center; }
 
 .site-nav {
-  width: 33%;
-  float: left;
-  margin: 8rem auto 0;
-  *zoom: 1; }
-  .site-nav:before, .site-nav:after {
-    content: " ";
-    display: table; }
-  .site-nav:after {
-    clear: both; }
+  margin-top: 4rem; }
+  @media only screen and (min-width: 850px) {
+    .site-nav {
+      width: 100%;
+      float: left;
+      margin: 8rem auto -8rem;
+      *zoom: 1; }
+      .site-nav:before, .site-nav:after {
+        content: " ";
+        display: table; }
+      .site-nav:after {
+        clear: both; } }
 
 .nav-link {
   text-decoration: none;
@@ -202,32 +213,44 @@ header {
   font-weight: 600;
   font-size: 1.2rem;
   letter-spacing: 0.2rem;
-  width: 12rem;
+  width: 60%;
   display: block;
-  float: left;
-  margin-right: 1rem;
-  text-align: center; }
+  text-align: center;
+  margin: 0 auto 1rem; }
   .nav-link:hover {
     background: #ec5d60;
     color: #fff; }
-  .nav-link:last-of-type {
-    margin-right: 0;
-    float: right; }
+  @media only screen and (min-width: 850px) {
+    .nav-link {
+      float: left;
+      margin-right: 3rem;
+      width: 12rem; }
+      .nav-link:nth-last-of-type(-n+2) {
+        float: right; }
+      .nav-link:nth-last-of-type(2) {
+        margin-right: 0; } }
 
 .section-image {
   width: 70%;
   margin: 20rem auto;
   display: block; }
   .section-image.home {
-    width: 80%;
-    margin: 10rem auto 14rem; }
+    width: 160%;
+    margin: 6rem 0 6rem -30%; }
+    @media only screen and (min-width: 850px) {
+      .section-image.home {
+        width: 80%;
+        margin: 10rem auto 14rem; } }
 
 .intro {
   width: 100%;
-  margin: 10rem auto;
-  padding: 10rem 15%;
   color: #fff;
-  background: #4fb3e0; }
+  background: #4fb3e0;
+  padding: 4rem 5%; }
+  @media only screen and (min-width: 850px) {
+    .intro {
+      margin: 10rem auto;
+      padding: 10rem 15%; } }
 
 #register-form {
   margin-top: 1rem;
@@ -242,8 +265,8 @@ header {
   *zoom: 1;
   border-bottom: 2px dotted white;
   position: relative;
-  padding-bottom: 1.66667rem;
-  margin-bottom: 1.66667rem; }
+  padding-bottom: 1.33333rem;
+  margin-bottom: 1.33333rem; }
   .ull-ticket:before, .ull-ticket:after {
     content: " ";
     display: table; }
@@ -251,26 +274,24 @@ header {
     clear: both; }
   .ull-ticket:first-of-type {
     border-top: 2px dotted white;
-    padding-top: 1.66667rem; }
+    padding-top: 1.33333rem; }
     .ull-ticket:first-of-type .ull-quantity {
-      margin-top: 1.66667rem; }
+      margin-top: 1.33333rem; }
 
 .ull-ticket-title {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 700;
-  line-height: 1.8rem;
   float: left;
   margin-right: 1rem; }
 
 .ull-ticket-price {
-  font-size: 1.8rem;
   line-height: 1.8rem;
   position: relative; }
 
 .ull-ticket-description {
   float: left;
   font-size: 1.8rem;
-  margin-top: 0.625rem;
+  margin-top: 0.5rem;
   width: 70%; }
 
 .ull-ticket-locked {
@@ -314,7 +335,7 @@ header {
   letter-spacing: 0.2rem;
   display: block;
   text-align: center;
-  margin-top: 2.5rem; }
+  margin-top: 2rem; }
   .ticket-form-submit:hover {
     background: #fff;
     color: #4fb3e0; }
@@ -338,29 +359,42 @@ header {
 .speaker {
   position: relative;
   height: 15rem;
-  padding: 1.5rem 0 0 12rem; }
+  padding: 0.5rem 0 0 9rem; }
+  @media only screen and (min-width: 850px) {
+    .speaker {
+      padding: 1.5rem 0 0 12rem; } }
 
 .speaker-image {
   position: absolute;
   background: #eee;
   border-radius: 50%;
-  height: 10rem;
-  width: 10rem;
+  height: 4em;
+  width: 4em;
   left: 0;
   top: 0; }
+  @media only screen and (min-width: 850px) {
+    .speaker-image {
+      height: 10rem;
+      width: 10rem; } }
 
 .speaker-initials {
-  line-height: 10rem;
+  line-height: 7.2rem;
   display: block;
   text-align: center;
-  font-size: 3rem;
+  font-size: 2.4rem;
   color: #999;
   padding-top: 0.2rem; }
+  @media only screen and (min-width: 850px) {
+    .speaker-initials {
+      line-height: 10rem;
+      font-size: 3rem; } }
 
 .speaker-name {
   font-weight: 600;
-  float: left;
   margin-right: 1rem; }
+  @media only screen and (min-width: 850px) {
+    .speaker-name {
+      float: left; } }
 
 .amanda-rosler .speaker-initials,
 .jason-snell .speaker-initials,
@@ -409,11 +443,13 @@ header {
 .setting img {
   width: 100%; }
 
-.schedule-wrap {
-  margin-top: 20rem; }
-  .schedule-wrap .further-col {
-    width: 100%;
-    margin: 0; }
+.schedule-wrap .further-col {
+  width: 100%;
+  margin: 0; }
+@media only screen and (min-width: 850px) {
+  .schedule-wrap .title-col {
+    width: 66%;
+    margin-bottom: 2rem; } }
 
 .schedule {
   *zoom: 1; }
@@ -430,27 +466,32 @@ header {
     display: table; }
   .days:after {
     clear: both; }
-  .days .day {
+
+.day:last-of-type {
+  margin-right: 0;
+  float: right; }
+@media only screen and (min-width: 850px) {
+  .day {
     width: 30%;
     float: left;
-    margin-bottom: 2.5rem;
-    margin-right: 5%; }
-    .days .day:last-of-type {
-      margin-right: 0;
-      float: right; }
-    .days .day h3 {
-      font-weight: 500; }
+    margin-bottom: 2rem;
+    margin-right: 5%; } }
+.day h3 {
+  font-weight: 500; }
 
 .time-container {
   position: relative;
   height: 65rem;
   margin-bottom: 2rem;
-  width: 30%;
-  float: left;
   margin-right: 5%; }
-  .time-container:last-of-type {
-    margin-right: 0;
-    float: right; }
+  @media only screen and (min-width: 850px) {
+    .time-container {
+      width: 30%;
+      float: left; } }
+  @media only screen and (min-width: 850px) {
+    .time-container:last-of-type {
+      margin-right: 0;
+      float: right; } }
   .time-container.monday .time-block {
     background: #ec5d60; }
     .time-container.monday .time-block.break {
@@ -667,8 +708,10 @@ header {
     padding-top: 1.2rem; }
 
 footer {
-  width: 100rem;
   margin: 6rem auto; }
+  @media only screen and (min-width: 850px) {
+    footer {
+      width: 100rem; } }
   footer a {
     color: #ec5d60;
     text-decoration: none;

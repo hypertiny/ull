@@ -6,21 +6,19 @@
 // Variable Overrides
 // ---------------------------------------------------------
 
-// Leading
-
-$t-leading:                 2.5rem;
-$tl-medium:                 3.2rem;
-
 
 // Body Text Size
+$t-size:                    1.6rem;
+$tz-medium:                 1.8rem;
 
-$t-size:                    1.8rem;
-$tz-medium:                 2.1rem;
+// Leading
+$t-leading:                 2rem;
+$tl-medium:                 2.5rem;
 
 // Heading Text Size
 
-$h-size:                    1.5em;
-$hz-medium:                 1.8em;
+$h-size:                    3rem;
+$hz-medium:                 4rem;
 
 $hl-medium:                 2.2rem;
 $l-avatar:                  10rem;
@@ -40,6 +38,10 @@ body {
   font-family: $t-fam-primary;
   font-weight: $t-weight;
   line-height: $t-leading;
+  @media only screen and (min-width: $medium) {
+    font-size: $tz-medium;
+    line-height: $tl-medium;
+  }
 }
 
 
@@ -47,36 +49,47 @@ body {
 // ---------------------------------------------------------
 
 section {
-  width: 100rem;
-  margin: $t-leading*4 auto;
-  @include clearfix;
+  width: 90%;
+  margin: $t-leading*2 auto;
+  @media only screen and (min-width: $medium) {
+    width: 100rem;
+    margin: $t-leading*4 auto;
+    @include clearfix;
+  }
 }
 
 .title-col,
 .further-col {
-  float: left;
+  @media only screen and (min-width: $medium) {
+    float: left;
+  }
 }
 
 .title-col {
-  width: 38rem;
+  @media only screen and (min-width: $medium) {
+    width: 38rem;
+  }
   h2 {
-    font-size: 4rem;
+    font-size: $h-size;
     font-weight: 100;
     margin-bottom: $t-leading;
     line-height: $t-leading*2;
-    
+
+    @media only screen and (min-width: $medium) {
+      font-size: $hz-medium;
+    }
   }
+
   p {
     margin-bottom: $t-leading;
   }
 }
 
 .further-col {
-  width: 56rem;
-  margin-left: 6rem;
-  .extra-text {
-    width: 40rem;
-    margin-top: 12rem;
+
+  @media only screen and (min-width: $medium) {
+    width: 56rem;
+    margin-left: 6rem;
   }
 }
 
@@ -84,20 +97,27 @@ section {
 // ---------------------------------------------------------
 
 header {
-  width: 58%;
-  margin: 2rem auto 0;
-  @include clearfix;
+  @media only screen and (min-width: $medium) {
+    width: 58%;
+    margin: 2rem auto 0;
+    @include clearfix;
+  }
 }
 
 .logo-date-wrap {
-  float: left;
-  width: 33%;
+  @media only screen and (min-width: $medium) {
+    
+  }
 }
 
 .site-logo {
   width: 8rem;
   margin: 6rem auto 3rem;
   display: block;
+  @media only screen and (min-width: $medium) {
+    
+
+  }
 }
 
 .date-location-wrap p {
@@ -105,10 +125,13 @@ header {
 }
 
 .site-nav {
-  width: 33%;
-  float: left;
-  margin: 8rem auto 0;
-  @include clearfix;
+  margin-top: 4rem;
+  @media only screen and (min-width: $medium) {
+    width: 100%;
+    float: left;
+    margin: 8rem auto -8rem;
+    @include clearfix;
+  }
 }
 
 .nav-link {
@@ -121,20 +144,27 @@ header {
   font-weight: 600;
   font-size: 1.2rem;
   letter-spacing: 0.2rem;
-  width: 12rem;
+  width: 60%;
   display: block;
-  float: left;
-  margin-right: 1rem;
   text-align: center;
+  margin: 0 auto $t-leading/2;
 
   &:hover {
     background: $c-red;
     color: #fff;
   }
 
-  &:last-of-type {
-    margin-right: 0;
-    float: right;
+  @media only screen and (min-width: $medium) { 
+    float: left;
+    margin-right: 3rem;
+    width: 12rem;
+
+    &:nth-last-of-type(-n+2) {
+      float: right;
+    }
+    &:nth-last-of-type(2) {
+      margin-right: 0;
+    }
   }
 }
 
@@ -143,8 +173,12 @@ header {
   margin: 20rem auto;
   display: block;
   &.home {
-    width: 80%;
-    margin: 10rem auto 14rem;
+    width: 160%;
+    margin: 6rem 0 6rem -30%;
+    @media only screen and (min-width: $medium) {
+      width: 80%;
+      margin: 10rem auto 14rem;
+    }
   }
 }
 
@@ -153,10 +187,13 @@ header {
 
 .intro {
   width: 100%;
-  margin: 10rem auto;
-  padding: 10rem 15%;
   color: #fff;
   background: $c-blue;
+  padding: 4rem 5%;
+  @media only screen and (min-width: $medium) {
+    margin: 10rem auto;
+    padding: 10rem 15%;
+  }
 }
 
 #register-form {
@@ -181,15 +218,13 @@ header {
 }
 
 .ull-ticket-title {
-  font-size: 1.8rem;
+  font-size: $t-size;
   font-weight: 700;
-  line-height: 1.8rem;
   float: left;
   margin-right: 1rem;
 }
 
 .ull-ticket-price {
-  font-size: 1.8rem;
   // float: right;
   
   line-height: 1.8rem;
@@ -270,12 +305,6 @@ header {
 
 
 
-
-
-// Schedule
-// ---------------------------------------------------------
-
-
 // Speakers
 // ---------------------------------------------------------
 
@@ -286,31 +315,44 @@ header {
 .speaker {
   position: relative;
   height: 15rem;
-  padding: 1.5rem 0 0 12rem;
+  padding: 0.5rem 0 0 9rem;
+  @media only screen and (min-width: $medium) {
+    padding: 1.5rem 0 0 12rem;  
+  }
 }
 
 .speaker-image {
   position: absolute;
   background: #eee;
   border-radius: 50%;
-  @include square($l-avatar);
+  @include square(4em);
   left: 0;
   top: 0;
+  @media only screen and (min-width: $medium) {
+    @include square($l-avatar);
+  }
 }
 
 .speaker-initials {
-  line-height: $l-avatar;
+  line-height: 7.2rem;
   display: block;
   text-align: center;
-  font-size: 3rem;
+  font-size: 2.4rem;
   color: #999;
   padding-top: 0.2rem;
+  @media only screen and (min-width: $medium) {
+    line-height: $l-avatar;
+    font-size: 3rem;
+  }
 }
 
 .speaker-name {
   font-weight: 600;
-  float: left;
+  
   margin-right: 1rem;
+  @media only screen and (min-width: $medium) {
+    float: left;  
+  }
 }
 
 .amanda-rosler,
@@ -379,10 +421,17 @@ header {
 // ---------------------------------------------------------
 
 .schedule-wrap {
-  margin-top: 20rem;
+
+
   .further-col {
     width: 100%;
     margin: 0;
+  }
+  @media only screen and (min-width: $medium) {
+   .title-col {
+     width: 66%;
+     margin-bottom: $t-leading;
+   }
   }
 }
 
@@ -393,21 +442,26 @@ header {
 
 .days {
   @include clearfix;
-  .day {
+}
+
+.day {
+  
+  &:last-of-type {
+    margin-right: 0;
+    float: right;
+  }
+
+  @media only screen and (min-width: $medium) {
     width: 30%;
     float: left;
     margin-bottom: $t-leading;
     margin-right: 5%;
-    // text-align: center;
-    &:last-of-type {
-      margin-right: 0;
-      float: right;
-    }
-    h3 {
-      
-      font-weight: 500;
-      // margin-bottom: $t-leading/2;
-    }
+  }
+
+  h3 {
+    
+    font-weight: 500;
+    // margin-bottom: $t-leading/2;
   }
 }
 
@@ -416,13 +470,18 @@ header {
   position: relative;
   height: 65rem;
   margin-bottom: 2rem;
-  width: 30%;
-  float: left;
+
   margin-right: 5%;
+  @media only screen and (min-width: $medium) {
+    width: 30%;
+    float: left;
+  }
 
   &:last-of-type {
-    margin-right: 0;
-    float: right;
+    @media only screen and (min-width: $medium) {
+      margin-right: 0;
+      float: right;
+    }
   }
 
   &.monday .time-block {
@@ -545,8 +604,10 @@ header {
 // ---------------------------------------------------------
 
 footer {
-  width: 100rem;
   margin: 6rem auto;
+  @media only screen and (min-width: $medium) {
+    width: 100rem;
+  }
   a {
     color: $c-red;
     text-decoration: none;
