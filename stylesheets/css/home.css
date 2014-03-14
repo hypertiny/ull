@@ -848,3 +848,98 @@ footer {
 .links li {
   float: left;
   width: 50%; }
+
+.register-interest-wrap {
+  margin: 8rem auto 2rem;
+  padding: 0 1rem;
+  *zoom: 1; }
+  .register-interest-wrap:before, .register-interest-wrap:after {
+    content: " ";
+    display: table; }
+  .register-interest-wrap:after {
+    clear: both; }
+  @media only screen and (min-width: 700px) {
+    .register-interest-wrap {
+      padding: 0 4rem; }
+      .register-interest-wrap > .text p {
+        width: 65%; } }
+  @media only screen and (min-width: 960px) {
+    .register-interest-wrap {
+      margin-top: 0;
+      width: 42rem;
+      padding: 0; } }
+
+.register-interest-form {
+  float: left;
+  margin-top: 10rem;
+  width: 65%; }
+
+.register-name,
+.register-email {
+  border: none;
+  border-bottom: 2px solid #ec5d60;
+  font-size: 1.6rem;
+  margin-bottom: 1.25rem;
+  outline: none;
+  padding: 0.66667rem 0;
+  padding-bottom: 0.5em;
+  width: 100%;
+  color: #ec5d60;
+  border-radius: 0; }
+  .register-name::-webkit-input-placeholder,
+  .register-email::-webkit-input-placeholder {
+    color: #ec5d60; }
+  .register-name:-moz-placeholder,
+  .register-email:-moz-placeholder {
+    color: #ec5d60; }
+  .register-name::-moz-placeholder,
+  .register-email::-moz-placeholder {
+    color: #ec5d60; }
+  .register-name:-ms-input-placeholder,
+  .register-email:-ms-input-placeholder {
+    color: #ec5d60; }
+  @media only screen and (min-width: 960px) {
+    .register-name,
+    .register-email {
+      font-size: 1.8rem; } }
+
+.register-email {
+  margin-bottom: 0; }
+
+.register-button {
+  background: #ec5d60;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  margin-top: 2.5rem;
+  padding: 0.75em 1em; }
+
+.volunteer-image {
+  float: right;
+  margin-top: 0;
+  width: 90px;
+  max-width: 170px; }
+  @media only screen and (min-width: 700px) {
+    .volunteer-image {
+      margin-top: 0;
+      width: 25%; } }
+
+.off-sale {
+  margin: 5rem auto;
+  border-top: 2px dotted rgba(236, 93, 96, 0.4);
+  border-bottom: 2px dotted rgba(236, 93, 96, 0.4);
+  padding: 2.5rem 0; }
+  .off-sale h2 {
+    font-size: 3rem;
+    font-weight: 500; }
+    @media only screen and (min-width: 960px) {
+      .off-sale h2 {
+        font-size: 4rem; } }
+  .off-sale p {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    margin: 0.5rem auto 0; }
+    @media only screen and (min-width: 960px) {
+      .off-sale p {
+        font-size: 1.8rem;
+        line-height: 2.5rem; } }

@@ -769,6 +769,101 @@ footer {
 
 
 
+.register-interest-wrap {
+  margin: $t-leading*4 auto $t-leading;
+  padding: 0 1rem;
+  @include clearfix;
+
+  @media only screen and (min-width: $small) {
+    padding: 0 4rem;
+    > .text p {
+      width: 65%;
+    }
+  }
+
+  @media only screen and (min-width: $medium) {
+    margin-top: 0;
+    width: 42rem;
+    padding: 0;
+  }
+}
+
+.register-interest-form {
+  float: left;
+  margin-top: 10rem;
+  width: 65%;
+}
+
+.register-name,
+.register-email {
+  border: none;
+  border-bottom: 2px solid $c-red;
+  font-size: $t-size;
+  margin-bottom: $tl-medium/2;
+  outline: none;
+  padding: $t-leading/3 0;
+  padding-bottom: 0.5em;
+  width: 100%;
+  color: $c-red;
+  border-radius: 0;
+  @include nested-placeholder {
+    color: $c-red;
+  };
+
+  @media only screen and (min-width: $medium) {
+    font-size: $tz-medium;
+  }
+}
+
+.register-email {
+  margin-bottom: 0;
+}
+
+.register-button {
+  background: $c-red;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  margin-top: $tl-medium;
+  padding: 0.75em 1em;
+}
+
+.volunteer-image {
+  float: right;
+  margin-top: 0;
+  width: 90px;
+  max-width: 170px;
+
+  @media only screen and (min-width: $small) {
+    margin-top: 0;
+    width: 25%;
+  }
+}
+
+.off-sale {
+  margin: $tl-medium*2 auto;
+  border-top: 2px dotted rgba($c-red, 0.4);
+  border-bottom: 2px dotted rgba($c-red, 0.4);
+  padding: $tl-medium 0;
+  h2 {
+    font-size: $h-size;
+    font-weight: 500;
+    @media only screen and (min-width: $medium) {
+      font-size: $hz-medium;
+    }
+  }
+
+  p {
+    font-size: $t-size;
+    line-height: $t-leading;
+    margin: 0.5rem auto 0;
+    @media only screen and (min-width: $medium) {
+      font-size: $tz-medium;
+      line-height: $tl-medium;
+    }
+  }
+}
+
 
 
 

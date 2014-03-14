@@ -579,12 +579,12 @@ a, a:link, a:visited {
 
 .volunteer-image {
   float: right;
-  margin-top: -2em;
+  margin-top: 0;
   width: 90px;
   max-width: 170px; }
   @media only screen and (min-width: 700px) {
     .volunteer-image {
-      margin-top: -10em;
+      margin-top: 2rem;
       width: 25%; } }
 
 .off-sale {
