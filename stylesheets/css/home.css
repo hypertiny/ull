@@ -162,23 +162,27 @@ section {
   .further-col {
     float: left; } }
 
-@media only screen and (min-width: 700px) {
-  .title-col {
-    width: 56rem;
-    margin: 0 auto; } }
-@media only screen and (min-width: 1100px) {
-  .title-col {
-    width: 38rem; } }
-.title-col h2 {
-  font-size: 3rem;
-  font-weight: 100;
-  margin-bottom: 2rem;
-  line-height: 4rem; }
-  @media only screen and (min-width: 960px) {
-    .title-col h2 {
-      font-size: 4rem; } }
-.title-col p {
-  margin-bottom: 2rem; }
+.title-col {
+  margin-bottom: 4rem; }
+  @media only screen and (min-width: 700px) {
+    .title-col {
+      width: 56rem;
+      margin: 0 auto 7rem; } }
+  @media only screen and (min-width: 1100px) {
+    .title-col {
+      width: 38rem; } }
+  .title-col h2 {
+    font-size: 3rem;
+    font-weight: 100;
+    margin-bottom: 1rem;
+    line-height: 3rem; }
+    @media only screen and (min-width: 960px) {
+      .title-col h2 {
+        font-size: 4rem;
+        line-height: 4rem;
+        margin-bottom: 2rem; } }
+  .title-col p {
+    margin-bottom: 2rem; }
 
 @media only screen and (min-width: 700px) {
   .further-col {
@@ -256,10 +260,13 @@ header {
   width: 90%;
   margin: 0 auto;
   display: block; }
-  @media only screen and (min-width: 960px) {
+  @media only screen and (min-width: 700px) {
     .bar-image {
-      margin: 20rem auto;
-      width: 70%; } }
+      margin: 10rem auto;
+      width: 60%; } }
+  @media only screen and (min-width: 1100px) {
+    .bar-image {
+      margin: 15rem auto; } }
 
 .intro-image {
   width: 160%;
@@ -275,11 +282,10 @@ header {
   width: 100%;
   color: #fff;
   background: #4fb3e0;
-  padding: 4rem 5%; }
+  padding: 4rem 0; }
   @media only screen and (min-width: 1100px) {
     .intro-wrap {
-      margin: 10rem auto;
-      padding: 10rem 0; } }
+      margin: 10rem auto; } }
 
 #register-form {
   margin-top: 1rem;
@@ -388,8 +394,11 @@ header {
 
 .speaker {
   position: relative;
-  padding: 0.5rem 0 0 9rem;
+  padding: 1rem 0 0 0;
   margin-bottom: 4rem; }
+  @media only screen and (min-width: 700px) {
+    .speaker {
+      padding: 0.5rem 0 0 9rem; } }
   @media only screen and (min-width: 960px) {
     .speaker {
       padding: 0rem 0 0 12rem; } }
@@ -408,7 +417,7 @@ header {
       width: 10rem; } }
 
 .speaker-initials {
-  line-height: 7.2rem;
+  line-height: 6.2rem;
   display: block;
   text-align: center;
   font-size: 2.4rem;
@@ -421,10 +430,23 @@ header {
 
 .speaker-name {
   font-weight: 600;
-  margin-right: 1rem; }
+  margin-right: 1rem;
+  padding-left: 8rem; }
+  @media only screen and (min-width: 700px) {
+    .speaker-name {
+      padding-left: 0; } }
+
+.speaker-role {
+  padding-left: 8rem; }
+  @media only screen and (min-width: 700px) {
+    .speaker-role {
+      padding-left: 0; } }
 
 .speaker-abstract {
-  margin-top: 2rem; }
+  margin-top: 2.5rem; }
+  @media only screen and (min-width: 700px) {
+    .speaker-abstract {
+      margin-top: 2rem; } }
 
 .amanda-rosler .speaker-initials,
 .jason-snell .speaker-initials,
