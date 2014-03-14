@@ -453,43 +453,38 @@ header {
 .amanda-rosler .speaker-image {
   background: url("/images/speakers/amanda-rosler.jpg") no-repeat;
   background-size: cover;
-  background-position: -17px 0;
 }
 
 .jason-snell .speaker-image {
   background: url("/images/speakers/jason-snell.jpg") no-repeat;
   background-size: cover;
-  background-position: -15px 0;
+
 }
 
 .michael-lopp .speaker-image {
   background: url("/images/speakers/michael-lopp.jpg") no-repeat;
   background-size: cover;
-  background-position: 0px 0;
+
 }
 
 .jean-macdonald .speaker-image {
   background: url("/images/speakers/jean-macdonald.jpg") no-repeat;
   background-size: cover;
-  background-position: -25px 0;
 }
 
 .linda-franco .speaker-image {
   background: url("/images/speakers/linda-franco.jpg") no-repeat;
   background-size: cover;
-  background-position: -17px 0;
 }
 
 .jennifer-brook .speaker-image {
   background: url("/images/speakers/jennifer-brook.jpg") no-repeat;
   background-size: cover;
-  background-position: -30px 0;
 }
 
 .jim-dalrymple .speaker-image {
   background: url("/images/speakers/jim-dalrymple.jpg") no-repeat;
   background-size: cover;
-  background-position: 0px -20px;
 }
 
 //  Setting
@@ -870,15 +865,20 @@ footer {
 }
 
 .off-sale {
-  margin: $tl-medium*2 auto;
-  border-top: 2px dotted rgba($c-red, 0.4);
-  border-bottom: 2px dotted rgba($c-red, 0.4);
+  margin: $tl-medium auto;
+  border-top: 2px dotted #fff;
+  border-bottom: 2px dotted #fff;
   padding: $tl-medium 0;
+
+  @media only screen and (min-width: $medium) {
+    margin: $tl-medium*4 auto;
+  }
+
   h2 {
-    font-size: $h-size;
+    font-size: $t-size;
     font-weight: 500;
     @media only screen and (min-width: $medium) {
-      font-size: $hz-medium;
+      font-size: $tz-medium;
     }
   }
 

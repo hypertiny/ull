@@ -6,3 +6,4 @@ scripts/*.coffee
 ull.sublime-project
 ull.sublime-workspace
 *-ck.js
+config.codekit

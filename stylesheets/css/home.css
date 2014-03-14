@@ -481,38 +481,31 @@ header {
 
 .amanda-rosler .speaker-image {
   background: url("/images/speakers/amanda-rosler.jpg") no-repeat;
-  background-size: cover;
-  background-position: -17px 0; }
+  background-size: cover; }
 
 .jason-snell .speaker-image {
   background: url("/images/speakers/jason-snell.jpg") no-repeat;
-  background-size: cover;
-  background-position: -15px 0; }
+  background-size: cover; }
 
 .michael-lopp .speaker-image {
   background: url("/images/speakers/michael-lopp.jpg") no-repeat;
-  background-size: cover;
-  background-position: 0px 0; }
+  background-size: cover; }
 
 .jean-macdonald .speaker-image {
   background: url("/images/speakers/jean-macdonald.jpg") no-repeat;
-  background-size: cover;
-  background-position: -25px 0; }
+  background-size: cover; }
 
 .linda-franco .speaker-image {
   background: url("/images/speakers/linda-franco.jpg") no-repeat;
-  background-size: cover;
-  background-position: -17px 0; }
+  background-size: cover; }
 
 .jennifer-brook .speaker-image {
   background: url("/images/speakers/jennifer-brook.jpg") no-repeat;
-  background-size: cover;
-  background-position: -30px 0; }
+  background-size: cover; }
 
 .jim-dalrymple .speaker-image {
   background: url("/images/speakers/jim-dalrymple.jpg") no-repeat;
-  background-size: cover;
-  background-position: 0px -20px; }
+  background-size: cover; }
 
 .setting img {
   width: 100%; }
@@ -949,16 +942,19 @@ footer {
       width: 25%; } }
 
 .off-sale {
-  margin: 5rem auto;
-  border-top: 2px dotted rgba(236, 93, 96, 0.4);
-  border-bottom: 2px dotted rgba(236, 93, 96, 0.4);
+  margin: 2.5rem auto;
+  border-top: 2px dotted #fff;
+  border-bottom: 2px dotted #fff;
   padding: 2.5rem 0; }
+  @media only screen and (min-width: 960px) {
+    .off-sale {
+      margin: 10rem auto; } }
   .off-sale h2 {
-    font-size: 3rem;
+    font-size: 1.6rem;
     font-weight: 500; }
     @media only screen and (min-width: 960px) {
       .off-sale h2 {
-        font-size: 4rem; } }
+        font-size: 1.8rem; } }
   .off-sale p {
     font-size: 1.6rem;
     line-height: 2rem;
