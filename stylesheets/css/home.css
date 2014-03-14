@@ -284,20 +284,20 @@ header {
   padding: 0.2rem;
   border-radius: 4px;
   text-align: center;
-  color: #ec5d60;
+  color: #4fb3e0;
   -webkit-appearance: none;
   border: 1px;
   position: absolute;
   top: 0;
   right: 0; }
   .ull-quantity::-webkit-input-placeholder {
-    color: #ec5d60; }
+    color: #4fb3e0; }
   .ull-quantity:-moz-placeholder {
-    color: #ec5d60; }
+    color: #4fb3e0; }
   .ull-quantity::-moz-placeholder {
-    color: #ec5d60; }
+    color: #4fb3e0; }
   .ull-quantity:-ms-input-placeholder {
-    color: #ec5d60; }
+    color: #4fb3e0; }
   .ull-quantity:focus {
     outline: none; }
 
@@ -317,7 +317,7 @@ header {
   margin-top: 2.5rem; }
   .ticket-form-submit:hover {
     background: #fff;
-    color: #ec5d60; }
+    color: #4fb3e0; }
 
 .ull-ticket-price-vat {
   position: absolute;
@@ -402,6 +402,9 @@ header {
   background: url("/images/speakers/jim-dalrymple.jpg") no-repeat;
   background-size: cover;
   background-position: 0px -20px; }
+
+.setting img {
+  width: 100%; }
 
 .schedule-wrap .further-col {
   width: 100%;
@@ -659,3 +662,11 @@ header {
   .sponsors img:first-of-type {
     margin-right: 10%;
     padding-top: 1.2rem; }
+
+footer {
+  width: 100rem;
+  margin: 6rem auto; }
+  footer a {
+    color: #ec5d60;
+    text-decoration: none;
+    font-weight: 500; }

@@ -215,7 +215,7 @@ header {
   padding: 0.2rem;
   border-radius: 4px;
   text-align: center;
-  color: $c-red;
+  color: $c-blue;
   -webkit-appearance: none;
   border: 1px;
   position: absolute;
@@ -224,7 +224,7 @@ header {
 
 
   @include nested-placeholder {
-    color: $c-red;
+    color: $c-blue;
   };
   &:focus {
     outline: none;
@@ -247,7 +247,7 @@ header {
   margin-top: $t-leading*1;
   &:hover {
     background: #fff;
-    color: $c-red;
+    color: $c-blue;
   }
 }
 
@@ -361,6 +361,13 @@ header {
   background: url("/images/speakers/jim-dalrymple.jpg") no-repeat;
   background-size: cover;
   background-position: 0px -20px;
+}
+
+//  Setting
+// ---------------------------------------------------------
+
+.setting img {
+  width: 100%;
 }
 
 
@@ -526,5 +533,18 @@ header {
   &:first-of-type {
     margin-right: 10%;
     padding-top: 1.2rem;
+  }
+}
+
+//  Footer
+// ---------------------------------------------------------
+
+footer {
+  width: 100rem;
+  margin: 6rem auto;
+  a {
+    color: $c-red;
+    text-decoration: none;
+    font-weight: 500;
   }
 }
