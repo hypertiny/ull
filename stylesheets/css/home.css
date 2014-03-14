@@ -501,9 +501,6 @@ header {
     .days {
       display: block; } }
 
-.day:last-of-type {
-  margin-right: 0;
-  float: right; }
 @media only screen and (min-width: 1100px) {
   .day {
     width: 30%;
@@ -511,7 +508,11 @@ header {
     margin-bottom: 2rem;
     margin-right: 5%; }
     .day.mobile {
-      display: none; } }
+      display: none;
+      float: none; }
+    .day:last-of-type {
+      margin-right: 0;
+      float: right; } }
 .day h3 {
   font-weight: 500; }
 
@@ -524,7 +525,7 @@ header {
       width: 30%;
       float: left;
       height: 65rem; } }
-  @media only screen and (min-width: 960px) {
+  @media only screen and (min-width: 1100px) {
     .time-container:last-of-type {
       margin-right: 0;
       float: right; } }
@@ -777,8 +778,12 @@ header {
     padding-top: 1.2rem; }
 
 footer {
+  width: 90%;
   margin: 10rem auto 10rem; }
-  @media only screen and (min-width: 960px) {
+  @media only screen and (min-width: 700px) {
+    footer {
+      width: 56rem; } }
+  @media only screen and (min-width: 1200px) {
     footer {
       width: 100rem; } }
   footer a {

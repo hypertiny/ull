@@ -482,11 +482,7 @@ header {
 }
 
 .day {
-  
-  &:last-of-type {
-    margin-right: 0;
-    float: right;
-  }
+
   
   @media only screen and (min-width: $large-ish) {
     width: 30%;
@@ -495,6 +491,12 @@ header {
     margin-right: 5%;
     &.mobile {
       display: none;
+      float: none;
+    }
+
+    &:last-of-type {
+      margin-right: 0;
+      float: right;
     }
   }
 
@@ -518,7 +520,7 @@ header {
   }
 
   &:last-of-type {
-    @media only screen and (min-width: $medium) {
+    @media only screen and (min-width: $large-ish) {
       margin-right: 0;
       float: right;
     }
@@ -685,8 +687,13 @@ header {
 // ---------------------------------------------------------
 
 footer {
+  width: 90%;
   margin: 10rem auto 10rem;
-  @media only screen and (min-width: $medium) {
+  @media only screen and (min-width: $small) {
+    width: 56rem;
+  }
+
+  @media only screen and (min-width: $large) {
     width: 100rem;
   }
   a {
