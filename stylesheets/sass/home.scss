@@ -129,7 +129,7 @@ header {
   @media only screen and (min-width: $medium) {
     width: 100%;
     float: left;
-    margin: 8rem auto -8rem;
+    margin: -14rem auto 0;
     @include clearfix;
   }
 }
@@ -168,17 +168,23 @@ header {
   }
 }
 
-.section-image {
-  width: 70%;
-  margin: 20rem auto;
+.bar-image {
+  width: 90%;
+  margin: 0 auto;
   display: block;
-  &.home {
-    width: 160%;
-    margin: 6rem 0 6rem -30%;
-    @media only screen and (min-width: $medium) {
-      width: 80%;
-      margin: 10rem auto 14rem;
-    }
+  @media only screen and (min-width: $medium) {
+    margin: 20rem auto;
+    width: 70%;
+  }
+}
+
+.intro-image {
+  width: 160%;
+  margin: 6rem 0 6rem -30%;
+  display: block;
+  @media only screen and (min-width: $medium) {
+    width: 80%;
+    margin: 10rem auto 14rem;
   }
 }
 
@@ -218,24 +224,21 @@ header {
 }
 
 .ull-ticket-title {
-  font-size: $t-size;
   font-weight: 700;
   float: left;
   margin-right: 1rem;
 }
 
 .ull-ticket-price {
-  // float: right;
-  
   line-height: 1.8rem;
   position: relative;
 }
 
 .ull-ticket-description {
   float: left;
-  font-size: 1.8rem;
   margin-top: $t-leading/4;
-  width: 70%;
+  width: 80%;
+  clear: both;
 }
 
 .ull-ticket-locked {
@@ -441,7 +444,11 @@ header {
 
 
 .days {
+  display: none;
   @include clearfix;
+  @media only screen and (min-width: $medium) {
+    display: block;
+  }
 }
 
 .day {
@@ -456,6 +463,9 @@ header {
     float: left;
     margin-bottom: $t-leading;
     margin-right: 5%;
+    &.mobile {
+      display: none;
+    }
   }
 
   h3 {
@@ -468,13 +478,13 @@ header {
 
 .time-container {
   position: relative;
-  height: 65rem;
   margin-bottom: 2rem;
-
   margin-right: 5%;
+  
   @media only screen and (min-width: $medium) {
     width: 30%;
     float: left;
+    height: 65rem;
   }
 
   &:last-of-type {
@@ -507,12 +517,14 @@ header {
   background: $c-red;
   color: #fff;
   font-size: 1.5rem;
-  position: absolute;
   padding: 1rem 1rem 0;
   width: 100%;
   border-radius: 4px;
   margin-bottom: 10px;
   border: 2px solid #fff;
+  @media only screen and (min-width: $medium) {
+    position: absolute;
+  }
 }
 
 .activity-name {
@@ -524,65 +536,104 @@ header {
   float: right;
 }
 
-.t-0 { top: 0;}
-.t-1 { top: (100/28 + 0%)*1;}
-.t-2 { top: (100/28 + 0%)*2;}
-.t-3 { top: (100/28 + 0%)*3;}
-.t-4 { top: (100/28 + 0%)*4;}
-.t-5 { top: (100/28 + 0%)*5;}
-.t-6 { top: (100/28 + 0%)*6;}
-.t-7 { top: (100/28 + 0%)*7;}
-.t-8 { top: (100/28 + 0%)*8;}
-.t-9 { top: (100/28 + 0%)*9;}
-.t-10 { top: (100/28 + 0%)*10;}
-.t-11 { top: (100/28 + 0%)*11;}
-.t-12 { top: (100/28 + 0%)*12;}
-.t-13 { top: (100/28 + 0%)*13;}
-.t-14 { top: (100/28 + 0%)*14;}
-.t-15 { top: (100/28 + 0%)*15;}
-.t-16 { top: (100/28 + 0%)*16;}
-.t-17 { top: (100/28 + 0%)*17;}
-.t-18 { top: (100/28 + 0%)*18;}
-.t-19 { top: (100/28 + 0%)*19;}
-.t-20 { top: (100/28 + 0%)*20;}
-.t-21 { top: (100/28 + 0%)*21;}
-.t-22 { top: (100/28 + 0%)*22;}
-.t-23 { top: (100/28 + 0%)*23;}
-.t-24 { top: (100/28 + 0%)*24;}
-.t-25 { top: (100/28 + 0%)*25;}
-.t-26 { top: (100/28 + 0%)*26;}
-.t-27 { top: (100/28 + 0%)*27;}
-.t-28 { top: (100/28 + 0%)*28;}
+@media only screen and (min-width: $medium) {
+  .t-0 { top: 0;}
+  .t-1 { top: (100/28 + 0%)*1;}
+  .t-2 { top: (100/28 + 0%)*2;}
+  .t-3 { top: (100/28 + 0%)*3;}
+  .t-4 { top: (100/28 + 0%)*4;}
+  .t-5 { top: (100/28 + 0%)*5;}
+  .t-6 { top: (100/28 + 0%)*6;}
+  .t-7 { top: (100/28 + 0%)*7;}
+  .t-8 { top: (100/28 + 0%)*8;}
+  .t-9 { top: (100/28 + 0%)*9;}
+  .t-10 { top: (100/28 + 0%)*10;}
+  .t-11 { top: (100/28 + 0%)*11;}
+  .t-12 { top: (100/28 + 0%)*12;}
+  .t-13 { top: (100/28 + 0%)*13;}
+  .t-14 { top: (100/28 + 0%)*14;}
+  .t-15 { top: (100/28 + 0%)*15;}
+  .t-16 { top: (100/28 + 0%)*16;}
+  .t-17 { top: (100/28 + 0%)*17;}
+  .t-18 { top: (100/28 + 0%)*18;}
+  .t-19 { top: (100/28 + 0%)*19;}
+  .t-20 { top: (100/28 + 0%)*20;}
+  .t-21 { top: (100/28 + 0%)*21;}
+  .t-22 { top: (100/28 + 0%)*22;}
+  .t-23 { top: (100/28 + 0%)*23;}
+  .t-24 { top: (100/28 + 0%)*24;}
+  .t-25 { top: (100/28 + 0%)*25;}
+  .t-26 { top: (100/28 + 0%)*26;}
+  .t-27 { top: (100/28 + 0%)*27;}
+  .t-28 { top: (100/28 + 0%)*28;}
+}
 
-.d-0 { height: 0;}
-.d-1 { height: (100/28 + 0%)*1;}
-.d-2 { height: (100/28 + 0%)*2;}
-.d-3 { height: (100/28 + 0%)*3;}
-.d-4 { height: (100/28 + 0%)*4;}
-.d-5 { height: (100/28 + 0%)*5;}
-.d-6 { height: (100/28 + 0%)*6;}
-.d-7 { height: (100/28 + 0%)*7;}
-.d-8 { height: (100/28 + 0%)*8;}
-.d-9 { height: (100/28 + 0%)*9;}
-.d-10 { height: (100/28 + 0%)*10;}
-.d-11 { height: (100/28 + 0%)*11;}
-.d-12 { height: (100/28 + 0%)*12;}
-.d-13 { height: (100/28 + 0%)*13;}
-.d-14 { height: (100/28 + 0%)*14;}
-.d-15 { height: (100/28 + 0%)*15;}
-.d-16 { height: (100/28 + 0%)*16;}
-.d-17 { height: (100/28 + 0%)*17;}
-.d-18 { height: (100/28 + 0%)*18;}
-.d-19 { height: (100/28 + 0%)*19;}
-.d-20 { height: (100/28 + 0%)*20;}
-.d-21 { height: (100/28 + 0%)*21;}
-.d-22 { height: (100/28 + 0%)*22;}
-.d-23 { height: (100/28 + 0%)*23;}
-.d-24 { height: (100/28 + 0%)*24;}
-.d-25 { height: (100/28 + 0%)*25;}
-.d-26 { height: (100/28 + 0%)*26;}
-.d-27 { height: (100/28 + 0%)*27;}
-.d-28 { height: (100/28 + 0%)*28;}
+.d-0,
+.d-1,
+.d-2,
+.d-3,
+.d-4,
+.d-5,
+.d-6,
+.d-7,
+.d-8,
+.d-9,
+.d-10,
+.d-11,
+.d-12,
+.d-13,
+.d-14,
+.d-15,
+.d-16,
+.d-17,
+.d-18,
+.d-19,
+.d-20,
+.d-21,
+.d-22,
+.d-23,
+.d-24,
+.d-25,
+.d-26,
+.d-27,
+.d-28 {
+  height: 5rem;
+}
+
+@media only screen and (min-width: $medium) {
+  .d-0 { height: 0;}
+  .d-1 { height: (100/28 + 0%)*1;}
+  .d-2 { height: (100/28 + 0%)*2;}
+  .d-3 { height: (100/28 + 0%)*3;}
+  .d-4 { height: (100/28 + 0%)*4;}
+  .d-5 { height: (100/28 + 0%)*5;}
+  .d-6 { height: (100/28 + 0%)*6;}
+  .d-7 { height: (100/28 + 0%)*7;}
+  .d-8 { height: (100/28 + 0%)*8;}
+  .d-9 { height: (100/28 + 0%)*9;}
+  .d-10 { height: (100/28 + 0%)*10;}
+  .d-11 { height: (100/28 + 0%)*11;}
+  .d-12 { height: (100/28 + 0%)*12;}
+  .d-13 { height: (100/28 + 0%)*13;}
+  .d-14 { height: (100/28 + 0%)*14;}
+  .d-15 { height: (100/28 + 0%)*15;}
+  .d-16 { height: (100/28 + 0%)*16;}
+  .d-17 { height: (100/28 + 0%)*17;}
+  .d-18 { height: (100/28 + 0%)*18;}
+  .d-19 { height: (100/28 + 0%)*19;}
+  .d-20 { height: (100/28 + 0%)*20;}
+  .d-21 { height: (100/28 + 0%)*21;}
+  .d-22 { height: (100/28 + 0%)*22;}
+  .d-23 { height: (100/28 + 0%)*23;}
+  .d-24 { height: (100/28 + 0%)*24;}
+  .d-25 { height: (100/28 + 0%)*25;}
+  .d-26 { height: (100/28 + 0%)*26;}
+  .d-27 { height: (100/28 + 0%)*27;}
+  .d-28 { height: (100/28 + 0%)*28;}
+}
+
+
+
 
 // Sponsors
 // ---------------------------------------------------------
