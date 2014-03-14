@@ -332,6 +332,9 @@ header {
     .ull-ticket-price-vat {
       width: 10rem; } }
 
+.speakers {
+  margin: 0 auto !important; }
+
 .speaker {
   position: relative;
   height: 15rem;
@@ -406,9 +409,11 @@ header {
 .setting img {
   width: 100%; }
 
-.schedule-wrap .further-col {
-  width: 100%;
-  margin: 0; }
+.schedule-wrap {
+  margin-top: 20rem; }
+  .schedule-wrap .further-col {
+    width: 100%;
+    margin: 0; }
 
 .schedule {
   *zoom: 1; }
@@ -434,9 +439,7 @@ header {
       margin-right: 0;
       float: right; }
     .days .day h3 {
-      font-size: 4.5rem;
-      font-weight: 100;
-      margin-bottom: 1.25rem; }
+      font-weight: 500; }
 
 .time-container {
   position: relative;
@@ -670,3 +673,26 @@ footer {
     color: #ec5d60;
     text-decoration: none;
     font-weight: 500; }
+
+.organiser {
+  background: #eee;
+  border-radius: 50%;
+  height: 5rem;
+  width: 5rem;
+  display: block;
+  background-image: no-repeat;
+  color: transparent;
+  font: 0/0 a;
+  text-shadow: none; }
+  .organiser.dermdaly {
+    background: url("/images/organisers/dermdaly.jpg") no-repeat;
+    background-size: cover; }
+  .organiser.sashaw {
+    background: url("/images/organisers/sashaw.jpg") no-repeat;
+    background-size: cover; }
+  .organiser.paulca {
+    background: url("/images/organisers/paulca.png") no-repeat;
+    background-size: cover; }
+  .organiser.kilmc {
+    background: url("/images/organisers/kilmc.jpg") no-repeat;
+    background-size: cover; }

@@ -279,6 +279,10 @@ header {
 // Speakers
 // ---------------------------------------------------------
 
+.speakers {
+  margin: 0 auto !important;
+}
+
 .speaker {
   position: relative;
   height: 15rem;
@@ -375,6 +379,7 @@ header {
 // ---------------------------------------------------------
 
 .schedule-wrap {
+  margin-top: 20rem;
   .further-col {
     width: 100%;
     margin: 0;
@@ -399,9 +404,9 @@ header {
       float: right;
     }
     h3 {
-      font-size: 4.5rem;
-      font-weight: 100;
-      margin-bottom: $t-leading/2;
+      
+      font-weight: 500;
+      // margin-bottom: $t-leading/2;
     }
   }
 }
@@ -548,3 +553,41 @@ footer {
     font-weight: 500;
   }
 }
+
+.organiser {
+  background: #eee;
+  border-radius: 50%;
+  @include square(5rem);
+  display: block;
+  background-image: no-repeat;
+  @include hide-text;
+
+  &.dermdaly {
+    background: url("/images/organisers/dermdaly.jpg") no-repeat;
+    background-size: cover;
+  }
+  &.sashaw {
+    background: url("/images/organisers/sashaw.jpg") no-repeat;
+    background-size: cover;
+  }
+  &.paulca {
+    background: url("/images/organisers/paulca.png") no-repeat;
+    background-size: cover;
+  }
+  &.kilmc {
+    background: url("/images/organisers/kilmc.jpg") no-repeat;
+    background-size: cover;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+

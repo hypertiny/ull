@@ -1,6 +1,6 @@
 {
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
-"creatorBuild": "16828",
+"creatorBuild": "16844",
 "files": {
 	"\/_includes\/blog-post.html": {
 		"fileType": 8192,
@@ -98,33 +98,43 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/ie-site.jpg": {
+	"\/images\/organisers\/dermdaly.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 150276,
-		"inputAbbreviatedPath": "\/images\/ie-site.jpg",
-		"outputAbbreviatedPath": "\/images\/ie-site.jpg",
+		"initialSize": 3835,
+		"inputAbbreviatedPath": "\/images\/organisers\/dermdaly.jpg",
+		"outputAbbreviatedPath": "\/images\/organisers\/dermdaly.jpg",
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/lyrath.jpg": {
+	"\/images\/organisers\/kilmc.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 460705,
-		"inputAbbreviatedPath": "\/images\/lyrath.jpg",
-		"outputAbbreviatedPath": "\/images\/lyrath.jpg",
+		"initialSize": 18136,
+		"inputAbbreviatedPath": "\/images\/organisers\/kilmc.jpg",
+		"outputAbbreviatedPath": "\/images\/organisers\/kilmc.jpg",
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/speaker-kilian.png": {
+	"\/images\/organisers\/paulca.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 770194,
-		"inputAbbreviatedPath": "\/images\/speaker-kilian.png",
-		"outputAbbreviatedPath": "\/images\/speaker-kilian.png",
+		"initialSize": 559959,
+		"inputAbbreviatedPath": "\/images\/organisers\/paulca.png",
+		"outputAbbreviatedPath": "\/images\/organisers\/paulca.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/organisers\/sashaw.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 18136,
+		"inputAbbreviatedPath": "\/images\/organisers\/sashaw.jpg",
+		"outputAbbreviatedPath": "\/images\/organisers\/sashaw.jpg",
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -198,26 +208,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/tickets-accommodation-mail.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 106768,
-		"inputAbbreviatedPath": "\/images\/tickets-accommodation-mail.png",
-		"outputAbbreviatedPath": "\/images\/tickets-accommodation-mail.png",
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/ull-2014.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 1.16144e+06,
-		"inputAbbreviatedPath": "\/images\/ull-2014.png",
-		"outputAbbreviatedPath": "\/images\/ull-2014.png",
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/images\/ull-homepage.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -225,16 +215,6 @@
 		"initialSize": 1.9391e+06,
 		"inputAbbreviatedPath": "\/images\/ull-homepage.png",
 		"outputAbbreviatedPath": "\/images\/ull-homepage.png",
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/ull-logo-blue.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 3991,
-		"inputAbbreviatedPath": "\/images\/ull-logo-blue.png",
-		"outputAbbreviatedPath": "\/images\/ull-logo-blue.png",
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
