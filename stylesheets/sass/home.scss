@@ -146,7 +146,7 @@ header {
 }
 
 .site-nav {
-  margin-top: 4rem;
+  margin: 4rem auto;
   @media only screen and (min-width: $small) {
     width: 100%;
     float: left;
@@ -209,14 +209,22 @@ header {
 }
 
 .intro-image {
-  width: 160%;
-  margin: 6rem 0 6rem -30%;
-  display: block;
+  display: none;
   max-width: 110rem;
 
-  @media only screen and (min-width: $small) {
+  @media only screen and (min-width: $medium) {
+    display: block;
     width: 85%;
     margin: 10rem auto 14rem;
+  }
+}
+
+.intro-image-small {
+  display: block;
+  width: 95%;
+  margin: 4rem auto 4rem;
+  @media only screen and (min-width: $medium) {
+    display: none;
   }
 }
 
@@ -232,6 +240,10 @@ header {
   @media only screen and (min-width: $large-ish) {
     margin: 10rem auto;
   }
+}
+
+.intro {
+  margin-top: 0;
 }
 
 
@@ -533,12 +545,13 @@ header {
 .time-container {
   position: relative;
   margin-bottom: 2rem;
-  margin-right: 5%;
+  
 
   @media only screen and (min-width: $large-ish) {
     width: 30%;
     float: left;
     height: 65rem;
+    margin-right: 5%;
   }
 
   &:last-of-type {
