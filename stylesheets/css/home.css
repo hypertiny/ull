@@ -760,7 +760,7 @@ section {
     padding-top: 1.2rem; }
 
 footer {
-  margin: 6rem auto; }
+  margin: 10rem auto 10rem; }
   @media only screen and (min-width: 850px) {
     footer {
       width: 100rem; } }
@@ -769,16 +769,21 @@ footer {
     text-decoration: none;
     font-weight: 500; }
 
+.organiser-wrap p {
+  margin-bottom: 1rem; }
+
 .organiser {
   background: #eee;
   border-radius: 50%;
-  height: 5rem;
-  width: 5rem;
   display: block;
   background-image: no-repeat;
+  float: left;
+  margin-right: 1rem;
   color: transparent;
   font: 0/0 a;
-  text-shadow: none; }
+  text-shadow: none;
+  height: 4rem;
+  width: 4rem; }
   .organiser.dermdaly {
     background: url("/images/organisers/dermdaly.jpg") no-repeat;
     background-size: cover; }
@@ -791,3 +796,10 @@ footer {
   .organiser.kilmc {
     background: url("/images/organisers/kilmc.jpg") no-repeat;
     background-size: cover; }
+
+.links .further-col {
+  padding-top: 6rem; }
+
+.links li {
+  float: left;
+  width: 50%; }

@@ -666,7 +666,7 @@ header {
 // ---------------------------------------------------------
 
 footer {
-  margin: 6rem auto;
+  margin: 10rem auto 10rem;
   @media only screen and (min-width: $medium) {
     width: 100rem;
   }
@@ -677,13 +677,19 @@ footer {
   }
 }
 
+.organiser-wrap p {
+  margin-bottom: $t-leading/2;
+}
+
 .organiser {
   background: #eee;
   border-radius: 50%;
-  @include square(5rem);
   display: block;
   background-image: no-repeat;
+  float: left;
+  margin-right: 1rem;
   @include hide-text;
+  @include square(4rem);
 
   &.dermdaly {
     background: url("/images/organisers/dermdaly.jpg") no-repeat;
@@ -703,8 +709,14 @@ footer {
   }
 }
 
+.links .further-col {
+  padding-top: 6rem;
+}
 
-
+.links li {
+  float: left;
+  width: 50%;
+}
 
 
 
