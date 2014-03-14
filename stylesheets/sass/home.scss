@@ -127,6 +127,11 @@ header {
   margin-right: 1rem;
   text-align: center;
 
+  &:hover {
+    background: $c-red;
+    color: #fff;
+  }
+
   &:last-of-type {
     margin-right: 0;
     float: right;
@@ -270,20 +275,6 @@ header {
 // Schedule
 // ---------------------------------------------------------
 
-.days {
-  @include clearfix;
-  .day {
-    width: 33%;
-    float: left;
-    margin-bottom: $t-leading;
-    h3 {
-      font-size: 4.5rem;
-      font-weight: 100;
-      margin-bottom: $t-leading/2;
-    }
-  }
-}
-
 
 // Speakers
 // ---------------------------------------------------------
@@ -387,13 +378,41 @@ header {
   @include clearfix;
 }
 
+
+.days {
+  @include clearfix;
+  .day {
+    width: 30%;
+    float: left;
+    margin-bottom: $t-leading;
+    margin-right: 5%;
+    // text-align: center;
+    &:last-of-type {
+      margin-right: 0;
+      float: right;
+    }
+    h3 {
+      font-size: 4.5rem;
+      font-weight: 100;
+      margin-bottom: $t-leading/2;
+    }
+  }
+}
+
+
 .time-container {
   position: relative;
   height: 65rem;
   margin-bottom: 2rem;
   width: 30%;
   float: left;
-  margin-right: 3%;
+  margin-right: 5%;
+
+  &:last-of-type {
+    margin-right: 0;
+    float: right;
+  }
+
   &.monday .time-block {
     background: $c-red;
     &.break {
@@ -494,6 +513,18 @@ header {
 .d-27 { height: (100/28 + 0%)*27;}
 .d-28 { height: (100/28 + 0%)*28;}
 
+// Sponsors
+// ---------------------------------------------------------
 
+.sponsors .further-col {
+  margin-top: 6.5rem;
+}
 
-
+.sponsors img {
+  width: 40%;
+  float: left;
+  &:first-of-type {
+    margin-right: 10%;
+    padding-top: 1.2rem;
+  }
+}

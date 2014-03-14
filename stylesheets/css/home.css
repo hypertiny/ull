@@ -207,6 +207,9 @@ header {
   float: left;
   margin-right: 1rem;
   text-align: center; }
+  .nav-link:hover {
+    background: #ec5d60;
+    color: #fff; }
   .nav-link:last-of-type {
     margin-right: 0;
     float: right; }
@@ -329,22 +332,6 @@ header {
     .ull-ticket-price-vat {
       width: 10rem; } }
 
-.days {
-  *zoom: 1; }
-  .days:before, .days:after {
-    content: " ";
-    display: table; }
-  .days:after {
-    clear: both; }
-  .days .day {
-    width: 33%;
-    float: left;
-    margin-bottom: 2.5rem; }
-    .days .day h3 {
-      font-size: 4.5rem;
-      font-weight: 100;
-      margin-bottom: 1.25rem; }
-
 .speaker {
   position: relative;
   height: 15rem;
@@ -428,13 +415,36 @@ header {
   .schedule:after {
     clear: both; }
 
+.days {
+  *zoom: 1; }
+  .days:before, .days:after {
+    content: " ";
+    display: table; }
+  .days:after {
+    clear: both; }
+  .days .day {
+    width: 30%;
+    float: left;
+    margin-bottom: 2.5rem;
+    margin-right: 5%; }
+    .days .day:last-of-type {
+      margin-right: 0;
+      float: right; }
+    .days .day h3 {
+      font-size: 4.5rem;
+      font-weight: 100;
+      margin-bottom: 1.25rem; }
+
 .time-container {
   position: relative;
   height: 65rem;
   margin-bottom: 2rem;
   width: 30%;
   float: left;
-  margin-right: 3%; }
+  margin-right: 5%; }
+  .time-container:last-of-type {
+    margin-right: 0;
+    float: right; }
   .time-container.monday .time-block {
     background: #ec5d60; }
     .time-container.monday .time-block.break {
@@ -639,3 +649,13 @@ header {
 
 .d-28 {
   height: 100%; }
+
+.sponsors .further-col {
+  margin-top: 6.5rem; }
+
+.sponsors img {
+  width: 40%;
+  float: left; }
+  .sponsors img:first-of-type {
+    margin-right: 10%;
+    padding-top: 1.2rem; }
