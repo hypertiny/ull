@@ -44,6 +44,16 @@ body {
   }
 }
 
+a {
+  color: $c-red;
+  text-decoration: none;
+  font-weight: 500;
+  border-bottom: 1px solid rgba($c-red, 0.2);
+  &:hover {
+    border-bottom: 1px solid $c-red;
+  }
+}
+
 
 // General
 // ---------------------------------------------------------
@@ -86,7 +96,6 @@ section {
 }
 
 .further-col {
-
   @media only screen and (min-width: $medium) {
     width: 56rem;
     margin-left: 6rem;
@@ -260,7 +269,6 @@ header {
   top: 0;
   right: 0;
 
-
   @include nested-placeholder {
     color: $c-blue;
   };
@@ -317,10 +325,10 @@ header {
 
 .speaker {
   position: relative;
-  height: 15rem;
+  height: 22rem;
   padding: 0.5rem 0 0 9rem;
   @media only screen and (min-width: $medium) {
-    padding: 1.5rem 0 0 12rem;  
+    padding: 0rem 0 0 12rem;  
   }
 }
 
@@ -351,11 +359,14 @@ header {
 
 .speaker-name {
   font-weight: 600;
-  
   margin-right: 1rem;
   @media only screen and (min-width: $medium) {
-    float: left;  
+    // float: left;  
   }
+}
+
+.speaker-abstract {
+  margin-top: $t-leading;
 }
 
 .amanda-rosler,
@@ -480,7 +491,7 @@ header {
   position: relative;
   margin-bottom: 2rem;
   margin-right: 5%;
-  
+
   @media only screen and (min-width: $medium) {
     width: 30%;
     float: left;

@@ -132,6 +132,14 @@ body {
       font-size: 1.8rem;
       line-height: 2.5rem; } }
 
+a {
+  color: #ec5d60;
+  text-decoration: none;
+  font-weight: 500;
+  border-bottom: 1px solid rgba(236, 93, 96, 0.2); }
+  a:hover {
+    border-bottom: 1px solid #ec5d60; }
+
 section {
   width: 90%;
   margin: 4rem auto; }
@@ -363,11 +371,11 @@ section {
 
 .speaker {
   position: relative;
-  height: 15rem;
+  height: 22rem;
   padding: 0.5rem 0 0 9rem; }
   @media only screen and (min-width: 850px) {
     .speaker {
-      padding: 1.5rem 0 0 12rem; } }
+      padding: 0rem 0 0 12rem; } }
 
 .speaker-image {
   position: absolute;
@@ -397,9 +405,9 @@ section {
 .speaker-name {
   font-weight: 600;
   margin-right: 1rem; }
-  @media only screen and (min-width: 850px) {
-    .speaker-name {
-      float: left; } }
+
+.speaker-abstract {
+  margin-top: 2rem; }
 
 .amanda-rosler .speaker-initials,
 .jason-snell .speaker-initials,

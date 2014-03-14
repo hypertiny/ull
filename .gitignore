@@ -2,3 +2,4 @@
 *.sublime-project
 .sass-cache
 .DS_Store
+config.codekit
