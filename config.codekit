@@ -108,6 +108,16 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/lyrath.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 460705,
+		"inputAbbreviatedPath": "\/images\/lyrath.jpg",
+		"outputAbbreviatedPath": "\/images\/lyrath.jpg",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/speaker-kilian.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -212,7 +222,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 686958,
+		"initialSize": 1.9391e+06,
 		"inputAbbreviatedPath": "\/images\/ull-homepage.png",
 		"outputAbbreviatedPath": "\/images\/ull-homepage.png",
 		"outputPathIsSetByUser": 0,

@@ -81,7 +81,7 @@ section {
   margin: 10rem auto;
   padding: 10rem 15%;
   color: #fff;
-  background: $c-red;
+  background: $c-blue;
 }
 
 
@@ -98,7 +98,7 @@ section {
 }
 
 .section-image {
-  width: 53%;
+  width: 70%;
   margin: 20rem auto;
   display: block;
   &.home {
@@ -107,9 +107,20 @@ section {
   }
 }
 
+header {
+  width: 58%;
+  margin: 0 auto;
+  @include clearfix;
+}
+
+.logo-date-wrap {
+  float: left;
+  width: 33%;
+}
+
 .site-nav {
-  width: 50%;
-  max-width: 100rem;
+  width: 33%;
+  float: left;
   margin: 8rem auto 0;
   @include clearfix;
 }
@@ -118,17 +129,21 @@ section {
   text-decoration: none;
   border: 1px solid $c-red;
   color: $c-red;
-  padding: 0.6rem 1rem;
+  padding: 0.4rem 0.8rem;
   border-radius: 4px;
   text-transform: uppercase;
   font-weight: 600;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   letter-spacing: 0.2rem;
-  width: 22%;
+  width: 12rem;
   display: block;
   float: left;
-  margin-right: 3%;
+  margin-right: 1rem;
   text-align: center;
+  &:last-of-type {
+    margin-right: 0;
+    float: right;
+  }
 }
 
 .eqaul-width {
@@ -426,6 +441,7 @@ section {
   letter-spacing: 0.2rem;
   display: block;
   text-align: center;
+  margin-top: $t-leading*1;
   &:hover {
     background: #fff;
     color: $c-red;
