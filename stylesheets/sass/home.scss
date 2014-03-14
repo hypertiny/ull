@@ -864,8 +864,13 @@ footer {
   }
 }
 
+.section-jump {
+  @include hide-text;
+}
 
-
+.setting {
+  margin-bottom: 0;
+}
 
 
 

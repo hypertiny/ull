@@ -943,3 +943,11 @@ footer {
       .off-sale p {
         font-size: 1.8rem;
         line-height: 2.5rem; } }
+
+.section-jump {
+  color: transparent;
+  font: 0/0 a;
+  text-shadow: none; }
+
+.setting {
+  margin-bottom: 0; }
