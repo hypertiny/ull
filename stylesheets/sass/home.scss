@@ -4,6 +4,7 @@
 @import 'helpers';
 
 // Variable Overrides
+// ---------------------------------------------------------
 
 // Leading
 
@@ -25,6 +26,9 @@ $hl-medium:                 2.2rem;
 $l-avatar:                  10rem;
 
 
+// Base
+// ---------------------------------------------------------
+
 html {
   font-size: 62.5%;
 }
@@ -39,8 +43,8 @@ body {
 }
 
 
-
-// General Styles
+// General
+// ---------------------------------------------------------
 
 section {
   width: 100rem;
@@ -76,46 +80,28 @@ section {
   }
 }
 
-.intro {
-  width: 100%;
-  margin: 10rem auto;
-  padding: 10rem 15%;
-  color: #fff;
-  background: $c-blue;
-}
-
-
-// Logo + Intro
-
-.site-logo {
-  width: 10rem;
-  margin: 6rem auto 3rem;
-  display: block;
-}
-
-.date-location-wrap p {
-  text-align: center;
-}
-
-.section-image {
-  width: 70%;
-  margin: 20rem auto;
-  display: block;
-  &.home {
-    width: 80%;
-    margin: 8rem auto 0;
-  }
-}
+// Header
+// ---------------------------------------------------------
 
 header {
   width: 58%;
-  margin: 0 auto;
+  margin: 2rem auto 0;
   @include clearfix;
 }
 
 .logo-date-wrap {
   float: left;
   width: 33%;
+}
+
+.site-logo {
+  width: 8rem;
+  margin: 6rem auto 3rem;
+  display: block;
+}
+
+.date-location-wrap p {
+  text-align: center;
 }
 
 .site-nav {
@@ -140,221 +126,33 @@ header {
   float: left;
   margin-right: 1rem;
   text-align: center;
+
   &:last-of-type {
     margin-right: 0;
     float: right;
   }
 }
 
-.eqaul-width {
-
-}
-
-// Speakers
-
-
-.speaker {
-  position: relative;
-  height: 15rem;
-  padding: 1.5rem 0 0 12rem;
-}
-
-.speaker-image {
-  position: absolute;
-  background: #eee;
-  border-radius: 50%;
-  @include square($l-avatar);
-  left: 0;
-  top: 0;
-}
-
-.speaker-initials {
-  line-height: $l-avatar;
+.section-image {
+  width: 70%;
+  margin: 20rem auto;
   display: block;
-  text-align: center;
-  font-size: 3rem;
-  color: #999;
-  padding-top: 0.2rem;
-}
-
-.speaker-name {
-  font-weight: 600;
-  float: left;
-  margin-right: 1rem;
-}
-
-
-.amanda-rosler,
-.jason-snell,
-.michael-lopp,
-.linda-franco,
-.jim-dalrymple,
-.jennifer-brook,
-.jean-macdonald {
-  .speaker-initials {
-    display: none;
+  &.home {
+    width: 80%;
+    margin: 10rem auto 14rem;
   }
 }
 
-.amanda-rosler .speaker-image {
-  background: url("/images/speakers/amanda-rosler.jpg") no-repeat;
-  background-size: cover;
-  background-position: -17px 0;
-}
+// Intro + Tickets Form
+// ---------------------------------------------------------
 
-.jason-snell .speaker-image {
-  background: url("/images/speakers/jason-snell.jpg") no-repeat;
-  background-size: cover;
-  background-position: -15px 0;
-}
-
-.michael-lopp .speaker-image {
-  background: url("/images/speakers/michael-lopp.jpg") no-repeat;
-  background-size: cover;
-  background-position: 0px 0;
-}
-
-.jean-macdonald .speaker-image {
-  background: url("/images/speakers/jean-macdonald.jpg") no-repeat;
-  background-size: cover;
-  background-position: -25px 0;
-}
-
-.linda-franco .speaker-image {
-  background: url("/images/speakers/linda-franco.jpg") no-repeat;
-  background-size: cover;
-  background-position: -17px 0;
-}
-
-.jennifer-brook .speaker-image {
-  background: url("/images/speakers/jennifer-brook.jpg") no-repeat;
-  background-size: cover;
-  background-position: -30px 0;
-}
-
-.jim-dalrymple .speaker-image {
-  background: url("/images/speakers/jim-dalrymple.jpg") no-repeat;
-  background-size: cover;
-  background-position: 0px -20px;
-}
-
-
-// Schedule 
-
-.schedule {
-
-}
-
-.time-container {
-  position: relative;
-  height: 65rem;
-  margin-bottom: 2rem;
-  width: 33%;
-  float: left;
-  margin-right: 0%;
-  &.monday .time-block {
-    background: $c-red;
-    &.break {
-      background: #eee;
-      color: #999;
-    }
-  }
-  &.tuesday .time-block {
-    background: $c-blue;
-    &.break {
-      background: #eee;
-      color: #999;
-    }
-  }
-  &.wednesday .time-block {
-    background: $c-yellow;
-  }
-}
-
-.time-block {
-  background: $c-red;
-  color: #fff;
-  font-size: 1.5rem;
-  position: absolute;
-  padding: 1rem 1rem 0;
+.intro {
   width: 100%;
-  border-radius: 4px;
-  margin-bottom: 10px;
-  border: 2px solid #fff;
-
+  margin: 10rem auto;
+  padding: 10rem 15%;
+  color: #fff;
+  background: $c-blue;
 }
-
-.activity-name {
-  float: left;
-  font-weight: 600;
-}
-
-.activity-time {
-  float: right;
-}
-
-// Time Block
-
-.t-0 { top: 0;}
-.t-1 { top: (100/28 + 0%)*1;}
-.t-2 { top: (100/28 + 0%)*2;}
-.t-3 { top: (100/28 + 0%)*3;}
-.t-4 { top: (100/28 + 0%)*4;}
-.t-5 { top: (100/28 + 0%)*5;}
-.t-6 { top: (100/28 + 0%)*6;}
-.t-7 { top: (100/28 + 0%)*7;}
-.t-8 { top: (100/28 + 0%)*8;}
-.t-9 { top: (100/28 + 0%)*9;}
-.t-10 { top: (100/28 + 0%)*10;}
-.t-11 { top: (100/28 + 0%)*11;}
-.t-12 { top: (100/28 + 0%)*12;}
-.t-13 { top: (100/28 + 0%)*13;}
-.t-14 { top: (100/28 + 0%)*14;}
-.t-15 { top: (100/28 + 0%)*15;}
-.t-16 { top: (100/28 + 0%)*16;}
-.t-17 { top: (100/28 + 0%)*17;}
-.t-18 { top: (100/28 + 0%)*18;}
-.t-19 { top: (100/28 + 0%)*19;}
-.t-20 { top: (100/28 + 0%)*20;}
-.t-21 { top: (100/28 + 0%)*21;}
-.t-22 { top: (100/28 + 0%)*22;}
-.t-23 { top: (100/28 + 0%)*23;}
-.t-24 { top: (100/28 + 0%)*24;}
-.t-25 { top: (100/28 + 0%)*25;}
-.t-26 { top: (100/28 + 0%)*26;}
-.t-27 { top: (100/28 + 0%)*27;}
-.t-28 { top: (100/28 + 0%)*28;}
-
-.d-0 { height: 0;}
-.d-1 { height: (100/28 + 0%)*1;}
-.d-2 { height: (100/28 + 0%)*2;}
-.d-3 { height: (100/28 + 0%)*3;}
-.d-4 { height: (100/28 + 0%)*4;}
-.d-5 { height: (100/28 + 0%)*5;}
-.d-6 { height: (100/28 + 0%)*6;}
-.d-7 { height: (100/28 + 0%)*7;}
-.d-8 { height: (100/28 + 0%)*8;}
-.d-9 { height: (100/28 + 0%)*9;}
-.d-10 { height: (100/28 + 0%)*10;}
-.d-11 { height: (100/28 + 0%)*11;}
-.d-12 { height: (100/28 + 0%)*12;}
-.d-13 { height: (100/28 + 0%)*13;}
-.d-14 { height: (100/28 + 0%)*14;}
-.d-15 { height: (100/28 + 0%)*15;}
-.d-16 { height: (100/28 + 0%)*16;}
-.d-17 { height: (100/28 + 0%)*17;}
-.d-18 { height: (100/28 + 0%)*18;}
-.d-19 { height: (100/28 + 0%)*19;}
-.d-20 { height: (100/28 + 0%)*20;}
-.d-21 { height: (100/28 + 0%)*21;}
-.d-22 { height: (100/28 + 0%)*22;}
-.d-23 { height: (100/28 + 0%)*23;}
-.d-24 { height: (100/28 + 0%)*24;}
-.d-25 { height: (100/28 + 0%)*25;}
-.d-26 { height: (100/28 + 0%)*26;}
-.d-27 { height: (100/28 + 0%)*27;}
-.d-28 { height: (100/28 + 0%)*28;}
-
 
 #register-form {
   margin-top: 1rem;
@@ -464,6 +262,238 @@ header {
     width: 10rem;
   }
 }
+
+
+
+
+
+// Schedule
+// ---------------------------------------------------------
+
+.days {
+  @include clearfix;
+  .day {
+    width: 33%;
+    float: left;
+    margin-bottom: $t-leading;
+    h3 {
+      font-size: 4.5rem;
+      font-weight: 100;
+      margin-bottom: $t-leading/2;
+    }
+  }
+}
+
+
+// Speakers
+// ---------------------------------------------------------
+
+.speaker {
+  position: relative;
+  height: 15rem;
+  padding: 1.5rem 0 0 12rem;
+}
+
+.speaker-image {
+  position: absolute;
+  background: #eee;
+  border-radius: 50%;
+  @include square($l-avatar);
+  left: 0;
+  top: 0;
+}
+
+.speaker-initials {
+  line-height: $l-avatar;
+  display: block;
+  text-align: center;
+  font-size: 3rem;
+  color: #999;
+  padding-top: 0.2rem;
+}
+
+.speaker-name {
+  font-weight: 600;
+  float: left;
+  margin-right: 1rem;
+}
+
+.amanda-rosler,
+.jason-snell,
+.michael-lopp,
+.linda-franco,
+.jim-dalrymple,
+.jennifer-brook,
+.jean-macdonald {
+  .speaker-initials {
+    display: none;
+  }
+}
+
+.amanda-rosler .speaker-image {
+  background: url("/images/speakers/amanda-rosler.jpg") no-repeat;
+  background-size: cover;
+  background-position: -17px 0;
+}
+
+.jason-snell .speaker-image {
+  background: url("/images/speakers/jason-snell.jpg") no-repeat;
+  background-size: cover;
+  background-position: -15px 0;
+}
+
+.michael-lopp .speaker-image {
+  background: url("/images/speakers/michael-lopp.jpg") no-repeat;
+  background-size: cover;
+  background-position: 0px 0;
+}
+
+.jean-macdonald .speaker-image {
+  background: url("/images/speakers/jean-macdonald.jpg") no-repeat;
+  background-size: cover;
+  background-position: -25px 0;
+}
+
+.linda-franco .speaker-image {
+  background: url("/images/speakers/linda-franco.jpg") no-repeat;
+  background-size: cover;
+  background-position: -17px 0;
+}
+
+.jennifer-brook .speaker-image {
+  background: url("/images/speakers/jennifer-brook.jpg") no-repeat;
+  background-size: cover;
+  background-position: -30px 0;
+}
+
+.jim-dalrymple .speaker-image {
+  background: url("/images/speakers/jim-dalrymple.jpg") no-repeat;
+  background-size: cover;
+  background-position: 0px -20px;
+}
+
+
+// Schedule
+// ---------------------------------------------------------
+
+.schedule-wrap {
+  .further-col {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+.schedule {
+  @include clearfix;
+}
+
+.time-container {
+  position: relative;
+  height: 65rem;
+  margin-bottom: 2rem;
+  width: 30%;
+  float: left;
+  margin-right: 3%;
+  &.monday .time-block {
+    background: $c-red;
+    &.break {
+      background: #eee;
+      color: #999;
+    }
+  }
+  &.tuesday .time-block {
+    background: $c-blue;
+    &.break {
+      background: #eee;
+      color: #999;
+    }
+  }
+  &.wednesday .time-block {
+    background: $c-yellow;
+  }
+}
+
+.time-block {
+  background: $c-red;
+  color: #fff;
+  font-size: 1.5rem;
+  position: absolute;
+  padding: 1rem 1rem 0;
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  border: 2px solid #fff;
+}
+
+.activity-name {
+  float: left;
+  font-weight: 600;
+}
+
+.activity-time {
+  float: right;
+}
+
+.t-0 { top: 0;}
+.t-1 { top: (100/28 + 0%)*1;}
+.t-2 { top: (100/28 + 0%)*2;}
+.t-3 { top: (100/28 + 0%)*3;}
+.t-4 { top: (100/28 + 0%)*4;}
+.t-5 { top: (100/28 + 0%)*5;}
+.t-6 { top: (100/28 + 0%)*6;}
+.t-7 { top: (100/28 + 0%)*7;}
+.t-8 { top: (100/28 + 0%)*8;}
+.t-9 { top: (100/28 + 0%)*9;}
+.t-10 { top: (100/28 + 0%)*10;}
+.t-11 { top: (100/28 + 0%)*11;}
+.t-12 { top: (100/28 + 0%)*12;}
+.t-13 { top: (100/28 + 0%)*13;}
+.t-14 { top: (100/28 + 0%)*14;}
+.t-15 { top: (100/28 + 0%)*15;}
+.t-16 { top: (100/28 + 0%)*16;}
+.t-17 { top: (100/28 + 0%)*17;}
+.t-18 { top: (100/28 + 0%)*18;}
+.t-19 { top: (100/28 + 0%)*19;}
+.t-20 { top: (100/28 + 0%)*20;}
+.t-21 { top: (100/28 + 0%)*21;}
+.t-22 { top: (100/28 + 0%)*22;}
+.t-23 { top: (100/28 + 0%)*23;}
+.t-24 { top: (100/28 + 0%)*24;}
+.t-25 { top: (100/28 + 0%)*25;}
+.t-26 { top: (100/28 + 0%)*26;}
+.t-27 { top: (100/28 + 0%)*27;}
+.t-28 { top: (100/28 + 0%)*28;}
+
+.d-0 { height: 0;}
+.d-1 { height: (100/28 + 0%)*1;}
+.d-2 { height: (100/28 + 0%)*2;}
+.d-3 { height: (100/28 + 0%)*3;}
+.d-4 { height: (100/28 + 0%)*4;}
+.d-5 { height: (100/28 + 0%)*5;}
+.d-6 { height: (100/28 + 0%)*6;}
+.d-7 { height: (100/28 + 0%)*7;}
+.d-8 { height: (100/28 + 0%)*8;}
+.d-9 { height: (100/28 + 0%)*9;}
+.d-10 { height: (100/28 + 0%)*10;}
+.d-11 { height: (100/28 + 0%)*11;}
+.d-12 { height: (100/28 + 0%)*12;}
+.d-13 { height: (100/28 + 0%)*13;}
+.d-14 { height: (100/28 + 0%)*14;}
+.d-15 { height: (100/28 + 0%)*15;}
+.d-16 { height: (100/28 + 0%)*16;}
+.d-17 { height: (100/28 + 0%)*17;}
+.d-18 { height: (100/28 + 0%)*18;}
+.d-19 { height: (100/28 + 0%)*19;}
+.d-20 { height: (100/28 + 0%)*20;}
+.d-21 { height: (100/28 + 0%)*21;}
+.d-22 { height: (100/28 + 0%)*22;}
+.d-23 { height: (100/28 + 0%)*23;}
+.d-24 { height: (100/28 + 0%)*24;}
+.d-25 { height: (100/28 + 0%)*25;}
+.d-26 { height: (100/28 + 0%)*26;}
+.d-27 { height: (100/28 + 0%)*27;}
+.d-28 { height: (100/28 + 0%)*28;}
+
 
 
 
