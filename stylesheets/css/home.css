@@ -230,8 +230,11 @@ header {
       margin: -20.5rem auto 0; } }
 
 .byline {
-  margin-top: 4rem;
-  margin-bottom: 2rem; }
+  width: 20rem;
+  margin: 4rem auto 2rem; }
+  @media only screen and (min-width: 700px) {
+    .byline {
+      width: 100%; } }
 
 .nav-link {
   text-decoration: none;

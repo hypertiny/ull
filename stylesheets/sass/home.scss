@@ -160,8 +160,12 @@ header {
 }
 
 .byline {
-  margin-top: $t-leading*2;
-  margin-bottom: $t-leading;
+  width: 20rem;
+  margin: $t-leading*2 auto $t-leading;
+  @media only screen and (min-width: $small) {
+    width: 100%;
+  }
+
 }
 .nav-link {
   text-decoration: none;
