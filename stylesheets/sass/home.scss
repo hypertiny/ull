@@ -133,7 +133,7 @@ header {
 }
 
 .site-logo {
-  width: 8rem;
+  width: 10rem;
   margin: 6rem auto 3rem;
   display: block;
   @media only screen and (min-width: $medium) {
@@ -155,10 +155,14 @@ header {
   }
 
   @media only screen and (min-width: $medium) {
-    margin: -14rem auto 0;
+    margin: -20.5rem auto 0;
   }
 }
 
+.byline {
+  margin-top: $t-leading*2;
+  margin-bottom: $t-leading;
+}
 .nav-link {
   text-decoration: none;
   border: 1px solid $c-red;
@@ -525,6 +529,7 @@ header {
   &.mobile {
     margin-bottom: $t-leading;
   }
+
   @media only screen and (min-width: $large-ish) {
     width: 30%;
     float: left;
