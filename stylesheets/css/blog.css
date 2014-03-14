@@ -136,7 +136,7 @@ a, a:link, a:visited {
   font-size: 1.1rem;
   line-height: 1.5rem;
   margin-bottom: 1.5rem; }
-  @media only screen and (min-width: 480px) {
+  @media only screen and (min-width: 700px) {
     .text p {
       font-size: 1.3rem;
       line-height: 2rem;
@@ -144,7 +144,7 @@ a, a:link, a:visited {
 .text h2 {
   font-size: 1.5em;
   font-weight: 500; }
-  @media only screen and (min-width: 480px) {
+  @media only screen and (min-width: 700px) {
     .text h2 {
       font-size: 1.8em;
       line-height: 2.2rem; } }
@@ -154,7 +154,7 @@ a, a:link, a:visited {
   height: 2px;
   width: 40px;
   margin: 0 0 1.5rem 0; }
-  @media only screen and (min-width: 480px) {
+  @media only screen and (min-width: 700px) {
     .text hr {
       margin: 0 0 2rem 0; } }
 .text a, .text a:link, .text a:visited {
@@ -189,18 +189,18 @@ a, a:link, a:visited {
 .site-content {
   padding: 0 1rem;
   margin: 6rem auto 0; }
-  @media only screen and (min-width: 480px) {
+  @media only screen and (min-width: 700px) {
     .site-content {
       max-width: 42rem; } }
 
 .site-footer {
   margin: 8rem auto 0;
   padding: 0 1rem; }
-  @media only screen and (min-width: 480px) {
+  @media only screen and (min-width: 700px) {
     .site-footer {
       padding: 0 4rem;
       margin: 0rem auto 10rem; } }
-  @media only screen and (min-width: 850px) {
+  @media only screen and (min-width: 960px) {
     .site-footer {
       max-width: 60rem;
       width: 80%;
@@ -211,7 +211,7 @@ a, a:link, a:visited {
   text-align: center;
   font-size: 1.1rem;
   line-height: 1.6rem; }
-  @media only screen and (min-width: 850px) {
+  @media only screen and (min-width: 960px) {
     .date-location {
       font-size: 1.3rem;
       line-height: 1.6rem; } }
@@ -273,11 +273,11 @@ a, a:link, a:visited {
   text-align: center;
   margin: 2rem auto 0;
   line-height: 1.6rem; }
-  @media only screen and (min-width: 480px) {
+  @media only screen and (min-width: 700px) {
     .footer-cta {
       font-size: 1.6rem;
       width: 22rem; } }
-  @media only screen and (min-width: 850px) {
+  @media only screen and (min-width: 960px) {
     .footer-cta {
       font-size: 2rem;
       line-height: 2.2rem;

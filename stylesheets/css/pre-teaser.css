@@ -150,7 +150,7 @@ a, a:link, a:visited {
   margin: 54px auto 27px;
   margin: 5.4rem auto 2.7rem;
   font-weight: 500; }
-  @media only screen and (min-width: 850px) {
+  @media only screen and (min-width: 960px) {
     .text h2 {
       font-size: 21px;
       font-size: 2.1rem; } }
@@ -164,11 +164,11 @@ a, a:link, a:visited {
   max-width: 48rem;
   margin: 27px auto;
   margin: 2.7rem auto; }
-  @media only screen and (min-width: 850px) {
+  @media only screen and (min-width: 960px) {
     .site-wrapper {
       margin-top: 54px;
       margin-top: 5.4rem; } }
-  @media only screen and (min-height: 768px) and (min-width: 850px) {
+  @media only screen and (min-height: 768px) and (min-width: 960px) {
     .site-wrapper {
       margin-top: 256px;
       margin-top: 25.6rem;
@@ -193,7 +193,7 @@ a, a:link, a:visited {
   margin: 2.2rem auto;
   width: 80px;
   width: 8rem; }
-  @media only screen and (min-width: 850px) {
+  @media only screen and (min-width: 960px) {
     .logo {
       margin-top: 0;
       width: 96px;
@@ -219,7 +219,7 @@ a, a:link, a:visited {
   margin-bottom: 54px;
   margin-bottom: 5.4rem;
   text-align: center; }
-  @media only screen and (min-width: 850px) {
+  @media only screen and (min-width: 960px) {
     .intro {
       text-align: left;
       margin: 54px auto;
@@ -249,7 +249,7 @@ a, a:link, a:visited {
     display: table; }
   .register-interest-wrap:after {
     clear: both; }
-  @media only screen and (min-width: 850px) {
+  @media only screen and (min-width: 960px) {
     .register-interest-wrap {
       margin-top: 0; } }
 
@@ -306,7 +306,7 @@ a, a:link, a:visited {
   width: 24%;
   max-width: 170px;
   max-width: 17rem; }
-  @media only screen and (min-width: 850px) {
+  @media only screen and (min-width: 960px) {
     .volunteer-image {
       margin-top: -48px;
       margin-top: -4.8rem; } }

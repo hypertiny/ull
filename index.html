@@ -39,69 +39,70 @@
     </nav>
   </header>
   <img src="/images/ull-homepage.png" alt="" class="intro-image">
+  <div class="intro-wrap">
+    <section class="intro">
+      <div class="title-col">
+        <h2 class="intro-offset">The conference. Reinvented.</h2>
+        <p>
+          Úll is a conference where people truly come first. We focus deeply on the attendee experience. We bring together talks, interviews, feature presentations, podcases and lots of social time. 
+        </p>
 
-  <section class="intro">
-    <div class="title-col">
-      <h2 class="intro-offset">The conference. Reinvented.</h2>
-      <p>
-        Úll is a conference where people truly come first. We focus deeply on the attendee experience. We bring together talks, interviews, feature presentations, podcases and lots of social time. 
-      </p>
+        <p>
+          Our attendees to go away having made new friends, potential partners, useful connections, knowledgeable confidantes. Building strong, valuable relationships.
+        </p>
 
-      <p>
-        Our attendees to go away having made new friends, potential partners, useful connections, knowledgeable confidantes. Building strong, valuable relationships.
-      </p>
-
-    </div>
-    <div class="further-col">
-      <script id="ticket-template" type="text/html">
-        <li class="ull-ticket">
-          <p class="ull-ticket-title">%{= it.title %}</p>
-          <p class="ull-ticket-description">%{= it.description %}</p>
-          %{? it.status == 'locked' %}
-            <div class="ull-price-quantity">
-              <p class="ull-ticket-locked">Locked</p>
-            </div>
-          %{?? %}
-            <div class="ull-price-quantity">
-              <input type="text" name="registration[release_ids][%{= it.slug %}]" placeholder="0">
-                <p class="ull-ticket-price">%{= it.price_ex_tax %}</p>
-                <p class="ull-ticket-price-vat">%{= it.price_inc_tax %} inc VAT</p>
-            </div>
-          %{? %}
-        </li>
-      </script>
-
-      <div id='register-form'>
-        <form action="http://tito.io/ull/2014/registrations" method="POST">
-          <input name="utf8" type="hidden" value="&#x2713;" />
-          <ul class="ull-tickets" id="ull-tickets">
-            <li class="ull-ticket">
-              <p class="ull-ticket-title">Úll Ticket</p>
-              <p class="ull-ticket-price">€793.35</p>
-              <p class="ull-ticket-description">Two day conference. No accommodation.</p>
-              <input class="ull-quantity" type="text" name="registration[release_ids][%{= it.slug %}]" placeholder="0">
-            </li>
-            <li class="ull-ticket">
-              <p class="ull-ticket-title">Double Room</p>
-              <p class="ull-ticket-price">€369</p>
-              <p class="ull-ticket-description">One double bed. Two nights</p>
-              <input class="ull-quantity" type="text" name="registration[release_ids][%{= it.slug %}]" placeholder="0">
-            </li>
-
-            <li class="ull-ticket">
-              <p class="ull-ticket-title">Shared Room</p>
-              <p class="ull-ticket-price">€184.50</p>
-              <p class="ull-ticket-description">One of two single beds. Two nights</p>
-              <input class="ull-quantity" type="text" name="registration[release_ids][%{= it.slug %}]" placeholder="0">
-            </li>
-          </ul>
-          <button type="submit" class="ticket-form-submit">
-            Purchase
-          </button>
-        </form>
       </div>
-    </div>
-  </section>
+      <div class="further-col">
+        <script id="ticket-template" type="text/html">
+          <li class="ull-ticket">
+            <p class="ull-ticket-title">%{= it.title %}</p>
+            <p class="ull-ticket-description">%{= it.description %}</p>
+            %{? it.status == 'locked' %}
+              <div class="ull-price-quantity">
+                <p class="ull-ticket-locked">Locked</p>
+              </div>
+            %{?? %}
+              <div class="ull-price-quantity">
+                <input type="text" name="registration[release_ids][%{= it.slug %}]" placeholder="0">
+                  <p class="ull-ticket-price">%{= it.price_ex_tax %}</p>
+                  <p class="ull-ticket-price-vat">%{= it.price_inc_tax %} inc VAT</p>
+              </div>
+            %{? %}
+          </li>
+        </script>
+
+        <div id='register-form'>
+          <form action="http://tito.io/ull/2014/registrations" method="POST">
+            <input name="utf8" type="hidden" value="&#x2713;" />
+            <ul class="ull-tickets" id="ull-tickets">
+              <li class="ull-ticket">
+                <p class="ull-ticket-title">Úll Ticket</p>
+                <p class="ull-ticket-price">€793.35</p>
+                <p class="ull-ticket-description">Two day conference. No accommodation.</p>
+                <input class="ull-quantity" type="text" name="registration[release_ids][%{= it.slug %}]" placeholder="0">
+              </li>
+              <li class="ull-ticket">
+                <p class="ull-ticket-title">Double Room</p>
+                <p class="ull-ticket-price">€369</p>
+                <p class="ull-ticket-description">One double bed. Two nights</p>
+                <input class="ull-quantity" type="text" name="registration[release_ids][%{= it.slug %}]" placeholder="0">
+              </li>
+
+              <li class="ull-ticket">
+                <p class="ull-ticket-title">Shared Room</p>
+                <p class="ull-ticket-price">€184.50</p>
+                <p class="ull-ticket-description">One of two single beds. Two nights</p>
+                <input class="ull-quantity" type="text" name="registration[release_ids][%{= it.slug %}]" placeholder="0">
+              </li>
+            </ul>
+            <button type="submit" class="ticket-form-submit">
+              Purchase
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </div>
 
   <section class="speakers">
     <div class="title-col">

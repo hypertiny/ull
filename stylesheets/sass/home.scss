@@ -61,24 +61,35 @@ a {
 section {
   width: 90%;
   margin: $t-leading*2 auto;
-  @media only screen and (min-width: $medium) {
+  @include clearfix;
+  
+  @media only screen and (min-width: $small) {
+    width: 56rem;
+  }
+
+  @media only screen and (min-width: $large-ish) {
     width: 100rem;
     margin: $t-leading*4 auto;
-    @include clearfix;
   }
 }
 
 .title-col,
 .further-col {
-  @media only screen and (min-width: $medium) {
+  @media only screen and (min-width: $large-ish) {
     float: left;
   }
 }
 
 .title-col {
-  @media only screen and (min-width: $medium) {
+  @media only screen and (min-width: $small) {
+    width: 56rem;
+    margin: 0 auto;
+  }
+
+  @media only screen and (min-width: $large-ish) {
     width: 38rem;
   }
+
   h2 {
     font-size: $h-size;
     font-weight: 100;
@@ -96,8 +107,11 @@ section {
 }
 
 .further-col {
-  @media only screen and (min-width: $medium) {
+  @media only screen and (min-width: $small) {
     width: 56rem;
+    margin: 0 auto;
+  }
+  @media only screen and (min-width: $large-ish) {
     margin-left: 6rem;
   }
 }
@@ -106,16 +120,12 @@ section {
 // ---------------------------------------------------------
 
 header {
-  @media only screen and (min-width: $medium) {
-    width: 58%;
-    margin: 2rem auto 0;
-    @include clearfix;
-  }
-}
+  max-width: 84rem;
+  @include clearfix;
 
-.logo-date-wrap {
-  @media only screen and (min-width: $medium) {
-    
+  @media only screen and (min-width: $small) {
+  width: 80%;
+    margin: 2rem auto 0;
   }
 }
 
@@ -125,7 +135,6 @@ header {
   display: block;
   @media only screen and (min-width: $medium) {
     
-
   }
 }
 
@@ -135,11 +144,15 @@ header {
 
 .site-nav {
   margin-top: 4rem;
-  @media only screen and (min-width: $medium) {
+  @media only screen and (min-width: $small) {
     width: 100%;
     float: left;
-    margin: -14rem auto 0;
+    // margin: -13.5rem auto 0;
     @include clearfix;
+  }
+
+  @media only screen and (min-width: $medium) {
+    margin: -14rem auto 0;
   }
 }
 
@@ -191,8 +204,10 @@ header {
   width: 160%;
   margin: 6rem 0 6rem -30%;
   display: block;
-  @media only screen and (min-width: $medium) {
-    width: 80%;
+  max-width: 110rem;
+
+  @media only screen and (min-width: $small) {
+    width: 85%;
     margin: 10rem auto 14rem;
   }
 }
@@ -200,16 +215,18 @@ header {
 // Intro + Tickets Form
 // ---------------------------------------------------------
 
-.intro {
+.intro-wrap {
   width: 100%;
   color: #fff;
   background: $c-blue;
   padding: 4rem 5%;
-  @media only screen and (min-width: $medium) {
+
+  @media only screen and (min-width: $large-ish) {
     margin: 10rem auto;
-    padding: 10rem 15%;
+    padding: 10rem 0;
   }
 }
+
 
 #register-form {
   margin-top: 1rem;
@@ -320,13 +337,17 @@ header {
 // ---------------------------------------------------------
 
 .speakers {
-  margin: 0 auto !important;
+  margin: 0 auto;
+  &:first-of-type {
+    margin-top: $t-leading*2;
+  }
 }
 
 .speaker {
   position: relative;
-  height: 22rem;
+  // height: 22rem;
   padding: 0.5rem 0 0 9rem;
+  margin-bottom: $t-leading*2;
   @media only screen and (min-width: $medium) {
     padding: 0rem 0 0 12rem;  
   }
@@ -435,13 +456,11 @@ header {
 // ---------------------------------------------------------
 
 .schedule-wrap {
-
-
   .further-col {
     width: 100%;
     margin: 0;
   }
-  @media only screen and (min-width: $medium) {
+  @media only screen and (min-width: $large-ish) {
    .title-col {
      width: 66%;
      margin-bottom: $t-leading;
@@ -457,7 +476,7 @@ header {
 .days {
   display: none;
   @include clearfix;
-  @media only screen and (min-width: $medium) {
+  @media only screen and (min-width: $large-ish) {
     display: block;
   }
 }
@@ -468,8 +487,8 @@ header {
     margin-right: 0;
     float: right;
   }
-
-  @media only screen and (min-width: $medium) {
+  
+  @media only screen and (min-width: $large-ish) {
     width: 30%;
     float: left;
     margin-bottom: $t-leading;
@@ -492,7 +511,7 @@ header {
   margin-bottom: 2rem;
   margin-right: 5%;
 
-  @media only screen and (min-width: $medium) {
+  @media only screen and (min-width: $large-ish) {
     width: 30%;
     float: left;
     height: 65rem;
@@ -533,7 +552,7 @@ header {
   border-radius: 4px;
   margin-bottom: 10px;
   border: 2px solid #fff;
-  @media only screen and (min-width: $medium) {
+  @media only screen and (min-width: $large-ish) {
     position: absolute;
   }
 }
@@ -547,7 +566,7 @@ header {
   float: right;
 }
 
-@media only screen and (min-width: $medium) {
+@media only screen and (min-width: $large-ish) {
   .t-0 { top: 0;}
   .t-1 { top: (100/28 + 0%)*1;}
   .t-2 { top: (100/28 + 0%)*2;}
@@ -611,7 +630,7 @@ header {
   height: 5rem;
 }
 
-@media only screen and (min-width: $medium) {
+@media only screen and (min-width: $large-ish) {
   .d-0 { height: 0;}
   .d-1 { height: (100/28 + 0%)*1;}
   .d-2 { height: (100/28 + 0%)*2;}
