@@ -164,10 +164,10 @@ section {
 
 .title-col {
   margin-bottom: 4rem; }
-  @media only screen and (min-width: 700px) {
+  @media only screen and (min-width: 960px) {
     .title-col {
       width: 56rem;
-      margin: 0 auto 7rem; } }
+      margin: 0 auto 8rem; } }
   @media only screen and (min-width: 1100px) {
     .title-col {
       width: 38rem; } }
@@ -203,11 +203,11 @@ header {
   @media only screen and (min-width: 700px) {
     header {
       width: 80%;
-      margin: 2rem auto 0; } }
+      margin: 4rem auto 0; } }
 
 .site-logo {
   width: 10rem;
-  margin: 6rem auto 3rem;
+  margin: 4rem auto 4rem;
   display: block; }
 
 .date-location-wrap p {
@@ -266,14 +266,16 @@ header {
 .bar-image {
   width: 90%;
   margin: 0 auto;
-  display: block; }
+  display: block;
+  max-width: 100rem; }
   @media only screen and (min-width: 700px) {
     .bar-image {
       margin: 10rem auto;
       width: 60%; } }
   @media only screen and (min-width: 1100px) {
     .bar-image {
-      margin: 15rem auto; } }
+      margin: 15rem auto;
+      width: 100rem; } }
 
 .intro-image {
   display: none;
@@ -410,31 +412,36 @@ header {
       width: 10rem; } }
 
 .speakers {
-  margin: 0 auto; }
+  margin: 4rem auto; }
   .speakers:first-of-type {
     margin-top: 4rem; }
+  @media only screen and (min-width: 700px) {
+    .speakers {
+      margin: 8rem auto; } }
 
 .speaker {
   position: relative;
   padding: 1rem 0 0 0;
-  margin-bottom: 4rem; }
+  margin-bottom: 2rem; }
   @media only screen and (min-width: 700px) {
     .speaker {
       padding: 0.5rem 0 0 9rem; } }
   @media only screen and (min-width: 960px) {
     .speaker {
-      padding: 0rem 0 0 12rem; } }
+      padding: 0rem 0 0 12rem;
+      margin-bottom: 8rem; } }
 
 .speaker-image {
-  position: absolute;
   background: #eee;
   border-radius: 50%;
+  margin-bottom: 1rem;
   height: 4em;
-  width: 4em;
-  left: 0;
-  top: 0; }
+  width: 4em; }
   @media only screen and (min-width: 960px) {
     .speaker-image {
+      left: 0;
+      top: 0;
+      position: absolute;
       height: 10rem;
       width: 10rem; } }
 
@@ -452,20 +459,13 @@ header {
 
 .speaker-name {
   font-weight: 600;
-  margin-right: 1rem;
-  padding-left: 8rem; }
+  margin-right: 1rem; }
   @media only screen and (min-width: 700px) {
     .speaker-name {
       padding-left: 0; } }
 
-.speaker-role {
-  padding-left: 8rem; }
-  @media only screen and (min-width: 700px) {
-    .speaker-role {
-      padding-left: 0; } }
-
 .speaker-abstract {
-  margin-top: 2.5rem; }
+  margin-top: 2rem; }
   @media only screen and (min-width: 700px) {
     .speaker-abstract {
       margin-top: 2rem; } }
@@ -476,7 +476,8 @@ header {
 .linda-franco .speaker-initials,
 .jim-dalrymple .speaker-initials,
 .jennifer-brook .speaker-initials,
-.jean-macdonald .speaker-initials {
+.jean-macdonald .speaker-initials,
+.john-gruber .speaker-initials {
   display: none; }
 
 .amanda-rosler .speaker-image {
@@ -505,6 +506,10 @@ header {
 
 .jim-dalrymple .speaker-image {
   background: url("/images/speakers/jim-dalrymple.jpg") no-repeat;
+  background-size: cover; }
+
+.john-gruber .speaker-image {
+  background: url("/images/speakers/john-gruber.jpg") no-repeat;
   background-size: cover; }
 
 .setting img {
