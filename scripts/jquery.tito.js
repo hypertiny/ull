@@ -20,7 +20,6 @@
         }
       }
       var url = base_url + '/releases/current.json?callback=?' + url_extra
-      console.log(url)
       $.getJSON(url, null, callback)
     }
     return this;

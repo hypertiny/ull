@@ -13,15 +13,22 @@ jQuery(function(){
     selfcontained: false
   };
 
-  // template = doT.template($('#ticket-template').html())
-  // releases = ['ddhbqe7j2oy','pcn-apvtj5i','cm5a3ccvkii']
-  // $.tito('ull/2014').releases(releases, function(releases){
-  //   console.log('hello')
-  //   for(var i = 0; i < releases.length; i++)
-  //   {
-  //     var release = releases[i];
-  //     $('ul#ull-tickets').append(template(release))
-  //     console.log(release.title, release.description)
-  //   }
-  // })
+  $.tito.dev = true
+  template = doT.template($('#ticket-template').html())
+  $.tito('ull/2014').releases(function(releases){
+    on_sale = false;
+    for(var i = 0; i < releases.length; i++)
+    {
+      var release = releases[i];
+      $('ul#ull-tickets').append(template(release))
+      if(release.status == 'current')
+      {
+        on_sale = true;
+      }
+    }
+    if(on_sale === false)
+    {
+      $("#purchase-button").hide()
+    }
+  })
 })

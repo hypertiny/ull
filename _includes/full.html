@@ -31,20 +31,18 @@
 
     </div>
     <div class="further-col">
-      <!-- <script id="ticket-template" type="text/html">
+      <script id="ticket-template" type="text/html">
         <li class="ull-ticket">
           <p class="ull-ticket-title">%{= it.title %}</p>
-          <p class="ull-ticket-description">%{= it.description %}</p>
           %{? it.status == 'locked' %}
-            <div class="ull-price-quantity">
-              <p class="ull-ticket-locked">Locked</p>
-            </div>
+            <p class="ull-ticket-locked">Locked</p>
+          %{?? it.status == 'upcoming' %}
+            <p class="ull-ticket-locked">on sale %{= it.start_at_formatted %}</p>
           %{?? %}
-            <div class="ull-price-quantity">
-              <input type="text" name="registration[release_ids][%{= it.slug %}]" placeholder="0">
-                <p class="ull-ticket-price">%{= it.price_ex_tax %}</p>
-                <p class="ull-ticket-price-vat">%{= it.price_inc_tax %} inc VAT</p>
-            </div>
+            <p class="ull-ticket-price">%{= it.price_ex_tax %}</p>
+            <p class="ull-ticket-price-vat">%{= it.price_inc_tax %} inc VAT</p>
+            <p class="ull-ticket-description">%{= it.description %}</p>
+            <input class="ull-quantity" type="text" name="allocation[release_ids][%{= it.slug %}]" placeholder="0">
           %{? %}
         </li>
       </script>
@@ -53,35 +51,18 @@
         <form action="https://ti.to/ull/2014/allocations" method="POST">
           <input name="utf8" type="hidden" value="&#x2713;" />
           <ul class="ull-tickets" id="ull-tickets">
-            <li class="ull-ticket">
-              <p class="ull-ticket-title">Úll Ticket</p>
-              <p class="ull-ticket-price">€793.35</p>
-              <p class="ull-ticket-description">Two day conference. No accommodation.</p>
-              <input class="ull-quantity" type="text" name="allocation[release_ids][%{= it.slug %}]" placeholder="0">
-            </li>
-            <li class="ull-ticket">
-              <p class="ull-ticket-title">Double Room</p>
-              <p class="ull-ticket-price">€369</p>
-              <p class="ull-ticket-description">One double bed. Two nights</p>
-              <input class="ull-quantity" type="text" name="allocation[release_ids][%{= it.slug %}]" placeholder="0">
-            </li>
-
-            <li class="ull-ticket">
-              <p class="ull-ticket-title">Shared Room</p>
-              <p class="ull-ticket-price">€184.50</p>
-              <p class="ull-ticket-description">One of two single beds. Two nights</p>
-              <input class="ull-quantity" type="text" name="allocation[release_ids][%{= it.slug %}]" placeholder="0">
-            </li>
           </ul>
-          <button type="submit" class="ticket-form-submit">
+          <button type="submit" id="purchase-button" class="ticket-form-submit">
             Purchase
           </button>
         </form>
-      </div> -->
+      </div>
+      <!-- 
       <div class="off-sale">
         <h2>Our latest batch sold out!</h2>
         <p>If you would like to buy a ticket to Úll 2014, your final opportunity will be the <strong>18th of March</strong>. Mark your calendars.</p>
       </div>
+      -->
     </div>
   </section>
 </div>
