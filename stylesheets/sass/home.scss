@@ -82,9 +82,9 @@ section {
 
 .title-col {
   margin-bottom: $t-leading*2;
-  @media only screen and (min-width: $small) {
+  @media only screen and (min-width: $medium) {
     width: 56rem;
-    margin: 0 auto 7rem;
+    margin: 0 auto $t-leading*4;
   }
 
   @media only screen and (min-width: $large-ish) {
@@ -127,14 +127,14 @@ header {
   @include clearfix;
 
   @media only screen and (min-width: $small) {
-  width: 80%;
-    margin: 2rem auto 0;
+    width: 80%;
+    margin: $t-leading*2 auto 0;
   }
 }
 
 .site-logo {
   width: 10rem;
-  margin: 6rem auto 3rem;
+  margin: $t-leading*2 auto $t-leading*2;
   display: block;
   @media only screen and (min-width: $medium) {
     
@@ -205,14 +205,19 @@ header {
   width: 90%;
   margin: 0 auto;
   display: block;
+  max-width: 100rem;
   @media only screen and (min-width: $small) {
     margin: 10rem auto;
     width: 60%;
   }
 
+  @media only screen and (min-width: $medium) {
+    
+  }
+
   @media only screen and (min-width: $large-ish) {
     margin: 15rem auto;
-    
+    width: 100rem;
   }
 }
 
@@ -223,7 +228,7 @@ header {
   @media only screen and (min-width: $medium) {
     display: block;
     width: 85%;
-    margin: 10rem auto 14rem;
+    margin: $t-leading*5 auto $t-leading*7;
   }
 }
 
@@ -243,7 +248,7 @@ header {
   width: 100%;
   color: #fff;
   background: $c-blue;
-  padding: 4rem 0;
+  padding: $t-leading*2 0;
 
   @media only screen and (min-width: $large-ish) {
     margin: 10rem auto;
@@ -370,33 +375,38 @@ header {
 // ---------------------------------------------------------
 
 .speakers {
-  margin: 0 auto;
+  margin: $t-leading*2 auto;
   &:first-of-type {
     margin-top: $t-leading*2;
+  }
+  @media only screen and (min-width: $small) {
+    margin: $t-leading*4 auto;
   }
 }
 
 .speaker {
   position: relative;
-  // height: 22rem;
   padding: 1rem 0 0 0;
-  margin-bottom: $t-leading*2;
+  margin-bottom: $t-leading;
   @media only screen and (min-width: $small) {
     padding: 0.5rem 0 0 9rem;
   }
   @media only screen and (min-width: $medium) {
-    padding: 0rem 0 0 12rem;  
+    padding: 0rem 0 0 12rem;
+    margin-bottom: $t-leading*4; 
   }
 }
 
 .speaker-image {
-  position: absolute;
   background: #eee;
   border-radius: 50%;
+  margin-bottom: $t-leading/2;
   @include square(4em);
-  left: 0;
-  top: 0;
+
   @media only screen and (min-width: $medium) {
+    left: 0;
+    top: 0;
+    position: absolute;
     @include square($l-avatar);
   }
 }
@@ -418,21 +428,17 @@ header {
 .speaker-name {
   font-weight: 600;
   margin-right: 1rem;
-  padding-left: 8rem;
   @media only screen and (min-width: $small) {
     padding-left: 0;
   }
 }
 
 .speaker-role {
-  padding-left: 8rem;
-  @media only screen and (min-width: $small) {
-    padding-left: 0;
-  }
+
 }
 
 .speaker-abstract {
-  margin-top: $t-leading*1.25;
+  margin-top: $t-leading;
   @media only screen and (min-width: $small) {
     margin-top: $t-leading;
   }
@@ -444,7 +450,8 @@ header {
 .linda-franco,
 .jim-dalrymple,
 .jennifer-brook,
-.jean-macdonald {
+.jean-macdonald,
+.john-gruber {
   .speaker-initials {
     display: none;
   }
@@ -484,6 +491,11 @@ header {
 
 .jim-dalrymple .speaker-image {
   background: url("/images/speakers/jim-dalrymple.jpg") no-repeat;
+  background-size: cover;
+}
+
+.john-gruber .speaker-image {
+  background: url("/images/speakers/john-gruber.jpg") no-repeat;
   background-size: cover;
 }
 
