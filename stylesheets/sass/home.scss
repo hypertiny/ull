@@ -294,7 +294,7 @@ header {
 }
 
 .ull-ticket-price {
-  line-height: 1.8rem;
+  line-height: 2.3rem;
   position: relative;
 }
 
@@ -752,7 +752,7 @@ footer {
     width: 56rem;
   }
 
-  @media only screen and (min-width: $large) {
+  @media only screen and (min-width: $large-ish) {
     width: 100rem;
   }
   a {
