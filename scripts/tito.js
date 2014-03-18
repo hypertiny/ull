@@ -13,7 +13,6 @@ jQuery(function(){
     selfcontained: false
   };
 
-  $.tito.dev = true
   template = doT.template($('#ticket-template').html())
   $.tito('ull/2014').releases(function(releases){
     on_sale = false;
