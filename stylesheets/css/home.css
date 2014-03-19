@@ -478,7 +478,8 @@ header {
 .jennifer-brook .speaker-initials,
 .jean-macdonald .speaker-initials,
 .john-gruber .speaker-initials,
-.dave-wiskus .speaker-initials {
+.dave-wiskus .speaker-initials,
+.lisa-maree-domican .speaker-initials {
   display: none; }
 
 .amanda-rosler .speaker-image {
@@ -515,6 +516,10 @@ header {
 
 .dave-wiskus .speaker-image {
   background: url("/images/speakers/dave-wiskus.jpg") no-repeat;
+  background-size: cover; }
+
+.lisa-maree-domican .speaker-image {
+  background: url("/images/speakers/lisa-maree-domican.jpg") no-repeat;
   background-size: cover; }
 
 .setting img {
