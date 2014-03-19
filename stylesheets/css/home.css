@@ -477,7 +477,8 @@ header {
 .jim-dalrymple .speaker-initials,
 .jennifer-brook .speaker-initials,
 .jean-macdonald .speaker-initials,
-.john-gruber .speaker-initials {
+.john-gruber .speaker-initials,
+.dave-wiskus .speaker-initials {
   display: none; }
 
 .amanda-rosler .speaker-image {
@@ -510,6 +511,10 @@ header {
 
 .john-gruber .speaker-image {
   background: url("/images/speakers/john-gruber.jpg") no-repeat;
+  background-size: cover; }
+
+.dave-wiskus .speaker-image {
+  background: url("/images/speakers/dave-wiskus.jpg") no-repeat;
   background-size: cover; }
 
 .setting img {
