@@ -451,7 +451,9 @@ header {
 .jim-dalrymple,
 .jennifer-brook,
 .jean-macdonald,
-.john-gruber {
+.john-gruber,
+.dave-wiskus,
+.lisa-maree-domican {
   .speaker-initials {
     display: none;
   }
@@ -496,6 +498,16 @@ header {
 
 .john-gruber .speaker-image {
   background: url("/images/speakers/john-gruber.jpg") no-repeat;
+  background-size: cover;
+}
+
+.dave-wiskus .speaker-image {
+  background: url("/images/speakers/dave-wiskus.jpg") no-repeat;
+  background-size: cover;
+}
+
+.lisa-maree-domican .speaker-image {
+  background: url("/images/speakers/lisa-maree-domican.jpg") no-repeat;
   background-size: cover;
 }
 
