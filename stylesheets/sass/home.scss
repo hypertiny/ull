@@ -453,7 +453,8 @@ header {
 .jean-macdonald,
 .john-gruber,
 .dave-wiskus,
-.lisa-maree-domican {
+.lisa-maree-domican,
+.guy-english {
   .speaker-initials {
     display: none;
   }
@@ -508,6 +509,11 @@ header {
 
 .lisa-maree-domican .speaker-image {
   background: url("/images/speakers/lisa-maree-domican.jpg") no-repeat;
+  background-size: cover;
+}
+
+.guy-english .speaker-image {
+  background: url("/images/speakers/guy-english.png") no-repeat;
   background-size: cover;
 }
 
