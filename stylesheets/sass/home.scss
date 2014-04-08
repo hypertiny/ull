@@ -747,18 +747,55 @@ header {
 // Sponsors
 // ---------------------------------------------------------
 
-.sponsors .further-col {
-  margin-top: 6.5rem;
-}
-
-.sponsors img {
-  width: 40%;
-  float: left;
-  &:first-of-type {
-    margin-right: 10%;
-    padding-top: 1.2rem;
+.sponsors {
+  @media only screen and (min-width: $small) {
+    margin-bottom: 6.5rem;
   }
 }
+
+.sponsor-logo {
+  display: block;
+  margin-right: 4.3rem;
+  float: left;
+  border-bottom: none;
+  &:hover {
+    border-bottom: none;
+    opacity: 0.5;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+  }
+
+  &:first-of-type {
+    width: 70%;
+    margin: 0 auto 4rem;
+  }
+
+  &:last-of-type {
+    float: right;
+    margin-right: 0rem;
+  }
+
+  &.new-relic {
+    padding-top: 0.3rem;
+    padding-left: 0.3rem;
+    width: 28%;
+  }
+
+  &.squarespace {
+    padding-top: 0.4rem;
+    width: 32%;
+  }
+
+  &.microsoft {
+    width: 24%;
+  }
+
+
+}
+
 
 //  Footer
 // ---------------------------------------------------------

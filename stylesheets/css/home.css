@@ -827,15 +827,36 @@ header {
 
   .d-28 {
     height: 100%; } }
-.sponsors .further-col {
-  margin-top: 6.5rem; }
+@media only screen and (min-width: 700px) {
+  .sponsors {
+    margin-bottom: 6.5rem; } }
 
-.sponsors img {
-  width: 40%;
-  float: left; }
-  .sponsors img:first-of-type {
-    margin-right: 10%;
-    padding-top: 1.2rem; }
+.sponsor-logo {
+  display: block;
+  margin-right: 4.3rem;
+  float: left;
+  border-bottom: none; }
+  .sponsor-logo:hover {
+    border-bottom: none;
+    opacity: 0.5; }
+  .sponsor-logo img {
+    display: block;
+    width: 100%; }
+  .sponsor-logo:first-of-type {
+    width: 70%;
+    margin: 0 auto 4rem; }
+  .sponsor-logo:last-of-type {
+    float: right;
+    margin-right: 0rem; }
+  .sponsor-logo.new-relic {
+    padding-top: 0.3rem;
+    padding-left: 0.3rem;
+    width: 28%; }
+  .sponsor-logo.squarespace {
+    padding-top: 0.4rem;
+    width: 32%; }
+  .sponsor-logo.microsoft {
+    width: 24%; }
 
 footer {
   width: 90%;
