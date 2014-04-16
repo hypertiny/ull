@@ -41,7 +41,11 @@
           %{?? %}
             <p class="ull-ticket-price">%{= it.price_inc_tax %} inc VAT</p>
             <p class="ull-ticket-description">%{= it.description %}</p>
-            <input class="ull-quantity" type="text" name="allocation[release_ids][%{= it.slug %}]" placeholder="0">
+            %{? it.status == 'sold_out' %}
+              sold out
+            %{??%}
+              <input class="ull-quantity" type="text" name="allocation[release_ids][%{= it.slug %}]" placeholder="0">
+            %{? %}
           %{? %}
         </li>
       </script>
