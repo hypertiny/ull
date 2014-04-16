@@ -474,6 +474,7 @@ header {
 .jason-snell .speaker-initials,
 .michael-lopp .speaker-initials,
 .linda-franco .speaker-initials,
+.benjamin-de-cock .speaker-initials,
 .jim-dalrymple .speaker-initials,
 .jennifer-brook .speaker-initials,
 .jean-macdonald .speaker-initials,
@@ -489,6 +490,10 @@ header {
 
 .jason-snell .speaker-image {
   background: url("/images/speakers/jason-snell.jpg") no-repeat;
+  background-size: cover; }
+
+.benjamin-de-cock .speaker-image {
+  background: url("/images/speakers/bdc.png") no-repeat;
   background-size: cover; }
 
 .michael-lopp .speaker-image {
