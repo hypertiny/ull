@@ -1,5 +1,5 @@
-@import 'vendor/bourbon/bourbon';
-@import 'vendor/neat/neat';
+@import 'vendor/bourbon';
+@import 'vendor/neat';
 @import 'reset';
 @import 'helpers';
 
@@ -755,9 +755,8 @@ header {
 
 .sponsor-logo {
   display: block;
-  margin-right: 4.3rem;
-  float: left;
   border-bottom: none;
+
   &:hover {
     border-bottom: none;
     opacity: 0.5;
@@ -767,33 +766,53 @@ header {
     display: block;
     width: 100%;
   }
-
-  &:first-of-type {
-    width: 70%;
-    margin: 0 auto 4rem;
+  
+  &.wordpress {
+    width: 80%;
+    margin: 3rem auto;
   }
 
-  &:last-of-type {
-    float: right;
-    margin-right: 0rem;
-  }
-
-  &.new-relic {
-    padding-top: 0.3rem;
-    padding-left: 0.3rem;
-    width: 28%;
-  }
-
-  &.squarespace {
-    padding-top: 0.4rem;
-    width: 32%;
-  }
-
+  &.new-relic, 
+  &.squarespace,
   &.microsoft {
-    width: 24%;
+    width: 60%;
+    margin: 3rem auto;
   }
 
+  @media only screen and (min-width: $small) {
+    float: left;
+    
+    img {
+      display: block;
+      width: 100%;
+    }
 
+    &:first-of-type {
+      width: 70%;
+      margin: 0 auto 4rem;
+    }
+
+    &:last-of-type {
+      float: right;
+      margin-right: 0rem;
+    }
+
+    &.new-relic {
+      padding-top: 0.3rem;
+      padding-left: 0.3rem;
+      width: 28%;
+      margin-right: 4.3rem;
+    }
+
+    &.squarespace {
+      padding-top: 0.4rem;
+      width: 32%;
+    }
+
+    &.microsoft {
+      width: 24%;
+    }
+  }
 }
 
 

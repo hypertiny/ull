@@ -142,12 +142,10 @@ a {
 
 section {
   width: 90%;
-  margin: 4rem auto;
-  *zoom: 1; }
-  section:before, section:after {
-    content: " ";
-    display: table; }
+  margin: 4rem auto; }
   section:after {
+    content: "";
+    display: table;
     clear: both; }
   @media only screen and (min-width: 700px) {
     section {
@@ -193,12 +191,10 @@ section {
     margin-left: 6rem; } }
 
 header {
-  max-width: 84rem;
-  *zoom: 1; }
-  header:before, header:after {
-    content: " ";
-    display: table; }
+  max-width: 84rem; }
   header:after {
+    content: "";
+    display: table;
     clear: both; }
   @media only screen and (min-width: 700px) {
     header {
@@ -218,12 +214,10 @@ header {
   @media only screen and (min-width: 700px) {
     .site-nav {
       width: 100%;
-      float: left;
-      *zoom: 1; }
-      .site-nav:before, .site-nav:after {
-        content: " ";
-        display: table; }
+      float: left; }
       .site-nav:after {
+        content: "";
+        display: table;
         clear: both; } }
   @media only screen and (min-width: 960px) {
     .site-nav {
@@ -312,24 +306,20 @@ header {
       margin: 4rem auto; } }
 
 #register-form {
-  margin-top: 1rem;
-  *zoom: 1; }
-  #register-form:before, #register-form:after {
-    content: " ";
-    display: table; }
+  margin-top: 1rem; }
   #register-form:after {
+    content: "";
+    display: table;
     clear: both; }
 
 .ull-ticket {
-  *zoom: 1;
   border-bottom: 2px dotted white;
   position: relative;
   padding-bottom: 1.33333rem;
   margin-bottom: 1.33333rem; }
-  .ull-ticket:before, .ull-ticket:after {
-    content: " ";
-    display: table; }
   .ull-ticket:after {
+    content: "";
+    display: table;
     clear: both; }
   .ull-ticket:first-of-type {
     border-top: 2px dotted white;
@@ -474,7 +464,6 @@ header {
 .jason-snell .speaker-initials,
 .michael-lopp .speaker-initials,
 .linda-franco .speaker-initials,
-.benjamin-de-cock .speaker-initials,
 .jim-dalrymple .speaker-initials,
 .jennifer-brook .speaker-initials,
 .jean-macdonald .speaker-initials,
@@ -490,10 +479,6 @@ header {
 
 .jason-snell .speaker-image {
   background: url("/images/speakers/jason-snell.jpg") no-repeat;
-  background-size: cover; }
-
-.benjamin-de-cock .speaker-image {
-  background: url("/images/speakers/bdc.png") no-repeat;
   background-size: cover; }
 
 .michael-lopp .speaker-image {
@@ -543,21 +528,16 @@ header {
     width: 66%;
     margin-bottom: 2rem; } }
 
-.schedule {
-  *zoom: 1; }
-  .schedule:before, .schedule:after {
-    content: " ";
-    display: table; }
-  .schedule:after {
-    clear: both; }
+.schedule:after {
+  content: "";
+  display: table;
+  clear: both; }
 
 .days {
-  display: none;
-  *zoom: 1; }
-  .days:before, .days:after {
-    content: " ";
-    display: table; }
+  display: none; }
   .days:after {
+    content: "";
+    display: table;
     clear: both; }
   @media only screen and (min-width: 1100px) {
     .days {
@@ -838,8 +818,6 @@ header {
 
 .sponsor-logo {
   display: block;
-  margin-right: 4.3rem;
-  float: left;
   border-bottom: none; }
   .sponsor-logo:hover {
     border-bottom: none;
@@ -847,21 +825,34 @@ header {
   .sponsor-logo img {
     display: block;
     width: 100%; }
-  .sponsor-logo:first-of-type {
-    width: 70%;
-    margin: 0 auto 4rem; }
-  .sponsor-logo:last-of-type {
-    float: right;
-    margin-right: 0rem; }
-  .sponsor-logo.new-relic {
-    padding-top: 0.3rem;
-    padding-left: 0.3rem;
-    width: 28%; }
-  .sponsor-logo.squarespace {
-    padding-top: 0.4rem;
-    width: 32%; }
-  .sponsor-logo.microsoft {
-    width: 24%; }
+  .sponsor-logo.wordpress {
+    width: 80%;
+    margin: 3rem auto; }
+  .sponsor-logo.new-relic, .sponsor-logo.squarespace, .sponsor-logo.microsoft {
+    width: 60%;
+    margin: 3rem auto; }
+  @media only screen and (min-width: 700px) {
+    .sponsor-logo {
+      float: left; }
+      .sponsor-logo img {
+        display: block;
+        width: 100%; }
+      .sponsor-logo:first-of-type {
+        width: 70%;
+        margin: 0 auto 4rem; }
+      .sponsor-logo:last-of-type {
+        float: right;
+        margin-right: 0rem; }
+      .sponsor-logo.new-relic {
+        padding-top: 0.3rem;
+        padding-left: 0.3rem;
+        width: 28%;
+        margin-right: 4.3rem; }
+      .sponsor-logo.squarespace {
+        padding-top: 0.4rem;
+        width: 32%; }
+      .sponsor-logo.microsoft {
+        width: 24%; } }
 
 footer {
   width: 90%;
@@ -887,11 +878,14 @@ footer {
   background-image: no-repeat;
   float: left;
   margin-right: 1rem;
-  color: transparent;
-  font: 0/0 a;
-  text-shadow: none;
+  overflow: hidden;
   height: 4rem;
   width: 4rem; }
+  .organiser:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%; }
   .organiser.dermdaly {
     background: url("/images/organisers/dermdaly.jpg") no-repeat;
     background-size: cover; }
@@ -914,12 +908,10 @@ footer {
 
 .register-interest-wrap {
   margin: 8rem auto 2rem;
-  padding: 0 1rem;
-  *zoom: 1; }
-  .register-interest-wrap:before, .register-interest-wrap:after {
-    content: " ";
-    display: table; }
+  padding: 0 1rem; }
   .register-interest-wrap:after {
+    content: "";
+    display: table;
     clear: both; }
   @media only screen and (min-width: 700px) {
     .register-interest-wrap {
@@ -1011,9 +1003,12 @@ footer {
         line-height: 2.5rem; } }
 
 .section-jump {
-  color: transparent;
-  font: 0/0 a;
-  text-shadow: none; }
+  overflow: hidden; }
+  .section-jump:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%; }
 
 .setting {
   margin-bottom: 0; }
