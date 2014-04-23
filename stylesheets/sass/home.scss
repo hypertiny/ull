@@ -979,8 +979,10 @@ footer {
   }
 }
 
-.section-jump {
-  @include hide-text;
+a.section-jump {
+  line-height: 0; 
+  font-size: 0;
+  color: transparent; 
 }
 
 .setting {

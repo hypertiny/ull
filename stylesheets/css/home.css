@@ -1002,13 +1002,10 @@ footer {
         font-size: 1.8rem;
         line-height: 2.5rem; } }
 
-.section-jump {
-  overflow: hidden; }
-  .section-jump:before {
-    content: "";
-    display: block;
-    width: 0;
-    height: 100%; }
+a.section-jump {
+  line-height: 0;
+  font-size: 0;
+  color: transparent; }
 
 .setting {
   margin-bottom: 0; }
