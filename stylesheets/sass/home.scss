@@ -454,7 +454,8 @@ header {
 .john-gruber,
 .dave-wiskus,
 .lisa-maree-domican,
-.guy-english {
+.guy-english,
+.bdc {
   .speaker-initials {
     display: none;
   }
@@ -514,6 +515,11 @@ header {
 
 .guy-english .speaker-image {
   background: url("/images/speakers/guy-english.png") no-repeat;
+  background-size: cover;
+}
+
+.bdc .speaker-image {
+  background: url("/images/speakers/bdc.png") no-repeat;
   background-size: cover;
 }
 

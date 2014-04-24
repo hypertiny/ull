@@ -470,7 +470,8 @@ header {
 .john-gruber .speaker-initials,
 .dave-wiskus .speaker-initials,
 .lisa-maree-domican .speaker-initials,
-.guy-english .speaker-initials {
+.guy-english .speaker-initials,
+.bdc .speaker-initials {
   display: none; }
 
 .amanda-rosler .speaker-image {
@@ -515,6 +516,10 @@ header {
 
 .guy-english .speaker-image {
   background: url("/images/speakers/guy-english.png") no-repeat;
+  background-size: cover; }
+
+.bdc .speaker-image {
+  background: url("/images/speakers/bdc.png") no-repeat;
   background-size: cover; }
 
 .setting img {
