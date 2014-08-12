@@ -72,14 +72,27 @@
 	<li class="slide text" id="two">
 		<h2>A conference about building great&nbsp;products</h2>
 		<h3>30th &amp; 31st March 2015</h3>
-		<form class="clearfix">
+		
+		<form class="register-interest-form clearfix">
 			<div class="form-group clearfix">
-				<input type="text" placeholder="Name" />
-				<input type="text" placeholder="Email" />
-				<input type="submit" class="button radius blue" value="Join mailing list" />
+				<input id="register-name"
+				      type="text"
+				      placeholder="Name"
+				      class="register-name"
+				      autocomplete="off">
+				<input id="register-email"
+				      type="text"
+				      placeholder="Email"
+				      class="register-email"
+				      autocomplete="off"
+				      autocapitalize="off">
+				<input type="submit" 
+								class="button radius blue register-button" value="Join mailing list" />
 			</div>
 			<a href="http://twitter.com/ullconf" class="white"><span class="glyph social xlarge">e</span></a>
 		</form>
+
+
 		<div class="updated-wrap">
 			<a class="button radius blue gap-top updated-btn">Keep updated</a>
 			<a href="http://twitter.com/ullconf" class="white"><span class="glyph social xlarge">e</span></a>

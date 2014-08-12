@@ -504,9 +504,8 @@ form input[type="text"] {
 }
 
 .updated-wrap {
-	display: none;
+	/*display: none;*/
 }
-
 
 
 .clearfix {
