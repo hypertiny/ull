@@ -313,10 +313,7 @@ h2 {
 
 /*--h2 top margin--*/
 
-@media all and (max-height: 1000px) {	h2 {		margin-top: 20%;	}}
-@media all and (max-height: 800px) {	h2 {		margin-top: 15%;	}}
-@media all and (max-height: 600px) {	h2 {		margin-top: 10%;	}}
-@media all and (max-height: 500px) {	h2 {		margin-top: 5%;		}}
+
 
 h3 {
 	font-size: 80px;
@@ -504,9 +501,10 @@ form input[type="text"] {
 		font-size: 28px;
 		line-height: 32px;
 	}
+}
 
-
-
+.updated-wrap {
+	display: none;
 }
 
 
@@ -525,3 +523,28 @@ form input[type="text"] {
    clear: both;
  }
 
+ @media all and (max-height: 1000px) {	h2 {		margin-top: 20%;	}}
+ @media all and (max-height: 800px) {	
+ 	form {
+ 		margin-bottom: 25px;
+ 		margin-top: 25px;
+ 	}
+ 	h2 {		margin-top: 12%;	}}
+ @media all and (max-height: 600px) {
+
+ 	h2 {	
+ 		margin-top: 10%;	
+ 	}
+ }
+ @media all and (max-height: 500px) {	h2 {		margin-top: 5%;		}}
+
+@media only screen and (min-device-width: 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+	#one {
+		height: 70%;
+	}
+	h2 {	
+		margin-top: 0%;	
+		font-size: 60px;
+		line-height: 60px;
+	}
+}

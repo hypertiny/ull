@@ -73,12 +73,17 @@
 		<h2>A conference about building great&nbsp;products</h2>
 		<h3>30th &amp; 31st March 2015</h3>
 		<form class="clearfix">
+			<div class="form-group clearfix">
 				<input type="text" placeholder="Name" />
 				<input type="text" placeholder="Email" />
 				<input type="submit" class="button radius blue" value="Join mailing list" />
+			</div>
+			<a href="http://twitter.com/ullconf" class="white"><span class="glyph social xlarge">e</span></a>
 		</form>
-		<a class="button radius blue gap-top updated-btn">Keep updated</a>
-		<a href="http://twitter.com/ullconf" class="white"><span class="glyph social xlarge">e</span></a>
+		<div class="updated-wrap">
+			<a class="button radius blue gap-top updated-btn">Keep updated</a>
+			<a href="http://twitter.com/ullconf" class="white"><span class="glyph social xlarge">e</span></a>
+		</div>
 	</li>
 
 	<li class="marker" id="first"></li>
@@ -96,8 +101,8 @@
 	<script type="text/javascript">
 	$(document).ready(function(){
 		$( ".updated-btn" ).click(function() {
-		  $( ".updated-btn" ).fadeToggle( "fast", "linear" );
-		  $( "form" ).fadeToggle( "slow", "linear" );
+		  $( ".updated-wrap" ).fadeToggle( "fast", "linear" );
+		  $( "form" ).delay( 200 ).fadeToggle( "fast", "linear" );
 		});
 	  $('body').delay(1500).queue(function(){
 	      $(this).addClass('split-one').clearQueue();
