@@ -311,6 +311,9 @@ h2 {
 	margin-bottom: 45px;
 }
 
+h2.thanks {
+	margin-top: 0;
+}
 
 /*--h2 top margin--*/
 
