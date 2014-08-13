@@ -9,7 +9,7 @@ jQuery(function(){
     email = $('#register-email').val()
     if($.trim(name) != '' && $.trim(email) != '')
     {
-      url = ["https://ti.to/ull/2014/interested_users/subscribe.json?&interested_user[email]=", email , "&interested_user[name]=", name, "&callback=?"].join('')
+      url = ["https://ti.to/ull/2015/interested_users/subscribe.json?&interested_user[email]=", email , "&interested_user[name]=", name, "&callback=?"].join('')
       $.getJSON(url, null, function(data){})
       width = $('.register-interest-form').width()
       height = $('.register-interest-form').height()
