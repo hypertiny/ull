@@ -18,7 +18,7 @@ jQuery(function(){
         .velocity({x: 1900}, 200, 'linear')
         .velocity({opacity: 0, x: 3000}, 100, 'linear')
         .promise().done(function(){
-        $('.register-interest-form').html(['<h2 class="thanks">', 'Thanks ', name.split(' ')[0], ', <br> we’ll be in touch.', '</h2>'].join(''))
+        $('.register-interest-form').html(['<h2 class="thanks">', 'Thanks ', name.split(' ')[0], '</h2>'].join(''))
         $('.register-interest-form').velocity({
           x: 0, y: 0, rotateY: 0, rotateX: 0, width: width, height: height}, 300, 'linear')
           .velocity({opacity: 1}, 300, 'linear')
