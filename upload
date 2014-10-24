@@ -1,1 +1,1 @@
-s3cmd sync * s3://2014-colours.ull.ie -P
+s3cmd sync pre/* s3://2015.ull.ie/pre/ -P
