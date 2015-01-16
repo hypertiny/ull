@@ -1,6 +1,6 @@
 jQuery(function(){
   var setSprinkleOpacity = function(){
-    var threshold     = parseInt($(window).height() / 3);
+    var threshold     = parseInt($(window).height() / 2);
     var topThreshold  = $(document).height() - $(window).height() - threshold;
     var opacity;
     if($(document).scrollTop() < threshold)
@@ -16,7 +16,6 @@ jQuery(function(){
     {
       opacity = 0;
     }
-    console.log(opacity)
     $('div.sprinkles').css('opacity', opacity)
   }
   $(document).scroll(setSprinkleOpacity);
