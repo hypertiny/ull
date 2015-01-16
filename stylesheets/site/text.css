@@ -1,0 +1,743 @@
+/*SIZE*/
+
+ p, 
+ h1, 
+ h2, 
+ h3, 
+ h4, 
+ h5, 
+ h6,
+ button,
+ input
+
+{  font-size: 21px;
+  line-height: 32px;
+margin-bottom: 0;
+padding-bottom: 0;
+}
+
+.text-xl, 
+.text-xl p, 
+.text-xl h1, 
+.text-xl h2, 
+.text-xl h3, 
+.text-xl h4, 
+.text-xl h5, 
+.text-xl h6,
+.text-xl button,
+p.text-xl, 
+h1.text-xl, 
+h2.text-xl, 
+h3.text-xl, 
+h4.text-xl, 
+h5.text-xl, 
+h6.text-xl,
+button.text-xl,
+input.text-xl
+{  font-size: 43.2px;
+  line-height: 50.4px;
+}
+
+.text-l, 
+.text-l p, 
+.text-l h1, 
+.text-l h2, 
+.text-l h3, 
+.text-l h4, 
+.text-l h5, 
+.text-l h6,
+.text-l button,
+p.text-l, 
+h1.text-l, 
+h2.text-l, 
+h3.text-l, 
+h4.text-l, 
+h5.text-l, 
+h6.text-l,
+button.text-l,
+input.text-l
+{  font-size: 27px;
+  line-height: 32.4px;
+}
+
+.text-m, 
+.text-m p, 
+.text-m h1, 
+.text-m h2, 
+.text-m h3, 
+.text-m h4, 
+.text-m h5, 
+.text-m h6,
+.text-m button,
+p.text-m, 
+h1.text-m, 
+h2.text-m, 
+h3.text-m, 
+h4.text-m, 
+h5.text-m, 
+h6.text-m,
+button.text-m,
+input.text-m
+{  font-size: 21.6px;
+  line-height: 28.8px;
+}
+
+.text-r, 
+.text-r p, 
+.text-r h1, 
+.text-r h2, 
+.text-r h3, 
+.text-r h4, 
+.text-r h5, 
+.text-r h6,
+.text-r button,
+p.text-r, 
+h1.text-r, 
+h2.text-r, 
+h3.text-r, 
+h4.text-r, 
+h5.text-r, 
+h6.text-r,
+button.text-r,
+input.text-r
+
+{  font-size: 18.9px;
+  line-height: 28.8px;
+}
+
+.text-s, 
+.text-s p, 
+.text-s h1, 
+.text-s h2, 
+.text-s h3, 
+.text-s h4, 
+.text-s h5, 
+.text-s h6,
+.text-s button,
+p.text-s, 
+h1.text-s, 
+h2.text-s, 
+h3.text-s, 
+h4.text-s, 
+h5.text-s, 
+h6.text-s,
+button.text-s,
+input.text-s
+
+{  font-size: 14.4px;
+  line-height: 21.6px;
+}
+
+
+
+
+/*Small Caps*/
+
+.sc
+{
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.text-xl.sc, 
+.text-xl.sc p, 
+.text-xl.sc h1, 
+.text-xl.sc h2, 
+.text-xl.sc h3, 
+.text-xl.sc h4, 
+.text-xl.sc h5, 
+.text-xl.sc h6,
+.text-xl.sc button,
+p.text-xl.sc, 
+h1.text-xl.sc, 
+h2.text-xl.sc, 
+h3.text-xl.sc, 
+h4.text-xl.sc, 
+h5.text-xl.sc, 
+h6.text-xl.sc,
+button.text-xl.sc
+{  font-size: 21.6px;
+}
+
+.text-l.sc, 
+.text-l.sc p, 
+.text-l.sc h1, 
+.text-l.sc h2, 
+.text-l.sc h3, 
+.text-l.sc h4, 
+.text-l.sc h5, 
+.text-l.sc h6,
+.text-l.sc button,
+p.text-l.sc, 
+h1.text-l.sc, 
+h2.text-l.sc, 
+h3.text-l.sc, 
+h4.text-l.sc, 
+h5.text-l.sc, 
+h6.text-l.sc,
+button.text-l.sc
+{  font-size: 21.6px;
+}
+.text-m.sc, 
+.text-m.sc p, 
+.text-m.sc h1, 
+.text-m.sc h2, 
+.text-m.sc h3, 
+.text-m.sc h4, 
+.text-m.sc h5, 
+.text-m.sc h6,
+.text-m.sc button,
+p.text-m.sc, 
+h1.text-m.sc, 
+h2.text-m.sc, 
+h3.text-m.sc, 
+h4.text-m.sc, 
+h5.text-m.sc, 
+h6.text-m.sc,
+button.text-m.sc
+{  font-size: 18.9px;
+}
+.text-r.sc, 
+.text-r.sc p, 
+.text-r.sc h1, 
+.text-r.sc h2, 
+.text-r.sc h3, 
+.text-r.sc h4, 
+.text-r.sc h5, 
+.text-r.sc h6,
+.text-r.sc button,
+p.text-r.sc, 
+h1.text-r.sc, 
+h2.text-r.sc, 
+h3.text-r.sc, 
+h4.text-r.sc, 
+h5.text-r.sc, 
+h6.text-r.sc,
+button.text-r.sc
+{  font-size: 14.4px;
+}
+.text-s.sc, 
+.text-s.sc p, 
+.text-s.sc h1, 
+.text-s.sc h2, 
+.text-s.sc h3, 
+.text-s.sc h4, 
+.text-s.sc h5, 
+.text-s.sc h6,
+.text-s.sc button,
+p.text-s.sc, 
+h1.text-s.sc, 
+h2.text-s.sc, 
+h3.text-s.sc, 
+h4.text-s.sc, 
+h5.text-s.sc, 
+h6.text-s.sc,
+button.text-s.sc
+{  font-size: 12.6px;
+}
+
+
+
+/*WEIGHT*/
+
+ p, 
+ h1, 
+ h2, 
+ h3, 
+ h4, 
+ h5, 
+ h6,
+ button
+
+{    font-weight: 500;
+
+}
+
+
+.text-heavy, 
+.text-heavy p, 
+.text-heavy h1, 
+.text-heavy h2, 
+.text-heavy h3, 
+.text-heavy h4, 
+.text-heavy h5, 
+.text-heavy h6,
+.text-heavy button,
+p.text-heavy, 
+h1.text-heavy, 
+h2.text-heavy, 
+h3.text-heavy, 
+h4.text-heavy, 
+h5.text-heavy, 
+h6.text-heavy,
+form button.text-heavy,
+form input.text-heavy
+
+{
+  font-weight: 900;
+}
+
+
+.text-medium, 
+.text-medium p, 
+.text-medium h1, 
+.text-medium h2, 
+.text-medium h3, 
+.text-medium h4, 
+.text-medium h5, 
+.text-medium h6,
+.text-medium button,
+p.text-medium, 
+h1.text-medium, 
+h2.text-medium, 
+h3.text-medium, 
+h4.text-medium, 
+h5.text-medium, 
+h6.text-medium,
+form button.text-medium,
+form input.text-medium
+
+{
+  font-weight: 500;
+}
+
+.text-thin, 
+.text-thin p, 
+.text-thin h1, 
+.text-thin h2, 
+.text-thin h3, 
+.text-thin h4, 
+.text-thin h5, 
+.text-thin h6,
+.text-thin button,
+p.text-thin, 
+h1.text-thin, 
+h2.text-thin, 
+h3.text-thin, 
+h4.text-thin, 
+h5.text-thin, 
+h6.text-thin,
+form button.text-thin,
+form input.text-thin
+
+{
+  font-weight: 100;
+}
+
+/*-------------------------------------------------------------------------------------------------*/
+
+@media all and (max-width: 1024px) {
+
+/*Mobile SIZE*/
+
+ p, 
+ h1, 
+ h2, 
+ h3, 
+ h4, 
+ h5, 
+ h6,
+ button,
+ input
+
+{  font-size: 21px;
+  line-height: 32px;
+margin-bottom: 0;
+padding-bottom: 0;
+}
+
+.text-xl, 
+.text-xl p, 
+.text-xl h1, 
+.text-xl h2, 
+.text-xl h3, 
+.text-xl h4, 
+.text-xl h5, 
+.text-xl h6,
+.text-xl button,
+p.text-xl, 
+h1.text-xl, 
+h2.text-xl, 
+h3.text-xl, 
+h4.text-xl, 
+h5.text-xl, 
+h6.text-xl,
+button.text-xl,
+input.text-xl
+{  font-size: 62px;
+  line-height: 66px;
+}
+
+.text-l, 
+.text-l p, 
+.text-l h1, 
+.text-l h2, 
+.text-l h3, 
+.text-l h4, 
+.text-l h5, 
+.text-l h6,
+.text-l button,
+p.text-l, 
+h1.text-l, 
+h2.text-l, 
+h3.text-l, 
+h4.text-l, 
+h5.text-l, 
+h6.text-l,
+button.text-l,
+input.text-l
+{  font-size: 25px;
+  line-height: 30px;
+}
+
+.text-m, 
+.text-m p, 
+.text-m h1, 
+.text-m h2, 
+.text-m h3, 
+.text-m h4, 
+.text-m h5, 
+.text-m h6,
+.text-m button,
+p.text-m, 
+h1.text-m, 
+h2.text-m, 
+h3.text-m, 
+h4.text-m, 
+h5.text-m, 
+h6.text-m,
+button.text-m,
+input.text-m
+{  font-size: 16px;
+  line-height: 22px;
+}
+
+.text-r, 
+.text-r p, 
+.text-r h1, 
+.text-r h2, 
+.text-r h3, 
+.text-r h4, 
+.text-r h5, 
+.text-r h6,
+.text-r button,
+p.text-r, 
+h1.text-r, 
+h2.text-r, 
+h3.text-r, 
+h4.text-r, 
+h5.text-r, 
+h6.text-r,
+button.text-r,
+input.text-r
+
+{  font-size: 16px;
+  line-height: 22px;
+}
+
+.text-s, 
+.text-s p, 
+.text-s h1, 
+.text-s h2, 
+.text-s h3, 
+.text-s h4, 
+.text-s h5, 
+.text-s h6,
+.text-s button,
+p.text-s, 
+h1.text-s, 
+h2.text-s, 
+h3.text-s, 
+h4.text-s, 
+h5.text-s, 
+h6.text-s,
+button.text-s,
+input.text-s
+
+{  font-size: 16px;
+  line-height: 22px;
+}
+
+/*Mobile Small Caps*/
+
+.sc
+{
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.text-xl.sc, 
+.text-xl.sc p, 
+.text-xl.sc h1, 
+.text-xl.sc h2, 
+.text-xl.sc h3, 
+.text-xl.sc h4, 
+.text-xl.sc h5, 
+.text-xl.sc h6,
+.text-xl.sc button,
+p.text-xl.sc, 
+h1.text-xl.sc, 
+h2.text-xl.sc, 
+h3.text-xl.sc, 
+h4.text-xl.sc, 
+h5.text-xl.sc, 
+h6.text-xl.sc,
+button.text-xl.sc
+{  font-size: 13px;
+}
+
+.text-l.sc, 
+.text-l.sc p, 
+.text-l.sc h1, 
+.text-l.sc h2, 
+.text-l.sc h3, 
+.text-l.sc h4, 
+.text-l.sc h5, 
+.text-l.sc h6,
+.text-l.sc button,
+p.text-l.sc, 
+h1.text-l.sc, 
+h2.text-l.sc, 
+h3.text-l.sc, 
+h4.text-l.sc, 
+h5.text-l.sc, 
+h6.text-l.sc,
+button.text-l.sc
+{  font-size: 13px;
+}
+.text-m.sc, 
+.text-m.sc p, 
+.text-m.sc h1, 
+.text-m.sc h2, 
+.text-m.sc h3, 
+.text-m.sc h4, 
+.text-m.sc h5, 
+.text-m.sc h6,
+.text-m.sc button,
+p.text-m.sc, 
+h1.text-m.sc, 
+h2.text-m.sc, 
+h3.text-m.sc, 
+h4.text-m.sc, 
+h5.text-m.sc, 
+h6.text-m.sc,
+button.text-m.sc
+{  font-size: 13px;
+}
+.text-r.sc, 
+.text-r.sc p, 
+.text-r.sc h1, 
+.text-r.sc h2, 
+.text-r.sc h3, 
+.text-r.sc h4, 
+.text-r.sc h5, 
+.text-r.sc h6,
+.text-r.sc button,
+p.text-r.sc, 
+h1.text-r.sc, 
+h2.text-r.sc, 
+h3.text-r.sc, 
+h4.text-r.sc, 
+h5.text-r.sc, 
+h6.text-r.sc,
+button.text-r.sc
+{  font-size: 13px;
+}
+.text-s.sc, 
+.text-s.sc p, 
+.text-s.sc h1, 
+.text-s.sc h2, 
+.text-s.sc h3, 
+.text-s.sc h4, 
+.text-s.sc h5, 
+.text-s.sc h6,
+.text-s.sc button,
+p.text-s.sc, 
+h1.text-s.sc, 
+h2.text-s.sc, 
+h3.text-s.sc, 
+h4.text-s.sc, 
+h5.text-s.sc, 
+h6.text-s.sc,
+button.text-s.sc
+{  font-size: 13px;
+}
+
+/*-------------------------------------------------------------------------------------------------*/
+
+/*alternative mobile size*/
+
+
+
+.m-text-xl, 
+.m-text-xl p, 
+.m-text-xl h1, 
+.m-text-xl h2, 
+.m-text-xl h3, 
+.m-text-xl h4, 
+.m-text-xl h5, 
+.m-text-xl h6,
+.m-text-xl button,
+p.m-text-xl, 
+h1.m-text-xl, 
+h2.m-text-xl, 
+h3.m-text-xl, 
+h4.m-text-xl, 
+h5.m-text-xl, 
+h6.m-text-xl,
+button.m-text-xl,
+input.m-text-xl
+{  font-size: 62px;
+  line-height: 66px;
+}
+
+
+.m-text-l, 
+.m-text-l p, 
+.m-text-l h1, 
+.m-text-l h2, 
+.m-text-l h3, 
+.m-text-l h4, 
+.m-text-l h5, 
+.m-text-l h6,
+.m-text-l button,
+p.m-text-l, 
+h1.m-text-l, 
+h2.m-text-l, 
+h3.m-text-l, 
+h4.m-text-l, 
+h5.m-text-l, 
+h6.m-text-l,
+button.m-text-l,
+input.m-text-l
+{  font-size: 25px;
+  line-height: 30px;
+}
+
+.m-text-m, 
+.m-text-m p, 
+.m-text-m h1, 
+.m-text-m h2, 
+.m-text-m h3, 
+.m-text-m h4, 
+.m-text-m h5, 
+.m-text-m h6,
+.m-text-m button,
+p.m-text-m, 
+h1.m-text-m, 
+h2.m-text-m, 
+h3.m-text-m, 
+h4.m-text-m, 
+h5.m-text-m, 
+h6.m-text-m,
+button.m-text-m,
+input.m-text-m
+{  font-size: 16px;
+  line-height: 22px;
+}
+
+.m-text-r, 
+.m-text-r p, 
+.m-text-r h1, 
+.m-text-r h2, 
+.m-text-r h3, 
+.m-text-r h4, 
+.m-text-r h5, 
+.m-text-r h6,
+.m-text-r button,
+p.m-text-r, 
+h1.m-text-r, 
+h2.m-text-r, 
+h3.m-text-r, 
+h4.m-text-r, 
+h5.m-text-r, 
+h6.m-text-r,
+button.m-text-r,
+input.m-text-r
+
+{  font-size: 16px;
+  line-height: 22px;
+}
+
+.m-text-s, 
+.m-text-s p, 
+.m-text-s h1, 
+.m-text-s h2, 
+.m-text-s h3, 
+.m-text-s h4, 
+.m-text-s h5, 
+.m-text-s h6,
+.m-text-s button,
+p.m-text-s, 
+h1.m-text-s, 
+h2.m-text-s, 
+h3.m-text-s, 
+h4.m-text-s, 
+h5.m-text-s, 
+h6.m-text-s,
+button.m-text-s,
+input.m-text-s
+
+{  font-size: 16px;
+  line-height: 22px;
+}
+
+
+
+
+
+/*Small Caps*/
+
+
+.m-text-xs.sc, 
+.m-text-xs.sc p, 
+.m-text-xs.sc h1, 
+.m-text-xs.sc h2, 
+.m-text-xs.sc h3, 
+.m-text-xs.sc h4, 
+.m-text-xs.sc h5, 
+.m-text-xs.sc h6,
+.m-text-xs.sc button,
+p.m-text-xs.sc, 
+h1.m-text-xs.sc, 
+h2.m-text-xs.sc, 
+h3.m-text-xs.sc, 
+h4.m-text-xs.sc, 
+h5.m-text-xs.sc, 
+h6.m-text-xs.sc,
+button.m-text-xs.sc
+{  font-size: 11px;
+}
+
+
+}
+/*-------------------------------------------------------------------------------------------------*/
+@media all and (max-width: 570px) {
+
+.text-xl, 
+.text-xl p, 
+.text-xl h1, 
+.text-xl h2, 
+.text-xl h3, 
+.text-xl h4, 
+.text-xl h5, 
+.text-xl h6,
+.text-xl button,
+p.text-xl, 
+h1.text-xl, 
+h2.text-xl, 
+h3.text-xl, 
+h4.text-xl, 
+h5.text-xl, 
+h6.text-xl,
+button.text-xl,
+input.text-xl
+{  font-size: 36px;
+  line-height: 40px;
+}
+}
+/*-------------------------------------------------------------------------------------------------*/
+
+html {
+    -webkit-text-size-adjust: 100%;
+}

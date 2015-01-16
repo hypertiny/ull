@@ -1,0 +1,38 @@
+/* -----------------------------------------
+   Forms
+----------------------------------------- */
+
+input.expand,textarea.expand {
+width:100%;
+-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+input,form div.form-field input,form input.input-text,form textarea {
+    border:none;
+    border-bottom:1px solid #fff;
+    border-radius:0;
+    background:none;
+    padding:6px 2px 4px;
+    outline:none!important;
+    background:none
+}
+
+input, form div.form-field input,form input.input-text,form textarea,
+form div.form-field input:focus,form input.input-text:focus,form textarea:focus {
+    color:#fff;
+    font-family:"museo-sans","Museo Sans","Helvetica Neue",Arial,Helvetica,Geneva,sans-serif;
+    font-weight: inherit;
+    -webkit-font-smoothing:antialiased;
+}
+
+input.placeholder,textarea.placeholder {          color:#fff!important}
+form input::-webkit-input-placeholder {        color:#fff}
+form input:-moz-placeholder {/* Firefox 18- */      color:#fff}
+form input::-moz-placeholder {/* Firefox 19+ */    color:#fff}
+form input:-ms-input-placeholder {            color:#fff}
+
+form input:focus::-webkit-input-placeholder {    color:transparent}
+form input:focus:-moz-placeholder {        color:transparent}
+

@@ -19,32 +19,32 @@
  */
  
 body {
-	font-family: 'Museo Sans';
-	font-weight: normal;
+  font-family: 'Museo Sans';
+  font-weight: normal;
 }
 #header {
-	font-weight: 900;
+  font-weight: 900;
 }
 i, em {
-	font-style: italic;
+  font-style: italic;
 }
 h1, h2, h3, h4, h5, h6 {
-	font-weight: 900;
+  font-weight: 900;
 }
 .weight100 {
-	font-weight: 100;
+  font-weight: 100;
 }
 .weight300 {
-	font-weight: 300;
+  font-weight: 300;
 }
 .weight500 {
-	font-weight: 400;
+  font-weight: 400;
 }
 .weight700 {
-	font-weight: 700;
+  font-weight: 700;
 }
 .weight900 {
-	font-weight: 900;
+  font-weight: 900;
 }
 @font-face {
     font-family: 'Museo Sans';
