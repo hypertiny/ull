@@ -26,62 +26,30 @@
 
   <div class="blog-holder gap-bottom">
       <div class="sprinkles show-on-desktops"></div>
-    
-    <div class="card first">
-      <div class="blog-title">
-        <h2 class="text-l text-medium"><a href="" class="no_ul">Blog Entry Title</a></h2>
-        <p class="text-s m-text-xs sc text-medium pad-top-s">APR 16, 2014 <br class="show-on-desktops"/>BY PAUL CAMPBELL</p>
-      </div>
+    {% for post in posts %}
+      <div class="card {% if forloop.first == true %}first{% endif %}">
+        <div class="blog-title">
+          <h2 class="text-l text-medium"><a href="{{ post.url }}" class="no_ul">{{ post.title }}</a></h2>
+          <p class="text-s m-text-xs sc text-medium pad-top-s">{{ post.date | date: "%d %b, %Y" | upcase}}<br class="show-on-desktops"/>BY {{ post.author | upcase }}</p>
+        </div>
 
-      <div class="blog-entry text-r">
-        <p>Sponsors make everything easier for us, and Úll wouldn’t be half the show it is without them.
-        </p><p>
-        This year, we’re delighted to welcome WordPress as our flagship sponsor. They’ll be hosting a hack café throughout the conference. WordPress is part of the fabric of the internet and it’s great to be partnered with such a strong brand.
-        </p>
-        <p><a href="" class="text-s yellow no_ul show-on-desktops">&#10070;</a></p>
+        <div class="blog-entry text-r">
+          {{ post.body }}
+          <p>
+            <a href="{{ post.url }}" class="text-s yellow no_ul show-on-desktops">&#10070;</a>
+          </p>
+        </div>
       </div>
-    </div>
-    
-    
-    <div class="card">
-      <div class="blog-title">
-        <h2 class="text-l text-medium"><a href="" class="no_ul">Blog Entry Title</a></h2>
-        <p class="text-s m-text-xs sc text-medium pad-top-s">APR 16, 2014 <br class="show-on-desktops"/>BY PAUL CAMPBELL</p>
-      </div>
-
-      <div class="blog-entry text-r">
-        <p>Sponsors make everything easier for us, and Úll wouldn’t be half the show it is without them.
-        </p><p>
-        This year, we’re delighted to welcome WordPress as our flagship sponsor. They’ll be hosting a hack café throughout the conference. WordPress is part of the fabric of the internet and it’s great to be partnered with such a strong brand.
-        </p>
-        <p><a href="" class="text-s yellow no_ul show-on-desktops">&#10070;</a></p>
-      </div>
-    </div>
-    
-    
-    <div class="card">
-      <div class="blog-title">
-        <h2 class="text-l text-medium"><a href="" class="no_ul">Blog Entry Title</a></h2>
-        <p class="text-s m-text-xs sc text-medium pad-top-s">APR 16, 2014 <br class="show-on-desktops"/>BY PAUL CAMPBELL</p>
-      </div>
-
-      <div class="blog-entry text-r">
-        <p>Sponsors make <a href="">everything</a> easier for us, and Úll wouldn’t be half the show it is without them.
-        </p><p>
-        This year, we’re delighted to welcome WordPress as our flagship sponsor. They’ll be hosting a hack café throughout the conference. WordPress is part of the fabric of the internet and it’s great to be partnered with such a strong brand.
-        </p>
-        <p><a href="" class="text-s yellow no_ul show-on-desktops">&#10070;</a></p>
-      </div>
-    </div>
+    {% endfor %}
     
   </div>
 
 
 <script type="text/javascript">
-$(function(){
-$('body').removeClass( "bg-red bg-blue bg-grey" );
-$('body').addClass( "bg-yellow" );
-});
+  $(function(){
+    $('body').removeClass( "bg-red bg-blue bg-grey" );
+    $('body').addClass( "bg-yellow" );
+  });
 </script>
 
 <div class="container pad-top-l">
