@@ -54,7 +54,75 @@
   
 </head>
 
-<body>
-  <p style="text-align: center; color: #006; margin: 0;">Sorry, we're not broadcasting live at the moment.</p>
+<body class="split-two">
+
+
+
+<div class="shapes">
+<div class="square"></div>
+<div class="circle"></div>
+<div class="triangle"></div>
+</div>
+
+<ul class="scrollshow">
+  <li class="slide text visible" id="two">
+    <h2>
+      Sorry, we're not broadcasting live at the moment.
+    </h2>
+
+    <div class="updated-wrap">
+      <a href="http://twitter.com/ullconf" class="white"><span class="glyph social xlarge">e</span></a>
+    </div>
+  </li>
+
+  <li class="marker" id="first"></li>
+  <li class="marker" id="second"></li>
+</ul>
+
+
+  <!-- Included JS Files -->
+  <script src="/javascripts/teaser/jquery.min.js"></script>
+  <script src="/javascripts/teaser/jquery.velocity.min.js"></script>
+  <script src="/javascripts/teaser/velocity.ui.js"></script>
+  <script src="/javascripts/teaser/foundation.js"></script>
+  <script src="/javascripts/teaser/app.js"></script>
+  <script src="/javascripts/teaser/waypoints.min.js"></script>
+  <script src="/javascripts/teaser/register_interest.js"></script>
+
+  <script type="text/javascript">
+  $(document).ready(function(){
+    $( ".updated-btn" ).click(function() {
+      $( ".updated-wrap" ).fadeToggle( "fast", "linear" );
+      $( "form" ).delay( 200 ).fadeToggle( "fast", "linear" );
+    });
+    $('body').delay(1500).queue(function(){
+        $(this).addClass('split-one').clearQueue();
+    });
+
+    $('#second').waypoint(function() {
+      $('#two').toggleClass('visible');
+      $('#one').toggleClass('visible');
+      $('body').toggleClass('split-two');
+    }, { offset: '50%' });
+    $('#third').waypoint(function() {
+      $('#three').toggleClass('visible');
+      $('#two').toggleClass('visible');
+      $('body').toggleClass('split-three');
+    }, { offset: '50%' });
+  });
+  </script>
+  <script type="text/javascript">
+    var _gauges = _gauges || [];
+    (function() {
+      var t   = document.createElement('script');
+      t.type  = 'text/javascript';
+      t.async = true;
+      t.id    = 'gauges-tracker';
+      t.setAttribute('data-site-id', '53ea4789e32bb44f2200b6e2');
+      t.src = '//secure.gaug.es/track.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(t, s);
+    })();
+  </script>
 </body>
 </html>
