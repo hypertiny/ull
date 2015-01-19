@@ -30,7 +30,7 @@
       <div class="card {% if forloop.first == true %}first{% endif %}">
         <div class="blog-title">
           <h2 class="text-l text-medium"><a href="{{ post.url }}" class="no_ul">{{ post.title }}</a></h2>
-          <p class="text-s m-text-xs sc text-medium pad-top-s">{{ post.date | date: "%d %b, %Y" | upcase}}<br class="show-on-desktops"/>BY {{ post.author | upcase }}</p>
+          <p class="text-s m-text-xs sc text-medium pad-top-s">{{ post.date | date: "%B %d %Y" | upcase}}<br class="show-on-desktops"/>BY {{ post.author | upcase }}</p>
         </div>
 
         <div class="blog-entry text-r">
