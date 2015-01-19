@@ -551,3 +551,16 @@ form input[type="text"] {
     line-height: 60px;
   }
 }
+
+.join-wrap {
+  text-align: center;
+  width: 100%;
+}
+
+.join-button {
+  position: absolute;
+  margin-left: automatic;
+  margin: auto;
+  bottom: 50px;
+  margin-left: -105px;
+}
