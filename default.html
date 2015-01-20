@@ -1,157 +1,113 @@
-<!DOCTYPE html>
-
-<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
-<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if IE 7]>  <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
-<!--[if IE 8]>  <html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
-<head>
-  <meta charset="utf-8" />
+{% include 'includes/site/header' %}
+  <body class="bg-yellow">
+  <div class="loadframe"></div>
+  <div class="sprinkles"></div>
   
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-  <meta name="description" content="">
+  {% include 'includes/site/menu' %}
+  {% include 'includes/site/mobile_menu' %}
   
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:site" content="@ullconf">
-  <meta name="twitter:creator" content="@ullconf">
-  <meta name="twitter:title" content="Úll 2015">
-  <meta name="twitter:description" content="A conference about great products">
-  <meta name="twitter:image:src" content="/images/social-image.png">
+  <div id="m-menu-link">
+    <a href="#" class="no_ajaxy"><h1 class="m-logo">Úll</h1></a>
+    <a href="#" class="no_ajaxy m-menu-link-icon no_ul white">&#9776;</a>
+  </div>
   
-  <link rel="image_src" href="images/social-image.png" />
+  <div id="content">
   
-  <meta property="fb:app_id" content=""/>
-  <meta property="og:site_name" content="Úll 2015"/>
-  <meta property="og:title" content="Úll: March 31st–April 1st 2015" />
-  <meta property="og:description" content="A conference about great products" />
-  <meta property="og:type" content="article">
-  <meta property="og:url" content="http://2015.ull.ie/teaser"/>
-  <meta property="og:image" content="http://2015.ull.ie/images/teaser/social-image.png"/>
-  
-  <title>Úll 2015</title>
-  
-  <link rel="icon shortcut" href="/images/favicon.ico">
-  
-  <script type="text/javascript" src="//use.typekit.net/vqx8btp.js"></script>
-  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
- 
-  <!-- Included CSS Files -->
-  <link rel="stylesheet" href="/stylesheets/teaser/css/new/foundation3.css">
-  <link rel="stylesheet" href="/stylesheets/teaser/css/new/foundation-plus.css">
-  <link rel="stylesheet" href="/stylesheets/teaser/css/new/icons.css">
-  <link rel="stylesheet" href="/stylesheets/teaser/css/new/app-201419011915.css">
-  
-  <!--[if lt IE 9]>
-    <link rel="stylesheet" href="stylesheets/ie.css">
-  <![endif]-->
-  
-  <script src="/javascripts/teaser/modernizr.foundation.js"></script>
-
-  <!-- IE Fix for HTML5 Tags -->
-  <!--[if lt IE 9]>
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
-  
-</head>
-
-<body>
-
-
-
-<div class="shapes">
-<div class="square"></div>
-<div class="circle"></div>
-<div class="triangle"></div>
-</div>
-
-<ul class="scrollshow">
-  <li class="slide logo visible" id="one">
-    <a href="#second" class="scroll"><h1>Úll</h1></a>
-    <a href="#second" class="scroll darr">&darr;</a>
-    <div class="join-wrap">
-      <a href="/teaser/live" class="live-button button radius blue gap-top">Join Us Live @ 5pm GMT, Tues 20 Jan 2015</a>
-      <a href="http://twitter.com/ullconf" class="white"><span class="glyph social xlarge">e</span></a>
-    </div>
-  </li>
-  <li class="slide text" id="two">
-    <h2>A conference about great&nbsp;products</h2>
     
-    <h3>30th &amp; 31st March 2015</h3>
     
-    <form class="register-interest-form clearfix">
-      <div class="form-group clearfix">
-        <input id="register-name"
-              type="text"
-              placeholder="Name"
-              class="register-name"
-              autocomplete="off">
-        <input id="register-email"
-              type="text"
-              placeholder="Email"
-              class="register-email"
-              autocomplete="off"
-              autocapitalize="off">
-        <input type="submit" 
-                class="button radius blue register-button" value="Join mailing list" />
+    <div class="container page-start block-90" style="background-image: url(/images/site/bg01.jpg);">
+      <div class="row">
+        <div class="four columns offset-by-six pad-bottom-s tablet-three">
+          <h2 class="text-xl text-thin">A conference about great products</h2>
+          <h3 class="text-l sc text-heavy pad-top-s pad-bottom">30th &amp; 31st March 2015</h3>
+          
+          <a href="/site/tickets" class="button text-s text-heavy sc">
+            Tickets available January 27
+          </a>
+          
+        </div>
       </div>
-      <a href="http://twitter.com/ullconf" class="white"><span class="glyph social xlarge">e</span></a>
-    </form>
-
-
-    <div class="updated-wrap">
-      <a class="button radius blue gap-top updated-btn">Keep updated</a>
-      <a href="http://twitter.com/ullconf" class="white"><span class="glyph social xlarge">e</span></a>
+      <div class="row show-on-desktops">
+        <div class="four columns pad-top-xl pad-bottom-s offset-by-three text-m text-medium">
+          <p>Úll is a conference for people who build and love great products. We focus on great product businesses, presented through an Apple-shaped lens. We treat the conference itself as a product: with a deep emphasis on the attendee experience.</p>
+        </div>
+      </div>
+      
+    </div>  
+    
+    <div class="container first block-90" style="background-image: url(/images/site/bg02.jpg);">
+      <div class="card trans">
+      <div class="row hide-on-desktops">
+          <img src="/images/site/bg02-m.jpg">
+          <div class="four columns pad-top-s pad-bottom-s offset-by-three text-m text-medium tablet-three">
+          <p>Úll is a conference for people who build and love great products, and great product businesses, presented through an Apple-shaped lens. We treat the conference itself as a product: with a deep emphasis on the attendee experience.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="four columns pad-top-s pad-bottom-s offset-by-four text-m text-medium tablet-three">
+          <p>Úll brings together talks, interviews, special features, and lots of social&nbsp;time. Our attendees go away having made new friends, potential partners, useful connections, knowledgeable confidantes. We care about strong, valuable relationships.</p>
+        </div>
+      </div>
+      </div>
     </div>
-  </li>
+    
+    <div class="container block-90" style="background-image: url(/images/site/bg03.jpg);">
+      <div class="card trans">
+      <div class="row">
+        <img src="/images/site/bg03-m.jpg" class="hide-on-desktops">
+        <div class="four columns pad-top-s pad-bottom-s offset-by-six text-m text-medium tablet-three">
+          <p>Úll 2015 is presented in Killarney, at the heart of postcard Ireland: a place of natural beauty, charm and Irishness. We place Ireland as a backdrop to the conference, and Killarney is familiar as the “Ireland” that people think of from abroad.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="four columns pad-top-s pad-bottom-s offset-by-five text-m text-medium tablet-three">
+          <p> The venue this year is <a href="https://www.google.ie/maps/place/The+Europe+Hotel+%26+Resort/@52.0377465,-9.5433736,13z/data=!4m2!3m1!1s0x0:0xf15e704dde3dba81" target="_blank">The Europe</a>. This is a multi-award winning hotel and resort with stunning views overlooking the lakes of Killarney. It is a short taxi ride from the town of Killarney, <a href="logistics.html">which can be easily accessed</a> from several of Ireland’s transport hubs.</p>
+        </div>  
+      </div>
+      </div>
+    </div>
+    
+    <div class="container block-90" style="background-image: url(/images/site/bg04.jpg);">
+      <div class="card trans">
+      <div class="row ">
+        <img src="/images/site/bg04-m.jpg" class="hide-on-desktops">
+        <div class="four columns pad-top-s pad-bottom-s offset-by-three text-m text-medium tablet-three">
+          <p>We bring a broad group of passionate people together for three days and nights of inspiration, learning, and discourse. We have fun in a uniquely Irish way, with performances, great food, and plenty of Guinness. Úll is an opportunity to relax and enjoy the company of peers in one of the most beautiful locations in the world.</p>
+        </div>
+      </div>
+      <div class="row pad-top-xl pad-m-top-none">
+        <div class="four columns pad-top-xl pad-m-top-s pad-bottom-s offset-by-four text-m text-medium tablet-three">
+          <p>Úll is designed with the complete experience in mind. See <a href="/site/speakers">who’s presenting.</a> View the <a href="/site/schedule">schedule</a>. Find out <a href="/site/logistics">how to get there.</a> Check out our <a href="/site/tickets">ticket options</a>, and <a href="http://twitter.com/ullconf">let us know if you have any questions</a>. We’re looking forward to Úll 2015 and to seeing you soon in Killarney.</p>
 
-  <li class="marker" id="first"></li>
-  <li class="marker" id="second"></li>
-</ul>
+        </div>
+      </div>
+      </div>
+    </div>
 
 
-  <!-- Included JS Files -->
-  <script src="/javascripts/teaser/jquery.min.js"></script>
-  <script src="/javascripts/teaser/jquery.velocity.min.js"></script>
-  <script src="/javascripts/teaser/velocity.ui.js"></script>
-  <script src="/javascripts/teaser/foundation.js"></script>
-  <script src="/javascripts/teaser/app.js"></script>
-  <script src="/javascripts/teaser/waypoints.min.js"></script>
-  <script src="/javascripts/teaser/register_interest.js"></script>
 
-  <script type="text/javascript">
-  $(document).ready(function(){
-    $( ".updated-btn" ).click(function() {
-      $( ".updated-wrap" ).fadeToggle( "fast", "linear" );
-      $( "form" ).delay( 200 ).fadeToggle( "fast", "linear" );
-    });
-    $('body').delay(1500).queue(function(){
-        $(this).addClass('split-one').clearQueue();
-    });
+<script type="text/javascript">
+$(function(){
+$('body').removeClass( "bg-red bg-blue bg-grey" );
+$('body').addClass( "bg-yellow" );
+});
+</script>
 
-    $('#second').waypoint(function() {
-      $('#two').toggleClass('visible');
-      $('#one').toggleClass('visible');
-      $('body').toggleClass('split-two');
-    }, { offset: '50%' });
-    $('#third').waypoint(function() {
-      $('#three').toggleClass('visible');
-      $('#two').toggleClass('visible');
-      $('body').toggleClass('split-three');
-    }, { offset: '50%' });
-  });
-  </script>
-  <script type="text/javascript">
-    var _gauges = _gauges || [];
-    (function() {
-      var t   = document.createElement('script');
-      t.type  = 'text/javascript';
-      t.async = true;
-      t.id    = 'gauges-tracker';
-      t.setAttribute('data-site-id', '53ea4789e32bb44f2200b6e2');
-      t.src = '//secure.gaug.es/track.js';
-      var s = document.getElementsByTagName('script')[0];
-      s.parentNode.insertBefore(t, s);
-    })();
-  </script>
-</body>
-</html>
+
+<div class="container pad-top-l">
+  <div class="row">
+    <div class="two columns offset-by-three">
+      <p class="text-s text-medium sc">Image Credits</p>
+    </div>
+    <div class="six columns end">
+      <p class="text-s text-medium">
+<a href="https://www.flickr.com/photos/mozzercork/82028525/" target="_blank">Torc Mountain View Killarney</a> by mozzercork, edited under the <a href="https://creativecommons.org/licenses/by/2.0/" target="_blank">Creative Commons Attribution 2.0 Generic License</a>, 
+Úll 2014</a> by <a href="http://benricemccarthy.com/ull-2014/" target="_blank">Ben Rice</a>, 
+      <a href="https://www.flickr.com/photos/jmenard48/524960458/">Looking down Upper Lake toward Muckross (Middle) Lake</a> by John Menard, edited under the <a href="https://creativecommons.org/licenses/by-sa/2.0/" target="_blank">Creative Commons Attribution-ShareAlike 2.0 Generic License</a> and 
+      Úll 2014</a> by <a href="http://benricemccarthy.com/ull-2014/" target="_blank">Ben Rice</a>.
+            </p>
+    </div>
+  </div>
+</div>
+</div><!--Content-->
+{% include 'includes/site/footer' %}
