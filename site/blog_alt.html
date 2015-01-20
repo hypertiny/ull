@@ -1,0 +1,47 @@
+ 
+{% include 'includes/site/header' %}
+  <body class="bg-red">
+  <div class="loadframe"></div>
+  <div class="sprinkles"></div>
+
+  {% include 'includes/site/menu' %}
+  {% include 'includes/site/mobile_menu' %}
+
+  
+  <div id="m-menu-link">
+    <a href="#" class="no_ajaxy"><h1 class="m-logo">Úll</h1></a>
+    <a href="#" class="no_ajaxy m-menu-link-icon no_ul white">&#9776;</a>
+  </div>
+    
+  <div id="content">
+  
+  
+<div class="container page-start block-90">
+    {% for post in posts %}
+  	<div class="row">
+		<div class="six columns offset-by-four end tablet-three">
+          <h2 class="text-xl text-medium"><a href="{{ post.url }}" class="no_ul">{{ post.title }}</a></h2>
+          <p class="text-s m-text-xs sc text-medium pad-top-s">{{ post.date | date: "%B %d %Y" | upcase}} BY {{ post.author | upcase }}</p>
+		</div>
+	</div>
+	<div class="row pad-top-s">
+		<div class="six columns offset-by-four end text-m text-medium pad-bottom tablet-three">
+			<span class="p-margin text-r pad-bottom">
+	          {{ post.body }}
+			</span>
+		</div>
+	</div>
+    {% endfor %}
+</div>  
+
+  
+<script type="text/javascript">
+$(function(){
+$('body').removeClass( "bg-blue bg-yellow bg-grey" );
+$('body').addClass( "bg-red" );
+});
+</script>
+
+
+</div><!--Content-->
+{% include 'includes/site/footer' %}
