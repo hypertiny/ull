@@ -1,0 +1,68 @@
+{% include 'includes/site/header' %}
+  <body class="bg-yellow">
+  <div class="loadframe"></div>
+  <div class="sprinkles"></div>
+
+  {% include 'includes/site/menu' %}
+  {% include 'includes/site/mobile_menu' %}
+
+  <div id="m-menu-link">
+    <a href="#" class="no_ajaxy"><h1 class="m-logo">Úll</h1></a>
+    <a href="#" class="no_ajaxy m-menu-link-icon no_ul white">&#9776;</a>
+  </div>
+    
+    <div id="content">
+      <div class="bg-image show-on-desktops" style="background-image: url(/images/site/bg01.jpg);">      </div>
+    
+    <div class="container hide-on-desktops page-start block-90" style="background-image: url(/images/site/bg01.jpg);">
+      <div class="row">
+        <div class="six columns offset-by-six">
+        </div>
+      </div>
+    </div>  
+
+    
+
+
+  <div class="blog-holder gap-bottom">
+      <div class="sprinkles show-on-desktops"></div>
+    {% for post in posts %}
+      <div class="card {% if forloop.first == true %}first{% endif %}">
+        <div class="blog-title">
+          <h2 class="text-l text-medium"><a href="{{ post.url }}" class="no_ul">{{ post.title }}</a></h2>
+          <p class="text-s m-text-xs sc text-medium pad-top-s">{{ post.date | date: "%B %d %Y" | upcase}}<br class="show-on-desktops"/>BY {{ post.author | upcase }}</p>
+        </div>
+
+        <div class="blog-entry text-r">
+          {{ post.body }}
+          <p>
+            <a href="{{ post.url }}" class="text-s yellow no_ul show-on-desktops">&#10070;</a>
+          </p>
+        </div>
+      </div>
+    {% endfor %}
+    
+  </div>
+
+
+<script type="text/javascript">
+  $(function(){
+    $('body').removeClass( "bg-red bg-blue bg-grey" );
+    $('body').addClass( "bg-yellow" );
+  });
+</script>
+
+<div class="container pad-top-l">
+  <div class="row">
+    <div class="two columns offset-by-three">
+      <p class="text-s text-medium sc">Image Credits</p>
+    </div>
+    <div class="six columns end">
+      <p class="text-s text-medium">
+<a href="https://www.flickr.com/photos/mozzercork/82028525/" target="_blank">Torc Mountain View Killarney</a> by mozzercork, edited under the <a href="https://creativecommons.org/licenses/by/2.0/" target="_blank">Creative Commons Attribution 2.0 Generic License</a>.
+      </p>
+    </div>
+  </div>
+</div>
+</div><!--Content-->
+{% include 'includes/site/footer' %}

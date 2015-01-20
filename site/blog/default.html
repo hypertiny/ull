@@ -17,21 +17,31 @@
   
   
 <div class="container page-start block-90">
-    {% for post in posts %}
-  	<div class="row">
-		<div class="six columns offset-by-four end tablet-three">
+  {% if title %}
+    <div class="row">
+      <div class="six columns offset-by-four end tablet-three">
+            <h2 class="text-xl text-medium"><a href="{{ post.url }}" class="no_ul">{{ title }}</a></h2>
+            <p class="text-s m-text-xs sc text-medium pad-top-s">{{ date | date: "%B %d %Y" | upcase}} BY {{ post.author | upcase }}</p>
+      </div>
+    </div>
+    <div class="row pad-top-s">
+      <div class="six columns offset-by-four end text-m text-medium pad-bottom tablet-three">
+        <span class="p-margin text-r pad-bottom">
+              {{ body }}
+        </span>
+      </div>
+    </div>
+  {% endif %}
+  {% for post in site.posts %}
+    {% if post.url != url %}
+    	<div class="row">
+    		<div class="six columns offset-by-four end tablet-three">
           <h2 class="text-xl text-medium"><a href="{{ post.url }}" class="no_ul">{{ post.title }}</a></h2>
           <p class="text-s m-text-xs sc text-medium pad-top-s">{{ post.date | date: "%B %d %Y" | upcase}} BY {{ post.author | upcase }}</p>
-		</div>
-	</div>
-	<div class="row pad-top-s">
-		<div class="six columns offset-by-four end text-m text-medium pad-bottom tablet-three">
-			<span class="p-margin text-r pad-bottom">
-	          {{ post.body }}
-			</span>
-		</div>
-	</div>
-    {% endfor %}
+    		</div>
+    	</div>
+    {% endif %}
+  {% endfor %}
 </div>  
 
   
