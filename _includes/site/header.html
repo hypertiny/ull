@@ -36,7 +36,9 @@
 <script src="https://js.tito.io/v1" async></script>
 
 
-<title>Úll 2015</title>
+<title>
+  Úll 2015{% if url != '/site/home' %}{% if url != '/' %}{% if title %}: {{title}}{% endif %}{% endif %}{% endif %}
+</title>
 
 <!-- Included CSS Files -->
 <!-- <link rel="stylesheet" href="/stylesheets/site/t_foundation.css">
