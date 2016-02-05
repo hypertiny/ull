@@ -41,9 +41,8 @@ body {
 	background-size: 150px;
 
 	background-repeat: repeat;
-	background-position: center;
 
-	background-position: top;
+	background-position: 0px 0px, center;;
 
 	margin-top: 5px;
 
@@ -68,7 +67,7 @@ body {
 .logo-container {
 	width: 200px;
 	margin: auto;
-	margin-top: 0px;
+	margin-top: 33px;
 	z-index: 1;
 	background:transparent url('../images/ull_white.png') center top no-repeat;
 	background-size: contain;
@@ -85,10 +84,13 @@ body {
 	position: fixed;
 	overflow: hidden;
 
-	padding: 30px 40px 0px 40px;
+  padding-top: 30px;
+  padding-left: 25px;
+  padding-right: 0px;
+  padding-bottom: 0px;
 
 	font-size: 0px;
-	text-align: center
+	text-align: left;
 }
 
 .photogrid div {
@@ -160,7 +162,7 @@ body {
 }
 
 .sign-up-1 {
-	margin: 33px auto 0 auto;
+	margin: 40px auto 0 auto;
 }
 
 .sign-up-2 {
@@ -180,7 +182,7 @@ body {
 
 .subhead {
 	width: 50%;
-	margin: 30px auto 0px auto;
+	margin: 42px auto 0px auto;
 	text-align: center;
 }
 
