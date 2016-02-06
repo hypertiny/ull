@@ -7,7 +7,11 @@ jQuery(function(){
         $('.box-frame-2').animate({height: ($(window).width() / 1.77) - 10, maxHeight: ($(window).width() / 1.77) - 10})
         $('#border').animate({height: $(window).width() / 1.77}, function(){
           $('#video').tab('show')
-          Wistia.api('8axqrasvy5').play()
+          video = Wistia.api('8axqrasvy5')
+          video.play()
+          video.bind("end", function(){
+            document.location.href = "https://ti.to/úll/2016"
+          })
         })
       })
     })
