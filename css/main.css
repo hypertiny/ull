@@ -181,9 +181,12 @@ body {
 }
 
 .subhead {
-	width: 50%;
 	margin: 42px auto 0px auto;
 	text-align: center;
+}
+
+.subhead a, .subhead a:visited, .subhead a:active {
+  color: #fff;
 }
 
 .border {
