@@ -2,7 +2,7 @@
 
 .vertical_space_1 {height: 1em;}
 .vertical_space_2 {height: 2em;}
-.vertical_space_3 {height: 3em;}
+.vertical_space_3 {height: 32px;}
 
 @keyframes fadeIn {
   0% {
@@ -42,9 +42,9 @@ body {
 
 	background-repeat: repeat;
 
-	background-position: 0px 0px, center;;
+	background-position: -25px -25px, center;;
 
-	margin-top: 5px;
+	margin-top: 0;
 
 	overflow: hidden;
 
@@ -84,10 +84,7 @@ body {
 	position: fixed;
 	overflow: hidden;
 
-  padding-top: 30px;
-  padding-left: 25px;
-  padding-right: 0px;
-  padding-bottom: 0px;
+  padding: 0;
 
 	font-size: 0px;
 	text-align: left;
