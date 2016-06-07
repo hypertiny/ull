@@ -1,5 +1,9 @@
 /* css */
 
+* {
+  font-family: "Museo Sans";
+}
+
 .vertical_space_1 {height: 1em;}
 .vertical_space_2 {height: 2em;}
 .vertical_space_3 {height: 32px;}
@@ -125,10 +129,28 @@ body {
 	background: rgba(0, 0, 0, 0.7);
 }
 
+.box-frame-coc {
+  /*height: 600px;*/
+  width: 100%;
+  max-width: 600px;
+  /*max-height: 100vw;*/
+  padding: 3px;
+  margin: 4px auto 0 auto;
+  float: none;
+  background: rgba(0, 0, 0, 0.7);
+  margin-bottom: 100px;
+}
+
 .box-frame-2 {
 	padding: 3px;
 	height: 100%;
 	max-height: 592px;
+}
+
+.box-frame-2-coc {
+  padding: 50px;
+  height: 100%;
+  height: calc(100% - 6px);
 }
 
 @media (max-width: 600px) {
