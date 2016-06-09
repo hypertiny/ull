@@ -1,0 +1,139 @@
+---
+title: Home
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Úll 2016</title>
+  <link href="css/style.css" rel="stylesheet">
+  <script src="https://use.typekit.net/cye5xxq.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+</head>
+
+<body>
+
+  <div class="hide_overflow_x">
+    <div class="background_square"></div>
+    <div class="background_circle"></div>
+    <div class="background_triangle"></div>
+  </div>
+
+  <div class="intro-page">
+    <div class="intro-title">
+      <h2 class="spaced-header">A conference about<br><em>thinking different</em></h2>
+    </div>
+  </div>
+
+  <div class="lauren-dark"></div>
+
+  <div class="ull-description">
+
+    <a href="index.html">
+      <div class="index-logo logo"></div>
+    </a>
+
+    <div class="description-paragraphs">
+      <p>
+        Úll is a conference for people who build and love great products. We focus on great product businesses, presented through an Apple-shaped lens. We treat the conference itself as a product: with a deep emphasis on the attendee experience.
+      </p>
+
+      <p>
+        Úll brings together talks, interviews, special features, and lots of social time. Our attendees go away having made new friends, potential partners, useful connections, knowledgeable confidantes. We care about strong, valuable relationships.
+      </p>
+
+      <button class="buy_ticket_button">
+        <h4 class="https://ti.to/ull/2016">Reserve your ticket</h4>
+      </button>
+
+
+        <h5 class="align-center"><a href="code-of-conduct.html">Read our Code of Conduct</a></h5>
+
+
+    </div>
+  </div>
+
+  <div id="" class="photo-europe-1"></div>
+
+  <div class="europe-text">
+    <h2 class="spaced-header">Home again, home again, jiggidy jig</h2>
+    <p>
+      Once again Úll will take place in the Europe Hotel. While we considered a new venue for a change of scenery, we realised that new for the sake of new would be a disservice.
+    </p>
+
+    <p>
+      The venue this year is The Europe. This is a multi-award winning hotel and resort with stunning views overlooking the lakes of Killarney. It is a short taxi ride from the town of Killarney, which can be easily accessed from several of Ireland’s transport hubs. If you’re coming from Dublin, we’ve also booked a train leaving Sunday 29th and returning Thursday 2nd.
+    </p>
+
+    <p>
+      We searched high and low for a new home for Úll, but eventually we realised that the Europe could not be beat. With gorgeous views of lakes and mountains
+    </p>
+  </div>
+
+  <div class="navbar">
+    <div class="flexbox">
+      <div class="nav-item-wrapper">
+        <a href="about.html" class="nav-item">
+          <h3>Why Úll?</h3>
+        </a>
+      </div>
+
+      <div class="nav-item-wrapper">
+        <a href="schedule.html" class="nav-item">
+          <h3>Schedule</h3>
+        </a>
+      </div>
+
+      <div class="nav-item-wrapper">
+        <a href="speaking.html" class="nav-item">
+          <h3>Participate</h3>
+        </a>
+      </div>
+
+      <div class="nav-item-wrapper">
+        <a href="logistics.html" class="nav-item">
+          <h3>Logistics</h3>
+        </a>
+      </div>
+
+      <div class="nav-item-wrapper">
+        <a href="who-we-are.html" class="nav-item">
+          <h3>Who We Are</h3>
+        </a>
+      </div>
+
+      <!-- <div class="nav-item-wrapper">
+        <a href="code-of-conduct.html" class="nav-item">
+          <h3>C.O.C.</h3>
+        </a>
+      </div> -->
+    </div>
+  </div>
+
+  <div class="queue"></div>
+
+  {% include google_analytics.html %}
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+
+  <script>
+  $(window).scroll(function() {
+
+    var scroll = $(window).scrollTop();
+
+    var scrollPast = $( window ).height();
+
+    if (scroll >= scrollPast) {
+      $(".index-logo").addClass("animate-in");
+      $(".description-paragraphs").addClass("animate-in");
+    }
+    // else {
+    //   $(".index-logo").removeClass("animate-in");
+    // }
+
+  });
+  </script>
+</body>

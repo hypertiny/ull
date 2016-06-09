@@ -1,0 +1,409 @@
+
+
+  <!-- <div class="flex-container-speakers">
+    <div class="speaker-div speaker-1">
+      <div class="speaker-photo speaker-photo-1"></div>
+
+      <h3>Johnny McGruber</h3>
+
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </div>
+
+    <div class="speaker-div speaker-1">
+      <div class="speaker-photo speaker-photo-2"></div>
+
+      <h3>Horatio Dude</h3>
+
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </div>
+
+    <div class="speaker-div speaker-3">
+      <div class="speaker-photo speaker-photo-3"></div>
+
+      <h3>Baz Triangle</h3>
+
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </div>
+  </div> -->
+
+
+
+
+  <!-- <div class="line-divider"></div> -->
+
+
+
+
+  /* SPEAKERS */
+
+  .speaker-photo {
+    width: 300px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .speaker-div {
+    width: 400px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 88%;
+  }
+
+  .speaker-div h3 {
+    font-weight: 900;
+    font-size: 1em;
+  }
+
+  .flex-container-speakers {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .speaker-photo-1 {
+    background-image: url(../images/speaker-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+  }
+
+  .speaker-photo-2 {
+    background-image: url(../images/speaker-2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .speaker-photo.speaker-photo-3 {
+    width: 360px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .speaker-photo-3 {
+    /*background-image: url(../images/speaker-3.jpg);*/
+    background-image: url(../images/speaker-triangle.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+
+
+  <!-- <div class="line-divider"></div> -->
+
+  <!-- <div class="flex-container-schedule">
+  <div class="schedule-day day-1">
+  <h3 class="spaced-header">Monday</h3>
+
+  <div class="schedule-event">
+  <h4 class="spaced-header">Heuston Station</h4>
+  <h4 class="time">XX:00 — XX:00</h4>
+</div>
+<div class="line-divider"></div>
+
+<div class="schedule-event">
+<h4 class="spaced-header">Train Leaves</h4>
+<h4 class="time">YY:00 — YY:00</h4>
+</div>
+
+<div class="line-divider"></div>
+
+<div class="schedule-event">
+<h4 class="spaced-header">Dinner</h4>
+<h4 class="time">20:00 — 22:00</h4>
+</div>
+</div>
+
+<div class="schedule-day day-2">
+<h3 class="spaced-header">Tuesday</h3>
+
+<div class="schedule-event">
+<h4 class="spaced-header">Registration opens</h4>
+<h4 class="time">12:00</h4>
+</div>
+<div class="line-divider"></div>
+
+<div class="schedule-event">
+<h4 class="spaced-header">Talk Sessions</h4>
+<h4 class="time">14:00 — 17:00</h4>
+</div>
+
+<div class="line-divider"></div>
+
+<div class="schedule-event">
+<h4 class="spaced-header">Break</h4>
+<h4 class="time">17:00 — 19:00</h4>
+</div>
+
+<div class="line-divider"></div>
+
+<div class="schedule-event">
+<h4 class="spaced-header">Dinner</h4>
+<h4 class="time">19:00</h4>
+</div>
+
+<div class="line-divider"></div>
+
+<div class="schedule-event">
+<h4 class="spaced-header">Shhhh!</h4>
+<h4 class="time">21:00</h4>
+</div>
+</div>
+
+<div class="schedule-day day-3">
+<h3 class="spaced-header">Wednesday</h3>
+
+<div class="schedule-event">
+<h4 class="spaced-header">Talk Sessions</h4>
+<h4 class="time">10:00 — 13:00</h4>
+</div>
+<div class="line-divider"></div>
+
+<div class="schedule-event">
+<h4 class="spaced-header">Lunch</h4>
+<h4 class="time">13:00 — 15:00</h4>
+</div>
+
+<div class="line-divider"></div>
+
+<div class="schedule-event">
+<h4 class="spaced-header">Special Features</h4>
+<h4 class="time">15:00 — 18:00</h4>
+</div>
+
+<div class="line-divider"></div>
+
+<div class="schedule-event">
+<h4 class="spaced-header">Wind-down</h4>
+<h4 class="time">18:00 — 20:00</h4>
+</div>
+
+<div class="line-divider"></div>
+
+<div class="schedule-event">
+<h4 class="spaced-header">Dinner &amp; Keynote</h4>
+<h4 class="time">20:00 — </h4>
+</div>
+</div>
+</div> -->
+
+
+
+<!-- <div class="europe-photo-browser"> -->
+<!-- <div id="small-6-flex-column-1" class="small-6-flex-column small-6-flex-column-1 photo-europe-1"></div> -->
+<!-- <div id="small-6-flex-column-2" class="small-6-flex-column small-6-flex-column-2 photo-europe-3"></div>
+<div id="small-6-flex-column-3" class="small-6-flex-column small-6-flex-column-3 photo-europe-2"></div>
+<div id="small-6-flex-column-4" class="small-6-flex-column small-6-flex-column-4 photo-europe-5"></div>
+<div id="small-6-flex-column-5" class="small-6-flex-column small-6-flex-column-5 photo-europe-6"></div>
+<div id="small-6-flex-column-6" class="small-6-flex-column small-6-flex-column-6 photo-europe-4"></div> -->
+<!-- </div> -->
+
+
+
+<script>
+$("#small-6-flex-column-1").hover(function () {
+  $("#small-6-flex-column-1").toggleClass("expand");
+  $("#small-6-flex-column-2").toggleClass("shrink");
+  $("#small-6-flex-column-3").toggleClass("shrink");
+  $("#small-6-flex-column-4").toggleClass("shrink");
+  $("#small-6-flex-column-5").toggleClass("shrink");
+  $("#small-6-flex-column-6").toggleClass("shrink");
+});
+
+$("#small-6-flex-column-2").hover(function () {
+  $("#small-6-flex-column-1").toggleClass("shrink");
+  $("#small-6-flex-column-2").toggleClass("expand");
+  $("#small-6-flex-column-3").toggleClass("shrink");
+  $("#small-6-flex-column-4").toggleClass("shrink");
+  $("#small-6-flex-column-5").toggleClass("shrink");
+  $("#small-6-flex-column-6").toggleClass("shrink");
+});
+
+$("#small-6-flex-column-3").hover(function () {
+  $("#small-6-flex-column-1").toggleClass("shrink");
+  $("#small-6-flex-column-2").toggleClass("shrink");
+  $("#small-6-flex-column-3").toggleClass("expand");
+  $("#small-6-flex-column-4").toggleClass("shrink");
+  $("#small-6-flex-column-5").toggleClass("shrink");
+  $("#small-6-flex-column-6").toggleClass("shrink");
+});
+
+$("#small-6-flex-column-4").hover(function () {
+  $("#small-6-flex-column-1").toggleClass("shrink");
+  $("#small-6-flex-column-2").toggleClass("shrink");
+  $("#small-6-flex-column-3").toggleClass("shrink");
+  $("#small-6-flex-column-4").toggleClass("expand");
+  $("#small-6-flex-column-5").toggleClass("shrink");
+  $("#small-6-flex-column-6").toggleClass("shrink");
+});
+
+$("#small-6-flex-column-5").hover(function () {
+  $("#small-6-flex-column-1").toggleClass("shrink");
+  $("#small-6-flex-column-2").toggleClass("shrink");
+  $("#small-6-flex-column-3").toggleClass("shrink");
+  $("#small-6-flex-column-4").toggleClass("shrink");
+  $("#small-6-flex-column-5").toggleClass("expand");
+  $("#small-6-flex-column-6").toggleClass("shrink");
+});
+
+$("#small-6-flex-column-6").hover(function () {
+  $("#small-6-flex-column-1").toggleClass("shrink");
+  $("#small-6-flex-column-2").toggleClass("shrink");
+  $("#small-6-flex-column-3").toggleClass("shrink");
+  $("#small-6-flex-column-4").toggleClass("shrink");
+  $("#small-6-flex-column-5").toggleClass("shrink");
+  $("#small-6-flex-column-6").toggleClass("expand");
+});
+</script>
+
+
+
+<!-- <div class="nav-item">
+<h3><a href="https://medium.com/@ullconf">Blog</a></h3>
+</div> -->
+
+<!-- <div class="nav-item">
+<h3><a href="sponsor.html">Sponsor</a></h3>
+</div> -->
+
+
+.small-6-flex-column.shrink {
+  width: 3%;
+  opacity: 0.25;
+  transition: all 1.5s;
+}
+.small-6-flex-column.expand {
+  width: 85%;
+  opacity: 1;
+  transition: all 1.5s;
+}
+.small-6-flex-column-1 {
+  background-position: left;
+  background-size: cover;
+  transition: all 1.5s;
+}
+.small-6-flex-column-2 {
+  background-position: center;
+  background-size: cover;
+  transition: all 1.5s;
+}
+.small-6-flex-column-3 {
+  background-position: center;
+  background-size: cover;
+  transition: all 1.5s;
+}
+.small-6-flex-column-4 {
+  background-position: center;
+  background-size: cover;
+  transition: all 1.5s;
+}
+.small-6-flex-column-5 {
+  background-position: center;
+  background-size: cover;
+  transition: all 1.5s;
+}
+.small-6-flex-column-6 {
+  background-position: right;
+  background-size: cover;
+  transition: all 1.5s;
+}
+
+
+h2.spaced-header, h3.spaced-header {
+  /*letter-spacing: 0.35em;*/
+  /*text-transform: uppercase;*/
+  font-weight: 900;
+}
+
+h4.spaced-header {
+  /*letter-spacing: 0.2em;*/
+  /*text-transform: uppercase;*/
+  font-weight: 900;
+}
+
+
+.small-6-flex-column {
+  display: block;
+  float: left;
+  width: 16.6%;
+  height: 100vh;
+  opacity: 0.25;
+}
+
+
+
+.europe-photo-browser {
+  overflow: hidden;
+  height: 100vh;
+  width: 100%;
+  z-index: 3;
+}
+
+.flex-container-europe {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 88%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+}
+
+
+
+@keyframes logoslideup {
+  0% {
+    margin-top: 500px;
+    opacity: 0;
+  }
+
+  100% {
+    margin-top: 200px;
+    opacity: 1;
+  }
+}
+
+@keyframes descriptionslideup {
+  0% {
+    margin-top: 500px;
+    opacity: 0;
+  }
+
+  100% {
+    margin-top: 50px;
+    opacity: 1;
+  }
+}
+
+
+
+@keyframes rotate {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg);}
+}
+
+@keyframes rotate_reverse {
+  from {transform: rotate(-27deg);}
+  to {transform: rotate(-387deg);}
+}
+
+
+/*.flex-grow-1 {flex: 1;}
+.flex-grow-2 {flex: 2;}
+.flex-grow-3 {flex: 3;}*/
